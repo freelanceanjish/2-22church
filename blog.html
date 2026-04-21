@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — 2:22 Church</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#C9A84C;--gold-light:#E8D5A3;--gold-dark:#8B6914;--deep:#0D1117;--deep-mid:#161C26;--surface:#1C2333;--surface-light:#232B3E;--text-primary:#F0EAD6;--text-secondary:#A8A090;--text-muted:#6B6358;--border:rgba(201,168,76,0.18);--border-subtle:rgba(255,255,255,0.06);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-primary);overflow-x:hidden;line-height:1.7;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:flex;align-items:center;justify-content:space-between;background:rgba(13,17,23,0.92);backdrop-filter:blur(16px);border-bottom:0.5px solid var(--border);}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;letter-spacing:0.08em;color:var(--gold);text-decoration:none;}
+.nav-logo span{font-style:italic;}
+.nav-links{display:flex;gap:2.5rem;list-style:none;}
+.nav-links a{font-size:0.8rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--gold);}
+.nav-cta{font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.55rem 1.4rem;border-radius:2px;text-decoration:none;font-weight:500;transition:background 0.2s;}
+.nav-cta:hover{background:var(--gold-light);}
+.container{max-width:1100px;margin:0 auto;padding:0 2rem;}
+
+/* Page header */
+.page-header{padding:10rem 2rem 4rem;background:var(--deep-mid);border-bottom:0.5px solid var(--border-subtle);text-align:center;}
+.page-header .eyebrow{font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;justify-content:center;gap:1rem;}
+.page-header .eyebrow::before,.page-header .eyebrow::after{content:'';display:block;width:30px;height:0.5px;background:var(--gold);opacity:0.5;}
+.page-header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6vw,5rem);font-weight:300;line-height:1.05;}
+.page-header h1 em{font-style:italic;color:var(--gold);}
+.page-header p{color:var(--text-secondary);font-size:1rem;max-width:500px;margin:1.2rem auto 0;line-height:1.8;}
+
+/* Filter bar */
+.filter-bar{padding:2rem 2rem 0;display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;max-width:1100px;margin:0 auto;}
+.filter-btn{font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;padding:0.45rem 1rem;border:0.5px solid var(--border);background:transparent;color:var(--text-muted);cursor:pointer;font-family:'DM Sans',sans-serif;border-radius:2px;transition:all 0.2s;}
+.filter-btn:hover{border-color:var(--gold);color:var(--gold);}
+.filter-btn.active{background:rgba(201,168,76,0.12);border-color:var(--gold);color:var(--gold);}
+
+/* Post count */
+.post-count{padding:1.5rem 2rem 0;max-width:1100px;margin:0 auto;font-size:0.78rem;color:var(--text-muted);letter-spacing:0.06em;}
+.post-count span{color:var(--gold);}
+
+/* Blog list */
+.blog-list{padding:2rem 2rem 8rem;max-width:1100px;margin:0 auto;}
+
+/* Featured top post */
+.post-featured{display:grid;grid-template-columns:1.4fr 1fr;gap:0;border:0.5px solid var(--border);margin-bottom:3rem;text-decoration:none;color:inherit;background:var(--surface);transition:background 0.2s;}
+.post-featured:hover{background:var(--surface-light);}
+.post-featured .pf-img{overflow:hidden;background:var(--deep-mid);min-height:320px;}
+.post-featured .pf-img img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(0.65) brightness(0.75);transition:filter 0.4s,transform 0.5s;}
+.post-featured:hover .pf-img img{filter:saturate(0.85) brightness(0.85);transform:scale(1.03);}
+.post-featured .pf-body{padding:3rem;display:flex;flex-direction:column;justify-content:center;}
+.post-featured .pf-label{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;}
+.post-featured h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;line-height:1.2;margin-bottom:1rem;color:var(--text-primary);}
+.post-featured p{font-size:0.9rem;color:var(--text-secondary);line-height:1.75;margin-bottom:1.5rem;}
+.post-featured .pf-meta{display:flex;align-items:center;gap:0.75rem;}
+.blog-tag{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,0.1);padding:0.25rem 0.65rem;border-radius:2px;}
+.blog-date{font-size:0.72rem;color:var(--text-muted);}
+.blog-read{margin-top:1.5rem;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:0.4rem;}
+.blog-read::after{content:'→';transition:transform 0.2s;}
+.post-featured:hover .blog-read::after{transform:translateX(4px);}
+
+/* Grid of remaining posts */
+.posts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5px;background:var(--border);border:0.5px solid var(--border);}
+.post-card{background:var(--surface);text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:background 0.2s;}
+.post-card:hover{background:var(--surface-light);}
+.post-card .pc-img{overflow:hidden;background:var(--deep-mid);aspect-ratio:16/9;}
+.post-card .pc-img img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(0.65) brightness(0.75);transition:filter 0.4s,transform 0.5s;}
+.post-card:hover .pc-img img{filter:saturate(0.85) brightness(0.85);transform:scale(1.03);}
+.post-card .pc-img.no-img{display:flex;align-items:center;justify-content:center;min-height:140px;}
+.post-card .pc-img.no-img span{font-family:'Cormorant Garamond',serif;font-size:3rem;color:var(--text-muted);opacity:0.25;}
+.post-card .pc-body{padding:1.5rem 1.6rem 2rem;flex:1;display:flex;flex-direction:column;}
+.post-card h3{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;line-height:1.25;color:var(--text-primary);margin-bottom:0.6rem;margin-top:0.8rem;}
+.post-card p{font-size:0.85rem;color:var(--text-secondary);line-height:1.75;flex:1;}
+.post-card .blog-read{margin-top:1.2rem;}
+.post-card:hover .blog-read::after{transform:translateX(4px);}
+
+/* Empty state */
+.empty-state{text-align:center;padding:5rem 2rem;color:var(--text-muted);}
+.empty-state p{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-style:italic;}
+
+/* Footer */
+footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);padding:4rem 2rem 2.5rem;}
+.footer-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:0.5px solid var(--border-subtle);}
+.footer-brand .nav-logo{font-size:1.5rem;display:block;margin-bottom:1rem;}
+.footer-brand p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;max-width:260px;}
+.footer-col h4{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;}
+.footer-col ul{list-style:none;}
+.footer-col ul li{margin-bottom:0.65rem;}
+.footer-col ul li a{font-size:0.85rem;color:var(--text-muted);text-decoration:none;transition:color 0.2s;}
+.footer-col ul li a:hover{color:var(--gold);}
+.footer-bottom{max-width:1100px;margin:2rem auto 0;display:flex;align-items:center;justify-content:space-between;font-size:0.78rem;color:var(--text-muted);}
+.footer-verse{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.85rem;}
+@media(max-width:800px){
+  nav{padding:1rem 1.5rem;}.nav-links{display:none;}
+  .post-featured{grid-template-columns:1fr;}.post-featured .pf-img{min-height:220px;}
+  .posts-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}.footer-brand{grid-column:1/-1;}
+  .footer-bottom{flex-direction:column;gap:0.5rem;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">2<span>:22</span> Church</a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">Foundation</a></li>
+    <li><a href="index.html#beliefs">Beliefs</a></li>
+    <li><a href="index.html#gathering">Gathering</a></li>
+    <li><a href="index.html#practices">Practice</a></li>
+    <li><a href="index.html#community">Community</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+  </ul>
+  <a href="index.html#join" class="nav-cta">Connect</a>
+</nav>
+
+<div class="page-header">
+  <div class="eyebrow">Weekly Word</div>
+  <h1>The <em>Blog</em></h1>
+  <p>Reflections on Scripture, community, service and the living faith of 2:22 Church. Published weekly.</p>
+</div>
+
+<div class="filter-bar" id="filter-bar">
+  <button class="filter-btn active" data-cat="all">All</button>
+</div>
+
+<div class="post-count" id="post-count"></div>
+
+<div class="blog-list">
+  <div id="featured-slot"></div>
+  <div class="posts-grid" id="posts-grid"></div>
+  <div class="empty-state" id="empty-state" style="display:none;"><p>No posts in this category yet.</p></div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">2<span style="font-style:italic">:22</span> Church</a>
+      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html#about">Our Foundation</a></li>
+        <li><a href="index.html#beliefs">What We Believe</a></li>
+        <li><a href="index.html#gathering">Gatherings</a></li>
+        <li><a href="index.html#practices">How We Live</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="index.html#join">Join a Gathering</a></li>
+        <li><a href="mailto:hello@2-22church.com">Email Us</a></li>
+        <li><a href="#">Start a Group</a></li>
+        <li><a href="#">Share Your Story</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Scripture</h4>
+      <ul>
+        <li><a href="#">2 Timothy 2:2</a></li>
+        <li><a href="#">2 Timothy 2:22</a></li>
+        <li><a href="#">Acts 2:42–47</a></li>
+        <li><a href="#">Matthew 18:20</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 2:22 Church · 2-22church.com</span>
+    <span class="footer-verse">"Where two or three gather in my name, there am I with them." — Matthew 18:20</span>
+  </div>
+</footer>
+
+<script src="posts.js"></script>
+<script>
+var currentCat = 'all';
+
+// Build category filter buttons
+var cats = ['all'];
+POSTS.forEach(function(p) { if (cats.indexOf(p.category) === -1) cats.push(p.category); });
+var filterBar = document.getElementById('filter-bar');
+cats.forEach(function(cat) {
+  if (cat === 'all') return;
+  var btn = document.createElement('button');
+  btn.className = 'filter-btn';
+  btn.setAttribute('data-cat', cat);
+  btn.textContent = cat;
+  filterBar.appendChild(btn);
+});
+
+filterBar.addEventListener('click', function(e) {
+  var btn = e.target.closest('.filter-btn');
+  if (!btn) return;
+  document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  currentCat = btn.getAttribute('data-cat');
+  renderPosts();
+});
+
+function renderPosts() {
+  var filtered = currentCat === 'all' ? POSTS : POSTS.filter(function(p){ return p.category === currentCat; });
+  var featuredSlot = document.getElementById('featured-slot');
+  var grid = document.getElementById('posts-grid');
+  var empty = document.getElementById('empty-state');
+  var countEl = document.getElementById('post-count');
+
+  if (filtered.length === 0) {
+    featuredSlot.innerHTML = '';
+    grid.innerHTML = '';
+    empty.style.display = 'block';
+    countEl.innerHTML = '';
+    return;
+  }
+  empty.style.display = 'none';
+  countEl.innerHTML = 'Showing <span>' + filtered.length + '</span> post' + (filtered.length !== 1 ? 's' : '');
+
+  // Featured (first post)
+  var f = filtered[0];
+  var fImg = f.image
+    ? '<div class="pf-img"><img src="' + f.image + '" alt="' + f.title + '" loading="lazy"></div>'
+    : '<div class="pf-img" style="display:flex;align-items:center;justify-content:center;background:var(--surface);"><span style="font-family:Cormorant Garamond,serif;font-size:5rem;color:var(--text-muted);opacity:0.2;">✦</span></div>';
+  featuredSlot.innerHTML = '<a href="post.html?id=' + f.id + '" class="post-featured">'
+    + fImg
+    + '<div class="pf-body">'
+    + '<div class="pf-label">Latest Post</div>'
+    + '<h2>' + f.title + '</h2>'
+    + '<p>' + f.excerpt + '</p>'
+    + '<div class="pf-meta"><span class="blog-tag">' + f.category + '</span><span class="blog-date">' + f.date + '</span></div>'
+    + '<span class="blog-read">Read full post</span>'
+    + '</div></a>';
+
+  // Rest of posts
+  var rest = filtered.slice(1);
+  if (rest.length === 0) {
+    grid.innerHTML = '';
+    grid.style.border = 'none';
+    grid.style.background = 'transparent';
+  } else {
+    grid.style.border = '';
+    grid.style.background = '';
+    grid.innerHTML = rest.map(function(post) {
+      var imgHtml = post.image
+        ? '<div class="pc-img"><img src="' + post.image + '" alt="' + post.title + '" loading="lazy"></div>'
+        : '<div class="pc-img no-img"><span>✦</span></div>';
+      return '<a href="post.html?id=' + post.id + '" class="post-card">'
+        + imgHtml
+        + '<div class="pc-body">'
+        + '<div style="display:flex;align-items:center;gap:0.6rem;"><span class="blog-tag">' + post.category + '</span><span class="blog-date">' + post.date + '</span></div>'
+        + '<h3>' + post.title + '</h3>'
+        + '<p>' + post.excerpt + '</p>'
+        + '<span class="blog-read">Read more</span>'
+        + '</div></a>';
+    }).join('');
+  }
+}
+
+renderPosts();
+</script>
+</body>
+</html>
