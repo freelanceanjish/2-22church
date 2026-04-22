@@ -150,13 +150,22 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 .golden-divider span{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--gold);opacity:0.6;}
 @media(max-width:800px){
   nav{padding:1rem 1.5rem;}.nav-links{display:none;}
-  .about-grid{grid-template-columns:1fr;gap:3rem;}
-  .gather-flex{flex-direction:column;gap:2.5rem;}.gather-places{flex:none;width:100%;}
-  .photo-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px;}.photo-slot.large{grid-row:auto;}
-  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}.footer-brand{grid-column:1/-1;}
+  .nav-cta{padding:0.45rem 1rem;font-size:0.7rem;}
+  section{padding:4rem 1.2rem;}
+  .hero{padding:6rem 1.2rem 3rem;}
+  .verse-float{display:none;}
+  .about-grid{grid-template-columns:1fr;gap:2rem;}
+  .dual-verse{margin-top:0;}
+  .beliefs-grid{grid-template-columns:1fr;}
+  .gather-flex{flex-direction:column;gap:2rem;}.gather-places{flex:none;width:100%;grid-template-columns:1fr 1fr;}
+  .photo-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:160px 160px 160px;}.photo-slot.large{grid-row:auto;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:1.5rem;}.footer-brand{grid-column:1/-1;}
   .practice-row{grid-template-columns:1fr;}.practice-label{border-right:none;border-bottom:0.5px solid var(--border-subtle);padding-bottom:0.5rem;}
   .blog-grid{grid-template-columns:1fr;}.blog-card.featured{grid-row:auto;}
   .footer-bottom{flex-direction:column;gap:0.5rem;text-align:center;}
+  .join-form{flex-direction:column;}.join-form input,.join-form button{width:100%;}
+  .hero-verse{font-size:1rem;padding-left:1rem;}
+  .community-intro{margin-bottom:2rem;}
 }
 </style>
 </head>
@@ -171,6 +180,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
     <li><a href="#practices">Practice</a></li>
     <li><a href="#community">Community</a></li>
     <li><a href="blog.html">Blog</a></li>
+    <li><a href="references.html">Resources</a></li>
   </ul>
   <a href="#join" class="nav-cta">Connect</a>
 </nav>
@@ -374,7 +384,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
         <li><a href="#gathering">Gatherings</a></li>
         <li><a href="#practices">How We Live</a></li>
         <li><a href="blog.html">Blog</a></li>
-      </ul>
+        <li><a href="references.html">Resources</a></li>
     </div>
     <div class="footer-col">
       <h4>Connect</h4>
