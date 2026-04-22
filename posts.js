@@ -21,130 +21,241 @@ const POSTS = [
     title: "Was Jesus God? A Biblical Examination",
     date: "22 April 2026",
     category: "Teaching",
-    excerpt: "Before you assume which denomination I belong to — I do not belong to any denomination, nor am I introducing any cult. This is a sincere examination of what Scripture actually says about the nature of Jesus Christ.",
+    excerpt: "I do not belong to any denomination, nor am I introducing any cult. What follows is a thorough, verse-by-verse examination of what Scripture actually says about the nature of Jesus Christ — and why the Trinitarian position cannot stand on the plain testimony of the Bible.",
     image: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=900&q=80",
     content: `
 
-<p><em>A note before we begin: I do not belong to any denomination, nor am I introducing any cult. I am not afraid of the opposition that comes from challenging popular Trinitarian belief. The Spirit of God wants to bring clarity to the church — and as the coming of our Lord Jesus Christ draws near, and as the salvation of millions of Muslims and Jews is at hand, the Gospel must return to its original, apostolic estate. What follows is a point-by-point engagement with the Trinitarian position, examined strictly by Scripture.</em></p>
+<p><em>Before you assume which denomination I belong to — I do not belong to any denomination, nor am I introducing any cult. I am immensely clear about the message the Spirit of God wants to bring to His church in this hour. People like me have started pushing back against the non-foundational work done in mainstream Christianity. I am not afraid of the opposition that comes from challenging popular Trinitarian belief. The Spirit of God wants to bring clarity — yes, clarity — to the church. As the coming of our Lord Jesus Christ draws near, and as the salvation of millions of Muslims and Jews is at hand, the Gospel must return to its original, apostolic estate. What follows is a point-by-point engagement with the Trinitarian position, examined strictly by Scripture.</em></p>
 
-<h2>The Claim: Jesus Is God in Human Flesh</h2>
+<h2>The Trinitarian Claim: Jesus Is God in Human Flesh</h2>
 
-<p>The Trinitarian position holds that Jesus Christ is God incarnate — God in human flesh — who came to earth to reveal the Father and to die for our sins. His miracles, teachings, resurrection, and fulfilment of prophecy are offered as proofs of His divinity.</p>
+<p>The Trinitarian position holds that Jesus Christ is God incarnate — God in human flesh — who came to earth to reveal the Father and to die for our sins. His miracles, teachings, resurrection, and fulfilment of prophecy are presented as proof of His divinity in the fullest sense: that He is God Himself.</p>
 
-<h2>Our Response: Scripture Draws a Clear Distinction</h2>
+<h2>Our Response: God Defined Himself — And Jesus Does Not Fit That Definition</h2>
 
-<p>To call Jesus "God in human flesh" is to contradict the very definition God prescribed for Himself in Scripture. Consider these passages plainly:</p>
+<p>To call Jesus "God in human flesh" is to trample on the very definition God prescribed for Himself throughout Scripture. These are not obscure verses. They are plain declarations:</p>
 
 <blockquote>"God is not a man, nor a son of man." — Numbers 23:19</blockquote>
 <blockquote>"For I am God, and not man." — Hosea 11:9</blockquote>
 <blockquote>"God is a Spirit." — John 4:24</blockquote>
-<blockquote>"God is invisible." — Colossians 1:15</blockquote>
-<blockquote>"God only has immortality." — 1 Timothy 6:16; 1 Timothy 1:17</blockquote>
+<blockquote>"He is the image of the invisible God." — Colossians 1:15 <em>(God is invisible — Jesus was seen and touched)</em></blockquote>
+<blockquote>"Who alone has immortality." — 1 Timothy 6:16</blockquote>
+<blockquote>"Now to the King eternal, immortal, invisible, to God who alone is wise." — 1 Timothy 1:17 NKJV</blockquote>
 
-<p>Jesus was born of a woman, was seen and touched, grew in wisdom, experienced hunger and weariness, and died on a cross. Each of these facts stands in direct contrast to the scriptural attributes of God. This is not a contradiction within the Bible — it is the Bible's own deliberate distinction between God and His appointed Son.</p>
+<p>Jesus was born of a woman. He was seen, touched, and lived among people. He grew in wisdom (Luke 2:52). He was made perfect through suffering (Hebrews 2:10). He did not know the day or the hour of His own return — <em>"not even the Son"</em> (Mark 13:32). He hungered, wept, slept, and died. Every one of these facts stands in direct and irreconcilable contrast to the attributes God ascribed to Himself. This is not a problem within Scripture — it is Scripture's own deliberate testimony that Jesus and the Almighty are two distinct beings.</p>
+
+<h2>On Jesus Being Fully Human — Hebrews 2:17</h2>
+
+<p>The New Testament does not shy away from this — it declares it plainly as essential to the plan of salvation:</p>
+
+<blockquote>"For this reason he had to be made like them, fully human in every way, in order that he might become a merciful and faithful high priest in service to God, and that he might make atonement for the sins of the people." — Hebrews 2:17</blockquote>
+
+<p>A High Priest serves before God. He is not God. Jesus in His earthly and exalted role is the appointed High Priest — the Son of God interceding before the only eternal God. High Priest and God are two distinct beings, working together in the fulfilment of an eternal redemptive plan. This is not mystery — this is the plain text.</p>
 
 <h2>On Miracles, Resurrection and Divinity</h2>
 
-<p>The Trinitarian argument suggests that Jesus proved His divinity through miracles, resurrection and the fulfilment of prophecy. But Scripture is explicit about the source of those miracles:</p>
+<p>The Trinitarian argument claims Jesus proved His divinity through miracles, resurrection and fulfilled prophecy. But Scripture is explicit, direct and unambiguous about where those miracles came from:</p>
 
-<blockquote>"Jesus of Nazareth, a Man attested by God to you by miracles, wonders, and signs which God did through Him in your midst… whom God raised up." — Acts 2:22–24 NKJV</blockquote>
+<blockquote>"Jesus of Nazareth, a Man attested by God to you by miracles, wonders, and signs which God did through Him in your midst, as you yourselves also know — Him, being delivered by the determined purpose and foreknowledge of God, you have taken by lawless hands, have crucified, and put to death; whom God raised up." — Acts 2:22–24 NKJV</blockquote>
 
-<p>It was <em>God</em> who performed miracles <em>through</em> Jesus. It was <em>God</em> who raised Jesus from the dead. Jesus did not resurrect Himself — He was raised by the Father. And regarding His teaching:</p>
+<p>God did the miracles <em>through</em> Jesus. God raised Jesus. Jesus did not raise Himself. And concerning His teaching — Jesus was equally clear:</p>
 
-<blockquote>"For I have not spoken on My own authority; but the Father who sent Me gave Me a command, what I should say and what I should speak." — John 12:49–50 NKJV</blockquote>
+<blockquote>"For I have not spoken on My own authority; but the Father who sent Me gave Me a command, what I should say and what I should speak. And I know that His command is everlasting life. Therefore, whatever I speak, just as the Father has told Me, so I speak." — John 12:49–50 NKJV</blockquote>
 
-<p>Furthermore, prophets also performed miracles, taught with authority, and some were raised. Does that make them God incarnate by the same definition? The answer must be no — and the same logic applies consistently to Jesus.</p>
+<p>Jesus spoke the Father's words. Jesus performed the Father's works. Jesus was raised by the Father's power. At every point the distinction is maintained — not blurred.</p>
 
-<p>Regarding His position and appointment:</p>
+<p>Furthermore, consider these additional verses that establish the relationship between the sender and the sent:</p>
 
+<blockquote>"…that they may believe that You sent Me." — John 11:42 NKJV</blockquote>
+<blockquote>"Most assuredly, I say to you, a servant is not greater than his master; nor is he who is sent greater than he who sent him." — John 13:16 NKJV</blockquote>
+<blockquote>"Therefore, being a prophet, and knowing that God had sworn with an oath to him that of the fruit of his body, according to the flesh, He would raise up the Christ to sit on his throne." — Acts 2:30 NKJV</blockquote>
 <blockquote>"Therefore let all the house of Israel know assuredly that God has made this Jesus, whom you crucified, both Lord and Christ." — Acts 2:36 NKJV</blockquote>
 
-<p>If Jesus were God Himself, there would be no one above Him to <em>make</em> Him Lord and Christ. The One who appoints and the one who is appointed are two distinct beings.</p>
+<p>If Jesus were God Himself, who made Him Lord and Christ? The One who appoints and the one who is appointed are not the same. There is not even 0.1 ounce of argument remaining — God made Jesus the Lord and Christ. This is the apostolic proclamation on the day of Pentecost itself.</p>
+
+<p>And note this carefully: prophets also performed miracles, taught with great authority, and some were raised after Jesus's crucifixion. Does that make them God incarnate by the same Trinitarian definition? The answer must be no. The same consistency of logic applies to Jesus.</p>
 
 <h2>On "I AM" — John 8:58</h2>
 
-<p>The Trinitarian argument points to Jesus saying "Before Abraham was, I AM" as a claim to be the God of Exodus 3:14. But let us read the full context carefully, not in isolation.</p>
+<p>The Trinitarian argument points to Jesus saying "Before Abraham was, I AM" as a claim to be the very God of Exodus 3:14. But this interpretation requires ignoring the entire context of the conversation in John 8. Let us read it properly.</p>
 
-<p>The Jews asked Jesus two questions: "Are you greater than our father Abraham?" and "Who do you make yourself out to be?" Jesus answered the second question directly:</p>
+<p>The Jews asked Jesus two specific questions:</p>
+<p><em>1. "Are you greater than our father Abraham, who is dead?"</em><br>
+<em>2. "Who do you make yourself out to be?"</em> — John 8:53</p>
 
-<blockquote>"It is My Father who honours Me, of whom you say that He is your God. Yet you have not known Him, but I know Him." — John 8:54–55 NKJV</blockquote>
+<p>Jesus answered the second question first — and His answer could not be clearer:</p>
 
-<p>Jesus points directly to the God of the Jews — the God of Abraham, Isaac and Jacob, Adonai Ekhad — as His Father. He does not claim to <em>be</em> that God. He claims to <em>know</em> that God and to <em>keep His word</em>.</p>
+<blockquote>"Jesus answered, 'If I honour Myself, My honour is nothing. It is My Father who honours Me, of whom you say that He is your God. Yet you have not known Him, but I know Him. And if I say, I do not know Him, I shall be a liar like you; but I do know Him and keep His word.'" — John 8:54–55 NKJV</blockquote>
 
-<p>As for the phrase "Before Abraham was, I AM" — Jesus was answering the first question about Abraham. His point was that even before God made His covenant with Abraham, God had already promised a Messiah from the seed of Adam. The Messiah existed in God's eternal purpose before Abraham existed in history. Jesus was not declaring Himself to be the God of the burning bush — He was declaring His place in God's redemptive plan as the one who predates Abraham in divine promise.</p>
+<p>Jesus explicitly identifies the God the Jews worshipped — the God of Abraham, Isaac and Jacob, Adonai Ekhad — as His Father. He does not claim to <em>be</em> that God. He claims to <em>know</em> that God and to <em>keep His word</em>. He then adds:</p>
 
-<h2>On "I and the Father Are One" — John 10:30</h2>
+<blockquote>"I do not seek My own glory; there is One who seeks and judges." — John 8:50 NKJV</blockquote>
 
-<p>This verse is frequently cited as proof of Jesus claiming equality with God. But Scripture interprets Scripture. In His high priestly prayer, Jesus used the identical language of oneness for His disciples:</p>
+<p>There is <em>One</em> who seeks and judges — and Jesus is not that One. He deliberately separates Himself from the role of ultimate judge and glory-holder.</p>
 
-<blockquote>"Holy Father, protect them by your name that you have given me, so that they may be one as we are one." — John 17:11 CSB</blockquote>
+<p>Jesus also made His origin plain in the same chapter:</p>
 
-<p>Jesus prayed that His disciples would be "one" in the same way He and the Father are "one." He was not praying that His disciples would become God. "One" here means unity of purpose, will and devotion — not ontological identity. The Jews misunderstood this as a claim to be God; the disciples understood it as a call to like-mindedness with God.</p>
+<blockquote>"I proceeded forth and came from God; nor have I come of Myself, but He sent Me." — John 8:42 NKJV</blockquote>
 
-<h2>On Isaiah 9:6 — "Mighty God, Everlasting Father"</h2>
+<p>He came <em>from</em> God. He was <em>sent</em> by God. He did not descend as God — He was dispatched as God's Son and messenger.</p>
 
-<p>The prophecy of Isaiah 9:6 calls the Messiah "Mighty God" and "Everlasting Father." Two observations:</p>
+<p>Now for "Before Abraham was, I AM" — Jesus was answering the first question about Abraham. His point was this: even before God established His covenant with Abraham and made him the father of nations, God had already promised a Messiah from the seed of Adam. The Messiah existed in God's eternal foreknowledge and redemptive purpose before Abraham ever existed in history. Jesus was not declaring Himself to be the God of the burning bush. He was declaring His place in God's eternal plan — a plan that predates Abraham entirely.</p>
 
-<p>First, Scripture elsewhere uses similar elevated language allegorically. God said to Moses: <em>"I make you as God to Pharaoh"</em> (Exodus 7:1). That did not make Moses God. Prophetic and poetic language in the Hebrew tradition frequently uses titles of honour and function. The Messiah as "Everlasting Father" speaks of His role as the founder of a new creation — much as we say Graham Bell is the "father of the telephone."</p>
+<h2>What the Jews Actually Accused Jesus Of</h2>
 
-<p>Second, notice the distinction the title itself preserves: Jesus is called <em>Mighty</em> God, while the Father remains <em>Almighty</em> God. The distinction is there in the very verse that is used to argue there is none.</p>
+<p>This is a crucial point that is consistently overlooked. The Jews never accused Jesus of calling Himself God. They accused Him of claiming to be the <em>Son of God</em> — and of making Himself <em>equal</em> with God by doing so. These are their own words:</p>
 
-<h2>On Thomas's Confession — John 20:28</h2>
+<blockquote>"Therefore the Jews sought all the more to kill Him, because He not only broke the Sabbath, but also said that God was His Father, making Himself equal with God." — John 5:18 NKJV</blockquote>
+<blockquote>"The Jews answered him, 'We have a law, and according to our law He ought to die, because He made Himself the Son of God.'" — John 19:7 NKJV</blockquote>
 
-<p>When Thomas said "My Lord and my God," the Trinitarian argument is that Jesus accepted this as worship of Himself as God. But consider Jesus's own words elsewhere:</p>
-
-<blockquote>"Why do you call Me good? No one is good but One, that is, God." — Mark 10:18 NKJV</blockquote>
-<blockquote>"My God and your God." — John 20:17 NKJV</blockquote>
-
-<p>Jesus consistently redirected glory to the Father. Thomas's exclamation, in the overwhelm of seeing the risen Christ, was an expression of astonished worship — directed ultimately to the God who had raised Jesus and was now confirmed as Lord and Messiah. Jesus's response was not to affirm "Yes, I am God" but to bless those who would believe without needing to see.</p>
-
-<p>Additionally, Jesus Himself answered the accusation of blasphemy with these words:</p>
+<p>The Jews framed Jesus this way to justify punishing Him — but even in their accusation they never said He called Himself God. They said He called Himself the Son of God. And Jesus Himself, when defending against the blasphemy charge, did not say "I am God." He said:</p>
 
 <blockquote>"Why then do you accuse me of blasphemy because I said, 'I am God's Son'?" — John 10:36</blockquote>
 
-<p>Jesus's own self-definition in His own defence was <em>Son of God</em> — not God the Son.</p>
+<p>Jesus's own self-definition, in His own defence, before His accusers, was <em>Son of God</em>. Not God the Son. Son of God.</p>
+
+<h2>On "I and the Father Are One" — John 10:30</h2>
+
+<p>This verse is frequently offered as the clearest proof of Jesus claiming equality with God. But Scripture must interpret Scripture. In His high priestly prayer, Jesus used the identical language of "oneness" for His own disciples:</p>
+
+<blockquote>"Holy Father, protect them by your name that you have given me, so that they may be one as we are one." — John 17:11 CSB</blockquote>
+
+<p>Jesus prayed that His disciples would be "one" in precisely the same way He and the Father are "one." He was not praying that His disciples would become God. If "one" in John 10:30 means ontological identity — that two become the same being — then by the same logic Jesus was praying His disciples would merge with God and become God. That is clearly not what He meant.</p>
+
+<p>"One" here means unity of purpose, will, mind and devotion — the same like-mindedness that Jesus called His disciples to walk in. The Jews misread it as a claim to deity. But Jesus immediately corrected the charge in verse 36 by calling Himself the Son of God, not God.</p>
+
+<h2>On Isaiah 9:6 — "Mighty God, Everlasting Father"</h2>
+
+<p>The prophecy of Isaiah 9:6 gives the Messiah the titles "Mighty God" and "Everlasting Father." This is used to argue that Jesus is God Himself. Two responses:</p>
+
+<p><strong>First:</strong> Is it not common for prophets to use allegorical and elevated language? Isaiah was not writing a systematic theology — he was writing prophetic poetry. Consider how God Himself spoke to Moses:</p>
+
+<blockquote>"Now hear this: I make you as God to Pharaoh." — Exodus 7:1</blockquote>
+
+<p>Moses was made "as God" to Pharaoh — yet no one concludes Moses was God incarnate. Similarly, the title "Everlasting Father" given to Jesus speaks of His role as the founder and cornerstone of a new spiritual creation — the Father of God's reborn family. Graham Bell is called the father of the telephone. Henry Ford is called the father of mass vehicle production. They were called fathers by reason of founding something new — not because they gave biological birth to it.</p>
+
+<p><strong>Second:</strong> Notice what the title itself preserves. Jesus is called <em>Mighty</em> God. The Father remains <em>Almighty</em> God. Why would Isaiah use a lesser title if he intended to say Jesus is the full Almighty? The distinction is embedded in the very verse used to erase it. Many kings in Scripture were given titles of greatness and strength — this was the Hebrew prophetic tradition. Read as a new-born Bible reader, without the pre-loaded assumptions of Trinitarian theology, and the distinction is clear.</p>
+
+<h2>On Thomas's Confession — John 20:28</h2>
+
+<p>When Thomas said "My Lord and my God!" the Trinitarian argument is that Jesus accepted worship as God Himself, and that His silence was endorsement. But consider the consistent pattern of Jesus's own words:</p>
+
+<blockquote>"Why do you call Me good? No one is good but One, that is, God." — Mark 10:18 NKJV</blockquote>
+<blockquote>"I am ascending to My Father and your Father, to My God and your God." — John 20:17 NKJV</blockquote>
+<blockquote>"But the hour is coming, and is now here, when the true worshipers will worship the Father in spirit and truth, for the Father is seeking such people to worship him. God is spirit, and those who worship him must worship in spirit and truth." — John 4:23–24</blockquote>
+
+<p>Jesus had a God. He directed worship to the Father. He consistently refused personal glory. Thomas's overwhelming exclamation, upon seeing the risen Christ, was an expression of awe — directed ultimately toward the God who had raised Jesus and vindicated Him as Lord and Messiah. Jesus's response was not "Yes, you are right, I am God" — it was a blessing for those who would believe without seeing.</p>
+
+<p>Furthermore, recall what David wrote in the Psalms — a text Jesus Himself quoted:</p>
+
+<p><em>"The LORD said to My Lord, sit at My right hand until I make Your enemies Your footstool."</em></p>
+
+<p>Two Lords — one is God (the LORD, Yahweh), the other is David's Lord (the Messiah, Jesus). They are distinct. They speak to one another. One sits at the right hand of the other. And God Himself commands that the Messiah be honoured — this is not the Messiah claiming to be God, this is God exalting His appointed Son.</p>
 
 <h2>On John 1:1–14 and 1 John 5:20</h2>
 
-<p>John himself provides the clearest resolution to these passages in his own conclusion:</p>
+<p>John himself resolves the question in his own conclusion to the prologue:</p>
 
 <blockquote>"No one has seen God at any time. The only begotten Son, who is in the bosom of the Father, He has declared Him." — John 1:18 NKJV</blockquote>
 
-<p>John says plainly: no one has seen God. But people saw Jesus. Therefore Jesus is the one who <em>declared</em> and <em>revealed</em> God — not the one who <em>is</em> God. The Son reveals the Father. They are not the same person.</p>
+<p>John states plainly: no one has ever seen God. But multitudes saw Jesus. He walked among them, ate with them, was touched and embraced. Therefore, by John's own words, Jesus is not God — He is the one who <em>declared</em> and <em>revealed</em> God. The Son reveals the Father. They are not the same person.</p>
 
-<p>Regarding 1 John 5:20 — read it in context. John says the Son of God has given us understanding to know <em>Him that is true</em>. That "Him" — confirmed by John 17:3 — is the Father:</p>
+<p>Regarding 1 John 5:20 — the context is decisive. John speaks of the Son of God giving us understanding to know <em>Him that is true</em>. Who is "Him that is true"? John 17:3 answers it directly:</p>
 
-<blockquote>"This is eternal life, that they may know You, the only true God, and Jesus Christ whom You have sent." — John 17:3 NKJV</blockquote>
+<blockquote>"And this is eternal life, that they may know You, the only true God, and Jesus Christ whom You have sent." — John 17:3 NKJV</blockquote>
 
-<p>Jesus distinguishes Himself from "the only true God." He is the sent one. The Father is the sender. Two distinct persons, one united in purpose.</p>
+<p>Jesus, in His own prayer to the Father, calls the Father "the only true God" — and distinguishes Himself as the one who was <em>sent</em>. It is ironical — and telling — to say that John is calling Jesus God in the very passage where Jesus calls the Father the only true God.</p>
 
-<h2>The Apostolic Foundation</h2>
+<h2>A Summary Comparison: God vs Jesus in Scripture</h2>
 
-<p>Not a single apostle ever wrote "God the Son" in any epistle. Not once. What they consistently wrote was:</p>
+<div style="overflow-x:auto;margin:2rem 0;">
+<table style="width:100%;border-collapse:collapse;font-size:0.88rem;">
+  <thead>
+    <tr style="border-bottom:1px solid rgba(201,168,76,0.3);">
+      <th style="text-align:left;padding:0.75rem 1rem;color:var(--gold);font-weight:500;letter-spacing:0.08em;">Attribute</th>
+      <th style="text-align:left;padding:0.75rem 1rem;color:var(--gold);font-weight:500;letter-spacing:0.08em;">God in Scripture</th>
+      <th style="text-align:left;padding:0.75rem 1rem;color:var(--gold);font-weight:500;letter-spacing:0.08em;">Jesus in Scripture</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom:0.5px solid rgba(255,255,255,0.06);">
+      <td style="padding:0.75rem 1rem;color:var(--text-primary);">Nature</td>
+      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">Not a man (Numbers 23:19; Hosea 11:9)</td>
+      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">Called Himself Son of Man; born of a woman</td>
+    </tr>
+    <tr style="border-bottom:0.5px solid rgba(255,255,255,0.06);">
+      <td style="padding:0.75rem 1rem;color:var(--text-primary);">Immortality</td>
+      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">Only immortal (1 Timothy 6:16)</td>
+      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">Died on the cross; raised by God (Acts 2:24)</td>
+    </tr>
+    <tr style="border-bottom:0.5px solid rgba(255,255,255,0.06);">
+      <td style="padding:0.75rem 1rem;color:var(--text-primary);">Visibility</td>
+      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">Invisible (Colossians 1:15; Exodus 33:20)</td>
+      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">Seen, touched, lived among people</td>
+    </tr>
+    <tr style="border-bottom:0.5px solid rgba(255,255,255,0.06);">
+      <td style="padding:0.75rem 1rem;color:var(--text-primary);">Knowledge</td>
+      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">All-knowing (Psalm 147:5; Malachi 3:6)</td>
+      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">"Not even the Son" knows the hour (Mark 13:32); grew in wisdom (Luke 2:52)</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Based on these textual contrasts — the plain testimony of Scripture — Jesus does not fit the scriptural definition of God. He fits the scriptural definition of the <strong>Son of God</strong>: a divinely appointed, uniquely created, perfectly obedient Messiah and mediator between God and humanity.</p>
+
+<h2>The Apostolic Foundation — What They Actually Wrote</h2>
+
+<p>Not a single apostle ever wrote the phrase "God the Son" in any epistle. Not once. Search the entire New Testament. What they consistently and exclusively wrote was:</p>
 
 <ul style="margin:1.2rem 0 1.2rem 1.5rem;color:var(--text-secondary);">
   <li style="margin-bottom:0.5rem;"><strong style="color:var(--text-primary);">God the Father</strong> — always</li>
   <li style="margin-bottom:0.5rem;"><strong style="color:var(--text-primary);">Son of God</strong> — always</li>
-  <li style="margin-bottom:0.5rem;"><strong style="color:var(--text-primary);">Holy Spirit / Spirit of God</strong> — always</li>
+  <li style="margin-bottom:0.5rem;"><strong style="color:var(--text-primary);">Holy Spirit / Spirit of God / God's Spirit</strong> — always</li>
 </ul>
 
-<p>The word "Trinity" appears nowhere in Scripture. The phrase "God the Son" appears nowhere in Scripture. These are theological constructions introduced centuries after the apostles. The Reformation challenged much of Catholic tradition — but retained this particular doctrine without examining it against the plain testimony of the apostles themselves.</p>
+<p>The word "Trinity" appears nowhere in Scripture. "God the Son" appears nowhere in Scripture. "Godhead" as a three-person construct appears nowhere in Scripture. These are theological constructions introduced centuries after the apostles — and adopted wholesale by the Reformation, which challenged much of Catholic tradition but retained this doctrine without subjecting it to the plain testimony of the twelve.</p>
 
-<blockquote>"And this is eternal life, that they may know You, the only true God, and Jesus Christ whom You have sent." — John 17:3 NKJV</blockquote>
+<blockquote>"Come out of her, my people, that ye be not partakers of her sins, and that ye receive not of her plagues." — Revelation 18:4 KJV</blockquote>
+
+<p>The revolution started by Martin Luther still continued the Catholic belief in a three-person God. Using words no apostle or prophet ever uttered — <em>God the Father, God the Son, God the Holy Spirit</em> — while the Bible consistently and exclusively speaks of God the Father, the Son of God, and the Spirit of God. These are not the same constructions. They represent a fundamentally different understanding of who God is.</p>
+
+<h2>Jesus Set the Example — Not the Object of Worship</h2>
+
+<blockquote>"To this you were called, because Christ suffered for you, leaving you an example, that you should follow in his steps." — 1 Peter 2:21</blockquote>
+
+<p>Jesus, as a perfect human on earth, set an example for us to follow. He gave His God and Father exclusive devotion — and taught others to do the same:</p>
+
+<blockquote>"Jesus said, 'Do not hold on to me, for I have not yet ascended to the Father. Go instead to my brothers and tell them, I am ascending to my Father and your Father, to my God and your God.'" — John 20:17</blockquote>
+<blockquote>"But the hour is coming, and is now here, when the true worshipers will worship the Father in spirit and truth, for the Father is seeking such people to worship him." — John 4:23–24</blockquote>
+
+<p>When someone believes in the Trinity, the main obstacle they face is this: they are not worshipping God in spirit and truth. Their God is a triune, three-in-one construction — a God no apostle, no prophet, no Israelite, and not Jesus Himself ever described or taught. Jesus gave us clarity. The Father is the object of worship. Jesus is the way to the Father.</p>
+
+<h2>A Call to Unity — Ephesians 4:11–13</h2>
+
+<p>This is not a call to division. It is a call to return. God Himself gave the church apostles, prophets, evangelists, pastors and teachers for one specific purpose:</p>
+
+<blockquote>"For the perfecting of the saints, for the work of the ministry, for the edifying of the body of Christ: till we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fullness of Christ." — Ephesians 4:12–13 KJV</blockquote>
+
+<p>Until all denominations come to the <strong>unity of the faith and the knowledge of the Son of God</strong> — not "God the Son" — the body of Christ remains divided. That unity is not found by softening the truth. It is found by returning to the apostolic foundation.</p>
 
 <h2>Conclusion</h2>
 
-<p>Based on the plain testimony of Scripture — not the interpretations of theologians, not the creeds of councils, not the traditions of denominations — the conclusion is this:</p>
+<p>Based on the plain testimony of Scripture — not the interpretations of theologians, not the creeds of fourth-century councils, not the traditions passed down through Catholic and Protestant institutions — the conclusion is clear:</p>
 
-<p><strong>Jesus is not God. Jesus is the Son of God.</strong> He is the promised Messiah, the appointed High Priest, the resurrected Lord, the coming King — divinely chosen, uniquely born, perfectly obedient, and exalted to the right hand of the Father. He is to be honoured, followed and proclaimed. But the One to whom he prays, whom he calls Father, whom he calls "my God" — that is the Almighty, the only true God, the God of Abraham, Isaac and Jacob.</p>
+<p><strong>Jesus is not God. Jesus is the Son of God.</strong></p>
+
+<p>He is the promised Messiah, the appointed High Priest, the resurrected Lord, the coming King — divinely foreknown, uniquely born, perfectly obedient, and exalted to the right hand of the Father as Saviour and Ruler of the world. He is to be honoured, followed, obeyed and proclaimed. But the One to whom He prays, whom He calls Father, whom He explicitly calls <em>"my God"</em> — that is the Almighty. The only true God. The God of Abraham, Isaac and Jacob.</p>
 
 <blockquote>"The God of Abraham, Isaac, and Jacob, the God of our fathers, glorified His Servant Jesus." — Acts 3:13 NKJV</blockquote>
 
-<p>Peter — who walked with Jesus, who was filled with the Holy Spirit, who stood before thousands on the day of Pentecost — called Jesus God's <em>Servant</em>. Not God. The Servant of God, glorified by God.</p>
+<p>Peter — who walked with Jesus, who received the Holy Spirit at Pentecost, who stood before thousands and proclaimed the risen Christ — called Jesus God's <em>Servant</em>. Not God. The Servant of God, glorified by God. That is the apostolic confession. That is where we stand.</p>
 
-<p>Until the whole church comes to the unity of the faith and the knowledge of the <em>Son of God</em> — not "God the Son" — we will continue to labour in this clarifying work. Not with anger, not with pride, but with the sobriety that comes from knowing that millions are watching, and eternity is at stake.</p>
+<blockquote>"And this is eternal life, that they may know You, the only true God, and Jesus Christ whom You have sent." — John 17:3 NKJV</blockquote>
 
-<p><em>Blessed be God our Father, creator of heaven and earth, and our Lord Jesus Christ whom He appointed as Saviour, raised from the dead, and exalted to His right hand to rule in heaven and on earth. Amen.</em></p>
+<p>Two persons. One eternal God. One sent Son. This is not confusion — this is clarity. Until the whole church comes to the unity of the faith and of the knowledge of the Son of God, we will continue this work. Not with anger. Not with pride. But with the sobriety that comes from knowing that millions are watching, that eternity is at stake, and that the truth is worth every word.</p>
+
+<p><em>Blessed be God our Father, creator of heaven and earth — and our Lord Jesus Christ, whom He approved as Saviour, raised from the dead, and lifted high to sit at His right hand to rule in heaven and on earth. Amen.</em></p>
     `
   },
   {
