@@ -43,7 +43,7 @@ section{padding:7rem 2rem;}
 .container{max-width:1100px;margin:0 auto;}
 .section-label{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:0.75rem;}
 .section-label::before{content:'';display:block;width:24px;height:0.5px;background:var(--gold);}
-.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;line-height:1.15;margin-bottom:1.5rem;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,6vw,3.2rem);font-weight:300;line-height:1.15;margin-bottom:1.5rem;}
 .section-title em{font-style:italic;color:var(--gold);}
 .about{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);border-bottom:0.5px solid var(--border-subtle);}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
@@ -154,18 +154,24 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
   section{padding:4rem 1.2rem;}
   .hero{padding:6rem 1.2rem 3rem;}
   .verse-float{display:none;}
+  .section-label{font-size:0.65rem;letter-spacing:0.16em;}
+  .section-title{font-size:1.8rem !important;line-height:1.2;}
   .about-grid{grid-template-columns:1fr;gap:2rem;}
   .dual-verse{margin-top:0;}
   .beliefs-grid{grid-template-columns:1fr;}
+  .belief-card h3{font-size:1.2rem;}
   .gather-flex{flex-direction:column;gap:2rem;}.gather-places{flex:none;width:100%;grid-template-columns:1fr 1fr;}
   .photo-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:160px 160px 160px;}.photo-slot.large{grid-row:auto;}
   .footer-grid{grid-template-columns:1fr 1fr;gap:1.5rem;}.footer-brand{grid-column:1/-1;}
   .practice-row{grid-template-columns:1fr;}.practice-label{border-right:none;border-bottom:0.5px solid var(--border-subtle);padding-bottom:0.5rem;}
+  .practice-label h3{font-size:1.1rem;}
   .blog-grid{grid-template-columns:1fr;}.blog-card.featured{grid-row:auto;}
+  .blog-card h3{font-size:1.1rem !important;}
   .footer-bottom{flex-direction:column;gap:0.5rem;text-align:center;}
   .join-form{flex-direction:column;}.join-form input,.join-form button{width:100%;}
   .hero-verse{font-size:1rem;padding-left:1rem;}
   .community-intro{margin-bottom:2rem;}
+  .join-title{font-size:2rem !important;}
 }
 </style>
 </head>
