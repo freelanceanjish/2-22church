@@ -149,7 +149,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:#F0EAD6;text-decoration:none;letter-spacing:0.06em;padding:0.7rem 0;border-bottom:0.5px solid rgba(255,255,255,0.06);width:100%;text-align:center;}
 .mobile-menu a:hover{color:#C9A84C;}
 .mobile-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:#6B6358;font-size:1.8rem;cursor:pointer;line-height:1;}
-@media(max-width:1100px){nav{padding:1rem 1.5rem;}.nav-links{display:none;}.nav-cta{display:none;}.nav-hamburger{display:flex;}}
+@media(max-width:860px){nav{padding:1rem 1.5rem;}.nav-links{display:none;}.nav-cta{display:none;}.nav-hamburger{display:flex;}}
 
 </style>
 </head>
@@ -162,7 +162,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     <li><a href="blog.html">Blog</a></li>
     <li><a href="references.html">Resources</a></li>
     <li><a href="project314.html">God of Pi</a></li>
-    <li><a href="cosmology.html" class="active">Biblical Cosmology</a></li>
+    <li><a href="cosmology.html" class="active">Cosmology</a></li>
     <li><a href="old-maps.html">Old Maps</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
@@ -172,13 +172,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 </nav>
 <div class="mobile-menu" id="mobile-menu">
   <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
-  <a href="index.html">Foundation</a>
-  <a href="blog.html">Blog</a>
-  <a href="references.html">Resources</a>
-  <a href="project314.html">God of Pi</a>
-  <a href="cosmology.html">Biblical Cosmology</a>
-  <a href="old-maps.html">Old Maps</a>
-  <a href="index.html#join" style="color:#C9A84C;">Connect</a>
+  <a href="index.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">Foundation</a>
+  <a href="blog.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">Blog</a>
+  <a href="references.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">Resources</a>
+  <a href="project314.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="cosmology.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">Biblical Cosmology</a>
+  <a href="old-maps.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">Old Maps</a>
+  <a href="index.html#join" style="color:#C9A84C;" onclick="document.getElementById('mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
 
@@ -545,7 +545,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
         <li><a href="blog.html">Blog</a></li>
         <li><a href="references.html">Resources</a></li>
         <li><a href="project314.html">God of Pi</a></li>
-        <li><a href="cosmology.html">Biblical Cosmology</a></li>
+        <li><a href="cosmology.html">Cosmology</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -574,5 +574,21 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   </div>
 </footer>
 
+<script>
+document.addEventListener('click', function(e) {
+  var menu = document.getElementById('mobile-menu');
+  var hamburger = document.querySelector('.nav-hamburger');
+  if (menu && menu.classList.contains('open')) {
+    if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+      menu.classList.remove('open');
+    }
+  }
+});
+document.querySelectorAll('.mobile-menu a').forEach(function(link) {
+  link.addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.remove('open');
+  });
+});
+</script>
 </body>
 </html>
