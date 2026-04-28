@@ -17,6 +17,75 @@
 
 const POSTS = [
   {
+    id: "just-reasonable-mind-devout-life-francis-de-sales",
+    title: "A Just & Reasonable Mind in the Devout Life",
+    date: "28 April 2026",
+    category: "Reflection",
+    excerpt: "St. Francis de Sales teaches that devotion does not require us to abandon reasonableness or gentleness of spirit — and that at the heart of every devout life is the command Jesus called greatest of all: love your neighbour as yourself.",
+    image: "https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=900&q=80",
+    content: `
+<p><em>"Devotion must be adapted to the strength, the employment, and the duties of each individual."</em> So wrote St. Francis de Sales in his masterwork, <em>Introduction to the Devout Life</em> — and in these words lies one of the most overlooked truths of the Christian walk: that a life given to God is not a life stripped of reason, proportion, or gentleness. It is, in fact, a life made more fully and nobly human.</p>
+
+<h2>Who Was Francis de Sales?</h2>
+
+<p>Francis de Sales (1567–1622) was a Bishop of Geneva, a Doctor of the Church, and one of the most tenderly wise spiritual directors in Christian history. He wrote at a time of fierce religious conflict, and his answer to that conflict was not theological weaponry — it was charity, patience, and the quiet transformation of the ordinary life into a vessel of divine love.</p>
+
+<p>His <em>Introduction to the Devout Life</em>, first published in 1609, was revolutionary in one specific sense: it was written not for monks and nuns, but for ordinary people living in the world — merchants, mothers, soldiers, servants. It argued that holiness was not the exclusive property of the cloister. It belonged to every soul willing to pursue it honestly in their actual circumstances.</p>
+
+<h2>Preserving a Just and Reasonable Mind</h2>
+
+<p>One of Francis's most striking teachings is his insistence on the preservation of what he calls <em>a just and reasonable mind</em> in the devout life. By this he means something precise and practical: the person growing in devotion must not become irritable, excessive, harsh in judgement, or unbalanced in their religious exercises.</p>
+
+<p>He observed that many people, in their early fervour, become so intense in their piety that they lose the very gentleness and proportion that devotion is supposed to produce. They fast to the point of uselessness. They pray so long that they neglect their families. They become so absorbed in religious feeling that they grow cold toward the actual human beings around them. Francis regarded this not as holiness, but as spiritual disorder.</p>
+
+<blockquote>"Do not lose your interior peace for anything whatsoever, even if your whole world seems upset. If you find that you have strayed from shelter, lead your heart back to peace tranquilly." — St. Francis de Sales</blockquote>
+
+<p>The just and reasonable mind, for Francis, is one that holds all things in proportion. It is not lax — it takes virtue seriously and pursues it faithfully. But it does not confuse spiritual intensity with spiritual maturity. It knows that the goal of all devotion is love, and that love, to be real, must be expressed toward the actual people in one's actual life.</p>
+
+<h2>Devotion in the Ordinary</h2>
+
+<p>Francis is especially arresting in the way he situates devotion within the textures of ordinary life. A shoemaker who prays while stitching leather, a mother who offers her sleepless nights for God's glory, a merchant who conducts his trade with honest weights and a generous hand — these, for Francis, are as truly devout as any monk on a monastery hill.</p>
+
+<p>This was a radical claim in his day. It remains a quietly challenging one in ours. It means that the arena in which we are called to be holy is not a chapel apart from life, but the very life we are already living: the kitchen, the office, the difficult relationship, the season of grief, the moment of temptation at noon on a Tuesday.</p>
+
+<blockquote>"Every vocation becomes more agreeable when united with devotion. Care of one's family is rendered more peaceable, love of husband and wife more sincere, service to one's prince more faithful, and every type of employment more pleasant and agreeable." — St. Francis de Sales</blockquote>
+
+<p>What makes this possible, Francis argues, is precisely the just and reasonable mind — a mind not easily disturbed, not given to extremes, not so heavenly that it becomes of no earthly use. The devout person is, in a word, <em>present</em>: present to God, and present to the people around them.</p>
+
+<h2>The Golden Rule and the Heart of the Devout Life</h2>
+
+<p>All of Francis's teaching flows toward what he recognised as the irreducible centre of Christian life — the command that Jesus himself called the second-greatest commandment, inseparable from the first:</p>
+
+<blockquote>"A new command I give you: Love one another. As I have loved you, so you must love one another." — John 13:34</blockquote>
+
+<blockquote>"So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets." — Matthew 7:12</blockquote>
+
+<p>This is the Golden Rule — and Jesus did not offer it as one teaching among many. He offered it as a summary. <em>This sums up the Law and the Prophets.</em> The entire moral structure of the Old Testament, Jesus says, can be gathered into this one principle: treat others as you wish to be treated. Love your neighbour as yourself.</p>
+
+<p>Francis de Sales understood that this commandment was not a sentiment — it was a discipline. To love your neighbour as yourself requires the very qualities he spent his life cultivating and teaching: patience, gentleness, proportionality, the willingness to bear with imperfection in others because you are bearing with it in yourself.</p>
+
+<h2>Love Thy Neighbour — The Whole Calling in Four Words</h2>
+
+<p>The Apostle Paul made the connection explicit:</p>
+
+<blockquote>"The commandments… are summed up in this one command: 'Love your neighbour as yourself.' Love does no harm to a neighbour. Therefore love is the fulfilment of the law." — Romans 13:9–10</blockquote>
+
+<p>And John, the apostle of love, put it most starkly of all:</p>
+
+<blockquote>"Whoever claims to love God yet hates a brother or sister is a liar. For whoever does not love their brother and sister, whom they have seen, cannot love God, whom they have not seen." — 1 John 4:20</blockquote>
+
+<p>This is the final verdict Francis de Sales delivers, in his own gentle way, throughout the <em>Introduction to the Devout Life</em>. All the spiritual exercises — the meditation, the examination of conscience, the reception of the sacraments, the cultivation of virtues — are not ends in themselves. They are means. The end is love: the love of God expressed in the love of the neighbour who stands before you, who needs something from you today, who is — however inconveniently — the face of Christ.</p>
+
+<h2>A Word for Our Community</h2>
+
+<p>At 2:22 Church we have no elaborate spiritual programmes to sell you. But we do hold, with Francis, that the devout life is entirely possible — and entirely necessary — in the midst of ordinary existence. You do not need a building, a certificate, or a title. You need a just and reasonable mind, a heart oriented toward God, and eyes open to your neighbour.</p>
+
+<p>Start there. That is where Jesus started, and where every faithful disciple since has had to return, again and again, when the noise of religion threatened to drown out the simplicity of love.</p>
+
+<blockquote>"You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the first and greatest commandment. And the second is like it: You shall love your neighbour as yourself. On these two commandments hang all the Law and the Prophets." — Matthew 22:37–40</blockquote>
+    `
+  },
+  {
     id: "was-jesus-god-a-biblical-examination",
     title: "Was Jesus God? A Biblical Examination",
     date: "22 April 2026",
