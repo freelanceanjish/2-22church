@@ -108,6 +108,24 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 
 .mobile-menu a:hover{color:var(--gold);}
 .mobile-menu .mobile-cta{font-family:'DM Sans',sans-serif;font-size:0.85rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.85rem 2.5rem;border-radius:2px;margin-top:1rem;}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(13,17,23,0.92);backdrop-filter:blur(16px);border-bottom:0.5px solid rgba(201,168,76,0.18);}
+.nav-logo{text-decoration:none;flex-shrink:0;}
+.nav-logo img{height:1.9rem;width:auto;display:block;}
+.nav-links{display:flex;gap:1.4rem;list-style:none;}
+.nav-links a{font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:#A8A090;text-decoration:none;transition:color 0.2s;white-space:nowrap;}
+.nav-links a:hover,.nav-links a.active{color:#C9A84C;}
+.nav-cta{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#0D1117;background:#C9A84C;padding:0.5rem 1rem;border-radius:2px;flex-shrink:0;text-decoration:none;font-weight:500;white-space:nowrap;}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;flex-shrink:0;}
+.nav-hamburger span{display:block;width:22px;height:1px;background:#C9A84C;}
+.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,17,23,0.98);z-index:150;flex-direction:column;align-items:center;justify-content:flex-start;padding:5rem 2rem 3rem;overflow-y:auto;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:#F0EAD6;text-decoration:none;letter-spacing:0.06em;padding:0.7rem 0;border-bottom:0.5px solid rgba(255,255,255,0.06);width:100%;text-align:center;}
+.mobile-menu a:hover{color:#C9A84C;}
+.mobile-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:#6B6358;font-size:1.8rem;cursor:pointer;line-height:1;}
+@media(max-width:1100px){nav{padding:1rem 1.5rem;}.nav-links{display:none;}.nav-cta{display:none;}.nav-hamburger{display:flex;}}
+
 </style>
 </head>
 <body>
@@ -126,7 +144,6 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
     <span></span><span></span><span></span>
   </button>
 </nav>
-
 <div class="mobile-menu" id="mobile-menu">
   <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
   <a href="index.html">Foundation</a>
@@ -134,8 +151,9 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
   <a href="references.html">Resources</a>
   <a href="project314.html">God of Pi</a>
   <a href="cosmology.html">Biblical Cosmology</a>
-  <a href="index.html#join" style="color:var(--gold);">Connect</a>
+  <a href="index.html#join" style="color:#C9A84C;">Connect</a>
 </div>
+
 
 <div id="post-content"></div>
 <div id="more-section"></div>
