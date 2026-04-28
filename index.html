@@ -231,57 +231,63 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 
 
+
+
+
 /* ── HERO ── */
 .hero{position:relative;width:100%;height:100vh;min-height:600px;background:var(--deep);overflow:hidden;display:flex;align-items:center;justify-content:center;}
 #sunflower-bg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;}
 .h-num{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:normal;color:var(--gold);line-height:1;display:flex;align-items:center;}
 .h-sep{display:inline-block;width:1.5px;align-self:stretch;background:linear-gradient(to bottom,transparent,var(--gold) 28%,var(--gold) 72%,transparent);opacity:.3;margin:0 5px;}
 .h-church{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;color:var(--text-secondary);letter-spacing:.08em;}
-.hv-accent{width:22px;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);flex-shrink:0;}
-.hv-ref{font-size:0.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-align:center;line-height:1.5;}
-.hv-bar{width:0.5px;height:18px;background:linear-gradient(to bottom,transparent,rgba(201,168,76,.3),transparent);flex-shrink:0;}
-.hv-text{font-family:'Cormorant Garamond',serif;font-size:clamp(0.8rem,1.8vmin,1rem);font-style:italic;color:rgba(240,234,214,.72);line-height:1.7;text-align:center;}
+.hv-accent{width:20px;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);flex-shrink:0;}
+.hv-ref{font-size:0.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);text-align:center;line-height:1.5;}
+.hv-bar{width:0.5px;height:16px;background:linear-gradient(to bottom,transparent,rgba(201,168,76,.3),transparent);flex-shrink:0;}
+.hv-text{font-family:'Cormorant Garamond',serif;font-size:0.85rem;font-style:italic;color:rgba(240,234,214,.72);line-height:1.7;text-align:center;}
 
 /* DESKTOP
-   Layout: [verse 18vw] [sunflower 30vw] [verse 18vw] centred in a 66vw row
-   Sunflower R = 15vw (drawn at canvas centre = flex centre)
-   Verse cards sit exactly outside the circle — no overlap possible
+   Fixed proportions matching the approved preview sample.
+   Sunflower drawn at CX=W/2, CY=H/2 with R matching hero-circle size.
+   hero-circle = 320px wide = 2*R → R = 160px.
+   Verse cards = 130px wide each, sitting flush outside circle.
+   Total row = 130+320+130 = 580px — fits any desktop.
 */
-.hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:3vmin;}
-.hd-row{display:flex;align-items:center;gap:0;}
+.hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:28px;}
+.hd-row{display:flex;align-items:stretch;gap:0;}
 .hd-verse-left,.hd-verse-right{
-  width:16vw;min-width:120px;max-width:200px;
-  height:30vw;max-height:360px;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.8rem;
+  width:130px;height:320px;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:.7rem;
   flex-shrink:0;
 }
 .hd-centre{
-  width:30vw;min-width:260px;max-width:460px;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  width:320px;height:320px;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
   flex-shrink:0;
 }
-.hd-centre .h-num{font-size:clamp(3rem,7vw,6rem);}
-.hd-centre .h-church{font-size:clamp(1.1rem,2.5vw,2rem);margin-top:6px;}
+.hd-centre .h-num{font-size:4.8rem;}
+.hd-centre .h-church{font-size:1.6rem;margin-top:6px;}
 .hd-btns{display:flex;gap:1rem;}
 .hd-btns .btn-primary,.hd-btns .btn-ghost{font-size:0.78rem;padding:0.8rem 2rem;}
 
 /* TABLET */
 .hero-tablet{display:none;flex-direction:column;align-items:center;justify-content:center;gap:2rem;z-index:2;padding:2rem;width:100%;}
-.ht-centre .h-num{font-size:3.5rem;}
+.ht-centre .h-num{font-size:3.2rem;}
 .ht-centre .h-church{font-size:1.3rem;margin-top:4px;}
-.ht-bottom{display:flex;width:100%;max-width:420px;}
+.ht-bottom{display:flex;width:100%;max-width:400px;}
 .ht-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:.6rem;padding:0 1rem;}
 .ht-divider{width:0.5px;background:rgba(201,168,76,.2);flex-shrink:0;}
 .ht-btn{font-size:0.65rem;padding:0.6rem 1rem;margin-top:.5rem;text-align:center;display:inline-block;text-decoration:none;}
 
 /* MOBILE */
 .hero-mobile{display:none;flex-direction:column;align-items:center;justify-content:center;gap:0;z-index:2;padding:1.5rem;width:100%;}
-.hero-mobile .h-num{font-size:3rem;margin-bottom:4px;}
+.hero-mobile .h-num{font-size:2.8rem;margin-bottom:4px;}
 .hero-mobile .h-church{font-size:1rem;margin-bottom:1.2rem;}
 .hm-verse{display:flex;flex-direction:column;align-items:center;gap:.4rem;width:100%;margin-bottom:.5rem;}
-.hm-verse .hv-ref{font-size:0.62rem;}
-.hm-verse .hv-text{font-size:0.88rem;}
-.hm-divider{width:36px;height:0.5px;background:linear-gradient(to right,transparent,rgba(201,168,76,.4),transparent);margin:.6rem 0;}
+.hm-verse .hv-ref{font-size:0.6rem;}
+.hm-verse .hv-text{font-size:0.85rem;}
+.hm-divider{width:36px;height:0.5px;background:linear-gradient(to right,transparent,rgba(201,168,76,.4),transparent);margin:.5rem 0;}
 .hm-btns{display:flex;flex-direction:column;gap:.5rem;width:100%;margin-top:1rem;}
 .hm-btn{font-size:0.7rem;padding:0.7rem 0;text-align:center;display:block;text-decoration:none;}
 
@@ -401,6 +407,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     </div>
   </div>
 </section>
+
+
 
 
 
@@ -765,29 +773,30 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
 
 
 
+
 <script>
 (function(){
   var canvas=document.getElementById('sunflower-bg');
   if(!canvas)return;
   var ctx=canvas.getContext('2d');
   var PHI=(1+Math.sqrt(5))/2,GA=2*Math.PI*(2-PHI),N=610,frame=0;
-  var W,H,CX,CY,R,AM,SM;
+  var W,H;
   function setup(){
     W=window.innerWidth;H=window.innerHeight;
     canvas.width=W;canvas.height=H;
-    var isDesktop=W>=860,isTablet=W>=540&&W<860;
-    CX=W/2;CY=H/2;
-    /* R = 15vw — matches hd-centre width of 30vw (diameter) */
-    if(isDesktop){R=W*0.15;AM=1.0;SM=1.0;}
-    else if(isTablet){R=Math.min(W,H)*0.20;AM=0.6;SM=0.85;}
-    else{R=Math.min(W,H)*0.22;AM=0.35;SM=0.7;}
   }
   function draw(){
     ctx.clearRect(0,0,W,H);
+    var isDesktop=W>=860,isTablet=W>=540&&W<860;
+    var R,AM,SM;
+    if(isDesktop){R=160;AM=1.0;SM=1.0;}
+    else if(isTablet){R=100;AM=0.6;SM=0.85;}
+    else{R=80;AM=0.35;SM=0.7;}
+    var cx=W/2,cy=H/2;
     for(var i=0;i<N;i++){
       var r=R*Math.sqrt(i/N),a=i*GA+frame*0.0005,frac=i/N;
       ctx.beginPath();
-      ctx.arc(CX+r*Math.cos(a),CY+r*Math.sin(a),(0.9+frac*2.4)*SM,0,Math.PI*2);
+      ctx.arc(cx+r*Math.cos(a),cy+r*Math.sin(a),(0.9+frac*2.4)*SM,0,Math.PI*2);
       ctx.fillStyle='hsla(42,'+(70-frac*18)+'%,'+(40+frac*28)+'%,'+((0.05+frac*0.36)*AM)+')';
       ctx.fill();
     }
