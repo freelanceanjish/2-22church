@@ -20,8 +20,8 @@
 html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-primary);overflow-x:hidden;line-height:1.7;}
 
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:flex;align-items:center;justify-content:space-between;background:rgba(13,17,23,0.92);backdrop-filter:blur(16px);border-bottom:0.5px solid var(--border);}
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1.2rem 3rem;display:flex;align-items:center;justify-content:space-between;background:rgba(13,17,23,0.92);backdrop-filter:blur(16px);border-bottom:0.5px solid var(--border);}
 .nav-logo{text-decoration:none;}
 .nav-logo img{height:2rem;width:auto;display:block;}
 .nav-links{display:flex;gap:2.5rem;list-style:none;}
@@ -30,94 +30,144 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:
 .nav-cta{font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.55rem 1.4rem;border-radius:2px;text-decoration:none;font-weight:500;transition:background 0.2s;}
 .nav-cta:hover{background:var(--gold-light);}
 
-/* HERO */
-.hero{min-height:82vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:9rem 2rem 5rem;position:relative;overflow:hidden;}
-.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 40%,rgba(201,168,76,0.06) 0%,transparent 70%);}
-.pi-symbol{font-family:'Cormorant Garamond',serif;font-size:clamp(8rem,20vw,18rem);font-weight:300;color:var(--gold);opacity:0.07;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);user-select:none;line-height:1;}
-.hero-eyebrow{font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;position:relative;display:flex;align-items:center;gap:1rem;}
-.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:40px;height:0.5px;background:var(--gold);opacity:0.45;}
-.hero-label{font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-muted);margin-bottom:1rem;position:relative;}
-.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,8vw,7rem);font-weight:300;line-height:1;position:relative;margin-bottom:1rem;}
+/* ── HERO — YouTube background ── */
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:9rem 2rem 5rem;overflow:hidden;}
+
+/* YouTube iframe sits behind everything */
+#yt-bg-wrap{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden;}
+#yt-bg-wrap iframe{
+  position:absolute;
+  top:50%;left:50%;
+  /* oversized so it fills regardless of aspect ratio */
+  width:177.78vh; /* 16/9 * 100vh */
+  height:56.25vw; /* 9/16 * 100vw */
+  min-width:100%;
+  min-height:100%;
+  transform:translate(-50%,-50%);
+  border:none;
+}
+
+/* layered overlays */
+.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(to bottom,rgba(13,17,23,0.72) 0%,rgba(13,17,23,0.52) 40%,rgba(13,17,23,0.82) 100%);}
+.hero-overlay2{position:absolute;inset:0;z-index:2;background:radial-gradient(ellipse 60% 50% at 50% 40%,rgba(201,168,76,0.05) 0%,transparent 70%);}
+
+.hero-content{position:relative;z-index:3;}
+.hero-badge{display:inline-block;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);border:0.5px solid var(--border);padding:0.4rem 1rem;border-radius:2px;margin-bottom:1.5rem;}
+.hero-eyebrow{font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;justify-content:center;gap:1rem;}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:36px;height:0.5px;background:var(--gold);opacity:0.5;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,9vw,8rem);font-weight:300;line-height:1;margin-bottom:0.6rem;}
 .hero h1 em{font-style:italic;color:var(--gold);}
-.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(1.2rem,3vw,2rem);font-weight:300;font-style:italic;color:var(--text-secondary);margin-bottom:2.5rem;position:relative;max-width:700px;}
-.hero-verse{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;color:var(--text-secondary);border-left:2px solid var(--gold);padding-left:1.2rem;text-align:left;max-width:480px;margin:0 auto 3rem;position:relative;line-height:1.7;}
-.hero-verse cite{font-family:'DM Sans',sans-serif;font-style:normal;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.5rem;}
-.hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,2.5vw,1.7rem);font-weight:300;font-style:italic;color:var(--text-secondary);max-width:700px;margin:0 auto 2rem;}
+.hero-verse{font-family:'Cormorant Garamond',serif;font-size:1rem;font-style:italic;color:rgba(240,234,214,0.75);border-left:1.5px solid var(--gold);padding-left:1.2rem;text-align:left;max-width:460px;margin:0 auto 2.5rem;line-height:1.7;}
+.hero-verse cite{font-family:'DM Sans',sans-serif;font-style:normal;font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.4rem;}
+.hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
 .btn-primary{font-size:0.8rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.85rem 2.2rem;border-radius:2px;text-decoration:none;font-weight:500;transition:all 0.2s;display:inline-block;}
 .btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);}
 .btn-ghost{font-size:0.8rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);background:transparent;padding:0.85rem 2.2rem;border-radius:2px;border:0.5px solid var(--border);text-decoration:none;transition:all 0.2s;display:inline-block;}
 .btn-ghost:hover{border-color:var(--gold);background:rgba(201,168,76,0.06);}
+.hero-scroll{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:var(--text-muted);font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;animation:bobble 2.5s ease-in-out infinite;}
+.hero-scroll::after{content:'';display:block;width:0.5px;height:36px;background:linear-gradient(to bottom,var(--gold-dark),transparent);}
+@keyframes bobble{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(7px);}}
 
-/* SECTIONS */
+/* ── SHARED ── */
 section{padding:7rem 2rem;}
 .container{max-width:1100px;margin:0 auto;}
 .section-label{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:0.75rem;}
 .section-label::before{content:'';display:block;width:24px;height:0.5px;background:var(--gold);}
 .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;line-height:1.15;margin-bottom:1.5rem;}
 .section-title em{font-style:italic;color:var(--gold);}
-
-/* DISCOVERY */
-.discovery{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);border-bottom:0.5px solid var(--border-subtle);}
-.disc-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
-.disc-text p{color:var(--text-secondary);font-size:1rem;margin-bottom:1.2rem;line-height:1.85;}
-.disc-text p strong{color:var(--text-primary);font-weight:500;}
-.pi-card{background:var(--surface);border:0.5px solid var(--border);padding:2.5rem;text-align:center;}
-.pi-big{font-family:'Cormorant Garamond',serif;font-size:7rem;font-weight:300;color:var(--gold);line-height:1;margin-bottom:0.5rem;}
-.pi-eq{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-style:italic;color:var(--text-secondary);margin-bottom:1.5rem;}
-.pi-rule{height:0.5px;background:linear-gradient(to right,transparent,var(--border) 20%,var(--border) 80%,transparent);margin:1.5rem 0;}
-.pi-fact{font-size:0.85rem;color:var(--text-muted);line-height:1.75;}
-.pi-fact strong{color:var(--gold);font-weight:500;}
-
-/* LOGO FEATURE */
-.logo-feature{background:var(--deep);padding:5rem 2rem;}
-.logo-wrap{display:flex;flex-direction:column;align-items:center;gap:2rem;}
-.p314-logo{max-width:320px;width:100%;filter:brightness(1.05);}
-.logo-caption{font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);text-align:center;}
-
-/* WHAT SECTION */
-.what{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);border-bottom:0.5px solid var(--border-subtle);}
-.what-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5px;background:var(--border);border:0.5px solid var(--border);margin-top:3.5rem;}
-.what-card{background:var(--surface);padding:2rem 1.8rem 2.4rem;position:relative;}
-.what-card::before{content:attr(data-n);position:absolute;top:1.5rem;right:1.8rem;font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:var(--text-muted);opacity:0.2;line-height:1;}
-.what-card h3{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;margin-bottom:0.75rem;color:var(--text-primary);}
-.what-card p{font-size:0.9rem;color:var(--text-secondary);line-height:1.75;}
-
-/* IMAGES — Tabernacle gallery */
-.gallery{background:var(--deep);padding:5rem 2rem;}
-.img-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:260px 200px;gap:6px;margin-top:2.5rem;}
-.img-slot{overflow:hidden;position:relative;background:var(--surface);border:0.5px solid var(--border);}
-.img-slot.tall{grid-row:1/3;}
-.img-slot img{width:100%;height:100%;object-fit:cover;filter:saturate(0.6) brightness(0.75);transition:filter 0.4s,transform 0.5s;}
-.img-slot:hover img{filter:saturate(0.85) brightness(0.9);transform:scale(1.03);}
-.img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(13,17,23,0.6) 0%,transparent 50%);}
-.img-caption{position:absolute;bottom:0.8rem;left:1rem;font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-light);opacity:0;transition:opacity 0.3s;}
-.img-slot:hover .img-caption{opacity:1;}
-
-/* BOOKS */
-.books{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);border-bottom:0.5px solid var(--border-subtle);}
-.book-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem;}
-.book-card{background:var(--surface);border:0.5px solid var(--border);padding:2rem;}
-.book-tag{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,0.1);padding:0.25rem 0.65rem;border-radius:2px;display:inline-block;margin-bottom:1rem;}
-.book-card h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;margin-bottom:0.75rem;color:var(--text-primary);line-height:1.25;}
-.book-card p{font-size:0.9rem;color:var(--text-secondary);line-height:1.75;}
-
-/* CTA */
-.cta{background:var(--deep);text-align:center;padding:8rem 2rem;}
-.cta-inner{max-width:640px;margin:0 auto;}
-.cta-pi{font-family:'Cormorant Garamond',serif;font-size:5rem;color:var(--gold);opacity:0.25;line-height:1;margin-bottom:0;font-weight:300;}
-.cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;line-height:1.15;margin-bottom:1rem;}
-.cta h2 em{font-style:italic;color:var(--gold);}
-.cta p{color:var(--text-secondary);font-size:1rem;line-height:1.85;margin-bottom:2.5rem;}
-.cta-url{font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-top:1.5rem;}
-.cta-url a{color:var(--gold);text-decoration:none;border-bottom:0.5px solid var(--border);}
-.cta-url a:hover{border-color:var(--gold);}
-
-/* DIVIDER */
-.golden-divider{display:flex;align-items:center;gap:1rem;margin:3rem 0;}
+.golden-divider{display:flex;align-items:center;gap:1rem;margin:2.5rem 0;}
 .golden-divider::before,.golden-divider::after{content:'';flex:1;height:0.5px;background:var(--border);}
 .golden-divider span{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--gold);opacity:0.6;}
 
-/* FOOTER */
+/* ── ABOUT PROJECT ── */
+.about-project{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);border-bottom:0.5px solid var(--border-subtle);}
+.ap-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.ap-text p{color:var(--text-secondary);font-size:1rem;line-height:1.9;margin-bottom:1.2rem;}
+.ap-text p strong{color:var(--text-primary);font-weight:500;}
+.pi-stat{background:var(--surface);border:0.5px solid var(--border);padding:2.5rem;text-align:center;}
+.pi-num{font-family:'Cormorant Garamond',serif;font-size:6.5rem;font-weight:300;color:var(--gold);line-height:1;}
+.pi-eq{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-style:italic;color:var(--text-secondary);margin:0.4rem 0 1.6rem;}
+.pi-line{height:0.5px;background:var(--border);margin:1.5rem 0;}
+.pi-note{font-size:0.85rem;color:var(--text-muted);line-height:1.8;}
+.pi-note strong{color:var(--gold);}
+blockquote.pull{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--text-primary);line-height:1.7;border-left:2px solid var(--gold);padding-left:1.4rem;margin-top:1.5rem;}
+blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.6rem;}
+
+/* ── TABERNACLE DIAGRAMS — real images from project314.org ── */
+.diagrams{background:var(--deep);padding:7rem 2rem;}
+.diag-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem;}
+.diag-card{background:var(--surface);border:0.5px solid var(--border);overflow:hidden;}
+.diag-img{width:100%;background:var(--deep-mid);display:flex;align-items:center;justify-content:center;padding:1.5rem;min-height:200px;}
+.diag-img img{width:100%;max-height:260px;object-fit:contain;display:block;}
+.diag-body{padding:1.4rem 1.6rem 1.8rem;}
+.diag-label{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;}
+.diag-card h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:400;color:var(--text-primary);margin-bottom:0.6rem;}
+.diag-card p{font-size:0.88rem;color:var(--text-secondary);line-height:1.75;}
+.diag-full{grid-column:1/-1;}
+.diag-full .diag-img{min-height:280px;}
+.diag-full .diag-img img{max-height:320px;}
+
+/* ── AUTHOR ── */
+.author{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);border-bottom:0.5px solid var(--border-subtle);}
+.author-grid{display:grid;grid-template-columns:1fr 2fr;gap:5rem;align-items:start;}
+.author-left{position:sticky;top:7rem;}
+.author-portrait{background:var(--surface);border:0.5px solid var(--border);padding:2rem;text-align:center;}
+.author-initial{font-family:'Cormorant Garamond',serif;font-size:5rem;font-weight:300;color:var(--gold);opacity:0.7;line-height:1;margin-bottom:0.5rem;}
+.author-name{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--text-primary);margin-bottom:0.3rem;}
+.author-title{font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;}
+.author-line{height:0.5px;background:var(--border);margin:1rem 0;}
+.author-fact{font-size:0.82rem;color:var(--text-muted);line-height:1.6;margin-bottom:0.6rem;}
+.author-fact strong{color:var(--text-secondary);}
+.author-body h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--gold);margin:2rem 0 0.75rem;}
+.author-body h3:first-child{margin-top:0;}
+.author-body p{color:var(--text-secondary);font-size:0.98rem;line-height:1.9;margin-bottom:1rem;}
+.author-body p strong{color:var(--text-primary);font-weight:500;}
+.timeline{margin:1.5rem 0;display:flex;flex-direction:column;gap:0;}
+.tl-item{display:grid;grid-template-columns:80px 1fr;gap:1.2rem;padding:1rem 0;border-bottom:0.5px solid var(--border-subtle);}
+.tl-item:last-child{border-bottom:none;}
+.tl-year{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--gold);font-weight:300;padding-top:2px;}
+.tl-desc{font-size:0.88rem;color:var(--text-secondary);line-height:1.7;}
+.tl-desc strong{color:var(--text-primary);}
+.media-links{display:flex;flex-direction:column;gap:0.5rem;margin-top:1.5rem;}
+.media-link{display:flex;align-items:center;gap:0.8rem;padding:0.85rem 1rem;background:var(--surface);border:0.5px solid var(--border);text-decoration:none;transition:background 0.2s;}
+.media-link:hover{background:var(--surface-light);}
+.media-link svg{flex-shrink:0;}
+.media-link-text{font-size:0.82rem;color:var(--text-secondary);}
+.media-link-title{color:var(--text-primary);font-weight:500;font-size:0.88rem;display:block;margin-bottom:1px;}
+
+/* ── YOUTUBE CHANNEL ── */
+.yt-section{background:var(--deep);padding:7rem 2rem;}
+.yt-desc{max-width:680px;margin-bottom:3rem;}
+.yt-desc p{color:var(--text-secondary);font-size:1rem;line-height:1.85;margin-bottom:1rem;}
+.yt-embed-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border:0.5px solid var(--border);}
+.yt-embed-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;}
+.yt-channel-btn{display:inline-flex;align-items:center;gap:0.7rem;margin-top:1.5rem;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.85rem 1.8rem;border-radius:2px;text-decoration:none;font-weight:500;transition:background 0.2s;}
+.yt-channel-btn:hover{background:var(--gold-light);}
+.yt-channel-btn svg{flex-shrink:0;}
+
+/* ── BOOKS / PRODUCTS ── */
+.products{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);border-bottom:0.5px solid var(--border-subtle);}
+.prod-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem;}
+.prod-card{background:var(--surface);border:0.5px solid var(--border);}
+.prod-img{width:100%;background:var(--deep-mid);display:flex;align-items:center;justify-content:center;padding:2rem;min-height:200px;}
+.prod-img img{width:100%;max-height:220px;object-fit:contain;}
+.prod-body{padding:1.4rem 1.6rem 2rem;}
+.prod-tag{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,0.1);padding:0.25rem 0.65rem;border-radius:2px;display:inline-block;margin-bottom:0.75rem;}
+.prod-card h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:400;color:var(--text-primary);margin-bottom:0.65rem;line-height:1.25;}
+.prod-card p{font-size:0.88rem;color:var(--text-secondary);line-height:1.75;}
+.prod-link{display:inline-block;margin-top:1rem;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:0.5px solid var(--border);padding-bottom:1px;transition:border-color 0.2s;}
+.prod-link:hover{border-color:var(--gold);}
+
+/* ── CTA ── */
+.cta{background:var(--deep);text-align:center;padding:8rem 2rem;}
+.cta-inner{max-width:640px;margin:0 auto;}
+.cta-pi{font-family:'Cormorant Garamond',serif;font-size:6rem;font-weight:300;color:var(--gold);opacity:0.15;line-height:1;user-select:none;}
+.cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;line-height:1.15;margin-bottom:1rem;}
+.cta h2 em{font-style:italic;color:var(--gold);}
+.cta p{color:var(--text-secondary);font-size:1rem;line-height:1.85;margin-bottom:2.5rem;max-width:540px;margin-left:auto;margin-right:auto;}
+
+/* ── FOOTER ── */
 footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);padding:4rem 2rem 2.5rem;}
 .footer-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:0.5px solid var(--border-subtle);}
 .footer-brand p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;max-width:260px;margin-top:1rem;}
@@ -129,13 +179,12 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 .footer-bottom{max-width:1100px;margin:2rem auto 0;display:flex;align-items:center;justify-content:space-between;font-size:0.78rem;color:var(--text-muted);}
 .footer-verse{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.85rem;color:var(--text-muted);}
 
-/* RESPONSIVE */
-@media(max-width:800px){
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
   nav{padding:1rem 1.5rem;}.nav-links{display:none;}.nav-cta{display:none;}
-  .disc-grid{grid-template-columns:1fr;gap:2.5rem;}
-  .what-grid{grid-template-columns:1fr;}
-  .book-grid{grid-template-columns:1fr;}
-  .img-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;}.img-slot.tall{grid-row:auto;}
+  .ap-grid,.author-grid,.diag-grid,.prod-grid{grid-template-columns:1fr;gap:2.5rem;}
+  .author-left{position:static;}
+  .diag-full{grid-column:auto;}
   .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}.footer-brand{grid-column:1/-1;}
   .footer-bottom{flex-direction:column;gap:0.5rem;text-align:center;}
 }
@@ -143,6 +192,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <a href="index.html" class="nav-logo">
     <img src="logo.png" alt="2:22 Church">
@@ -158,184 +208,332 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
   <a href="index.html#join" class="nav-cta">Connect</a>
 </nav>
 
-<!-- HERO -->
+<!-- HERO — YouTube video background 18s–37s loop -->
 <section class="hero">
-  <div class="hero-bg"></div>
-  <div class="pi-symbol">π</div>
-  <div class="hero-label">2:22 Church · Promoted Resource</div>
-  <div class="hero-eyebrow"><span>Project 314</span></div>
-  <h1>God of <em>Pi</em></h1>
-  <p class="hero-sub">What if the number π has been hiding in plain sight inside Moses' Tabernacle texts for thousands of years?</p>
-  <div class="hero-verse">
-    "And thou shalt rear up the Tabernacle according to the fashion thereof which hath been shown thee in the mount."
-    <cite>Exodus 26:30</cite>
+  <div id="yt-bg-wrap">
+    <div id="yt-player"></div>
   </div>
-  <div class="hero-btns">
-    <a href="https://project314.org" target="_blank" rel="noopener" class="btn-primary">Visit Project314.org ↗</a>
-    <a href="#discovery" class="btn-ghost">The Discovery</a>
+  <div class="hero-overlay"></div>
+  <div class="hero-overlay2"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">2:22 Church · Promoted Resource</div>
+    <div class="hero-eyebrow">Project 314 · Tabernacle Research &amp; Restoration</div>
+    <h1>God of <em>Pi</em></h1>
+    <p class="hero-sub">The most accurate ancient approximation of π — hidden inside Moses' Tabernacle texts for 3,500 years</p>
+    <div class="hero-verse">
+      "And thou shalt rear up the Tabernacle according to the fashion thereof which hath been shown thee in the mount."
+      <cite>Exodus 26:30</cite>
+    </div>
+    <div class="hero-btns">
+      <a href="https://project314.org" target="_blank" rel="noopener" class="btn-primary">Visit Project314.org ↗</a>
+      <a href="#discovery" class="btn-ghost">The Discovery</a>
+    </div>
   </div>
+  <div class="hero-scroll">Scroll</div>
 </section>
 
-<!-- DISCOVERY -->
-<section class="discovery" id="discovery">
+<!-- ABOUT PROJECT -->
+<section class="about-project" id="discovery">
   <div class="container">
-    <div class="disc-grid">
-      <div class="disc-text">
+    <div class="ap-grid">
+      <div class="ap-text">
         <div class="section-label">The Discovery</div>
-        <h2 class="section-title">Pi <em>hidden</em> in the Exodus Tabernacle texts</h2>
-        <p>In 2014, engineer Andrew Hoy made a remarkable discovery buried in the Exodus Tabernacle texts: <strong>the most accurate approximation of Pi (π ≈ 3.14) known to the ancient world</strong> — accurate to within 0.05% — encoded in Exodus 26 and 27.</p>
-        <p>This was not a marginal find. The implications reshape everything traditionally assumed about the shape of God's dwelling place. The Tabernacle courtyard was not rectangular. It was <strong>circular</strong> — a dome, a tent, a structure whose very geometry points to an intelligent divine designer.</p>
-        <p>Could an omnipresent God who cannot be contained to three-dimensional space be confined to dwell in a two-dimensional rectangular shape? Project 314 argues — on the basis of the Hebrew Bible texts alone — that the answer is no. The circle, and the mathematics of π, are written into the very fabric of God's house.</p>
+        <h2 class="section-title">Pi <em>hidden</em> in the Exodus Tabernacle</h2>
+        <p>In 2014, engineer Andrew Hoy made a discovery that has been hidden inside the Hebrew Bible for over three thousand years. While studying the Exodus Tabernacle text, he found <strong>the most accurate approximation of Pi (π ≈ 3.14) known to the ancient world</strong> — accurate to within 0.05% — encoded directly in Exodus chapters 26 and 27.</p>
+        <p>The curtain dimensions of the Tabernacle, when joined correctly according to the literal Hebrew instructions, produce a cylindrical assembly measuring <strong>exactly 314 cubits in circumference</strong> — a near-perfect multiple of π × 100. This is not a numerical coincidence. This is the architectural key that unlocks the entire Exodus Tabernacle design.</p>
+        <p>The Tabernacle courtyard was not a rectangle. It was <strong>a circle</strong> — a round, domed, yurt-like structure towering six storeys above the wilderness ground. And it has been <em>lost in translation</em> for over two thousand years.</p>
         <div class="golden-divider"><span>π</span></div>
-        <p>Andrew Hoy founded Project 314 to research, educate, and ultimately restore this lost vision of the Exodus Tabernacle — both mentally, in the minds of the believing community, and one day physically, as a built structure true to the Biblical specifications.</p>
+        <blockquote class="pull">
+          "When I first saw that the total length of the sheet assembly was 314 cubits, something in my head instantly clicked. Right then and there, I knew I had discovered something magnificent."
+          <cite>Andrew Hoy — Project 314</cite>
+        </blockquote>
       </div>
       <div>
-        <div class="pi-card">
-          <div class="pi-big">π</div>
+        <div class="pi-stat">
+          <div class="pi-num">π</div>
           <div class="pi-eq">≈ 314 / 100</div>
-          <div class="pi-rule"></div>
-          <div class="pi-fact">
-            <strong>Exodus 26:7–13 &amp; 27:9–17</strong><br>
-            The curtain dimensions of the Tabernacle encode Pi to within <strong>0.05% accuracy</strong> — the most precise ancient-world approximation known.
+          <div class="pi-line"></div>
+          <div class="pi-note">
+            <strong>Exodus 26:7–13 &amp; 27:9–17</strong><br><br>
+            The eleven curtain sheets, when joined short-edge to short-edge as the Hebrew literally instructs, produce a circumference of <strong>314 cubits</strong> — matching π × 100 to within 0.05% accuracy.<br><br>
+            This is <strong>the most precise ancient-world approximation of Pi</strong> known to exist — more accurate than Egyptian, Babylonian, or Greek records of the same era.<br><br>
+            The courtyard diameter: <strong>100 cubits</strong>.<br>
+            North &amp; south widths each: <strong>50 cubits</strong> (the radius).<br><br>
+            Circumference = π × diameter = 3.14 × 100 = <strong>314 cubits</strong>.
           </div>
-          <div class="pi-rule"></div>
-          <div class="pi-fact" style="margin-top:0.5rem;">
-            Discovery confirmed by engineer <strong>Andrew Hoy</strong>, founder of Project 314 · Tabernacle Research &amp; Restoration
+        </div>
+        <div style="margin-top:1.5rem;background:var(--surface);border:0.5px solid var(--border);padding:1.5rem 1.8rem;">
+          <div class="section-label" style="margin-bottom:0.75rem;">YouTube Channel</div>
+          <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.75;">
+            "Did you know the Exodus Tabernacle was a <strong style="color:var(--text-primary);">round and majestic yurt-like structure, towering 6 storeys</strong> above the ground — instead of a crude rectangular box as traditionally assumed? Project 314 was chartered to reveal these ancient secrets, lost in translation for thousands of years."
+          </p>
+          <a href="https://www.youtube.com/@Project314" target="_blank" rel="noopener" style="display:inline-block;margin-top:1rem;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:0.5px solid var(--border);">Watch on YouTube ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TABERNACLE DIAGRAMS — actual images from project314.org -->
+<section class="diagrams">
+  <div class="container">
+    <div class="section-label">The Evidence</div>
+    <h2 class="section-title">The <em>Tabernacle</em> Diagrams</h2>
+    <p style="color:var(--text-secondary);max-width:640px;margin-bottom:0.5rem;font-size:0.95rem;line-height:1.8;">Every image below is drawn directly from Andrew Hoy's research and the Exodus texts. These are not artistic reconstructions — they are engineering diagrams derived from the original Hebrew.</p>
+
+    <div class="diag-grid" style="margin-top:2.5rem;">
+
+      <!-- Rectangular vs Round curtains comparison -->
+      <div class="diag-card">
+        <div class="diag-img">
+          <img src="http://project314.org/images/betzalel_story/RectangularCurtains.png"
+               alt="Rectangular curtain assembly — traditional assumption"
+               onerror="this.parentElement.innerHTML='<p style=\'color:var(--text-muted);font-size:0.85rem;text-align:center;\'>Diagram: Rectangular Curtain Assembly</p>'">
+        </div>
+        <div class="diag-body">
+          <div class="diag-label">Traditional Model — Assumed</div>
+          <h3>The Rectangular Assembly</h3>
+          <p>The traditional interpretation joins curtains long-edge to long-edge, producing a flat rectangular swatch. This approach leaves two opposing edges unconnected — directly violating the Exodus text which specifies loops on both edges of every sheet.</p>
+        </div>
+      </div>
+
+      <!-- Round curtains -->
+      <div class="diag-card">
+        <div class="diag-img">
+          <img src="http://project314.org/images/about/RoundCurtains.png"
+               alt="Cylindrical curtain assembly — round Tabernacle"
+               onerror="this.parentElement.innerHTML='<p style=\'color:var(--text-muted);font-size:0.85rem;text-align:center;\'>Diagram: Cylindrical Curtain Assembly</p>'">
+        </div>
+        <div class="diag-body">
+          <div class="diag-label">Project 314 — Biblical Model</div>
+          <h3>The Cylindrical Assembly</h3>
+          <p>When joined short-edge to short-edge — exactly as the Hebrew specifies — the eleven curtains form a cylinder. All loop joints are connected. The resulting circumference: <strong>314 cubits</strong>. π × 100. The Tabernacle courtyard is a perfect circle.</p>
+        </div>
+      </div>
+
+      <!-- Pi Ratio diagram — full width -->
+      <div class="diag-card diag-full">
+        <div class="diag-img">
+          <img src="http://project314.org/images/nicepage-images/PIRatio.png"
+               alt="Pi ratio in the Tabernacle"
+               onerror="this.parentElement.innerHTML='<p style=\'color:var(--text-muted);font-size:0.85rem;text-align:center;\'>Diagram: Pi Ratio in the Tabernacle</p>'">
+        </div>
+        <div class="diag-body">
+          <div class="diag-label">The Mathematical Key</div>
+          <h3>314 Cubits — The Pi Constant in Moses' Tabernacle</h3>
+          <p>The circumference of the Tabernacle courtyard amounts to 314 cubits — a near-perfect multiple of the mathematical constant π (Pi). This number, embedded in the very fabric measurements of the Exodus text, is the "Rosetta Stone" of the entire Tabernacle design. Once you see it, every other detail of the Exodus account resolves into coherence.</p>
+        </div>
+      </div>
+
+      <!-- Curtain comparison -->
+      <div class="diag-card">
+        <div class="diag-img">
+          <img src="http://project314.org/images/betzalel_story/CutrainComp.png"
+               alt="Curtain joining comparison"
+               onerror="this.parentElement.innerHTML='<p style=\'color:var(--text-muted);font-size:0.85rem;text-align:center;\'>Diagram: Curtain Joining Comparison</p>'">
+        </div>
+        <div class="diag-body">
+          <div class="diag-label">Two Options</div>
+          <h3>Two Joining Methods — Two Completely Different Structures</h3>
+          <p>A single decision — which edges to join — produces either a flat rectangle or a cylinder. Two shapes. Two applications. Two completely different Tabernacles. The Hebrew text, read literally, specifies only one.</p>
+        </div>
+      </div>
+
+      <!-- Drawing set -->
+      <div class="diag-card">
+        <div class="diag-img">
+          <img src="http://project314.org/images/about/DrawingSet.png"
+               alt="Exodus Engineering Exegesis drawing set"
+               onerror="this.parentElement.innerHTML='<p style=\'color:var(--text-muted);font-size:0.85rem;text-align:center;\'>Diagram: EEE Drawing Set</p>'">
+        </div>
+        <div class="diag-body">
+          <div class="diag-label">Exodus Engineering Exegesis</div>
+          <h3>The Complete Drawing Set</h3>
+          <p>Andrew Hoy distilled his entire Tabernacle exegesis into four pages of engineering drawings — verse-by-verse, with translation clarifications and dimensional analysis. These are available through Project 314 and have been presented to scholars, rabbis, and engineers in the US and Israel.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AUTHOR — Andrew Hoy -->
+<section class="author">
+  <div class="container">
+    <div class="author-grid">
+      <div class="author-left">
+        <div class="section-label">The Author</div>
+        <div class="author-portrait">
+          <div class="author-initial">AH</div>
+          <div class="author-name">Andrew Hoy</div>
+          <div class="author-title">Engineer · Biblical Researcher · Founder of Project 314</div>
+          <div class="author-line"></div>
+          <div class="author-fact"><strong>Background:</strong> Professional Engineer</div>
+          <div class="author-fact"><strong>Discovery:</strong> 2014 — Exodus Pi constant</div>
+          <div class="author-fact"><strong>Project launched:</strong> 3/14/15 — Pi Day of the century</div>
+          <div class="author-fact"><strong>Based:</strong> United States (Milwaukee area)</div>
+          <div class="author-fact"><strong>Israel research trip:</strong> Summer 2016</div>
+          <div class="author-line"></div>
+          <div class="author-fact" style="font-style:italic;color:var(--text-secondary);">"Religion was never intended to be a spectator sport."</div>
+        </div>
+        <div class="media-links" style="margin-top:1.5rem;">
+          <a href="https://project314.org" target="_blank" rel="noopener" class="media-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <div><span class="media-link-title">project314.org</span><span class="media-link-text">Official website</span></div>
+          </a>
+          <a href="https://www.youtube.com/@Project314" target="_blank" rel="noopener" class="media-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            <div><span class="media-link-title">@Project314</span><span class="media-link-text">YouTube channel</span></div>
+          </a>
+          <a href="https://www.facebook.com/RoundTabernacle/" target="_blank" rel="noopener" class="media-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <div><span class="media-link-title">RoundTabernacle</span><span class="media-link-text">Facebook community</span></div>
+          </a>
+          <a href="https://www.patreon.com/project314" target="_blank" rel="noopener" class="media-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><circle cx="14.5" cy="9.5" r="6.5"/><path d="M5.5 21V4"/></svg>
+            <div><span class="media-link-title">Patreon</span><span class="media-link-text">Support the project</span></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="author-body">
+        <h3>Not a theologian. An engineer.</h3>
+        <p>Andrew Hoy does not hold a degree in theology. He is a <strong>professional engineer</strong> — and it was precisely his engineering mindset, his habit of drawing free body diagrams and following specifications to the letter, that led him to see what generations of biblical scholars had missed.</p>
+        <p>He did not set out to make a discovery. He was not even studying the Tabernacle with particular interest. In 2014, following what he describes as a <strong>divine prompting</strong>, he sat down with the Hebrew Exodus text, "put his engineering hat on," and did what his father — also an engineer and professor — had taught him: draw a free body diagram with tender loving care. Use only what the text actually says. Add nothing of your own.</p>
+        <p>What he found changed everything he thought he knew about the house of God.</p>
+
+        <h3>The Discovery</h3>
+        <p>As he carefully inventoried every measurement in the Exodus curtain texts, Hoy noticed that the eleven goat-hair sheets — joined short-edge to short-edge as the Hebrew literally instructs — produced a cylindrical assembly. And the circumference of that cylinder: <strong>314 cubits</strong>.</p>
+        <p>Pi. Encoded in the fabric of Moses' tent. To within 0.05% accuracy. The most precise ancient-world approximation of the constant known to exist — more accurate than the Egyptians, the Babylonians, and the early Greeks. And it had been sitting in plain sight in the Hebrew Bible for three thousand five hundred years.</p>
+        <p>"It is not by accident," Hoy writes, "that there is more Hebrew text describing the Tabernacle tent fabric than there is describing the Ark of the Covenant. The tent curtains weren't made first and foremost for decorative purposes. The secret to the Tabernacle design was never meant to be covered; the Tabernacle's secret <em>is</em> the covering — hidden in plain sight."</p>
+
+        <h3>The Journey</h3>
+        <p>Hoy launched Project 314 on <strong>3/14/15</strong> — the Pi Day of the century — expecting the discovery to propagate rapidly through social media and religious communities. It did not. What followed instead was years of patient, determined work: writing, drawing, presenting, and engaging scholars, rabbis, engineers, and ordinary believers who were willing to test everything for themselves.</p>
+
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-year">2014</div>
+            <div class="tl-desc"><strong>Pi discovered</strong> in Exodus 26–27 while doing an independent Hebrew etymology study. The Tabernacle courtyard circumference = 314 cubits.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">3/14/15</div>
+            <div class="tl-desc"><strong>Project 314 launched publicly</strong> on Pi Day of the century. Four-page Exodus Engineering Exegesis (EEE) drawing set published.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">2015</div>
+            <div class="tl-desc"><strong>First public presentations</strong> at a Feast of Tabernacles gathering in the US. Audience described as "spellbound." No formal rebuttal offered.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">2016</div>
+            <div class="tl-desc"><strong>Internet radio debut</strong> on Rob Skiba's Truth Frequency Radio. <strong>Israel research trip</strong> — presented to religious Jews, rabbis, and archaeologists in Jerusalem, Tiberias, and Shiloh. Featured in <em>Breaking Israel News</em>.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">2017</div>
+            <div class="tl-desc"><strong>Proof-of-concept scale model built</strong> — 22ft diameter, 7ft high at Milwaukee Maker Space, with engineers Brian and Josh. Model confirmed the Exodus specifications are structurally viable. Presented at ASOR conference in Boston.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">2019+</div>
+            <div class="tl-desc"><strong><em>The House of El Shaddai</em> published</strong> — a full comparative analysis of the Round vs Rectangular Tabernacle for English readers. <em>Exploring God's House</em> (Hebrew edition) in development. Tabernacle STEM kit designed and prototyped.</div>
           </div>
         </div>
-        <div style="margin-top:1.5rem;background:var(--surface);border:0.5px solid var(--border);padding:1.5rem;">
-          <p style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;line-height:1.7;color:var(--text-primary);">"I accidentally rediscovered Pi approximated as 314/100 in the Exodus Tabernacle texts, which has been systematically overlooked by scores of generations."</p>
-          <p style="margin-top:0.75rem;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);">Andrew Hoy · Project 314</p>
-        </div>
+
+        <h3>The Resistance</h3>
+        <p>Hoy is candid about the reception. Most institutional experts, he found, are either unable or unwilling to engage the discovery seriously. Some lack the technical training. Some fear the implications for their careers. Some defer automatically to tradition. The pattern is familiar — as he notes, even the returning exiles of Ezra's day, <strong>fully funded and liberated for the task</strong>, refrained from building God's house for over a decade.</p>
+        <p>"I'm not trying to kiss the back of the hand of some shadowy Godfather-esque figure to get permission to operate in his jurisdiction," Hoy writes. "The research stands upon the authority of the word from which it is derived."</p>
+        <p>To date, Hoy reports, no one has formally challenged his exegesis in debate. Those who engage him technically either concede the point or fall silent. The Hebrew text, examined without preconceived assumptions, tells only one story: <strong>God's Tabernacle was round.</strong></p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROJECT LOGO FEATURE -->
-<section class="logo-feature">
+<!-- YOUTUBE CHANNEL -->
+<section class="yt-section">
   <div class="container">
-    <div class="logo-wrap">
-      <img src="http://project314.org/templates/project314_2_22_23/images/Project314_New_Logo2.png"
-           alt="Project 314 Logo"
-           class="p314-logo"
-           onerror="this.style.display='none'">
-      <div class="logo-caption">Project 314 · Tabernacle Research &amp; Restoration · project314.org</div>
+    <div class="section-label">Watch</div>
+    <h2 class="section-title">Project 314 <em>YouTube Channel</em></h2>
+    <div class="yt-desc">
+      <p>Andrew Hoy's YouTube channel contains interviews, webinar recordings, animations, and in-depth presentations of the Tabernacle discovery. Whether you are encountering this research for the first time or looking to go deeper, the channel is the best place to begin.</p>
+      <p>Highlights include his introduction interview with Rob Skiba, Israel documentary footage, animated CGI comparisons of the round vs rectangular Tabernacle, and full webinar recordings with live Q&A.</p>
     </div>
+    <!-- Featured video embed -->
+    <div class="yt-embed-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/mHAu6vug_VE?start=18&rel=0&modestbranding=1"
+        title="Project 314 — Tabernacle Discovery"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <a href="https://www.youtube.com/@Project314" target="_blank" rel="noopener" class="yt-channel-btn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+      Visit @Project314 on YouTube
+    </a>
   </div>
 </section>
 
-<!-- WHAT PROJECT 314 DOES -->
-<section class="what">
+<!-- BOOKS / PRODUCTS -->
+<section class="products">
   <div class="container">
-    <div class="section-label">What Project 314 Does</div>
-    <h2 class="section-title">Restoring <em>God's House</em></h2>
-    <div class="what-grid">
-      <div class="what-card" data-n="01">
-        <h3>Biblical Research</h3>
-        <p>Deep exegesis of the Exodus Tabernacle texts in their original Hebrew, demonstrating that the courtyard curtain dimensions encode Pi and describe a circular, domed structure — not a rectangle.</p>
+    <div class="section-label">Study Materials</div>
+    <h2 class="section-title">Books &amp; <em>Resources</em></h2>
+    <div class="prod-grid">
+      <div class="prod-card">
+        <div class="prod-img">
+          <img src="http://project314.org/images/nicepage-images/DiscandCaseOther2000w.png"
+               alt="The House of El Shaddai"
+               onerror="this.parentElement.style.minHeight='80px'">
+        </div>
+        <div class="prod-body">
+          <span class="prod-tag">English Edition — Available Now</span>
+          <h3>The House of El Shaddai</h3>
+          <p>Written for English readers, this is Andrew Hoy's primary resource. It identifies and dismantles cancerous English Bible mistranslations, dispels the myths supporting the rectangular Tabernacle, and walks the reader — step by step — through the evidence for the round, domed structure. Over 200 diagrams and illustrations. Written in under three months after the ASOR conference.</p>
+          <a href="https://project314.org/explore-the-tabernacle/products" target="_blank" rel="noopener" class="prod-link">Order on Project314.org →</a>
+        </div>
       </div>
-      <div class="what-card" data-n="02">
-        <h3>Education &amp; Publication</h3>
-        <p>Andrew Hoy has authored <em>The House of El Shaddai</em> for English readers and is developing <em>Exploring God's House</em>, a Hebrew-language-based deep dive into the Tabernacle texts for serious students.</p>
-      </div>
-      <div class="what-card" data-n="03">
-        <h3>Physical Restoration</h3>
-        <p>The long-term vision of Project 314 is to physically reconstruct the Exodus Tabernacle according to the Biblical specifications — a true-to-text, circular, domed structure, the first of its kind in the modern world.</p>
-      </div>
-      <div class="what-card" data-n="04">
-        <h3>Community Engagement</h3>
-        <p>Project 314 challenges churches, teachers and scholars to re-examine longstanding assumptions about God's dwelling place — hosting webinars, publishing articles, and responding to critics with the text alone.</p>
-      </div>
-      <div class="what-card" data-n="05">
-        <h3>Model Building</h3>
-        <p>Physical small-scale models of the circular Tabernacle are available through Project 314, allowing people of all ages to engage with the discovery hands-on and carry the vision into their communities.</p>
-      </div>
-      <div class="what-card" data-n="06">
-        <h3>Mathematics &amp; Scripture</h3>
-        <p>Project 314 is named after the π rediscovery. The project demonstrates that the Hebrew Bible is not superstition but a product of an intelligent designer — with the mathematics to prove it.</p>
+      <div class="prod-card">
+        <div class="prod-img" style="min-height:120px;align-items:center;">
+          <img src="http://project314.org/images/nicepage-images/project314productshighlight.png"
+               alt="Exploring God's House"
+               onerror="this.parentElement.style.minHeight='60px'">
+        </div>
+        <div class="prod-body">
+          <span class="prod-tag">Hebrew Edition — In Development</span>
+          <h3>Exploring God's House</h3>
+          <p>The deeper, Hebrew-language-based companion volume. Written verse-by-verse through the Exodus Tabernacle text — two pages of content per verse. Includes raw language tools and references for both scholars and lay readers. Designed to preemptively answer every academic objection. ~260 pages. Targeted for serious students of Scripture and Hebrew Bible enthusiasts.</p>
+          <a href="https://project314.org/explore-the-tabernacle/products" target="_blank" rel="noopener" class="prod-link">View on Project314.org →</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- TABERNACLE IMAGE GALLERY -->
-<section class="gallery">
-  <div class="container">
-    <div class="section-label">The Tabernacle</div>
-    <h2 class="section-title">Envisioning <em>God's House</em></h2>
-    <div class="img-grid">
-      <div class="img-slot tall">
-        <img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=800&q=80" alt="Desert tent at sunset" loading="lazy">
-        <div class="img-overlay"></div>
-        <span class="img-caption">The Wilderness Setting</span>
-      </div>
-      <div class="img-slot">
-        <img src="https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=600&q=80" alt="Ancient scroll" loading="lazy">
-        <div class="img-overlay"></div>
-        <span class="img-caption">Exodus Texts</span>
-      </div>
-      <div class="img-slot">
-        <img src="https://images.unsplash.com/photo-1564419320461-6870880221ad?w=600&q=80" alt="Circle geometry" loading="lazy">
-        <div class="img-overlay"></div>
-        <span class="img-caption">Sacred Geometry</span>
-      </div>
-      <div class="img-slot">
-        <img src="https://images.unsplash.com/photo-1543051932-6ef9fecfff55?w=600&q=80" alt="Ancient architecture dome" loading="lazy">
-        <div class="img-overlay"></div>
-        <span class="img-caption">The Circular Vision</span>
-      </div>
-      <div class="img-slot">
-        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80" alt="Mathematics and universe" loading="lazy">
-        <div class="img-overlay"></div>
-        <span class="img-caption">Mathematics &amp; Creation</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BOOKS -->
-<section class="books">
-  <div class="container">
-    <div class="section-label">Project Resources</div>
-    <h2 class="section-title">Study the <em>Discovery</em></h2>
-    <div class="book-grid">
-      <div class="book-card">
-        <span class="book-tag">English Edition</span>
-        <h3>The House of El Shaddai</h3>
-        <p>Written for English-language readers, this is the primary resource for understanding Andrew Hoy's Tabernacle discovery — accessible to anyone willing to re-examine what Scripture says about the shape of God's dwelling place.</p>
-        <a href="https://project314.org/explore-the-tabernacle/products" target="_blank" rel="noopener" style="display:inline-block;margin-top:1.2rem;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);">View on Project314.org →</a>
-      </div>
-      <div class="book-card">
-        <span class="book-tag">Hebrew Edition — Coming Soon</span>
-        <h3>Exploring God's House</h3>
-        <p>A deeper, Hebrew-language-based exegesis of the Exodus Tabernacle texts. Designed for serious students of Scripture who want to engage with the raw original-language evidence for the circular Tabernacle vision.</p>
-        <a href="https://project314.org/explore-the-tabernacle/products" target="_blank" rel="noopener" style="display:inline-block;margin-top:1.2rem;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);">View on Project314.org →</a>
-      </div>
-    </div>
-    <!-- Multimedia links -->
-    <div style="margin-top:2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:0.5px solid var(--border);">
-      <a href="https://www.youtube.com/channel/UCVzgLtyCnDqUzVcSbCxz_Xw" target="_blank" rel="noopener" style="background:var(--surface);padding:1.4rem 1.6rem;display:flex;align-items:center;gap:1rem;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='var(--surface-light)'" onmouseout="this.style.background='var(--surface)'">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
-        <div>
-          <div style="font-size:0.78rem;font-weight:500;color:var(--text-primary);">YouTube Channel</div>
-          <div style="font-size:0.72rem;color:var(--text-muted);">Interviews, webinars &amp; lectures</div>
+    <!-- ASOR + Presentation photos -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem;">
+      <div class="prod-card">
+        <div class="prod-img">
+          <img src="http://project314.org/images/nicepage-images/ASOR.jpg"
+               alt="ASOR Conference Boston 2017"
+               style="max-height:200px;object-fit:cover;width:100%;"
+               onerror="this.parentElement.style.display='none'">
         </div>
-      </a>
-      <a href="https://www.facebook.com/RoundTabernacle/" target="_blank" rel="noopener" style="background:var(--surface);padding:1.4rem 1.6rem;display:flex;align-items:center;gap:1rem;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='var(--surface-light)'" onmouseout="this.style.background='var(--surface)'">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-        <div>
-          <div style="font-size:0.78rem;font-weight:500;color:var(--text-primary);">Facebook</div>
-          <div style="font-size:0.72rem;color:var(--text-muted);">Round Tabernacle community</div>
+        <div class="prod-body">
+          <span class="prod-tag">Boston 2017</span>
+          <h3>ASOR Conference Exhibition</h3>
+          <p>Hoy exhibited at the American Schools of Oriental Research conference alongside BAR, SBL, ETS and other leading biblical archaeology organisations — presenting physical models, scrolls, and animated CGI comparisons to scholars, archaeologists, and theologians.</p>
         </div>
-      </a>
-      <a href="https://www.patreon.com/project314" target="_blank" rel="noopener" style="background:var(--surface);padding:1.4rem 1.6rem;display:flex;align-items:center;gap:1rem;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='var(--surface-light)'" onmouseout="this.style.background='var(--surface)'">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><circle cx="14.5" cy="9.5" r="6.5"/><path d="M5.5 21V4"/></svg>
-        <div>
-          <div style="font-size:0.78rem;font-weight:500;color:var(--text-primary);">Support on Patreon</div>
-          <div style="font-size:0.72rem;color:var(--text-muted);">Become an essential part</div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">
+          <img src="http://project314.org/images/nicepage-images/ProjectorScreenPPSmall.png"
+               alt="The House of El Shaddai PowerPoint Presentation"
+               onerror="this.parentElement.style.display='none'">
         </div>
-      </a>
+        <div class="prod-body">
+          <span class="prod-tag">Teaching Resource</span>
+          <h3>PowerPoint Presentation</h3>
+          <p>The full Tabernacle discovery content is available as a PowerPoint presentation for educators, group leaders, and congregations — designed for anyone who wants to teach this material to others. Suitable for churches, synagogues, home groups, and STEM classrooms.</p>
+          <a href="https://project314.org/explore-the-tabernacle/products" target="_blank" rel="noopener" class="prod-link">View Products →</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -345,15 +543,16 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
   <div class="cta-inner">
     <div class="cta-pi">π</div>
     <h2>Reconsider <em>God's House</em></h2>
-    <p>Project 314 is an open invitation — to pastors, teachers, engineers, students, and anyone willing to let Scripture speak for itself. The discovery is documented. The evidence is in the text. The question is whether we will receive it.</p>
-    <div class="hero-btns">
+    <p>Project 314 is an open invitation to anyone willing to let the Hebrew text speak for itself — engineers, pastors, teachers, students, Jews, Christians, and sceptics alike. The discovery is documented. The math works. The engineering checks out. The question is whether we will receive it.</p>
+    <div class="hero-btns" style="justify-content:center;">
       <a href="https://project314.org" target="_blank" rel="noopener" class="btn-primary">Explore Project314.org ↗</a>
-      <a href="https://project314.org/learn-about/tabernacle-discovery" target="_blank" rel="noopener" class="btn-ghost">The Discovery ↗</a>
+      <a href="https://www.youtube.com/@Project314" target="_blank" rel="noopener" class="btn-ghost">Watch on YouTube ↗</a>
     </div>
-    <p class="cta-url">Promoted by 2:22 Church · <a href="https://project314.org" target="_blank" rel="noopener">project314.org</a></p>
+    <p style="margin-top:1.5rem;font-size:0.75rem;color:var(--text-muted);letter-spacing:0.1em;">Promoted by 2:22 Church · <a href="https://project314.org" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;">project314.org</a> · Phone: 314-628-0159 (no texts)</p>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
@@ -375,10 +574,11 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
       <h4>Project 314</h4>
       <ul>
         <li><a href="https://project314.org" target="_blank" rel="noopener">Website</a></li>
-        <li><a href="https://project314.org/learn-about/tabernacle-discovery" target="_blank" rel="noopener">The Discovery</a></li>
+        <li><a href="http://project314.org/learn-about/tabernacle-discovery" target="_blank" rel="noopener">The Discovery</a></li>
+        <li><a href="http://project314.org/learn-about/tabernacle-journey" target="_blank" rel="noopener">The Journey</a></li>
         <li><a href="https://project314.org/explore-the-tabernacle/products" target="_blank" rel="noopener">Books</a></li>
-        <li><a href="https://www.youtube.com/channel/UCVzgLtyCnDqUzVcSbCxz_Xw" target="_blank" rel="noopener">YouTube</a></li>
-        <li><a href="https://www.patreon.com/project314" target="_blank" rel="noopener">Support</a></li>
+        <li><a href="https://www.youtube.com/@Project314" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.patreon.com/project314" target="_blank" rel="noopener">Support on Patreon</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -396,21 +596,66 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
   </div>
 </footer>
 
+<!-- YouTube IFrame API — loop video from 18s to 37s -->
 <script>
-var observer = new IntersectionObserver(function(entries){
-  entries.forEach(function(e){
-    if(e.isIntersecting){
-      e.target.style.opacity='1';
-      e.target.style.transform='translateY(0)';
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+document.head.appendChild(tag);
+
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('yt-player', {
+    videoId: 'mHAu6vug_VE',
+    playerVars: {
+      autoplay: 1,
+      mute: 1,
+      controls: 0,
+      showinfo: 0,
+      rel: 0,
+      disablekb: 1,
+      modestbranding: 1,
+      iv_load_policy: 3,
+      start: 18
+    },
+    events: {
+      onReady: function(e) {
+        e.target.playVideo();
+        // poll every 150ms — when we hit 37s, jump back to 18s
+        setInterval(function() {
+          if (!player || typeof player.getCurrentTime !== 'function') return;
+          if (player.getCurrentTime() >= 37) {
+            player.seekTo(18, true);
+          }
+        }, 150);
+      },
+      onStateChange: function(e) {
+        // if video ends for any reason, restart from 18s
+        if (e.data === YT.PlayerState.ENDED) {
+          player.seekTo(18, true);
+          player.playVideo();
+        }
+        // keep playing if paused by anything external
+        if (e.data === YT.PlayerState.PAUSED) {
+          setTimeout(function(){ player.playVideo(); }, 200);
+        }
+      }
     }
   });
-},{threshold:0.08});
-document.querySelectorAll('.what-card,.book-card,.img-slot').forEach(function(el){
+}
+
+// scroll-reveal
+var obs = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}
+  });
+},{threshold:0.07});
+document.querySelectorAll('.diag-card,.prod-card,.tl-item,.media-link').forEach(function(el){
   el.style.opacity='0';
-  el.style.transform='translateY(18px)';
-  el.style.transition='opacity 0.6s ease,transform 0.6s ease';
-  observer.observe(el);
+  el.style.transform='translateY(16px)';
+  el.style.transition='opacity 0.55s ease,transform 0.55s ease';
+  obs.observe(el);
 });
 </script>
+
 </body>
 </html>
