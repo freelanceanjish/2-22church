@@ -121,17 +121,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 
 
-/* ── LAYOUT ── */
-.ref-body{max-width:1100px;margin:0 auto;padding:5rem 2rem 8rem;display:grid;grid-template-columns:220px 1fr;gap:5rem;align-items:start;}
-.ref-sidebar{position:sticky;top:80px;}
-.ref-sidebar-label{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:1.2rem;}
-.ref-sidebar nav{display:flex;flex-direction:column;gap:0;}
-.ref-sidebar nav a{font-size:0.82rem;color:var(--text-secondary);text-decoration:none;padding:0.55rem 0;border-bottom:0.5px solid var(--border-subtle);transition:color 0.2s;display:flex;align-items:center;justify-content:space-between;}
-.ref-sidebar nav a:hover{color:var(--gold);}
-.ref-sidebar nav a.here{color:var(--gold);}
-.ref-sidebar nav a::after{content:'→';opacity:0;transition:opacity 0.2s;}
-.ref-sidebar nav a:hover::after,.ref-sidebar nav a.here::after{opacity:1;}
-
 /* ── SECTIONS ── */
 .ref-sections{display:flex;flex-direction:column;gap:5rem;}
 .ref-section{}
@@ -192,7 +181,6 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 
 @media(max-width:1100px){
   .ref-body{grid-template-columns:1fr;gap:3rem;}
-  .ref-sidebar{display:none;}
   .channel-grid{grid-template-columns:1fr;}
   .featured-resource{grid-template-columns:1fr;}.fr-arrow{display:none;}
   .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}.footer-brand{grid-column:1/-1;}
@@ -253,20 +241,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 </div>
 
 <div class="ref-body">
-
-  <!-- SIDEBAR -->
-  <aside class="ref-sidebar">
-    <div class="ref-sidebar-label">Jump to section</div>
-    <nav>
-      <a href="#one-god">One God</a>
-      <a href="#short-season">Short Season</a>
-      <a href="#biblical-earth">Biblical Earth</a>
-      <a href="#podcasts">Podcasts</a>
-      <a href="#debates">Debates</a>
-      <a href="#articles">Articles</a>
-      <a href="old-maps.html">Old Maps</a>
-    </nav>
-  </aside>
 
   <!-- MAIN CONTENT -->
   <div class="ref-sections">
