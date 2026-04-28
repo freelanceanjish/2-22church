@@ -18,71 +18,60 @@
 const POSTS = [
   {
     id: "just-reasonable-mind-devout-life-francis-de-sales",
-    title: "A Just & Reasonable Mind in the Devout Life",
+    title: "We Must Be Just and Reasonable — Introduction to the Devout Life, Part III, Chapter 36",
     date: "28 April 2026",
     category: "Reflection",
-    excerpt: "St. Francis de Sales teaches that devotion does not require us to abandon reasonableness or gentleness of spirit — and that at the heart of every devout life is the command Jesus called greatest of all: love your neighbour as yourself.",
+    excerpt: "Francis de Sales opens Chapter 36 with a striking claim: reason is the defining characteristic of man, yet truly reasonable people are rare. The reason, he says, is self-love — and the proof is in the small, daily dishonesties most of us never notice in ourselves.",
     image: "https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=900&q=80",
     content: `
-<p><em>"Devotion must be adapted to the strength, the employment, and the duties of each individual."</em> So wrote St. Francis de Sales in his masterwork, <em>Introduction to the Devout Life</em> — and in these words lies one of the most overlooked truths of the Christian walk: that a life given to God is not a life stripped of reason, proportion, or gentleness. It is, in fact, a life made more fully and nobly human.</p>
+<p><em>Introduction to the Devout Life</em> by Francis de Sales — Part Three, Chapter 36. Title: <strong>That We Must Be Just and Reasonable.</strong></p>
 
-<h2>Who Was Francis de Sales?</h2>
+<h2>Reason is rare</h2>
 
-<p>Francis de Sales (1567–1622) was a Bishop of Geneva, a Doctor of the Church, and one of the most tenderly wise spiritual directors in Christian history. He wrote at a time of fierce religious conflict, and his answer to that conflict was not theological weaponry — it was charity, patience, and the quiet transformation of the ordinary life into a vessel of divine love.</p>
+<p>Francis de Sales opens the chapter plainly: <em>"Reason is the special characteristic of man, and yet it is a rare thing to find really reasonable men."</em> The cause, he says, is self-love. Self-love hinders reason and beguiles us — quietly, without our noticing — into all manner of trifling but dangerous acts of injustice and untruth.</p>
 
-<p>His <em>Introduction to the Devout Life</em>, first published in 1609, was revolutionary in one specific sense: it was written not for monks and nuns, but for ordinary people living in the world — merchants, mothers, soldiers, servants. It argued that holiness was not the exclusive property of the cloister. It belonged to every soul willing to pursue it honestly in their actual circumstances.</p>
+<p>He reaches for an image from the Song of Songs to describe these small corruptions: they are like the little foxes that spoil the vines. Because they are trifling, people pay no attention to them. Because they are numerous, they do infinite harm.</p>
 
-<h2>Preserving a Just and Reasonable Mind</h2>
+<h2>The small dishonesties we overlook in ourselves</h2>
 
-<p>One of Francis's most striking teachings is his insistence on the preservation of what he calls <em>a just and reasonable mind</em> in the devout life. By this he means something precise and practical: the person growing in devotion must not become irritable, excessive, harsh in judgement, or unbalanced in their religious exercises.</p>
+<p>Francis then gives a list. Read it slowly — each line is a mirror:</p>
 
-<p>He observed that many people, in their early fervour, become so intense in their piety that they lose the very gentleness and proportion that devotion is supposed to produce. They fast to the point of uselessness. They pray so long that they neglect their families. They become so absorbed in religious feeling that they grow cold toward the actual human beings around them. Francis regarded this not as holiness, but as spiritual disorder.</p>
+<p>We find fault with our neighbour readily for a small matter, while we pass over great things in ourselves. We strive to sell dear and buy cheap. We are eager to deal out strict justice to others, but to obtain indulgence for ourselves. We expect a good construction to be put on all we say — but we are sensitive and critical as to our neighbour's words. We want him to let us have whatever we want, while it would be more reasonable to let him keep what is his if he desires to. We are vexed with him because he will not accommodate us — while perhaps he has better reason to be vexed with us for wanting to disturb him.</p>
 
-<blockquote>"Do not lose your interior peace for anything whatsoever, even if your whole world seems upset. If you find that you have strayed from shelter, lead your heart back to peace tranquilly." — St. Francis de Sales</blockquote>
+<p>If we have formed a dislike for someone — particularly a subordinate — everything they do is wrong in our eyes. We thwart them. We look coldly on them. We never stop to ask whether our judgement is just or merely convenient.</p>
 
-<p>The just and reasonable mind, for Francis, is one that holds all things in proportion. It is not lax — it takes virtue seriously and pursues it faithfully. But it does not confuse spiritual intensity with spiritual maturity. It knows that the goal of all devotion is love, and that love, to be real, must be expressed toward the actual people in one's actual life.</p>
+<h2>These things seem unimportant — but they are not</h2>
 
-<h2>Devotion in the Ordinary</h2>
+<p>Francis is careful to note that these small dishonesties do not usually force us to make restitution. We have, after all, only taken what we might demand by the strict letter of the law. But he is clear: <em>they are sins against right and charity. They are trickery. And they greatly need correction.</em> No one, he adds, ever truly loses by being generous, noble-hearted and courteous.</p>
 
-<p>Francis is especially arresting in the way he situates devotion within the textures of ordinary life. A shoemaker who prays while stitching leather, a mother who offers her sleepless nights for God's glory, a merchant who conducts his trade with honest weights and a generous hand — these, for Francis, are as truly devout as any monk on a monastery hill.</p>
+<h2>The remedy: put yourself in your neighbour's place</h2>
 
-<p>This was a radical claim in his day. It remains a quietly challenging one in ours. It means that the arena in which we are called to be holy is not a chapel apart from life, but the very life we are already living: the kitchen, the office, the difficult relationship, the season of grief, the moment of temptation at noon on a Tuesday.</p>
+<p>The counsel Francis gives is simple and practical. Be just and fair in all you do. And then — one concrete discipline to make that possible: <em>always put yourself in your neighbour's place, and put him into yours, and then you will judge fairly.</em></p>
 
-<blockquote>"Every vocation becomes more agreeable when united with devotion. Care of one's family is rendered more peaceable, love of husband and wife more sincere, service to one's prince more faithful, and every type of employment more pleasant and agreeable." — St. Francis de Sales</blockquote>
+<p>Sell as you would buy. Buy as you would sell. Often examine your dealings with your neighbour and ask honestly: is my heart right towards him, as I would wish his to be towards me, if positions were reversed? Francis calls this <strong>the true test of reason.</strong></p>
 
-<p>What makes this possible, Francis argues, is precisely the just and reasonable mind — a mind not easily disturbed, not given to extremes, not so heavenly that it becomes of no earthly use. The devout person is, in a word, <em>present</em>: present to God, and present to the people around them.</p>
+<p>He closes with the Emperor Trajan, who was criticised for making himself too accessible to his subjects. Trajan's reply: <em>"Does it not behove me to be such an emperor towards my subjects as I should myself wish to find, were I a subject?"</em> The Emperor applied to his throne the same discipline Francis applies to every ordinary transaction and judgement of daily life — reverse the positions and see if it still seems fair.</p>
 
-<h2>The Golden Rule and the Heart of the Devout Life</h2>
+<h2>The Golden Rule and loving your neighbour</h2>
 
-<p>All of Francis's teaching flows toward what he recognised as the irreducible centre of Christian life — the command that Jesus himself called the second-greatest commandment, inseparable from the first:</p>
-
-<blockquote>"A new command I give you: Love one another. As I have loved you, so you must love one another." — John 13:34</blockquote>
+<p>The whole chapter is an unpacking of what Jesus called the summary of the Law and the Prophets:</p>
 
 <blockquote>"So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets." — Matthew 7:12</blockquote>
 
-<p>This is the Golden Rule — and Jesus did not offer it as one teaching among many. He offered it as a summary. <em>This sums up the Law and the Prophets.</em> The entire moral structure of the Old Testament, Jesus says, can be gathered into this one principle: treat others as you wish to be treated. Love your neighbour as yourself.</p>
+<p>Paul makes it equally plain:</p>
 
-<p>Francis de Sales understood that this commandment was not a sentiment — it was a discipline. To love your neighbour as yourself requires the very qualities he spent his life cultivating and teaching: patience, gentleness, proportionality, the willingness to bear with imperfection in others because you are bearing with it in yourself.</p>
+<blockquote>"The commandments are summed up in this one command: Love your neighbour as yourself. Love does no harm to a neighbour. Therefore love is the fulfilment of the law." — Romans 13:9–10</blockquote>
 
-<h2>Love Thy Neighbour — The Whole Calling in Four Words</h2>
-
-<p>The Apostle Paul made the connection explicit:</p>
-
-<blockquote>"The commandments… are summed up in this one command: 'Love your neighbour as yourself.' Love does no harm to a neighbour. Therefore love is the fulfilment of the law." — Romans 13:9–10</blockquote>
-
-<p>And John, the apostle of love, put it most starkly of all:</p>
+<p>And the apostle John puts it most directly of all:</p>
 
 <blockquote>"Whoever claims to love God yet hates a brother or sister is a liar. For whoever does not love their brother and sister, whom they have seen, cannot love God, whom they have not seen." — 1 John 4:20</blockquote>
 
-<p>This is the final verdict Francis de Sales delivers, in his own gentle way, throughout the <em>Introduction to the Devout Life</em>. All the spiritual exercises — the meditation, the examination of conscience, the reception of the sacraments, the cultivation of virtues — are not ends in themselves. They are means. The end is love: the love of God expressed in the love of the neighbour who stands before you, who needs something from you today, who is — however inconveniently — the face of Christ.</p>
+<p>Chapter 36 is not about the dramatic sins. It is about the little foxes — the double standard, the convenient judgement, the small advantage quietly taken. The test Francis puts before us is the same one placed before every disciple of Jesus the Messiah: reverse the positions, and see if it still seems fair.</p>
 
-<h2>A Word for Our Community</h2>
-
-<p>At 2:22 Church we have no elaborate spiritual programmes to sell you. But we do hold, with Francis, that the devout life is entirely possible — and entirely necessary — in the midst of ordinary existence. You do not need a building, a certificate, or a title. You need a just and reasonable mind, a heart oriented toward God, and eyes open to your neighbour.</p>
-
-<p>Start there. That is where Jesus started, and where every faithful disciple since has had to return, again and again, when the noise of religion threatened to drown out the simplicity of love.</p>
-
-<blockquote>"You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the first and greatest commandment. And the second is like it: You shall love your neighbour as yourself. On these two commandments hang all the Law and the Prophets." — Matthew 22:37–40</blockquote>
+<div style="margin:3rem 0;padding:1.6rem 1.8rem;background:rgba(201,168,76,0.06);border:0.5px solid rgba(201,168,76,0.2);border-left:2px solid rgba(201,168,76,0.5);">
+  <p style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C9A84C;margin-bottom:0.75rem;">Editorial Disclaimer</p>
+  <p style="font-size:0.88rem;color:#A8A090;line-height:1.85;">2:22 Church does not endorse Catholicism, its institutional practices, or any Trinitarian doctrine. We do not subscribe to the creedal formulations of any historic denomination. The writings of Francis de Sales are cited here solely because they contain God-inspired reflection that is pure in intent — useful for the edification and uplifting of a righteous life for those who desire to be true disciples of Jesus the Messiah, known in Hebrew as <strong style="color:#F0EAD6;">Yeshua</strong> (יֵשׁוּעַ), in Aramaic as <strong style="color:#F0EAD6;">Yeshu</strong>, and rendered in Greek as <strong style="color:#F0EAD6;">Iēsous</strong> (Ἰησοῦς) — from which the name Jesus derives. We test all things by Scripture alone.</p>
+</div>
     `
   },
   {
