@@ -215,11 +215,18 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .fv-text{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;color:var(--text-primary);line-height:1.7;margin:0;}
 
 
+
+  .hero-btns-desktop{display:none;}
+  .hero-tablet{display:none;}
+  .hero-mobile{display:flex;}
+}
+
+
 /* ── HERO ── */
-.hero{position:relative;min-height:100vh;background:var(--deep);overflow:hidden;}
+.hero{position:relative;width:100%;height:100vh;min-height:600px;background:var(--deep);overflow:hidden;}
 #sunflower-bg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;}
 
-/* shared numeral */
+/* numerals — same upright style for all three 2s */
 .h-num{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:normal;color:var(--gold);line-height:1;display:flex;align-items:center;}
 .h-sep{display:inline-block;width:1.5px;align-self:stretch;background:linear-gradient(to bottom,transparent,var(--gold) 28%,var(--gold) 72%,transparent);opacity:.3;margin:0 6px;}
 .h-church{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;color:var(--text-secondary);letter-spacing:.08em;}
@@ -230,92 +237,102 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .hv-bar{width:0.5px;height:18px;background:linear-gradient(to bottom,transparent,rgba(201,168,76,.3),transparent);flex-shrink:0;}
 .hv-text{font-family:'Cormorant Garamond',serif;font-size:0.95rem;font-style:italic;color:rgba(240,234,214,.72);line-height:1.7;text-align:center;}
 
-/* ── DESKTOP layout ── */
+/* ── DESKTOP ─────────────────────────────────────────────────
+   Key: use vmin so layout matches the sunflower which also scales with vmin.
+   Sunflower R = 22vmin → diameter = 44vmin
+   Centre column = 44vmin wide (covers the circle)
+   Verse cards = 18vmin wide each, placed flush outside circle
+   Total row = 80vmin, centered in viewport
+*/
 .hero-desktop{
   display:none;
   position:absolute;
-  top:50%;left:50%;transform:translate(-50%,-50%);
-  width:100%;max-width:900px;
-  align-items:stretch;
+  inset:0;
+  align-items:center;
   justify-content:center;
+  flex-direction:column;
+  gap:0;
   z-index:2;
 }
-.hd-centre{
-  flex:0 0 260px;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  padding:2rem 0;
+.hd-row{
+  display:flex;
+  align-items:stretch;
+  justify-content:center;
+  width:80vmin;
 }
-.hd-centre .h-num{font-size:5.4rem;}
-.hd-centre .h-church{font-size:1.7rem;margin-top:4px;}
 .hd-verse-left,.hd-verse-right{
-  flex:0 0 160px;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:.7rem;padding:0 1rem;
+  width:18vmin;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:.7rem;
+  padding:0 1vmin;
+  flex-shrink:0;
 }
-
+.hd-centre{
+  width:44vmin;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.hd-centre .h-num{font-size:clamp(3rem,8.5vmin,5.5rem);}
+.hd-centre .h-church{font-size:clamp(1.2rem,3.2vmin,2rem);margin-top:4px;}
 .hero-btns-desktop{
-  display:none;
-  position:absolute;
-  top:calc(50% + 175px);
-  left:50%;transform:translateX(-50%);
-  gap:1rem;z-index:2;
+  display:flex;
+  gap:1rem;
+  margin-top:3vmin;
 }
-.hero-btns-desktop .btn-primary,.hero-btns-desktop .btn-ghost{font-size:0.75rem;padding:0.75rem 1.8rem;}
+.hero-btns-desktop .btn-primary,.hero-btns-desktop .btn-ghost{
+  font-size:0.72rem;padding:0.7rem 1.6rem;
+}
 
-/* ── TABLET layout ── */
+/* ── TABLET ── */
 .hero-tablet{
   display:none;
-  position:absolute;
-  top:50%;left:50%;transform:translate(-50%,-50%);
-  width:90%;max-width:480px;
-  flex-direction:column;align-items:center;
+  position:absolute;inset:0;
+  flex-direction:column;
+  align-items:center;justify-content:center;
   gap:2rem;z-index:2;
+  padding:2rem;
 }
-.ht-centre{display:flex;flex-direction:column;align-items:center;}
-.ht-centre .h-num{font-size:4rem;}
+.ht-centre .h-num{font-size:3.8rem;}
 .ht-centre .h-church{font-size:1.4rem;margin-top:4px;}
-.ht-bottom{display:flex;width:100%;gap:0;}
+.ht-bottom{display:flex;width:100%;max-width:440px;gap:0;}
 .ht-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:.6rem;padding:0 1rem;}
 .ht-divider{width:0.5px;background:rgba(201,168,76,.2);flex-shrink:0;}
-.ht-btn{font-size:0.65rem;padding:0.6rem 1rem;margin-top:.5rem;text-align:center;}
+.ht-btn{font-size:0.65rem;padding:0.6rem 1rem;margin-top:.5rem;text-align:center;display:inline-block;text-decoration:none;}
 
-/* ── MOBILE layout ── */
+/* ── MOBILE ── */
 .hero-mobile{
   display:none;
-  position:absolute;
-  top:50%;left:50%;transform:translate(-50%,-50%);
-  width:88%;max-width:320px;
-  flex-direction:column;align-items:center;
+  position:absolute;inset:0;
+  flex-direction:column;
+  align-items:center;justify-content:center;
   gap:0;z-index:2;
+  padding:1.5rem;
 }
-.hero-mobile .h-num{font-size:3.2rem;margin-bottom:4px;}
-.hero-mobile .h-church{font-size:1.1rem;margin-bottom:1.4rem;}
+.hero-mobile .h-num{font-size:3rem;margin-bottom:4px;}
+.hero-mobile .h-church{font-size:1rem;margin-bottom:1.4rem;}
 .hm-verse{display:flex;flex-direction:column;align-items:center;gap:.4rem;width:100%;margin-bottom:.5rem;}
 .hm-verse .hv-ref{font-size:0.6rem;}
 .hm-verse .hv-text{font-size:0.85rem;}
 .hm-divider{width:36px;height:0.5px;background:linear-gradient(to right,transparent,rgba(201,168,76,.4),transparent);margin:.6rem 0;}
 .hm-btns{display:flex;flex-direction:column;gap:.5rem;width:100%;margin-top:1rem;}
-.hm-btn{font-size:0.65rem;padding:0.65rem 0;text-align:center;display:block;}
+.hm-btn{font-size:0.65rem;padding:0.65rem 0;text-align:center;display:block;text-decoration:none;}
 
-/* ── RESPONSIVE show/hide ── */
+/* ── BREAKPOINTS ── */
 @media(min-width:860px){
   .hero-desktop{display:flex;}
-  .hero-btns-desktop{display:flex;}
-  .hero-tablet{display:none;}
-  .hero-mobile{display:none;}
+  .hero-tablet,.hero-mobile{display:none;}
 }
 @media(min-width:540px) and (max-width:859px){
-  .hero-desktop{display:none;}
-  .hero-btns-desktop{display:none;}
   .hero-tablet{display:flex;}
-  .hero-mobile{display:none;}
+  .hero-desktop,.hero-mobile{display:none;}
 }
 @media(max-width:539px){
-  .hero-desktop{display:none;}
-  .hero-btns-desktop{display:none;}
-  .hero-tablet{display:none;}
   .hero-mobile{display:flex;}
+  .hero-desktop,.hero-tablet{display:none;}
 }
+/* ── HERO END ── */
 
 </style>
 </head>
@@ -781,55 +798,44 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
 </script>
 
 
+
+
 <script>
 (function(){
   var canvas=document.getElementById('sunflower-bg');
   if(!canvas)return;
   var ctx=canvas.getContext('2d');
-  var PHI=(1+Math.sqrt(5))/2;
-  var GA=2*Math.PI*(2-PHI);
-  var N=610;
-  var frame=0;
+  var PHI=(1+Math.sqrt(5))/2, GA=2*Math.PI*(2-PHI), N=610, frame=0;
   var W,H,CX,CY,R,AM,SM;
 
   function setup(){
-    W=canvas.offsetWidth||window.innerWidth;
-    H=canvas.offsetHeight||window.innerHeight;
+    W=window.innerWidth; H=window.innerHeight;
     canvas.width=W; canvas.height=H;
+    CX=W/2; CY=H/2;
+    /* R = 22vmin so it matches the 44vmin-wide centre column in CSS */
+    var vmin=Math.min(W,H)/100;
     var isDesktop=W>=860, isTablet=W>=540&&W<860;
-    CX=W/2;
-    if(isDesktop){CY=H*0.47;R=Math.min(W,H)*0.22;AM=1.0;SM=1.0;}
-    else if(isTablet){CY=H*0.40;R=Math.min(W,H)*0.20;AM=0.6;SM=0.85;}
-    else{CY=H*0.34;R=Math.min(W,H)*0.22;AM=0.35;SM=0.7;}
+    if(isDesktop){R=vmin*22;AM=1.0;SM=1.0;}
+    else if(isTablet){R=vmin*20;AM=0.6;SM=0.85;}
+    else{R=vmin*20;AM=0.35;SM=0.7;}
   }
 
   function draw(){
     ctx.clearRect(0,0,W,H);
     for(var i=0;i<N;i++){
-      var r=R*Math.sqrt(i/N);
-      var a=i*GA+frame*0.0005;
-      var frac=i/N;
-      var size=(0.9+frac*2.4)*SM;
-      var alpha=(0.05+frac*0.36)*AM;
+      var r=R*Math.sqrt(i/N), a=i*GA+frame*0.0005, frac=i/N;
       ctx.beginPath();
-      ctx.arc(CX+r*Math.cos(a),CY+r*Math.sin(a),size,0,Math.PI*2);
-      ctx.fillStyle='hsla(42,'+(70-frac*18)+'%,'+(40+frac*28)+'%,'+alpha+')';
+      ctx.arc(CX+r*Math.cos(a),CY+r*Math.sin(a),(0.9+frac*2.4)*SM,0,Math.PI*2);
+      ctx.fillStyle='hsla(42,'+(70-frac*18)+'%,'+(40+frac*28)+'%,'+((0.05+frac*0.36)*AM)+')';
       ctx.fill();
     }
     frame++;
     requestAnimationFrame(draw);
   }
 
-  var resizeTimer;
-  window.addEventListener('resize',function(){
-    clearTimeout(resizeTimer);
-    resizeTimer=setTimeout(function(){setup();},150);
-  });
-
-  setup();
-  draw();
+  var t; window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(setup,150);});
+  setup(); draw();
 })();
 </script>
-
 </body>
 </html>
