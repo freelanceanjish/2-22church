@@ -111,6 +111,116 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .mobile-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:#6B6358;font-size:1.8rem;cursor:pointer;line-height:1;}
 @media(max-width:1100px){nav{padding:1rem 1.5rem;}.nav-links{display:none;}.nav-cta{display:none;}.nav-hamburger{display:flex;}}
 
+/* ── PAGE HEADER ── */
+.page-header{padding:10rem 2rem 5rem;background:var(--deep-mid);border-bottom:0.5px solid var(--border-subtle);text-align:center;}
+.eyebrow{font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;justify-content:center;gap:1rem;}
+.eyebrow::before,.eyebrow::after{content:'';display:block;width:30px;height:0.5px;background:var(--gold);opacity:0.5;}
+.page-header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6vw,5rem);font-weight:300;line-height:1.05;}
+.page-header h1 em{font-style:italic;color:var(--gold);}
+.page-header p{color:var(--text-secondary);font-size:1rem;max-width:540px;margin:1.2rem auto 0;line-height:1.8;}
+
+/* ── STICKY CATEGORY NAV ── */
+.ref-nav{background:var(--deep);border-bottom:0.5px solid var(--border-subtle);padding:0;position:sticky;top:64px;z-index:90;overflow-x:auto;}
+.ref-nav-inner{display:flex;max-width:1100px;margin:0 auto;}
+.ref-nav a{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;padding:1rem 1.4rem;border-bottom:1.5px solid transparent;transition:all 0.2s;white-space:nowrap;display:block;}
+.ref-nav a:hover{color:var(--gold);}
+.ref-nav a.active{color:var(--gold);border-bottom-color:var(--gold);}
+
+/* ── LAYOUT ── */
+.ref-body{max-width:1100px;margin:0 auto;padding:5rem 2rem 8rem;display:grid;grid-template-columns:220px 1fr;gap:5rem;align-items:start;}
+.ref-sidebar{position:sticky;top:110px;}
+.ref-sidebar-label{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:1.2rem;}
+.ref-sidebar nav{display:flex;flex-direction:column;gap:0;}
+.ref-sidebar nav a{font-size:0.82rem;color:var(--text-secondary);text-decoration:none;padding:0.55rem 0;border-bottom:0.5px solid var(--border-subtle);transition:color 0.2s;display:flex;align-items:center;justify-content:space-between;}
+.ref-sidebar nav a:hover{color:var(--gold);}
+.ref-sidebar nav a.here{color:var(--gold);}
+.ref-sidebar nav a::after{content:'→';opacity:0;transition:opacity 0.2s;}
+.ref-sidebar nav a:hover::after,.ref-sidebar nav a.here::after{opacity:1;}
+
+/* ── SECTIONS ── */
+.ref-sections{display:flex;flex-direction:column;gap:5rem;}
+.ref-section{}
+.ref-section-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:2rem;padding-bottom:1rem;border-bottom:0.5px solid var(--border);}
+.ref-section-head h2{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--text-primary);}
+.ref-section-head h2 em{font-style:italic;color:var(--gold);}
+.ref-count{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-muted);}
+
+/* ── CHANNEL GRID ── */
+.channel-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--border);}
+.channel-card{background:var(--surface);padding:1.6rem 1.8rem;text-decoration:none;color:inherit;transition:background 0.2s;display:block;}
+.channel-card:hover{background:var(--surface-light);}
+.channel-card .ch-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;color:var(--text-primary);margin-bottom:0.3rem;line-height:1.2;}
+.channel-card .ch-handle{font-size:0.68rem;letter-spacing:0.1em;color:var(--gold);margin-bottom:0.7rem;display:block;}
+.channel-card .ch-desc{font-size:0.85rem;color:var(--text-muted);line-height:1.7;}
+.channel-card .ch-arrow{display:block;margin-top:1rem;font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);}
+
+/* ── PODCAST ROW ── */
+.pod-list{display:flex;flex-direction:column;gap:1.5px;background:var(--border);}
+.pod-card{background:var(--surface);padding:1.6rem 1.8rem;text-decoration:none;color:inherit;transition:background 0.2s;display:grid;grid-template-columns:1fr auto;align-items:center;gap:1rem;}
+.pod-card:hover{background:var(--surface-light);}
+.pod-card .pod-title{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;color:var(--text-primary);margin-bottom:0.3rem;}
+.pod-card .pod-src{font-size:0.68rem;letter-spacing:0.1em;color:var(--gold);display:block;margin-bottom:0.5rem;}
+.pod-card .pod-desc{font-size:0.85rem;color:var(--text-muted);line-height:1.7;}
+.pod-card .pod-arrow{color:var(--gold);font-size:1rem;flex-shrink:0;}
+
+/* ── COMING SOON ── */
+.coming-soon{background:var(--surface);border:0.5px dashed rgba(201,168,76,0.2);padding:2.5rem;text-align:center;}
+.coming-soon h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:300;font-style:italic;color:var(--text-muted);margin-bottom:0.5rem;}
+.coming-soon p{font-size:0.85rem;color:var(--text-muted);line-height:1.6;}
+
+/* ── FEATURED RESOURCE ── */
+.featured-resource{background:var(--surface);border:0.5px solid var(--border);padding:2rem 2.2rem;display:grid;grid-template-columns:1fr auto;align-items:center;gap:2rem;text-decoration:none;color:inherit;transition:background 0.2s;margin-bottom:1.5px;}
+.featured-resource:hover{background:var(--surface-light);}
+.fr-label{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;}
+.fr-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;color:var(--text-primary);margin-bottom:0.5rem;line-height:1.2;}
+.fr-desc{font-size:0.88rem;color:var(--text-muted);line-height:1.7;}
+.fr-arrow{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--gold);opacity:0.6;}
+
+/* ── SUGGEST BOX ── */
+.suggest-box{margin-top:4rem;padding:2.5rem;border:0.5px solid var(--border);background:var(--deep-mid);text-align:center;}
+.suggest-box h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:0.75rem;}
+.suggest-box h3 em{font-style:italic;color:var(--gold);}
+.suggest-box p{font-size:0.9rem;color:var(--text-secondary);margin-bottom:1.5rem;line-height:1.7;}
+.suggest-box a{font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.75rem 2rem;border-radius:2px;text-decoration:none;font-weight:500;display:inline-block;}
+
+/* ── FOOTER ── */
+footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);padding:4rem 2rem 2.5rem;}
+.footer-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:0.5px solid var(--border-subtle);}
+.footer-brand p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;max-width:260px;margin-top:0.75rem;}
+.footer-col h4{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;}
+.footer-col ul{list-style:none;}
+.footer-col ul li{margin-bottom:0.65rem;}
+.footer-col ul li a{font-size:0.85rem;color:var(--text-muted);text-decoration:none;transition:color 0.2s;}
+.footer-col ul li a:hover{color:var(--gold);}
+.footer-bottom{max-width:1100px;margin:2rem auto 0;display:flex;align-items:center;justify-content:space-between;font-size:0.78rem;color:var(--text-muted);}
+.footer-verse{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.85rem;color:var(--text-muted);}
+
+@media(max-width:900px){
+  .ref-body{grid-template-columns:1fr;gap:3rem;}
+  .ref-sidebar{display:none;}
+  .channel-grid{grid-template-columns:1fr;}
+  .featured-resource{grid-template-columns:1fr;}.fr-arrow{display:none;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}.footer-brand{grid-column:1/-1;}
+  .footer-bottom{flex-direction:column;gap:0.5rem;text-align:center;}
+}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(13,17,23,0.92);backdrop-filter:blur(16px);border-bottom:0.5px solid rgba(201,168,76,0.18);}
+.nav-logo{text-decoration:none;flex-shrink:0;}
+.nav-logo img{height:1.9rem;width:auto;display:block;}
+.nav-links{display:flex;gap:1.4rem;list-style:none;}
+.nav-links a{font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:#A8A090;text-decoration:none;transition:color 0.2s;white-space:nowrap;}
+.nav-links a:hover,.nav-links a.active{color:#C9A84C;}
+.nav-cta{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#0D1117;background:#C9A84C;padding:0.5rem 1rem;border-radius:2px;flex-shrink:0;text-decoration:none;font-weight:500;white-space:nowrap;}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;flex-shrink:0;}
+.nav-hamburger span{display:block;width:22px;height:1px;background:#C9A84C;}
+.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,17,23,0.98);z-index:150;flex-direction:column;align-items:center;justify-content:flex-start;padding:5rem 2rem 3rem;overflow-y:auto;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:#F0EAD6;text-decoration:none;letter-spacing:0.06em;padding:0.7rem 0;border-bottom:0.5px solid rgba(255,255,255,0.06);width:100%;text-align:center;}
+.mobile-menu a:hover{color:#C9A84C;}
+.mobile-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:#6B6358;font-size:1.8rem;cursor:pointer;line-height:1;}
+@media(max-width:1100px){nav{padding:1rem 1.5rem;}.nav-links{display:none;}.nav-cta{display:none;}.nav-hamburger{display:flex;}}
+
 </style>
 </head>
 <body>
@@ -139,196 +249,175 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   <a href="index.html#join" style="color:#C9A84C;">Connect</a>
 </div>
 
-
 <div class="page-header">
   <div class="eyebrow">Further Study</div>
   <h1>Resources &amp; <em>References</em></h1>
-  <p>A curated collection of podcasts, debates, articles and videos that align with the apostolic, One God theology at the heart of 2:22 Church. We do not endorse every view expressed, we encourage you to search the Scriptures for yourself.</p>
+  <p>A curated collection of podcasts, channels, articles and research aligned with the apostolic, One God faith at the heart of 2:22 Church. Search the Scriptures for yourself.</p>
 </div>
 
-<div class="resources-body">
+<div class="ref-body">
 
-  <!-- PODCASTS -->
-  <div class="resource-section" id="podcasts">
-    <div class="resource-section-header">
-      
-      <h2>Podcasts</h2>
-      <span class="resource-count">2 listed</span>
+  <!-- SIDEBAR -->
+  <aside class="ref-sidebar">
+    <div class="ref-sidebar-label">Jump to section</div>
+    <nav>
+      <a href="#one-god">One God</a>
+      <a href="#short-season">Short Season</a>
+      <a href="#biblical-earth">Biblical Earth</a>
+      <a href="#podcasts">Podcasts</a>
+      <a href="#debates">Debates</a>
+      <a href="#articles">Articles</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="ref-sections">
+
+    <!-- ONE GOD -->
+    <div class="ref-section" id="one-god">
+      <div class="ref-section-head">
+        <h2>One <em>God</em></h2>
+        <span class="ref-count">3 channels</span>
+      </div>
+      <div class="channel-grid">
+        <a href="https://www.youtube.com/@billschlegel1/" target="_blank" rel="noopener" class="channel-card">
+          <span class="ch-name">One God Report</span>
+          <span class="ch-handle">Bill Schlegel · @billschlegel1</span>
+          <p class="ch-desc">Scriptural teaching on the One God of Israel and the true identity of Yeshua the Messiah. Deep exegesis, accessible delivery.</p>
+          <span class="ch-arrow">Watch on YouTube</span>
+        </a>
+        <a href="https://www.youtube.com/@21stOneGod" target="_blank" rel="noopener" class="channel-card">
+          <span class="ch-name">21st Century Reformation</span>
+          <span class="ch-handle">@21stOneGod</span>
+          <p class="ch-desc">Apostolic One God theology and the reformation of doctrines shaped by tradition rather than Scripture.</p>
+          <span class="ch-arrow">Watch on YouTube</span>
+        </a>
+        <a href="https://www.youtube.com/@biblicalunitarian" target="_blank" rel="noopener" class="channel-card" style="grid-column:1/-1;">
+          <span class="ch-name">Biblical Unitarian</span>
+          <span class="ch-handle">@biblicalunitarian</span>
+          <p class="ch-desc">Careful biblical scholarship making the case that Scripture teaches One God and that the Trinitarian formulation is a later doctrinal development, not apostolic teaching.</p>
+          <span class="ch-arrow">Watch on YouTube</span>
+        </a>
+      </div>
     </div>
 
-    <div class="resource-list">
-      <a href="https://podcasts.apple.com/us/podcast/one-god-report/id1491406270" target="_blank" rel="noopener" class="resource-card">
-        <div class="resource-card-icon">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
-        </div>
-        <div class="resource-card-body">
-          <h3>One God Report</h3>
-          <p>By William Schlegel, a focused examination of Unitarian theology, apostolic teaching and the biblical case for One God.</p>
-          <span class="resource-url" style="font-size:0.72rem;color:var(--gold);display:block;margin-top:0.4rem;">Apple Podcasts</span>
-        </div>
-        <span class="resource-arrow">→</span>
-      </a>
-
-      <a href="https://podcast.unitarianchristianalliance.org/" target="_blank" rel="noopener" class="resource-card">
-        <div class="resource-card-icon">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
-        </div>
-        <div class="resource-card-body">
-          <h3>Unitarian Christian Podcast</h3>
-          <p>By the Unitarian Christian Alliance, conversations on the biblical, historical and theological case for Unitarian Christianity.</p>
-          <span class="resource-url" style="font-size:0.72rem;color:var(--gold);display:block;margin-top:0.4rem;">podcast.unitarianchristianalliance.org</span>
-        </div>
-        <span class="resource-arrow">→</span>
-      </a>
+    <!-- SHORT SEASON -->
+    <div class="ref-section" id="short-season">
+      <div class="ref-section-head">
+        <h2>Short <em>Season</em></h2>
+        <span class="ref-count">2 channels</span>
+      </div>
+      <div class="channel-grid">
+        <a href="https://www.youtube.com/@LeavingBabylon_" target="_blank" rel="noopener" class="channel-card">
+          <span class="ch-name">Leaving Babylon</span>
+          <span class="ch-handle">@LeavingBabylon_</span>
+          <p class="ch-desc">End-times discernment, coming out of religious systems, and preparing for the short season before the return of the Messiah.</p>
+          <span class="ch-arrow">Watch on YouTube</span>
+        </a>
+        <a href="https://www.youtube.com/@JasonJack" target="_blank" rel="noopener" class="channel-card">
+          <span class="ch-name">Jason Jack</span>
+          <span class="ch-handle">@JasonJack</span>
+          <p class="ch-desc">Scripture-based prophetic teaching on the times we are living in and the end of the age.</p>
+          <span class="ch-arrow">Watch on YouTube</span>
+        </a>
+      </div>
     </div>
+
+    <!-- BIBLICAL EARTH -->
+    <div class="ref-section" id="biblical-earth">
+      <div class="ref-section-head">
+        <h2>Biblical <em>Earth</em></h2>
+        <span class="ref-count">3 resources</span>
+      </div>
+      <a href="cosmology.html" class="featured-resource">
+        <div>
+          <div class="fr-label">2:22 Church</div>
+          <div class="fr-title">Biblical Cosmology Page</div>
+          <p class="fr-desc">Our dedicated page on the firmament, the circle of the earth, the fixed creation and the sun and moon inside the dome, drawn from Rob Skiba's scripture-only research at testingtheglobe.com.</p>
+        </div>
+        <span class="fr-arrow">→</span>
+      </a>
+      <div class="channel-grid">
+        <a href="https://www.youtube.com/@HangingOnHisWords" target="_blank" rel="noopener" class="channel-card">
+          <span class="ch-name">Hanging on His Words</span>
+          <span class="ch-handle">@HangingOnHisWords</span>
+          <p class="ch-desc">Scripture-first research into Biblical cosmology. Detailed Hebrew word studies and honest engagement with what the text actually says about the earth and the heavens.</p>
+          <span class="ch-arrow">Watch on YouTube</span>
+        </a>
+        <a href="https://www.youtube.com/@DITRH" target="_blank" rel="noopener" class="channel-card">
+          <span class="ch-name">DITRH</span>
+          <span class="ch-handle">@DITRH</span>
+          <p class="ch-desc">Deep investigative research into Biblical earth cosmology, history and the nature of the firmament. Documentary-style content backed by scriptural and historical sources.</p>
+          <span class="ch-arrow">Watch on YouTube</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- PODCASTS -->
+    <div class="ref-section" id="podcasts">
+      <div class="ref-section-head">
+        <h2><em>Podcasts</em></h2>
+        <span class="ref-count">2 listed</span>
+      </div>
+      <div class="pod-list">
+        <a href="https://podcasts.apple.com/us/podcast/one-god-report/id1491406270" target="_blank" rel="noopener" class="pod-card">
+          <div>
+            <div class="pod-title">One God Report</div>
+            <span class="pod-src">Apple Podcasts · William Schlegel</span>
+            <p class="pod-desc">A focused examination of Unitarian theology, apostolic teaching and the biblical case for One God.</p>
+          </div>
+          <span class="pod-arrow">→</span>
+        </a>
+        <a href="https://podcast.unitarianchristianalliance.org/" target="_blank" rel="noopener" class="pod-card">
+          <div>
+            <div class="pod-title">Unitarian Christian Podcast</div>
+            <span class="pod-src">unitarianchristianalliance.org · Unitarian Christian Alliance</span>
+            <p class="pod-desc">Conversations on the biblical, historical and theological case for Unitarian Christianity.</p>
+          </div>
+          <span class="pod-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- DEBATES -->
+    <div class="ref-section" id="debates">
+      <div class="ref-section-head">
+        <h2><em>Debates</em></h2>
+        <span class="ref-count">Coming soon</span>
+      </div>
+      <div class="coming-soon">
+        <h3>Debates being curated</h3>
+        <p>We are compiling a list of meaningful theological debates on the nature of God and the identity of Jesus Christ. Check back soon.</p>
+      </div>
+    </div>
+
+    <!-- ARTICLES -->
+    <div class="ref-section" id="articles">
+      <div class="ref-section-head">
+        <h2><em>Articles</em></h2>
+        <span class="ref-count">Coming soon</span>
+      </div>
+      <div class="coming-soon">
+        <h3>Articles being gathered</h3>
+        <p>A reading list of scholarly and accessible articles on apostolic theology, One God doctrine and the early church.</p>
+      </div>
+    </div>
+
+    <!-- SUGGEST -->
+    <div class="suggest-box">
+      <h3>Know a good <em>resource?</em></h3>
+      <p>If you have come across a podcast, article, debate or video that you believe would benefit the 2:22 community, we would love to hear about it.</p>
+      <a href="mailto:hello@2-22church.com?subject=Resource Suggestion">Suggest a Resource</a>
+    </div>
+
   </div>
-
-  <!-- DEBATES -->
-  <div class="resource-section" id="debates">
-    <div class="resource-section-header">
-      
-      <h2>Debates</h2>
-      <span class="resource-count">Coming soon</span>
-    </div>
-    <div class="coming-soon">
-      <div class="coming-soon-icon">✦</div>
-      <h3>Debates being curated</h3>
-      <p>We are compiling a list of meaningful theological debates on the nature of God and the identity of Jesus Christ. Check back soon.</p>
-    </div>
-  </div>
-
-  <!-- ARTICLES -->
-  <div class="resource-section" id="articles">
-    <div class="resource-section-header">
-      
-      <h2>Articles</h2>
-      <span class="resource-count">Coming soon</span>
-    </div>
-    <div class="coming-soon">
-      <div class="coming-soon-icon">✦</div>
-      <h3>Articles being gathered</h3>
-      <p>A reading list of scholarly and accessible articles on apostolic theology, One God doctrine, and the early church. Coming soon.</p>
-    </div>
-  </div>
-
-  <!-- YOUTUBE -->
-  <div class="resource-section" id="youtube">
-    <div class="resource-section-header">
-      
-      <h2>YouTube</h2>
-      <span class="resource-count">Coming soon</span>
-    </div>
-    <div class="coming-soon">
-      <div class="coming-soon-icon">✦</div>
-      <h3>Video resources coming</h3>
-      <p>We are putting together a curated YouTube playlist of teachings, testimonies and discussions aligned with the apostolic faith. Watch this space.</p>
-    </div>
-  </div>
-
-
-  <!-- ONE GOD -->
-  <div class="resource-section" id="one-god">
-    <div class="resource-section-header">
-      <h2>One God</h2>
-      <span class="resource-count">3 channels</span>
-    </div>
-    <div class="resource-list">
-      <a href="https://www.youtube.com/@billschlegel1/" target="_blank" rel="noopener" class="resource-card">
-        <div class="resource-card-body">
-          <div class="resource-card-title">One God Report</div>
-          <div class="resource-card-meta">Bill Schlegel · youtube.com/@billschlegel1</div>
-          <div class="resource-card-desc">Scriptural teaching on the One God of Israel and the true identity of Yeshua the Messiah. Deep exegesis, accessible teaching.</div>
-        </div>
-      </a>
-      <a href="https://www.youtube.com/@21stOneGod" target="_blank" rel="noopener" class="resource-card">
-        <div class="resource-card-body">
-          <div class="resource-card-title">21st Century Reformation</div>
-          <div class="resource-card-meta">youtube.com/@21stOneGod</div>
-          <div class="resource-card-desc">Apostolic One God theology and reformation of doctrines shaped by centuries of tradition rather than Scripture.</div>
-        </div>
-      </a>
-      <a href="https://www.youtube.com/@biblicalunitarian" target="_blank" rel="noopener" class="resource-card">
-        <div class="resource-card-body">
-          <div class="resource-card-title">Biblical Unitarian</div>
-          <div class="resource-card-meta">youtube.com/@biblicalunitarian</div>
-          <div class="resource-card-desc">Careful biblical scholarship making the case that Scripture teaches One God and that the Trinitarian formulation is a later doctrinal development.</div>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <!-- SHORT SEASON -->
-  <div class="resource-section" id="short-season">
-    <div class="resource-section-header">
-      <h2>Short Season</h2>
-      <span class="resource-count">2 channels</span>
-    </div>
-    <div class="resource-list">
-      <a href="https://www.youtube.com/@LeavingBabylon_" target="_blank" rel="noopener" class="resource-card">
-        <div class="resource-card-body">
-          <div class="resource-card-title">Leaving Babylon</div>
-          <div class="resource-card-meta">youtube.com/@LeavingBabylon_</div>
-          <div class="resource-card-desc">End-times discernment, coming out of religious systems, and preparing for the short season before the return of the Messiah.</div>
-        </div>
-      </a>
-      <a href="https://www.youtube.com/@JasonJack" target="_blank" rel="noopener" class="resource-card">
-        <div class="resource-card-body">
-          <div class="resource-card-title">Jason Jack</div>
-          <div class="resource-card-meta">youtube.com/@JasonJack</div>
-          <div class="resource-card-desc">Prophetic teaching on the times we are living in, Scripture-based perspective on current events and the end of the age.</div>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <!-- BIBLICAL EARTH -->
-  <div class="resource-section" id="biblical-earth">
-    <div class="resource-section-header">
-      <h2>Biblical Earth</h2>
-      <span class="resource-count">3 resources</span>
-    </div>
-    <div class="resource-list">
-      <a href="cosmology.html" class="resource-card">
-        <div class="resource-card-body">
-          <div class="resource-card-title">Biblical Cosmology</div>
-          <div class="resource-card-meta">2:22 Church · cosmology.html</div>
-          <div class="resource-card-desc">Our dedicated page covering the firmament, the circle of the earth, the fixed creation, and the sun and moon inside the dome, drawn from Rob Skiba's scripture-only research.</div>
-        </div>
-      </a>
-      <a href="https://www.youtube.com/@HangingOnHisWords" target="_blank" rel="noopener" class="resource-card">
-        <div class="resource-card-body">
-          <div class="resource-card-title">Hanging on His Words</div>
-          <div class="resource-card-meta">youtube.com/@HangingOnHisWords</div>
-          <div class="resource-card-desc">Scripture-first research into Biblical cosmology. Detailed word studies, Hebrew exegesis and honest engagement with what the text actually says about the earth and the heavens.</div>
-        </div>
-      </a>
-      <a href="https://www.youtube.com/@DITRH" target="_blank" rel="noopener" class="resource-card">
-        <div class="resource-card-body">
-          <div class="resource-card-title">DITRH</div>
-          <div class="resource-card-meta">youtube.com/@DITRH</div>
-          <div class="resource-card-desc">Deep investigative research into Biblical earth cosmology, history and the nature of the firmament. Documentary-style content backed by scriptural and historical sources.</div>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <!-- SUGGEST A RESOURCE -->
-  <div class="suggest-box">
-    <h3>Know a good <em>resource?</em></h3>
-    <p>If you have come across a podcast, article, debate or video that you believe would benefit the 2:22 community, we would love to hear about it. Send us a message and we will review it.</p>
-    <a href="mailto:hello@2-22church.com?subject=Resource Suggestion">Suggest a Resource →</a>
-  </div>
-
 </div>
 
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="index.html" class="nav-logo" style="display:flex;align-items:center;gap:0.4rem;">
-        <span style="display:flex;align-items:center;">2:2<span style="display:inline-block;width:1px;height:1.1em;background:linear-gradient(to bottom,transparent,#C9A84C 30%,#C9A84C 70%,transparent);opacity:0.3;margin:0 3px;vertical-align:middle;"></span><span style="font-style:italic;opacity:1;">2</span></span>
-        <span style="font-style:italic;font-size:1.2rem;color:#A8A090;opacity:0.5;">Church</span>
-      </a>
-      <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" style="display:inline-block;margin-bottom:1rem;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);text-decoration:none;">Watch on YouTube</a>
+      <a href="index.html"><img src="logo.png" alt="2:22 Church" style="height:1.8rem;width:auto;display:block;margin-bottom:0.75rem;"></a>
+      <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" style="display:inline-block;margin-bottom:0.75rem;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:#C9A84C;text-decoration:none;">Watch on YouTube</a>
       <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
     </div>
     <div class="footer-col">
@@ -337,9 +426,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
         <li><a href="index.html#about">Our Foundation</a></li>
         <li><a href="index.html#beliefs">What We Believe</a></li>
         <li><a href="index.html#gathering">Gatherings</a></li>
-        <li><a href="index.html#practices">How We Live</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="references.html">Resources</a></li>
+        <li><a href="project314.html">God of Pi</a></li>
+        <li><a href="cosmology.html">Biblical Cosmology</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -347,8 +437,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
       <ul>
         <li><a href="index.html#join">Join a Gathering</a></li>
         <li><a href="mailto:hello@2-22church.com">Email Us</a></li>
-        <li><a href="#">Start a Group</a></li>
-        <li><a href="#">Share Your Story</a></li>
+        <li><a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener">YouTube Channel</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -362,10 +451,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2025 2:22 Church · 2-22church.com</span>
-    <span class="footer-verse">"Where two or three gather in my name, there am I with them.", Matthew 18:20</span>
+    <span>2025 2:22 Church · 2-22church.com</span>
+    <span class="footer-verse">"Where two or three gather in my name, there am I with them." Matthew 18:20</span>
   </div>
 </footer>
-
 </body>
 </html>
