@@ -3,9 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2:22 Church — Built on the Living Word</title>
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="shortcut icon" href="favicon.ico">
+<title>2:22 Church, Built on the Living Word</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
@@ -30,9 +28,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:
 .nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
 .nav-hamburger.open span:nth-child(2){opacity:0;}
 .nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
-.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,17,23,0.98);z-index:150;flex-direction:column;align-items:center;justify-content:flex-start;gap:0;padding:5rem 2rem 3rem;overflow-y:auto;}
+.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,17,23,0.98);z-index:150;flex-direction:column;align-items:center;justify-content:center;gap:2rem;}
 .mobile-menu.open{display:flex;}
-.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--text-primary);text-decoration:none;letter-spacing:0.06em;transition:color 0.2s;padding:0.65rem 0;border-bottom:0.5px solid var(--border-subtle);width:100%;text-align:center;}
+.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--text-primary);text-decoration:none;letter-spacing:0.06em;transition:color 0.2s;}
 .mobile-menu a:hover{color:var(--gold);}
 .mobile-menu .mobile-cta{font-family:'DM Sans',sans-serif;font-size:0.85rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.85rem 2.5rem;border-radius:2px;margin-top:1rem;}
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;text-align:center;padding:8rem 2rem 4rem;overflow:hidden;}
@@ -208,7 +206,10 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church" style="height:2rem;width:auto;display:block;"></a>
+  <a href="index.html" class="nav-logo">
+    <span class="logo-num">2:2<span class="logo-sep"></span><span class="logo-shared">2</span></span>
+    <span class="logo-word">Church</span>
+  </a>
   <ul class="nav-links">
     <li><a href="#about">Foundation</a></li>
     <li><a href="#beliefs">Beliefs</a></li>
@@ -217,7 +218,6 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
     <li><a href="#community">Community</a></li>
     <li><a href="blog.html">Blog</a></li>
     <li><a href="references.html">Resources</a></li>
-    <li><a href="project314.html">God of Pi</a></li>
   </ul>
   <a href="#join" class="nav-cta">Connect</a>
   <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
@@ -233,7 +233,6 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
   <a href="#community" class="mobile-link">Community</a>
   <a href="blog.html" class="mobile-link">Blog</a>
   <a href="references.html" class="mobile-link">Resources</a>
-  <a href="project314.html" class="mobile-link">God of Pi</a>
   <a href="#join" class="mobile-cta mobile-link">Connect</a>
 </div>
 
@@ -275,18 +274,18 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
       <div class="about-text">
         <div class="section-label">Our Foundation</div>
         <h2 class="section-title">Built on the <em>Living Word</em>,<br>not on stone or wood</h2>
-        <p>2:22 Church is a community rooted entirely in <strong>Jesus Christ and the apostolic teaching</strong>. We take our name and our calling from two passages in 2 Timothy — a charge to pass on truth faithfully and to pursue righteousness with all who call on the Lord.</p>
-        <p>We hold to <strong>One God Theology</strong> — Jesus as the Son of God, risen and exalted to the right hand of the Father as Saviour, Lord and King of the world. The Holy Spirit is the living power by which the Almighty moves and works in creation.</p>
-        <p>We do not believe that any building, structure or institution constructed by human hands is a church or a temple. <strong>Living people are the church of God.</strong> Where believers gather — in homes, parks, halls, or open fields — there is the assembly of the Lord.</p>
+        <p>2:22 Church is a community rooted entirely in <strong>Jesus Christ and the apostolic teaching</strong>. We take our name and our calling from two passages in 2 Timothy, a charge to pass on truth faithfully and to pursue righteousness with all who call on the Lord.</p>
+        <p>We hold to <strong>One God Theology</strong>, Jesus as the Son of God, risen and exalted to the right hand of the Father as Saviour, Lord and King of the world. The Holy Spirit is the living power by which the Almighty moves and works in creation.</p>
+        <p>We do not believe that any building, structure or institution constructed by human hands is a church or a temple. <strong>Living people are the church of God.</strong> Where believers gather, in homes, parks, halls, or open fields, there is the assembly of the Lord.</p>
       </div>
       <div>
         <div class="dual-verse">
           <h3>Why the name 2:2|2?</h3>
           <div class="verse-block">
-            <blockquote>The name carries two foundations in one. Read left to right — <em>2:2</em> points to 2 Timothy 2:2, a charge to pass on faithful teaching. Continue and you see <em>2:22</em> — 2 Timothy 2:22, a call to pursue righteousness in holy community. The shared final digit is deliberate: the two callings are inseparable.</blockquote>
+            <blockquote>The name carries two foundations in one. Read left to right, <em>2:2</em> points to 2 Timothy 2:2, a charge to pass on faithful teaching. Continue and you see <em>2:22</em>, 2 Timothy 2:22, a call to pursue righteousness in holy community. The shared final digit is deliberate: the two callings are inseparable.</blockquote>
           </div>
           <div class="verse-block">
-            <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.8;">We are not built on programmes, buildings or institutions. We are built on these two apostolic charges — faithful in teaching, fervent in community. Everything else flows from here.</p>
+            <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.8;">We are not built on programmes, buildings or institutions. We are built on these two apostolic charges, faithful in teaching, fervent in community. Everything else flows from here.</p>
           </div>
         </div>
       </div>
@@ -300,34 +299,34 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
     <h2 class="section-title">Core <em>Convictions</em></h2>
     <div class="beliefs-grid">
       <div class="belief-card" data-num="01">
-        
+        <div class="belief-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></div>
         <h3>One God</h3>
-        <p>We affirm One God Theology. Jesus is the Son of God — crucified, resurrected, and exalted to the Father's right hand as Saviour, Lord and King. The Holy Spirit is the living power of the Almighty at work in the created world.</p>
+        <p>We affirm One God Theology. Jesus is the Son of God, crucified, resurrected, and exalted to the Father's right hand as Saviour, Lord and King. The Holy Spirit is the living power of the Almighty at work in the created world.</p>
       </div>
       <div class="belief-card" data-num="02">
-        
+        <div class="belief-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <h3>The Living Church</h3>
-        <p>No building, institution, or structure made by human hands is the church. The people of God are the church. Gathering can happen in any place — a home, a park, a hall — where believers come together to worship, share, testify and edify.</p>
+        <p>No building, institution, or structure made by human hands is the church. The people of God are the church. Gathering can happen in any place, a home, a park, a hall, where believers come together to worship, share, testify and edify.</p>
       </div>
       <div class="belief-card" data-num="03">
-        
+        <div class="belief-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <h3>Baptism in Jesus' Name</h3>
-        <p>We baptise in water in the name of Jesus Christ, as the apostles practised. Yet baptism alone cannot save — what saves is genuine personal transformation: the new birth from above. Outward act must follow inward reality.</p>
+        <p>We baptise in water in the name of Jesus Christ, as the apostles practised. Yet baptism alone cannot save, what saves is genuine personal transformation: the new birth from above. Outward act must follow inward reality.</p>
       </div>
       <div class="belief-card" data-num="04">
-        
+        <div class="belief-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
         <h3>Apostolic Teaching</h3>
-        <p>We hold firmly to the teaching of Jesus and the apostles as recorded in Scripture. No single bishop, pope or centralised authority governs our community — we are a fellowship of equals under the headship of Christ alone.</p>
+        <p>We hold firmly to the teaching of Jesus and the apostles as recorded in Scripture. No single bishop, pope or centralised authority governs our community, we are a fellowship of equals under the headship of Christ alone.</p>
       </div>
       <div class="belief-card" data-num="05">
-        
+        <div class="belief-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
         <h3>A Life of Service</h3>
-        <p>We live by practice, not by preaching. Every believer is called to serve — in personal life, in family, in neighbourhood, in society. Wherever a person can bring glory to the Lord through service, that is sacred ground.</p>
+        <p>We live by practice, not by preaching. Every believer is called to serve, in personal life, in family, in neighbourhood, in society. Wherever a person can bring glory to the Lord through service, that is sacred ground.</p>
       </div>
       <div class="belief-card" data-num="06">
-        
+        <div class="belief-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
         <h3>Giving from the Heart</h3>
-        <p>We do not mandate a tithe. Instead we encourage every person to find a cause that builds the kingdom — food, shelter, clothing, mutual financial support. Give as led by the Spirit: to each other, to the poor, to the work of the Lord.</p>
+        <p>We do not mandate a tithe. Instead we encourage every person to find a cause that builds the kingdom, food, shelter, clothing, mutual financial support. Give as led by the Spirit: to each other, to the poor, to the work of the Lord.</p>
       </div>
     </div>
   </div>
@@ -338,7 +337,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
     <div class="community-intro">
       <div class="section-label">Life Together</div>
       <h2 class="section-title">Where <em>People</em> Gather</h2>
-      <p>The church is not a building — it is the people of God meeting wherever they can, sharing life, bearing burdens, and pursuing the way of Jesus together.</p>
+      <p>The church is not a building, it is the people of God meeting wherever they can, sharing life, bearing burdens, and pursuing the way of Jesus together.</p>
     </div>
     <div class="photo-mosaic">
       <div class="photo-slot large">
@@ -371,16 +370,16 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
     <h2 class="section-title">Any Place. <em>Every Believer.</em></h2>
     <div class="gather-flex">
       <div class="gather-text">
-        <p>We give immense importance to the gathering of believers — not just in community halls but in houses, parks, courtyards, and any indoor or outdoor space where God's people come together to worship, share, testify and build one another up.</p>
+        <p>We give immense importance to the gathering of believers, not just in community halls but in houses, parks, courtyards, and any indoor or outdoor space where God's people come together to worship, share, testify and build one another up.</p>
         <p>Our gatherings are centred on life, not logistics. We do not invest in costly instruments, elaborate management structures or impressive buildings. The focus is on the people gathered and the Spirit moving among them.</p>
         <div class="golden-divider"><span>✦</span></div>
-        <p>Whether you are in a city flat or a rural home, a park bench or a borrowed hall — if you are a follower of Jesus seeking genuine fellowship, you are welcome to gather with us. <strong style="color:var(--text-primary)">Find or start a 2:22 gathering near you.</strong></p>
+        <p>Whether you are in a city flat or a rural home, a park bench or a borrowed hall, if you are a follower of Jesus seeking genuine fellowship, you are welcome to gather with us. <strong style="color:var(--text-primary)">Find or start a 2:22 gathering near you.</strong></p>
       </div>
       <div class="gather-places">
-        <div class="place-item"><h4>Homes</h4><p>The original church met in homes. So do we.</p></div>
-        <div class="place-item"><h4>Parks</h4><p>Open air, open hearts, open word.</p></div>
-        <div class="place-item"><h4>Community Halls</h4><p>Shared spaces for larger gatherings.</p></div>
-        <div class="place-item"><h4>Wherever You Are</h4><p>Two or three gathered — He is there.</p></div>
+        <div class="place-item"><span class="place-icon">🏠</span><h4>Homes</h4><p>The original church met in homes. So do we.</p></div>
+        <div class="place-item"><span class="place-icon">🌳</span><h4>Parks</h4><p>Open air, open hearts, open word.</p></div>
+        <div class="place-item"><span class="place-icon">🏛️</span><h4>Community Halls</h4><p>Shared spaces for larger gatherings.</p></div>
+        <div class="place-item"><span class="place-icon">☕</span><h4>Wherever You Are</h4><p>Two or three gathered, He is there.</p></div>
       </div>
     </div>
   </div>
@@ -391,17 +390,17 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
     <div class="section-label">How We Live</div>
     <h2 class="section-title">Practice Over <em>Performance</em></h2>
     <div class="practices-list">
-      <div class="practice-row"><div class="practice-label"><h3>Worship</h3></div><div class="practice-body"><p>Worship is not confined to a scheduled service. It is the whole orientation of a life surrendered to God — expressed in prayer, song, service, fellowship, and the daily choices we make to follow the way of Jesus.</p></div></div>
-      <div class="practice-row"><div class="practice-label"><h3>Teaching</h3></div><div class="practice-body"><p>We study the Scriptures together, in the tradition of Jesus and the apostles. Everyone is encouraged to bring what they have learned, to ask questions, to wrestle with the text. Truth is not the property of one teacher — it is the inheritance of the whole community.</p></div></div>
-      <div class="practice-row"><div class="practice-label"><h3>Baptism</h3></div><div class="practice-body"><p>We baptise in water in the name of Jesus Christ, as the early apostles practised. Baptism is a public declaration of a transformed life — a response to genuine inner renewal, not a ritual that produces it.</p></div></div>
-      <div class="practice-row"><div class="practice-label"><h3>Service</h3></div><div class="practice-body"><p>We live out our faith in the everyday — caring for neighbours, sharing resources, standing with the vulnerable, serving without recognition. We believe the greatest testimony to the risen Christ is a life visibly changed and poured out for others.</p></div></div>
-      <div class="practice-row"><div class="practice-label"><h3>Generosity</h3></div><div class="practice-body"><p>There is no tithe mandate in our community. We encourage each person to prayerfully identify a need — food, shelter, clothing, financial support for a fellow believer — and to meet it. Generosity flows from love, not obligation.</p></div></div>
-      <div class="practice-row"><div class="practice-label"><h3>Leadership</h3></div><div class="practice-body"><p>We reject centralised hierarchical authority. No bishop, pope or single leader governs our community. We are led by servant-elders who model the way of Christ — walking alongside, not standing above. Christ alone is the head of the church.</p></div></div>
+      <div class="practice-row"><div class="practice-label"><h3>Worship</h3></div><div class="practice-body"><p>Worship is not confined to a scheduled service. It is the whole orientation of a life surrendered to God, expressed in prayer, song, service, fellowship, and the daily choices we make to follow the way of Jesus.</p></div></div>
+      <div class="practice-row"><div class="practice-label"><h3>Teaching</h3></div><div class="practice-body"><p>We study the Scriptures together, in the tradition of Jesus and the apostles. Everyone is encouraged to bring what they have learned, to ask questions, to wrestle with the text. Truth is not the property of one teacher, it is the inheritance of the whole community.</p></div></div>
+      <div class="practice-row"><div class="practice-label"><h3>Baptism</h3></div><div class="practice-body"><p>We baptise in water in the name of Jesus Christ, as the early apostles practised. Baptism is a public declaration of a transformed life, a response to genuine inner renewal, not a ritual that produces it.</p></div></div>
+      <div class="practice-row"><div class="practice-label"><h3>Service</h3></div><div class="practice-body"><p>We live out our faith in the everyday, caring for neighbours, sharing resources, standing with the vulnerable, serving without recognition. We believe the greatest testimony to the risen Christ is a life visibly changed and poured out for others.</p></div></div>
+      <div class="practice-row"><div class="practice-label"><h3>Generosity</h3></div><div class="practice-body"><p>There is no tithe mandate in our community. We encourage each person to prayerfully identify a need, food, shelter, clothing, financial support for a fellow believer, and to meet it. Generosity flows from love, not obligation.</p></div></div>
+      <div class="practice-row"><div class="practice-label"><h3>Leadership</h3></div><div class="practice-body"><p>We reject centralised hierarchical authority. No bishop, pope or single leader governs our community. We are led by servant-elders who model the way of Christ, walking alongside, not standing above. Christ alone is the head of the church.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- BLOG — auto-populated from posts.js -->
+<!-- BLOG, auto-populated from posts.js -->
 <section class="blog" id="blog">
   <div class="container">
     <div class="blog-header">
@@ -421,7 +420,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
   <div class="join-inner">
     <div class="section-label">Join the Community</div>
     <h2 class="join-title">You are the <em>Church</em>.<br>Come as you are.</h2>
-    <p>Whether you are new to faith, returning after time away, or simply seeking genuine community built on the teaching of Jesus — you belong here. Enter your email and we will be in touch about gatherings near you.</p>
+    <p>Whether you are new to faith, returning after time away, or simply seeking genuine community built on the teaching of Jesus, you belong here. Enter your email and we will be in touch about gatherings near you.</p>
     <form class="join-form" onsubmit="handleJoin(event)">
       <input type="email" placeholder="Your email address" id="joinEmail" required>
       <button type="submit">Connect ↗</button>
@@ -433,7 +432,10 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="index.html"><img src="logo.png" alt="2:22 Church" style="height:1.8rem;width:auto;display:block;margin-bottom:1rem;"></a>
+      <a href="index.html" class="nav-logo">
+        <span class="logo-num">2:2<span class="logo-sep"></span><span class="logo-shared">2</span></span>
+        <span class="logo-word">Church</span>
+      </a>
       <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
     </div>
     <div class="footer-col">
@@ -445,7 +447,6 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
         <li><a href="#practices">How We Live</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="references.html">Resources</a></li>
-        <li><a href="project314.html">God of Pi</a></li>
     </div>
     <div class="footer-col">
       <h4>Connect</h4>
@@ -468,7 +469,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
   </div>
   <div class="footer-bottom">
     <span>© 2025 2:22 Church · 2-22church.com</span>
-    <span class="footer-verse">"Where two or three gather in my name, there am I with them." — Matthew 18:20</span>
+    <span class="footer-verse">"Where two or three gather in my name, there am I with them.", Matthew 18:20</span>
   </div>
 </footer>
 
@@ -477,7 +478,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 function handleJoin(e) {
   e.preventDefault();
   var email = document.getElementById('joinEmail').value;
-  document.getElementById('joinMsg').textContent = 'Thank you — we will be in touch at ' + email;
+  document.getElementById('joinMsg').textContent = 'Thank you, we will be in touch at ' + email;
   document.getElementById('joinEmail').value = '';
 }
 
