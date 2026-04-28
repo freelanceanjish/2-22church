@@ -228,8 +228,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 
 
+
+
+
 /* ── HERO ── */
-.hero{position:relative;width:100%;height:100vh;min-height:600px;background:var(--deep);overflow:hidden;}
+.hero{position:relative;width:100%;height:100vh;min-height:600px;background:var(--deep);overflow:hidden;display:flex;align-items:center;justify-content:center;}
 #sunflower-bg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;}
 .h-num{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:normal;color:var(--gold);line-height:1;display:flex;align-items:center;}
 .h-sep{display:inline-block;width:1.5px;align-self:stretch;background:linear-gradient(to bottom,transparent,var(--gold) 28%,var(--gold) 72%,transparent);opacity:.3;margin:0 5px;}
@@ -237,51 +240,44 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .hv-accent{width:22px;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);flex-shrink:0;}
 .hv-ref{font-size:0.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-align:center;line-height:1.5;}
 .hv-bar{width:0.5px;height:18px;background:linear-gradient(to bottom,transparent,rgba(201,168,76,.3),transparent);flex-shrink:0;}
-.hv-text{font-family:'Cormorant Garamond',serif;font-size:0.95rem;font-style:italic;color:rgba(240,234,214,.72);line-height:1.7;text-align:center;}
+.hv-text{font-family:'Cormorant Garamond',serif;font-size:clamp(0.8rem,1.8vmin,1rem);font-style:italic;color:rgba(240,234,214,.72);line-height:1.7;text-align:center;}
 
-/* DESKTOP */
-.hero-desktop{display:none;position:absolute;inset:0;z-index:2;align-items:center;justify-content:center;}
-/* main row: left verse | centre | right verse */
-.hd-row{display:flex;align-items:center;justify-content:center;width:100%;}
+/* DESKTOP
+   Layout: [verse 18vw] [sunflower 30vw] [verse 18vw] centred in a 66vw row
+   Sunflower R = 15vw (drawn at canvas centre = flex centre)
+   Verse cards sit exactly outside the circle — no overlap possible
+*/
+.hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:3vmin;}
+.hd-row{display:flex;align-items:center;gap:0;}
 .hd-verse-left,.hd-verse-right{
-  width:18vmin;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:.7rem;
-  height:60vmin;flex-shrink:0;
+  width:16vw;min-width:120px;max-width:200px;
+  height:30vw;max-height:360px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.8rem;
+  flex-shrink:0;
 }
 .hd-centre{
-  width:60vmin;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;flex-shrink:0;
+  width:30vw;min-width:260px;max-width:460px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  flex-shrink:0;
 }
-.hd-centre .h-num{font-size:clamp(3rem,9vmin,6rem);}
-.hd-centre .h-church{font-size:clamp(1.2rem,3.2vmin,2.2rem);margin-top:6px;}
-/* buttons row below verse row */
-.hd-btns{display:flex;gap:1rem;margin-top:2vmin;justify-content:center;}
-.hd-btns .btn-primary,.hd-btns .btn-ghost{font-size:0.75rem;padding:0.75rem 1.8rem;}
-
-/* DESKTOP wrapper is a column: row + buttons */
-.hero-desktop-inner{display:flex;flex-direction:column;align-items:center;}
+.hd-centre .h-num{font-size:clamp(3rem,7vw,6rem);}
+.hd-centre .h-church{font-size:clamp(1.1rem,2.5vw,2rem);margin-top:6px;}
+.hd-btns{display:flex;gap:1rem;}
+.hd-btns .btn-primary,.hd-btns .btn-ghost{font-size:0.78rem;padding:0.8rem 2rem;}
 
 /* TABLET */
-.hero-tablet{
-  display:none;position:absolute;inset:0;
-  flex-direction:column;align-items:center;justify-content:center;
-  gap:2rem;z-index:2;padding:2rem;
-}
-.ht-centre .h-num{font-size:3.8rem;}
-.ht-centre .h-church{font-size:1.4rem;margin-top:4px;}
-.ht-bottom{display:flex;width:100%;max-width:440px;}
+.hero-tablet{display:none;flex-direction:column;align-items:center;justify-content:center;gap:2rem;z-index:2;padding:2rem;width:100%;}
+.ht-centre .h-num{font-size:3.5rem;}
+.ht-centre .h-church{font-size:1.3rem;margin-top:4px;}
+.ht-bottom{display:flex;width:100%;max-width:420px;}
 .ht-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:.6rem;padding:0 1rem;}
 .ht-divider{width:0.5px;background:rgba(201,168,76,.2);flex-shrink:0;}
 .ht-btn{font-size:0.65rem;padding:0.6rem 1rem;margin-top:.5rem;text-align:center;display:inline-block;text-decoration:none;}
 
 /* MOBILE */
-.hero-mobile{
-  display:none;position:absolute;inset:0;
-  flex-direction:column;align-items:center;justify-content:center;
-  gap:0;z-index:2;padding:1.5rem;
-}
+.hero-mobile{display:none;flex-direction:column;align-items:center;justify-content:center;gap:0;z-index:2;padding:1.5rem;width:100%;}
 .hero-mobile .h-num{font-size:3rem;margin-bottom:4px;}
-.hero-mobile .h-church{font-size:1rem;margin-bottom:1.4rem;}
+.hero-mobile .h-church{font-size:1rem;margin-bottom:1.2rem;}
 .hm-verse{display:flex;flex-direction:column;align-items:center;gap:.4rem;width:100%;margin-bottom:.5rem;}
 .hm-verse .hv-ref{font-size:0.62rem;}
 .hm-verse .hv-text{font-size:0.88rem;}
@@ -289,18 +285,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .hm-btns{display:flex;flex-direction:column;gap:.5rem;width:100%;margin-top:1rem;}
 .hm-btn{font-size:0.7rem;padding:0.7rem 0;text-align:center;display:block;text-decoration:none;}
 
-@media(min-width:860px){
-  .hero-desktop{display:flex;}
-  .hero-tablet,.hero-mobile{display:none;}
-}
-@media(min-width:540px) and (max-width:859px){
-  .hero-tablet{display:flex;}
-  .hero-desktop,.hero-mobile{display:none;}
-}
-@media(max-width:539px){
-  .hero-mobile{display:flex;}
-  .hero-desktop,.hero-tablet{display:none;}
-}
+@media(min-width:860px){.hero-inner{display:flex;}.hero-tablet,.hero-mobile{display:none;}}
+@media(min-width:540px) and (max-width:859px){.hero-tablet{display:flex;}.hero-inner,.hero-mobile{display:none;}}
+@media(max-width:539px){.hero-mobile{display:flex;}.hero-inner,.hero-tablet{display:none;}}
 /* ── HERO END ── */
 
 </style>
@@ -346,33 +333,31 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 <section class="hero" id="hero-section">
   <canvas id="sunflower-bg"></canvas>
 
-  <!-- DESKTOP: flexbox column centres everything, verse cards flank the sunflower -->
-  <div class="hero-desktop">
-    <div class="hero-desktop-inner">
-      <div class="hd-row">
-        <div class="hd-verse-left">
-          <div class="hv-accent"></div>
-          <div class="hv-ref">2 Timothy 2:2</div>
-          <div class="hv-bar"></div>
-          <div class="hv-text">Entrust to reliable people who will also be qualified to teach others.</div>
-          <div class="hv-accent"></div>
-        </div>
-        <div class="hd-centre">
-          <div class="h-num">2:2<span class="h-sep"></span>2</div>
-          <div class="h-church">Church</div>
-        </div>
-        <div class="hd-verse-right">
-          <div class="hv-accent"></div>
-          <div class="hv-ref">2 Timothy 2:22</div>
-          <div class="hv-bar"></div>
-          <div class="hv-text">Pursue righteousness, faith, love and peace with those who call on the Lord.</div>
-          <div class="hv-accent"></div>
-        </div>
+  <!-- DESKTOP -->
+  <div class="hero-inner">
+    <div class="hd-row">
+      <div class="hd-verse-left">
+        <div class="hv-accent"></div>
+        <div class="hv-ref">2 Timothy 2:2</div>
+        <div class="hv-bar"></div>
+        <div class="hv-text">Entrust to reliable people who will also be qualified to teach others.</div>
+        <div class="hv-accent"></div>
       </div>
-      <div class="hd-btns">
-        <a href="#about" class="btn-primary">Our Foundation</a>
-        <a href="#gathering" class="btn-ghost">Find a Gathering</a>
+      <div class="hd-centre">
+        <div class="h-num">2:2<span class="h-sep"></span>2</div>
+        <div class="h-church">Church</div>
       </div>
+      <div class="hd-verse-right">
+        <div class="hv-accent"></div>
+        <div class="hv-ref">2 Timothy 2:22</div>
+        <div class="hv-bar"></div>
+        <div class="hv-text">Pursue righteousness, faith, love and peace with those who call on the Lord.</div>
+        <div class="hv-accent"></div>
+      </div>
+    </div>
+    <div class="hd-btns">
+      <a href="#about" class="btn-primary">Our Foundation</a>
+      <a href="#gathering" class="btn-ghost">Find a Gathering</a>
     </div>
   </div>
 
@@ -416,6 +401,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     </div>
   </div>
 </section>
+
+
 
 
 
@@ -777,6 +764,7 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
 
 
 
+
 <script>
 (function(){
   var canvas=document.getElementById('sunflower-bg');
@@ -787,13 +775,12 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
   function setup(){
     W=window.innerWidth;H=window.innerHeight;
     canvas.width=W;canvas.height=H;
-    var vmin=Math.min(W,H)/100;
     var isDesktop=W>=860,isTablet=W>=540&&W<860;
-    /* sunflower centre = viewport centre — matches flexbox-centred layout */
-    CX=W/2; CY=H/2;
-    if(isDesktop){R=vmin*30;AM=1.0;SM=1.0;}
-    else if(isTablet){R=vmin*20;AM=0.6;SM=0.85;}
-    else{R=vmin*20;AM=0.35;SM=0.7;}
+    CX=W/2;CY=H/2;
+    /* R = 15vw — matches hd-centre width of 30vw (diameter) */
+    if(isDesktop){R=W*0.15;AM=1.0;SM=1.0;}
+    else if(isTablet){R=Math.min(W,H)*0.20;AM=0.6;SM=0.85;}
+    else{R=Math.min(W,H)*0.22;AM=0.35;SM=0.7;}
   }
   function draw(){
     ctx.clearRect(0,0,W,H);
