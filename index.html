@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>2:22 Church — Built on the Living Word</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="shortcut icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <style>
 :root{--gold:#C9A84C;--gold-light:#E8D5A3;--gold-dark:#8B6914;--deep:#0D1117;--deep-mid:#161C26;--surface:#1C2333;--surface-light:#232B3E;--text-primary:#F0EAD6;--text-secondary:#A8A090;--text-muted:#6B6358;--border:rgba(201,168,76,0.18);--border-subtle:rgba(255,255,255,0.06);}
@@ -30,9 +30,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:
 .nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
 .nav-hamburger.open span:nth-child(2){opacity:0;}
 .nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
-.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,17,23,0.98);z-index:150;flex-direction:column;align-items:center;justify-content:center;gap:2rem;}
+.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,17,23,0.98);z-index:150;flex-direction:column;align-items:center;justify-content:flex-start;gap:0;padding:5rem 2rem 3rem;overflow-y:auto;}
 .mobile-menu.open{display:flex;}
-.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--text-primary);text-decoration:none;letter-spacing:0.06em;transition:color 0.2s;}
+.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--text-primary);text-decoration:none;letter-spacing:0.06em;transition:color 0.2s;padding:0.65rem 0;border-bottom:0.5px solid var(--border-subtle);width:100%;text-align:center;}
 .mobile-menu a:hover{color:var(--gold);}
 .mobile-menu .mobile-cta{font-family:'DM Sans',sans-serif;font-size:0.85rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.85rem 2.5rem;border-radius:2px;margin-top:1rem;}
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;text-align:center;padding:8rem 2rem 4rem;overflow:hidden;}
@@ -208,10 +208,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">
-    <span class="logo-num">2:2<span class="logo-sep"></span><span class="logo-shared">2</span></span>
-    <span class="logo-word">Church</span>
-  </a>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church" style="height:2rem;width:auto;display:block;"></a>
   <ul class="nav-links">
     <li><a href="#about">Foundation</a></li>
     <li><a href="#beliefs">Beliefs</a></li>
@@ -236,6 +233,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
   <a href="#community" class="mobile-link">Community</a>
   <a href="blog.html" class="mobile-link">Blog</a>
   <a href="references.html" class="mobile-link">Resources</a>
+  <a href="project314.html" class="mobile-link">God of Pi</a>
   <a href="#join" class="mobile-cta mobile-link">Connect</a>
 </div>
 
@@ -302,32 +300,32 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
     <h2 class="section-title">Core <em>Convictions</em></h2>
     <div class="beliefs-grid">
       <div class="belief-card" data-num="01">
-        <div class="belief-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></div>
+        
         <h3>One God</h3>
         <p>We affirm One God Theology. Jesus is the Son of God — crucified, resurrected, and exalted to the Father's right hand as Saviour, Lord and King. The Holy Spirit is the living power of the Almighty at work in the created world.</p>
       </div>
       <div class="belief-card" data-num="02">
-        <div class="belief-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        
         <h3>The Living Church</h3>
         <p>No building, institution, or structure made by human hands is the church. The people of God are the church. Gathering can happen in any place — a home, a park, a hall — where believers come together to worship, share, testify and edify.</p>
       </div>
       <div class="belief-card" data-num="03">
-        <div class="belief-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        
         <h3>Baptism in Jesus' Name</h3>
         <p>We baptise in water in the name of Jesus Christ, as the apostles practised. Yet baptism alone cannot save — what saves is genuine personal transformation: the new birth from above. Outward act must follow inward reality.</p>
       </div>
       <div class="belief-card" data-num="04">
-        <div class="belief-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        
         <h3>Apostolic Teaching</h3>
         <p>We hold firmly to the teaching of Jesus and the apostles as recorded in Scripture. No single bishop, pope or centralised authority governs our community — we are a fellowship of equals under the headship of Christ alone.</p>
       </div>
       <div class="belief-card" data-num="05">
-        <div class="belief-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        
         <h3>A Life of Service</h3>
         <p>We live by practice, not by preaching. Every believer is called to serve — in personal life, in family, in neighbourhood, in society. Wherever a person can bring glory to the Lord through service, that is sacred ground.</p>
       </div>
       <div class="belief-card" data-num="06">
-        <div class="belief-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        
         <h3>Giving from the Heart</h3>
         <p>We do not mandate a tithe. Instead we encourage every person to find a cause that builds the kingdom — food, shelter, clothing, mutual financial support. Give as led by the Spirit: to each other, to the poor, to the work of the Lord.</p>
       </div>
@@ -379,10 +377,10 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
         <p>Whether you are in a city flat or a rural home, a park bench or a borrowed hall — if you are a follower of Jesus seeking genuine fellowship, you are welcome to gather with us. <strong style="color:var(--text-primary)">Find or start a 2:22 gathering near you.</strong></p>
       </div>
       <div class="gather-places">
-        <div class="place-item"><span class="place-icon">🏠</span><h4>Homes</h4><p>The original church met in homes. So do we.</p></div>
-        <div class="place-item"><span class="place-icon">🌳</span><h4>Parks</h4><p>Open air, open hearts, open word.</p></div>
-        <div class="place-item"><span class="place-icon">🏛️</span><h4>Community Halls</h4><p>Shared spaces for larger gatherings.</p></div>
-        <div class="place-item"><span class="place-icon">☕</span><h4>Wherever You Are</h4><p>Two or three gathered — He is there.</p></div>
+        <div class="place-item"><h4>Homes</h4><p>The original church met in homes. So do we.</p></div>
+        <div class="place-item"><h4>Parks</h4><p>Open air, open hearts, open word.</p></div>
+        <div class="place-item"><h4>Community Halls</h4><p>Shared spaces for larger gatherings.</p></div>
+        <div class="place-item"><h4>Wherever You Are</h4><p>Two or three gathered — He is there.</p></div>
       </div>
     </div>
   </div>
@@ -435,10 +433,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="index.html" class="nav-logo">
-        <span class="logo-num">2:2<span class="logo-sep"></span><span class="logo-shared">2</span></span>
-        <span class="logo-word">Church</span>
-      </a>
+      <a href="index.html"><img src="logo.png" alt="2:22 Church" style="height:1.8rem;width:auto;display:block;margin-bottom:1rem;"></a>
       <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
     </div>
     <div class="footer-col">
@@ -450,7 +445,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
         <li><a href="#practices">How We Live</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="references.html">Resources</a></li>
-    <li><a href="project314.html">God of Pi</a></li>
+        <li><a href="project314.html">God of Pi</a></li>
     </div>
     <div class="footer-col">
       <h4>Connect</h4>

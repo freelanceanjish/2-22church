@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blog — 2:22 Church</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="shortcut icon" href="favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
@@ -96,9 +98,9 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 .nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
 .nav-hamburger.open span:nth-child(2){opacity:0;}
 .nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
-.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,17,23,0.98);z-index:150;flex-direction:column;align-items:center;justify-content:center;gap:2rem;}
+.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,17,23,0.98);z-index:150;flex-direction:column;align-items:center;justify-content:flex-start;gap:0;padding:5rem 2rem 3rem;overflow-y:auto;}
 .mobile-menu.open{display:flex;}
-.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--text-primary);text-decoration:none;letter-spacing:0.06em;transition:color 0.2s;}
+.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--text-primary);text-decoration:none;letter-spacing:0.06em;transition:color 0.2s;padding:0.65rem 0;border-bottom:0.5px solid var(--border-subtle);width:100%;text-align:center;}
 .mobile-menu a:hover{color:var(--gold);}
 .mobile-menu .mobile-cta{font-family:'DM Sans',sans-serif;font-size:0.85rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.85rem 2.5rem;border-radius:2px;margin-top:1rem;}
 @media(max-width:800px){
@@ -118,10 +120,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo" style="display:flex;align-items:center;gap:0.4rem;">
-    <span style="display:flex;align-items:center;">2:2<span style="display:inline-block;width:1px;height:1.1em;background:linear-gradient(to bottom,transparent,#C9A84C 30%,#C9A84C 70%,transparent);opacity:0.3;margin:0 3px;vertical-align:middle;"></span><span style="font-style:italic;opacity:1;">2</span></span>
-    <span style="font-style:italic;font-size:1.3rem;color:#A8A090;opacity:0.5;">Church</span>
-  </a>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church" style="height:2rem;width:auto;display:block;"></a>
   <ul class="nav-links">
     <li><a href="index.html#about">Foundation</a></li>
     <li><a href="index.html#beliefs">Beliefs</a></li>
@@ -130,6 +129,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
     <li><a href="index.html#community">Community</a></li>
     <li><a href="blog.html" class="active">Blog</a></li>
     <li><a href="references.html">Resources</a></li>
+    <li><a href="project314.html">God of Pi</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
   <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
@@ -145,6 +145,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
   <a href="index.html#community" class="mobile-link">Community</a>
   <a href="blog.html" class="mobile-link">Blog</a>
   <a href="references.html" class="mobile-link">Resources</a>
+  <a href="project314.html" class="mobile-link">God of Pi</a>
   <a href="index.html#join" class="mobile-cta mobile-link">Connect</a>
 </div>
 
@@ -169,10 +170,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="index.html" class="nav-logo" style="display:flex;align-items:center;gap:0.4rem;">
-        <span style="display:flex;align-items:center;">2:2<span style="display:inline-block;width:1px;height:1.1em;background:linear-gradient(to bottom,transparent,#C9A84C 30%,#C9A84C 70%,transparent);opacity:0.3;margin:0 3px;vertical-align:middle;"></span><span style="font-style:italic;opacity:1;">2</span></span>
-        <span style="font-style:italic;font-size:1.2rem;color:#A8A090;opacity:0.5;">Church</span>
-      </a>
+      <a href="index.html"><img src="logo.png" alt="2:22 Church" style="height:1.8rem;width:auto;display:block;margin-bottom:1rem;"></a>
       <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
     </div>
     <div class="footer-col">
@@ -183,6 +181,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
         <li><a href="index.html#gathering">Gatherings</a></li>
         <li><a href="index.html#practices">How We Live</a></li>
         <li><a href="blog.html">Blog</a></li>
+        <li><a href="project314.html">God of Pi</a></li>
       </ul>
     </div>
     <div class="footer-col">

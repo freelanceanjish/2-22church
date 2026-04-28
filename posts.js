@@ -18,59 +18,55 @@
 const POSTS = [
   {
     id: "just-reasonable-mind-devout-life-francis-de-sales",
-    title: "We Must Be Just and Reasonable — Introduction to the Devout Life, Part III, Chapter 36",
+    title: "On Being Just and Reasonable — Francis de Sales, Introduction to the Devout Life, Part III, Ch. 36",
     date: "28 April 2026",
     category: "Reflection",
-    excerpt: "Francis de Sales opens Chapter 36 with a striking claim: reason is the defining characteristic of man, yet truly reasonable people are rare. The reason, he says, is self-love — and the proof is in the small, daily dishonesties most of us never notice in ourselves.",
+    excerpt: "Reason is the defining mark of man, writes Francis de Sales — yet truly reasonable people are rare. Self-love is the reason why. Chapter 36 names the small daily dishonesties we commit without noticing, and offers one discipline to correct them.",
     image: "https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=900&q=80",
     content: `
-<p><em>Introduction to the Devout Life</em> by Francis de Sales — Part Three, Chapter 36. Title: <strong>That We Must Be Just and Reasonable.</strong></p>
+<p><em>Introduction to the Devout Life</em> — Francis de Sales. Part Three, Chapter 36: <strong>That We Must Be Just and Reasonable.</strong></p>
 
 <h2>Reason is rare</h2>
 
 <p>Francis de Sales opens the chapter plainly: <em>"Reason is the special characteristic of man, and yet it is a rare thing to find really reasonable men."</em> The cause, he says, is self-love. Self-love hinders reason and beguiles us — quietly, without our noticing — into all manner of trifling but dangerous acts of injustice and untruth.</p>
 
-<p>He reaches for an image from the Song of Songs to describe these small corruptions: they are like the little foxes that spoil the vines. Because they are trifling, people pay no attention to them. Because they are numerous, they do infinite harm.</p>
+<p>He reaches for an image from the Song of Songs: these small corruptions are like the little foxes that spoil the vines. Because they are trifling, people pay no attention to them. Because they are numerous, they do infinite harm.</p>
 
 <h2>The small dishonesties we overlook in ourselves</h2>
 
 <p>Francis then gives a list. Read it slowly — each line is a mirror:</p>
 
-<p>We find fault with our neighbour readily for a small matter, while we pass over great things in ourselves. We strive to sell dear and buy cheap. We are eager to deal out strict justice to others, but to obtain indulgence for ourselves. We expect a good construction to be put on all we say — but we are sensitive and critical as to our neighbour's words. We want him to let us have whatever we want, while it would be more reasonable to let him keep what is his if he desires to. We are vexed with him because he will not accommodate us — while perhaps he has better reason to be vexed with us for wanting to disturb him.</p>
+<p>We find fault with our neighbour readily for small matters, while we pass over great things in ourselves. We strive to sell dear and buy cheap. We are eager to deal out strict justice to others, while seeking indulgence for ourselves. We expect a good construction to be put on all we say — but we are sensitive and critical as to our neighbour's words. We want him to give us what we want, while it would be more reasonable to let him keep what is his. We are vexed with him because he will not accommodate us — while perhaps he has better reason to be vexed with us for wanting to disturb him.</p>
 
-<p>If we have formed a dislike for someone — particularly a subordinate — everything they do is wrong in our eyes. We thwart them. We look coldly on them. We never stop to ask whether our judgement is just or merely convenient.</p>
+<p>If we have formed a dislike for someone — particularly a subordinate — everything they do appears wrong. We thwart them. We look coldly on them. We never stop to ask whether our judgement is just or merely convenient.</p>
 
 <h2>These things seem unimportant — but they are not</h2>
 
-<p>Francis is careful to note that these small dishonesties do not usually force us to make restitution. We have, after all, only taken what we might demand by the strict letter of the law. But he is clear: <em>they are sins against right and charity. They are trickery. And they greatly need correction.</em> No one, he adds, ever truly loses by being generous, noble-hearted and courteous.</p>
+<p>Francis is careful to note that these small dishonesties do not usually require restitution. We have, after all, only taken what the strict letter of the law permits. But he is clear: <em>they are sins against right and charity. They are trickery. And they greatly need correction.</em> No one, he adds, ever truly loses by being generous, noble-hearted and courteous.</p>
 
 <h2>The remedy: put yourself in your neighbour's place</h2>
 
-<p>The counsel Francis gives is simple and practical. Be just and fair in all you do. And then — one concrete discipline to make that possible: <em>always put yourself in your neighbour's place, and put him into yours, and then you will judge fairly.</em></p>
+<p>The counsel Francis gives is simple and direct. Be just and fair in all you do. And then one practical discipline: <em>always put yourself in your neighbour's place, and put him into yours — and then you will judge fairly.</em></p>
 
-<p>Sell as you would buy. Buy as you would sell. Often examine your dealings with your neighbour and ask honestly: is my heart right towards him, as I would wish his to be towards me, if positions were reversed? Francis calls this <strong>the true test of reason.</strong></p>
+<p>Sell as you would buy. Buy as you would sell. Examine your dealings with your neighbour and ask honestly: is my heart right towards him, as I would wish his to be towards me, if positions were reversed? Francis calls this <strong>the true test of reason.</strong></p>
 
-<p>He closes with the Emperor Trajan, who was criticised for making himself too accessible to his subjects. Trajan's reply: <em>"Does it not behove me to be such an emperor towards my subjects as I should myself wish to find, were I a subject?"</em> The Emperor applied to his throne the same discipline Francis applies to every ordinary transaction and judgement of daily life — reverse the positions and see if it still seems fair.</p>
+<p>He closes with the Emperor Trajan, who was criticised for making himself too accessible to his subjects. Trajan replied: <em>"Does it not behove me to be such an emperor towards my subjects as I should myself wish to find, were I a subject?"</em> The Emperor applied to his throne the same discipline Francis applies to every ordinary transaction — reverse the positions and see if it still seems fair.</p>
 
-<h2>The Golden Rule and loving your neighbour</h2>
+<h2>The Golden Rule</h2>
 
-<p>The whole chapter is an unpacking of what Jesus called the summary of the Law and the Prophets:</p>
+<p>The entire chapter is an exposition of what the Messiah called the summary of the Law and the Prophets:</p>
 
 <blockquote>"So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets." — Matthew 7:12</blockquote>
 
-<p>Paul makes it equally plain:</p>
-
 <blockquote>"The commandments are summed up in this one command: Love your neighbour as yourself. Love does no harm to a neighbour. Therefore love is the fulfilment of the law." — Romans 13:9–10</blockquote>
-
-<p>And the apostle John puts it most directly of all:</p>
 
 <blockquote>"Whoever claims to love God yet hates a brother or sister is a liar. For whoever does not love their brother and sister, whom they have seen, cannot love God, whom they have not seen." — 1 John 4:20</blockquote>
 
-<p>Chapter 36 is not about the dramatic sins. It is about the little foxes — the double standard, the convenient judgement, the small advantage quietly taken. The test Francis puts before us is the same one placed before every disciple of Jesus the Messiah: reverse the positions, and see if it still seems fair.</p>
+<p>Chapter 36 is not about the dramatic sins. It is about the little foxes — the double standard, the convenient judgement, the small advantage quietly taken. The test is the same one placed before every disciple: reverse the positions, and see if it still seems fair.</p>
 
 <div style="margin:3rem 0;padding:1.6rem 1.8rem;background:rgba(201,168,76,0.06);border:0.5px solid rgba(201,168,76,0.2);border-left:2px solid rgba(201,168,76,0.5);">
-  <p style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C9A84C;margin-bottom:0.75rem;">Editorial Disclaimer</p>
-  <p style="font-size:0.88rem;color:#A8A090;line-height:1.85;">2:22 Church does not endorse Catholicism, its institutional practices, or any Trinitarian doctrine. We do not subscribe to the creedal formulations of any historic denomination. The writings of Francis de Sales are cited here solely because they contain God-inspired reflection that is pure in intent — useful for the edification and uplifting of a righteous life for those who desire to be true disciples of Jesus the Messiah, known in Hebrew as <strong style="color:#F0EAD6;">Yeshua</strong> (יֵשׁוּעַ), in Aramaic as <strong style="color:#F0EAD6;">Yeshu</strong>, and rendered in Greek as <strong style="color:#F0EAD6;">Iēsous</strong> (Ἰησοῦς) — from which the name Jesus derives. We test all things by Scripture alone.</p>
+  <p style="font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:#C9A84C;margin-bottom:0.75rem;">Editorial Note</p>
+  <p style="font-size:0.88rem;color:#A8A090;line-height:1.85;">2:22 Church does not endorse Catholicism, its institutional practices, or any Trinitarian doctrine. The writings of Francis de Sales are cited solely because they contain God-inspired reflection — pure in intent — useful for the edification and uplifting of those who desire to be true disciples of Jesus the Messiah, known in Hebrew as <strong style="color:#F0EAD6;">Yeshua</strong> (יֵשׁוּעַ), rendered in Greek as <strong style="color:#F0EAD6;">Iēsous</strong> (Ἰησοῦς), from which the name Jesus is derived. We test all things by Scripture alone.</p>
 </div>
     `
   },
