@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Old Maps — 2:22 Church</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="shortcut icon" href="favicon.ico">
+<style>
+:root{--gold:#C9A84C;--gold-light:#E8D5A3;--gold-dark:#8B6914;--deep:#0D1117;--deep-mid:#161C26;--surface:#1C2333;--surface-light:#232B3E;--text-primary:#F0EAD6;--text-secondary:#A8A090;--text-muted:#6B6358;--border:rgba(201,168,76,0.18);--border-subtle:rgba(255,255,255,0.06);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-primary);overflow-x:hidden;line-height:1.7;}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(13,17,23,0.92);backdrop-filter:blur(16px);border-bottom:0.5px solid rgba(201,168,76,0.18);}
+.nav-logo{text-decoration:none;flex-shrink:0;}
+.nav-logo img{height:1.9rem;width:auto;display:block;}
+.nav-links{display:flex;gap:1.4rem;list-style:none;}
+.nav-links a{font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:#A8A090;text-decoration:none;transition:color 0.2s;white-space:nowrap;}
+.nav-links a:hover,.nav-links a.active{color:#C9A84C;}
+.nav-cta{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#0D1117;background:#C9A84C;padding:0.5rem 1rem;border-radius:2px;flex-shrink:0;text-decoration:none;font-weight:500;white-space:nowrap;}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;flex-shrink:0;}
+.nav-hamburger span{display:block;width:22px;height:1px;background:#C9A84C;}
+.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,17,23,0.98);z-index:150;flex-direction:column;align-items:center;justify-content:flex-start;padding:5rem 2rem 3rem;overflow-y:auto;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:#F0EAD6;text-decoration:none;letter-spacing:0.06em;padding:0.7rem 0;border-bottom:0.5px solid rgba(255,255,255,0.06);width:100%;text-align:center;}
+.mobile-menu a:hover{color:#C9A84C;}
+.mobile-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:#6B6358;font-size:1.8rem;cursor:pointer;line-height:1;}
+@media(max-width:1100px){nav{padding:1rem 1.5rem;}.nav-links{display:none;}.nav-cta{display:none;}.nav-hamburger{display:flex;}}
+
+/* ── PAGE HEADER ── */
+.page-header{padding:10rem 2rem 5rem;background:var(--deep-mid);border-bottom:0.5px solid var(--border-subtle);text-align:center;}
+.eyebrow{font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;justify-content:center;gap:1rem;}
+.eyebrow::before,.eyebrow::after{content:'';display:block;width:30px;height:0.5px;background:var(--gold);opacity:0.5;}
+.page-header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6vw,5rem);font-weight:300;line-height:1.05;}
+.page-header h1 em{font-style:italic;color:var(--gold);}
+.page-header p{color:var(--text-secondary);font-size:1rem;max-width:580px;margin:1.2rem auto 0;line-height:1.8;}
+
+/* ── BODY ── */
+.maps-body{max-width:1100px;margin:0 auto;padding:5rem 2rem 8rem;}
+
+/* ── INTRO CONTEXT ── */
+.context-block{background:var(--surface);border:0.5px solid var(--border);border-left:2px solid var(--gold);padding:1.8rem 2.2rem;margin-bottom:5rem;}
+.context-block p{color:var(--text-secondary);font-size:0.95rem;line-height:1.9;margin-bottom:0.9rem;}
+.context-block p:last-child{margin:0;}
+.context-block strong{color:var(--text-primary);}
+
+/* ── ARCHIVE SECTION HEADING ── */
+.archive-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:2rem;padding-bottom:1rem;border-bottom:0.5px solid var(--border);}
+.archive-head h2{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--text-primary);}
+.archive-head h2 em{font-style:italic;color:var(--gold);}
+.archive-tag{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-muted);}
+.archive-section{margin-bottom:5rem;}
+
+/* ── MAP GRID ── */
+.map-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--border);}
+.map-card{background:var(--surface);text-decoration:none;color:inherit;transition:background 0.2s;display:flex;flex-direction:column;}
+.map-card:hover{background:var(--surface-light);}
+.map-img{width:100%;aspect-ratio:4/3;overflow:hidden;background:var(--deep-mid);position:relative;}
+.map-img img{width:100%;height:100%;object-fit:cover;filter:sepia(0.3) saturate(0.8) brightness(0.75);transition:filter 0.4s,transform 0.5s;}
+.map-card:hover .map-img img{filter:sepia(0.15) saturate(1) brightness(0.9);transform:scale(1.03);}
+.map-img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--deep-mid),var(--surface));padding:2rem;}
+.map-img-placeholder span{font-family:'Cormorant Garamond',serif;font-size:0.8rem;font-style:italic;color:var(--text-muted);text-align:center;line-height:1.6;}
+.map-body{padding:1.4rem 1.6rem 1.8rem;flex:1;display:flex;flex-direction:column;}
+.map-year{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;display:block;}
+.map-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;color:var(--text-primary);margin-bottom:0.5rem;line-height:1.3;}
+.map-desc{font-size:0.85rem;color:var(--text-muted);line-height:1.7;flex:1;}
+.map-source{display:block;margin-top:0.9rem;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);}
+
+/* ── MAP CARD FULL WIDTH ── */
+.map-card.full{grid-column:1/-1;flex-direction:row;}
+.map-card.full .map-img{width:360px;min-width:360px;aspect-ratio:auto;min-height:240px;flex-shrink:0;}
+
+/* ── RESOURCE ROW (text-only links) ── */
+.resource-row{display:flex;flex-direction:column;gap:1.5px;background:var(--border);margin-top:1.5px;}
+.res-link{background:var(--surface);padding:1.2rem 1.6rem;display:grid;grid-template-columns:1fr auto;align-items:center;gap:1rem;text-decoration:none;color:inherit;transition:background 0.2s;}
+.res-link:hover{background:var(--surface-light);}
+.res-link-title{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--text-primary);margin-bottom:0.2rem;}
+.res-link-src{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);}
+.res-arrow{color:var(--gold);font-size:0.9rem;flex-shrink:0;}
+
+/* ── DISCLAIMER ── */
+.disclaimer{background:rgba(201,168,76,0.04);border:0.5px solid rgba(201,168,76,0.18);border-left:2px solid rgba(201,168,76,0.4);padding:1.6rem 1.8rem;margin-top:4rem;}
+.disclaimer p{font-size:0.85rem;color:var(--text-muted);line-height:1.8;margin:0;}
+
+/* ── FOOTER ── */
+footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);padding:4rem 2rem 2.5rem;}
+.footer-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:0.5px solid var(--border-subtle);}
+.footer-brand p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;max-width:260px;margin-top:0.75rem;}
+.footer-col h4{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;}
+.footer-col ul{list-style:none;}
+.footer-col ul li{margin-bottom:0.65rem;}
+.footer-col ul li a{font-size:0.85rem;color:var(--text-muted);text-decoration:none;transition:color 0.2s;}
+.footer-col ul li a:hover{color:var(--gold);}
+.footer-bottom{max-width:1100px;margin:2rem auto 0;display:flex;align-items:center;justify-content:space-between;font-size:0.78rem;color:var(--text-muted);flex-wrap:wrap;gap:0.5rem;}
+.footer-verse{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.85rem;color:var(--text-muted);}
+
+@media(max-width:900px){
+  .map-grid{grid-template-columns:1fr;}
+  .map-card.full{flex-direction:column;}.map-card.full .map-img{width:100%;min-width:0;min-height:200px;aspect-ratio:16/9;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}.footer-brand{grid-column:1/-1;}
+  .footer-bottom{flex-direction:column;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Foundation</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="references.html" class="active">Resources</a></li>
+    <li><a href="project314.html">God of Pi</a></li>
+    <li><a href="cosmology.html">Biblical Cosmology</a></li>
+  </ul>
+  <a href="index.html#join" class="nav-cta">Connect</a>
+  <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
+  <a href="index.html">Foundation</a>
+  <a href="blog.html">Blog</a>
+  <a href="references.html">Resources</a>
+  <a href="project314.html">God of Pi</a>
+  <a href="cosmology.html">Biblical Cosmology</a>
+  <a href="index.html#join" style="color:#C9A84C;">Connect</a>
+</div>
+
+<div class="page-header">
+  <div class="eyebrow">Historical Evidence</div>
+  <h1>Old <em>Maps</em></h1>
+  <p>Historical cartography from the 17th and 18th centuries showing geographical features that raise significant questions about the standard modern cosmological narrative. These are primary source documents held in public archives.</p>
+</div>
+
+<div class="maps-body">
+
+  <div class="context-block">
+    <p>The maps collected here come from institutional archives including the David Rumsey Map Collection, the Internet Archive and rare map dealers. They are relevant because several of them depict geographical features, including landmasses, coastlines and boundaries, that do not fit comfortably into the currently accepted model of world geography.</p>
+    <p>Notable among these are the <strong>Terre de Iesso</strong> maps — a series of 17th and 18th century French charts showing a large landmass north of Japan that does not correspond to any landmass in modern geography. Philippe Buache's 1754 charts are among the most detailed. The 1688 Coronelli map of <em>America Settentrionale</em> similarly shows geographical features and boundaries that have provoked serious discussion among researchers.</p>
+    <p>We present these as primary sources for your own study. Draw your own conclusions.</p>
+  </div>
+
+  <!-- CORONELLI 1688 -->
+  <div class="archive-section">
+    <div class="archive-head">
+      <h2>Coronelli <em>1688</em></h2>
+      <span class="archive-tag">Internet Archive · Wikimedia Commons</span>
+    </div>
+    <div class="map-grid">
+      <div class="map-card full">
+        <div class="map-img">
+          <img src="https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/a/a1/Coronelli_America_Settentrionale_Colle_Nuove_Scoperti_fin_all%27_Anno_1688_UTA.jpg"
+               alt="Coronelli America Settentrionale 1688"
+               loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="map-img-placeholder" style="display:none"><span>Coronelli<br>America Settentrionale<br>1688</span></div>
+        </div>
+        <div class="map-body">
+          <span class="map-year">1688</span>
+          <div class="map-title">America Settentrionale colle Nuove Scoperti fin all Anno 1688</div>
+          <p class="map-desc">Coronelli's map of North America including new discoveries up to 1688. Notable for showing landmasses and geographic features north of the Pacific that do not correspond to modern geography. Held in institutional archives and available on Wikimedia Commons.</p>
+          <span class="map-source">Wikimedia Commons</span>
+        </div>
+      </div>
+      <div class="map-card">
+        <div class="map-img">
+          <div class="map-img-placeholder" style="display:flex"><span>Historical Atlas<br>Page N7<br>archive.org</span></div>
+        </div>
+        <div class="map-body">
+          <span class="map-year">Historical Atlas</span>
+          <div class="map-title">Historical Atlas — Page N7</div>
+          <p class="map-desc">Historical atlas held in the Internet Archive. Page N7 contains cartographic material relevant to the study of early geographical assumptions about the northern Pacific and polar regions.</p>
+          <a href="https://archive.org/details/historicalatlaso0000haye_d4c4/page/n7/mode/2up" target="_blank" rel="noopener" class="map-source">Open in Internet Archive</a>
+        </div>
+      </div>
+      <div class="map-card">
+        <div class="map-img">
+          <div class="map-img-placeholder" style="display:flex"><span>Archive.org<br>A215135144MC<br>2up view</span></div>
+        </div>
+        <div class="map-body">
+          <span class="map-year">Historical Document</span>
+          <div class="map-title">Archive.org — A215135144MC</div>
+          <p class="map-desc">Primary source document archived at the Internet Archive. Cartographic and geographical material relevant to historical perceptions of northern and polar geography.</p>
+          <a href="https://archive.org/details/A215135144MC/mode/2up" target="_blank" rel="noopener" class="map-source">Open in Internet Archive</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BUACHE TERRE DE IESSO 1754 -->
+  <div class="archive-section">
+    <div class="archive-head">
+      <h2>Buache — Terre de Iesso <em>1754</em></h2>
+      <span class="archive-tag">David Rumsey Map Collection</span>
+    </div>
+    <p style="color:var(--text-secondary);font-size:0.92rem;line-height:1.85;margin-bottom:2rem;">Philippe Buache (1700–1773) was the official Geographer to the King of France. His 1754 series of charts documenting the coastlines of <em>Terre de Iesso</em> — a large landmass believed to exist north of Japan — is among the most detailed historical cartography of a region that does not appear in modern world geography. These charts are held in the David Rumsey Map Collection, one of the world's largest online collections of historical cartography.</p>
+
+    <div class="map-grid">
+      <div class="map-card">
+        <div class="map-img">
+          <div class="map-img-placeholder" style="display:flex"><span>Carte Particuliere<br>Stroit de Iezo<br>Buache 1754</span></div>
+        </div>
+        <div class="map-body">
+          <span class="map-year">Buache · 1754</span>
+          <div class="map-title">Carte Particuliere du Stroit de Iezo — America Carta XXXIII</div>
+          <p class="map-desc">Buache's detailed chart of the strait of Iesso between America and the island of Iesso. From the raremaps.com gallery. Shows the strait separating the continent from the mysterious northern landmass.</p>
+          <a href="https://raremaps.com/gallery/detail/67788/carta-particolare-dello-stretto-di-iezo-fra-lamerica-e-iisola-iezo-damerica-carta-xxxiii" target="_blank" rel="noopener" class="map-source">View on raremaps.com</a>
+        </div>
+      </div>
+      <div class="map-card">
+        <div class="map-img">
+          <div class="map-img-placeholder" style="display:flex"><span>Terre de Iesso<br>Island of California<br>David Rumsey</span></div>
+        </div>
+        <div class="map-body">
+          <span class="map-year">c. 1700</span>
+          <div class="map-title">Island of California and Terre de Iesso</div>
+          <p class="map-desc">Chart showing both the Island of California (another disputed historical geographical feature) and Terre de Iesso together, from the David Rumsey Map Collection.</p>
+          <a href="https://www.davidrumsey.com/luna/servlet/workspace/handleMediaPlayer?qvq=q%253Aterre%2Bde%2Biesso%253Bsort%253APub_List_No_InitialSort%252CPub_Date%252CPub_List_No%252CSeries_No%253Blc%253ARUMSEY%257E8%257E1&trs=1&mi=0&lunaMediaId=RUMSEY~8~1~307751~90077669&widgetFormat=simple" target="_blank" rel="noopener" class="map-source">View on David Rumsey</a>
+        </div>
+      </div>
+      <div class="map-card">
+        <div class="map-img">
+          <div class="map-img-placeholder" style="display:flex"><span>Fin de la cote<br>Meridionale d'Eso<br>Buache 1754</span></div>
+        </div>
+        <div class="map-body">
+          <span class="map-year">Buache · 1754</span>
+          <div class="map-title">Fin de la cote Meridionale d'Eso</div>
+          <p class="map-desc">Southern coastline of Eso (Iesso). One of Buache's series of detailed coastal survey charts documenting the southern shores of the disputed northern landmass. David Rumsey Map Collection.</p>
+          <a href="https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~306199~90076580:Fin-de-la-cote-Meridionale-d-Eso?sort=pub_list_no_initialsort,pub_list_no_initialsort,pub_date,pub_date" target="_blank" rel="noopener" class="map-source">View on David Rumsey</a>
+        </div>
+      </div>
+      <div class="map-card">
+        <div class="map-img">
+          <div class="map-img-placeholder" style="display:flex"><span>Cote Septentrionale<br>et Orientale<br>Buache 1754</span></div>
+        </div>
+        <div class="map-body">
+          <span class="map-year">Buache · 1754</span>
+          <div class="map-title">Cote de la partie Septentrionale et Orientale de la Terre d'Eso</div>
+          <p class="map-desc">Northern and eastern coastline of the Terre d'Eso. Buache's chart showing the extent of the landmass to the north and east, from the David Rumsey Map Collection.</p>
+          <a href="https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~306202~90076568:Cote-de-la-partie-Septentrionale-et?mi=1&trs=4&qvq=q:Buache%2C+Philippe+Eso;lc:RUMSEY~8~1" target="_blank" rel="noopener" class="map-source">View on David Rumsey</a>
+        </div>
+      </div>
+      <div class="map-card">
+        <div class="map-img">
+          <div class="map-img-placeholder" style="display:flex"><span>Vue de la partie<br>septentrionale<br>Isle des Etats</span></div>
+        </div>
+        <div class="map-body">
+          <span class="map-year">Buache · 1754</span>
+          <div class="map-title">Vue de la partie septentrionale de l'Isle des Etats et de la terre d'Eso</div>
+          <p class="map-desc">Northern view of the Isle des Etats and the land of Eso. Buache's perspective drawing giving a three-dimensional rendering of the northern coastline. David Rumsey Map Collection.</p>
+          <a href="https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~306201~90076582:Vue-de-la-partie-septentrionale-de-?sort=pub_list_no_initialsort,pub_list_no_initialsort,pub_date,pub_date" target="_blank" rel="noopener" class="map-source">View on David Rumsey</a>
+        </div>
+      </div>
+      <div class="map-card">
+        <div class="map-img">
+          <div class="map-img-placeholder" style="display:flex"><span>Vues des cotes<br>Isle d'ESO<br>Buache 1754</span></div>
+        </div>
+        <div class="map-body">
+          <span class="map-year">Buache · 1754</span>
+          <div class="map-title">Vues des cotes de la terre ou Isle d'ESO</div>
+          <p class="map-desc">Coastal views of the land or isle of ESO. Multiple perspective drawings by Buache showing the coastal profile of the disputed landmass from different vantage points. David Rumsey Map Collection.</p>
+          <a href="https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~306198~90076576:Vues-des-cotes-de-la-terre-ou-Isle-?sort=pub_list_no_initialsort,pub_list_no_initialsort,pub_date,pub_date&mi=9&trs=156" target="_blank" rel="noopener" class="map-source">View on David Rumsey</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN ARCHIVES -->
+  <div class="archive-section">
+    <div class="archive-head">
+      <h2>Primary <em>Archives</em></h2>
+      <span class="archive-tag">Open access collections</span>
+    </div>
+    <p style="color:var(--text-secondary);font-size:0.92rem;line-height:1.85;margin-bottom:2rem;">The following archives hold large collections of historical maps available for free public study. The David Rumsey Map Collection alone contains over 150,000 maps spanning five centuries. The Internet Archive preserves digitised atlases, rare books and cartographic materials that are otherwise difficult to access.</p>
+    <div class="resource-row">
+      <a href="https://www.davidrumsey.com" target="_blank" rel="noopener" class="res-link">
+        <div>
+          <div class="res-link-title">David Rumsey Map Collection</div>
+          <div class="res-link-src">davidrumsey.com — Over 150,000 historical maps online</div>
+        </div>
+        <span class="res-arrow">→</span>
+      </a>
+      <a href="https://archive.org" target="_blank" rel="noopener" class="res-link">
+        <div>
+          <div class="res-link-title">Internet Archive</div>
+          <div class="res-link-src">archive.org — Digitised atlases, rare books and cartographic materials</div>
+        </div>
+        <span class="res-arrow">→</span>
+      </a>
+      <a href="https://raremaps.com" target="_blank" rel="noopener" class="res-link">
+        <div>
+          <div class="res-link-title">Barry Lawrence Ruderman Antique Maps</div>
+          <div class="res-link-src">raremaps.com — Specialist dealer with high-resolution catalogue</div>
+        </div>
+        <span class="res-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    <p>2:22 Church presents these maps as primary historical documents for independent study. We make no claims about the conclusions to be drawn from them. We encourage every person to examine primary sources directly, test everything against Scripture and come to their own conclusions before the Lord.</p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html"><img src="logo.png" alt="2:22 Church" style="height:1.8rem;width:auto;display:block;margin-bottom:0.75rem;"></a>
+      <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" style="display:inline-block;margin-bottom:0.75rem;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:#C9A84C;text-decoration:none;">Watch on YouTube</a>
+      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html#about">Our Foundation</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="references.html">Resources</a></li>
+        <li><a href="project314.html">God of Pi</a></li>
+        <li><a href="cosmology.html">Biblical Cosmology</a></li>
+        <li><a href="old-maps.html">Old Maps</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Map Archives</h4>
+      <ul>
+        <li><a href="https://www.davidrumsey.com" target="_blank" rel="noopener">David Rumsey Collection</a></li>
+        <li><a href="https://archive.org" target="_blank" rel="noopener">Internet Archive</a></li>
+        <li><a href="https://raremaps.com" target="_blank" rel="noopener">Rare Maps</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="index.html#join">Join a Gathering</a></li>
+        <li><a href="mailto:hello@2-22church.com">Email Us</a></li>
+        <li><a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener">YouTube Channel</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>2025 2:22 Church · 2-22church.com</span>
+    <span class="footer-verse">"The earth and all the inhabitants thereof are dissolved: I bear up the pillars of it." Psalm 75:3</span>
+  </div>
+</footer>
+
+</body>
+</html>

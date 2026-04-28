@@ -117,7 +117,7 @@ section{padding:7rem 2rem;}
 .practice-card{background:var(--surface);padding:2.2rem 2rem 2.4rem;position:relative;transition:background 0.2s;}
 .practice-card:hover{background:var(--surface-light);}
 .practice-num{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300;color:var(--gold);opacity:0.12;line-height:1;position:absolute;top:1.2rem;right:1.6rem;user-select:none;}
-.practice-card h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:400;color:var(--gold);margin-bottom:0.8rem;line-height:1.15;}
+.practice-card h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:400;color:var(--gold);margin-bottom:0.8rem;line-height:1.15;letter-spacing:0.01em;}
 .practice-card p{color:var(--text-secondary);font-size:0.9rem;line-height:1.85;}
 /* Blog */
 .blog{background:var(--deep);}
@@ -229,6 +229,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     <li><a href="references.html">Resources</a></li>
     <li><a href="project314.html">God of Pi</a></li>
     <li><a href="cosmology.html">Biblical Cosmology</a></li>
+    <li><a href="old-maps.html">Old Maps</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
   <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
@@ -242,6 +243,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   <a href="references.html">Resources</a>
   <a href="project314.html">God of Pi</a>
   <a href="cosmology.html">Biblical Cosmology</a>
+  <a href="old-maps.html">Old Maps</a>
   <a href="index.html#join" style="color:#C9A84C;">Connect</a>
 </div>
 
@@ -399,13 +401,625 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   <div class="container">
     <div class="section-label">How We Live</div>
     <h2 class="section-title">Practice Over <em>Performance</em></h2>
-    <div class="practices-list">
-      <div class="practice-row"><div class="practice-label"><h3>Worship</h3></div><div class="practice-body"><p>Worship is not confined to a scheduled service. It is the whole orientation of a life surrendered to God, expressed in prayer, song, service, fellowship, and the daily choices we make to follow the way of Jesus.</p></div></div>
-      <div class="practice-row"><div class="practice-label"><h3>Teaching</h3></div><div class="practice-body"><p>We study the Scriptures together, in the tradition of Jesus and the apostles. Everyone is encouraged to bring what they have learned, to ask questions, to wrestle with the text. Truth is not the property of one teacher, it is the inheritance of the whole community.</p></div></div>
-      <div class="practice-row"><div class="practice-label"><h3>Baptism</h3></div><div class="practice-body"><p>We baptise in water in the name of Jesus Christ, as the early apostles practised. Baptism is a public declaration of a transformed life, a response to genuine inner renewal, not a ritual that produces it.</p></div></div>
-      <div class="practice-row"><div class="practice-label"><h3>Service</h3></div><div class="practice-body"><p>We live out our faith in the everyday, caring for neighbours, sharing resources, standing with the vulnerable, serving without recognition. We believe the greatest testimony to the risen Christ is a life visibly changed and poured out for others.</p></div></div>
-      <div class="practice-row"><div class="practice-label"><h3>Generosity</h3></div><div class="practice-body"><p>There is no tithe mandate in our community. We encourage each person to prayerfully identify a need, food, shelter, clothing, financial support for a fellow believer, and to meet it. Generosity flows from love, not obligation.</p></div></div>
-      <div class="practice-row"><div class="practice-label"><h3>Leadership</h3></div><div class="practice-body"><p>We reject centralised hierarchical authority. No bishop, pope or single leader governs our community. We are led by servant-elders who model the way of Christ, walking alongside, not standing above. Christ alone is the head of the church.</p></div></div>
+    <div class="practices-grid">
+      <div class="practice-card">
+        <span class="practice-num">01</span>
+        <h3>Worship</h3>
+        <p>Worship is not confined to a scheduled service. It is the whole orientation of a life surrendered to God, expressed in prayer, song, service, fellowship and the daily choices we make to follow the way of Yeshua.</p>
+      </div>
+      <div class="practice-card">
+        <span class="practice-num">02</span>
+        <h3>Teaching</h3>
+        <p>We study the Scriptures together, in the tradition of Jesus and the apostles. Everyone is encouraged to bring what they have learned, ask questions and wrestle with the text. Truth is not the property of one teacher.</p>
+      </div>
+      <div class="practice-card">
+        <span class="practice-num">03</span>
+        <h3>Baptism</h3>
+        <p>We baptise in water in the name of Jesus Christ, as the early apostles practised. Baptism is a public declaration of a transformed life, a response to genuine inner renewal, not a ritual that produces it.</p>
+      </div>
+      <div class="practice-card">
+        <span class="practice-num">04</span>
+        <h3>Service</h3>
+        <p>We live out our faith in the everyday, caring for neighbours, sharing resources, standing with the vulnerable, serving without recognition. The greatest testimony to the risen Christ is a life visibly changed.</p>
+      </div>
+      <div class="practice-card">
+        <span class="practice-num">05</span>
+        <h3>Generosity</h3>
+        <p>There is no tithe mandate in our community. We encourage each person to prayerfully identify a need, food, shelter, clothing, financial support for a fellow believer, and to meet it. Generosity flows from love, not obligation.</p>
+      </div>
+      <div class="practice-card">
+        <span class="practice-num">06</span>
+        <h3>Leadership</h3>
+        <p>We reject centralised hierarchical authority. We are led by servant-elders who model the way of Christ, walking alongside not standing above. Christ alone is the head of the church.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG, auto-populated from posts.js -->
+<section class="blog" id="blog">
+  <div class="container">
+    <div class="blog-header">
+      <div class="blog-header-left">
+        <div class="section-label">Weekly Word</div>
+        <h2 class="section-title">From the <em>Blog</em></h2>
+      </div>
+      <a href="blog.html" class="blog-all">All Posts ↗</a>
+    </div>
+    <div class="blog-grid" id="blog-grid">
+      <!-- Filled by JavaScript from posts.js -->
+    </div>
+  </div>
+</section>
+
+<section class="join" id="join">
+  <div class="join-inner">
+    <div class="section-label">Join the Community</div>
+    <h2 class="join-title">You are the <em>Church</em>.<br>Come as you are.</h2>
+    <p>Whether you are new to faith, returning after time away, or simply seeking genuine community built on the teaching of Jesus, you belong here. Enter your email and we will be in touch about gatherings near you.</p>
+    <form class="join-form" onsubmit="handleJoin(event)">
+      <input type="email" placeholder="Your email address" id="joinEmail" required>
+      <button type="submit">Connect ↗</button>
+    </form>
+    <p id="joinMsg" style="margin-top:1rem;font-size:0.85rem;color:var(--gold);min-height:1.2em;"></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-num">2:2<span class="logo-sep"></span><span class="logo-shared">2</span></span>
+        <span class="logo-word">Church</span>
+      </a>
+      <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" style="display:inline-block;margin-bottom:1rem;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);text-decoration:none;">Watch on YouTube</a>
+      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#about">Our Foundation</a></li>
+        <li><a href="#beliefs">What We Believe</a></li>
+        <li><a href="#gathering">Gatherings</a></li>
+        <li><a href="#practices">How We Live</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="references.html">Resources</a></li>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#join">Join a Gathering</a></li>
+        <li><a href="mailto:hello@2-22church.com">Email Us</a></li>
+        <li><a href="#">Start a Group</a></li>
+        <li><a href="#">Share Your Story</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Scripture</h4>
+      <ul>
+        <li><a href="#">2 Timothy 2:2</a></li>
+        <li><a href="#">2 Timothy 2:22</a></li>
+        <li><a href="#">Acts 2:42–47</a></li>
+        <li><a href="#">Matthew 18:20</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 2:22 Church · 2-22church.com</span>
+    <span class="footer-verse">"Where two or three gather in my name, there am I with them.", Matthew 18:20</span>
+  </div>
+</footer>
+
+<script src="posts.js"></script>
+<script>
+function handleJoin(e) {
+  e.preventDefault();
+  var email = document.getElementById('joinEmail').value;
+  document.getElementById('joinMsg').textContent = 'Thank you, we will be in touch at ' + email;
+  document.getElementById('joinEmail').value = '';
+}
+
+// Render latest 5 posts into homepage blog grid
+function renderHomepagePosts() {
+  var grid = document.getElementById('blog-grid');
+  if (!grid || !window.POSTS) return;
+  var recent = POSTS.slice(0, 5);
+  grid.innerHTML = recent.map(function(post, i) {
+    var imgHtml = post.image
+      ? '<img src="' + post.image + '" alt="' + post.title + '" loading="lazy">'
+      : '<span>✦</span>';
+    var imgClass = post.image ? '' : ' no-img';
+    var featuredClass = i === 0 ? ' featured' : '';
+    return '<a href="post.html?id=' + post.id + '" class="blog-card' + featuredClass + '">'
+      + '<div class="blog-card-img' + imgClass + '">' + imgHtml + '</div>'
+      + '<div class="blog-card-body">'
+      + '<div class="blog-meta"><span class="blog-tag">' + post.category + '</span><span class="blog-date">' + post.date + '</span></div>'
+      + '<h3>' + post.title + '</h3>'
+      + '<p>' + post.excerpt + '</p>'
+      + '<span class="blog-read">Read more</span>'
+      + '</div></a>';
+  }).join('');
+}
+
+// Hamburger menu
+var hamburger = document.getElementById('hamburger');
+var mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', function() {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+});
+document.querySelectorAll('.mobile-link').forEach(function(link) {
+  link.addEventListener('click', function() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+
+renderHomepagePosts();
+
+// Fade-in on scroll
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.belief-card, .practice-row, .photo-slot, .verse-block, .blog-card').forEach(function(el) {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(18px)';
+  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html><div class="practices-grid">
+      <div class="practice-card"><span class="practice-num">01</span><h3>Worship</h3><p>Worship is not confined to a scheduled service. It is the whole orientation of a life surrendered to God, expressed in prayer, song, service, fellowship and the daily choices we make to follow the way of Yeshua.</p></div>
+      <div class="practice-card"><span class="practice-num">02</span><h3>Teaching</h3><p>We study the Scriptures together, in the tradition of Jesus and the apostles. Everyone is encouraged to bring what they have learned, ask questions and wrestle with the text. Truth is not the property of one teacher.</p></div>
+      <div class="practice-card"><span class="practice-num">03</span><h3>Baptism</h3><p>We baptise in water in the name of Jesus Christ, as the early apostles practised. Baptism is a public declaration of a transformed life, a response to genuine inner renewal, not a ritual that produces it.</p></div>
+      <div class="practice-card"><span class="practice-num">04</span><h3>Service</h3><p>We live out our faith in the everyday, caring for neighbours, sharing resources, standing with the vulnerable, serving without recognition. The greatest testimony to the risen Christ is a life visibly changed.</p></div>
+      <div class="practice-card"><span class="practice-num">05</span><h3>Generosity</h3><p>There is no tithe mandate in our community. We encourage each person to prayerfully identify a need, food, shelter, clothing, financial support for a fellow believer, and to meet it. Generosity flows from love, not obligation.</p></div>
+      <div class="practice-card"><span class="practice-num">06</span><h3>Leadership</h3><p>We reject centralised hierarchical authority. We are led by servant-elders who model the way of Christ, walking alongside not standing above. Christ alone is the head of the church.</p></div>
+    </div>
+  </div>
+</section> html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2:22 Church, Built on the Living Word</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#C9A84C;--gold-light:#E8D5A3;--gold-dark:#8B6914;--deep:#0D1117;--deep-mid:#161C26;--surface:#1C2333;--surface-light:#232B3E;--text-primary:#F0EAD6;--text-secondary:#A8A090;--text-muted:#6B6358;--border:rgba(201,168,76,0.18);--border-subtle:rgba(255,255,255,0.06);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-primary);overflow-x:hidden;line-height:1.7;}
+
+
+.nav-logo .logo-num{display:flex;align-items:center;}
+.nav-logo .logo-sep{display:inline-block;width:1px;height:1.1em;background:linear-gradient(to bottom,transparent,var(--gold) 30%,var(--gold) 70%,transparent);opacity:0.3;margin:0 3px;vertical-align:middle;}
+.nav-logo .logo-shared{font-style:italic;color:var(--gold);opacity:1;}
+.nav-logo .logo-word{font-style:italic;font-size:1.3rem;color:var(--text-secondary);opacity:0.5;letter-spacing:0.06em;}
+
+
+.nav-links a:hover{color:var(--gold);}
+
+
+ .nav-hamburger-x{flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:4px;z-index:200;}
+.nav-hamburger span{display:block;width:24px;height:1.5px;background:var(--gold);transition:all 0.3s;}
+.nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.nav-hamburger.open span:nth-child(2){opacity:0;}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+
+
+
+.mobile-menu a:hover{color:var(--gold);}
+.mobile-menu .mobile-cta{font-family:'DM Sans',sans-serif;font-size:0.85rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.85rem 2.5rem;border-radius:2px;margin-top:1rem;}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;text-align:center;padding:8rem 2rem 4rem;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 40%,rgba(201,168,76,0.07) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 20% 80%,rgba(201,168,76,0.04) 0%,transparent 60%);}
+.verse-float{position:absolute;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.85rem;color:var(--text-muted);letter-spacing:0.06em;opacity:0.6;}
+.verse-float.v1{top:20%;left:8%;}.verse-float.v2{top:35%;right:6%;}.verse-float.v3{bottom:28%;left:5%;}.verse-float.v4{bottom:20%;right:9%;}
+.hero-eyebrow{font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:2rem;position:relative;display:flex;align-items:center;gap:1rem;}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:40px;height:0.5px;background:var(--gold);opacity:0.5;}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3.5rem,9vw,8rem);font-weight:300;line-height:1.0;letter-spacing:-0.01em;position:relative;}
+h1 .num{display:block;font-size:clamp(5rem,14vw,13rem);font-weight:300;color:var(--gold);line-height:0.85;letter-spacing:-0.03em;}
+h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.5rem,6vw,5.5rem);}
+.hero-verse{margin:2.5rem auto 1rem;max-width:540px;font-style:italic;font-family:'Cormorant Garamond',serif;font-size:1.25rem;line-height:1.6;border-left:2px solid var(--gold);padding-left:1.5rem;text-align:left;}
+.hero-ref{font-family:'DM Sans',sans-serif;font-style:normal;font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.6rem;}
+.hero-verses{display:grid;grid-template-columns:1fr 1px 1fr;gap:0;max-width:780px;width:100%;margin:2.5rem auto 1rem;}
+.hero-verse-col{padding:0 2rem;text-align:left;}
+.hero-verse-col:first-child{padding-left:0;}
+.hero-verse-col:last-child{padding-right:0;}
+.hero-verse-divider{background:linear-gradient(to bottom,transparent,rgba(201,168,76,0.3),transparent);width:1px;align-self:stretch;}
+.hero-verse-col cite{font-family:'DM Sans',sans-serif;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);font-style:normal;display:block;margin-bottom:0.75rem;}
+.hero-verse-col blockquote{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;line-height:1.7;color:var(--text-primary);}
+.hero-verse-col p{font-size:0.75rem;color:var(--text-muted);margin-top:0.6rem;line-height:1.5;}
+@media(max-width:650px){
+  .hero-verses{grid-template-columns:1fr;gap:0;}
+  .hero-verse-divider{display:none;}
+  .hero-verse-col{padding:1.2rem 0;border-bottom:0.5px solid rgba(201,168,76,0.15);}
+  .hero-verse-col:last-child{border-bottom:none;}
+  .hero-verse-col:first-child{padding-left:0;}
+}
+.hero-actions{display:flex;gap:1rem;margin-top:3rem;flex-wrap:wrap;justify-content:center;}
+.btn-primary{font-size:0.8rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.85rem 2.2rem;border-radius:2px;text-decoration:none;font-weight:500;transition:all 0.2s;display:inline-block;}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);}
+.btn-ghost{font-size:0.8rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);background:transparent;padding:0.85rem 2.2rem;border-radius:2px;border:0.5px solid var(--border);text-decoration:none;transition:all 0.2s;display:inline-block;}
+.btn-ghost:hover{border-color:var(--gold);background:rgba(201,168,76,0.06);}
+.hero-scroll{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:var(--text-muted);font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;animation:bobble 2s ease-in-out infinite;}
+.hero-scroll::after{content:'';display:block;width:0.5px;height:40px;background:linear-gradient(to bottom,var(--gold-dark),transparent);}
+@keyframes bobble{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+section{padding:7rem 2rem;}
+.container{max-width:1100px;margin:0 auto;}
+.section-label{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:0.75rem;}
+.section-label::before{content:'';display:block;width:24px;height:0.5px;background:var(--gold);}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,6vw,3.2rem);font-weight:300;line-height:1.15;margin-bottom:1.5rem;}
+.section-title em{font-style:italic;color:var(--gold);}
+.about{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);border-bottom:0.5px solid var(--border-subtle);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.about-text p{color:var(--text-secondary);font-size:1rem;margin-bottom:1.2rem;line-height:1.85;}
+.about-text p strong{color:var(--text-primary);font-weight:500;}
+.dual-verse{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:2rem;margin-top:2rem;}
+.dual-verse h3{font-family:'Cormorant Garamond',serif;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;}
+.verse-block{margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:0.5px solid var(--border-subtle);}
+.verse-block:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none;}
+.verse-block blockquote{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--text-primary);line-height:1.65;margin-bottom:0.5rem;}
+.verse-block cite{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);font-style:normal;}
+.beliefs{background:var(--deep);}
+.beliefs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5px;margin-top:3.5rem;border:0.5px solid var(--border);}
+.belief-card{background:var(--surface);padding:2rem 2rem 2.5rem;transition:background 0.2s;position:relative;}
+.belief-card::before{content:attr(data-num);position:absolute;top:1.8rem;right:2rem;font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:var(--text-muted);opacity:0.25;line-height:1;}
+.belief-card:hover{background:var(--surface-light);}
+.belief-icon{width:36px;height:36px;margin-bottom:1.2rem;display:flex;align-items:center;justify-content:center;}
+.belief-icon svg{width:22px;height:22px;stroke:var(--gold);fill:none;stroke-width:1.5;}
+.belief-card h3{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;margin-bottom:0.75rem;color:var(--text-primary);}
+.belief-card p{font-size:0.9rem;line-height:1.75;color:var(--text-secondary);}
+.community{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);border-bottom:0.5px solid var(--border-subtle);}
+.community-intro{max-width:600px;margin-bottom:4rem;}
+.community-intro p{color:var(--text-secondary);font-size:1rem;line-height:1.85;margin-top:1rem;}
+.photo-mosaic{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:260px 220px;gap:8px;}
+.photo-slot{position:relative;overflow:hidden;border-radius:2px;background:var(--surface);border:0.5px solid var(--border);}
+.photo-slot.large{grid-row:1/3;}
+.photo-slot img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(0.7) brightness(0.8);transition:filter 0.4s,transform 0.6s;}
+.photo-slot:hover img{filter:saturate(0.9) brightness(0.9);transform:scale(1.03);}
+.photo-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(13,17,23,0.6) 0%,transparent 50%);pointer-events:none;}
+.photo-caption{position:absolute;bottom:1rem;left:1rem;font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-light);opacity:0;transition:opacity 0.3s;}
+.photo-slot:hover .photo-caption{opacity:1;}
+.gathering{background:var(--deep);}
+.gather-flex{display:flex;align-items:start;gap:5rem;margin-top:1rem;}
+.gather-text{flex:1;}
+.gather-text p{color:var(--text-secondary);font-size:1rem;line-height:1.85;margin-top:1rem;}
+.gather-places{flex:0 0 340px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:0.5px solid var(--border);}
+.place-item{background:var(--surface);padding:1.4rem 1.2rem;text-align:center;}
+.place-item .place-icon{font-size:1.4rem;margin-bottom:0.5rem;display:block;}
+.place-item h4{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:400;color:var(--text-primary);margin-bottom:0.3rem;}
+.place-item p{font-size:0.78rem;color:var(--text-muted);line-height:1.4;}
+.practices{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);border-bottom:0.5px solid var(--border-subtle);}
+.practices-grid{margin-top:3.5rem;display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--border);}
+.practice-card{background:var(--surface);padding:2.2rem 2rem 2.4rem;position:relative;transition:background 0.2s;}
+.practice-card:hover{background:var(--surface-light);}
+.practice-num{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300;color:var(--gold);opacity:0.12;line-height:1;position:absolute;top:1.2rem;right:1.6rem;user-select:none;}
+.practice-card h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:400;color:var(--gold);margin-bottom:0.8rem;line-height:1.15;letter-spacing:0.01em;}
+.practice-card p{color:var(--text-secondary);font-size:0.9rem;line-height:1.85;}
+/* Blog */
+.blog{background:var(--deep);}
+.blog-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3.5rem;flex-wrap:wrap;gap:1.5rem;}
+.blog-header-left{max-width:480px;}
+.blog-all{font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:0.5px solid var(--border);padding-bottom:2px;transition:border-color 0.2s;white-space:nowrap;}
+.blog-all:hover{border-color:var(--gold);}
+.blog-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:1.5px;background:var(--border);border:0.5px solid var(--border);}
+.blog-card{background:var(--surface);display:flex;flex-direction:column;transition:background 0.2s;text-decoration:none;color:inherit;}
+.blog-card:hover{background:var(--surface-light);}
+.blog-card.featured{grid-row:1/3;}
+.blog-card-img{width:100%;aspect-ratio:16/9;overflow:hidden;background:var(--deep-mid);}
+.blog-card.featured .blog-card-img{aspect-ratio:4/3;}
+.blog-card-img img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(0.65) brightness(0.75);transition:filter 0.4s,transform 0.5s;}
+.blog-card:hover .blog-card-img img{filter:saturate(0.85) brightness(0.85);transform:scale(1.03);}
+.blog-card-body{padding:1.6rem 1.8rem 2rem;flex:1;display:flex;flex-direction:column;}
+.blog-meta{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.85rem;}
+.blog-tag{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,0.1);padding:0.25rem 0.65rem;border-radius:2px;}
+.blog-date{font-size:0.72rem;color:var(--text-muted);letter-spacing:0.06em;}
+.blog-card h3{font-family:'Cormorant Garamond',serif;font-weight:400;line-height:1.25;color:var(--text-primary);margin-bottom:0.75rem;}
+.blog-card.featured h3{font-size:1.75rem;}
+.blog-card:not(.featured) h3{font-size:1.2rem;}
+.blog-card p{font-size:0.88rem;color:var(--text-secondary);line-height:1.75;flex:1;}
+.blog-read{margin-top:1.4rem;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:0.4rem;}
+.blog-read::after{content:'→';transition:transform 0.2s;}
+.blog-card:hover .blog-read::after{transform:translateX(4px);}
+.blog-card-img.no-img{display:flex;align-items:center;justify-content:center;min-height:140px;}
+.blog-card-img.no-img span{font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--text-muted);opacity:0.3;}
+/* Join */
+.join{background:var(--deep);text-align:center;padding:9rem 2rem;}
+.join-inner{max-width:680px;margin:0 auto;}
+.join .section-label{justify-content:center;}
+.join .section-label::before{display:none;}
+.join-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,4.2rem);font-weight:300;line-height:1.1;margin:1rem 0 1.5rem;}
+.join-title em{font-style:italic;color:var(--gold);}
+.join p{color:var(--text-secondary);font-size:1rem;line-height:1.85;margin-bottom:2.5rem;}
+.join-form{display:flex;gap:0;max-width:420px;margin:0 auto;border:0.5px solid var(--border);}
+.join-form input{flex:1;padding:0.9rem 1.2rem;background:var(--surface);border:none;outline:none;color:var(--text-primary);font-family:'DM Sans',sans-serif;font-size:0.85rem;}
+.join-form input::placeholder{color:var(--text-muted);}
+.join-form button{padding:0.9rem 1.5rem;background:var(--gold);border:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:500;color:var(--deep);transition:background 0.2s;}
+.join-form button:hover{background:var(--gold-light);}
+/* Footer */
+footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);padding:4rem 2rem 2.5rem;}
+.footer-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:0.5px solid var(--border-subtle);}
+.footer-brand 
+.footer-brand p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;max-width:260px;}
+.footer-col h4{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;}
+.footer-col ul{list-style:none;}
+.footer-col ul li{margin-bottom:0.65rem;}
+.footer-col ul li a{font-size:0.85rem;color:var(--text-muted);text-decoration:none;transition:color 0.2s;}
+.footer-col ul li a:hover{color:var(--gold);}
+.footer-bottom{max-width:1100px;margin:2rem auto 0;display:flex;align-items:center;justify-content:space-between;font-size:0.78rem;color:var(--text-muted);}
+.footer-verse{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.85rem;color:var(--text-muted);}
+.golden-divider{display:flex;align-items:center;gap:1rem;margin:3rem 0;}
+.golden-divider::before,.golden-divider::after{content:'';flex:1;height:0.5px;background:var(--border);}
+.golden-divider span{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--gold);opacity:0.6;}
+@media(max-width:1100px){
+  nav{padding:1rem 1.5rem;}
+  
+  section{padding:4rem 1.2rem;}
+  .hero{padding:6rem 1.2rem 3rem;}
+  .verse-float{display:none;}
+  .section-label{font-size:0.65rem;letter-spacing:0.16em;}
+  .section-title{font-size:1.8rem !important;line-height:1.2;}
+  .about-grid{grid-template-columns:1fr;gap:2rem;}
+  .dual-verse{margin-top:0;}
+  .beliefs-grid{grid-template-columns:1fr;}
+  .belief-card h3{font-size:1.2rem;}
+  .gather-flex{flex-direction:column;gap:2rem;}.gather-places{flex:none;width:100%;grid-template-columns:1fr 1fr;}
+  .photo-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:160px 160px 160px;}.photo-slot.large{grid-row:auto;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:1.5rem;}.footer-brand{grid-column:1/-1;}
+  .practice-row{grid-template-columns:1fr;}.practice-label{border-right:none;border-bottom:0.5px solid var(--border-subtle);padding-bottom:0.5rem;}
+  .practice-label h3{font-size:1.1rem;}
+  .blog-grid{grid-template-columns:1fr;}.blog-card.featured{grid-row:auto;}
+  .blog-card h3{font-size:1.1rem !important;}
+  .footer-bottom{flex-direction:column;gap:0.5rem;text-align:center;}
+  .join-form{flex-direction:column;}.join-form input,.join-form button{width:100%;}
+  .hero-verse{font-size:1rem;padding-left:1rem;}
+  .community-intro{margin-bottom:2rem;}
+  .join-title{font-size:2rem !important;}
+}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(13,17,23,0.92);backdrop-filter:blur(16px);border-bottom:0.5px solid rgba(201,168,76,0.18);}
+.nav-logo{text-decoration:none;flex-shrink:0;}
+.nav-logo img{height:1.9rem;width:auto;display:block;}
+.nav-links{display:flex;gap:1.4rem;list-style:none;}
+.nav-links a{font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:#A8A090;text-decoration:none;transition:color 0.2s;white-space:nowrap;}
+.nav-links a:hover,.nav-links a.active{color:#C9A84C;}
+.nav-cta{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#0D1117;background:#C9A84C;padding:0.5rem 1rem;border-radius:2px;flex-shrink:0;text-decoration:none;font-weight:500;white-space:nowrap;}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;flex-shrink:0;}
+.nav-hamburger span{display:block;width:22px;height:1px;background:#C9A84C;}
+.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,17,23,0.98);z-index:150;flex-direction:column;align-items:center;justify-content:flex-start;padding:5rem 2rem 3rem;overflow-y:auto;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:#F0EAD6;text-decoration:none;letter-spacing:0.06em;padding:0.7rem 0;border-bottom:0.5px solid rgba(255,255,255,0.06);width:100%;text-align:center;}
+.mobile-menu a:hover{color:#C9A84C;}
+.mobile-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:#6B6358;font-size:1.8rem;cursor:pointer;line-height:1;}
+@media(max-width:1100px){nav{padding:1rem 1.5rem;}.nav-links{display:none;}.nav-cta{display:none;}.nav-hamburger{display:flex;}}
+
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church"></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Foundation</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="references.html">Resources</a></li>
+    <li><a href="project314.html">God of Pi</a></li>
+    <li><a href="cosmology.html">Biblical Cosmology</a></li>
+    <li><a href="old-maps.html">Old Maps</a></li>
+  </ul>
+  <a href="index.html#join" class="nav-cta">Connect</a>
+  <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
+  <a href="index.html">Foundation</a>
+  <a href="blog.html">Blog</a>
+  <a href="references.html">Resources</a>
+  <a href="project314.html">God of Pi</a>
+  <a href="cosmology.html">Biblical Cosmology</a>
+  <a href="old-maps.html">Old Maps</a>
+  <a href="index.html#join" style="color:#C9A84C;">Connect</a>
+</div>
+
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <span class="verse-float v1">And the things you have heard me say…</span>
+  <span class="verse-float v2">…entrust to reliable people</span>
+  <span class="verse-float v3">Flee the evil desires of youth…</span>
+  <span class="verse-float v4">…pursue righteousness, faith, love</span>
+  <div class="hero-eyebrow"><span>2-22church.com</span></div>
+  <h1>
+    <span class="num">2:2<span style="display:inline-block;width:2px;height:0.75em;background:linear-gradient(to bottom,transparent,currentColor 30%,currentColor 70%,transparent);opacity:0.3;margin:0 4px;vertical-align:middle;"></span><span style="font-style:italic;opacity:0.85;">2</span></span>
+    <span class="church-word">Church</span>
+  </h1>
+
+  <div class="hero-verses">
+    <div class="hero-verse-col">
+      <cite>2 Timothy 2:2</cite>
+      <blockquote>"And the things you have heard me say in the presence of many witnesses entrust to reliable people who will also be qualified to teach others."</blockquote>
+      <p>On faithful teaching &amp; passing on truth</p>
+    </div>
+    <div class="hero-verse-divider"></div>
+    <div class="hero-verse-col">
+      <cite>2 Timothy 2:22</cite>
+      <blockquote>"Flee the evil desires of youth and pursue righteousness, faith, love and peace, along with those who call on the Lord out of a pure heart."</blockquote>
+      <p>On holy community &amp; pure-hearted pursuit</p>
+    </div>
+  </div>
+  <div class="hero-actions">
+    <a href="#about" class="btn-primary">Our Foundation</a>
+    <a href="#gathering" class="btn-ghost">Find a Gathering</a>
+  </div>
+
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-label">Our Foundation</div>
+        <h2 class="section-title">Built on the <em>Living Word</em>,<br>not on stone or wood</h2>
+        <p>2:22 Church is a community rooted entirely in <strong>Jesus Christ and the apostolic teaching</strong>. We take our name and our calling from two passages in 2 Timothy, a charge to pass on truth faithfully and to pursue righteousness with all who call on the Lord.</p>
+        <p>We hold to <strong>One God Theology</strong>, Jesus as the Son of God, risen and exalted to the right hand of the Father as Saviour, Lord and King of the world. The Holy Spirit is the living power by which the Almighty moves and works in creation.</p>
+        <p>We do not believe that any building, structure or institution constructed by human hands is a church or a temple. <strong>Living people are the church of God.</strong> Where believers gather, in homes, parks, halls, or open fields, there is the assembly of the Lord.</p>
+      </div>
+      <div>
+        <div class="dual-verse">
+          <h3>Why the name 2:2|2?</h3>
+          <div class="verse-block">
+            <blockquote>The name carries two foundations in one. Read left to right, <em>2:2</em> points to 2 Timothy 2:2, a charge to pass on faithful teaching. Continue and you see <em>2:22</em>, 2 Timothy 2:22, a call to pursue righteousness in holy community. The shared final digit is deliberate: the two callings are inseparable.</blockquote>
+          </div>
+          <div class="verse-block">
+            <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.8;">We are not built on programmes, buildings or institutions. We are built on these two apostolic charges, faithful in teaching, fervent in community. Everything else flows from here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="beliefs" id="beliefs">
+  <div class="container">
+    <div class="section-label">What We Believe</div>
+    <h2 class="section-title">Core <em>Convictions</em></h2>
+    <div class="beliefs-grid">
+      <div class="belief-card" data-num="01">
+        <div class="belief-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></div>
+        <h3>One God</h3>
+        <p>We affirm One God Theology. Jesus is the Son of God, crucified, resurrected, and exalted to the Father's right hand as Saviour, Lord and King. The Holy Spirit is the living power of the Almighty at work in the created world.</p>
+      </div>
+      <div class="belief-card" data-num="02">
+        <div class="belief-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>The Living Church</h3>
+        <p>No building, institution, or structure made by human hands is the church. The people of God are the church. Gathering can happen in any place, a home, a park, a hall, where believers come together to worship, share, testify and edify.</p>
+      </div>
+      <div class="belief-card" data-num="03">
+        <div class="belief-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Baptism in Jesus' Name</h3>
+        <p>We baptise in water in the name of Jesus Christ, as the apostles practised. Yet baptism alone cannot save, what saves is genuine personal transformation: the new birth from above. Outward act must follow inward reality.</p>
+      </div>
+      <div class="belief-card" data-num="04">
+        <div class="belief-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <h3>Apostolic Teaching</h3>
+        <p>We hold firmly to the teaching of Jesus and the apostles as recorded in Scripture. No single bishop, pope or centralised authority governs our community, we are a fellowship of equals under the headship of Christ alone.</p>
+      </div>
+      <div class="belief-card" data-num="05">
+        <div class="belief-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h3>A Life of Service</h3>
+        <p>We live by practice, not by preaching. Every believer is called to serve, in personal life, in family, in neighbourhood, in society. Wherever a person can bring glory to the Lord through service, that is sacred ground.</p>
+      </div>
+      <div class="belief-card" data-num="06">
+        <div class="belief-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Giving from the Heart</h3>
+        <p>We do not mandate a tithe. Instead we encourage every person to find a cause that builds the kingdom, food, shelter, clothing, mutual financial support. Give as led by the Spirit: to each other, to the poor, to the work of the Lord.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="community" id="community">
+  <div class="container">
+    <div class="community-intro">
+      <div class="section-label">Life Together</div>
+      <h2 class="section-title">Where <em>People</em> Gather</h2>
+      <p>The church is not a building, it is the people of God meeting wherever they can, sharing life, bearing burdens, and pursuing the way of Jesus together.</p>
+    </div>
+    <div class="photo-mosaic">
+      <div class="photo-slot large">
+        <img src="https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?w=800&q=80" alt="Community gathering outdoors" loading="lazy">
+        <div class="photo-overlay"></div><span class="photo-caption">Outdoor Gathering</span>
+      </div>
+      <div class="photo-slot">
+        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&q=80" alt="House fellowship" loading="lazy">
+        <div class="photo-overlay"></div><span class="photo-caption">House Fellowship</span>
+      </div>
+      <div class="photo-slot">
+        <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&q=80" alt="Serving together" loading="lazy">
+        <div class="photo-overlay"></div><span class="photo-caption">Serving Together</span>
+      </div>
+      <div class="photo-slot">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Breaking bread together" loading="lazy">
+        <div class="photo-overlay"></div><span class="photo-caption">Breaking Bread</span>
+      </div>
+      <div class="photo-slot">
+        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&q=80" alt="People in fellowship" loading="lazy">
+        <div class="photo-overlay"></div><span class="photo-caption">Community Life</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gathering" id="gathering">
+  <div class="container">
+    <div class="section-label">Our Gatherings</div>
+    <h2 class="section-title">Any Place. <em>Every Believer.</em></h2>
+    <div class="gather-flex">
+      <div class="gather-text">
+        <p>We give immense importance to the gathering of believers, not just in community halls but in houses, parks, courtyards, and any indoor or outdoor space where God's people come together to worship, share, testify and build one another up.</p>
+        <p>Our gatherings are centred on life, not logistics. We do not invest in costly instruments, elaborate management structures or impressive buildings. The focus is on the people gathered and the Spirit moving among them.</p>
+        <div class="golden-divider"><span>✦</span></div>
+        <p>Whether you are in a city flat or a rural home, a park bench or a borrowed hall, if you are a follower of Jesus seeking genuine fellowship, you are welcome to gather with us. <strong style="color:var(--text-primary)">Find or start a 2:22 gathering near you.</strong></p>
+      </div>
+      <div class="gather-places">
+        <div class="place-item"><span class="place-icon">🏠</span><h4>Homes</h4><p>The original church met in homes. So do we.</p></div>
+        <div class="place-item"><span class="place-icon">🌳</span><h4>Parks</h4><p>Open air, open hearts, open word.</p></div>
+        <div class="place-item"><span class="place-icon">🏛️</span><h4>Community Halls</h4><p>Shared spaces for larger gatherings.</p></div>
+        <div class="place-item"><span class="place-icon">☕</span><h4>Wherever You Are</h4><p>Two or three gathered, He is there.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="practices" id="practices">
+  <div class="container">
+    <div class="section-label">How We Live</div>
+    <h2 class="section-title">Practice Over <em>Performance</em></h2>
+    <div class="practices-grid">
+      <div class="practice-card">
+        <span class="practice-num">01</span>
+        <h3>Worship</h3>
+        <p>Worship is not confined to a scheduled service. It is the whole orientation of a life surrendered to God, expressed in prayer, song, service, fellowship and the daily choices we make to follow the way of Yeshua.</p>
+      </div>
+      <div class="practice-card">
+        <span class="practice-num">02</span>
+        <h3>Teaching</h3>
+        <p>We study the Scriptures together, in the tradition of Jesus and the apostles. Everyone is encouraged to bring what they have learned, ask questions and wrestle with the text. Truth is not the property of one teacher.</p>
+      </div>
+      <div class="practice-card">
+        <span class="practice-num">03</span>
+        <h3>Baptism</h3>
+        <p>We baptise in water in the name of Jesus Christ, as the early apostles practised. Baptism is a public declaration of a transformed life, a response to genuine inner renewal, not a ritual that produces it.</p>
+      </div>
+      <div class="practice-card">
+        <span class="practice-num">04</span>
+        <h3>Service</h3>
+        <p>We live out our faith in the everyday, caring for neighbours, sharing resources, standing with the vulnerable, serving without recognition. The greatest testimony to the risen Christ is a life visibly changed.</p>
+      </div>
+      <div class="practice-card">
+        <span class="practice-num">05</span>
+        <h3>Generosity</h3>
+        <p>There is no tithe mandate in our community. We encourage each person to prayerfully identify a need, food, shelter, clothing, financial support for a fellow believer, and to meet it. Generosity flows from love, not obligation.</p>
+      </div>
+      <div class="practice-card">
+        <span class="practice-num">06</span>
+        <h3>Leadership</h3>
+        <p>We reject centralised hierarchical authority. We are led by servant-elders who model the way of Christ, walking alongside not standing above. Christ alone is the head of the church.</p>
+      </div>
     </div>
   </div>
 </section>
