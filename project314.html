@@ -21,14 +21,14 @@ html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-primary);overflow-x:hidden;line-height:1.7;}
 
 /* ── NAV ── */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1.2rem 3rem;display:flex;align-items:center;justify-content:space-between;background:rgba(13,17,23,0.92);backdrop-filter:blur(16px);border-bottom:0.5px solid var(--border);}
-.nav-logo{text-decoration:none;}
+
+
 .nav-logo img{height:2rem;width:auto;display:block;}
-.nav-links{display:flex;gap:1.4rem;list-style:none;flex-wrap:nowrap;}
-.nav-links a{font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;}
+
+
 .nav-links a:hover,.nav-links a.active{color:var(--gold);}
-.nav-cta{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.5rem 1rem;border-radius:2px;text-decoration:none;font-weight:500;transition:background 0.2s;white-space:nowrap;}
-.nav-cta:hover{background:var(--gold-light);}
+
+
 
 /* ── HERO, YouTube background ── */
 .hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:9rem 2rem 5rem;overflow:hidden;}
@@ -181,7 +181,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
-  nav{padding:1rem 1.5rem;}.nav-links{display:none;}.nav-cta{display:none;}
+  nav{padding:1rem 1.5rem;}
   .ap-grid,.author-grid,.diag-grid,.prod-grid{grid-template-columns:1fr;gap:2.5rem;}
   .author-left{position:static;}
   .diag-full{grid-column:auto;}
@@ -194,18 +194,29 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 
 <!-- NAV -->
 <nav>
-  <a href="index.html" class="nav-logo">
-    <img src="logo.png" alt="2:22 Church">
-  </a>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church"></a>
   <ul class="nav-links">
-    <li><a href="index.html#about">Foundation</a></li>
+    <li><a href="index.html">Foundation</a></li>
     <li><a href="blog.html">Blog</a></li>
     <li><a href="references.html">Resources</a></li>
     <li><a href="project314.html" class="active">God of Pi</a></li>
     <li><a href="cosmology.html">Biblical Cosmology</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
+  <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
+  <a href="index.html">Foundation</a>
+  <a href="blog.html">Blog</a>
+  <a href="references.html">Resources</a>
+  <a href="project314.html">God of Pi</a>
+  <a href="cosmology.html">Biblical Cosmology</a>
+  <a href="index.html#join" style="color:var(--gold);">Connect</a>
+</div>
 
 <!-- HERO, YouTube video background 18s–37s loop -->
 <section class="hero">

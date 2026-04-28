@@ -14,14 +14,14 @@ html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-primary);overflow-x:hidden;line-height:1.7;}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:flex;align-items:center;justify-content:space-between;background:rgba(13,17,23,0.92);backdrop-filter:blur(16px);border-bottom:0.5px solid var(--border);}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;letter-spacing:0.08em;color:var(--gold);text-decoration:none;}
+
+
 .nav-logo span{font-style:italic;}
-.nav-links{display:flex;gap:1.4rem;list-style:none;flex-wrap:nowrap;}
-.nav-links a{font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;}
+
+
 .nav-links a:hover,.nav-links a.active{color:var(--gold);}
-.nav-cta{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.5rem 1rem;border-radius:2px;text-decoration:none;font-weight:500;transition:background 0.2s;white-space:nowrap;}
-.nav-cta:hover{background:var(--gold-light);}
+
+
 
 /* PAGE HEADER */
 .page-header{padding:10rem 2rem 5rem;background:var(--deep-mid);border-bottom:0.5px solid var(--border-subtle);text-align:center;}
@@ -74,7 +74,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:
 /* FOOTER */
 footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);padding:4rem 2rem 2.5rem;}
 .footer-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:0.5px solid var(--border-subtle);}
-.footer-brand .nav-logo{font-size:1.5rem;display:block;margin-bottom:1rem;}
+.footer-brand 
 .footer-brand p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;max-width:260px;}
 .footer-col h4{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;}
 .footer-col ul{list-style:none;}
@@ -85,8 +85,8 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 .footer-verse{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.85rem;}
 
 @media(max-width:800px){
-  nav{padding:1rem 1.5rem;}.nav-links{display:none;}
-  .nav-cta{padding:0.45rem 1rem;font-size:0.7rem;}
+  nav{padding:1rem 1.5rem;}
+  
   .page-header{padding:7rem 1.2rem 3rem;}
   .resources-body{padding:3rem 1.2rem 5rem;}
   .resource-card{flex-wrap:wrap;gap:1rem;}
@@ -98,19 +98,29 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo" style="display:flex;align-items:center;gap:0.4rem;">
-    <span style="display:flex;align-items:center;">2:2<span style="display:inline-block;width:1px;height:1.1em;background:linear-gradient(to bottom,transparent,#C9A84C 30%,#C9A84C 70%,transparent);opacity:0.3;margin:0 3px;vertical-align:middle;"></span><span style="font-style:italic;opacity:1;">2</span></span>
-    <span style="font-style:italic;font-size:1.3rem;color:#A8A090;opacity:0.5;">Church</span>
-  </a>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church"></a>
   <ul class="nav-links">
-    <li><a href="index.html#about">Foundation</a></li>
+    <li><a href="index.html">Foundation</a></li>
     <li><a href="blog.html">Blog</a></li>
     <li><a href="references.html" class="active">Resources</a></li>
     <li><a href="project314.html">God of Pi</a></li>
     <li><a href="cosmology.html">Biblical Cosmology</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
+  <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
+  <a href="index.html">Foundation</a>
+  <a href="blog.html">Blog</a>
+  <a href="references.html">Resources</a>
+  <a href="project314.html">God of Pi</a>
+  <a href="cosmology.html">Biblical Cosmology</a>
+  <a href="index.html#join" style="color:var(--gold);">Connect</a>
+</div>
 
 <div class="page-header">
   <div class="eyebrow">Further Study</div>

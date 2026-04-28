@@ -21,21 +21,21 @@ html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-primary);overflow-x:hidden;line-height:1.7;}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:flex;align-items:center;justify-content:space-between;background:rgba(13,17,23,0.92);backdrop-filter:blur(16px);border-bottom:0.5px solid var(--border);}
-.nav-logo{text-decoration:none;}
+
+
 .nav-logo img{height:2rem;width:auto;display:block;}
-.nav-links{display:flex;gap:1.4rem;list-style:none;flex-wrap:nowrap;}
-.nav-links a{font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;}
+
+
 .nav-links a:hover,.nav-links a.active{color:var(--gold);}
-.nav-cta{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.5rem 1rem;border-radius:2px;text-decoration:none;font-weight:500;transition:background 0.2s;white-space:nowrap;}
-.nav-cta:hover{background:var(--gold-light);}
-.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;} .nav-hamburger-x{flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
+
+
+ .nav-hamburger-x{flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
 .nav-hamburger span{display:block;width:22px;height:1px;background:var(--gold);}
-.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,17,23,0.98);z-index:150;flex-direction:column;align-items:center;justify-content:flex-start;gap:0;padding:5rem 2rem 3rem;overflow-y:auto;}
-.mobile-menu.open{display:flex;}
-.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--text-primary);text-decoration:none;letter-spacing:0.06em;transition:color 0.2s;padding:0.65rem 0;border-bottom:0.5px solid var(--border-subtle);width:100%;text-align:center;}
+
+
+
 .mobile-menu a:hover{color:var(--gold);}
-.mobile-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:var(--text-muted);font-size:1.5rem;cursor:pointer;}
+
 
 /* PAGE HEADER */
 .page-header{padding:10rem 2rem 5rem;background:var(--deep-mid);border-bottom:0.5px solid var(--border-subtle);text-align:center;}
@@ -125,8 +125,8 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 
 @media(max-width:1100px){
   nav{padding:1rem 1.5rem;}
-  .nav-links,.nav-cta{display:none;}
-  .nav-hamburger{display:flex;}
+  .nav-links,
+  
   .scripture-grid{grid-template-columns:1fr;}
   .img-pair{grid-template-columns:1fr;}
   .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}
@@ -140,7 +140,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 <nav>
   <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church"></a>
   <ul class="nav-links">
-    <li><a href="index.html#about">Foundation</a></li>
+    <li><a href="index.html">Foundation</a></li>
     <li><a href="blog.html">Blog</a></li>
     <li><a href="references.html">Resources</a></li>
     <li><a href="project314.html">God of Pi</a></li>
@@ -154,9 +154,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 
 <div class="mobile-menu" id="mobile-menu">
   <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
-  <a href="index.html#about">Foundation</a>
-  <a href="index.html#beliefs">Beliefs</a>
-  <a href="index.html#gathering">Gathering</a>
+  <a href="index.html">Foundation</a>
   <a href="blog.html">Blog</a>
   <a href="references.html">Resources</a>
   <a href="project314.html">God of Pi</a>
