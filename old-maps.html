@@ -63,8 +63,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .map-img{width:100%;aspect-ratio:4/3;overflow:hidden;background:var(--deep-mid);position:relative;}
 .map-img img{width:100%;height:100%;object-fit:cover;filter:sepia(0.3) saturate(0.8) brightness(0.75);transition:filter 0.4s,transform 0.5s;}
 .map-card:hover .map-img img{filter:sepia(0.15) saturate(1) brightness(0.9);transform:scale(1.03);}
-.map-img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--deep-mid),var(--surface));padding:2rem;}
+.map-img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--deep-mid),var(--surface));padding:2rem;position:absolute;top:0;left:0;}
 .map-img-placeholder span{font-family:'Cormorant Garamond',serif;font-size:0.8rem;font-style:italic;color:var(--text-muted);text-align:center;line-height:1.6;}
+.map-img{position:relative;}
+.map-img img{position:relative;z-index:1;}
 .map-body{padding:1.4rem 1.6rem 1.8rem;flex:1;display:flex;flex-direction:column;}
 .map-year{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;display:block;}
 .map-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;color:var(--text-primary);margin-bottom:0.5rem;line-height:1.3;}
@@ -125,12 +127,12 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 </nav>
 <div class="mobile-menu" id="mobile-menu">
   <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
-  <a href="index.html">Foundation</a>
-  <a href="blog.html">Blog</a>
-  <a href="references.html">Resources</a>
-  <a href="project314.html">God of Pi</a>
-  <a href="cosmology.html">Biblical Cosmology</a>
-  <a href="index.html#join" style="color:#C9A84C;">Connect</a>
+  <a href="index.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">Foundation</a>
+  <a href="blog.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">Blog</a>
+  <a href="references.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">Resources</a>
+  <a href="project314.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="cosmology.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">Biblical Cosmology</a>
+  <a href="index.html#join" style="color:#C9A84C;" onclick="document.getElementById('mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
 <div class="page-header">
@@ -156,7 +158,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
     <div class="map-grid">
       <div class="map-card full">
         <div class="map-img">
-          <img src="https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/a/a1/Coronelli_America_Settentrionale_Colle_Nuove_Scoperti_fin_all%27_Anno_1688_UTA.jpg"
+          <img src="https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/a/a1/Coronelli_America_Settentrionale_Colle_Nuove_Scoperti_fin_all%27_Anno_1688_UTA.jpg&w=800&output=jpg&q=80"
                alt="Coronelli America Settentrionale 1688"
                loading="lazy"
                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
@@ -171,7 +173,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
       </div>
       <div class="map-card">
         <div class="map-img">
-          <div class="map-img-placeholder" style="display:flex"><span>Historical Atlas<br>Page N7<br>archive.org</span></div>
+          <img src="https://archive.org/services/img/historicalatlaso0000haye_d4c4" alt="Historical Atlas N7" loading="lazy" onerror="this.style.display='none'">
         </div>
         <div class="map-body">
           <span class="map-year">Historical Atlas</span>
@@ -182,7 +184,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
       </div>
       <div class="map-card">
         <div class="map-img">
-          <div class="map-img-placeholder" style="display:flex"><span>Archive.org<br>A215135144MC<br>2up view</span></div>
+          <img src="https://archive.org/services/img/A215135144MC" alt="Archive A215135144MC" loading="lazy" onerror="this.style.display='none'">
         </div>
         <div class="map-body">
           <span class="map-year">Historical Document</span>
@@ -205,7 +207,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
     <div class="map-grid">
       <div class="map-card">
         <div class="map-img">
-          <div class="map-img-placeholder" style="display:flex"><span>Carte Particuliere<br>Stroit de Iezo<br>Buache 1754</span></div>
+          <img src="https://images.weserv.nl/?url=www.davidrumsey.com/luna/servlet/iiif/RUMSEY~8~1~306187~90076570/full/!600,450/0/default.jpg&output=jpg&q=80" alt="Carte Particuliere Stroit de Iezo" loading="lazy" onerror="this.style.display='none'">
         </div>
         <div class="map-body">
           <span class="map-year">Buache · 1754</span>
@@ -216,7 +218,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
       </div>
       <div class="map-card">
         <div class="map-img">
-          <div class="map-img-placeholder" style="display:flex"><span>Terre de Iesso<br>Island of California<br>David Rumsey</span></div>
+          <img src="https://images.weserv.nl/?url=www.davidrumsey.com/luna/servlet/iiif/RUMSEY~8~1~307751~90077669/full/!600,450/0/default.jpg&output=jpg&q=80" alt="Terre de Iesso and Island of California" loading="lazy" onerror="this.style.display='none'">
         </div>
         <div class="map-body">
           <span class="map-year">c. 1700</span>
@@ -227,7 +229,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
       </div>
       <div class="map-card">
         <div class="map-img">
-          <div class="map-img-placeholder" style="display:flex"><span>Fin de la cote<br>Meridionale d'Eso<br>Buache 1754</span></div>
+          <img src="https://images.weserv.nl/?url=www.davidrumsey.com/luna/servlet/iiif/RUMSEY~8~1~306199~90076580/full/!600,450/0/default.jpg&output=jpg&q=80" alt="Fin de la cote Meridionale dEso" loading="lazy" onerror="this.style.display='none'">
         </div>
         <div class="map-body">
           <span class="map-year">Buache · 1754</span>
@@ -238,7 +240,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
       </div>
       <div class="map-card">
         <div class="map-img">
-          <div class="map-img-placeholder" style="display:flex"><span>Cote Septentrionale<br>et Orientale<br>Buache 1754</span></div>
+          <img src="https://images.weserv.nl/?url=www.davidrumsey.com/luna/servlet/iiif/RUMSEY~8~1~306202~90076568/full/!600,450/0/default.jpg&output=jpg&q=80" alt="Cote Septentrionale et Orientale" loading="lazy" onerror="this.style.display='none'">
         </div>
         <div class="map-body">
           <span class="map-year">Buache · 1754</span>
@@ -249,7 +251,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
       </div>
       <div class="map-card">
         <div class="map-img">
-          <div class="map-img-placeholder" style="display:flex"><span>Vue de la partie<br>septentrionale<br>Isle des Etats</span></div>
+          <img src="https://images.weserv.nl/?url=www.davidrumsey.com/luna/servlet/iiif/RUMSEY~8~1~306201~90076582/full/!600,450/0/default.jpg&output=jpg&q=80" alt="Vue de la partie septentrionale" loading="lazy" onerror="this.style.display='none'">
         </div>
         <div class="map-body">
           <span class="map-year">Buache · 1754</span>
@@ -260,7 +262,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
       </div>
       <div class="map-card">
         <div class="map-img">
-          <div class="map-img-placeholder" style="display:flex"><span>Vues des cotes<br>Isle d'ESO<br>Buache 1754</span></div>
+          <img src="https://images.weserv.nl/?url=www.davidrumsey.com/luna/servlet/iiif/RUMSEY~8~1~306198~90076576/full/!600,450/0/default.jpg&output=jpg&q=80" alt="Vues des cotes Isle dESO" loading="lazy" onerror="this.style.display='none'">
         </div>
         <div class="map-body">
           <span class="map-year">Buache · 1754</span>
