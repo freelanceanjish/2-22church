@@ -9,6 +9,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <style>
+:root{
+  --gold:#C9A84C;--gold-light:#E8D5A3;--gold-dark:#8B6914;
+  --deep:#0D1117;--deep-mid:#161C26;--surface:#1C2333;--surface-light:#232B3E;
+  --text-primary:#F0EAD6;--text-secondary:#A8A090;--text-muted:#6B6358;
+  --border:rgba(201,168,76,0.18);--border-subtle:rgba(255,255,255,0.06);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+
 body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-primary);overflow-x:hidden;line-height:1.7;}
 
 .nav-logo .logo-num{display:flex;align-items:center;}
@@ -270,7 +279,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 /* centre: 38vw wide = 2×R where R=19vw */
 .hd-centre{
   width:38vw;
-  height:38vw;max-height:80vh;
+  height:38vw;max-height:76vh;
   display:flex;flex-direction:column;
   align-items:center;justify-content:center;
   flex-shrink:0;
@@ -304,6 +313,28 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 @media(min-width:860px){.hero-inner{display:flex;}.hero-tablet,.hero-mobile{display:none;}}
 @media(min-width:540px) and (max-width:859px){.hero-tablet{display:flex;}.hero-inner,.hero-mobile{display:none;}}
 @media(max-width:539px){.hero-mobile{display:flex;}.hero-inner,.hero-tablet{display:none;}}
+
+
+.hd-btns .btn-ghost:hover,
+.ht-btn.btn-ghost:hover,
+.hm-btn.btn-ghost:hover{
+  background:var(--gold);
+  color:var(--deep);
+  border-color:var(--gold);
+}
+
+
+/* both hero buttons — ghost border, gold text, full gold fill on hover */
+.hd-btn{
+  font-size:0.82rem;padding:0.85rem 2.2rem;
+  color:var(--gold);background:transparent;
+  border:0.5px solid rgba(201,168,76,0.45);
+  border-radius:2px;text-decoration:none;
+  letter-spacing:0.14em;text-transform:uppercase;
+  display:inline-block;transition:all 0.2s;
+  font-family:'DM Sans',sans-serif;font-weight:500;
+}
+.hd-btn:hover{background:var(--gold);color:var(--deep);border-color:var(--gold);}
 /* ── HERO END ── */
 
 </style>
@@ -331,7 +362,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     <li><a href="cosmology.html">Cosmology</a></li>
     <li><a href="old-maps.html">Old Maps</a></li>
   </ul>
-  <a href="index.html#join" class="nav-cta">Connect</a>
+  <a href="#join" class="nav-cta">Connect</a>
   <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
@@ -374,8 +405,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
       </div>
     </div>
     <div class="hd-btns">
-      <a href="#about" class="btn-primary">Our Foundation</a>
-      <a href="#gathering" class="btn-ghost">Find a Gathering</a>
+      <a href="#about" class="btn-ghost">Our Foundation</a>
+      <a href="#gathering" class="btn-ghost hd-btn">Find a Gathering</a>
     </div>
   </div>
 
@@ -414,7 +445,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
       <div class="hv-text">Pursue righteousness, faith, love and peace with those who call on the Lord.</div>
     </div>
     <div class="hm-btns">
-      <a href="#about" class="btn-primary hm-btn">Our Foundation</a>
+      <a href="#about" class="btn-ghost hm-btn">Our Foundation</a>
       <a href="#gathering" class="btn-ghost hm-btn">Find a Gathering</a>
     </div>
   </div>
@@ -648,6 +679,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
       <button type="submit">Connect ↗</button>
     </form>
     <p id="joinMsg" style="margin-top:1rem;font-size:0.85rem;color:var(--gold);min-height:1.2em;"></p>
+    <p style="margin-top:0.5rem;font-size:0.72rem;color:var(--text-muted);">We will reply from <a href="mailto:contact@2-22church.com" style="color:var(--gold);text-decoration:none;">contact@2-22church.com</a></p>
   </div>
 </section>
 
@@ -699,9 +731,39 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 <script>
 function handleJoin(e) {
   e.preventDefault();
-  var email = document.getElementById('joinEmail').value;
-  document.getElementById('joinMsg').textContent = 'Thank you — we will be in touch at ' + email;
+  var email = document.getElementById('joinEmail').value.trim();
+  if(!email) return;
+
+  // 1. Open mailto so the visitor's email client drafts a message to contact@
+  var subject = encodeURIComponent('Connect — 2:22 Church');
+  var body = encodeURIComponent('Name: \nEmail: ' + email + '\nMessage: I would like to connect with 2:22 Church.');
+  window.location.href = 'mailto:contact@2-22church.com?subject=' + subject + '&body=' + body;
+
+  // 2. Save email locally for newsletter export
+  try {
+    var saved = JSON.parse(localStorage.getItem('222church_subscribers') || '[]');
+    if(saved.indexOf(email) === -1){
+      saved.push(email);
+      localStorage.setItem('222church_subscribers', JSON.stringify(saved));
+    }
+  } catch(err){}
+
+  document.getElementById('joinMsg').textContent = 'Opening your email app — we look forward to hearing from you.';
   document.getElementById('joinEmail').value = '';
+}
+
+/* Admin helper: open browser console and type exportSubscribers() to download CSV */
+function exportSubscribers(){
+  try{
+    var list = JSON.parse(localStorage.getItem('222church_subscribers') || '[]');
+    if(!list.length){ alert('No subscribers saved yet.'); return; }
+    var csv = 'email\n' + list.join('\n');
+    var a = document.createElement('a');
+    a.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
+    a.download = '222church-subscribers.csv';
+    a.click();
+    console.log('Exported ' + list.length + ' subscribers.');
+  } catch(err){ alert('Error: ' + err); }
 }
 
 // Render latest 5 posts into homepage blog grid
@@ -807,7 +869,7 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
     ctx.clearRect(0,0,W,H);
     var R,AM,SM;
     /* R = 19vw → matches CSS hd-centre width of 38vw (38vw/2 = 19vw) */
-    if(W>=860){R=W*0.19;AM=1.0;SM=1.0;}
+    if(W>=860){R=H*0.38;AM=1.0;SM=1.0;}
     else if(W>=540){R=W*0.16;AM=0.6;SM=0.85;}
     else{R=W*0.20;AM=0.35;SM=0.7;}
     var cx=W/2,cy=H/2;

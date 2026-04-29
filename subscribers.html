@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subscribers — 2:22 Church Admin</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,sans-serif;background:#0D1117;color:#F0EAD6;padding:3rem 2rem;min-height:100vh;}
+h1{font-size:1.4rem;color:#C9A84C;margin-bottom:0.5rem;}
+p{font-size:0.85rem;color:#A8A090;margin-bottom:2rem;}
+.card{background:#1C2333;border:0.5px solid rgba(201,168,76,0.18);padding:2rem;max-width:600px;}
+.count{font-size:2.5rem;font-weight:300;color:#C9A84C;margin-bottom:0.25rem;}
+.label{font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;color:#6B6358;margin-bottom:1.5rem;}
+.btn{display:inline-block;margin-top:1rem;margin-right:0.75rem;padding:0.7rem 1.6rem;font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;border-radius:2px;border:none;font-family:inherit;}
+.btn-gold{background:#C9A84C;color:#0D1117;font-weight:500;}
+.btn-ghost{background:transparent;color:#C9A84C;border:0.5px solid rgba(201,168,76,0.35);}
+.email-list{margin-top:1.5rem;display:flex;flex-direction:column;gap:0;}
+.email-item{padding:0.6rem 0.8rem;font-size:0.85rem;border-bottom:0.5px solid rgba(255,255,255,0.06);}
+.email-item:last-child{border:none;}
+.empty{color:#6B6358;font-style:italic;font-size:0.9rem;margin-top:1rem;}
+.note{font-size:0.75rem;color:#6B6358;margin-top:1.5rem;line-height:1.6;}
+</style>
+</head>
+<body>
+<h1>2:22 Church — Subscriber List</h1>
+<p>Emails collected via the Connect form on the homepage are saved here in your browser. Download as CSV to import into Mailchimp or any email tool.</p>
+
+<div class="card">
+  <div class="count" id="count">0</div>
+  <div class="label">Subscribers collected</div>
+
+  <div>
+    <button class="btn btn-gold" onclick="exportCSV()">Download CSV</button>
+    <button class="btn btn-ghost" onclick="clearAll()">Clear All</button>
+  </div>
+
+  <div class="email-list" id="email-list"></div>
+  <p class="note">
+    Note: these emails are stored in <strong>this browser only</strong> (localStorage). To collect them permanently, set up Mailchimp using the README instructions, or copy this list to a spreadsheet whenever you check it.
+    <br><br>
+    To view this page locally: open <code>subscribers.html</code> in the same browser where people are submitting the Connect form on your site.
+  </p>
+</div>
+
+<script>
+function load(){
+  try{
+    var list = JSON.parse(localStorage.getItem('222church_subscribers') || '[]');
+    document.getElementById('count').textContent = list.length;
+    var ul = document.getElementById('email-list');
+    if(!list.length){
+      ul.innerHTML = '<p class="empty">No subscribers yet.</p>';
+      return;
+    }
+    ul.innerHTML = list.map(function(e,i){
+      return '<div class="email-item">' + (i+1) + '.&nbsp;&nbsp;' + e + '</div>';
+    }).join('');
+  } catch(err){
+    document.getElementById('email-list').innerHTML = '<p class="empty">Error reading data.</p>';
+  }
+}
+
+function exportCSV(){
+  try{
+    var list = JSON.parse(localStorage.getItem('222church_subscribers') || '[]');
+    if(!list.length){ alert('No subscribers to export yet.'); return; }
+    var csv = 'Email Address\n' + list.join('\n');
+    var a = document.createElement('a');
+    a.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
+    a.download = '222church-subscribers-' + new Date().toISOString().slice(0,10) + '.csv';
+    a.click();
+  } catch(err){ alert('Export failed: ' + err); }
+}
+
+function clearAll(){
+  if(!confirm('Delete all saved subscriber emails? This cannot be undone.')) return;
+  localStorage.removeItem('222church_subscribers');
+  load();
+}
+
+load();
+</script>
+</body>
+</html>
