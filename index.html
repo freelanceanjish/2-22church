@@ -253,8 +253,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 
 /* ── HERO ── */
-.hero{position:relative;width:100%;height:100vh;min-height:600px;background:var(--deep);overflow:hidden;display:flex;align-items:center;justify-content:center;}
-#sunflower-bg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;}
+.hero{position:relative;width:100%;height:100vh;min-height:700px;background:var(--deep);overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.hero-photo-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1600&q=80');background-size:cover;background-position:center;z-index:0;}
+.hero-photo-overlay{position:absolute;inset:0;background:rgba(13,17,23,0.70);z-index:1;}
+#sunflower-bg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;}
 .h-num{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:normal;color:var(--gold);line-height:1;display:flex;align-items:center;}
 .h-sep{display:inline-block;width:1.5px;align-self:stretch;background:linear-gradient(to bottom,transparent,var(--gold) 28%,var(--gold) 72%,transparent);opacity:.3;margin:0 5px;}
 .h-church{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;color:var(--text-secondary);letter-spacing:.08em;}
@@ -263,22 +265,26 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .hv-bar{width:0.5px;height:16px;background:linear-gradient(to bottom,transparent,rgba(201,168,76,.3),transparent);flex-shrink:0;}
 .hv-text{font-family:'Cormorant Garamond',serif;font-style:italic;color:rgba(240,234,214,.72);line-height:1.7;text-align:center;font-size:clamp(0.8rem,1.5vmin,1rem);}
 
-/* DESKTOP — vmin units so R always matches canvas */
-.hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:4vmin;}
-.hd-row{display:flex;align-items:stretch;gap:0;}
+/* DESKTOP */
+.hero-inner{position:relative;z-index:3;display:flex;flex-direction:column;align-items:center;gap:3vmin;}
+/* Main row: verse | flower | verse */
+.hd-row{display:flex;align-items:center;justify-content:center;gap:0;width:min(96vmin,900px);}
+/* Verse columns — outside the flower */
 .hd-verse-left,.hd-verse-right{
-  width:14vmin;height:60vmin;
+  flex:0 0 17vmin;
   display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:.7rem;flex-shrink:0;
+  align-items:center;justify-content:center;gap:.7rem;
 }
-.hd-gap{width:2.5vmin;flex-shrink:0;}
+.hd-gap{width:0.5px;align-self:stretch;background:linear-gradient(to bottom,transparent,rgba(201,168,76,0.25),transparent);flex-shrink:0;}
+/* Flower — bigger */
 .hd-centre{
-  width:60vmin;height:60vmin;
+  width:58vmin;height:58vmin;
   display:flex;flex-direction:column;
   align-items:center;justify-content:center;flex-shrink:0;
 }
-.hd-centre .h-num{font-size:clamp(2.8rem,8.5vmin,6.5rem);}
-.hd-centre .h-church{font-size:clamp(1rem,2.8vmin,2.2rem);margin-top:6px;}
+.hd-centre .h-num{font-size:clamp(4rem,14vmin,10rem);}
+.hd-centre .h-church{font-size:clamp(1.4rem,4.2vmin,3.2rem);margin-top:8px;}
+/* Buttons below */
 .hd-btns{display:flex;gap:1rem;}
 .hd-btn{
   font-size:clamp(0.65rem,1.3vmin,0.85rem);
@@ -380,6 +386,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   <a href="index.html#join" style="color:var(--gold);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 <section class="hero" id="hero-section">
+  <div class="hero-photo-bg"></div>
+  <div class="hero-photo-overlay"></div>
   <canvas id="sunflower-bg"></canvas>
 
   <!-- DESKTOP -->
@@ -407,8 +415,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
       </div>
     </div>
     <div class="hd-btns">
-      <a href="#about" class="btn-ghost">Our Foundation</a>
-      <a href="#gathering" class="btn-ghost hd-btn">Find a Gathering</a>
+      <a href="#about" class="hd-btn">Our Foundation</a>
+      <a href="#gathering" class="hd-btn">Find a Gathering</a>
     </div>
   </div>
 
@@ -735,25 +743,14 @@ function handleJoin(e) {
   e.preventDefault();
   var email = document.getElementById('joinEmail').value.trim();
   if(!email) return;
-
   var msg = document.getElementById('joinMsg');
   msg.style.color = 'var(--gold)';
   msg.textContent = 'Connecting…';
-
   var url = 'https://2-22church.us18.list-manage.com/subscribe/post?u=755785d9ce31b1cba40e5f259&id=7f5679fc98&f_id=002eaee6f0';
   var body = 'EMAIL=' + encodeURIComponent(email) + '&b_755785d9ce31b1cba40e5f259_7f5679fc98=';
-  fetch(url, {
-    method: 'POST',
-    mode: 'no-cors',
-    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-    body: body
-  }).then(function() {
-    msg.textContent = 'Thank you & welcome to 2:22 Church Community';
-    document.getElementById('joinEmail').value = '';
-  }).catch(function() {
-    msg.style.color = 'var(--text-muted)';
-    msg.textContent = 'Something went wrong. Please try again.';
-  });
+  fetch(url, {method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body})
+  .then(function(){ msg.textContent = 'Thank you & welcome to 2:22 Church Community'; document.getElementById('joinEmail').value = ''; })
+  .catch(function(){ msg.style.color='var(--text-muted)'; msg.textContent='Something went wrong. Please try again.'; });
 }
 
 /* Admin helper: open browser console and type exportSubscribers() to download CSV */
@@ -872,7 +869,7 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
     var vmin=Math.min(W,H);
     var R,AM,SM;
     /* vmin matches CSS vmin unit — circle always perfect */
-    if(W>=860){R=vmin*0.30;AM=1.0;SM=1.0;}
+    if(W>=860){R=vmin*0.29;AM=1.0;SM=1.0;}
     else if(W>=540){R=vmin*0.22;AM=0.6;SM=0.85;}
     else{R=vmin*0.20;AM=0.35;SM=0.7;}
     var cx=W/2,cy=H/2;
