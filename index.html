@@ -234,40 +234,43 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 
 
+
+
+
 /* ── HERO ── */
-.hero{position:relative;width:100%;height:100vh;min-height:600px;background:var(--deep);overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.hero{position:relative;width:100%;height:100vh;min-height:640px;background:var(--deep);overflow:hidden;display:flex;align-items:center;justify-content:center;}
 #sunflower-bg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;}
 .h-num{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:normal;color:var(--gold);line-height:1;display:flex;align-items:center;}
-.h-sep{display:inline-block;width:1.5px;align-self:stretch;background:linear-gradient(to bottom,transparent,var(--gold) 28%,var(--gold) 72%,transparent);opacity:.3;margin:0 5px;}
+.h-sep{display:inline-block;width:1.5px;align-self:stretch;background:linear-gradient(to bottom,transparent,var(--gold) 28%,var(--gold) 72%,transparent);opacity:.3;margin:0 6px;}
 .h-church{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;color:var(--text-secondary);letter-spacing:.08em;}
 .hv-accent{width:20px;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);flex-shrink:0;}
 .hv-ref{font-size:0.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);text-align:center;line-height:1.5;}
 .hv-bar{width:0.5px;height:16px;background:linear-gradient(to bottom,transparent,rgba(201,168,76,.3),transparent);flex-shrink:0;}
-.hv-text{font-family:'Cormorant Garamond',serif;font-size:0.85rem;font-style:italic;color:rgba(240,234,214,.72);line-height:1.7;text-align:center;}
+.hv-text{font-family:'Cormorant Garamond',serif;font-size:0.88rem;font-style:italic;color:rgba(240,234,214,.72);line-height:1.7;text-align:center;}
 
 /* DESKTOP
-   Fixed proportions matching the approved preview sample.
-   Sunflower drawn at CX=W/2, CY=H/2 with R matching hero-circle size.
-   hero-circle = 320px wide = 2*R → R = 160px.
-   Verse cards = 130px wide each, sitting flush outside circle.
-   Total row = 130+320+130 = 580px — fits any desktop.
+   R = 180px  →  centre column = 360px (2×R)
+   Gap between circle edge and verse card = 20px each side
+   Verse card = 185px wide, same height as centre (360px)
+   Buttons = 28px below the row
 */
 .hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:28px;}
 .hd-row{display:flex;align-items:stretch;gap:0;}
 .hd-verse-left,.hd-verse-right{
-  width:130px;height:320px;
+  width:185px;height:360px;
   display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:.7rem;
+  align-items:center;justify-content:center;gap:.75rem;
   flex-shrink:0;
 }
+.hd-gap{width:20px;flex-shrink:0;}
 .hd-centre{
-  width:320px;height:320px;
+  width:360px;height:360px;
   display:flex;flex-direction:column;
   align-items:center;justify-content:center;
   flex-shrink:0;
 }
-.hd-centre .h-num{font-size:4.8rem;}
-.hd-centre .h-church{font-size:1.6rem;margin-top:6px;}
+.hd-centre .h-num{font-size:5rem;}
+.hd-centre .h-church{font-size:1.75rem;margin-top:8px;}
 .hd-btns{display:flex;gap:1rem;}
 .hd-btns .btn-primary,.hd-btns .btn-ghost{font-size:0.78rem;padding:0.8rem 2rem;}
 
@@ -349,10 +352,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
         <div class="hv-text">Entrust to reliable people who will also be qualified to teach others.</div>
         <div class="hv-accent"></div>
       </div>
+      <div class="hd-gap"></div>
       <div class="hd-centre">
         <div class="h-num">2:2<span class="h-sep"></span>2</div>
         <div class="h-church">Church</div>
       </div>
+      <div class="hd-gap"></div>
       <div class="hd-verse-right">
         <div class="hv-accent"></div>
         <div class="hv-ref">2 Timothy 2:22</div>
@@ -407,6 +412,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     </div>
   </div>
 </section>
+
+
 
 
 
@@ -774,6 +781,7 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
 
 
 
+
 <script>
 (function(){
   var canvas=document.getElementById('sunflower-bg');
@@ -787,11 +795,10 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
   }
   function draw(){
     ctx.clearRect(0,0,W,H);
-    var isDesktop=W>=860,isTablet=W>=540&&W<860;
     var R,AM,SM;
-    if(isDesktop){R=160;AM=1.0;SM=1.0;}
-    else if(isTablet){R=100;AM=0.6;SM=0.85;}
-    else{R=80;AM=0.35;SM=0.7;}
+    if(W>=860){R=180;AM=1.0;SM=1.0;}
+    else if(W>=540){R=110;AM=0.6;SM=0.85;}
+    else{R=85;AM=0.35;SM=0.7;}
     var cx=W/2,cy=H/2;
     for(var i=0;i<N;i++){
       var r=R*Math.sqrt(i/N),a=i*GA+frame*0.0005,frac=i/N;
