@@ -736,22 +736,24 @@ function handleJoin(e) {
   var email = document.getElementById('joinEmail').value.trim();
   if(!email) return;
 
-  // 1. Open mailto so the visitor's email client drafts a message to contact@
-  var subject = encodeURIComponent('Connect — 2:22 Church');
-  var body = encodeURIComponent('Name: \nEmail: ' + email + '\nMessage: I would like to connect with 2:22 Church.');
-  window.location.href = 'mailto:contact@2-22church.com?subject=' + subject + '&body=' + body;
+  var msg = document.getElementById('joinMsg');
+  msg.style.color = 'var(--gold)';
+  msg.textContent = 'Connecting…';
 
-  // 2. Save email locally for newsletter export
-  try {
-    var saved = JSON.parse(localStorage.getItem('222church_subscribers') || '[]');
-    if(saved.indexOf(email) === -1){
-      saved.push(email);
-      localStorage.setItem('222church_subscribers', JSON.stringify(saved));
-    }
-  } catch(err){}
-
-  document.getElementById('joinMsg').textContent = 'Opening your email app — we look forward to hearing from you.';
-  document.getElementById('joinEmail').value = '';
+  var url = 'https://2-22church.us18.list-manage.com/subscribe/post?u=755785d9ce31b1cba40e5f259&id=7f5679fc98&f_id=002eaee6f0';
+  var body = 'EMAIL=' + encodeURIComponent(email) + '&b_755785d9ce31b1cba40e5f259_7f5679fc98=';
+  fetch(url, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+    body: body
+  }).then(function() {
+    msg.textContent = 'Thank you & welcome to 2:22 Church Community';
+    document.getElementById('joinEmail').value = '';
+  }).catch(function() {
+    msg.style.color = 'var(--text-muted)';
+    msg.textContent = 'Something went wrong. Please try again.';
+  });
 }
 
 /* Admin helper: open browser console and type exportSubscribers() to download CSV */
