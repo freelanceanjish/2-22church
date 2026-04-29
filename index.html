@@ -276,19 +276,19 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 #sf{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;}
 /* 2:22 Church — pinned to canvas centre */
 .h-centre{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);z-index:2;display:flex;flex-direction:column;align-items:center;}
-.h-num{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:normal;color:var(--gold);line-height:1;font-size:clamp(3.5rem,8.5vh,7rem);display:flex;align-items:center;}
+.h-num{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:normal;color:var(--gold);line-height:1;font-size:clamp(4.5rem,11vh,9rem);display:flex;align-items:center;}
 .h-sep{display:inline-block;width:1.5px;align-self:stretch;background:linear-gradient(to bottom,transparent,var(--gold) 28%,var(--gold) 72%,transparent);opacity:0.3;margin:0 6px;}
-.h-church{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;color:var(--text-secondary);letter-spacing:0.08em;font-size:clamp(1.4rem,3.2vh,2.8rem);margin-top:4px;}
+.h-church{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;color:var(--text-secondary);letter-spacing:0.08em;font-size:clamp(1.8rem,4.2vh,3.6rem);margin-top:4px;}
 /* verse cards outside flower — R=22vh, cy=47vh */
-.vc{position:absolute;top:25vh;height:44vh;width:14vw;min-width:120px;max-width:180px;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.6rem;}
-.vc-left{right:calc(50% + 24vh);}
-.vc-right{left:calc(50% + 24vh);}
+.vc{position:absolute;top:19vh;height:56vh;width:14vw;min-width:120px;max-width:180px;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.6rem;}
+.vc-left{right:calc(50% + 30vh);}
+.vc-right{left:calc(50% + 30vh);}
 .vc-accent{width:20px;height:1px;flex-shrink:0;background:linear-gradient(to right,transparent,var(--gold),transparent);}
 .vc-ref{font-family:'DM Sans',sans-serif;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);text-align:center;line-height:1.5;}
 .vc-bar{width:0.5px;height:14px;flex-shrink:0;background:linear-gradient(to bottom,transparent,rgba(201,168,76,0.3),transparent);}
-.vc-text{font-family:'Cormorant Garamond',serif;font-size:clamp(0.78rem,1.3vh,0.95rem);font-style:italic;color:rgba(240,234,214,0.72);line-height:1.7;text-align:center;}
+.vc-text{font-family:'Cormorant Garamond',serif;font-size:clamp(0.88rem,1.6vh,1.1rem);font-style:italic;color:rgba(240,234,214,0.72);line-height:1.7;text-align:center;}
 /* buttons — below flower (flower bottom = 47+22 = 69vh) */
-.hero-btns{position:absolute;left:50%;top:74vh;transform:translateX(-50%);z-index:2;display:flex;gap:1rem;}
+.hero-btns{position:absolute;left:50%;top:80vh;transform:translateX(-50%);z-index:2;display:flex;gap:1rem;}
 .hero-btn{font-family:'DM Sans',sans-serif;font-size:0.78rem;letter-spacing:0.13em;text-transform:uppercase;background:var(--gold);color:var(--deep);padding:0.8rem 2rem;border-radius:2px;text-decoration:none;font-weight:500;transition:background 0.2s;white-space:nowrap;display:inline-block;}
 .hero-btn:hover{background:var(--gold-light);}
 @media(max-width:860px){
@@ -788,8 +788,8 @@ function closeMenu(){
   function setup(){W=window.innerWidth;H=window.innerHeight;canvas.width=W;canvas.height=H;}
   function draw(){
     ctx.clearRect(0,0,W,H);
-    var R=H*0.22,CY=H*0.47,CX=W/2,AM=1.0,SM=1.0;
-    if(W<860){R=H*0.18;CY=H*0.40;AM=0.5;SM=0.85;}
+    var R=H*0.28,CY=H*0.47,CX=W/2,AM=1.0,SM=1.0;
+    if(W<860){R=H*0.22;CY=H*0.40;AM=0.5;SM=0.85;}
     for(var i=0;i<N;i++){
       var r=R*Math.sqrt(i/N),a=i*GA+frame*0.0005,frac=i/N;
       ctx.beginPath();
