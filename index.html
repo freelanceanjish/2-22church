@@ -267,13 +267,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:4vmin;}
 .hd-row{display:flex;align-items:stretch;gap:0;}
 .hd-verse-left,.hd-verse-right{
-  width:14vmin;height:48vmin;
+  width:14vmin;height:60vmin;
   display:flex;flex-direction:column;
   align-items:center;justify-content:center;gap:.7rem;flex-shrink:0;
 }
 .hd-gap{width:2.5vmin;flex-shrink:0;}
 .hd-centre{
-  width:48vmin;height:48vmin;
+  width:60vmin;height:60vmin;
   display:flex;flex-direction:column;
   align-items:center;justify-content:center;flex-shrink:0;
 }
@@ -317,6 +317,27 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 @media(min-width:540px) and (max-width:859px){.hero-tablet{display:flex;}.hero-inner,.hero-mobile{display:none;}}
 @media(max-width:539px){.hero-mobile{display:flex;}.hero-inner,.hero-tablet{display:none;}}
 /* ── HERO END ── */
+
+
+/* NAV DROPDOWN */
+.nav-item{position:relative;list-style:none;}
+.nav-item>a{display:inline-flex;align-items:center;gap:4px;}
+.nav-item .caret{font-size:0.5rem;opacity:0.55;transition:transform 0.2s;display:inline-block;}
+.nav-item.open .caret{transform:rotate(180deg);}
+.nav-dropdown{
+  display:none;position:absolute;top:calc(100% + 8px);left:50%;
+  transform:translateX(-50%);
+  background:#0D1117;border:0.5px solid rgba(201,168,76,0.22);
+  min-width:160px;z-index:500;padding:0.4rem 0;
+}
+.nav-item.open .nav-dropdown{display:block;}
+.nav-dropdown a{
+  display:block;padding:0.65rem 1.2rem;
+  font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
+  color:#A8A090;text-decoration:none;white-space:nowrap;
+  transition:all 0.15s;border:none;font-family:'DM Sans',sans-serif;
+}
+.nav-dropdown a:hover{color:#C9A84C;background:rgba(201,168,76,0.06);}
 
 </style>
 </head>
@@ -821,10 +842,7 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
 });
 </script>
 
-<script>
-// Resources dropdown
 
-</script>
 
 
 
@@ -852,7 +870,7 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
     var vmin=Math.min(W,H);
     var R,AM,SM;
     /* vmin matches CSS vmin unit — circle always perfect */
-    if(W>=860){R=vmin*0.24;AM=1.0;SM=1.0;}
+    if(W>=860){R=vmin*0.30;AM=1.0;SM=1.0;}
     else if(W>=540){R=vmin*0.22;AM=0.6;SM=0.85;}
     else{R=vmin*0.20;AM=0.35;SM=0.7;}
     var cx=W/2,cy=H/2;
@@ -868,6 +886,24 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
   var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(setup,150);});
   setup();draw();
 })();
+</script>
+<script>
+/* Resources dropdown */
+(function(){
+  var item=document.querySelector('.nav-item');
+  if(!item)return;
+  item.querySelector(':scope>a').addEventListener('click',function(e){
+    e.preventDefault();
+    item.classList.toggle('open');
+  });
+  document.addEventListener('click',function(e){
+    if(!item.contains(e.target))item.classList.remove('open');
+  });
+})();
+function closeMenu(){
+  var item=document.querySelector('.nav-item');
+  if(item)item.classList.remove('open');
+}
 </script>
 </body>
 </html>
