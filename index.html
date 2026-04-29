@@ -1,50 +1,4 @@
-<!DOC
-<section class="hero" id="hero-section">
-  <canvas id="sf"></canvas>
-
-  <!-- 2:22 Church — dead centre of flower -->
-  <div class="h-centre">
-    <div class="h-num">2:2<span class="h-sep"></span>2</div>
-    <div class="h-church">Church</div>
-  </div>
-
-  <!-- left verse — outside flower left edge -->
-  <div class="vc vc-left">
-    <div class="vc-accent"></div>
-    <div class="vc-ref">2 Timothy 2:2</div>
-    <div class="vc-bar"></div>
-    <div class="vc-text">Entrust to reliable people who will also be qualified to teach others.</div>
-    <div class="vc-accent"></div>
-  </div>
-
-  <!-- right verse — outside flower right edge -->
-  <div class="vc vc-right">
-    <div class="vc-accent"></div>
-    <div class="vc-ref">2 Timothy 2:22</div>
-    <div class="vc-bar"></div>
-    <div class="vc-text">Pursue righteousness, faith, love and peace with those who call on the Lord.</div>
-    <div class="vc-accent"></div>
-  </div>
-
-  <!-- tablet verses (shown when screen too narrow for side cards) -->
-  <div class="hero-tablet-verses">
-    <div class="htv-col">
-      <div class="vc-ref">2 Timothy 2:2</div>
-      <div class="vc-text">Entrust to reliable people who will also be qualified to teach others.</div>
-    </div>
-    <div class="htv-col">
-      <div class="vc-ref">2 Timothy 2:22</div>
-      <div class="vc-text">Pursue righteousness, faith, love and peace with those who call on the Lord.</div>
-    </div>
-  </div>
-
-  <!-- buttons — below flower -->
-  <div class="hero-btns">
-    <a href="#about" class="hero-btn">Our Foundation</a>
-    <a href="#gathering" class="hero-btn">Find a Gathering</a>
-  </div>
-</section>
-TYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -89,9 +43,23 @@ body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-pr
 h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3.5rem,9vw,8rem);font-weight:300;line-height:1.0;letter-spacing:-0.01em;position:relative;}
 h1 .num{display:block;font-size:clamp(5rem,14vw,13rem);font-weight:300;color:var(--gold);line-height:0.85;letter-spacing:-0.03em;}
 h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.5rem,6vw,5.5rem);}
+.hero-verse{margin:2.5rem auto 1rem;max-width:540px;font-style:italic;font-family:'Cormorant Garamond',serif;font-size:1.25rem;line-height:1.6;border-left:2px solid var(--gold);padding-left:1.5rem;text-align:left;}
 .hero-ref{font-family:'DM Sans',sans-serif;font-style:normal;font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.6rem;}
+.hero-verses{display:grid;grid-template-columns:1fr 1px 1fr;gap:0;max-width:780px;width:100%;margin:2.5rem auto 1rem;}
+.hero-verse-col{padding:0 2rem;text-align:left;}
+.hero-verse-col:first-child{padding-left:0;}
+.hero-verse-col:last-child{padding-right:0;}
+.hero-verse-divider{background:linear-gradient(to bottom,transparent,rgba(201,168,76,0.3),transparent);width:1px;align-self:stretch;}
+.hero-verse-col cite{font-family:'DM Sans',sans-serif;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);font-style:normal;display:block;margin-bottom:0.75rem;}
+.hero-verse-col blockquote{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;line-height:1.7;color:var(--text-primary);}
+.hero-verse-col p{font-size:0.75rem;color:var(--text-muted);margin-top:0.6rem;line-height:1.5;}
 @media(max-width:650px){
-  }
+  .hero-verses{grid-template-columns:1fr;gap:0;}
+  .hero-verse-divider{display:none;}
+  .hero-verse-col{padding:1.2rem 0;border-bottom:0.5px solid rgba(201,168,76,0.15);}
+  .hero-verse-col:last-child{border-bottom:none;}
+  .hero-verse-col:first-child{padding-left:0;}
+}
 .hero-actions{display:flex;gap:1rem;margin-top:3rem;flex-wrap:wrap;justify-content:center;}
 .hero-scroll{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:var(--text-muted);font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;animation:bobble 2s ease-in-out infinite;}
 .hero-scroll::after{content:'';display:block;width:0.5px;height:40px;background:linear-gradient(to bottom,var(--gold-dark),transparent);}
@@ -193,6 +161,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
   .blog-card h3{font-size:1.1rem !important;}
   .footer-bottom{flex-direction:column;gap:0.5rem;text-align:center;}
   .join-form{flex-direction:column;}.join-form input,.join-form button{width:100%;}
+  .hero-verse{font-size:1rem;padding-left:1rem;}
   .community-intro{margin-bottom:2rem;}
   .join-title{font-size:2rem !important;}
 }
@@ -251,6 +220,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 
 
+  .hero-btns-desktop{display:none;}
   .hero-tablet{display:none;}
   .hero-mobile{display:flex;}
 }
@@ -302,133 +272,30 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 
 /* ── HERO ── */
-.hero{
-  position:relative;
-  width:100%;height:100vh;min-height:640px;
-  background:var(--deep);
-  overflow:hidden;
-}
-#sf{
-  position:absolute;top:0;left:0;
-  width:100%;height:100%;
-  pointer-events:none;z-index:0;
-}
-
-/* 2:22 Church — absolutely centred at exact canvas centre */
-.h-centre{
-  position:absolute;
-  left:50%;top:47%;
-  transform:translate(-50%,-50%);
-  z-index:2;
-  display:flex;flex-direction:column;align-items:center;
-}
-.h-num{
-  font-family:'Cormorant Garamond',serif;
-  font-weight:300;font-style:normal;
-  color:var(--gold);line-height:1;
-  font-size:clamp(3.5rem,8.5vh,7rem);
-  display:flex;align-items:center;
-}
-.h-sep{
-  display:inline-block;width:1.5px;
-  align-self:stretch;
-  background:linear-gradient(to bottom,transparent,var(--gold) 28%,var(--gold) 72%,transparent);
-  opacity:0.3;margin:0 6px;
-}
-.h-church{
-  font-family:'Cormorant Garamond',serif;
-  font-weight:300;font-style:italic;
-  color:var(--text-secondary);
-  letter-spacing:0.08em;
-  font-size:clamp(1.4rem,3.2vh,2.8rem);
-  margin-top:4px;
-}
-
-/* verse cards — absolutely positioned outside flower */
-/* flower: R=22vh, cx=50%, cy=47vh */
-/* verse top = cy-R = 25vh, height = 2R = 44vh */
-/* verse left edge = cx + R + 2vw gap */
-.vc{
-  position:absolute;
-  top:25vh;height:44vh;
-  width:14vw;min-width:120px;max-width:180px;
-  z-index:2;
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;
-  gap:0.6rem;
-}
-.vc-left{ right:calc(50% + 22vh + 1.5vw); }
-.vc-right{ left:calc(50% + 22vh + 1.5vw); }
-.vc-accent{
-  width:20px;height:1px;flex-shrink:0;
-  background:linear-gradient(to right,transparent,var(--gold),transparent);
-}
-.vc-ref{
-  font-family:'DM Sans',sans-serif;
-  font-size:0.6rem;letter-spacing:0.18em;
-  text-transform:uppercase;color:var(--gold);
-  text-align:center;line-height:1.5;
-}
-.vc-bar{
-  width:0.5px;height:14px;flex-shrink:0;
-  background:linear-gradient(to bottom,transparent,rgba(201,168,76,0.3),transparent);
-}
-.vc-text{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(0.78rem,1.3vh,0.95rem);
-  font-style:italic;
-  color:rgba(240,234,214,0.72);
-  line-height:1.7;text-align:center;
-}
-
-/* buttons — below flower bottom edge (69vh), centred */
-.hero-btns{
-  position:absolute;
-  left:50%;top:73vh;
-  transform:translateX(-50%);
-  z-index:2;
-  display:flex;gap:1rem;
-}
-.hero-btn{
-  font-family:'DM Sans',sans-serif;
-  font-size:0.78rem;letter-spacing:0.13em;text-transform:uppercase;
-  background:var(--gold);color:var(--deep);
-  padding:0.8rem 2rem;border-radius:2px;
-  text-decoration:none;font-weight:500;
-  transition:background 0.2s;white-space:nowrap;
-  display:inline-block;
-}
+.hero{position:relative;width:100%;height:100vh;min-height:640px;background:var(--deep);overflow:hidden;}
+#sf{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;}
+/* 2:22 Church — pinned to canvas centre */
+.h-centre{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);z-index:2;display:flex;flex-direction:column;align-items:center;}
+.h-num{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:normal;color:var(--gold);line-height:1;font-size:clamp(3.5rem,8.5vh,7rem);display:flex;align-items:center;}
+.h-sep{display:inline-block;width:1.5px;align-self:stretch;background:linear-gradient(to bottom,transparent,var(--gold) 28%,var(--gold) 72%,transparent);opacity:0.3;margin:0 6px;}
+.h-church{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;color:var(--text-secondary);letter-spacing:0.08em;font-size:clamp(1.4rem,3.2vh,2.8rem);margin-top:4px;}
+/* verse cards outside flower — R=22vh, cy=47vh */
+.vc{position:absolute;top:25vh;height:44vh;width:14vw;min-width:120px;max-width:180px;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.6rem;}
+.vc-left{right:calc(50% + 24vh);}
+.vc-right{left:calc(50% + 24vh);}
+.vc-accent{width:20px;height:1px;flex-shrink:0;background:linear-gradient(to right,transparent,var(--gold),transparent);}
+.vc-ref{font-family:'DM Sans',sans-serif;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);text-align:center;line-height:1.5;}
+.vc-bar{width:0.5px;height:14px;flex-shrink:0;background:linear-gradient(to bottom,transparent,rgba(201,168,76,0.3),transparent);}
+.vc-text{font-family:'Cormorant Garamond',serif;font-size:clamp(0.78rem,1.3vh,0.95rem);font-style:italic;color:rgba(240,234,214,0.72);line-height:1.7;text-align:center;}
+/* buttons — below flower (flower bottom = 47+22 = 69vh) */
+.hero-btns{position:absolute;left:50%;top:74vh;transform:translateX(-50%);z-index:2;display:flex;gap:1rem;}
+.hero-btn{font-family:'DM Sans',sans-serif;font-size:0.78rem;letter-spacing:0.13em;text-transform:uppercase;background:var(--gold);color:var(--deep);padding:0.8rem 2rem;border-radius:2px;text-decoration:none;font-weight:500;transition:background 0.2s;white-space:nowrap;display:inline-block;}
 .hero-btn:hover{background:var(--gold-light);}
-
-/* tablet */
-@media(min-width:540px) and (max-width:860px){
+@media(max-width:860px){
   .vc{display:none;}
   .h-centre{top:40%;}
-  .hero-btns{top:auto;bottom:5vh;}
-  .hero-tablet-verses{
-    position:absolute;z-index:2;
-    bottom:calc(5vh + 55px);
-    left:50%;transform:translateX(-50%);
-    display:flex;width:90%;max-width:440px;
-    border-top:0.5px solid rgba(201,168,76,0.2);
-    padding-top:1rem;
-  }
-  .htv-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:0.4rem;padding:0 0.8rem;text-align:center;}
-  .htv-col:first-child{border-right:0.5px solid rgba(201,168,76,0.15);}
-}
-@media(min-width:860px){
-  .hero-tablet-verses{display:none;}
-}
-
-/* mobile */
-@media(max-width:539px){
-  .vc{display:none;}
-  .hero-tablet-verses{display:none;}
-  .h-centre{top:35%;}
-  .hero-btns{flex-direction:column;align-items:center;bottom:5vh;top:auto;width:88%;}
-  .hero-btn{width:100%;text-align:center;}
-  .h-num{font-size:3rem;}
-  .h-church{font-size:1.4rem;}
+  .hero-btns{top:auto;bottom:4vh;flex-direction:column;align-items:center;width:80%;}
+  .hero-btn{text-align:center;width:100%;}
 }
 /* ── HERO END ── */
 
@@ -472,6 +339,32 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
   <a href="index.html#join" style="color:var(--gold);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
+<section class="hero" id="hero-section">
+  <canvas id="sf"></canvas>
+  <div class="h-centre">
+    <div class="h-num">2:2<span class="h-sep"></span>2</div>
+    <div class="h-church">Church</div>
+  </div>
+  <div class="vc vc-left">
+    <div class="vc-accent"></div>
+    <div class="vc-ref">2 Timothy 2:2</div>
+    <div class="vc-bar"></div>
+    <div class="vc-text">Entrust to reliable people who will also be qualified to teach others.</div>
+    <div class="vc-accent"></div>
+  </div>
+  <div class="vc vc-right">
+    <div class="vc-accent"></div>
+    <div class="vc-ref">2 Timothy 2:22</div>
+    <div class="vc-bar"></div>
+    <div class="vc-text">Pursue righteousness, faith, love and peace with those who call on the Lord.</div>
+    <div class="vc-accent"></div>
+  </div>
+  <div class="hero-btns">
+    <a href="#about" class="hero-btn">Our Foundation</a>
+    <a href="#gathering" class="hero-btn">Find a Gathering</a>
+  </div>
+</section>
+
 
 
 
@@ -892,18 +785,11 @@ function closeMenu(){
   var ctx=canvas.getContext('2d');
   var PHI=(1+Math.sqrt(5))/2,GA=2*Math.PI*(2-PHI),N=610,frame=0;
   var W,H;
-  function setup(){
-    W=window.innerWidth;H=window.innerHeight;
-    canvas.width=W;canvas.height=H;
-  }
+  function setup(){W=window.innerWidth;H=window.innerHeight;canvas.width=W;canvas.height=H;}
   function draw(){
     ctx.clearRect(0,0,W,H);
-    /* R=22vh, cy=47vh — exactly matches CSS */
-    var R,AM,SM,CY;
-    if(W>=860){R=H*0.22;CY=H*0.47;AM=1.0;SM=1.0;}
-    else if(W>=540){R=H*0.18;CY=H*0.40;AM=0.6;SM=0.85;}
-    else{R=Math.min(W,H)*0.22;CY=H*0.35;AM=0.35;SM=0.7;}
-    var CX=W/2;
+    var R=H*0.22,CY=H*0.47,CX=W/2,AM=1.0,SM=1.0;
+    if(W<860){R=H*0.18;CY=H*0.40;AM=0.5;SM=0.85;}
     for(var i=0;i<N;i++){
       var r=R*Math.sqrt(i/N),a=i*GA+frame*0.0005,frac=i/N;
       ctx.beginPath();
