@@ -1,4 +1,50 @@
-<!DOCTYPE html>
+<!DOC
+<section class="hero" id="hero-section">
+  <canvas id="sf"></canvas>
+
+  <!-- 2:22 Church — dead centre of flower -->
+  <div class="h-centre">
+    <div class="h-num">2:2<span class="h-sep"></span>2</div>
+    <div class="h-church">Church</div>
+  </div>
+
+  <!-- left verse — outside flower left edge -->
+  <div class="vc vc-left">
+    <div class="vc-accent"></div>
+    <div class="vc-ref">2 Timothy 2:2</div>
+    <div class="vc-bar"></div>
+    <div class="vc-text">Entrust to reliable people who will also be qualified to teach others.</div>
+    <div class="vc-accent"></div>
+  </div>
+
+  <!-- right verse — outside flower right edge -->
+  <div class="vc vc-right">
+    <div class="vc-accent"></div>
+    <div class="vc-ref">2 Timothy 2:22</div>
+    <div class="vc-bar"></div>
+    <div class="vc-text">Pursue righteousness, faith, love and peace with those who call on the Lord.</div>
+    <div class="vc-accent"></div>
+  </div>
+
+  <!-- tablet verses (shown when screen too narrow for side cards) -->
+  <div class="hero-tablet-verses">
+    <div class="htv-col">
+      <div class="vc-ref">2 Timothy 2:2</div>
+      <div class="vc-text">Entrust to reliable people who will also be qualified to teach others.</div>
+    </div>
+    <div class="htv-col">
+      <div class="vc-ref">2 Timothy 2:22</div>
+      <div class="vc-text">Pursue righteousness, faith, love and peace with those who call on the Lord.</div>
+    </div>
+  </div>
+
+  <!-- buttons — below flower -->
+  <div class="hero-btns">
+    <a href="#about" class="hero-btn">Our Foundation</a>
+    <a href="#gathering" class="hero-btn">Find a Gathering</a>
+  </div>
+</section>
+TYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -36,7 +82,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-pr
 .mobile-menu a:hover{color:var(--gold);}
 .mobile-menu .mobile-cta{font-family:'DM Sans',sans-serif;font-size:0.85rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.85rem 2.5rem;border-radius:2px;margin-top:1rem;}
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;text-align:center;padding:8rem 2rem 4rem;overflow:hidden;}
-.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 40%,rgba(201,168,76,0.07) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 20% 80%,rgba(201,168,76,0.04) 0%,transparent 60%);}
 .verse-float{position:absolute;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.85rem;color:var(--text-muted);letter-spacing:0.06em;opacity:0.6;}
 .verse-float.v1{top:20%;left:8%;}.verse-float.v2{top:35%;right:6%;}.verse-float.v3{bottom:28%;left:5%;}.verse-float.v4{bottom:20%;right:9%;}
 .hero-eyebrow{font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:2rem;position:relative;display:flex;align-items:center;gap:1rem;}
@@ -44,23 +89,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-pr
 h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3.5rem,9vw,8rem);font-weight:300;line-height:1.0;letter-spacing:-0.01em;position:relative;}
 h1 .num{display:block;font-size:clamp(5rem,14vw,13rem);font-weight:300;color:var(--gold);line-height:0.85;letter-spacing:-0.03em;}
 h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.5rem,6vw,5.5rem);}
-.hero-verse{margin:2.5rem auto 1rem;max-width:540px;font-style:italic;font-family:'Cormorant Garamond',serif;font-size:1.25rem;line-height:1.6;border-left:2px solid var(--gold);padding-left:1.5rem;text-align:left;}
 .hero-ref{font-family:'DM Sans',sans-serif;font-style:normal;font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.6rem;}
-.hero-verses{display:grid;grid-template-columns:1fr 1px 1fr;gap:0;max-width:780px;width:100%;margin:2.5rem auto 1rem;}
-.hero-verse-col{padding:0 2rem;text-align:left;}
-.hero-verse-col:first-child{padding-left:0;}
-.hero-verse-col:last-child{padding-right:0;}
-.hero-verse-divider{background:linear-gradient(to bottom,transparent,rgba(201,168,76,0.3),transparent);width:1px;align-self:stretch;}
-.hero-verse-col cite{font-family:'DM Sans',sans-serif;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);font-style:normal;display:block;margin-bottom:0.75rem;}
-.hero-verse-col blockquote{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;line-height:1.7;color:var(--text-primary);}
-.hero-verse-col p{font-size:0.75rem;color:var(--text-muted);margin-top:0.6rem;line-height:1.5;}
 @media(max-width:650px){
-  .hero-verses{grid-template-columns:1fr;gap:0;}
-  .hero-verse-divider{display:none;}
-  .hero-verse-col{padding:1.2rem 0;border-bottom:0.5px solid rgba(201,168,76,0.15);}
-  .hero-verse-col:last-child{border-bottom:none;}
-  .hero-verse-col:first-child{padding-left:0;}
-}
+  }
 .hero-actions{display:flex;gap:1rem;margin-top:3rem;flex-wrap:wrap;justify-content:center;}
 .hero-scroll{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:var(--text-muted);font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;animation:bobble 2s ease-in-out infinite;}
 .hero-scroll::after{content:'';display:block;width:0.5px;height:40px;background:linear-gradient(to bottom,var(--gold-dark),transparent);}
@@ -162,7 +193,6 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
   .blog-card h3{font-size:1.1rem !important;}
   .footer-bottom{flex-direction:column;gap:0.5rem;text-align:center;}
   .join-form{flex-direction:column;}.join-form input,.join-form button{width:100%;}
-  .hero-verse{font-size:1rem;padding-left:1rem;}
   .community-intro{margin-bottom:2rem;}
   .join-title{font-size:2rem !important;}
 }
@@ -215,17 +245,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 /* SUNFLOWER HERO */
 .hero{position:relative;overflow:hidden;}
-#sunflower-bg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;}
-.hero>*:not(#sunflower-bg){position:relative;z-index:1;}
-
-
 .foundation-verse{border-left:2px solid var(--gold);padding:1rem 1.4rem;margin-bottom:1.8rem;background:rgba(201,168,76,0.04);}
 .fv-ref{font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.5rem;}
 .fv-text{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;color:var(--text-primary);line-height:1.7;margin:0;}
 
 
 
-  .hero-btns-desktop{display:none;}
   .hero-tablet{display:none;}
   .hero-mobile{display:flex;}
 }
@@ -252,73 +277,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 
 
-/* ── HERO ── */
-.hero{position:relative;width:100%;height:100vh;min-height:600px;background:var(--deep);overflow:hidden;display:flex;align-items:center;justify-content:center;}
-#sunflower-bg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;}
-.h-num{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:normal;color:var(--gold);line-height:1;display:flex;align-items:center;}
-.h-sep{display:inline-block;width:1.5px;align-self:stretch;background:linear-gradient(to bottom,transparent,var(--gold) 28%,var(--gold) 72%,transparent);opacity:.3;margin:0 5px;}
-.h-church{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;color:var(--text-secondary);letter-spacing:.08em;}
-.hv-accent{width:20px;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);flex-shrink:0;}
-.hv-ref{font-size:0.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-align:center;line-height:1.5;}
-.hv-bar{width:0.5px;height:16px;background:linear-gradient(to bottom,transparent,rgba(201,168,76,.3),transparent);flex-shrink:0;}
-.hv-text{font-family:'Cormorant Garamond',serif;font-style:italic;color:rgba(240,234,214,.72);line-height:1.7;text-align:center;font-size:clamp(0.8rem,1.5vmin,1rem);}
 
-/* DESKTOP — vmin units so R always matches canvas */
-.hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:22vmin;}
-.hd-row{display:flex;align-items:stretch;gap:0;}
-.hd-verse-left,.hd-verse-right{
-  width:20vmin;height:clamp(180px,52vh,400px);
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:.7rem;flex-shrink:0;
-}
-.hd-gap{width:2.5vmin;flex-shrink:0;}
-.hd-centre{
-  width:76vmin;height:76vmin;
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;flex-shrink:0;
-}
-.hd-centre .h-num{font-size:clamp(4rem,13vmin,10rem);}
-.hd-centre .h-church{font-size:clamp(1.4rem,4.2vmin,3.4rem);margin-top:6px;}
-.hv-text{font-family:'Cormorant Garamond',serif;font-style:italic;color:rgba(240,234,214,.72);line-height:1.7;text-align:center;font-size:clamp(0.9rem,1.8vmin,1.15rem);}
-.hv-ref{font-size:0.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-align:center;line-height:1.5;}
-.hd-btns{display:flex;gap:1rem;}
-.hd-btn{
-  font-size:clamp(0.75rem,1.5vmin,1rem);
-  padding:0.9rem 2.6rem;
-  color:var(--gold);background:transparent;
-  border:0.5px solid rgba(201,168,76,0.45);border-radius:2px;
-  text-decoration:none;letter-spacing:0.12em;text-transform:uppercase;
-  display:inline-block;transition:all 0.2s;font-family:'DM Sans',sans-serif;font-weight:500;
-}
-.hd-btn:hover{background:var(--gold);color:var(--deep);border-color:var(--gold);}
-
-/* TABLET */
-.hero-tablet{display:none;flex-direction:column;align-items:center;justify-content:center;gap:2rem;z-index:2;padding:2rem;width:100%;}
-.ht-centre .h-num{font-size:3.2rem;}
-.ht-centre .h-church{font-size:1.3rem;margin-top:4px;}
-.ht-bottom{display:flex;width:100%;max-width:420px;}
-.ht-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:.6rem;padding:0 1rem;}
-.ht-divider{width:0.5px;background:rgba(201,168,76,.2);flex-shrink:0;}
-.ht-btn{font-size:0.65rem;padding:0.6rem 1rem;margin-top:.5rem;text-align:center;display:inline-block;text-decoration:none;border-radius:2px;}
-
-/* MOBILE */
-.hero-mobile{display:none;flex-direction:column;align-items:center;justify-content:center;gap:0;z-index:2;padding:1.5rem;width:100%;}
-.hero-mobile .h-num{font-size:2.8rem;margin-bottom:4px;}
-.hero-mobile .h-church{font-size:1rem;margin-bottom:1.2rem;}
-.hm-verse{display:flex;flex-direction:column;align-items:center;gap:.4rem;width:100%;margin-bottom:.5rem;}
-.hm-verse .hv-ref{font-size:0.6rem;}
-.hm-verse .hv-text{font-size:0.85rem;}
-.hm-divider{width:36px;height:0.5px;background:linear-gradient(to right,transparent,rgba(201,168,76,.4),transparent);margin:.5rem 0;}
-.hm-btns{display:flex;flex-direction:column;gap:.5rem;width:100%;margin-top:1rem;}
-.hm-btn{font-size:0.7rem;padding:0.75rem 0;text-align:center;display:block;text-decoration:none;border-radius:2px;}
-.hm-btn.btn-ghost,.ht-btn.btn-ghost{color:var(--gold);border:0.5px solid rgba(201,168,76,0.4);background:transparent;}
-.hm-btn.btn-ghost:hover,.ht-btn.btn-ghost:hover{background:var(--gold);color:var(--deep);}
-.hm-btn.btn-primary,.ht-btn.btn-primary{background:var(--gold);color:var(--deep);}
-
-@media(min-width:860px){.hero-inner{display:flex;}.hero-tablet,.hero-mobile{display:none;}}
-@media(min-width:540px) and (max-width:859px){.hero-tablet{display:flex;}.hero-inner,.hero-mobile{display:none;}}
-@media(max-width:539px){.hero-mobile{display:flex;}.hero-inner,.hero-tablet{display:none;}}
-/* ── HERO END ── */
 
 
 /* NAV DROPDOWN */
@@ -340,6 +299,138 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   transition:all 0.15s;border:none;font-family:'DM Sans',sans-serif;
 }
 .nav-dropdown a:hover{color:#C9A84C;background:rgba(201,168,76,0.06);}
+
+
+/* ── HERO ── */
+.hero{
+  position:relative;
+  width:100%;height:100vh;min-height:640px;
+  background:var(--deep);
+  overflow:hidden;
+}
+#sf{
+  position:absolute;top:0;left:0;
+  width:100%;height:100%;
+  pointer-events:none;z-index:0;
+}
+
+/* 2:22 Church — absolutely centred at exact canvas centre */
+.h-centre{
+  position:absolute;
+  left:50%;top:47%;
+  transform:translate(-50%,-50%);
+  z-index:2;
+  display:flex;flex-direction:column;align-items:center;
+}
+.h-num{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:300;font-style:normal;
+  color:var(--gold);line-height:1;
+  font-size:clamp(3.5rem,8.5vh,7rem);
+  display:flex;align-items:center;
+}
+.h-sep{
+  display:inline-block;width:1.5px;
+  align-self:stretch;
+  background:linear-gradient(to bottom,transparent,var(--gold) 28%,var(--gold) 72%,transparent);
+  opacity:0.3;margin:0 6px;
+}
+.h-church{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:300;font-style:italic;
+  color:var(--text-secondary);
+  letter-spacing:0.08em;
+  font-size:clamp(1.4rem,3.2vh,2.8rem);
+  margin-top:4px;
+}
+
+/* verse cards — absolutely positioned outside flower */
+/* flower: R=22vh, cx=50%, cy=47vh */
+/* verse top = cy-R = 25vh, height = 2R = 44vh */
+/* verse left edge = cx + R + 2vw gap */
+.vc{
+  position:absolute;
+  top:25vh;height:44vh;
+  width:14vw;min-width:120px;max-width:180px;
+  z-index:2;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:0.6rem;
+}
+.vc-left{ right:calc(50% + 22vh + 1.5vw); }
+.vc-right{ left:calc(50% + 22vh + 1.5vw); }
+.vc-accent{
+  width:20px;height:1px;flex-shrink:0;
+  background:linear-gradient(to right,transparent,var(--gold),transparent);
+}
+.vc-ref{
+  font-family:'DM Sans',sans-serif;
+  font-size:0.6rem;letter-spacing:0.18em;
+  text-transform:uppercase;color:var(--gold);
+  text-align:center;line-height:1.5;
+}
+.vc-bar{
+  width:0.5px;height:14px;flex-shrink:0;
+  background:linear-gradient(to bottom,transparent,rgba(201,168,76,0.3),transparent);
+}
+.vc-text{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(0.78rem,1.3vh,0.95rem);
+  font-style:italic;
+  color:rgba(240,234,214,0.72);
+  line-height:1.7;text-align:center;
+}
+
+/* buttons — below flower bottom edge (69vh), centred */
+.hero-btns{
+  position:absolute;
+  left:50%;top:73vh;
+  transform:translateX(-50%);
+  z-index:2;
+  display:flex;gap:1rem;
+}
+.hero-btn{
+  font-family:'DM Sans',sans-serif;
+  font-size:0.78rem;letter-spacing:0.13em;text-transform:uppercase;
+  background:var(--gold);color:var(--deep);
+  padding:0.8rem 2rem;border-radius:2px;
+  text-decoration:none;font-weight:500;
+  transition:background 0.2s;white-space:nowrap;
+  display:inline-block;
+}
+.hero-btn:hover{background:var(--gold-light);}
+
+/* tablet */
+@media(min-width:540px) and (max-width:860px){
+  .vc{display:none;}
+  .h-centre{top:40%;}
+  .hero-btns{top:auto;bottom:5vh;}
+  .hero-tablet-verses{
+    position:absolute;z-index:2;
+    bottom:calc(5vh + 55px);
+    left:50%;transform:translateX(-50%);
+    display:flex;width:90%;max-width:440px;
+    border-top:0.5px solid rgba(201,168,76,0.2);
+    padding-top:1rem;
+  }
+  .htv-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:0.4rem;padding:0 0.8rem;text-align:center;}
+  .htv-col:first-child{border-right:0.5px solid rgba(201,168,76,0.15);}
+}
+@media(min-width:860px){
+  .hero-tablet-verses{display:none;}
+}
+
+/* mobile */
+@media(max-width:539px){
+  .vc{display:none;}
+  .hero-tablet-verses{display:none;}
+  .h-centre{top:35%;}
+  .hero-btns{flex-direction:column;align-items:center;bottom:5vh;top:auto;width:88%;}
+  .hero-btn{width:100%;text-align:center;}
+  .h-num{font-size:3rem;}
+  .h-church{font-size:1.4rem;}
+}
+/* ── HERO END ── */
 
 </style>
 </head>
@@ -381,79 +472,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
   <a href="index.html#join" style="color:var(--gold);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
-<section class="hero" id="hero-section">
-  <canvas id="sunflower-bg"></canvas>
 
-  <!-- DESKTOP -->
-  <div class="hero-inner">
-    <div class="hd-row">
-      <div class="hd-verse-left">
-        <div class="hv-accent"></div>
-        <div class="hv-ref">2 Timothy 2:2</div>
-        <div class="hv-bar"></div>
-        <div class="hv-text">Entrust to reliable people who will also be qualified to teach others.</div>
-        <div class="hv-accent"></div>
-      </div>
-      <div class="hd-gap"></div>
-      <div class="hd-centre">
-        <div class="h-num">2:2<span class="h-sep"></span>2</div>
-        <div class="h-church">Church</div>
-      </div>
-      <div class="hd-gap"></div>
-      <div class="hd-verse-right">
-        <div class="hv-accent"></div>
-        <div class="hv-ref">2 Timothy 2:22</div>
-        <div class="hv-bar"></div>
-        <div class="hv-text">Pursue righteousness, faith, love and peace with those who call on the Lord.</div>
-        <div class="hv-accent"></div>
-      </div>
-    </div>
-    <div class="hd-btns">
-      <a href="#about" class="btn-ghost">Our Foundation</a>
-      <a href="#gathering" class="btn-ghost hd-btn">Find a Gathering</a>
-    </div>
-  </div>
-
-  <!-- TABLET -->
-  <div class="hero-tablet">
-    <div class="ht-centre">
-      <div class="h-num">2:2<span class="h-sep"></span>2</div>
-      <div class="h-church">Church</div>
-    </div>
-    <div class="ht-bottom">
-      <div class="ht-col">
-        <div class="hv-ref">2 Timothy 2:2</div>
-        <div class="hv-text">Entrust to reliable people who will also be qualified to teach others.</div>
-        <a href="#about" class="btn-primary ht-btn">Our Foundation</a>
-      </div>
-      <div class="ht-divider"></div>
-      <div class="ht-col">
-        <div class="hv-ref">2 Timothy 2:22</div>
-        <div class="hv-text">Pursue righteousness, faith, love and peace with those who call on the Lord.</div>
-        <a href="#gathering" class="btn-ghost ht-btn">Find a Gathering</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- MOBILE -->
-  <div class="hero-mobile">
-    <div class="h-num">2:2<span class="h-sep"></span>2</div>
-    <div class="h-church">Church</div>
-    <div class="hm-verse">
-      <div class="hv-ref">2 Timothy 2:2</div>
-      <div class="hv-text">Entrust to reliable people who will also be qualified to teach others.</div>
-    </div>
-    <div class="hm-divider"></div>
-    <div class="hm-verse">
-      <div class="hv-ref">2 Timothy 2:22</div>
-      <div class="hv-text">Pursue righteousness, faith, love and peace with those who call on the Lord.</div>
-    </div>
-    <div class="hm-btns">
-      <a href="#about" class="btn-ghost hm-btn">Our Foundation</a>
-      <a href="#gathering" class="btn-ghost hm-btn">Find a Gathering</a>
-    </div>
-  </div>
-</section>
 
 
 
@@ -847,39 +866,7 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
 
 
 
-<script>
-(function(){
-  var canvas=document.getElementById('sunflower-bg');
-  if(!canvas)return;
-  var ctx=canvas.getContext('2d');
-  var PHI=(1+Math.sqrt(5))/2,GA=2*Math.PI*(2-PHI),N=610,frame=0;
-  var W,H;
-  function setup(){
-    W=window.innerWidth;H=window.innerHeight;
-    canvas.width=W;canvas.height=H;
-  }
-  function draw(){
-    ctx.clearRect(0,0,W,H);
-    var vmin=Math.min(W,H);
-    var R,AM,SM;
-    /* vmin matches CSS vmin unit — circle always perfect */
-    if(W>=860){R=vmin*0.38;AM=1.0;SM=1.0;}
-    else if(W>=540){R=vmin*0.22;AM=0.6;SM=0.85;}
-    else{R=vmin*0.20;AM=0.35;SM=0.7;}
-    var cx=W/2,cy=H/2;
-    for(var i=0;i<N;i++){
-      var r=R*Math.sqrt(i/N),a=i*GA+frame*0.0005,frac=i/N;
-      ctx.beginPath();
-      ctx.arc(cx+r*Math.cos(a),cy+r*Math.sin(a),(0.9+frac*2.4)*SM,0,Math.PI*2);
-      ctx.fillStyle='hsla(42,'+(70-frac*18)+'%,'+(40+frac*28)+'%,'+((0.05+frac*0.36)*AM)+')';
-      ctx.fill();
-    }
-    frame++;requestAnimationFrame(draw);
-  }
-  var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(setup,150);});
-  setup();draw();
-})();
-</script>
+
 <script>
 /* Resources dropdown */
 (function(){
@@ -897,6 +884,38 @@ function closeMenu(){
   var item=document.querySelector('.nav-item');
   if(item)item.classList.remove('open');
 }
+</script>
+<script>
+(function(){
+  var canvas=document.getElementById('sf');
+  if(!canvas)return;
+  var ctx=canvas.getContext('2d');
+  var PHI=(1+Math.sqrt(5))/2,GA=2*Math.PI*(2-PHI),N=610,frame=0;
+  var W,H;
+  function setup(){
+    W=window.innerWidth;H=window.innerHeight;
+    canvas.width=W;canvas.height=H;
+  }
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    /* R=22vh, cy=47vh — exactly matches CSS */
+    var R,AM,SM,CY;
+    if(W>=860){R=H*0.22;CY=H*0.47;AM=1.0;SM=1.0;}
+    else if(W>=540){R=H*0.18;CY=H*0.40;AM=0.6;SM=0.85;}
+    else{R=Math.min(W,H)*0.22;CY=H*0.35;AM=0.35;SM=0.7;}
+    var CX=W/2;
+    for(var i=0;i<N;i++){
+      var r=R*Math.sqrt(i/N),a=i*GA+frame*0.0005,frac=i/N;
+      ctx.beginPath();
+      ctx.arc(CX+r*Math.cos(a),CY+r*Math.sin(a),(0.9+frac*2)*SM,0,Math.PI*2);
+      ctx.fillStyle='hsla(42,'+(70-frac*18)+'%,'+(40+frac*28)+'%,'+((0.05+frac*0.36)*AM)+')';
+      ctx.fill();
+    }
+    frame++;requestAnimationFrame(draw);
+  }
+  var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(setup,150);});
+  setup();draw();
+})();
 </script>
 </body>
 </html>
