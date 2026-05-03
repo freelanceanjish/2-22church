@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resources, 2:22 Church</title>
+<link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
@@ -191,11 +192,6 @@ a{color:inherit;text-decoration:none;}
 .channel-card .ch-desc{color:var(--text-muted) !important;}
 .channel-card .ch-arrow{color:var(--gold) !important;}
 
-
-.page-header::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,17,23,0.75) 0%,rgba(13,17,23,0.55) 50%,rgba(13,17,23,0.78) 100%);z-index:0;pointer-events:none;}
-.page-header .eyebrow,.page-header h1,.page-header p{position:relative;z-index:1;}
-
-.page-header{position:relative;padding:10rem 2rem 5rem;background:#0D1117 url('bg-references.jpg') center/cover no-repeat;border-bottom:0.5px solid var(--border-subtle);text-align:center;}
 </style>
 </head>
 <body>
@@ -208,13 +204,13 @@ a{color:inherit;text-decoration:none;}
     <li class="nav-item">
       <a href="references.html" class="active">Resources <span class="caret">&#9660;</span></a>
       <div class="nav-dropdown">
-        <a href="references.html#one-god">One God</a>
-        <a href="references.html#short-season">Short Season</a>
-        <a href="references.html#biblical-earth">Biblical Earth</a>
-        <a href="references.html#podcasts">Podcasts</a>
-        <a href="references.html#debates">Debates</a>
-        <a href="references.html#articles">Articles</a>
-        <a href="old-maps.html">Old Maps</a>
+        <a href="references.html#one-god" onclick="closeMenu()">One God</a>
+        <a href="references.html#short-season" onclick="closeMenu()">Short Season</a>
+        <a href="references.html#biblical-earth" onclick="closeMenu()">Biblical Earth</a>
+        <a href="references.html#podcasts" onclick="closeMenu()">Podcasts</a>
+        <a href="references.html#debates" onclick="closeMenu()">Debates</a>
+        <a href="references.html#articles" onclick="closeMenu()">Articles</a>
+        <a href="old-maps.html" onclick="closeMenu()">Old Maps</a>
       </div>
     </li>
     <li><a href="project314.html">God of Pi</a></li>
@@ -222,21 +218,20 @@ a{color:inherit;text-decoration:none;}
     <li><a href="old-maps.html">Old Maps</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
-  <button class="nav-hamburger" onclick="document.getElementById('mm').classList.toggle('open')" aria-label="Menu">
+  <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
-<div class="mobile-menu" id="mm">
-  <button class="mobile-close" onclick="document.getElementById('mm').classList.remove('open')">&times;</button>
-  <a href="index.html#about" onclick="document.getElementById('mm').classList.remove('open')">Foundation</a>
-  <a href="blog.html" onclick="document.getElementById('mm').classList.remove('open')">Blog</a>
-  <a href="references.html" onclick="document.getElementById('mm').classList.remove('open')">Resources</a>
-  <a href="project314.html" onclick="document.getElementById('mm').classList.remove('open')">God of Pi</a>
-  <a href="cosmology.html" onclick="document.getElementById('mm').classList.remove('open')">Biblical Cosmology</a>
-  <a href="old-maps.html" onclick="document.getElementById('mm').classList.remove('open')">Old Maps</a>
-  <a href="index.html#join" style="color:var(--gold);" onclick="document.getElementById('mm').classList.remove('open')">Connect</a>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
+  <a href="index.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Foundation</a>
+  <a href="blog.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blog</a>
+  <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
+  <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
+  <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
+  <a href="index.html#join" style="color:var(--gold);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
-
 
 <div class="page-header">
   <div class="eyebrow">Further Study</div>
@@ -438,26 +433,36 @@ a{color:inherit;text-decoration:none;}
       <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
       <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
     </div>
-    <div class="footer-col"><h4>Explore</h4><ul>
-      <li><a href="index.html#about">Our Foundation</a></li>
-      <li><a href="index.html#beliefs">What We Believe</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="project314.html">God of Pi</a></li>
-      <li><a href="cosmology.html">Biblical Cosmology</a></li>
-      <li><a href="old-maps.html">Old Maps</a></li>
-    </ul></div>
-    <div class="footer-col"><h4>Resources</h4><ul>
-      <li><a href="references.html#one-god">One God</a></li>
-      <li><a href="references.html#short-season">Short Season</a></li>
-      <li><a href="references.html#biblical-earth">Biblical Earth</a></li>
-      <li><a href="references.html#podcasts">Podcasts</a></li>
-      <li><a href="old-maps.html">Old Maps</a></li>
-    </ul></div>
-    <div class="footer-col"><h4>Connect</h4><ul>
-      <li><a href="index.html#join">Join a Gathering</a></li>
-      <li><a href="mailto:contact@2-22church.com">contact@2-22church.com</a></li>
-      <li><a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener">YouTube Channel</a></li>
-    </ul></div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html#about">Our Foundation</a></li>
+        <li><a href="index.html#beliefs">What We Believe</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="project314.html">God of Pi</a></li>
+        <li><a href="cosmology.html">Biblical Cosmology</a></li>
+        <li><a href="old-maps.html">Old Maps</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="references.html#one-god">One God</a></li>
+        <li><a href="references.html#short-season">Short Season</a></li>
+        <li><a href="references.html#biblical-earth">Biblical Earth</a></li>
+        <li><a href="references.html#podcasts">Podcasts</a></li>
+        <li><a href="old-maps.html">Old Maps</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="index.html#join">Join a Gathering</a></li>
+        <li><a href="mailto:hello@2-22church.com">Email Us</a></li>
+        <li><a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener">YouTube Channel</a></li>
+        <li><a href="index.html#join">Start a Group</a></li>
+      </ul>
+    </div>
   </div>
   <div class="footer-bottom">
     <span>2025 2:22 Church · 2-22church.com</span>
@@ -487,21 +492,6 @@ function closeMenu(){
   var item=document.querySelector('.nav-item');
   if(item)item.classList.remove('open');
 }
-</script>
-<script>
-(function(){
-  var item=document.querySelector('.nav-item');
-  if(!item)return;
-  item.querySelector(':scope>a').addEventListener('click',function(e){
-    e.preventDefault();item.classList.toggle('open');
-  });
-  item.querySelectorAll('.nav-dropdown a').forEach(function(a){
-    a.addEventListener('click',function(){item.classList.remove('open');});
-  });
-  document.addEventListener('click',function(e){
-    if(!item.contains(e.target))item.classList.remove('open');
-  });
-})();
 </script>
 </body>
 </html>

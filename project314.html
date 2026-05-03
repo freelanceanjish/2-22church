@@ -4,14 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>God of Pi, Project 314 · 2:22 Church</title>
+<link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="shortcut icon" href="favicon.ico">
 <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
 :root{
   --gold:#C9A84C;--gold-light:#E8D5A3;--gold-dark:#8B6914;
   --deep:#0D1117;--deep-mid:#161C26;--surface:#1C2333;--surface-light:#232B3E;
@@ -20,93 +19,14 @@
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
-body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-primary);overflow-x:hidden;line-height:1.7;}
-a{text-decoration:none;color:inherit;}
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(13,17,23,0.92);backdrop-filter:blur(16px);border-bottom:0.5px solid var(--border);}
-.nav-logo{text-decoration:none;flex-shrink:0;}
-.nav-logo img{height:1.9rem;width:auto;display:block;}
-.nav-links{display:flex;gap:1.4rem;list-style:none;}
-.nav-links li{list-style:none;}
-.nav-links a{font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;white-space:nowrap;}
-.nav-links a:hover,.nav-links a.active{color:var(--gold);}
-.nav-cta{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.5rem 1rem;border-radius:2px;flex-shrink:0;text-decoration:none;font-weight:500;white-space:nowrap;transition:background 0.2s;}
-.nav-cta:hover{background:var(--gold-light);}
-/* DROPDOWN */
-.nav-item{position:relative;list-style:none;}
-.nav-item>a{display:inline-flex;align-items:center;gap:4px;}
-.nav-item .caret{font-size:0.5rem;opacity:0.55;transition:transform 0.2s;display:inline-block;}
-.nav-item.open .caret{transform:rotate(180deg);}
-.nav-dropdown{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#0D1117;border:0.5px solid var(--border);min-width:160px;z-index:500;padding:0.4rem 0;}
-.nav-item.open .nav-dropdown{display:block;}
-.nav-dropdown a{display:block;padding:0.65rem 1.2rem;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;white-space:nowrap;transition:all 0.15s;}
-.nav-dropdown a:hover{color:var(--gold);background:rgba(201,168,76,0.06);}
-/* HAMBURGER */
-.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;flex-shrink:0;}
-.nav-hamburger span{display:block;width:22px;height:1px;background:var(--gold);}
-/* MOBILE MENU */
-.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,17,23,0.98);z-index:150;flex-direction:column;align-items:center;justify-content:flex-start;padding:5rem 2rem 3rem;overflow-y:auto;}
-.mobile-menu.open{display:flex;}
-.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--text-primary);text-decoration:none;letter-spacing:0.06em;padding:0.7rem 0;border-bottom:0.5px solid var(--border-subtle);width:100%;text-align:center;transition:color 0.2s;}
-.mobile-menu a:hover{color:var(--gold);}
-.mobile-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:var(--text-muted);font-size:1.8rem;cursor:pointer;line-height:1;}
-/* PAGE HEADER */
-.page-header{padding:10rem 2rem 5rem;background:var(--deep-mid);border-bottom:0.5px solid var(--border-subtle);text-align:center;}
-.eyebrow{font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;justify-content:center;gap:1rem;}
-.eyebrow::before,.eyebrow::after{content:'';display:block;width:30px;height:0.5px;background:var(--gold);opacity:0.5;}
-.page-header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6vw,5rem);font-weight:300;line-height:1.05;}
-.page-header h1 em{font-style:italic;color:var(--gold);}
-.page-header p{color:var(--text-secondary);font-size:1rem;max-width:580px;margin:1.2rem auto 0;line-height:1.8;}
-/* SHARED */
-section{padding:7rem 2rem;}
-.container{max-width:1100px;margin:0 auto;}
-.section-label{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:0.75rem;}
-.section-label::before{content:'';display:block;width:24px;height:0.5px;background:var(--gold);}
-.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;line-height:1.15;margin-bottom:1.5rem;}
-.section-title em{font-style:italic;color:var(--gold);}
-.btn-primary{font-size:0.8rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.85rem 2.2rem;border-radius:2px;text-decoration:none;font-weight:500;transition:all 0.2s;display:inline-block;}
-.btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);}
-.btn-ghost{font-size:0.8rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);background:transparent;padding:0.85rem 2.2rem;border-radius:2px;border:0.5px solid rgba(201,168,76,0.4);text-decoration:none;transition:all 0.2s;display:inline-block;}
-.btn-ghost:hover{background:var(--gold);color:var(--deep);border-color:var(--gold);}
-.golden-divider{display:flex;align-items:center;gap:1rem;margin:3rem 0;}
-.golden-divider::before,.golden-divider::after{content:'';flex:1;height:0.5px;background:var(--border);}
-.golden-divider span{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--gold);opacity:0.6;}
-/* FOOTER */
-footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);padding:4rem 2rem 2.5rem;}
-.footer-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:0.5px solid var(--border-subtle);}
-.footer-brand p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;max-width:260px;margin-top:0.75rem;}
-.footer-yt{display:inline-block;margin-bottom:0.75rem;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;}
-.footer-col h4{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;}
-.footer-col ul{list-style:none;}
-.footer-col ul li{margin-bottom:0.65rem;}
-.footer-col ul li a{font-size:0.85rem;color:var(--text-muted);text-decoration:none;transition:color 0.2s;}
-.footer-col ul li a:hover{color:var(--gold);}
-.footer-bottom{max-width:1100px;margin:2rem auto 0;display:flex;align-items:center;justify-content:space-between;font-size:0.78rem;color:var(--text-muted);flex-wrap:wrap;gap:0.5rem;}
-.footer-verse{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.85rem;color:var(--text-muted);}
-/* BLOG */
-.blog-tag{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,0.1);padding:0.25rem 0.65rem;border-radius:2px;}
-.blog-date{font-size:0.72rem;color:var(--text-muted);letter-spacing:0.06em;}
-.blog-meta{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.85rem;}
-.blog-read{margin-top:1.4rem;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:0.4rem;}
-.blog-read::after{content:'→';}
-/* RESPONSIVE */
-@media(max-width:860px){
-  nav{padding:1rem 1.5rem;}
-  .nav-links,.nav-cta{display:none;}
-  .nav-hamburger{display:flex;}
-  section{padding:5rem 1.2rem;}
-  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}
-  .footer-brand{grid-column:1/-1;}
-  .footer-bottom{flex-direction:column;gap:0.5rem;text-align:center;}
-  .page-header{padding:7rem 1.2rem 3rem;}
-}
-@media(max-width:600px){.footer-grid{grid-template-columns:1fr;}}
 
 body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-primary);overflow-x:hidden;line-height:1.7;}
 
 /* ── NAV ── */
 
 .nav-logo img{height:2rem;width:auto;display:block;}
+
+.nav-links a:hover,.nav-links a.active{color:var(--gold);}
 
 /* ── HERO, YouTube background ── */
 .hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:9rem 2rem 5rem;overflow:hidden;}
@@ -237,12 +157,31 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
   .ap-grid,.author-grid,.diag-grid,.prod-grid{grid-template-columns:1fr;gap:2.5rem;}
   .author-left{position:static;}
   .diag-full{grid-column:auto;}
-  .footer-brand{grid-column:1/-1;}
-  }
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}.footer-brand{grid-column:1/-1;}
+  .footer-bottom{flex-direction:column;gap:0.5rem;text-align:center;}
+}
 
 
 /* NAV DROPDOWN */
-.nav-item.open
+.nav-item{position:relative;list-style:none;}
+.nav-item>a{display:inline-flex;align-items:center;gap:4px;}
+.nav-item .caret{font-size:0.5rem;opacity:0.55;transition:transform 0.2s;display:inline-block;}
+.nav-item.open .caret{transform:rotate(180deg);}
+.nav-dropdown{
+  display:none;position:absolute;top:calc(100% + 8px);left:50%;
+  transform:translateX(-50%);
+  background:#0D1117;border:0.5px solid rgba(201,168,76,0.22);
+  min-width:160px;z-index:500;padding:0.4rem 0;
+}
+.nav-item.open .nav-dropdown{display:block;}
+.nav-dropdown a{
+  display:block;padding:0.65rem 1.2rem;
+  font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
+  color:#A8A090;text-decoration:none;white-space:nowrap;
+  transition:all 0.15s;border:none;font-family:'DM Sans',sans-serif;
+}
+.nav-dropdown a:hover{color:#C9A84C;background:rgba(201,168,76,0.06);}
+
 </style>
 </head>
 <body>
@@ -256,13 +195,13 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
     <li class="nav-item">
       <a href="references.html">Resources <span class="caret">&#9660;</span></a>
       <div class="nav-dropdown">
-        <a href="references.html#one-god">One God</a>
-        <a href="references.html#short-season">Short Season</a>
-        <a href="references.html#biblical-earth">Biblical Earth</a>
-        <a href="references.html#podcasts">Podcasts</a>
-        <a href="references.html#debates">Debates</a>
-        <a href="references.html#articles">Articles</a>
-        <a href="old-maps.html">Old Maps</a>
+        <a href="references.html#one-god" onclick="closeMenu()">One God</a>
+        <a href="references.html#short-season" onclick="closeMenu()">Short Season</a>
+        <a href="references.html#biblical-earth" onclick="closeMenu()">Biblical Earth</a>
+        <a href="references.html#podcasts" onclick="closeMenu()">Podcasts</a>
+        <a href="references.html#debates" onclick="closeMenu()">Debates</a>
+        <a href="references.html#articles" onclick="closeMenu()">Articles</a>
+        <a href="old-maps.html" onclick="closeMenu()">Old Maps</a>
       </div>
     </li>
     <li><a href="project314.html" class="active">God of Pi</a></li>
@@ -270,22 +209,20 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
     <li><a href="old-maps.html">Old Maps</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
-  <button class="nav-hamburger" onclick="document.getElementById('mm').classList.toggle('open')" aria-label="Menu">
+  <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
-<div class="mobile-menu" id="mm">
-  <button class="mobile-close" onclick="document.getElementById('mm').classList.remove('open')">&times;</button>
-  <a href="index.html#about" onclick="document.getElementById('mm').classList.remove('open')">Foundation</a>
-  <a href="blog.html" onclick="document.getElementById('mm').classList.remove('open')">Blog</a>
-  <a href="references.html" onclick="document.getElementById('mm').classList.remove('open')">Resources</a>
-  <a href="project314.html" onclick="document.getElementById('mm').classList.remove('open')">God of Pi</a>
-  <a href="cosmology.html" onclick="document.getElementById('mm').classList.remove('open')">Biblical Cosmology</a>
-  <a href="old-maps.html" onclick="document.getElementById('mm').classList.remove('open')">Old Maps</a>
-  <a href="index.html#join" style="color:var(--gold);" onclick="document.getElementById('mm').classList.remove('open')">Connect</a>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
+  <a href="index.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Foundation</a>
+  <a href="blog.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blog</a>
+  <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
+  <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
+  <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
+  <a href="index.html#join" style="color:var(--gold);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
-
-
 
 <!-- HERO, YouTube video background 18s–37s loop -->
 <section class="hero">
@@ -639,33 +576,42 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
       <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
       <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
     </div>
-    <div class="footer-col"><h4>Explore</h4><ul>
-      <li><a href="index.html#about">Our Foundation</a></li>
-      <li><a href="index.html#beliefs">What We Believe</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="project314.html">God of Pi</a></li>
-      <li><a href="cosmology.html">Biblical Cosmology</a></li>
-      <li><a href="old-maps.html">Old Maps</a></li>
-    </ul></div>
-    <div class="footer-col"><h4>Resources</h4><ul>
-      <li><a href="references.html#one-god">One God</a></li>
-      <li><a href="references.html#short-season">Short Season</a></li>
-      <li><a href="references.html#biblical-earth">Biblical Earth</a></li>
-      <li><a href="references.html#podcasts">Podcasts</a></li>
-      <li><a href="old-maps.html">Old Maps</a></li>
-    </ul></div>
-    <div class="footer-col"><h4>Connect</h4><ul>
-      <li><a href="index.html#join">Join a Gathering</a></li>
-      <li><a href="mailto:contact@2-22church.com">contact@2-22church.com</a></li>
-      <li><a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener">YouTube Channel</a></li>
-    </ul></div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html#about">Our Foundation</a></li>
+        <li><a href="index.html#beliefs">What We Believe</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="project314.html">God of Pi</a></li>
+        <li><a href="cosmology.html">Biblical Cosmology</a></li>
+        <li><a href="old-maps.html">Old Maps</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="references.html#one-god">One God</a></li>
+        <li><a href="references.html#short-season">Short Season</a></li>
+        <li><a href="references.html#biblical-earth">Biblical Earth</a></li>
+        <li><a href="references.html#podcasts">Podcasts</a></li>
+        <li><a href="old-maps.html">Old Maps</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="index.html#join">Join a Gathering</a></li>
+        <li><a href="mailto:hello@2-22church.com">Email Us</a></li>
+        <li><a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener">YouTube Channel</a></li>
+        <li><a href="index.html#join">Start a Group</a></li>
+      </ul>
+    </div>
   </div>
   <div class="footer-bottom">
     <span>2025 2:22 Church · 2-22church.com</span>
     <span class="footer-verse">"Where two or three gather in my name, there am I with them." Matthew 18:20</span>
   </div>
 </footer>
-
 
 <!-- YouTube IFrame API, loop video from 18s to 37s -->
 <script>
@@ -728,27 +674,43 @@ document.querySelectorAll('.diag-card,.prod-card,.tl-item,.media-link').forEach(
 });
 </script>
 
-
-
-
+<script>
+document.addEventListener('click', function(e) {
+  var menu = document.getElementById('mobile-menu');
+  var hamburger = document.querySelector('.nav-hamburger');
+  if (menu && menu.classList.contains('open')) {
+    if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+      menu.classList.remove('open');
+    }
+  }
+});
+document.querySelectorAll('.mobile-menu a').forEach(function(link) {
+  link.addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.remove('open');
+  });
+});
+</script>
 
 
 
 
 <script>
+/* Resources dropdown */
 (function(){
   var item=document.querySelector('.nav-item');
   if(!item)return;
   item.querySelector(':scope>a').addEventListener('click',function(e){
-    e.preventDefault();item.classList.toggle('open');
-  });
-  item.querySelectorAll('.nav-dropdown a').forEach(function(a){
-    a.addEventListener('click',function(){item.classList.remove('open');});
+    e.preventDefault();
+    item.classList.toggle('open');
   });
   document.addEventListener('click',function(e){
     if(!item.contains(e.target))item.classList.remove('open');
   });
 })();
+function closeMenu(){
+  var item=document.querySelector('.nav-item');
+  if(item)item.classList.remove('open');
+}
 </script>
 </body>
 </html>
