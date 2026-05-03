@@ -323,19 +323,18 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     <li><a href="index.html#about" class="active">Foundation</a></li>
     <li><a href="our-story.html">Our Story</a></li>
     <li><a href="gatherings.html">Gatherings</a></li>
-    <li><a href="statement-of-faith.html">Statement</a></li>
-    <li><a href="study-guides.html">Study</a></li>
     <li><a href="blog.html">Blog</a></li>
     <li class="nav-item">
       <a href="references.html">Resources <span class="caret">&#9660;</span></a>
       <div class="nav-dropdown">
-        <a href="references.html#one-god" onclick="closeMenu()">One God</a>
-        <a href="references.html#short-season" onclick="closeMenu()">Short Season</a>
-        <a href="references.html#biblical-earth" onclick="closeMenu()">Biblical Earth</a>
-        <a href="references.html#podcasts" onclick="closeMenu()">Podcasts</a>
-        <a href="references.html#debates" onclick="closeMenu()">Debates</a>
-        <a href="references.html#articles" onclick="closeMenu()">Articles</a>
-        <a href="old-maps.html" onclick="closeMenu()">Old Maps</a>
+        <a href="references.html#one-god">One God</a>
+        <a href="references.html#short-season">Short Season</a>
+        <a href="references.html#biblical-earth">Biblical Earth</a>
+        <a href="references.html#podcasts">Podcasts</a>
+        <a href="references.html#debates">Debates</a>
+        <a href="references.html#articles">Articles</a>
+        <a href="references.html#archives">Archives</a>
+        <a href="old-maps.html">Old Maps</a>
       </div>
     </li>
     <li><a href="project314.html">God of Pi</a></li>
@@ -348,12 +347,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   </button>
 </nav>
 <div class="mobile-menu" id="mobile-menu">
-  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
-  <a href="index.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Foundation</a>
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">
+    <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Foundation</a>
   <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
-  <a href="statement-of-faith.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Statement of Faith</a>
-  <a href="study-guides.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study Guides</a>
   <a href="blog.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blog</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
   <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
@@ -515,6 +512,17 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
         </div>
       </div>
 
+    
+      <div class="belief-card" data-num="07">
+        <h3>Biblical Earth</h3>
+        <p>We believe the consistent cosmological testimony of Scripture — from Genesis to Job to Isaiah to Revelation — describes a circular earth founded upon pillars, enclosed by a firmament upon which the heavenly waters rest. This is not interpreted symbolically. It is the plain reading of the text as the biblical authors wrote it.</p>
+        <blockquote>"He sits enthroned above the circle of the earth... He stretches out the heavens like a canopy." — Isaiah 40:22</blockquote>
+      </div>
+
+      <div class="belief-card" data-num="08">
+        <h3>The Short Season</h3>
+        <p>We believe we are not in the Church Age of popular eschatology. The millennial reign of Yeshua with His saints occurred on this earth. What began approximately 250 years ago through colonisation, revolution, and world war marked a turning point in the prophetic calendar. The buried and ruined architectures visible around the world are witnesses to this history.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -633,16 +641,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     <div class="footer-col">
       <h4>Explore</h4>
       <ul>
-        <li><a href="index.html#about">Our Foundation</a></li>
-        <li><a href="index.html#beliefs">What We Believe</a></li>
-        <li><a href="our-story.html">Our Story</a></li>
+      <li><a href="index.html#about">Our Foundation</a></li>
+      <li><a href="index.html#beliefs">What We Believe</a></li>
+      <li><a href="our-story.html">Our Story</a></li>
       <li><a href="gatherings.html">Gatherings</a></li>
-      <li><a href="statement-of-faith.html">Statement of Faith</a></li>
-      <li><a href="study-guides.html">Study Guides</a></li>
       <li><a href="blog.html">Blog</a></li>
-        <li><a href="project314.html">God of Pi</a></li>
-        <li><a href="cosmology.html">Biblical Cosmology</a></li>
-        <li><a href="old-maps.html">Old Maps</a></li>
+      <li><a href="project314.html">God of Pi</a></li>
+      <li><a href="cosmology.html">Biblical Cosmology</a></li>
+      <li><a href="old-maps.html">Old Maps</a></li>
       </ul>
     </div>
     <div class="footer-col">

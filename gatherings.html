@@ -33,11 +33,7 @@
 .num-list li{counter-increment:nl;display:grid;grid-template-columns:2.5rem 1fr;gap:.5rem 1rem;align-items:start;margin-bottom:1.8rem;color:var(--text-secondary);font-size:.95rem;line-height:1.8;}
 .num-list li::before{content:counter(nl);font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:var(--gold);line-height:1;padding-top:.1rem;}
 .num-list li strong{color:var(--text-primary);}
-.ph-bg{position:relative;}
-.ph-bg::before{content:'';position:absolute;inset:0;background:rgba(13,17,23,0.72);z-index:0;pointer-events:none;}
-.ph-bg .eyebrow,.ph-bg h1,.ph-bg p{position:relative;z-index:1;}
 @media(max-width:640px){.card-grid{grid-template-columns:1fr;}}
-.page-header{background:#0D1117 url('bg-blog.jpg') center/cover no-repeat;}
 </style>
 </head>
 <body>
@@ -47,20 +43,19 @@
   <ul class="nav-links">
     <li><a href="index.html#about">Foundation</a></li>
     <li><a href="our-story.html">Our Story</a></li>
-    <li><a href="gatherings.html">Gatherings</a></li>
-    <li><a href="statement-of-faith.html">Statement</a></li>
-    <li><a href="study-guides.html">Study</a></li>
-    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="gatherings.html" class="active">Gatherings</a></li>
+    <li><a href="blog.html">Blog</a></li>
     <li class="nav-item">
       <a href="references.html">Resources <span class="caret">&#9660;</span></a>
       <div class="nav-dropdown">
-        <a href="references.html#one-god" onclick="closeMenu()">One God</a>
-        <a href="references.html#short-season" onclick="closeMenu()">Short Season</a>
-        <a href="references.html#biblical-earth" onclick="closeMenu()">Biblical Earth</a>
-        <a href="references.html#podcasts" onclick="closeMenu()">Podcasts</a>
-        <a href="references.html#debates" onclick="closeMenu()">Debates</a>
-        <a href="references.html#articles" onclick="closeMenu()">Articles</a>
-        <a href="old-maps.html" onclick="closeMenu()">Old Maps</a>
+        <a href="references.html#one-god">One God</a>
+        <a href="references.html#short-season">Short Season</a>
+        <a href="references.html#biblical-earth">Biblical Earth</a>
+        <a href="references.html#podcasts">Podcasts</a>
+        <a href="references.html#debates">Debates</a>
+        <a href="references.html#articles">Articles</a>
+        <a href="references.html#archives">Archives</a>
+        <a href="old-maps.html">Old Maps</a>
       </div>
     </li>
     <li><a href="project314.html">God of Pi</a></li>
@@ -73,12 +68,10 @@
   </button>
 </nav>
 <div class="mobile-menu" id="mobile-menu">
-  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
-  <a href="index.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Foundation</a>
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">
+    <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Foundation</a>
   <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
-  <a href="statement-of-faith.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Statement of Faith</a>
-  <a href="study-guides.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study Guides</a>
   <a href="blog.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blog</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
   <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
@@ -87,7 +80,7 @@
   <a href="index.html#join" style="color:var(--gold);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
-<div class="page-header ph-bg">
+<div class="page-header">
   <div class="eyebrow">Find a Group</div>
   <h1>Find a <em>Gathering</em></h1>
   <p>We are forming. Friends who have found Yeshua outside the walls of institutional Christianity.</p>
@@ -139,16 +132,14 @@
     <div class="footer-col">
       <h4>Explore</h4>
       <ul>
-        <li><a href="index.html#about">Our Foundation</a></li>
-        <li><a href="index.html#beliefs">What We Believe</a></li>
-        <li><a href="our-story.html">Our Story</a></li>
+      <li><a href="index.html#about">Our Foundation</a></li>
+      <li><a href="index.html#beliefs">What We Believe</a></li>
+      <li><a href="our-story.html">Our Story</a></li>
       <li><a href="gatherings.html">Gatherings</a></li>
-      <li><a href="statement-of-faith.html">Statement of Faith</a></li>
-      <li><a href="study-guides.html">Study Guides</a></li>
       <li><a href="blog.html">Blog</a></li>
-        <li><a href="project314.html">God of Pi</a></li>
-        <li><a href="cosmology.html">Biblical Cosmology</a></li>
-        <li><a href="old-maps.html">Old Maps</a></li>
+      <li><a href="project314.html">God of Pi</a></li>
+      <li><a href="cosmology.html">Biblical Cosmology</a></li>
+      <li><a href="old-maps.html">Old Maps</a></li>
       </ul>
     </div>
     <div class="footer-col">

@@ -30,14 +30,11 @@
 .cta-box h2 em{color:var(--gold);font-style:italic;}
 .cta-box p{color:var(--text-secondary);max-width:480px;margin:0 auto 2rem;line-height:1.8;}
 .num-list{counter-reset:nl;list-style:none;margin-top:1.5rem;}
-.num-list li{counter-increment:nl;display:grid;grid-template-columns:2.5rem 1fr;gap:.5rem 1rem;align-items:start;margin-bottom:1.8rem;color:var(--text-secondary);font-size:.95rem;line-height:1.8;}
-.num-list li::before{content:counter(nl);font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:var(--gold);line-height:1;padding-top:.1rem;}
-.num-list li strong{color:var(--text-primary);}
-.ph-bg{position:relative;}
-.ph-bg::before{content:'';position:absolute;inset:0;background:rgba(13,17,23,0.72);z-index:0;pointer-events:none;}
-.ph-bg .eyebrow,.ph-bg h1,.ph-bg p{position:relative;z-index:1;}
+.num-list li{counter-increment:nl;display:flex;gap:1.2rem;align-items:flex-start;margin-bottom:2.2rem;}
+.num-list li::before{content:counter(nl);font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--gold);line-height:1;flex-shrink:0;min-width:2rem;padding-top:.1rem;}
+.num-list li .li-body{color:var(--text-secondary);font-size:.95rem;line-height:1.85;}
+.num-list li .li-body strong{color:var(--text-primary);display:block;margin-bottom:.3rem;font-size:1rem;}
 @media(max-width:640px){.card-grid{grid-template-columns:1fr;}}
-.page-header{background:#0D1117 url('bg-blog.jpg') center/cover no-repeat;}
 </style>
 </head>
 <body>
@@ -46,21 +43,20 @@
   <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church"></a>
   <ul class="nav-links">
     <li><a href="index.html#about">Foundation</a></li>
-    <li><a href="our-story.html">Our Story</a></li>
+    <li><a href="our-story.html" class="active">Our Story</a></li>
     <li><a href="gatherings.html">Gatherings</a></li>
-    <li><a href="statement-of-faith.html">Statement</a></li>
-    <li><a href="study-guides.html">Study</a></li>
-    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="blog.html">Blog</a></li>
     <li class="nav-item">
       <a href="references.html">Resources <span class="caret">&#9660;</span></a>
       <div class="nav-dropdown">
-        <a href="references.html#one-god" onclick="closeMenu()">One God</a>
-        <a href="references.html#short-season" onclick="closeMenu()">Short Season</a>
-        <a href="references.html#biblical-earth" onclick="closeMenu()">Biblical Earth</a>
-        <a href="references.html#podcasts" onclick="closeMenu()">Podcasts</a>
-        <a href="references.html#debates" onclick="closeMenu()">Debates</a>
-        <a href="references.html#articles" onclick="closeMenu()">Articles</a>
-        <a href="old-maps.html" onclick="closeMenu()">Old Maps</a>
+        <a href="references.html#one-god">One God</a>
+        <a href="references.html#short-season">Short Season</a>
+        <a href="references.html#biblical-earth">Biblical Earth</a>
+        <a href="references.html#podcasts">Podcasts</a>
+        <a href="references.html#debates">Debates</a>
+        <a href="references.html#articles">Articles</a>
+        <a href="references.html#archives">Archives</a>
+        <a href="old-maps.html">Old Maps</a>
       </div>
     </li>
     <li><a href="project314.html">God of Pi</a></li>
@@ -73,12 +69,10 @@
   </button>
 </nav>
 <div class="mobile-menu" id="mobile-menu">
-  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
-  <a href="index.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Foundation</a>
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">
+    <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Foundation</a>
   <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
-  <a href="statement-of-faith.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Statement of Faith</a>
-  <a href="study-guides.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study Guides</a>
   <a href="blog.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blog</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
   <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
@@ -87,7 +81,7 @@
   <a href="index.html#join" style="color:var(--gold);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
-<div class="page-header ph-bg">
+<div class="page-header">
   <div class="eyebrow">Who We Are</div>
   <h1>Our <em>Story</em></h1>
   <p>Fifteen years across denominations. One question that would not go away: what did the apostles actually teach?</p>
@@ -116,15 +110,15 @@
     <h2>Progressive conclusions <em>from Scripture.</em></h2>
     <p>The following convictions were formed through years of research, cross-referencing primary sources, and testing against the apostolic text. We hold them not as a creed to be defended but as conclusions to be examined. Test them yourself.</p>
     <ol class="num-list">
-      <li><strong>One God, Eternal Father, Almighty, Most High.</strong> Not a Trinity of co-equal persons, but the God of Abraham, Isaac and Jacob, the Father of our Lord Jesus Christ.</li>
-      <li><strong>Jesus Christ is the Son of God.</strong> Known as Lord, Messiah, King, Mighty God, High Priest, and the Second Adam. Distinct from the Father who sent Him.</li>
-      <li><strong>The earth is not a spinning globe.</strong> Scripture describes a circular earth founded upon pillars, enclosed by a firmament upon which the heavenly waters rest.</li>
-      <li><strong>The Tabernacle is circular, not rectangular.</strong> The design God gave Moses embeds the constant Pi (3.14). The shadow of the actual heavenly dwelling.</li>
-      <li><strong>We are in the Short Season, not the Church Age.</strong> The millennial reign of Yeshua occurred on this earth. What began 250 years ago with colonisation and world wars marked its end.</li>
-      <li><strong>Secular Israel is not the true Israel</strong> by geography, biology, or biblical explanation. Mainstream Christian support for the modern secular state is unfounded by Scripture.</li>
-      <li><strong>Current world events follow a script</strong> written through media, religion, politics, and education progressively from the 17th century onward.</li>
-      <li><strong>The 66-book canon is incomplete.</strong> Books referenced within Scripture itself have been systematically excluded. Their exclusion serves a purpose.</li>
-      <li><strong>Western missionary Christianity is not the apostolic faith.</strong> It has been shaped by colonisation, political agendas, the prosperity economy, and institutional interests.</li>
+      <li><div class="li-body"><strong><a href="references.html#one-god" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">One God, Eternal Father, Almighty, Most High.</a></strong> Not a Trinity of co-equal persons, but the God of Abraham, Isaac and Jacob, the Father of our Lord Jesus Christ.</div></li>
+      <li><div class="li-body"><strong><a href="references.html#one-god" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Jesus Christ is the Son of God.</a></strong> Known as Lord, Messiah, King, Mighty God, High Priest, and the Second Adam. Distinct from the Father who sent Him.</div></li>
+      <li><div class="li-body"><strong><a href="cosmology.html" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">The earth is not a spinning globe.</a></strong> Scripture describes a circular earth founded upon pillars, enclosed by a firmament upon which the heavenly waters rest.</div></li>
+      <li><div class="li-body"><strong><a href="project314.html" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">The Tabernacle is circular, not rectangular.</a></strong> The design God gave Moses embeds the constant Pi (3.14). The shadow of the actual heavenly dwelling.</div></li>
+      <li><div class="li-body"><strong><a href="references.html#short-season" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">We are in the Short Season, not the Church Age.</a></strong> The millennial reign of Yeshua occurred on this earth. What began 250 years ago with colonisation and world wars marked its end.</div></li>
+      <li><div class="li-body"><strong><a href="references.html" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Secular Israel is not the true Israel</a></strong> by geography, biology, or biblical explanation. Mainstream Christian support for the modern secular state is unfounded by Scripture.</div></li>
+      <li><div class="li-body"><strong><a href="references.html#articles" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Current world events follow a script</a></strong> written through media, religion, politics, and education progressively from the 17th century onward.</div></li>
+      <li><div class="li-body"><strong><a href="references.html#articles" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">The 66-book canon is incomplete.</a></strong> Books referenced within Scripture itself have been systematically excluded. Their exclusion serves a purpose.</div></li>
+      <li><div class="li-body"><strong><a href="references.html" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Western missionary Christianity is not the apostolic faith.</a></strong> It has been shaped by colonisation, political agendas, the prosperity economy, and institutional interests.</div></li>
     </ol>
   </div>
   <div class="hr-gold"><span>&#9670;</span></div>
@@ -155,16 +149,14 @@
     <div class="footer-col">
       <h4>Explore</h4>
       <ul>
-        <li><a href="index.html#about">Our Foundation</a></li>
-        <li><a href="index.html#beliefs">What We Believe</a></li>
-        <li><a href="our-story.html">Our Story</a></li>
+      <li><a href="index.html#about">Our Foundation</a></li>
+      <li><a href="index.html#beliefs">What We Believe</a></li>
+      <li><a href="our-story.html">Our Story</a></li>
       <li><a href="gatherings.html">Gatherings</a></li>
-      <li><a href="statement-of-faith.html">Statement of Faith</a></li>
-      <li><a href="study-guides.html">Study Guides</a></li>
       <li><a href="blog.html">Blog</a></li>
-        <li><a href="project314.html">God of Pi</a></li>
-        <li><a href="cosmology.html">Biblical Cosmology</a></li>
-        <li><a href="old-maps.html">Old Maps</a></li>
+      <li><a href="project314.html">God of Pi</a></li>
+      <li><a href="cosmology.html">Biblical Cosmology</a></li>
+      <li><a href="old-maps.html">Old Maps</a></li>
       </ul>
     </div>
     <div class="footer-col">
