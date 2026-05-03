@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gatherings — 2:22 Church</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Page-specific styles */
+.body-wrap{max-width:820px;margin:0 auto;padding:5rem 2rem 7rem;}
+.sec{margin-bottom:4.5rem;}
+.sec h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:300;line-height:1.2;margin-bottom:1.2rem;}
+.sec h2 em{font-style:italic;color:var(--gold);}
+.sec p{color:var(--text-secondary);line-height:1.9;margin-bottom:1.1rem;font-size:0.98rem;}
+.pull{border-left:2px solid var(--gold);padding:1.1rem 1.6rem;margin:2rem 0;background:rgba(201,168,76,0.04);}
+.pull p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--text-primary);margin:0;line-height:1.75;}
+.pull cite{display:block;margin-top:.5rem;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-style:normal;}
+.hr-gold{display:flex;align-items:center;gap:1rem;margin:3.5rem 0;}
+.hr-gold::before,.hr-gold::after{content:'';flex:1;height:.5px;background:var(--border);}
+.hr-gold span{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--gold);opacity:.45;}
+.card-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--border);margin-bottom:3rem;}
+.card-grid .card{background:var(--surface);padding:1.8rem 2rem;}
+.card h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;color:var(--text-primary);margin-bottom:.6rem;}
+.card h3 em{color:var(--gold);font-style:italic;}
+.card p{font-size:.85rem;color:var(--text-muted);line-height:1.75;}
+.cta-box{text-align:center;padding:4rem 2rem;background:var(--deep-mid);border-top:.5px solid var(--border-subtle);}
+.cta-box h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;margin-bottom:.9rem;}
+.cta-box h2 em{color:var(--gold);font-style:italic;}
+.cta-box p{color:var(--text-secondary);max-width:480px;margin:0 auto 2rem;line-height:1.8;}
+.num-list{counter-reset:nl;list-style:none;margin-top:1.5rem;}
+.num-list li{counter-increment:nl;display:grid;grid-template-columns:2.5rem 1fr;gap:.5rem 1rem;align-items:start;margin-bottom:1.8rem;color:var(--text-secondary);font-size:.95rem;line-height:1.8;}
+.num-list li::before{content:counter(nl);font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:var(--gold);line-height:1;padding-top:.1rem;}
+.num-list li strong{color:var(--text-primary);}
+.ph-bg{position:relative;}
+.ph-bg::before{content:'';position:absolute;inset:0;background:rgba(13,17,23,0.72);z-index:0;pointer-events:none;}
+.ph-bg .eyebrow,.ph-bg h1,.ph-bg p{position:relative;z-index:1;}
+@media(max-width:640px){.card-grid{grid-template-columns:1fr;}}
+.page-header{background:#0D1117 url('bg-blog.jpg') center/cover no-repeat;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church"></a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">Foundation</a></li>
+    <li><a href="our-story.html">Our Story</a></li>
+    <li><a href="gatherings.html">Gatherings</a></li>
+    <li><a href="statement-of-faith.html">Statement</a></li>
+    <li><a href="study-guides.html">Study</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li class="nav-item">
+      <a href="references.html">Resources <span class="caret">&#9660;</span></a>
+      <div class="nav-dropdown">
+        <a href="references.html#one-god" onclick="closeMenu()">One God</a>
+        <a href="references.html#short-season" onclick="closeMenu()">Short Season</a>
+        <a href="references.html#biblical-earth" onclick="closeMenu()">Biblical Earth</a>
+        <a href="references.html#podcasts" onclick="closeMenu()">Podcasts</a>
+        <a href="references.html#debates" onclick="closeMenu()">Debates</a>
+        <a href="references.html#articles" onclick="closeMenu()">Articles</a>
+        <a href="old-maps.html" onclick="closeMenu()">Old Maps</a>
+      </div>
+    </li>
+    <li><a href="project314.html">God of Pi</a></li>
+    <li><a href="cosmology.html">Cosmology</a></li>
+    <li><a href="old-maps.html">Old Maps</a></li>
+  </ul>
+  <a href="index.html#join" class="nav-cta">Connect</a>
+  <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
+  <a href="index.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Foundation</a>
+  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
+  <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
+  <a href="statement-of-faith.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Statement of Faith</a>
+  <a href="study-guides.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study Guides</a>
+  <a href="blog.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blog</a>
+  <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
+  <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
+  <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
+  <a href="index.html#join" style="color:var(--gold);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
+</div>
+
+<div class="page-header ph-bg">
+  <div class="eyebrow">Find a Group</div>
+  <h1>Find a <em>Gathering</em></h1>
+  <p>We are forming. Friends who have found Yeshua outside the walls of institutional Christianity.</p>
+</div>
+
+<div style="background:var(--deep);">
+<div class="body-wrap">
+  <div class="sec" style="text-align:center;">
+    <p style="font-size:1.1rem;color:var(--text-primary);line-height:1.9;">We are forming. Not yet a congregation with an address, a roster, or a schedule. Something more honest than that: a small number of friends who have been touched by the saving love of God and found Yeshua our Messiah outside the walls of institutional Christianity.</p>
+  </div>
+  <div class="pull" style="text-align:center;border-left:none;border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);padding:1.8rem 2rem;">
+    <p>"For where two or three gather in my name, there am I with them."</p>
+    <cite>Matthew 18:20</cite>
+  </div>
+  <div class="sec">
+    <div class="section-label">Where We Are</div>
+    <h2>No fixed address. <em>No building.</em></h2>
+    <p>We do not own a building, hold a Sunday service, or collect a membership list. We meet as circumstances allow, in homes, around tables, in open air, wherever people are comfortable gathering with their families and asking honest questions together.</p>
+    <p>The apostles did the same. Paul taught publicly and house to house. The early church broke bread in ordinary rooms. We are simply trying to do what they did.</p>
+  </div>
+  <div class="hr-gold"><span>&#9670;</span></div>
+  <div class="sec">
+    <div class="section-label">Who We Are Looking For</div>
+    <h2>People who are <em>searching.</em></h2>
+    <p>We are looking for people who love the Word of God more than they love a religious system. People willing to test what they have been taught against what the apostles actually wrote. People who are not afraid of where that search leads.</p>
+    <p>You do not need to have arrived at the same conclusions we have. You need only be serious about finding the truth rather than defending a tradition.</p>
+  </div>
+  <div class="card-grid">
+    <div class="card"><h3>Open <em>Tables</em></h3><p>We share food, Scripture, and questions. Meals are the oldest form of fellowship the church has ever known.</p></div>
+    <div class="card"><h3>Honest <em>Questions</em></h3><p>No question is off limits. If the truth cannot survive examination it is not worth holding.</p></div>
+    <div class="card"><h3>No <em>Platform</em></h3><p>No pastor. No stage. No production. Everyone contributes. No one performs. That is the pattern of 1 Corinthians 14:26.</p></div>
+    <div class="card"><h3>Prayer <em>Together</em></h3><p>Simply, directly, in the name of Yeshua. Without scripts or professional voices. Just people before the living God.</p></div>
+  </div>
+</div>
+</div>
+<div class="cta-box">
+  <h2>Get in <em>touch.</em></h2>
+  <p>Use the Connect form and we will reply personally. We would genuinely love to hear from you.</p>
+  <a href="index.html#join" class="btn-primary">Connect With Us</a>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html"><img src="logo.png" alt="2:22 Church" style="height:1.8rem;width:auto;display:block;margin-bottom:0.5rem;"></a>
+      <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
+      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html#about">Our Foundation</a></li>
+        <li><a href="index.html#beliefs">What We Believe</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
+      <li><a href="gatherings.html">Gatherings</a></li>
+      <li><a href="statement-of-faith.html">Statement of Faith</a></li>
+      <li><a href="study-guides.html">Study Guides</a></li>
+      <li><a href="blog.html">Blog</a></li>
+        <li><a href="project314.html">God of Pi</a></li>
+        <li><a href="cosmology.html">Biblical Cosmology</a></li>
+        <li><a href="old-maps.html">Old Maps</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="references.html#one-god">One God</a></li>
+        <li><a href="references.html#short-season">Short Season</a></li>
+        <li><a href="references.html#biblical-earth">Biblical Earth</a></li>
+        <li><a href="references.html#podcasts">Podcasts</a></li>
+        <li><a href="old-maps.html">Old Maps</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="index.html#join">Join a Gathering</a></li>
+        <li><a href="mailto:hello@2-22church.com">Email Us</a></li>
+        <li><a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener">YouTube Channel</a></li>
+        <li><a href="index.html#join">Start a Group</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>2025 2:22 Church · 2-22church.com</span>
+    <span class="footer-verse">"Where two or three gather in my name, there am I with them." Matthew 18:20</span>
+  </div>
+</footer>
+
+<script>
+/* Resources dropdown */
+(function(){
+  var item=document.querySelector('.nav-item');
+  if(!item)return;
+  item.querySelector(':scope>a').addEventListener('click',function(e){
+    e.preventDefault();
+    item.classList.toggle('open');
+  });
+  document.addEventListener('click',function(e){
+    if(!item.contains(e.target))item.classList.remove('open');
+  });
+})();
+function closeMenu(){
+  var item=document.querySelector('.nav-item');
+  if(item)item.classList.remove('open');
+}
+</script>
+</body>
+</html>
