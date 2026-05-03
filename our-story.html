@@ -3,38 +3,184 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Story — 2:22 Church</title>
+<title>Our Story - 2:22 Church</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="shortcut icon" href="favicon.ico">
-<link rel="stylesheet" href="style.css">
 <style>
-/* Page-specific styles */
-.body-wrap{max-width:820px;margin:0 auto;padding:5rem 2rem 7rem;}
-.sec{margin-bottom:4.5rem;}
-.sec h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:300;line-height:1.2;margin-bottom:1.2rem;}
-.sec h2 em{font-style:italic;color:var(--gold);}
-.sec p{color:var(--text-secondary);line-height:1.9;margin-bottom:1.1rem;font-size:0.98rem;}
-.pull{border-left:2px solid var(--gold);padding:1.1rem 1.6rem;margin:2rem 0;background:rgba(201,168,76,0.04);}
-.pull p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--text-primary);margin:0;line-height:1.75;}
-.pull cite{display:block;margin-top:.5rem;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-style:normal;}
-.hr-gold{display:flex;align-items:center;gap:1rem;margin:3.5rem 0;}
-.hr-gold::before,.hr-gold::after{content:'';flex:1;height:.5px;background:var(--border);}
-.hr-gold span{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--gold);opacity:.45;}
-.card-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--border);margin-bottom:3rem;}
-.card-grid .card{background:var(--surface);padding:1.8rem 2rem;}
-.card h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;color:var(--text-primary);margin-bottom:.6rem;}
-.card h3 em{color:var(--gold);font-style:italic;}
-.card p{font-size:.85rem;color:var(--text-muted);line-height:1.75;}
-.cta-box{text-align:center;padding:4rem 2rem;background:var(--deep-mid);border-top:.5px solid var(--border-subtle);}
-.cta-box h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;margin-bottom:.9rem;}
-.cta-box h2 em{color:var(--gold);font-style:italic;}
-.cta-box p{color:var(--text-secondary);max-width:480px;margin:0 auto 2rem;line-height:1.8;}
-.num-list{counter-reset:nl;list-style:none;margin-top:1.5rem;}
-.num-list li{counter-increment:nl;display:flex;gap:1.2rem;align-items:flex-start;margin-bottom:2.2rem;}
-.num-list li::before{content:counter(nl);font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--gold);line-height:1;flex-shrink:0;min-width:2rem;padding-top:.1rem;}
-.num-list li .li-body{color:var(--text-secondary);font-size:.95rem;line-height:1.85;}
-.num-list li .li-body strong{color:var(--text-primary);display:block;margin-bottom:.3rem;font-size:1rem;}
-@media(max-width:640px){.card-grid{grid-template-columns:1fr;}}
+
+:root{
+  --gold:#C9A84C;--gold-light:#E8D5A3;--gold-dark:#8B6914;
+  --deep:#0D1117;--deep-mid:#161C26;--surface:#1C2333;--surface-light:#232B3E;
+  --text-primary:#F0EAD6;--text-secondary:#A8A090;--text-muted:#6B6358;
+  --border:rgba(201,168,76,0.18);--border-subtle:rgba(255,255,255,0.06);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+
+body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-primary);overflow-x:hidden;line-height:1.7;}
+
+/* NAV */
+
+.nav-logo img{height:2rem;width:auto;display:block;}
+
+.nav-links a:hover,.nav-links a.active{color:var(--gold);}
+
+ .nav-hamburger-x{flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
+.nav-hamburger span{display:block;width:22px;height:1px;background:var(--gold);}
+
+.mobile-menu a:hover{color:var(--gold);}
+
+/* PAGE HEADER */
+/* QUICK NAV */
+.quick-nav{background:var(--deep);border-bottom:0.5px solid var(--border-subtle);padding:1.2rem 2rem;position:sticky;top:64px;z-index:90;}
+.quick-nav-inner{max-width:1000px;margin:0 auto;display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;}
+.quick-nav a{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;transition:color 0.2s;padding:0.3rem 0;border-bottom:0.5px solid transparent;}
+.quick-nav a:hover{color:var(--gold);border-color:var(--gold);}
+
+/* BODY */
+.cosmo-body{max-width:900px;margin:0 auto;padding:5rem 2rem 8rem;}
+
+/* SECTION */
+.cosmo-section{margin-bottom:6rem;}
+.cosmo-section:last-child{margin-bottom:0;}
+.cosmo-body p{color:var(--text-secondary);font-size:1rem;line-height:1.9;margin-bottom:1.1rem;}
+.cosmo-body p strong{color:var(--text-primary);font-weight:500;}
+
+/* SCRIPTURE BLOCK */
+.scripture-block{background:var(--surface);border:0.5px solid var(--border);border-left:2px solid var(--gold);padding:1.6rem 2rem;margin:2rem 0;}
+.scripture-ref{font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;display:block;}
+.scripture-text{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;line-height:1.75;color:var(--text-primary);}
+.scripture-text strong{font-style:normal;color:var(--gold);}
+.scripture-note{font-size:0.82rem;color:var(--text-muted);margin-top:0.6rem;font-style:normal;}
+
+/* SCRIPTURE GRID */
+.scripture-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--border);border:0.5px solid var(--border);margin:2rem 0;}
+.sg-item{background:var(--surface);padding:1.4rem 1.6rem;}
+.sg-ref{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;display:block;}
+.sg-text{font-family:'Cormorant Garamond',serif;font-size:0.95rem;font-style:italic;line-height:1.7;color:var(--text-primary);}
+.sg-text strong{font-style:normal;color:var(--gold);}
+
+/* PULL QUOTE */
+.pull-quote{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-style:italic;font-weight:300;color:var(--text-primary);line-height:1.6;border-left:2px solid var(--gold);padding:1rem 1.5rem;margin:2.5rem 0;}
+
+/* HEBREW WORD */
+.heb-word{display:inline-block;background:rgba(201,168,76,0.08);border:0.5px solid var(--border);padding:0.15rem 0.5rem;border-radius:2px;font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold);font-size:0.95em;}
+
+/* IMAGE CARDS */
+.img-card{background:var(--surface);border:0.5px solid var(--border);overflow:hidden;margin:2rem 0;}
+.img-card img{width:100%;display:block;filter:saturate(0.7) brightness(0.8);transition:filter 0.3s;}
+.img-card:hover img{filter:saturate(0.9) brightness(0.95);}
+.img-card-cap{padding:1rem 1.4rem;font-size:0.82rem;color:var(--text-muted);line-height:1.65;}
+.img-card-cap strong{color:var(--text-secondary);}
+
+/* IMAGE PAIR */
+.img-pair{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--border);border:0.5px solid var(--border);margin:2rem 0;}
+.img-pair .img-card{margin:0;border:none;}
+
+/* SOURCE NOTE */
+.source-note{background:rgba(201,168,76,0.04);border:0.5px solid var(--border);padding:1.4rem 1.8rem;margin:3rem 0;}
+.source-note p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;margin:0;}
+.source-note a{color:var(--gold);text-decoration:none;border-bottom:0.5px solid var(--border);}
+.source-note a:hover{border-color:var(--gold);}
+
+/* GOLDEN DIVIDER */
+/* DISCLAIMER */
+.disclaimer{background:rgba(201,168,76,0.04);border:0.5px solid rgba(201,168,76,0.2);border-left:2px solid rgba(201,168,76,0.4);padding:1.6rem 1.8rem;margin:4rem 0 0;}
+.disclaimer p{font-size:0.85rem;color:var(--text-muted);line-height:1.8;margin:0;}
+.disclaimer strong{color:var(--text-secondary);}
+
+/* FOOTER */
+
+@media(max-width:1100px){
+  nav{padding:1rem 1.5rem;}
+  .nav-links,
+  
+  .scripture-grid{grid-template-columns:1fr;}
+  .img-pair{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}
+  .footer-brand{grid-column:1/-1;}
+  .footer-bottom{flex-direction:column;text-align:center;}
+}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(13,17,23,0.92);backdrop-filter:blur(16px);border-bottom:0.5px solid rgba(201,168,76,0.18);}
+
+.nav-links{display:flex;gap:1.4rem;list-style:none;}
+.nav-links a{font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:#A8A090;text-decoration:none;transition:color 0.2s;white-space:nowrap;}
+.nav-links a:hover,.nav-links a.active{color:#C9A84C;}
+.nav-cta{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#0D1117;background:#C9A84C;padding:0.5rem 1rem;border-radius:2px;flex-shrink:0;text-decoration:none;font-weight:500;white-space:nowrap;}
+
+.nav-hamburger span{display:block;width:22px;height:1px;background:#C9A84C;}
+
+.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:#F0EAD6;text-decoration:none;letter-spacing:0.06em;padding:0.7rem 0;border-bottom:0.5px solid rgba(255,255,255,0.06);width:100%;text-align:center;}
+.mobile-menu a:hover{color:#C9A84C;}
+
+@media(max-width:860px){nav{padding:1rem 1.5rem;}.nav-links{display:none;}.nav-cta{display:none;}}
+
+
+/* NAV DROPDOWN */
+.nav-item{position:relative;list-style:none;}
+.nav-item>a{display:inline-flex;align-items:center;gap:4px;}
+.nav-item .caret{font-size:0.5rem;opacity:0.55;transition:transform 0.2s;display:inline-block;}
+.nav-item.open .caret{transform:rotate(180deg);}
+.nav-dropdown{
+  display:none;position:absolute;top:calc(100% + 8px);left:50%;
+  transform:translateX(-50%);
+  background:#0D1117;border:0.5px solid rgba(201,168,76,0.22);
+  min-width:160px;z-index:500;padding:0.4rem 0;
+}
+.nav-item.open .nav-dropdown{display:block;}
+.nav-dropdown a{
+  display:block;padding:0.65rem 1.2rem;
+  font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
+  color:#A8A090;text-decoration:none;white-space:nowrap;
+  transition:all 0.15s;border:none;font-family:'DM Sans',sans-serif;
+}
+.nav-dropdown a:hover{color:#C9A84C;background:rgba(201,168,76,0.06);}
+
+
+
+/* OUR STORY — matches site design */
+.story-body{max-width:900px;margin:0 auto;padding:5rem 2rem 8rem;}
+.story-section{margin-bottom:5.5rem;}
+.story-section p{color:var(--text-secondary);font-size:1rem;line-height:1.9;margin-bottom:1.1rem;}
+.story-section p strong{color:var(--text-primary);font-weight:500;}
+
+/* Opening declaration — no section-label lines */
+.story-opening{max-width:740px;margin:0 auto 5rem;text-align:center;}
+.story-opening .declaration{font-size:1.15rem;color:var(--text-primary);line-height:2;margin-bottom:1.6rem;}
+.story-opening .declaration strong{color:var(--gold);}
+.story-opening .journey{font-size:1rem;color:var(--text-secondary);line-height:1.95;margin-bottom:1.6rem;}
+.story-opening .journey strong{color:var(--text-primary);}
+.story-opening .truth-line{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-style:italic;color:var(--gold);line-height:1.7;margin-bottom:1.6rem;}
+.story-opening .babylon{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--text-primary);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);padding:1.2rem 0;margin-top:0.5rem;}
+.story-opening .babylon strong{font-style:normal;color:var(--gold);}
+
+/* Scripture/pull block — same as cosmology */
+.scripture-block{background:var(--surface);border:0.5px solid var(--border);border-left:2px solid var(--gold);padding:1.6rem 2rem;margin:2rem 0;}
+.scripture-ref{font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;display:block;}
+.scripture-text{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;line-height:1.75;color:var(--text-primary);}
+
+/* Numbered conclusions — clean grid */
+.conclusions{margin-top:2.5rem;}
+.conclusion-item{display:flex;gap:1.5rem;align-items:flex-start;margin-bottom:2.4rem;padding-bottom:2.4rem;border-bottom:0.5px solid var(--border-subtle);}
+.conclusion-item:last-child{border-bottom:none;}
+.c-num{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;flex-shrink:0;min-width:2rem;opacity:0.7;}
+.c-body{}
+.c-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:400;color:var(--text-primary);margin-bottom:0.4rem;line-height:1.3;}
+.c-title a{color:var(--text-primary);text-decoration:none;border-bottom:0.5px solid rgba(201,168,76,0.4);transition:color 0.2s;}
+.c-title a:hover{color:var(--gold);}
+.c-desc{font-size:0.9rem;color:var(--text-secondary);line-height:1.8;}
+
+/* Cards — same pattern as site */
+.story-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--border);margin:2rem 0;}
+.s-card{background:var(--surface);padding:1.8rem 2rem;}
+.s-card h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;color:var(--text-primary);margin-bottom:0.5rem;}
+.s-card h3 em{color:var(--gold);font-style:italic;}
+.s-card p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;}
+
+@media(max-width:640px){.story-cards{grid-template-columns:1fr;}.conclusion-item{gap:1rem;}}
+
 </style>
 </head>
 <body>
@@ -84,77 +230,141 @@
 <div class="page-header">
   <div class="eyebrow">Who We Are</div>
   <h1>Our <em>Story</em></h1>
-  <p>Fifteen years across denominations. One question that would not go away: what did the apostles actually teach?</p>
+  <p>Unpopular conclusions. Firmly grounded in Scripture.</p>
 </div>
 
-<div style="background:var(--deep);">
-<div class="body-wrap">
-  <div class="sec" style="text-align:center;max-width:740px;margin:0 auto 4rem;">
-    <p style="font-size:1.15rem;color:var(--text-primary);line-height:2;font-weight:400;">
-      We are <strong>hungry for the truth</strong>, even if that places us among the minority. Even if it comes down to one.
-      If there is anything more beloved to us than the Word of God, it is a speck in the eye that will not allow us to see.
+<div class="story-body">
+
+  <!-- Opening -->
+  <div class="story-opening">
+    <p class="declaration">
+      We are <strong>hungry for the truth</strong>, even if that places us among the minority.
+      Even if it comes down to one.
+      If there is anything more beloved to us than the Word of God,
+      it is a speck in the eye that will not allow us to see.
     </p>
-    <p style="font-size:1.05rem;color:var(--text-secondary);line-height:2;margin-top:1.4rem;">
-      After <strong style="color:var(--text-primary);">fifteen years</strong> following Christ across different denominations,
-      listening to international theologians, teachers, and writers, researching Scripture through
-      <strong style="color:var(--text-primary);">historical references, creeds, and primary sources</strong>,
+    <p class="journey">
+      After <strong>fifteen years</strong> following Christ across different denominations,
+      listening to international theologians, teachers, and writers,
+      researching Scripture through <strong>historical references, creeds, and primary sources</strong>,
       and analysing events both past and present, we arrived at a conclusion
-      <strong style="color:var(--text-primary);">we did not go looking for.</strong>
+      <strong>we did not go looking for.</strong>
     </p>
-    <p style="font-size:1.2rem;font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold);margin-top:1.8rem;line-height:1.8;">
+    <p class="truth-line">
       As someone once said: truth is stranger than fiction.<br>Indeed it is.
     </p>
-    <div style="margin-top:2.2rem;padding:1.4rem 2rem;border-top:1px solid rgba(201,168,76,0.3);border-bottom:1px solid rgba(201,168,76,0.3);">
-      <p style="font-size:1.1rem;color:var(--text-primary);line-height:1.9;font-family:'Cormorant Garamond',serif;font-style:italic;">
-        <strong style="font-style:normal;color:var(--gold);">The time is at hand.</strong>
-        Let us turn our hearts to the truth and come out of that which Scripture calls
-        <strong style="font-style:normal;color:var(--gold);">Babylon.</strong>
-      </p>
-    </div>
+    <p class="babylon">
+      <strong>The time is at hand.</strong>
+      Let us turn our hearts to the truth and come out of that which Scripture calls
+      <strong>Babylon.</strong>
+    </p>
   </div>
-  <div class="hr-gold"><span>&#9670;</span></div>
-  <div class="sec">
+
+  <!-- The Journey -->
+  <div class="story-section">
     <div class="section-label">The Journey</div>
-    <h2>Fifteen years across <em>denominations.</em></h2>
-    <p>We have sat in evangelical churches, charismatic services, reformed congregations, and independent fellowships. We have listened to sermons from pastors with millions of followers and from unknown teachers in small rooms. We have read the creeds, the confessions, the systematic theologies, and the apologetics.</p>
-    <p>What we found consistently was a gap. Between what the apostles wrote and what was being taught. Between what Scripture says and what tradition had settled on. Between the questions people were carrying and the answers the institution was equipped to give.</p>
-    <div class="pull">
-      <p>How capable is current teaching at answering the genuine, challenging questions of people who are actually searching? How much of it is based on Scripture? How much has merged with the way of the world, the demands of a media platform, or the economics of a large organisation?</p>
+    <h2 class="section-title">Fifteen years across <em>denominations.</em></h2>
+    <p>We have sat in evangelical churches, charismatic services, reformed congregations, and independent fellowships. We have listened to sermons from well-known voices and unknown teachers in small rooms. We have read the creeds, the confessions, the systematic theologies, and the apologetics.</p>
+    <p>What we found consistently was a gap. Between what the apostles wrote and what was being taught. Between what Scripture says and what tradition had settled on. Between the questions people were actually carrying and the answers the institution was equipped to give.</p>
+    <div class="scripture-block">
+      <span class="scripture-ref">Acts 17:11</span>
+      <p class="scripture-text">The Bereans received the message with great eagerness and examined the Scriptures every day to see if what Paul said was true.</p>
     </div>
-    <p>These were not comfortable questions. They led to uncomfortable places. We did not choose to arrive at the conclusions below. We followed the evidence.</p>
+    <p>These were not comfortable questions. They led to uncomfortable places. We did not choose to arrive at the conclusions listed below. We followed the evidence where it led.</p>
   </div>
-  <div class="hr-gold"><span>&#9670;</span></div>
-  <div class="sec">
+
+  <!-- Progressive conclusions -->
+  <div class="story-section">
     <div class="section-label">What We Found</div>
-    <h2>Progressive conclusions <em>from Scripture.</em></h2>
-    <p>The following convictions were formed through years of research, cross-referencing primary sources, and testing against the apostolic text. We hold them not as a creed to be defended but as conclusions to be examined. Test them yourself.</p>
-    <ol class="num-list">
-      <li><div class="li-body"><strong><a href="references.html#one-god" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">One God, Eternal Father, Almighty, Most High.</a></strong> Not a Trinity of co-equal persons, but the God of Abraham, Isaac and Jacob, the Father of our Lord Jesus Christ.</div></li>
-      <li><div class="li-body"><strong><a href="references.html#one-god" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Jesus Christ is the Son of God.</a></strong> Known as Lord, Messiah, King, Mighty God, High Priest, and the Second Adam. Distinct from the Father who sent Him.</div></li>
-      <li><div class="li-body"><strong><a href="cosmology.html" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">The earth is not a spinning globe.</a></strong> Scripture describes a circular earth founded upon pillars, enclosed by a firmament upon which the heavenly waters rest.</div></li>
-      <li><div class="li-body"><strong><a href="project314.html" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">The Tabernacle is circular, not rectangular.</a></strong> The design God gave Moses embeds the constant Pi (3.14). The shadow of the actual heavenly dwelling.</div></li>
-      <li><div class="li-body"><strong><a href="references.html#short-season" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">We are in the Short Season, not the Church Age.</a></strong> The millennial reign of Yeshua on this earth ended around 250 years ago. Colonisation and world wars were among the numerous attempts made to destroy what once stood in glory all over the world. What history calls the Dark Ages is the disguise of the millennial age.</div></li>
-      <li><div class="li-body"><strong><a href="references.html" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Secular Israel is not the true Israel</a></strong> by geography, biology, or biblical explanation. Mainstream Christian support for the modern secular state is unfounded by Scripture.</div></li>
-      <li><div class="li-body"><strong><a href="references.html#articles" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Current world events follow a script</a></strong> written through media, religion, politics, and education progressively from the 17th century onward.</div></li>
-      <li><div class="li-body"><strong><a href="references.html#articles" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">The 66-book canon is incomplete.</a></strong> Books referenced within Scripture itself have been systematically excluded. Their exclusion serves a purpose.</div></li>
-      <li><div class="li-body"><strong><a href="references.html" style="color:var(--text-primary);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Western missionary Christianity is not the apostolic faith.</a></strong> It has been shaped by colonisation, political agendas, the prosperity economy, and institutional interests.</div></li>
-    </ol>
-  </div>
-  <div class="hr-gold"><span>&#9670;</span></div>
-  <div class="sec">
-    <div class="section-label">Why We Share This</div>
-    <h2>Not to argue. <em>To invite.</em></h2>
-    <p>We share these conclusions because we know there are many individuals who have reached similar places privately and have not found others willing to say plainly what they have come to believe. Search the Scriptures for yourself. Test everything. Hold fast to what is true.</p>
-    <div class="pull">
-      <p>"The Bereans examined the Scriptures every day to see if what Paul said was true."</p>
-      <cite>Acts 17:11</cite>
+    <h2 class="section-title">Progressive conclusions <em>from Scripture.</em></h2>
+    <p>Each one took years of research, cross-referencing primary sources, and testing against the apostolic text. We hold them not as a creed to be defended, but as conclusions to be examined. Click any heading to explore the evidence.</p>
+    <div class="conclusions">
+      <div class="conclusion-item">
+        <div class="c-num">1</div>
+        <div class="c-body">
+          <div class="c-title"><a href="references.html#one-god">One God, Eternal Father, Almighty, Most High.</a></div>
+          <p class="c-desc">Not a Trinity of co-equal persons, but the God of Abraham, Isaac and Jacob, the Father of our Lord Jesus Christ. Every apostolic epistle declares this from its very first line.</p>
+        </div>
+      </div>
+      <div class="conclusion-item">
+        <div class="c-num">2</div>
+        <div class="c-body">
+          <div class="c-title"><a href="references.html#one-god">Jesus Christ is the Son of God.</a></div>
+          <p class="c-desc">Known in the New Testament as Lord, Messiah, King, Mighty God, High Priest, and the Second Adam. Distinct from the Father who sent Him, yet fully His.</p>
+        </div>
+      </div>
+      <div class="conclusion-item">
+        <div class="c-num">3</div>
+        <div class="c-body">
+          <div class="c-title"><a href="cosmology.html">The earth is not a spinning globe.</a></div>
+          <p class="c-desc">Scripture describes a circular earth founded upon pillars, enclosed by a firmament upon which the heavenly waters rest. This is the consistent, plain testimony of the biblical text from Genesis to Revelation.</p>
+        </div>
+      </div>
+      <div class="conclusion-item">
+        <div class="c-num">4</div>
+        <div class="c-body">
+          <div class="c-title"><a href="project314.html">The Tabernacle is circular, not rectangular.</a></div>
+          <p class="c-desc">The design God gave Moses embeds the constant Pi (3.14). It is the shadow of the actual heavenly dwelling, not a random architectural brief.</p>
+        </div>
+      </div>
+      <div class="conclusion-item">
+        <div class="c-num">5</div>
+        <div class="c-body">
+          <div class="c-title"><a href="references.html#short-season">We are in the Short Season, not the Church Age.</a></div>
+          <p class="c-desc">The millennial reign of Yeshua on this earth ended around 250 years ago. Colonisation and world wars were attempts to destroy what once stood in glory all over the world. What history calls the Dark Ages is the disguise of the millennial age.</p>
+        </div>
+      </div>
+      <div class="conclusion-item">
+        <div class="c-num">6</div>
+        <div class="c-body">
+          <div class="c-title"><a href="references.html">Secular Israel is not the true Israel.</a></div>
+          <p class="c-desc">Not by geography, biology, or biblical explanation. The mainstream Christian community's unconditional support for the modern secular state of Israel is, by scriptural standards, unfounded.</p>
+        </div>
+      </div>
+      <div class="conclusion-item">
+        <div class="c-num">7</div>
+        <div class="c-body">
+          <div class="c-title"><a href="references.html#articles">Current world events follow a deliberate script.</a></div>
+          <p class="c-desc">Written through media, religion, politics, and education progressively from the 17th century onward. It has been predicted more accurately by scientists and political theorists than by the church.</p>
+        </div>
+      </div>
+      <div class="conclusion-item">
+        <div class="c-num">8</div>
+        <div class="c-body">
+          <div class="c-title"><a href="references.html#articles">The 66-book canon is incomplete.</a></div>
+          <p class="c-desc">Books referenced within Scripture itself have been systematically excluded. Their exclusion serves a purpose. Their inclusion changes the picture considerably.</p>
+        </div>
+      </div>
+      <div class="conclusion-item">
+        <div class="c-num">9</div>
+        <div class="c-body">
+          <div class="c-title"><a href="references.html">Western missionary Christianity is not the apostolic faith.</a></div>
+          <p class="c-desc">Shaped by colonisation, political agendas, the prosperity economy, and institutional interests. It does not meet the biblical standard on numerous counts.</p>
+        </div>
+      </div>
     </div>
   </div>
+
+  <!-- Why we share -->
+  <div class="story-section">
+    <div class="section-label">Why We Share This</div>
+    <h2 class="section-title">Not to argue. <em>To invite.</em></h2>
+    <p>We share these conclusions because we know there are many individuals who have reached similar places privately and have not found others willing to say plainly what they have come to believe. If you have arrived at any of these conclusions and are looking for people who take the question seriously, you are in the right place.</p>
+    <p>Search the Scriptures for yourself. Test everything. Hold fast to what is true.</p>
+    <div class="story-cards">
+      <div class="s-card"><h3>Open <em>Tables</em></h3><p>We share food, Scripture, and questions. Meals are the oldest form of fellowship the church has ever known.</p></div>
+      <div class="s-card"><h3>No <em>Platform</em></h3><p>No pastor. No stage. No production. Everyone contributes. That is the pattern of 1 Corinthians 14:26.</p></div>
+      <div class="s-card"><h3>Honest <em>Questions</em></h3><p>No question is off limits. If the truth cannot survive examination it is not worth holding.</p></div>
+      <div class="s-card"><h3>Come as you <em>are.</em></h3><p>You do not need to have arrived at all the same conclusions. You need only be serious about finding the truth.</p></div>
+    </div>
+  </div>
+
 </div>
-</div>
-<div class="cta-box">
-  <h2>Come as you <em>are.</em></h2>
-  <p>If this resonates, reach out. We are ordinary people who found the living Word and could not look away.</p>
+
+<div style="text-align:center;padding:4rem 2rem;background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);">
+  <div class="section-label" style="justify-content:center;">Connect</div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;margin-bottom:1rem;">Come as you <em style="color:var(--gold);font-style:italic;">are.</em></h2>
+  <p style="color:var(--text-secondary);max-width:480px;margin:0 auto 2rem;line-height:1.8;">If this resonates, reach out. We are ordinary people who found the living Word and could not look away.</p>
   <a href="index.html#join" class="btn-primary">Connect With Us</a>
 </div>
 
