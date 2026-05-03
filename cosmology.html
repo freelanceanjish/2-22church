@@ -51,7 +51,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .mobile-menu a:hover{color:var(--gold);}
 .mobile-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:var(--text-muted);font-size:1.8rem;cursor:pointer;line-height:1;}
 /* PAGE HEADER */
-.page-header{padding:10rem 2rem 5rem;background:var(--deep-mid);border-bottom:0.5px solid var(--border-subtle);text-align:center;;position:relative;background:#0D1117 url('bg-cosmology.jpg') center/cover no-repeat;}
+.page-header{position:relative;padding:10rem 2rem 5rem;background:#0D1117 url('bg-cosmology.jpg') center/cover no-repeat;border-bottom:0.5px solid var(--border-subtle);text-align:center;}
 .eyebrow{font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;justify-content:center;gap:1rem;}
 .eyebrow::before,.eyebrow::after{content:'';display:block;width:30px;height:0.5px;background:var(--gold);opacity:0.5;}
 .page-header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6vw,5rem);font-weight:300;line-height:1.05;}
@@ -219,20 +219,21 @@ body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-pr
     <li><a href="old-maps.html">Old Maps</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
-  <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
+  <button class="nav-hamburger" onclick="document.getElementById('mm').classList.toggle('open')" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
-<div class="mobile-menu" id="mobile-menu">
-  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
-  <a href="index.html#about" onclick="document.getElementById('mobile-menu').classList.remove('open')">Foundation</a>
-  <a href="blog.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">Blog</a>
-  <a href="references.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">Resources</a>
-  <a href="project314.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">God of Pi</a>
-  <a href="cosmology.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">Biblical Cosmology</a>
-  <a href="old-maps.html" onclick="document.getElementById('mobile-menu').classList.remove('open')">Old Maps</a>
-  <a href="index.html#join" style="color:var(--gold);" onclick="document.getElementById('mobile-menu').classList.remove('open')">Connect</a>
+<div class="mobile-menu" id="mm">
+  <button class="mobile-close" onclick="document.getElementById('mm').classList.remove('open')">&times;</button>
+  <a href="index.html#about" onclick="document.getElementById('mm').classList.remove('open')">Foundation</a>
+  <a href="blog.html" onclick="document.getElementById('mm').classList.remove('open')">Blog</a>
+  <a href="references.html" onclick="document.getElementById('mm').classList.remove('open')">Resources</a>
+  <a href="project314.html" onclick="document.getElementById('mm').classList.remove('open')">God of Pi</a>
+  <a href="cosmology.html" onclick="document.getElementById('mm').classList.remove('open')">Biblical Cosmology</a>
+  <a href="old-maps.html" onclick="document.getElementById('mm').classList.remove('open')">Old Maps</a>
+  <a href="index.html#join" style="color:var(--gold);" onclick="document.getElementById('mm').classList.remove('open')">Connect</a>
 </div>
+
 
 
 <div class="page-header">
@@ -589,42 +590,33 @@ body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-pr
       <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
       <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
     </div>
-    <div class="footer-col">
-      <h4>Explore</h4>
-      <ul>
-        <li><a href="index.html#about">Our Foundation</a></li>
-        <li><a href="index.html#beliefs">What We Believe</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="project314.html">God of Pi</a></li>
-        <li><a href="cosmology.html">Biblical Cosmology</a></li>
-        <li><a href="old-maps.html">Old Maps</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Resources</h4>
-      <ul>
-        <li><a href="references.html#one-god">One God</a></li>
-        <li><a href="references.html#short-season">Short Season</a></li>
-        <li><a href="references.html#biblical-earth">Biblical Earth</a></li>
-        <li><a href="references.html#podcasts">Podcasts</a></li>
-        <li><a href="old-maps.html">Old Maps</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Connect</h4>
-      <ul>
-        <li><a href="index.html#join">Join a Gathering</a></li>
-        <li><a href="mailto:contact@2-22church.com">Email Us</a></li>
-        <li><a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener">YouTube Channel</a></li>
-        <li><a href="index.html#join">Start a Group</a></li>
-      </ul>
-    </div>
+    <div class="footer-col"><h4>Explore</h4><ul>
+      <li><a href="index.html#about">Our Foundation</a></li>
+      <li><a href="index.html#beliefs">What We Believe</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="project314.html">God of Pi</a></li>
+      <li><a href="cosmology.html">Biblical Cosmology</a></li>
+      <li><a href="old-maps.html">Old Maps</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Resources</h4><ul>
+      <li><a href="references.html#one-god">One God</a></li>
+      <li><a href="references.html#short-season">Short Season</a></li>
+      <li><a href="references.html#biblical-earth">Biblical Earth</a></li>
+      <li><a href="references.html#podcasts">Podcasts</a></li>
+      <li><a href="old-maps.html">Old Maps</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Connect</h4><ul>
+      <li><a href="index.html#join">Join a Gathering</a></li>
+      <li><a href="mailto:contact@2-22church.com">contact@2-22church.com</a></li>
+      <li><a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener">YouTube Channel</a></li>
+    </ul></div>
   </div>
   <div class="footer-bottom">
     <span>2025 2:22 Church · 2-22church.com</span>
     <span class="footer-verse">"Where two or three gather in my name, there am I with them." Matthew 18:20</span>
   </div>
 </footer>
+
 
 
 
