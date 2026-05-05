@@ -22,7 +22,7 @@ const POSTS = [
     date: "5 May 2026",
     category: "Teaching",
     excerpt: "No man has seen God at any time. Yet Abraham spoke with visitors. Moses encountered a burning bush. Jacob wrestled until dawn. How do we reconcile these accounts? The answer lies in one of the most ancient and consistently applied principles in Scripture: divine agency.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=80",
+    image: "agencies_of_god.svg",
     content: `
 <p>Scripture is unambiguous on one point: the Eternal Father, the Most High God, has never been seen by human eyes in His essence. And yet the pages of the Old Testament are filled with accounts of God speaking face to face, appearing in fire and cloud, wrestling with a man through the night, and sitting down to eat with Abraham by the oaks of Mamre.</p>
 
@@ -149,11 +149,11 @@ const POSTS = [
   },
   {
     id: "just-reasonable-mind-devout-life-francis-de-sales",
-    title: "On Being Just and Reasonable, Francis de Sales, Introduction to the Devout Life, Part III, Ch. 36",
+    title: "Partiality in Love: Self and Neighbours",
     date: "28 April 2026",
     category: "Reflection",
     excerpt: "Reason is the defining mark of man, writes Francis de Sales, yet truly reasonable people are rare. Self-love is the reason why. Chapter 36 names the small daily dishonesties we commit without noticing, and offers one discipline to correct them.",
-    image: "https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=900&q=80",
+    image: "partiality_in_love_self_neighbours.svg",
     content: `
 <p><em>Introduction to the Devout Life</em>, Francis de Sales. Part Three, Chapter 36: <strong>That We Must Be Just and Reasonable.</strong></p>
 
@@ -207,7 +207,7 @@ const POSTS = [
     date: "22 April 2026",
     category: "Teaching",
     excerpt: "I do not belong to any denomination, nor am I introducing any cult. What follows is a thorough, verse-by-verse examination of what Scripture actually says about the nature of Jesus Christ, and why the Trinitarian position cannot stand on the plain testimony of the Bible.",
-    image: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=900&q=80",
+    image: "Is_Jesus_GoD.jpg",
     content: `
 
 <p><em>Before you assume which denomination I belong to, I do not belong to any denomination, nor am I introducing any cult. I am immensely clear about the message the Spirit of God wants to bring to His church in this hour. People like me have started pushing back against the non-foundational work done in mainstream Christianity. I am not afraid of the opposition that comes from challenging popular Trinitarian belief. The Spirit of God wants to bring clarity, yes, clarity, to the church. As the coming of our Lord Jesus Christ draws near, and as the salvation of millions of Muslims and Jews is at hand, the Gospel must return to its original, apostolic estate. What follows is a point-by-point engagement with the Trinitarian position, examined strictly by Scripture.</em></p>
