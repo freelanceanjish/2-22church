@@ -17,6 +17,137 @@
 
 const POSTS = [
   {
+    id: "agencies-of-god-how-the-almighty-speaks-acts-and-appears",
+    title: "The Agencies of God: How the Almighty Speaks, Acts and Appears",
+    date: "5 May 2026",
+    category: "Teaching",
+    excerpt: "No man has seen God at any time. Yet Abraham spoke with visitors. Moses encountered a burning bush. Jacob wrestled until dawn. How do we reconcile these accounts? The answer lies in one of the most ancient and consistently applied principles in Scripture: divine agency.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=80",
+    content: `
+<p>Scripture is unambiguous on one point: the Eternal Father, the Most High God, has never been seen by human eyes in His essence. And yet the pages of the Old Testament are filled with accounts of God speaking face to face, appearing in fire and cloud, wrestling with a man through the night, and sitting down to eat with Abraham by the oaks of Mamre.</p>
+
+<p>How do we hold these two things together without contradiction? The answer is one of the most consistently applied principles in the whole of biblical revelation: the principle of divine <strong>agency</strong>.</p>
+
+<blockquote>"No one has seen God at any time. The only begotten Son, who is in the bosom of the Father, He has declared Him." — John 1:18</blockquote>
+
+<blockquote>"You cannot see My face; for no man shall see Me, and live." — Exodus 33:20</blockquote>
+
+<h2>1. The Principle of Agency (Shaliah)</h2>
+
+<p>In ancient Hebrew law and culture, the principle of <em>shaliah</em> governed all authorised representation. The rule was simple and absolute: <strong>a man's agent is as the man himself.</strong> When a fully authorised messenger spoke or acted on behalf of his principal, he carried that person's full legal identity, authority, and name.</p>
+
+<p>This was not a theological abstraction. It was the legal grammar of the ancient world. And God applies it throughout Scripture with complete consistency. When He sends an angel with His name and His word, that angel speaks in the first person. Not because the angel <em>is</em> God, but because the angel is God's lawfully authorised representative.</p>
+
+<blockquote>"Behold, I send an Angel before you to keep you in the way and to bring you into the place which I have prepared. Beware of Him and obey His voice; do not provoke Him, for He will not pardon your transgressions; for <strong>My name is in Him.</strong>" — Exodus 23:20-21</blockquote>
+
+<p>The Name being in the angel is not a metaphor. It is a legal declaration. This messenger carries Yahweh's full authority. To obey him is to obey God. To resist him is to resist God. The agent is, in every legally operative sense, the principal.</p>
+
+<h2>2. The Burning Bush: Agency in Action</h2>
+
+<p>The account of Moses at Horeb is one of the clearest examples of this principle at work. Read the opening carefully:</p>
+
+<blockquote>"The Angel of the Lord appeared to him in a flame of fire from the midst of a bush." — Exodus 3:2</blockquote>
+
+<p>An angel appears. The text is precise. But three verses later:</p>
+
+<blockquote>"When the Lord saw that he turned aside to look, God called to him from the midst of the bush and said, 'Moses, Moses!'" — Exodus 3:4</blockquote>
+
+<p>Now it is God calling. Then it is the Lord speaking. The text moves between the agent and the principal without apparent effort, because in the framework of ancient agency they are legally identical. Moses is not speaking to two different beings. He is speaking to one authorised representative of the Most High, who speaks in the name and with the full authority of the One who sent him.</p>
+
+<p>This is not textual confusion. It is the legal language of agency applied with precision.</p>
+
+<h2>3. The Three Visitors at Mamre</h2>
+
+<p>One of the most remarkable agency accounts in all of Scripture is found in Genesis 18. Three men appear to Abraham by the oaks of Mamre. He runs to meet them, bows to the ground, and serves them food. And then, astonishingly:</p>
+
+<blockquote>"Then the Lord appeared to him by the oaks of Mamre... and he looked up and saw three men standing opposite him." — Genesis 18:1-2</blockquote>
+
+<p>The text opens by saying the Lord appeared, and then describes three men. Two of the three are later identified as angels who go on to Sodom (Genesis 19:1). The third continues in conversation with Abraham — and that conversation is repeatedly attributed directly to Yahweh.</p>
+
+<blockquote>"And the Lord said, 'Shall I hide from Abraham what I am about to do?'" — Genesis 18:17</blockquote>
+
+<p>Abraham is not speaking with God the Father in His essential being. He is speaking with an authorised divine agent who carries the Name, speaks the word, and transacts the will of the Most High. The encounter is entirely real. The agent is entirely present. But the Eternal Father remains, as He always is, beyond the finite capacity of human vision and contact.</p>
+
+<h2>4. Jacob Wrestles at the Jabbok</h2>
+
+<p>Jacob's night of wrestling in Genesis 32 is another account where the agency principle resolves what would otherwise be a theological impossibility:</p>
+
+<blockquote>"Then Jacob was left alone; and a Man wrestled with him until the breaking of day." — Genesis 32:24</blockquote>
+
+<p>A man. And yet when it is over, Jacob names the place Peniel: <em>"I have seen God face to face, and my life is preserved."</em> The prophet Hosea later confirms: <em>"He struggled with the angel and prevailed."</em> (Hosea 12:4)</p>
+
+<p>God's agent and God Himself are spoken of interchangeably, exactly as the shaliah principle requires. Jacob saw God's face in the sense that he met God's fully authorised representative. His life was preserved precisely because he did not encounter the uncovered glory of the Most High.</p>
+
+<h2>5. The Glory, the Cloud and the Fire: Theophanic Agencies</h2>
+
+<p>Beyond the angel of the Lord, God employs a second category of agency: visible manifestations of His presence that are real but not His essential being.</p>
+
+<p>The pillar of cloud by day and fire by night guided Israel through the wilderness (Exodus 13:21). The Kavod, the glory cloud, descended upon the Tabernacle so powerfully that Moses could not enter (Exodus 40:34-35). Ezekiel beholds the glory of the Lord in overwhelming detail and falls on his face (Ezekiel 1:28).</p>
+
+<p>In every case, what is encountered is a real, objective, externally present manifestation of God's presence. But it is not the Eternal Father in His unmediated essence. It is the outward expression of that essence extended toward the finite world in a form that does not destroy what it touches.</p>
+
+<blockquote>"The glory of the Lord settled on Mount Sinai, and the cloud covered it six days... and to the eyes of the sons of Israel the appearance of the glory of the Lord was like a consuming fire on the mountain top." — Exodus 24:16-17</blockquote>
+
+<h2>6. Moses and the Face of God</h2>
+
+<p>Numbers 12:8 contains one of the most striking statements about Moses's access to God:</p>
+
+<blockquote>"With him I speak mouth to mouth, clearly and not in riddles; and he beholds the form of the Lord."</blockquote>
+
+<p>And yet Exodus 33:20 states categorically that no man may see God's face and live. Is there a contradiction? No. The resolution is precise. Moses was granted a unique proximity to the divine agent through whom God communicated. He saw the <em>form</em> — the representation, the authorised image — not the uncovered essence. And even then, when Moses asked to see the glory, he was placed in the cleft of the rock as God's glory passed by (Exodus 33:22-23). What Moses glimpsed was the aftermath, the trailing edge of divine presence, not the face of the Father Himself.</p>
+
+<blockquote>"You shall see My back; but My face shall not be seen." — Exodus 33:23</blockquote>
+
+<h2>7. One God. Many Agencies. One Appointed Son.</h2>
+
+<p>This is the thread running through the whole of Scripture and it must be stated plainly: <strong>there is one God. The Eternal Father. The Almighty. The Most High.</strong> He is not a Trinity. He has not shared His throne with co-equal persons. He is One, as He declared to Israel, as every apostle affirmed from the opening line of every epistle.</p>
+
+<p>Throughout the ages, this one God communicated through various agencies: angels, the glory cloud, the pillar of fire, the Word spoken through prophets. These were not God Himself in His essence. They were His authorised instruments, each carrying His name and executing His will for that appointed moment.</p>
+
+<blockquote>"At many times and in many ways, God spoke to our fathers by the prophets, but in these last days He has spoken to us by His Son, whom He appointed the heir of all things, through whom also He created the world." — Hebrews 1:1-2</blockquote>
+
+<p>Many times. Many ways. Prophets, angels, fire, cloud, voice. But then: the Son. Not another agency among equals. The appointed one. The heir. The one through whom the Father chose to speak His final and complete word.</p>
+
+<p>And this is the climax of the whole story: the Eternal Father, at the fullness of time, chose a Son. Sent Him into the world. And when that Son had completed everything He was sent to do, the Father did something no agency before Him had ever received:</p>
+
+<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ." — Acts 2:36</blockquote>
+
+<p><em>Made.</em> The Father made Him Lord. This is Peter at Pentecost, preaching under the fullness of the Spirit, declaring the central truth of the gospel: the Lordship of Jesus Christ is not something He possessed from eternity as the second person of a Trinity. It is something the Father conferred upon Him. It is the Father's own declaration about His Son.</p>
+
+<blockquote>"Therefore God also has highly exalted Him and given Him the name which is above every name, that at the name of Jesus every knee should bow... and that every tongue should confess that Jesus Christ is Lord, to the glory of God the Father." — Philippians 2:9-11</blockquote>
+
+<p>The Father exalted Him. The Father gave Him the Name. The exaltation of the Son is the act of the Father, and it concludes — mark this — <em>to the glory of God the Father.</em> The Son's Lordship does not compete with the Father's sovereignty. It expresses it. It is the Father's chosen means of saving all nations.</p>
+
+<blockquote>"He is the image of the invisible God, the firstborn over all creation." — Colossians 1:15</blockquote>
+
+<blockquote>"No one has seen God at any time. The only begotten Son, who is in the bosom of the Father, He has declared Him." — John 1:18</blockquote>
+
+<p>The Son declares the Father. The agencies of the Old Testament prepared the way. The Son is the fulfillment: God's final, complete, and appointed representative through whom all nations are called to salvation.</p>
+
+<h2>8. What This Means for Us</h2>
+
+<p>Understanding divine agency is not a theological curiosity. It is the foundation of everything.</p>
+
+<p>There is <strong>one God</strong> — the Eternal Father, the Almighty, the Most High. He has never been seen by human eyes in His essence. He has never shared His throne with co-equal persons. He is One. This has never changed and will never change.</p>
+
+<p>Throughout history He spoke through various agencies: angels, prophets, the glory cloud, the pillar of fire, the Word. Each was real. Each carried His authority. None was the Father Himself in His unveiled essence.</p>
+
+<p>And then, at the appointed time, He sent His Son. Born of a woman, born under the law. Made in the likeness of men. And when that Son had walked every step He was sent to walk, suffered every suffering He was sent to bear, and risen from the dead as the Father had sworn He would, the Father spoke His final word over all of history:</p>
+
+<blockquote>"God has made this Jesus both Lord and Christ." — Acts 2:36</blockquote>
+
+<p>He is Lord over all nations. Lord over the living and the dead. Lord over every power and authority. And the response of every person who hears this is the same as it was at Pentecost: repent, and be baptised in the name of Jesus Christ for the forgiveness of sins (Acts 2:38).</p>
+
+<p>The agencies of God throughout history all pointed here. The burning bush, the wrestling at the Jabbok, the three visitors at Mamre, the glory descending on the Tabernacle: all of it was preparation for the one in whom the fullness of God's self-disclosure would be made flesh.</p>
+
+<blockquote>"Whoever has seen Me has seen the Father." — John 14:9</blockquote>
+
+<p>Not because the Son is the Father. But because the Son is the Father's perfect, appointed, exalted agent, Lord of all, Saviour of all nations, to the eternal glory of the one God who sent Him.</p>
+
+<blockquote>"For there is one God and one Mediator between God and men, the Man Christ Jesus, who gave Himself a ransom for all." — 1 Timothy 2:5-6</blockquote>
+    `
+  },
+  {
     id: "just-reasonable-mind-devout-life-francis-de-sales",
     title: "On Being Just and Reasonable, Francis de Sales, Introduction to the Devout Life, Part III, Ch. 36",
     date: "28 April 2026",
