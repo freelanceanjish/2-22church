@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questions and Answers - 2:22 Church</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+<style>
+
+/* Q&A ACCORDION */
+.qa-body{max-width:780px;margin:0 auto;padding:5rem 2rem 8rem;}
+.qa-intro{text-align:center;margin-bottom:4rem;}
+.qa-intro p{font-size:1rem;color:var(--text-secondary);line-height:1.85;}
+.qa-group{margin-bottom:3rem;}
+.qa-group-title{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;padding-bottom:0.6rem;border-bottom:0.5px solid var(--border);}
+.qa-item{border-bottom:0.5px solid var(--border-subtle);}
+.qa-item:first-of-type{border-top:0.5px solid var(--border-subtle);}
+.qa-question{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1.5rem;padding:1.4rem 0;cursor:pointer;
+  user-select:none;
+}
+.qa-question-text{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.15rem;font-weight:400;
+  color:var(--text-primary);line-height:1.4;
+}
+.qa-toggle{
+  flex-shrink:0;width:28px;height:28px;
+  border:0.5px solid var(--border);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--gold);font-size:1.2rem;font-weight:300;
+  transition:all 0.25s;line-height:1;
+}
+.qa-item.open .qa-toggle{
+  background:var(--gold);color:var(--deep);
+  border-color:var(--gold);
+  transform:rotate(45deg);
+}
+.qa-answer{
+  max-height:0;overflow:hidden;
+  transition:max-height 0.35s ease;
+}
+.qa-item.open .qa-answer{max-height:600px;}
+.qa-answer-inner{
+  padding:0 0 1.6rem 0;
+  color:var(--text-secondary);
+  font-size:0.95rem;line-height:1.9;
+}
+.qa-answer-inner p{margin-bottom:0.8rem;}
+.qa-answer-inner p:last-child{margin-bottom:0;}
+.qa-answer-inner blockquote{
+  border-left:2px solid var(--gold);
+  padding:0.8rem 1.2rem;
+  margin:1rem 0;
+  background:rgba(201,168,76,0.04);
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  color:var(--text-primary);
+  font-size:1rem;
+  line-height:1.7;
+}
+.qa-answer-inner cite{
+  display:block;margin-top:0.4rem;
+  font-size:0.62rem;letter-spacing:0.14em;
+  text-transform:uppercase;color:var(--gold);
+  font-style:normal;
+}
+.qa-cta{text-align:center;padding:4rem 2rem;background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);}
+.qa-cta h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;margin-bottom:0.8rem;}
+.qa-cta h2 em{color:var(--gold);font-style:italic;}
+.qa-cta p{color:var(--text-secondary);max-width:460px;margin:0 auto 1.8rem;line-height:1.8;}
+
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church"></a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">Foundation</a></li>
+    <li><a href="our-story.html">Our Story</a></li>
+    <li><a href="gatherings.html">Gatherings</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li class="nav-item">
+      <a href="references.html">Resources <span class="caret">&#9660;</span></a>
+      <div class="nav-dropdown">
+        <a href="references.html#one-god">One God</a>
+        <a href="references.html#short-season">Short Season</a>
+        <a href="references.html#biblical-earth">Biblical Earth</a>
+        <a href="references.html#podcasts">Podcasts</a>
+        <a href="references.html#debates">Debates</a>
+        <a href="references.html#articles">Articles</a>
+        <a href="references.html#archives">Archives</a>
+        <a href="old-maps.html">Old Maps</a>
+      </div>
+    </li>
+    <li><a href="project314.html">God of Pi</a></li>
+    <li><a href="cosmology.html">Cosmology</a></li>
+    <li><a href="old-maps.html">Old Maps</a></li>
+  </ul>
+  <a href="index.html#join" class="nav-cta">Connect</a>
+  <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">
+    <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Foundation</a>
+  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
+  <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
+  <a href="blog.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blog</a>
+  <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
+  <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
+  <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
+  <a href="index.html#join" style="color:var(--gold);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
+</div>
+
+<div class="page-header">
+  <div class="eyebrow">Common Questions</div>
+  <h1>Questions &amp; <em>Answers</em></h1>
+  <p>Honest questions deserve honest answers from Scripture. Everything here can be tested against the apostolic text.</p>
+</div>
+
+<div class="qa-body">
+
+  <div class="qa-intro">
+    <p>These are questions we are asked most often. We have answered each one directly, with the relevant Scripture, and without softening what the text actually says. Click any question to read the answer.</p>
+  </div>
+
+    <div class="qa-group">
+      <div class="qa-group-title">God</div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">Is there one God or three?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>There is one God: the Eternal Father, the Almighty, the Most High. Every apostolic epistle opens by distinguishing God the Father from the Lord Jesus Christ as two distinct persons. The God of Abraham, Isaac and Jacob is not a Trinity of co-equal persons. He is One.</p><blockquote>Hear, O Israel: the Lord our God, the Lord is one.<cite>Deuteronomy 6:4</cite></blockquote></div>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">Is Jesus God?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>Jesus Christ is the Son of God. He is Lord, Messiah, King, High Priest, and the Second Adam. He is not the Eternal Father. The Father sent Him, exalted Him, and made Him Lord and Christ at His resurrection.</p><blockquote>God has made this Jesus, whom you crucified, both Lord and Christ.<cite>Acts 2:36</cite></blockquote><p>The Son declares the Father. He is the image of the invisible God, the Father's authorised agent through whom all things were made and through whom we are saved.</p></div>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">Why does the Bible sometimes call Jesus God?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>The title God (theos) is applied to Jesus in a limited number of passages and in each case carries the meaning of divine authority and office, not the assertion that He is the Eternal Father. The consistent testimony of every apostle is that God is the Father and Jesus is His Son. Titles like Mighty God in Isaiah 9:6 are governmental titles of office given by the Father to the Son.</p></div>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">Did God appear in the Old Testament?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>The Most High God communicated through authorised agents throughout the Old Testament: the Angel of the Lord, the glory cloud, the pillar of fire, and the Word. These were real encounters but not the Eternal Father in His unveiled essence. No man can see the Father and live (Exodus 33:20). What was seen was the agent carrying God's Name and authority.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="qa-group">
+      <div class="qa-group-title">Jesus Christ</div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">Was Jesus pre-existent before His birth?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>In the purpose and foreknowledge of God, yes. The Lamb was slain from the foundation of the world in God's eternal plan. In actual personal existence, Jesus is the Son born of Mary, the Second Adam, fully human and fully appointed by the Father for His mission.</p></div>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">What does it mean that Jesus is Lord?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>The Lordship of Jesus is a title and authority conferred upon Him by the Father after His resurrection. It is not a statement that He is the Eternal Father. The Father exalted Him, gave Him the Name above every name, and seated Him at His right hand.</p><blockquote>Therefore God also has highly exalted Him and given Him the name which is above every name.<cite>Philippians 2:9</cite></blockquote></div>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">Is Jesus currently reigning?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>Yes. He was raised from the dead, ascended to the right hand of the Father, and is presently reigning as Lord and King. He is our living High Priest, interceding before the Father. He will return.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="qa-group">
+      <div class="qa-group-title">Baptism</div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">How should baptism be performed?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>Baptism is by full immersion in the name of Jesus Christ, for the forgiveness of sins. This is the command of Peter at Pentecost and the consistent practice recorded throughout the book of Acts. It is not a tradition. It is the documented apostolic standard.</p><blockquote>Repent and be baptised, every one of you, in the name of Jesus Christ for the forgiveness of your sins.<cite>Acts 2:38</cite></blockquote></div>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">Does baptism save?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>Baptism is the appointed act of obedience in which forgiveness is received and the covenant is entered. It is inseparable from repentance and faith. It is not a work that earns salvation but the moment in which the death, burial, and resurrection of Christ are applied to the believer.</p><blockquote>Do you not know that all of us who have been baptised into Christ Jesus were baptised into His death?<cite>Romans 6:3</cite></blockquote></div>
+        </div>
+      </div>
+    </div>
+    <div class="qa-group">
+      <div class="qa-group-title">The Earth and Creation</div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">Is the earth a globe?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>We do not believe so. The consistent cosmological testimony of Scripture describes a circular earth founded upon pillars, enclosed by a firmament upon which the heavenly waters rest. This is the plain reading of the text from Genesis to Job to Isaiah to Revelation, not metaphor.</p><blockquote>He sits enthroned above the circle of the earth... He stretches out the heavens like a canopy.<cite>Isaiah 40:22</cite></blockquote></div>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">What is the firmament?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>The firmament is the solid expanse described in Genesis 1, which divides the waters above from the waters below. It is called the raqia in Hebrew, a word that means a beaten or hammered-out expanse. Job 37:18 speaks of the skies spread out like a molten mirror. The firmament is real, structural, and part of God's designed creation.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="qa-group">
+      <div class="qa-group-title">The Church</div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">What is the church?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>The church is the living assembly of people who belong to Jesus Christ. It is not a building, a legal entity, or a denominational structure. Where believers gather in His name, the church is present. No address required.</p><blockquote>For where two or three gather in my name, there am I with them.<cite>Matthew 18:20</cite></blockquote></div>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">Do you need to attend a building to be part of the church?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>No. The apostles met in homes, by rivers, in prison, in the open air. What made it the church was never the address. It was the people gathered, the Spirit present, and the name of Jesus honoured among them.</p></div>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">Is tithing required?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>Obligatory tithing is not taught in the New Testament epistles. What the apostles modelled was voluntary, generous giving in response to genuine need, without compulsion and without institutional machinery.</p><blockquote>Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver.<cite>2 Corinthians 9:7</cite></blockquote></div>
+        </div>
+      </div>
+    </div>
+    <div class="qa-group">
+      <div class="qa-group-title">The Current Age</div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">Are we in the Church Age?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>We do not believe so. We believe the millennial reign of Yeshua with His saints occurred on this earth and ended around 250 years ago. The current age is what we call the Short Season, a period of concentrated deception and destruction before the return of the King.</p></div>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">What do you make of current world events?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>Current events follow a pattern that has been constructed progressively through media, religion, politics, and education from the 17th century onward. It has been predicted more accurately by historians and analysts than by the church. Scripture speaks to it plainly for those with eyes to see.</p></div>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-question">
+          <span class="qa-question-text">Is secular Israel the fulfilment of biblical prophecy?</span>
+          <span class="qa-toggle">+</span>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner"><p>No. Secular Israel is not the true Israel by geography, biology, or biblical explanation. The promises of God are fulfilled in the Messiah and in those who are His through faith. Unconditional political support for the modern secular state of Israel by the mainstream Christian community is not grounded in apostolic Scripture.</p></div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="qa-cta">
+  <h2>Have a question we <em>haven't answered?</em></h2>
+  <p>Reach out through the Connect form. We reply personally and we take every question seriously.</p>
+  <a href="index.html#join" class="btn-primary">Ask a Question</a>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html"><img src="logo.png" alt="2:22 Church" style="height:1.8rem;width:auto;display:block;margin-bottom:0.5rem;"></a>
+      <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
+      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+      <li><a href="index.html#about">Our Foundation</a></li>
+      <li><a href="index.html#beliefs">What We Believe</a></li>
+      <li><a href="our-story.html">Our Story</a></li>
+      <li><a href="gatherings.html">Gatherings</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="project314.html">God of Pi</a></li>
+      <li><a href="cosmology.html">Biblical Cosmology</a></li>
+      <li><a href="old-maps.html">Old Maps</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="references.html#one-god">One God</a></li>
+        <li><a href="references.html#short-season">Short Season</a></li>
+        <li><a href="references.html#biblical-earth">Biblical Earth</a></li>
+        <li><a href="references.html#podcasts">Podcasts</a></li>
+        <li><a href="old-maps.html">Old Maps</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="index.html#join">Join a Gathering</a></li>
+        <li><a href="mailto:hello@2-22church.com">Email Us</a></li>
+        <li><a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener">YouTube Channel</a></li>
+        <li><a href="index.html#join">Start a Group</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>2025 2:22 Church · 2-22church.com</span>
+    <span class="footer-verse">"Where two or three gather in my name, there am I with them." Matthew 18:20</span>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.qa-question').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = this.closest('.qa-item');
+    var isOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.qa-item.open').forEach(function(el) {
+      el.classList.remove('open');
+    });
+    // Open this one if it was closed
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+
+<script>
+/* Resources dropdown */
+(function(){
+  var item=document.querySelector('.nav-item');
+  if(!item)return;
+  item.querySelector(':scope>a').addEventListener('click',function(e){
+    e.preventDefault();
+    item.classList.toggle('open');
+  });
+  document.addEventListener('click',function(e){
+    if(!item.contains(e.target))item.classList.remove('open');
+  });
+})();
+function closeMenu(){
+  var item=document.querySelector('.nav-item');
+  if(item)item.classList.remove('open');
+}
+</script>
+</body>
+</html>
