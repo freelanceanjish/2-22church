@@ -41,11 +41,23 @@
 <nav>
   <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church"></a>
   <ul class="nav-links">
-    <li><a href="index.html#about">Foundation</a></li>
-    <li><a href="our-story.html">Our Story</a></li>
-    <li><a href="gatherings.html" class="active">Gatherings</a></li>
+    <li><a href="index.html#about">Truth</a></li>
+    <li class="nav-item">
+      <a href="our-story.html">About <span class="caret">&#9660;</span></a>
+      <div class="nav-dropdown">
+        <a href="our-story.html">Our Story</a>
+        <a href="gatherings.html" class="active">Gatherings</a>
+      </div>
+    </li>
     <li><a href="blog.html">Blog</a></li>
-    <li><a href="qa.html">Q&amp;A</a></li>
+    <li class="nav-item">
+      <a href="cosmology.html">Learn <span class="caret">&#9660;</span></a>
+      <div class="nav-dropdown">
+        <a href="cosmology.html">Biblical Cosmology</a>
+        <a href="project314.html">God of Pi</a>
+        <a href="old-maps.html">Old Maps</a>
+      </div>
+    </li>
     <li class="nav-item">
       <a href="references.html">Resources <span class="caret">&#9660;</span></a>
       <div class="nav-dropdown">
@@ -59,9 +71,7 @@
         <a href="old-maps.html">Old Maps</a>
       </div>
     </li>
-    <li><a href="project314.html">God of Pi</a></li>
-    <li><a href="cosmology.html">Cosmology</a></li>
-    <li><a href="old-maps.html">Old Maps</a></li>
+    <li><a href="qa.html">Q&amp;A</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
   <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
@@ -70,15 +80,15 @@
 </nav>
 <div class="mobile-menu" id="mobile-menu">
   <button class="mobile-close" onclick="document.getElementById('mm').classList.remove('open')">&times;</button>
-  <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Foundation</a>
+  <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Truth</a>
   <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
   <a href="blog.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blog</a>
-  <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
-  <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
-  <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
   <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
+  <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
   <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
+  <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
+  <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
   <a href="index.html#join" style="color:var(--gold);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
@@ -139,7 +149,6 @@
       <li><a href="our-story.html">Our Story</a></li>
       <li><a href="gatherings.html">Gatherings</a></li>
       <li><a href="qa.html">Q&amp;A</a></li>
-    <li><a href="qa.html">Q&amp;A</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="project314.html">God of Pi</a></li>
       <li><a href="cosmology.html">Biblical Cosmology</a></li>
@@ -160,7 +169,7 @@
       <h4>Connect</h4>
       <ul>
         <li><a href="index.html#join">Join a Gathering</a></li>
-        <li><a href="mailto:hello@2-22church.com">Email Us</a></li>
+        <li><a href="mailto:contact@2-22church.com">Email Us</a></li>
         <li><a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener">YouTube Channel</a></li>
         <li><a href="index.html#join">Start a Group</a></li>
       </ul>
@@ -189,6 +198,23 @@ function closeMenu(){
   var item=document.querySelector('.nav-item');
   if(item)item.classList.remove('open');
 }
+</script>
+<script>
+document.querySelectorAll('.nav-item').forEach(function(item){
+  item.querySelector(':scope>a').addEventListener('click',function(e){
+    e.preventDefault();
+    var isOpen=item.classList.contains('open');
+    document.querySelectorAll('.nav-item.open').forEach(function(el){el.classList.remove('open');});
+    if(!isOpen)item.classList.add('open');
+  });
+  item.querySelectorAll('.nav-dropdown a').forEach(function(a){
+    a.addEventListener('click',function(){item.classList.remove('open');});
+  });
+});
+document.addEventListener('click',function(e){
+  if(!e.target.closest('.nav-item'))
+    document.querySelectorAll('.nav-item.open').forEach(function(el){el.classList.remove('open');});
+});
 </script>
 </body>
 </html>
