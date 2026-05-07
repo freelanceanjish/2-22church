@@ -21,6 +21,7 @@ const POSTS = [
     title: "Autopsy of a Soul",
     date: "7 May 2026",
     category: "Testimony",
+    image: "autopsy_of_soul.svg",
     excerpt: "For years I was a man running from a weight I could not explain. Multiple relationships, jobs, churches — I kept moving, searching for rest. It was not the circumstances. It was me.",
     image: "autopsy_of_soul.svg",
     content: `
@@ -35,6 +36,14 @@ const POSTS = [
 <p>What followed was a kind of stripping I had never imagined for myself. I had to leave the apartment we had made into a home in Belgium. I sold my daughter's things, the furniture we had gathered, and the car. I packed what remained and flew back to my homeland, back to the house I had once left with great confidence in God, certain I was going somewhere. I moved back in with my parents, who are unbelievers, and I had no choice in the matter and nowhere else to turn.</p>
 
 <p>My father, the man who once burned my Bible, cursed the name of Jesus, and tore up my notes while I watched, became the one putting groceries on our table. God gave a contract to my unbelieving father just to keep me alive, and I sat across from him at meals while he questioned my faith, and I had no answer that felt honest. There was nowhere else to go, and I have come to understand that this was precisely the point. The Lord was not punishing me. He was teaching me, moulding me, convicting me, and beginning the slow work of restoring me through the very situation I would have chosen last from everything available to me.</p>
+
+<blockquote>"O God, You have rejected us and broken our defenses; You have been angry. O, restore us.", Psalm 60:1</blockquote>
+
+<p>That verse became mine. He had broken every defense I had built, every wall of pride, every strategy, every plan I had made for my own life. Not because He had abandoned me, but because He was answering a prayer deeper than the ones I had been praying. He was restoring me.</p>
+
+<blockquote>"It is good for me that I have been afflicted, that I may learn Your statutes.", Psalm 119:71</blockquote>
+
+<p>I did not understand this verse when I first read it. A man saying it is good that he suffered? But I understand it now. The affliction was the lesson. The emptiness was the curriculum. The shame was the classroom. I could not have learned what God needed to teach me in any other school.</p>
 
 <p>There, in that smallness and enforced stillness, I finally stopped running long enough to look honestly at my own life. I have to be honest about what I found. Procrastination. Authority issues. A dual and confused mind that could never quite settle. A heart of lust tied to masturbation and pornography, carried quietly for years behind a different public face. Arrogance, anger, and jealousy. And underneath everything else, my deepest trap: a subtle and dangerous pride that had convinced me, for most of my adult life, that I knew more than my seniors. I was never truly at peace with those above me. What I called principle and righteous conviction was, most of the time, my ego, and it had been costing me everything.</p>
 
@@ -53,6 +62,12 @@ const POSTS = [
 <p>I am living in dryness, in a situation the world would call shameful, with no title, no platform, and no visible proof that any of this is producing anything worth pointing to. But for the first time in as long as I can remember, my mind is not at war with itself. I am waiting on the Lord, learning slowly and imperfectly to live in all circumstances, and finding in the middle of these empty places a peace I was always running too fast to receive.</p>
 
 <p>The weight I was running from for all those years was never outside me. It was inside me the whole time, and the only way out of it was through.</p>
+
+<p>I know there are many reading this who are blaming God for the outcome of their lives. Many who are doubting whether He sees them at all. Many who have cried out and heard nothing back, and have started to wonder if there is anything there to hear them. I was all of those people at different points in this journey.</p>
+
+<p>I am not writing this because I have arrived somewhere. I am writing it from the middle of the desert, with soil on my hands from a garden I did not plant, in a house that is not mine, learning things I should have learned years ago. But I am writing it because what God has done in this season, quietly and without announcement, is real. He did not leave. He was working in the breaking.</p>
+
+<p>May this small piece of my story lift you, wherever you are. If God can reach into the smallest, most humbling corner of a man's life and begin a work there, He can reach into yours.</p>
 
 <blockquote>"The sacrifices of God are a broken spirit; a broken and contrite heart, O God, you will not despise.", Psalm 51:17</blockquote>
 
