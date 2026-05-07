@@ -22,7 +22,7 @@ const POSTS = [
     date: "7 May 2026",
     category: "Testimony",
     image: "autopsy_of_soul.svg",
-    excerpt: "For years I was a man running from a weight I could not explain. Multiple relationships, jobs, churches — I kept moving, searching for rest. It was not the circumstances. It was me.",
+    excerpt: "I was saved in 2009. I was sincere. But salvation is not a transaction that ends the moment you say yes to it. In the darkest hour, in the driest period, in the deepest bottom, God was designing something. He calls it an autopsy of the soul.",
     image: "autopsy_of_soul.svg",
     content: `
 <p>I was saved in 2009. I was sincere. I remember the hunger of those early years, the desire to know the Lord, to follow Him, to be close to Him. That was real. I do not doubt it. But salvation is not a transaction that ends the moment you say yes to it. Who said once saved, always saved? That is not scriptural. Faith is a living thing, held in close cooperation with God, and it demands everything you have, including the parts of yourself you have not yet had the courage to look at. We are always in the Lord's factory, always being built into the character of Yeshua, which means we are always being exposed to our own darkness, not as punishment, but as the necessary work of a God who loves us too much to leave us as we are.</p>
