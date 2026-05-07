@@ -22,7 +22,7 @@ const POSTS = [
     date: "7 May 2026",
     category: "Testimony",
     excerpt: "For years I was a man running from a weight I could not explain. Multiple relationships, jobs, churches — I kept moving, searching for rest. It was not the circumstances. It was me.",
-    image: "https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=900&q=80",
+    image: "autopsy_of_soul.svg",
     content: `
 <p>Fifteen years ago I gave my life to Christ. I was not a child when it happened — I was old enough to know what I was choosing, or at least I thought I was. But salvation is not a transaction that ends the moment you sign it. Who said once saved, always saved? That is not scriptural. Faith is a living thing, held in close cooperation with God, and it demands everything you have, including the parts of yourself you have not yet had the courage to look at. We are always in the Lord's factory, always being built into the character of Yeshua, which means we are always being exposed to our own darkness — not as punishment, but as the necessary work of a God who loves us too much to leave us as we are.</p>
 

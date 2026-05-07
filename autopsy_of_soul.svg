@@ -1,0 +1,57 @@
+<svg width="900" height="640" viewBox="0 0 680 480" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Autopsy of a Soul — a soul receiving light</title>
+<desc>A philosophical illustration of a human soul — a glowing figure emerging from darkness, light radiating from within the form.</desc>
+<defs>
+  <clipPath id="cl"><rect width="680" height="480"/></clipPath>
+</defs>
+
+<rect width="680" height="480" fill="#070A10"/>
+<ellipse cx="340" cy="240" rx="260" ry="240" fill="#0D1219"/>
+<ellipse cx="340" cy="240" rx="160" ry="180" fill="#101520"/>
+
+<ellipse cx="340" cy="248" rx="90" ry="90" fill="#C9A84C" opacity="0.04"/>
+<ellipse cx="340" cy="248" rx="58" ry="58" fill="#C9A84C" opacity="0.06"/>
+<ellipse cx="340" cy="248" rx="34" ry="34" fill="#C9A84C" opacity="0.10"/>
+<ellipse cx="340" cy="248" rx="16" ry="16" fill="#C9A84C" opacity="0.22"/>
+<ellipse cx="340" cy="248" rx="6"  ry="6"  fill="#E8D5A3" opacity="0.7"/>
+
+<circle cx="340" cy="128" r="36" fill="none" stroke="#C9A84C" stroke-width="1.2" opacity="0.55"/>
+<path d="M328,162 L328,176 Q340,182 352,176 L352,162" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.45"/>
+<path d="M328,176 Q295,182 272,196 Q258,204 254,218 L254,318 Q254,330 260,334 Q268,337 275,334 L275,258 Q275,252 282,250 L282,385 Q282,396 290,398 Q300,400 304,395 L304,270 Q316,265 340,264 Q364,265 376,270 L376,395 Q380,400 390,398 Q398,396 398,385 L398,250 Q405,252 405,258 L405,334 Q412,337 420,334 Q426,330 426,318 L426,218 Q422,204 408,196 Q385,182 352,176" fill="none" stroke="#C9A84C" stroke-width="1.1" opacity="0.5"/>
+
+<line x1="340" y1="248" x2="340" y2="132" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+<line x1="340" y1="248" x2="260" y2="200" stroke="#C9A84C" stroke-width="0.5" opacity="0.25"/>
+<line x1="340" y1="248" x2="420" y2="200" stroke="#C9A84C" stroke-width="0.5" opacity="0.25"/>
+<line x1="340" y1="248" x2="284" y2="390" stroke="#C9A84C" stroke-width="0.4" opacity="0.2"/>
+<line x1="340" y1="248" x2="396" y2="390" stroke="#C9A84C" stroke-width="0.4" opacity="0.2"/>
+
+<line x1="340" y1="90"  x2="340" y2="10"  stroke="#C9A84C" stroke-width="0.7" opacity="0.35" clip-path="url(#cl)"/>
+<line x1="308" y1="98"  x2="274" y2="32"  stroke="#C9A84C" stroke-width="0.5" opacity="0.25" clip-path="url(#cl)"/>
+<line x1="372" y1="98"  x2="406" y2="32"  stroke="#C9A84C" stroke-width="0.5" opacity="0.25" clip-path="url(#cl)"/>
+<line x1="254" y1="210" x2="170" y2="170" stroke="#C9A84C" stroke-width="0.5" opacity="0.2"  clip-path="url(#cl)"/>
+<line x1="426" y1="210" x2="510" y2="170" stroke="#C9A84C" stroke-width="0.5" opacity="0.2"  clip-path="url(#cl)"/>
+<line x1="284" y1="398" x2="240" y2="460" stroke="#C9A84C" stroke-width="0.4" opacity="0.18" clip-path="url(#cl)"/>
+<line x1="396" y1="398" x2="440" y2="460" stroke="#C9A84C" stroke-width="0.4" opacity="0.18" clip-path="url(#cl)"/>
+
+<circle cx="340" cy="128" r="52" fill="none" stroke="#C9A84C" stroke-width="0.5" opacity="0.18" stroke-dasharray="3 6"/>
+<ellipse cx="340" cy="265" rx="115" ry="165" fill="none" stroke="#C9A84C" stroke-width="0.5" opacity="0.1"/>
+<ellipse cx="340" cy="265" rx="140" ry="200" fill="none" stroke="#C9A84C" stroke-width="0.4" opacity="0.06"/>
+
+<circle cx="210" cy="155" r="1.5" fill="#C9A84C" opacity="0.4"/>
+<circle cx="195" cy="195" r="1"   fill="#C9A84C" opacity="0.3"/>
+<circle cx="468" cy="148" r="1.5" fill="#C9A84C" opacity="0.4"/>
+<circle cx="480" cy="192" r="1"   fill="#C9A84C" opacity="0.3"/>
+<circle cx="312" cy="42"  r="1.2" fill="#C9A84C" opacity="0.35"/>
+<circle cx="368" cy="36"  r="1"   fill="#C9A84C" opacity="0.3"/>
+<circle cx="226" cy="420" r="1.2" fill="#C9A84C" opacity="0.25"/>
+<circle cx="458" cy="425" r="1.2" fill="#C9A84C" opacity="0.25"/>
+<circle cx="158" cy="290" r="1"   fill="#C9A84C" opacity="0.2"/>
+<circle cx="520" cy="300" r="1"   fill="#C9A84C" opacity="0.2"/>
+
+<line x1="180" y1="442" x2="500" y2="442" stroke="#C9A84C" stroke-width="0.4" opacity="0.15"/>
+<ellipse cx="340" cy="442" rx="80" ry="6" fill="#C9A84C" opacity="0.04"/>
+
+<line x1="100" y1="463" x2="248" y2="463" stroke="#C9A84C" stroke-width="0.5" opacity="0.22"/>
+<line x1="432" y1="463" x2="580" y2="463" stroke="#C9A84C" stroke-width="0.5" opacity="0.22"/>
+<text x="340" y="467" font-family="Georgia,'Times New Roman',serif" font-size="12" fill="#C9A84C" opacity="0.65" text-anchor="middle" letter-spacing="4" font-style="italic">Autopsy of a Soul</text>
+</svg>
