@@ -17,6 +17,39 @@
 
 const POSTS = [
   {
+    id: "autopsy-of-a-soul",
+    title: "Autopsy of a Soul",
+    date: "7 May 2026",
+    category: "Testimony",
+    excerpt: "For years I was a man running from a weight I could not explain. Multiple relationships, jobs, churches — I kept moving, searching for rest. It was not the circumstances. It was me.",
+    image: "https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=900&q=80",
+    content: `
+<p>For years, I was a man running from a weight I could not explain. I had multiple relationships before marriage, each one a search for rest, for alignment, for something that would make the weight go away. I changed working environments, companies, bosses, churches, and roles more times than I can count. I told myself it was the circumstances. The job was wrong. The church was wrong. The people around me were wrong. It was not the circumstances. It was me.</p>
+
+<p>I have finally looked into the inside chambers of my heart and performed a raw autopsy on my own soul. What I found was not easy to name. Procrastination. Authority issues. A dual and confused mind. A heart of lust tied to masturbation and pornography. Arrogance. Anger. Jealousy. My biggest trap was a subtle but dangerous pride — I always thought I knew more than my seniors. I was never at peace with them. I felt a rebellion in me that I told myself was for a good cause. It was not a good cause. It was my ego dressed in principle.</p>
+
+<p>God finally brought me to a season of total spiritual dryness. For two years, I have been jobless. The ultimate humbling came when I was forced to move back with my parents and let them support me. My father — the man who once burned my Bible, cursed the name of Jesus, and tore my notes — became the one putting groceries on the table. God gave a contract to my unbelieving father just to keep me alive. It felt shameful to hear him constantly question my faith while I ate the food he bought. But I had nowhere else to go. I believe now that was precisely the point.</p>
+
+<p>The breaking point was my daughter. Seeing her being drawn toward the idols my parents keep in their house broke my heart in a way nothing else had reached. I cried to the Lord for rescue, and though it felt like nothing changed at first, God was already moving beneath the surface.</p>
+
+<p>My wife and I humbled ourselves and moved to her parents' house for the final months of her pregnancy. Our marriage had been breaking — my pride against her arrogance, no submission between us, only fighting. But God settled us. She gave up her branded clothes, her luxuries, her modern way of living. She started stitching her own clothes, embracing modesty, serving her mother-in-law in the kitchen. I watched a woman I had wounded choose humility, and it undid something in me.</p>
+
+<p>As for me, I placed myself under my strict and authoritative father-in-law. I water his garden. I clean his car. I serve him without argument. I am no longer the man who thinks he knows better. I have opened my heart to those the world ignores — the delivery boy, the waiter, the shopkeeper, the cleaner. People I once passed without a second thought now feel like brothers. I am finally paying my obligations and taking responsibility for what I had avoided for years.</p>
+
+<p>God used two books to show me what was hiding in my heart. <em>Introduction to the Devout Life</em> by Francis de Sales, and <em>A Tale of Three Kings</em> by Gene Edwards. They showed me plainly that I had been acting like a rebel king while calling it righteousness. The image of David refusing to raise his hand against Saul — even when Saul was wrong, even when David had every justification, even when those around him gave him permission — that image sat in me for weeks. I had spent years raising my hand against every Saul in my life and calling it discernment. God wanted a servant's heart. I had been offering Him a throne.</p>
+
+<blockquote>"Whoever wants to become great among you must be your servant, and whoever wants to be first must be your slave." — Matthew 20:26-27</blockquote>
+
+<p>It is not finished. I recently found myself speaking angrily to my father when he would not listen to my instructions about my daughter. The old man in me tried to rise. I felt that familiar heat. But this time I did not justify it. My rebellion broke my heart. I went back to God with a deep wound, with nothing to offer except the confession that I had gone astray again.</p>
+
+<p>I am living in dryness. I am living in a situation the world would call shameful — no title, no platform, no visible proof that any of this is producing anything. But for the first time, my mind is not contradictory. I am waiting upon the Lord. I am learning to live in all circumstances. I am finally finding peace in the middle of the empty places.</p>
+
+<p>The weight I was running from for years was not outside me. It was inside me the whole time. The only way out was through.</p>
+
+<blockquote>"The sacrifices of God are a broken spirit; a broken and contrite heart, O God, you will not despise." — Psalm 51:17</blockquote>
+    `
+  },
+  {
     id: "agencies-of-god-how-the-almighty-speaks-acts-and-appears",
     title: "The Agencies of God: How the Almighty Speaks, Acts and Appears",
     date: "5 May 2026",
@@ -24,129 +57,35 @@ const POSTS = [
     excerpt: "No man has seen God at any time. Yet Abraham spoke with visitors. Moses encountered a burning bush. Jacob wrestled until dawn. How do we reconcile these accounts? The answer lies in one of the most ancient and consistently applied principles in Scripture: divine agency.",
     image: "agencies_of_god.svg",
     content: `
-<p>Scripture is unambiguous on one point: the Eternal Father, the Most High God, has never been seen by human eyes in His essence. And yet the pages of the Old Testament are filled with accounts of God speaking face to face, appearing in fire and cloud, wrestling with a man through the night, and sitting down to eat with Abraham by the oaks of Mamre.</p>
+<p>Here is something that puzzled me for a long time. The Bible says clearly that no one has ever seen God. And yet Abraham sat down and had a meal with three visitors. Moses spoke face to face with someone at a burning bush. Jacob wrestled a man through the entire night. How do we make sense of this?</p>
 
-<p>How do we hold these two things together without contradiction? The answer is one of the most consistently applied principles in the whole of biblical revelation: the principle of divine <strong>agency</strong>.</p>
+<p>The answer has been there all along. It is called divine agency. And once you see it, you cannot unsee it.</p>
 
-<blockquote>"No one has seen God at any time. The only begotten Son, who is in the bosom of the Father, He has declared Him." — John 1:18</blockquote>
+<p>In the ancient world, particularly in Hebrew culture, there was a legal principle called <em>shaliah</em>. It was simple: a man's authorised messenger is as the man himself. When a fully trusted representative speaks in your name, he carries your full authority. He does not just deliver your message. He is you, legally speaking.</p>
 
-<blockquote>"You cannot see My face; for no man shall see Me, and live." — Exodus 33:20</blockquote>
+<p>God applied this same principle throughout the Bible. He sent authorised agents, angels and his Word, to communicate with human beings. And when those agents spoke, the text records it as God speaking. Not because the agent is God, but because the agent is fully carrying God's name and authority.</p>
 
-<h2>1. The Principle of Agency (Shaliah)</h2>
+<p>Look at Exodus 23. God tells Israel to follow a certain angel through the wilderness. Then He says: "My name is in him." That is the language of authorised representation. This angel does not just know God's name. He carries it. To obey him is to obey God. To resist him is to resist God.</p>
 
-<p>In ancient Hebrew law and culture, the principle of <em>shaliah</em> governed all authorised representation. The rule was simple and absolute: <strong>a man's agent is as the man himself.</strong> When a fully authorised messenger spoke or acted on behalf of his principal, he carried that person's full legal identity, authority, and name.</p>
+<p>Now go back to the burning bush. Read it slowly. The angel of the Lord appears in the fire. Three verses later, God is calling Moses by name from the same bush. Then it is the Lord who speaks. The text moves between the agent and God without explanation, because in the framework of divine agency there is no contradiction. Moses is not talking to two beings. He is talking to one authorised representative of the Most High, who speaks in the full name and authority of the One who sent him.</p>
 
-<p>This was not a theological abstraction. It was the legal grammar of the ancient world. And God applies it throughout Scripture with complete consistency. When He sends an angel with His name and His word, that angel speaks in the first person. Not because the angel <em>is</em> God, but because the angel is God's lawfully authorised representative.</p>
+<p>The same pattern shows up when Abraham receives three visitors at Mamre. The text opens by saying the Lord appeared to him. Then we see three men standing there. Two of them later go to Sodom. But the third stays and speaks with Abraham, and the conversation is recorded as the Lord speaking directly. Abraham understood exactly what he was in the presence of. He bowed to the ground and served them food.</p>
 
-<blockquote>"Behold, I send an Angel before you to keep you in the way and to bring you into the place which I have prepared. Beware of Him and obey His voice; do not provoke Him, for He will not pardon your transgressions; for <strong>My name is in Him.</strong>" — Exodus 23:20-21</blockquote>
+<p>Then there is Jacob. He wrestled a man all night at the Jabbok river. At the end of it, Jacob named the place Peniel, which means the face of God, and said: I have seen God face to face and survived. The prophet Hosea later explains that Jacob wrestled with an angel. Both statements are true at the same time. The angel carried God's full presence, God's name, and God's authority. To encounter the agent was to encounter the One who sent him.</p>
 
-<p>The Name being in the angel is not a metaphor. It is a legal declaration. This messenger carries Yahweh's full authority. To obey him is to obey God. To resist him is to resist God. The agent is, in every legally operative sense, the principal.</p>
+<p>The glory cloud that led Israel through the desert, the pillar of fire at night, the Kavod that descended on the Tabernacle so powerfully that Moses could not enter: all of these were God's presence extended into the physical world through an authorised form. Real. Objective. Powerful. But not the Eternal Father in His unveiled essence.</p>
 
-<h2>2. The Burning Bush: Agency in Action</h2>
+<p>And this is where it all leads. The apostle Paul wrote that Jesus is the image of the invisible God, the firstborn over all creation. John wrote that no one has ever seen God, and then said the Son has made Him known. The Son is the final and complete divine agent, the one who carried the Name not just in spiritual authority but in human flesh, in a body that could be touched and heard and seen.</p>
 
-<p>The account of Moses at Horeb is one of the clearest examples of this principle at work. Read the opening carefully:</p>
-
-<blockquote>"The Angel of the Lord appeared to him in a flame of fire from the midst of a bush." — Exodus 3:2</blockquote>
-
-<p>An angel appears. The text is precise. But three verses later:</p>
-
-<blockquote>"When the Lord saw that he turned aside to look, God called to him from the midst of the bush and said, 'Moses, Moses!'" — Exodus 3:4</blockquote>
-
-<p>Now it is God calling. Then it is the Lord speaking. The text moves between the agent and the principal without apparent effort, because in the framework of ancient agency they are legally identical. Moses is not speaking to two different beings. He is speaking to one authorised representative of the Most High, who speaks in the name and with the full authority of the One who sent him.</p>
-
-<p>This is not textual confusion. It is the legal language of agency applied with precision.</p>
-
-<h2>3. The Three Visitors at Mamre</h2>
-
-<p>One of the most remarkable agency accounts in all of Scripture is found in Genesis 18. Three men appear to Abraham by the oaks of Mamre. He runs to meet them, bows to the ground, and serves them food. And then, astonishingly:</p>
-
-<blockquote>"Then the Lord appeared to him by the oaks of Mamre... and he looked up and saw three men standing opposite him." — Genesis 18:1-2</blockquote>
-
-<p>The text opens by saying the Lord appeared, and then describes three men. Two of the three are later identified as angels who go on to Sodom (Genesis 19:1). The third continues in conversation with Abraham — and that conversation is repeatedly attributed directly to Yahweh.</p>
-
-<blockquote>"And the Lord said, 'Shall I hide from Abraham what I am about to do?'" — Genesis 18:17</blockquote>
-
-<p>Abraham is not speaking with God the Father in His essential being. He is speaking with an authorised divine agent who carries the Name, speaks the word, and transacts the will of the Most High. The encounter is entirely real. The agent is entirely present. But the Eternal Father remains, as He always is, beyond the finite capacity of human vision and contact.</p>
-
-<h2>4. Jacob Wrestles at the Jabbok</h2>
-
-<p>Jacob's night of wrestling in Genesis 32 is another account where the agency principle resolves what would otherwise be a theological impossibility:</p>
-
-<blockquote>"Then Jacob was left alone; and a Man wrestled with him until the breaking of day." — Genesis 32:24</blockquote>
-
-<p>A man. And yet when it is over, Jacob names the place Peniel: <em>"I have seen God face to face, and my life is preserved."</em> The prophet Hosea later confirms: <em>"He struggled with the angel and prevailed."</em> (Hosea 12:4)</p>
-
-<p>God's agent and God Himself are spoken of interchangeably, exactly as the shaliah principle requires. Jacob saw God's face in the sense that he met God's fully authorised representative. His life was preserved precisely because he did not encounter the uncovered glory of the Most High.</p>
-
-<h2>5. The Glory, the Cloud and the Fire: Theophanic Agencies</h2>
-
-<p>Beyond the angel of the Lord, God employs a second category of agency: visible manifestations of His presence that are real but not His essential being.</p>
-
-<p>The pillar of cloud by day and fire by night guided Israel through the wilderness (Exodus 13:21). The Kavod, the glory cloud, descended upon the Tabernacle so powerfully that Moses could not enter (Exodus 40:34-35). Ezekiel beholds the glory of the Lord in overwhelming detail and falls on his face (Ezekiel 1:28).</p>
-
-<p>In every case, what is encountered is a real, objective, externally present manifestation of God's presence. But it is not the Eternal Father in His unmediated essence. It is the outward expression of that essence extended toward the finite world in a form that does not destroy what it touches.</p>
-
-<blockquote>"The glory of the Lord settled on Mount Sinai, and the cloud covered it six days... and to the eyes of the sons of Israel the appearance of the glory of the Lord was like a consuming fire on the mountain top." — Exodus 24:16-17</blockquote>
-
-<h2>6. Moses and the Face of God</h2>
-
-<p>Numbers 12:8 contains one of the most striking statements about Moses's access to God:</p>
-
-<blockquote>"With him I speak mouth to mouth, clearly and not in riddles; and he beholds the form of the Lord."</blockquote>
-
-<p>And yet Exodus 33:20 states categorically that no man may see God's face and live. Is there a contradiction? No. The resolution is precise. Moses was granted a unique proximity to the divine agent through whom God communicated. He saw the <em>form</em> — the representation, the authorised image — not the uncovered essence. And even then, when Moses asked to see the glory, he was placed in the cleft of the rock as God's glory passed by (Exodus 33:22-23). What Moses glimpsed was the aftermath, the trailing edge of divine presence, not the face of the Father Himself.</p>
-
-<blockquote>"You shall see My back; but My face shall not be seen." — Exodus 33:23</blockquote>
-
-<h2>7. One God. Many Agencies. One Appointed Son.</h2>
-
-<p>This is the thread running through the whole of Scripture and it must be stated plainly: <strong>there is one God. The Eternal Father. The Almighty. The Most High.</strong> He is not a Trinity. He has not shared His throne with co-equal persons. He is One, as He declared to Israel, as every apostle affirmed from the opening line of every epistle.</p>
-
-<p>Throughout the ages, this one God communicated through various agencies: angels, the glory cloud, the pillar of fire, the Word spoken through prophets. These were not God Himself in His essence. They were His authorised instruments, each carrying His name and executing His will for that appointed moment.</p>
-
-<blockquote>"At many times and in many ways, God spoke to our fathers by the prophets, but in these last days He has spoken to us by His Son, whom He appointed the heir of all things, through whom also He created the world." — Hebrews 1:1-2</blockquote>
-
-<p>Many times. Many ways. Prophets, angels, fire, cloud, voice. But then: the Son. Not another agency among equals. The appointed one. The heir. The one through whom the Father chose to speak His final and complete word.</p>
-
-<p>And this is the climax of the whole story: the Eternal Father, at the fullness of time, chose a Son. Sent Him into the world. And when that Son had completed everything He was sent to do, the Father did something no agency before Him had ever received:</p>
+<p>But here is what must be said plainly. The Father remained the Father throughout all of this. He never became the Son. He never shared His throne with a co-equal person. He sent His agents, including finally His Son, to make Himself known to human beings. And when His Son had completed everything He was sent to do, the Father spoke His verdict over all of history:</p>
 
 <blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ." — Acts 2:36</blockquote>
 
-<p><em>Made.</em> The Father made Him Lord. This is Peter at Pentecost, preaching under the fullness of the Spirit, declaring the central truth of the gospel: the Lordship of Jesus Christ is not something He possessed from eternity as the second person of a Trinity. It is something the Father conferred upon Him. It is the Father's own declaration about His Son.</p>
+<p>The Father made Him Lord. It is the Father's declaration, the Father's gift, to the glory of the Father. This is not a Trinity. This is one God who chose to reveal Himself through many agencies across many centuries, and then finally through His beloved Son, whom He has appointed Lord over all nations.</p>
 
-<blockquote>"Therefore God also has highly exalted Him and given Him the name which is above every name, that at the name of Jesus every knee should bow... and that every tongue should confess that Jesus Christ is Lord, to the glory of God the Father." — Philippians 2:9-11</blockquote>
-
-<p>The Father exalted Him. The Father gave Him the Name. The exaltation of the Son is the act of the Father, and it concludes — mark this — <em>to the glory of God the Father.</em> The Son's Lordship does not compete with the Father's sovereignty. It expresses it. It is the Father's chosen means of saving all nations.</p>
-
-<blockquote>"He is the image of the invisible God, the firstborn over all creation." — Colossians 1:15</blockquote>
-
-<blockquote>"No one has seen God at any time. The only begotten Son, who is in the bosom of the Father, He has declared Him." — John 1:18</blockquote>
-
-<p>The Son declares the Father. The agencies of the Old Testament prepared the way. The Son is the fulfillment: God's final, complete, and appointed representative through whom all nations are called to salvation.</p>
-
-<h2>8. What This Means for Us</h2>
-
-<p>Understanding divine agency is not a theological curiosity. It is the foundation of everything.</p>
-
-<p>There is <strong>one God</strong> — the Eternal Father, the Almighty, the Most High. He has never been seen by human eyes in His essence. He has never shared His throne with co-equal persons. He is One. This has never changed and will never change.</p>
-
-<p>Throughout history He spoke through various agencies: angels, prophets, the glory cloud, the pillar of fire, the Word. Each was real. Each carried His authority. None was the Father Himself in His unveiled essence.</p>
-
-<p>And then, at the appointed time, He sent His Son. Born of a woman, born under the law. Made in the likeness of men. And when that Son had walked every step He was sent to walk, suffered every suffering He was sent to bear, and risen from the dead as the Father had sworn He would, the Father spoke His final word over all of history:</p>
-
-<blockquote>"God has made this Jesus both Lord and Christ." — Acts 2:36</blockquote>
-
-<p>He is Lord over all nations. Lord over the living and the dead. Lord over every power and authority. And the response of every person who hears this is the same as it was at Pentecost: repent, and be baptised in the name of Jesus Christ for the forgiveness of sins (Acts 2:38).</p>
-
-<p>The agencies of God throughout history all pointed here. The burning bush, the wrestling at the Jabbok, the three visitors at Mamre, the glory descending on the Tabernacle: all of it was preparation for the one in whom the fullness of God's self-disclosure would be made flesh.</p>
-
-<blockquote>"Whoever has seen Me has seen the Father." — John 14:9</blockquote>
-
-<p>Not because the Son is the Father. But because the Son is the Father's perfect, appointed, exalted agent, Lord of all, Saviour of all nations, to the eternal glory of the one God who sent Him.</p>
-
-<blockquote>"For there is one God and one Mediator between God and men, the Man Christ Jesus, who gave Himself a ransom for all." — 1 Timothy 2:5-6</blockquote>
+<p>One God. Many agents. One appointed Son. That is the story the whole Bible is telling.</p>
     `
-  },
+  }`,
   {
     id: "just-reasonable-mind-devout-life-francis-de-sales",
     title: "Partiality in Love: Self and Neighbours",
@@ -209,240 +148,41 @@ const POSTS = [
     excerpt: "I do not belong to any denomination, nor am I introducing any cult. What follows is a thorough, verse-by-verse examination of what Scripture actually says about the nature of Jesus Christ, and why the Trinitarian position cannot stand on the plain testimony of the Bible.",
     image: "Is_Jesus_GoD.jpg",
     content: `
+<p>I want to ask you something simple. When you open any letter Paul wrote, what does the first line say about God and Jesus?</p>
 
-<p><em>Before you assume which denomination I belong to, I do not belong to any denomination, nor am I introducing any cult. I am immensely clear about the message the Spirit of God wants to bring to His church in this hour. People like me have started pushing back against the non-foundational work done in mainstream Christianity. I am not afraid of the opposition that comes from challenging popular Trinitarian belief. The Spirit of God wants to bring clarity, yes, clarity, to the church. As the coming of our Lord Jesus Christ draws near, and as the salvation of millions of Muslims and Jews is at hand, the Gospel must return to its original, apostolic estate. What follows is a point-by-point engagement with the Trinitarian position, examined strictly by Scripture.</em></p>
+<p>Romans 1:7: "Grace and peace to you from God our Father and from the Lord Jesus Christ." Two persons. God our Father. And the Lord Jesus Christ. Not one person called God who is also Jesus. Two persons, named separately, in the same sentence.</p>
 
-<h2>The Trinitarian Claim: Jesus Is God in Human Flesh</h2>
+<p>Read every single apostolic letter. The pattern never breaks. God is the Father. Jesus is the Son. They are distinct. The Father sends the Son. The Son prays to the Father. The Father raises the Son. The Son sits at the right hand of the Father. No apostle ever wrote that Jesus is the Father. Not once.</p>
 
-<p>The Trinitarian position holds that Jesus Christ is God incarnate, God in human flesh, who came to earth to reveal the Father and to die for our sins. His miracles, teachings, resurrection, and fulfilment of prophecy are presented as proof of His divinity in the fullest sense: that He is God Himself.</p>
+<p>So where does the idea come from that Jesus is God in the sense of being the Eternal Father?</p>
 
-<h2>Our Response: God Defined Himself, And Jesus Does Not Fit That Definition</h2>
+<p>It comes from a handful of verses that seem, on first reading, to say something different. Let us look at the most common ones honestly.</p>
 
-<p>To call Jesus "God in human flesh" is to trample on the very definition God prescribed for Himself throughout Scripture. These are not obscure verses. They are plain declarations:</p>
+<p>John 1:1 says the Word was God. This has been used for centuries to argue that Jesus is fully God in the same sense as the Father. But read the same verse carefully. "The Word was with God." With God. If the Word is God in the same sense as the Father, how can the Word be with God at the same time? The answer is that the Word carries divine nature and divine authority, as the Father's chief agent, without being identical to the Father. John 1:18 then answers its own question: no one has ever seen God, but the Son has made Him known. The Son reveals the Father. He is not the Father.</p>
 
-<blockquote>"God is not a man, nor a son of man.", Numbers 23:19</blockquote>
-<blockquote>"For I am God, and not man.", Hosea 11:9</blockquote>
-<blockquote>"God is a Spirit.", John 4:24</blockquote>
-<blockquote>"He is the image of the invisible God.", Colossians 1:15 <em>(God is invisible, Jesus was seen and touched)</em></blockquote>
-<blockquote>"Who alone has immortality.", 1 Timothy 6:16</blockquote>
-<blockquote>"Now to the King eternal, immortal, invisible, to God who alone is wise.", 1 Timothy 1:17 NKJV</blockquote>
+<p>Thomas called Jesus "my Lord and my God" in John 20:28. This is a title of honour and worship, not a statement that Jesus is the Eternal Father. The same title was used of kings and masters throughout the ancient world. Thomas was not delivering a systematic theology lecture. He was overwhelmed by what he was seeing. And Jesus did not say to him: correct, I am the Eternal Father. He said: blessed are those who believe without seeing.</p>
 
-<p>Jesus was born of a woman. He was seen, touched, and lived among people. He grew in wisdom (Luke 2:52). He was made perfect through suffering (Hebrews 2:10). He did not know the day or the hour of His own return, <em>"not even the Son"</em> (Mark 13:32). He hungered, wept, slept, and died. Every one of these facts stands in direct and irreconcilable contrast to the attributes God ascribed to Himself. This is not a problem within Scripture, it is Scripture's own deliberate testimony that Jesus and the Almighty are two distinct beings.</p>
+<p>Isaiah 9:6 calls the coming child Mighty God and Everlasting Father. These are throne names and governmental titles, the way ancient kings were given names that described their authority and mission. They describe what the Messiah would carry out and represent, not a claim that he is literally the Eternal Father of creation.</p>
 
-<h2>On Jesus Being Fully Human, Hebrews 2:17</h2>
+<p>Now look at what Scripture says directly about who made Jesus Lord.</p>
 
-<p>The New Testament does not shy away from this, it declares it plainly as essential to the plan of salvation:</p>
+<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ." — Acts 2:36</blockquote>
 
-<blockquote>"For this reason he had to be made like them, fully human in every way, in order that he might become a merciful and faithful high priest in service to God, and that he might make atonement for the sins of the people.", Hebrews 2:17</blockquote>
+<p>The Father made Him Lord. This is Peter at Pentecost, speaking under the full power of the Spirit. The Lordship of Jesus was conferred by the Father, not self-possessed from eternity. It was the Father's act of exaltation after the resurrection.</p>
 
-<p>A High Priest serves before God. He is not God. Jesus in His earthly and exalted role is the appointed High Priest, the Son of God interceding before the only eternal God. High Priest and God are two distinct beings, working together in the fulfilment of an eternal redemptive plan. This is not mystery, this is the plain text.</p>
+<blockquote>"Therefore God also has highly exalted Him and given Him the name which is above every name." — Philippians 2:9</blockquote>
 
-<h2>On Miracles, Resurrection and Divinity</h2>
+<p>God gave Him the name. God exalted Him. The Son received what the Father gave. This is not the language of two co-equal persons in a Trinity. This is the language of a Father honouring His Son.</p>
 
-<p>The Trinitarian argument claims Jesus proved His divinity through miracles, resurrection and fulfilled prophecy. But Scripture is explicit, direct and unambiguous about where those miracles came from:</p>
+<p>And why does any of this matter? Because if Jesus is the Father, then who was He praying to in Gethsemane? Who raised Him from the dead? Who does He sit beside right now? The Trinitarian answer requires increasingly complex explanations that the apostles themselves never gave.</p>
 
-<blockquote>"Jesus of Nazareth, a Man attested by God to you by miracles, wonders, and signs which God did through Him in your midst, as you yourselves also know, Him, being delivered by the determined purpose and foreknowledge of God, you have taken by lawless hands, have crucified, and put to death; whom God raised up.", Acts 2:22–24 NKJV</blockquote>
+<p>The simpler reading, the one every apostolic letter assumes without argument, is this: there is one God, the Father. And there is one Lord, Jesus Christ, His Son, through whom all things were made and through whom we are saved. These are not the same person. They are Father and Son. And that relationship is not a limitation. It is the very shape of the gospel.</p>
 
-<p>God did the miracles <em>through</em> Jesus. God raised Jesus. Jesus did not raise Himself. And concerning His teaching, Jesus was equally clear:</p>
+<blockquote>"For there is one God and one Mediator between God and men, the Man Christ Jesus, who gave Himself a ransom for all." — 1 Timothy 2:5-6</blockquote>
 
-<blockquote>"For I have not spoken on My own authority; but the Father who sent Me gave Me a command, what I should say and what I should speak. And I know that His command is everlasting life. Therefore, whatever I speak, just as the Father has told Me, so I speak.", John 12:49–50 NKJV</blockquote>
-
-<p>Jesus spoke the Father's words. Jesus performed the Father's works. Jesus was raised by the Father's power. At every point the distinction is maintained, not blurred.</p>
-
-<p>Furthermore, consider these additional verses that establish the relationship between the sender and the sent:</p>
-
-<blockquote>"…that they may believe that You sent Me.", John 11:42 NKJV</blockquote>
-<blockquote>"Most assuredly, I say to you, a servant is not greater than his master; nor is he who is sent greater than he who sent him.", John 13:16 NKJV</blockquote>
-<blockquote>"Therefore, being a prophet, and knowing that God had sworn with an oath to him that of the fruit of his body, according to the flesh, He would raise up the Christ to sit on his throne.", Acts 2:30 NKJV</blockquote>
-<blockquote>"Therefore let all the house of Israel know assuredly that God has made this Jesus, whom you crucified, both Lord and Christ.", Acts 2:36 NKJV</blockquote>
-
-<p>If Jesus were God Himself, who made Him Lord and Christ? The One who appoints and the one who is appointed are not the same. There is not even 0.1 ounce of argument remaining, God made Jesus the Lord and Christ. This is the apostolic proclamation on the day of Pentecost itself.</p>
-
-<p>And note this carefully: prophets also performed miracles, taught with great authority, and some were raised after Jesus's crucifixion. Does that make them God incarnate by the same Trinitarian definition? The answer must be no. The same consistency of logic applies to Jesus.</p>
-
-<h2>On "I AM", John 8:58</h2>
-
-<p>The Trinitarian argument points to Jesus saying "Before Abraham was, I AM" as a claim to be the very God of Exodus 3:14. But this interpretation requires ignoring the entire context of the conversation in John 8. Let us read it properly.</p>
-
-<p>The Jews asked Jesus two specific questions:</p>
-<p><em>1. "Are you greater than our father Abraham, who is dead?"</em><br>
-<em>2. "Who do you make yourself out to be?"</em>, John 8:53</p>
-
-<p>Jesus answered the second question first, and His answer could not be clearer:</p>
-
-<blockquote>"Jesus answered, 'If I honour Myself, My honour is nothing. It is My Father who honours Me, of whom you say that He is your God. Yet you have not known Him, but I know Him. And if I say, I do not know Him, I shall be a liar like you; but I do know Him and keep His word.'", John 8:54–55 NKJV</blockquote>
-
-<p>Jesus explicitly identifies the God the Jews worshipped, the God of Abraham, Isaac and Jacob, Adonai Ekhad, as His Father. He does not claim to <em>be</em> that God. He claims to <em>know</em> that God and to <em>keep His word</em>. He then adds:</p>
-
-<blockquote>"I do not seek My own glory; there is One who seeks and judges.", John 8:50 NKJV</blockquote>
-
-<p>There is <em>One</em> who seeks and judges, and Jesus is not that One. He deliberately separates Himself from the role of ultimate judge and glory-holder.</p>
-
-<p>Jesus also made His origin plain in the same chapter:</p>
-
-<blockquote>"I proceeded forth and came from God; nor have I come of Myself, but He sent Me.", John 8:42 NKJV</blockquote>
-
-<p>He came <em>from</em> God. He was <em>sent</em> by God. He did not descend as God, He was dispatched as God's Son and messenger.</p>
-
-<p>Now for "Before Abraham was, I AM", Jesus was answering the first question about Abraham. His point was this: even before God established His covenant with Abraham and made him the father of nations, God had already promised a Messiah from the seed of Adam. The Messiah existed in God's eternal foreknowledge and redemptive purpose before Abraham ever existed in history. Jesus was not declaring Himself to be the God of the burning bush. He was declaring His place in God's eternal plan, a plan that predates Abraham entirely.</p>
-
-<h2>What the Jews Actually Accused Jesus Of</h2>
-
-<p>This is a crucial point that is consistently overlooked. The Jews never accused Jesus of calling Himself God. They accused Him of claiming to be the <em>Son of God</em>, and of making Himself <em>equal</em> with God by doing so. These are their own words:</p>
-
-<blockquote>"Therefore the Jews sought all the more to kill Him, because He not only broke the Sabbath, but also said that God was His Father, making Himself equal with God.", John 5:18 NKJV</blockquote>
-<blockquote>"The Jews answered him, 'We have a law, and according to our law He ought to die, because He made Himself the Son of God.'", John 19:7 NKJV</blockquote>
-
-<p>The Jews framed Jesus this way to justify punishing Him, but even in their accusation they never said He called Himself God. They said He called Himself the Son of God. And Jesus Himself, when defending against the blasphemy charge, did not say "I am God." He said:</p>
-
-<blockquote>"Why then do you accuse me of blasphemy because I said, 'I am God's Son'?", John 10:36</blockquote>
-
-<p>Jesus's own self-definition, in His own defence, before His accusers, was <em>Son of God</em>. Not God the Son. Son of God.</p>
-
-<h2>On "I and the Father Are One", John 10:30</h2>
-
-<p>This verse is frequently offered as the clearest proof of Jesus claiming equality with God. But Scripture must interpret Scripture. In His high priestly prayer, Jesus used the identical language of "oneness" for His own disciples:</p>
-
-<blockquote>"Holy Father, protect them by your name that you have given me, so that they may be one as we are one.", John 17:11 CSB</blockquote>
-
-<p>Jesus prayed that His disciples would be "one" in precisely the same way He and the Father are "one." He was not praying that His disciples would become God. If "one" in John 10:30 means ontological identity, that two become the same being, then by the same logic Jesus was praying His disciples would merge with God and become God. That is clearly not what He meant.</p>
-
-<p>"One" here means unity of purpose, will, mind and devotion, the same like-mindedness that Jesus called His disciples to walk in. The Jews misread it as a claim to deity. But Jesus immediately corrected the charge in verse 36 by calling Himself the Son of God, not God.</p>
-
-<h2>On Isaiah 9:6, "Mighty God, Everlasting Father"</h2>
-
-<p>The prophecy of Isaiah 9:6 gives the Messiah the titles "Mighty God" and "Everlasting Father." This is used to argue that Jesus is God Himself. Two responses:</p>
-
-<p><strong>First:</strong> Is it not common for prophets to use allegorical and elevated language? Isaiah was not writing a systematic theology, he was writing prophetic poetry. Consider how God Himself spoke to Moses:</p>
-
-<blockquote>"Now hear this: I make you as God to Pharaoh.", Exodus 7:1</blockquote>
-
-<p>Moses was made "as God" to Pharaoh, yet no one concludes Moses was God incarnate. Similarly, the title "Everlasting Father" given to Jesus speaks of His role as the founder and cornerstone of a new spiritual creation, the Father of God's reborn family. Graham Bell is called the father of the telephone. Henry Ford is called the father of mass vehicle production. They were called fathers by reason of founding something new, not because they gave biological birth to it.</p>
-
-<p><strong>Second:</strong> Notice what the title itself preserves. Jesus is called <em>Mighty</em> God. The Father remains <em>Almighty</em> God. Why would Isaiah use a lesser title if he intended to say Jesus is the full Almighty? The distinction is embedded in the very verse used to erase it. Many kings in Scripture were given titles of greatness and strength, this was the Hebrew prophetic tradition. Read as a new-born Bible reader, without the pre-loaded assumptions of Trinitarian theology, and the distinction is clear.</p>
-
-<h2>On Thomas's Confession, John 20:28</h2>
-
-<p>When Thomas said "My Lord and my God!" the Trinitarian argument is that Jesus accepted worship as God Himself, and that His silence was endorsement. But consider the consistent pattern of Jesus's own words:</p>
-
-<blockquote>"Why do you call Me good? No one is good but One, that is, God.", Mark 10:18 NKJV</blockquote>
-<blockquote>"I am ascending to My Father and your Father, to My God and your God.", John 20:17 NKJV</blockquote>
-<blockquote>"But the hour is coming, and is now here, when the true worshipers will worship the Father in spirit and truth, for the Father is seeking such people to worship him. God is spirit, and those who worship him must worship in spirit and truth.", John 4:23–24</blockquote>
-
-<p>Jesus had a God. He directed worship to the Father. He consistently refused personal glory. Thomas's overwhelming exclamation, upon seeing the risen Christ, was an expression of awe, directed ultimately toward the God who had raised Jesus and vindicated Him as Lord and Messiah. Jesus's response was not "Yes, you are right, I am God", it was a blessing for those who would believe without seeing.</p>
-
-<p>Furthermore, recall what David wrote in the Psalms, a text Jesus Himself quoted:</p>
-
-<p><em>"The LORD said to My Lord, sit at My right hand until I make Your enemies Your footstool."</em></p>
-
-<p>Two Lords, one is God (the LORD, Yahweh), the other is David's Lord (the Messiah, Jesus). They are distinct. They speak to one another. One sits at the right hand of the other. And God Himself commands that the Messiah be honoured, this is not the Messiah claiming to be God, this is God exalting His appointed Son.</p>
-
-<h2>On John 1:1–14 and 1 John 5:20</h2>
-
-<p>John himself resolves the question in his own conclusion to the prologue:</p>
-
-<blockquote>"No one has seen God at any time. The only begotten Son, who is in the bosom of the Father, He has declared Him.", John 1:18 NKJV</blockquote>
-
-<p>John states plainly: no one has ever seen God. But multitudes saw Jesus. He walked among them, ate with them, was touched and embraced. Therefore, by John's own words, Jesus is not God, He is the one who <em>declared</em> and <em>revealed</em> God. The Son reveals the Father. They are not the same person.</p>
-
-<p>Regarding 1 John 5:20, the context is decisive. John speaks of the Son of God giving us understanding to know <em>Him that is true</em>. Who is "Him that is true"? John 17:3 answers it directly:</p>
-
-<blockquote>"And this is eternal life, that they may know You, the only true God, and Jesus Christ whom You have sent.", John 17:3 NKJV</blockquote>
-
-<p>Jesus, in His own prayer to the Father, calls the Father "the only true God", and distinguishes Himself as the one who was <em>sent</em>. It is ironical, and telling, to say that John is calling Jesus God in the very passage where Jesus calls the Father the only true God.</p>
-
-<h2>A Summary Comparison: God vs Jesus in Scripture</h2>
-
-<div style="overflow-x:auto;margin:2rem 0;">
-<table style="width:100%;border-collapse:collapse;font-size:0.88rem;">
-  <thead>
-    <tr style="border-bottom:1px solid rgba(201,168,76,0.3);">
-      <th style="text-align:left;padding:0.75rem 1rem;color:var(--gold);font-weight:500;letter-spacing:0.08em;">Attribute</th>
-      <th style="text-align:left;padding:0.75rem 1rem;color:var(--gold);font-weight:500;letter-spacing:0.08em;">God in Scripture</th>
-      <th style="text-align:left;padding:0.75rem 1rem;color:var(--gold);font-weight:500;letter-spacing:0.08em;">Jesus in Scripture</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="border-bottom:0.5px solid rgba(255,255,255,0.06);">
-      <td style="padding:0.75rem 1rem;color:var(--text-primary);">Nature</td>
-      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">Not a man (Numbers 23:19; Hosea 11:9)</td>
-      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">Called Himself Son of Man; born of a woman</td>
-    </tr>
-    <tr style="border-bottom:0.5px solid rgba(255,255,255,0.06);">
-      <td style="padding:0.75rem 1rem;color:var(--text-primary);">Immortality</td>
-      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">Only immortal (1 Timothy 6:16)</td>
-      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">Died on the cross; raised by God (Acts 2:24)</td>
-    </tr>
-    <tr style="border-bottom:0.5px solid rgba(255,255,255,0.06);">
-      <td style="padding:0.75rem 1rem;color:var(--text-primary);">Visibility</td>
-      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">Invisible (Colossians 1:15; Exodus 33:20)</td>
-      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">Seen, touched, lived among people</td>
-    </tr>
-    <tr style="border-bottom:0.5px solid rgba(255,255,255,0.06);">
-      <td style="padding:0.75rem 1rem;color:var(--text-primary);">Knowledge</td>
-      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">All-knowing (Psalm 147:5; Malachi 3:6)</td>
-      <td style="padding:0.75rem 1rem;color:var(--text-secondary);">"Not even the Son" knows the hour (Mark 13:32); grew in wisdom (Luke 2:52)</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-<p>Based on these textual contrasts, the plain testimony of Scripture, Jesus does not fit the scriptural definition of God. He fits the scriptural definition of the <strong>Son of God</strong>: a divinely appointed, uniquely created, perfectly obedient Messiah and mediator between God and humanity.</p>
-
-<h2>The Apostolic Foundation, What They Actually Wrote</h2>
-
-<p>Not a single apostle ever wrote the phrase "God the Son" in any epistle. Not once. Search the entire New Testament. What they consistently and exclusively wrote was:</p>
-
-<ul style="margin:1.2rem 0 1.2rem 1.5rem;color:var(--text-secondary);">
-  <li style="margin-bottom:0.5rem;"><strong style="color:var(--text-primary);">God the Father</strong>, always</li>
-  <li style="margin-bottom:0.5rem;"><strong style="color:var(--text-primary);">Son of God</strong>, always</li>
-  <li style="margin-bottom:0.5rem;"><strong style="color:var(--text-primary);">Holy Spirit / Spirit of God / God's Spirit</strong>, always</li>
-</ul>
-
-<p>The word "Trinity" appears nowhere in Scripture. "God the Son" appears nowhere in Scripture. "Godhead" as a three-person construct appears nowhere in Scripture. These are theological constructions introduced centuries after the apostles, and adopted wholesale by the Reformation, which challenged much of Catholic tradition but retained this doctrine without subjecting it to the plain testimony of the twelve.</p>
-
-<blockquote>"Come out of her, my people, that ye be not partakers of her sins, and that ye receive not of her plagues.", Revelation 18:4 KJV</blockquote>
-
-<p>The revolution started by Martin Luther still continued the Catholic belief in a three-person God. Using words no apostle or prophet ever uttered, <em>God the Father, God the Son, God the Holy Spirit</em>, while the Bible consistently and exclusively speaks of God the Father, the Son of God, and the Spirit of God. These are not the same constructions. They represent a fundamentally different understanding of who God is.</p>
-
-<h2>Jesus Set the Example, Not the Object of Worship</h2>
-
-<blockquote>"To this you were called, because Christ suffered for you, leaving you an example, that you should follow in his steps.", 1 Peter 2:21</blockquote>
-
-<p>Jesus, as a perfect human on earth, set an example for us to follow. He gave His God and Father exclusive devotion, and taught others to do the same:</p>
-
-<blockquote>"Jesus said, 'Do not hold on to me, for I have not yet ascended to the Father. Go instead to my brothers and tell them, I am ascending to my Father and your Father, to my God and your God.'", John 20:17</blockquote>
-<blockquote>"But the hour is coming, and is now here, when the true worshipers will worship the Father in spirit and truth, for the Father is seeking such people to worship him.", John 4:23–24</blockquote>
-
-<p>When someone believes in the Trinity, the main obstacle they face is this: they are not worshipping God in spirit and truth. Their God is a triune, three-in-one construction, a God no apostle, no prophet, no Israelite, and not Jesus Himself ever described or taught. Jesus gave us clarity. The Father is the object of worship. Jesus is the way to the Father.</p>
-
-<h2>A Call to Unity, Ephesians 4:11–13</h2>
-
-<p>This is not a call to division. It is a call to return. God Himself gave the church apostles, prophets, evangelists, pastors and teachers for one specific purpose:</p>
-
-<blockquote>"For the perfecting of the saints, for the work of the ministry, for the edifying of the body of Christ: till we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fullness of Christ.", Ephesians 4:12–13 KJV</blockquote>
-
-<p>Until all denominations come to the <strong>unity of the faith and the knowledge of the Son of God</strong>, not "God the Son", the body of Christ remains divided. That unity is not found by softening the truth. It is found by returning to the apostolic foundation.</p>
-
-<h2>Conclusion</h2>
-
-<p>Based on the plain testimony of Scripture, not the interpretations of theologians, not the creeds of fourth-century councils, not the traditions passed down through Catholic and Protestant institutions, the conclusion is clear:</p>
-
-<p><strong>Jesus is not God. Jesus is the Son of God.</strong></p>
-
-<p>He is the promised Messiah, the appointed High Priest, the resurrected Lord, the coming King, divinely foreknown, uniquely born, perfectly obedient, and exalted to the right hand of the Father as Saviour and Ruler of the world. He is to be honoured, followed, obeyed and proclaimed. But the One to whom He prays, whom He calls Father, whom He explicitly calls <em>"my God"</em>, that is the Almighty. The only true God. The God of Abraham, Isaac and Jacob.</p>
-
-<blockquote>"The God of Abraham, Isaac, and Jacob, the God of our fathers, glorified His Servant Jesus.", Acts 3:13 NKJV</blockquote>
-
-<p>Peter, who walked with Jesus, who received the Holy Spirit at Pentecost, who stood before thousands and proclaimed the risen Christ, called Jesus God's <em>Servant</em>. Not God. The Servant of God, glorified by God. That is the apostolic confession. That is where we stand.</p>
-
-<blockquote>"And this is eternal life, that they may know You, the only true God, and Jesus Christ whom You have sent.", John 17:3 NKJV</blockquote>
-
-<p>Two persons. One eternal God. One sent Son. This is not confusion, this is clarity. Until the whole church comes to the unity of the faith and of the knowledge of the Son of God, we will continue this work. Not with anger. Not with pride. But with the sobriety that comes from knowing that millions are watching, that eternity is at stake, and that the truth is worth every word.</p>
-
-<p><em>Blessed be God our Father, creator of heaven and earth, and our Lord Jesus Christ, whom He approved as Saviour, raised from the dead, and lifted high to sit at His right hand to rule in heaven and on earth. Amen.</em></p>
+<p>One God. One Mediator. The Man Christ Jesus. That is the apostolic testimony, stated plainly, needing no Trinity to hold it together.</p>
     `
-  },
+  }`,
   {
     id: "what-does-it-mean-to-be-the-church",
     title: "What Does It Mean to Be the Church?",
