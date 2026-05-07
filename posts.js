@@ -85,7 +85,7 @@ const POSTS = [
 
 <p>One God. Many agents. One appointed Son. That is the story the whole Bible is telling.</p>
     `
-  }`,
+  },
   {
     id: "just-reasonable-mind-devout-life-francis-de-sales",
     title: "Partiality in Love: Self and Neighbours",
@@ -182,7 +182,7 @@ const POSTS = [
 
 <p>One God. One Mediator. The Man Christ Jesus. That is the apostolic testimony, stated plainly, needing no Trinity to hold it together.</p>
     `
-  }`,
+  },
   {
     id: "what-does-it-mean-to-be-the-church",
     title: "What Does It Mean to Be the Church?",
