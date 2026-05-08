@@ -184,11 +184,8 @@ blockquote cite, blockquote footer{
 }
 
 /* Strong emphasis */
-strong{ color:var(--text-primary); font-weight:500; }
-em{ color:var(--gold); }
 
 /* Links */
-a{ color:var(--gold); text-decoration:none; transition:color 0.2s; }
 a:hover{ color:var(--gold-light); }
 
 /* Section labels */
@@ -284,3 +281,21 @@ h1, h2, h3, blockquote, .section-title{
   font-family:'Cormorant Garamond',Georgia,serif;
 }
 /* ── END GLOBAL SYNC ── */
+
+/* SPECIFIC colour rules — not global overrides */
+/* Body content links */
+.story-body a, .cosmo-body a, .ref-body a, 
+article a, .qa-answer a, .blog-content a{
+  color:var(--gold);text-decoration:none;
+}
+/* Nav links — white/cream */
+.nav-links a, .nav-links a:visited{
+  color:var(--text-primary);
+  font-style:normal;
+}
+/* Footer links */
+.footer-col ul li a{ color:var(--text-muted); }
+.footer-col ul li a:hover{ color:var(--gold); }
+/* Keep gold on section labels, eyebrows, gold-specific elements */
+.section-label, .eyebrow, .vc-ref, .qa-group-title,
+.blog-tag, .footer-col h4, .footer-yt{ color:var(--gold); }
