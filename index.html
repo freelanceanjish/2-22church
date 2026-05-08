@@ -203,7 +203,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 .h-num{
   display:flex;
   align-items:center;
-  gap:0;
+  gap:0.24em;
   font-family:'Cormorant Garamond',Georgia,serif;
   font-size:clamp(5.5rem,11vw,9.5rem);
   font-weight:400;
@@ -212,11 +212,12 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
   letter-spacing:0;
   white-space:nowrap;
 }
+.h-n{display:inline;letter-spacing:0;}
 .h-sep{
   display:block;
   width:1.5px;
   height:0.42em;
-  margin:0 0.22em;
+  margin:0;
   flex-shrink:0;
   align-self:center;
   background:linear-gradient(to bottom,
@@ -387,7 +388,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 
     <!-- CENTRE: numeral + church + buttons -->
     <div class="h-centre">
-      <div class="h-num">2:2<span class="h-sep"></span>2</div>
+      <div class="h-num"><span class="h-n">2:2</span><span class="h-sep"></span><span class="h-n">2</span></div>
       <div class="h-church-row">
         <span class="h-rule"></span>
         <span class="h-church">Church</span>
