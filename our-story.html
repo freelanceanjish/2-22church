@@ -48,10 +48,22 @@
   <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church"></a>
   <ul class="nav-links">
     <li><a href="index.html#about">Home</a></li>
-    <li><a href="our-story.html" class="active">Our Story</a></li>
-    <li><a href="gatherings.html">Gatherings</a></li>
+    <li class="nav-item">
+      <a href="our-story.html" class="active">About <span class="caret">&#9660;</span></a>
+      <div class="nav-dropdown">
+        <a href="our-story.html">Our Story</a>
+        <a href="gatherings.html">Gatherings</a>
+      </div>
+    </li>
     <li><a href="blog.html">Blog</a></li>
-    <li><a href="qa.html">Q&amp;A</a></li>
+    <li class="nav-item">
+      <a href="cosmology.html">Learn <span class="caret">&#9660;</span></a>
+      <div class="nav-dropdown">
+        <a href="cosmology.html">Biblical Cosmology</a>
+        <a href="project314.html">God of Pi</a>
+        <a href="old-maps.html">Old Maps</a>
+      </div>
+    </li>
     <li class="nav-item">
       <a href="references.html">Resources <span class="caret">&#9660;</span></a>
       <div class="nav-dropdown">
@@ -61,14 +73,11 @@
         <a href="references.html#podcasts">Podcasts</a>
         <a href="references.html#debates">Debates</a>
         <a href="references.html#articles">Articles</a>
-        <a href="references.html#documentaries">Documentaries</a>
         <a href="references.html#archives">Archives</a>
-        <a href="old-maps.html">Old Maps</a>
+        <a href="references.html#documentaries">Documentaries</a>
       </div>
     </li>
-    <li><a href="project314.html">God of Pi</a></li>
-    <li><a href="cosmology.html">Cosmology</a></li>
-    <li><a href="old-maps.html">Old Maps</a></li>
+    <li><a href="qa.html">Q&amp;A</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
   <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
@@ -81,11 +90,11 @@
   <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
   <a href="blog.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blog</a>
-  <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
-  <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
-  <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
   <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
+  <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
   <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
+  <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
+  <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
   <a href="index.html#join" style="color:var(--gold);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 

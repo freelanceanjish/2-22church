@@ -203,22 +203,24 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 .h-num{
   display:flex;
   align-items:center;
+  gap:0;
   font-family:'Cormorant Garamond',Georgia,serif;
   font-size:clamp(5.5rem,11vw,9.5rem);
   font-weight:400;
   color:#F0EAD6;
   line-height:1;
-  letter-spacing:-0.01em;
+  letter-spacing:0;
   white-space:nowrap;
 }
 .h-sep{
   display:block;
   width:1.5px;
-  height:0.44em;
-  margin:0 0.2em;
+  height:0.42em;
+  margin:0 0.22em;
   flex-shrink:0;
   align-self:center;
-  background:linear-gradient(to bottom,transparent,rgba(201,168,76,0.85) 15%,rgba(201,168,76,0.85) 85%,transparent);
+  background:linear-gradient(to bottom,
+    transparent 0%,rgba(201,168,76,0.88) 18%,rgba(201,168,76,0.88) 82%,transparent 100%);
 }
 
 /* CHURCH row — rules stretch to match numeral width via width:100% */
@@ -344,7 +346,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
         <a href="references.html#debates">Debates</a>
         <a href="references.html#articles">Articles</a>
         <a href="references.html#archives">Archives</a>
-        <a href="old-maps.html">Old Maps</a>
+        <a href="references.html#documentaries">Documentaries</a>
       </div>
     </li>
     <li><a href="qa.html">Q&amp;A</a></li>
