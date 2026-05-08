@@ -9,9 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <style>
-
-
-
 :root{
   --gold:#5B8DB8;--gold-light:#A8C4DC;--gold-dark:#2E5F82;
   --deep:#060C18;--deep-mid:#081020;--surface:#0C1830;--surface-light:#0E2040;
@@ -22,11 +19,6 @@
 html{scroll-behavior:smooth;}
 
 body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-primary);overflow-x:hidden;line-height:1.7;}
-
-.nav-logo .logo-num{display:flex;align-items:center;}
-.nav-logo .logo-sep{display:inline-block;width:1px;height:1.1em;background:linear-gradient(to bottom,transparent,var(--gold) 30%,var(--gold) 70%,transparent);opacity:0.3;margin:0 3px;vertical-align:middle;}
-.nav-logo .logo-shared{font-style:italic;color:var(--gold);opacity:1;}
-.nav-logo .logo-word{font-style:italic;font-size:1.3rem;color:var(--text-secondary);opacity:0.5;letter-spacing:0.06em;}
 
 .nav-links a:hover{color:var(--gold);}
 
@@ -195,20 +187,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 }
 
 /* numeral */
-.h-num{
-  display:flex;
-  align-items:center;
-  
-  font-family:'Cormorant Garamond',Georgia,serif;
-  font-size:clamp(5.5rem,11vw,9.5rem);
-  font-weight:400;
-  color:#F0EAD6;
-  line-height:1;
-  letter-spacing:0;
-  white-space:nowrap;
-}
-.h-n{letter-spacing:0;}
-
+.h-num{display:flex;align-items:center;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(5.5rem,11vw,9.5rem);font-weight:400;color:#F0EAD6;line-height:1;letter-spacing:0;white-space:nowrap;font-style:normal;}
 /* CHURCH row — rules stretch to match numeral width via width:100% */
 .h-church-row{
   display:flex;
@@ -293,7 +272,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
   }
   .vc{ display:none; }
   .h-centre{ padding:0; width:100%; max-width:380px; }
-  .h-num{ font-size:clamp(4rem,18vw,6rem); }
+  .h-num{display:flex;align-items:center;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(5.5rem,11vw,9.5rem);font-weight:400;color:#F0EAD6;line-height:1;letter-spacing:0;white-space:nowrap;font-style:normal;}
   .hero-btns{ flex-direction:column; }
 }
 /* ════════════ END HERO ════════════ */
@@ -376,6 +355,18 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 .foundation-verse{border-left:2px solid var(--gold);padding:0.75rem 1.2rem;margin-bottom:1.5rem;background:rgba(91,141,184,0.05);}
 .fv-ref{font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.4rem;}
 .fv-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--text-primary);line-height:1.65;}
+
+.h-n{font-style:normal;letter-spacing:0;}
+.h-dash{
+  display:inline-block;
+  width:0.28em;
+  height:2px;
+  background:#F0EAD6;
+  margin:0 0.12em;
+  vertical-align:middle;
+  flex-shrink:0;
+  border-radius:0;
+}
 </style>
 </head>
 <body>
@@ -451,7 +442,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 
     <!-- CENTRE: numeral + church + buttons -->
     <div class="h-centre">
-      <div class="h-num"><span class="h-n">2-22</span></div>
+      <div class="h-num"><span class="h-n">2</span><span class="h-dash"></span><span class="h-n">22</span></div>
       <div class="h-church-row">
         <span class="h-rule"></span>
         <span class="h-church">Church</span>
