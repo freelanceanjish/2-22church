@@ -12,10 +12,10 @@
 <link rel="shortcut icon" href="favicon.ico">
 <style>
 :root{
-  --gold:#C9A84C;--gold-light:#E8D5A3;--gold-dark:#8B6914;
+  --gold:#5B8DB8;--gold-light:#A8C4DC;--gold-dark:#2E5F82;
   --deep:#060C18;--deep-mid:#081020;--surface:#0C1830;--surface-light:#0E2040;
   --text-primary:#F0EAD6;--text-secondary:#A8A090;--text-muted:#6B6358;
-  --border:rgba(201,168,76,0.18);--border-subtle:rgba(255,255,255,0.06);
+  --border:rgba(91,141,184,0.18);--border-subtle:rgba(255,255,255,0.06);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
@@ -81,14 +81,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-pr
 .img-pair .img-card{margin:0;border:none;}
 
 /* SOURCE NOTE */
-.source-note{background:rgba(201,168,76,0.04);border:0.5px solid var(--border);padding:1.4rem 1.8rem;margin:3rem 0;}
+.source-note{background:rgba(91,141,184,0.05);border:0.5px solid var(--border);padding:1.4rem 1.8rem;margin:3rem 0;}
 .source-note p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;margin:0;}
 .source-note a{color:var(--gold);text-decoration:none;border-bottom:0.5px solid var(--border);}
 .source-note a:hover{border-color:var(--gold);}
 
 /* GOLDEN DIVIDER */
 /* DISCLAIMER */
-.disclaimer{background:rgba(201,168,76,0.04);border:0.5px solid rgba(201,168,76,0.2);border-left:2px solid rgba(201,168,76,0.4);padding:1.6rem 1.8rem;margin:4rem 0 0;}
+.disclaimer{background:rgba(91,141,184,0.05);border:0.5px solid rgba(91,141,184,0.18);border-left:2px solid rgba(201,168,76,0.4);padding:1.6rem 1.8rem;margin:4rem 0 0;}
 .disclaimer p{font-size:0.85rem;color:var(--text-muted);line-height:1.8;margin:0;}
 .disclaimer strong{color:var(--text-secondary);}
 
@@ -106,17 +106,17 @@ body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-pr
 }
 
 /* ── NAV ── */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(13,17,23,0.92);backdrop-filter:blur(16px);border-bottom:0.5px solid rgba(201,168,76,0.18);}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(13,17,23,0.92);backdrop-filter:blur(16px);border-bottom:0.5px solid rgba(91,141,184,0.18);}
 
 .nav-links{display:flex;gap:1.4rem;list-style:none;}
 .nav-links a{font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:#A8A090;text-decoration:none;transition:color 0.2s;white-space:nowrap;}
-.nav-links a:hover,.nav-links a.active{color:#C9A84C;}
-.nav-cta{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--deep);background:#C9A84C;padding:0.5rem 1rem;border-radius:2px;flex-shrink:0;text-decoration:none;font-weight:500;white-space:nowrap;}
+.nav-links a:hover,.nav-links a.active{color:#5B8DB8;}
+.nav-cta{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--deep);background:#5B8DB8;padding:0.5rem 1rem;border-radius:2px;flex-shrink:0;text-decoration:none;font-weight:500;white-space:nowrap;}
 
-.nav-hamburger span{display:block;width:22px;height:1px;background:#C9A84C;}
+.nav-hamburger span{display:block;width:22px;height:1px;background:#5B8DB8;}
 
 .mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:#F0EAD6;text-decoration:none;letter-spacing:0.06em;padding:0.7rem 0;border-bottom:0.5px solid rgba(255,255,255,0.06);width:100%;text-align:center;}
-.mobile-menu a:hover{color:#C9A84C;}
+.mobile-menu a:hover{color:#5B8DB8;}
 
 @media(max-width:860px){nav{padding:1rem 1.5rem;}.nav-links{display:none;}.nav-cta{display:none;}}
 
@@ -133,7 +133,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   position:absolute;top:calc(100% + 8px);left:50%;
   transform:translateX(-50%);
   background:rgba(13,17,23,0.97);
-  border:0.5px solid rgba(201,168,76,0.22);
+  border:0.5px solid rgba(91,141,184,0.2);
   min-width:170px;z-index:500;padding:0.4rem 0;
 }
 .nav-item.open .nav-dropdown{display:block;}
@@ -142,14 +142,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
   color:#A8A090;text-decoration:none;white-space:nowrap;transition:all 0.15s;
 }
-.nav-dropdown a:hover{color:#C9A84C;background:rgba(201,168,76,0.06);}
+.nav-dropdown a:hover{color:#5B8DB8;background:rgba(91,141,184,0.08);}
 
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church"></a>
+  <a href="index.html" class="nav-logo"><span class="logo-text">2<span class="logo-colon">:</span>22</span><span class="logo-word">Church</span></a>
   <ul class="nav-links">
     <li><a href="index.html#about">Home</a></li>
     <li class="nav-item">
@@ -199,7 +199,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
   <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
-  <a href="index.html#join" style="color:var(--gold);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
+  <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
 <div class="page-header">
@@ -552,7 +552,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="index.html"><img src="logo.png" alt="2:22 Church" style="height:1.8rem;width:auto;display:block;margin-bottom:0.5rem;"></a>
+      <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;"><span class="logo-text">2<span class="logo-colon">:</span>22</span><span class="logo-word">Church</span></a>
       <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
       <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
     </div>

@@ -12,10 +12,10 @@
 <link rel="shortcut icon" href="favicon.ico">
 <style>
 :root{
-  --gold:#C9A84C;--gold-light:#E8D5A3;--gold-dark:#8B6914;
+  --gold:#5B8DB8;--gold-light:#A8C4DC;--gold-dark:#2E5F82;
   --deep:#060C18;--deep-mid:#081020;--surface:#0C1830;--surface-light:#0E2040;
   --text-primary:#F0EAD6;--text-secondary:#A8A090;--text-muted:#6B6358;
-  --border:rgba(201,168,76,0.18);--border-subtle:rgba(255,255,255,0.06);
+  --border:rgba(91,141,184,0.18);--border-subtle:rgba(255,255,255,0.06);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
@@ -126,8 +126,8 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
 .yt-desc p{color:var(--text-secondary);font-size:1rem;line-height:1.85;margin-bottom:1rem;}
 .yt-embed-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border:0.5px solid var(--border);}
 .yt-embed-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;}
-.yt-channel-btn{display:inline-flex;align-items:center;gap:0.7rem;margin-top:1.5rem;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.85rem 1.8rem;border-radius:2px;text-decoration:none;font-weight:500;transition:background 0.2s;}
-.yt-channel-btn:hover{background:var(--gold-light);}
+.yt-channel-btn{display:inline-flex;align-items:center;gap:0.7rem;margin-top:1.5rem;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--deep);background:var(--text-primary);padding:0.85rem 1.8rem;border-radius:2px;text-decoration:none;font-weight:500;transition:background 0.2s;}
+.yt-channel-btn:hover{background:#fff;}
 .yt-channel-btn svg{flex-shrink:0;}
 
 /* ── BOOKS / PRODUCTS ── */
@@ -137,7 +137,7 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
 .prod-img{width:100%;background:var(--deep-mid);display:flex;align-items:center;justify-content:center;padding:2rem;min-height:200px;}
 .prod-img img{width:100%;max-height:220px;object-fit:contain;}
 .prod-body{padding:1.4rem 1.6rem 2rem;}
-.prod-tag{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,0.1);padding:0.25rem 0.65rem;border-radius:2px;display:inline-block;margin-bottom:0.75rem;}
+.prod-tag{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);background:rgba(91,141,184,0.1);padding:0.25rem 0.65rem;border-radius:2px;display:inline-block;margin-bottom:0.75rem;}
 .prod-card h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:400;color:var(--text-primary);margin-bottom:0.65rem;line-height:1.25;}
 .prod-card p{font-size:0.88rem;color:var(--text-secondary);line-height:1.75;}
 .prod-link{display:inline-block;margin-top:1rem;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:0.5px solid var(--border);padding-bottom:1px;transition:border-color 0.2s;}
@@ -174,7 +174,7 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
   position:absolute;top:calc(100% + 8px);left:50%;
   transform:translateX(-50%);
   background:rgba(13,17,23,0.97);
-  border:0.5px solid rgba(201,168,76,0.22);
+  border:0.5px solid rgba(91,141,184,0.2);
   min-width:170px;z-index:500;padding:0.4rem 0;
 }
 .nav-item.open .nav-dropdown{display:block;}
@@ -183,7 +183,7 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
   font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
   color:#A8A090;text-decoration:none;white-space:nowrap;transition:all 0.15s;
 }
-.nav-dropdown a:hover{color:#C9A84C;background:rgba(201,168,76,0.06);}
+.nav-dropdown a:hover{color:#5B8DB8;background:rgba(91,141,184,0.08);}
 
 </style>
 </head>
@@ -191,7 +191,7 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
 
 <!-- NAV -->
 <nav>
-  <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church"></a>
+  <a href="index.html" class="nav-logo"><span class="logo-text">2<span class="logo-colon">:</span>22</span><span class="logo-word">Church</span></a>
   <ul class="nav-links">
     <li><a href="index.html#about">Home</a></li>
     <li class="nav-item">
@@ -241,7 +241,7 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
   <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
   <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
-  <a href="index.html#join" style="color:var(--gold);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
+  <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
 <!-- HERO, YouTube video background 18s–37s loop -->
@@ -304,7 +304,7 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
           <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.75;">
             "Did you know the Exodus Tabernacle was a <strong style="color:var(--text-primary);">round and majestic yurt-like structure, towering 6 storeys</strong> above the ground, instead of a crude rectangular box as traditionally assumed? Project 314 was chartered to reveal these ancient secrets, lost in translation for thousands of years."
           </p>
-          <a href="https://www.youtube.com/@Project314" target="_blank" rel="noopener" style="display:inline-block;margin-top:1rem;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:0.5px solid var(--border);">Watch on YouTube ↗</a>
+          <a href="https://www.youtube.com/@Project314" target="_blank" rel="noopener" style="display:inline-block;margin-top:1rem;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;border-bottom:0.5px solid var(--border-subtle);">Watch on YouTube ↗</a>
         </div>
       </div>
     </div>
@@ -415,19 +415,19 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
         </div>
         <div class="media-links" style="margin-top:1.5rem;">
           <a href="https://project314.org" target="_blank" rel="noopener" class="media-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B8DB8" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             <div><span class="media-link-title">project314.org</span><span class="media-link-text">Official website</span></div>
           </a>
           <a href="https://www.youtube.com/@Project314" target="_blank" rel="noopener" class="media-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B8DB8" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
             <div><span class="media-link-title">@Project314</span><span class="media-link-text">YouTube channel</span></div>
           </a>
           <a href="https://www.facebook.com/RoundTabernacle/" target="_blank" rel="noopener" class="media-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B8DB8" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             <div><span class="media-link-title">RoundTabernacle</span><span class="media-link-text">Facebook community</span></div>
           </a>
           <a href="https://www.patreon.com/project314" target="_blank" rel="noopener" class="media-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><circle cx="14.5" cy="9.5" r="6.5"/><path d="M5.5 21V4"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B8DB8" stroke-width="1.5"><circle cx="14.5" cy="9.5" r="6.5"/><path d="M5.5 21V4"/></svg>
             <div><span class="media-link-title">Patreon</span><span class="media-link-text">Support the project</span></div>
           </a>
         </div>
@@ -495,7 +495,7 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
     <!-- Featured video embed -->
     <div class="yt-embed-wrap">
       <iframe
-        src="https://www.youtube.com/embed/mHAu6vug_VE?start=18&rel=0&modestbranding=1"
+        src="https://www.youtube.com/embed/SjlM2JIlcXQ?rel=0&modestbranding=1"
         title="Project 314, Tabernacle Discovery"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
@@ -584,7 +584,7 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
       <a href="https://project314.org" target="_blank" rel="noopener" class="btn-primary">Explore Project314.org ↗</a>
       <a href="https://www.youtube.com/@Project314" target="_blank" rel="noopener" class="btn-ghost">Watch on YouTube ↗</a>
     </div>
-    <p style="margin-top:1.5rem;font-size:0.75rem;color:var(--text-muted);letter-spacing:0.1em;">Promoted by 2:22 Church · <a href="https://project314.org" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;">project314.org</a> · Phone: 314-628-0159 (no texts)</p>
+    <p style="margin-top:1.5rem;font-size:0.75rem;color:var(--text-muted);letter-spacing:0.1em;">Promoted by 2:22 Church · <a href="https://project314.org" target="_blank" rel="noopener" style="color:var(--text-secondary);text-decoration:none;">project314.org</a> · Phone: 314-628-0159 (no texts)</p>
   </div>
 </section>
 
@@ -592,7 +592,7 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="index.html"><img src="logo.png" alt="2:22 Church" style="height:1.8rem;width:auto;display:block;margin-bottom:0.5rem;"></a>
+      <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;"><span class="logo-text">2<span class="logo-colon">:</span>22</span><span class="logo-word">Church</span></a>
       <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
       <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
     </div>
@@ -645,7 +645,7 @@ document.head.appendChild(tag);
 var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('yt-player', {
-    videoId: 'mHAu6vug_VE',
+    videoId: 'SjlM2JIlcXQ',
     playerVars: {
       autoplay: 1,
       mute: 1,

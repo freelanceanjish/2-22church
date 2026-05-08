@@ -14,7 +14,7 @@
 .sec h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:300;line-height:1.2;margin-bottom:1.2rem;}
 .sec h2 em{font-style:italic;color:var(--gold);}
 .sec p{color:var(--text-secondary);line-height:1.9;margin-bottom:1.1rem;font-size:0.98rem;}
-.pull{border-left:2px solid var(--gold);padding:1.1rem 1.6rem;margin:2rem 0;background:rgba(201,168,76,0.04);}
+.pull{border-left:2px solid var(--gold);padding:1.1rem 1.6rem;margin:2rem 0;background:rgba(91,141,184,0.05);}
 .pull p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--text-primary);margin:0;line-height:1.75;}
 .pull cite{display:block;margin-top:.5rem;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-style:normal;}
 .hr-gold{display:flex;align-items:center;gap:1rem;margin:3.5rem 0;}
@@ -45,7 +45,7 @@
   position:absolute;top:calc(100% + 8px);left:50%;
   transform:translateX(-50%);
   background:rgba(13,17,23,0.97);
-  border:0.5px solid rgba(201,168,76,0.22);
+  border:0.5px solid rgba(91,141,184,0.2);
   min-width:170px;z-index:500;padding:0.4rem 0;
 }
 .nav-item.open .nav-dropdown{display:block;}
@@ -54,14 +54,14 @@
   font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
   color:#A8A090;text-decoration:none;white-space:nowrap;transition:all 0.15s;
 }
-.nav-dropdown a:hover{color:#C9A84C;background:rgba(201,168,76,0.06);}
+.nav-dropdown a:hover{color:#5B8DB8;background:rgba(91,141,184,0.08);}
 
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church"></a>
+  <a href="index.html" class="nav-logo"><span class="logo-text">2<span class="logo-colon">:</span>22</span><span class="logo-word">Church</span></a>
   <ul class="nav-links">
     <li><a href="index.html#about">Home</a></li>
     <li class="nav-item">
@@ -111,7 +111,7 @@
   <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
   <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
-  <a href="index.html#join" style="color:var(--gold);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
+  <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
 <div class="page-header">
@@ -159,7 +159,7 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="index.html"><img src="logo.png" alt="2:22 Church" style="height:1.8rem;width:auto;display:block;margin-bottom:0.5rem;"></a>
+      <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;"><span class="logo-text">2<span class="logo-colon">:</span>22</span><span class="logo-word">Church</span></a>
       <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
       <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
     </div>
