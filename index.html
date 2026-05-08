@@ -13,7 +13,7 @@
 
 :root{
   --gold:#C9A84C;--gold-light:#E8D5A3;--gold-dark:#8B6914;
-  --deep:#0D1117;--deep-mid:#161C26;--surface:#1C2333;--surface-light:#232B3E;
+  --deep:#060C18;--deep-mid:#081020;--surface:#0C1830;--surface-light:#0E2040;
   --text-primary:#F0EAD6;--text-secondary:#A8A090;--text-muted:#6B6358;
   --border:rgba(201,168,76,0.18);--border-subtle:rgba(255,255,255,0.06);
 }
@@ -136,31 +136,31 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
   overflow:hidden;
   background:
     linear-gradient(to right,
-      #030608 0%,     #030608 8.33%,
-      #050B0D 8.33%,  #050B0D 16.66%,
-      #071010 16.66%, #071010 25%,
-      #091410 25%,    #091410 33.33%,
-      #0B1812 33.33%, #0B1812 41.66%,
-      #0D1117 41.66%, #0D1117 58.33%,
-      #0B1812 58.33%, #0B1812 66.66%,
-      #091410 66.66%, #091410 75%,
-      #071010 75%,    #071010 83.33%,
-      #050B0D 83.33%, #050B0D 91.66%,
-      #030608 91.66%, #030608 100%);
+      #040810 0%,     #040810 8.33%,
+      #060C18 8.33%,  #060C18 16.66%,
+      #081020 16.66%, #081020 25%,
+      #0A1428 25%,    #0A1428 33.33%,
+      #0C1830 33.33%, #0C1830 41.66%,
+      #0E1C38 41.66%, #0E1C38 58.33%,
+      #0C1830 58.33%, #0C1830 66.66%,
+      #0A1428 66.66%, #0A1428 75%,
+      #081020 75%,    #081020 83.33%,
+      #060C18 83.33%, #060C18 91.66%,
+      #040810 91.66%, #040810 100%);
 }
 .hero::after{
   content:'';position:absolute;inset:0;pointer-events:none;z-index:0;
   background:linear-gradient(to right,
-    transparent 8.32%,  rgba(255,255,255,0.025) 8.33%,  transparent 8.34%,
-    transparent 16.65%, rgba(255,255,255,0.025) 16.66%, transparent 16.67%,
-    transparent 24.99%, rgba(255,255,255,0.03)  25%,    transparent 25.01%,
-    transparent 33.32%, rgba(255,255,255,0.03)  33.33%, transparent 33.34%,
-    transparent 41.65%, rgba(201,168,76,0.12)   41.66%, transparent 41.67%,
-    transparent 58.32%, rgba(201,168,76,0.12)   58.33%, transparent 58.34%,
-    transparent 66.65%, rgba(255,255,255,0.03)  66.66%, transparent 66.67%,
-    transparent 74.99%, rgba(255,255,255,0.03)  75%,    transparent 75.01%,
-    transparent 83.32%, rgba(255,255,255,0.025) 83.33%, transparent 83.34%,
-    transparent 91.65%, rgba(255,255,255,0.025) 91.66%, transparent 91.67%);
+    transparent 8.32%,  rgba(255,255,255,0.04) 8.33%,  transparent 8.34%,
+    transparent 16.65%, rgba(255,255,255,0.04) 16.66%, transparent 16.67%,
+    transparent 24.99%, rgba(255,255,255,0.05) 25%,    transparent 25.01%,
+    transparent 33.32%, rgba(255,255,255,0.05) 33.33%, transparent 33.34%,
+    transparent 41.65%, rgba(201,168,76,0.15)  41.66%, transparent 41.67%,
+    transparent 58.32%, rgba(201,168,76,0.15)  58.33%, transparent 58.34%,
+    transparent 66.65%, rgba(255,255,255,0.05) 66.66%, transparent 66.67%,
+    transparent 74.99%, rgba(255,255,255,0.05) 75%,    transparent 75.01%,
+    transparent 83.32%, rgba(255,255,255,0.04) 83.33%, transparent 83.34%,
+    transparent 91.65%, rgba(255,255,255,0.04) 91.66%, transparent 91.67%);
 }
 
 /* centre shaft */
@@ -206,7 +206,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
   font-family:'Cormorant Garamond',Georgia,serif;
   font-size:clamp(5.5rem,11vw,9.5rem);
   font-weight:400;
-  color:var(--gold);
+  color:#F0EAD6;
   line-height:1;
   letter-spacing:-0.01em;
   white-space:nowrap;
@@ -246,7 +246,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 
 /* buttons — same width as numeral block via width:100% */
 .hero-btns{display:flex;gap:1rem;margin-top:1.8rem;justify-content:center;}
-.hero-btn{font-family:'DM Sans',sans-serif;font-size:0.78rem;letter-spacing:0.13em;text-transform:uppercase;background:var(--gold);color:var(--deep);padding:0.8rem 2rem;border-radius:2px;text-decoration:none;font-weight:500;transition:background 0.2s;white-space:nowrap;display:inline-block;}
+.hero-btn{font-family:'DM Sans',sans-serif;font-size:0.78rem;letter-spacing:0.13em;text-transform:uppercase;padding:0.8rem 0;width:190px;text-align:center;border-radius:2px;text-decoration:none;font-weight:500;transition:all 0.2s;white-space:nowrap;display:inline-block;}
 .hero-btn:first-child{background:var(--gold);color:var(--deep);}
 .hero-btn:first-child:hover{background:var(--gold-light);}
 .hero-btn:last-child{background:transparent;color:var(--gold);border:0.5px solid rgba(201,168,76,0.4);}
@@ -317,7 +317,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 <nav>
   <a href="index.html" class="nav-logo"><img src="logo.png" alt="2:22 Church"></a>
   <ul class="nav-links">
-    <li><a href="index.html#about" class="active">Truth</a></li>
+    <li><a href="index.html#about" class="active">Home</a></li>
     <li class="nav-item">
       <a href="our-story.html">About <span class="caret">&#9660;</span></a>
       <div class="nav-dropdown">
@@ -356,7 +356,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 </nav>
 <div class="mobile-menu" id="mobile-menu">
   <button class="mobile-close" onclick="document.getElementById('mm').classList.remove('open')">&times;</button>
-  <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Truth</a>
+  <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
   <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
   <a href="blog.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blog</a>
