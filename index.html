@@ -214,11 +214,11 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 .h-sep{
   display:block;
   width:1.5px;
-  height:0.65em;
-  margin:0 0.15em;
+  height:0.44em;
+  margin:0 0.2em;
   flex-shrink:0;
-  background:linear-gradient(to bottom,
-    transparent 0%,rgba(201,168,76,0.8) 20%,rgba(201,168,76,0.8) 80%,transparent 100%);
+  align-self:center;
+  background:linear-gradient(to bottom,transparent,rgba(201,168,76,0.85) 15%,rgba(201,168,76,0.85) 85%,transparent);
 }
 
 /* CHURCH row — rules stretch to match numeral width via width:100% */
@@ -236,12 +236,12 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 }
 .h-church{
   font-family:'DM Sans',sans-serif;
-  font-size:clamp(0.5rem,0.75vw,0.72rem);
+  font-size:clamp(0.75rem,1.1vw,1rem);
   letter-spacing:0.42em;
   text-transform:uppercase;
-  color:rgba(240,234,214,0.45);
+  color:#F0EAD6;
   white-space:nowrap;
-  padding-right:0.42em; /* offset last letter-spacing */
+  padding-right:0.42em;
 }
 
 /* buttons — same width as numeral block via width:100% */

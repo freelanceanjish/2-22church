@@ -47,7 +47,42 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .mobile-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:var(--text-muted);font-size:1.8rem;cursor:pointer;line-height:1;}
 
 /* PAGE HEADER */
-.page-header{padding:10rem 2rem 5rem;background:var(--deep-mid);border-bottom:0.5px solid var(--border-subtle);text-align:center;}
+.page-header{
+  padding:10rem 2rem 5rem;
+  background:
+    linear-gradient(to right,
+      #040810 0%,     #040810 8.33%,
+      #060C18 8.33%,  #060C18 16.66%,
+      #081020 16.66%, #081020 25%,
+      #0A1428 25%,    #0A1428 33.33%,
+      #0C1830 33.33%, #0C1830 41.66%,
+      #0E1C38 41.66%, #0E1C38 58.33%,
+      #0C1830 58.33%, #0C1830 66.66%,
+      #0A1428 66.66%, #0A1428 75%,
+      #081020 75%,    #081020 83.33%,
+      #060C18 83.33%, #060C18 91.66%,
+      #040810 91.66%, #040810 100%);
+  border-bottom:0.5px solid rgba(201,168,76,0.15);
+  text-align:center;
+  position:relative;
+}
+.page-header::after{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(to right,
+    transparent 8.32%,  rgba(255,255,255,0.04) 8.33%,  transparent 8.34%,
+    transparent 16.65%, rgba(255,255,255,0.04) 16.66%, transparent 16.67%,
+    transparent 24.99%, rgba(255,255,255,0.05) 25%,    transparent 25.01%,
+    transparent 33.32%, rgba(255,255,255,0.05) 33.33%, transparent 33.34%,
+    transparent 41.65%, rgba(201,168,76,0.14)  41.66%, transparent 41.67%,
+    transparent 58.32%, rgba(201,168,76,0.14)  58.33%, transparent 58.34%,
+    transparent 66.65%, rgba(255,255,255,0.05) 66.66%, transparent 66.67%,
+    transparent 74.99%, rgba(255,255,255,0.05) 75%,    transparent 75.01%,
+    transparent 83.32%, rgba(255,255,255,0.04) 83.33%, transparent 83.34%,
+    transparent 91.65%, rgba(255,255,255,0.04) 91.66%, transparent 91.67%);
+}
+.page-header .eyebrow,
+.page-header h1,
+.page-header p{ position:relative; z-index:1; }
 .eyebrow{font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;justify-content:center;gap:1rem;}
 .eyebrow::before,.eyebrow::after{content:'';display:block;width:30px;height:0.5px;background:var(--gold);opacity:0.5;}
 .page-header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6vw,5rem);font-weight:300;line-height:1.05;}
@@ -107,3 +142,121 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 @media(max-width:600px){
   .footer-grid{grid-template-columns:1fr;}
 }
+
+/* ════════════ TYPOGRAPHY SYSTEM ════════════ */
+/* All headings — Cormorant Garamond, text-primary */
+h1,h2,h3,h4{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-weight:300;
+  color:var(--text-primary);
+  line-height:1.2;
+}
+h1 em, h2 em, h3 em{ font-style:italic; color:var(--gold); }
+
+/* Body text — DM Sans */
+p, li, td, th{
+  font-family:'DM Sans',sans-serif;
+  color:var(--text-secondary);
+  line-height:1.8;
+}
+
+/* Blockquotes — Cormorant serif italic, gold left border */
+blockquote{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--text-primary);
+  border-left:2px solid var(--gold);
+  padding:1rem 1.4rem;
+  margin:1.8rem 0;
+  background:rgba(201,168,76,0.04);
+  line-height:1.75;
+}
+blockquote cite, blockquote footer{
+  display:block;
+  margin-top:0.5rem;
+  font-style:normal;
+  font-family:'DM Sans',sans-serif;
+  font-size:0.65rem;
+  letter-spacing:0.16em;
+  text-transform:uppercase;
+  color:var(--gold);
+}
+
+/* Strong emphasis */
+strong{ color:var(--text-primary); font-weight:500; }
+em{ color:var(--gold); }
+
+/* Links */
+a{ color:var(--gold); text-decoration:none; transition:color 0.2s; }
+a:hover{ color:var(--gold-light); }
+
+/* Section labels */
+.section-label{
+  font-family:'DM Sans',sans-serif;
+  font-size:0.68rem;
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:1rem;
+  display:flex;
+  align-items:center;
+  gap:0.75rem;
+}
+.section-label::before{
+  content:'';display:block;
+  width:24px;height:0.5px;
+  background:var(--gold);
+}
+
+/* Section titles */
+.section-title{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:clamp(2rem,4vw,3.2rem);
+  font-weight:300;
+  color:var(--text-primary);
+  line-height:1.15;
+  margin-bottom:1.5rem;
+}
+.section-title em{ font-style:italic; color:var(--gold); }
+
+/* Page header typography */
+.page-header h1{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:clamp(2.8rem,6vw,5rem);
+  font-weight:300;
+  color:var(--text-primary);
+  line-height:1.05;
+}
+.page-header h1 em{ font-style:italic; color:var(--gold); }
+.page-header .eyebrow{
+  font-family:'DM Sans',sans-serif;
+  font-size:0.7rem;
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:1.2rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:1rem;
+  position:relative;
+  z-index:1;
+}
+.page-header .eyebrow::before,
+.page-header .eyebrow::after{
+  content:'';display:block;
+  width:30px;height:0.5px;
+  background:var(--gold);opacity:0.5;
+}
+.page-header p{
+  font-family:'DM Sans',sans-serif;
+  color:var(--text-secondary);
+  font-size:1rem;
+  max-width:580px;
+  margin:1.2rem auto 0;
+  line-height:1.8;
+  position:relative;
+  z-index:1;
+}
+/* ════════════ END TYPOGRAPHY ════════════ */
