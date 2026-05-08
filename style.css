@@ -20,7 +20,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .nav-logo img{height:1.9rem;width:auto;display:block;}
 .nav-links{display:flex;gap:1.4rem;list-style:none;}
 .nav-links li{list-style:none;}
-.nav-links a{font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;white-space:nowrap;}
+.nav-links a{font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-primary);font-weight:500;text-decoration:none;transition:color 0.2s;white-space:nowrap;font-style:normal;}
 .nav-links a:hover,.nav-links a.active{color:var(--gold);}
 .nav-cta{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.5rem 1rem;border-radius:2px;flex-shrink:0;text-decoration:none;font-weight:500;white-space:nowrap;transition:background 0.2s;}
 .nav-cta:hover{background:var(--gold-light);}
@@ -32,7 +32,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .nav-item.open .caret{transform:rotate(180deg);}
 .nav-dropdown{display:none;position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%);background:rgba(13,17,23,0.97);border:0.5px solid var(--border);backdrop-filter:blur(16px);min-width:170px;z-index:200;padding:0.4rem 0;}
 .nav-item.open .nav-dropdown{display:block;}
-.nav-dropdown a{display:block;padding:0.6rem 1.2rem;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;transition:all 0.15s;white-space:nowrap;}
+.nav-dropdown a{display:block;padding:0.6rem 1.2rem;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-primary);font-weight:400;text-decoration:none;transition:all 0.15s;white-space:nowrap;font-style:normal;}
 .nav-dropdown a:hover{color:var(--gold);background:rgba(201,168,76,0.06);}
 
 /* HAMBURGER */
@@ -42,7 +42,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 /* MOBILE MENU */
 .mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,17,23,0.98);z-index:150;flex-direction:column;align-items:center;justify-content:flex-start;padding:5rem 2rem 3rem;overflow-y:auto;}
 .mobile-menu.open{display:flex;}
-.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--text-primary);text-decoration:none;letter-spacing:0.06em;padding:0.7rem 0;border-bottom:0.5px solid var(--border-subtle);width:100%;text-align:center;transition:color 0.2s;}
+.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--text-primary);text-decoration:none;letter-spacing:0.06em;padding:0.7rem 0;border-bottom:0.5px solid var(--border-subtle);width:100%;text-align:center;transition:color 0.2s;}
 .mobile-menu a:hover{color:var(--gold);}
 .mobile-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:var(--text-muted);font-size:1.8rem;cursor:pointer;line-height:1;}
 
@@ -260,3 +260,27 @@ a:hover{ color:var(--gold-light); }
   z-index:1;
 }
 /* ════════════ END TYPOGRAPHY ════════════ */
+
+/* ── GLOBAL SYNC ── */
+/* Ensure no stray italics on UI elements */
+nav, nav *, button, .btn-primary, .btn-ghost,
+.section-label, .eyebrow, .footer-col h4,
+.footer-col a, .blog-tag, .blog-date{
+  font-style:normal;
+}
+/* Consistent heading colour */
+h1, h2, h3, h4, h5, h6{
+  color:var(--text-primary);
+  font-style:normal;
+}
+/* Gold on em/italic only inside content, not nav */
+.nav-links em, .nav-links i{ font-style:normal; color:inherit; }
+/* DM Sans for all UI text */
+nav, .btn-primary, .btn-ghost, .section-label,
+.eyebrow, footer, .blog-tag, .blog-date,
+.qa-question-text, .qa-group-title{ font-family:'DM Sans',sans-serif; }
+/* Cormorant for all content headings */
+h1, h2, h3, blockquote, .section-title{
+  font-family:'Cormorant Garamond',Georgia,serif;
+}
+/* ── END GLOBAL SYNC ── */
