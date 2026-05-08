@@ -185,6 +185,10 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
 }
 .nav-dropdown a:hover{color:#5B8DB8;background:rgba(91,141,184,0.08);}
 
+
+.hero-video-bg{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;}
+.hero-video-bg iframe{position:absolute;top:50%;left:50%;width:177.78vh;min-width:100%;height:56.25vw;min-height:100%;transform:translate(-50%,-50%);border:none;}
+.hero-video-overlay{position:absolute;inset:0;z-index:1;background:rgba(4,8,16,0.72);}
 </style>
 </head>
 <body>
@@ -246,9 +250,10 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
 
 <!-- HERO, YouTube video background 18s–37s loop -->
 <section class="hero">
-  <div id="yt-bg-wrap">
-    <div id="yt-player"></div>
+  <div class="hero-video-bg">
+    <iframe src="https://www.youtube.com/embed/y9vwgARhy4w?autoplay=1&mute=1&loop=1&playlist=y9vwgARhy4w&start=39&controls=0&showinfo=0&rel=0&playsinline=1" allow="autoplay;encrypted-media" allowfullscreen></iframe>
   </div>
+  <div class="hero-video-overlay"></div>
   <div class="hero-overlay"></div>
   <div class="hero-overlay2"></div>
 
@@ -268,21 +273,6 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
   </div>
   <div class="hero-scroll">Scroll</div>
 </section>
-
-<!-- Video 1 — right after hero -->
-<section style="padding:3rem 2rem 0;background:var(--deep);">
-  <div class="container">
-    <div class="yt-embed-wrap">
-      <iframe
-        src="https://www.youtube.com/embed/y9vwgARhy4w?rel=0&modestbranding=1"
-        title="God of Pi — Project 314"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </div>
-</section>
-
 
 <!-- ABOUT PROJECT -->
 <section class="about-project" id="discovery">
@@ -510,7 +500,7 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
     <!-- Featured video embed -->
     <div class="yt-embed-wrap">
       <iframe
-        src="https://www.youtube.com/embed/SjlM2JIlcXQ?rel=0&modestbranding=1"
+        src="https://www.youtube.com/embed/SjlM2JIlcXQ?start=194&rel=0&modestbranding=1"
         title="Project 314, Tabernacle Discovery"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
@@ -652,65 +642,7 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
 </footer>
 
 <!-- YouTube IFrame API, loop video from 18s to 37s -->
-<script>
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-document.head.appendChild(tag);
 
-var player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('yt-player', {
-    videoId: 'SjlM2JIlcXQ',
-    playerVars: {
-      autoplay: 1,
-      mute: 1,
-      controls: 0,
-      showinfo: 0,
-      rel: 0,
-      disablekb: 1,
-      modestbranding: 1,
-      iv_load_policy: 3,
-      start: 18
-    },
-    events: {
-      onReady: function(e) {
-        e.target.playVideo();
-        // poll every 150ms, when we hit 37s, jump back to 18s
-        setInterval(function() {
-          if (!player || typeof player.getCurrentTime !== 'function') return;
-          if (player.getCurrentTime() >= 37) {
-            player.seekTo(18, true);
-          }
-        }, 150);
-      },
-      onStateChange: function(e) {
-        // if video ends for any reason, restart from 18s
-        if (e.data === YT.PlayerState.ENDED) {
-          player.seekTo(18, true);
-          player.playVideo();
-        }
-        // keep playing if paused by anything external
-        if (e.data === YT.PlayerState.PAUSED) {
-          setTimeout(function(){ player.playVideo(); }, 200);
-        }
-      }
-    }
-  });
-}
-
-// scroll-reveal
-var obs = new IntersectionObserver(function(entries){
-  entries.forEach(function(e){
-    if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}
-  });
-},{threshold:0.07});
-document.querySelectorAll('.diag-card,.prod-card,.tl-item,.media-link').forEach(function(el){
-  el.style.opacity='0';
-  el.style.transform='translateY(16px)';
-  el.style.transition='opacity 0.55s ease,transform 0.55s ease';
-  obs.observe(el);
-});
-</script>
 
 <script>
 document.addEventListener('click', function(e) {
