@@ -22,8 +22,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .nav-links li{list-style:none;}
 .nav-links a{font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-primary);font-weight:500;text-decoration:none;transition:color 0.2s;white-space:nowrap;font-style:normal;}
 .nav-links a:hover,.nav-links a.active{color:var(--gold);}
-.nav-cta{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.5rem 1rem;border-radius:2px;flex-shrink:0;text-decoration:none;font-weight:500;white-space:nowrap;transition:background 0.2s;}
-.nav-cta:hover{background:var(--gold-light);}
+.nav-cta{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--deep);background:var(--text-primary);padding:0.5rem 1rem;border-radius:2px;flex-shrink:0;text-decoration:none;font-weight:500;white-space:nowrap;transition:background 0.2s;}
+.nav-cta:hover{background:#fff;}
 
 /* NAV DROPDOWN */
 .nav-item{position:relative;list-style:none;}
@@ -98,10 +98,10 @@ section{padding:7rem 2rem;}
 .section-title em{font-style:italic;color:var(--gold);}
 
 /* BUTTONS */
-.btn-primary{font-size:0.8rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--deep);background:var(--gold);padding:0.85rem 2.2rem;border-radius:2px;text-decoration:none;font-weight:500;transition:all 0.2s;display:inline-block;}
-.btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);}
-.btn-ghost{font-size:0.8rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);background:transparent;padding:0.85rem 2.2rem;border-radius:2px;border:0.5px solid var(--border);text-decoration:none;transition:all 0.2s;display:inline-block;}
-.btn-ghost:hover{border-color:var(--gold);background:rgba(201,168,76,0.06);}
+.btn-primary{font-size:0.8rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--deep);background:var(--text-primary);padding:0.85rem 2.2rem;border-radius:2px;text-decoration:none;font-weight:500;transition:all 0.2s;display:inline-block;}
+.btn-primary:hover{background:#fff;transform:translateY(-1px);}
+.btn-ghost{font-size:0.8rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-primary);background:transparent;padding:0.85rem 2.2rem;border-radius:2px;border:0.5px solid rgba(240,234,214,0.3);text-decoration:none;transition:all 0.2s;display:inline-block;}
+.btn-ghost:hover{border-color:var(--text-primary);background:rgba(240,234,214,0.06);}
 
 /* BLOG CARDS */
 .blog-tag{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,0.1);padding:0.25rem 0.65rem;border-radius:2px;}
