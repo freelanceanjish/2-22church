@@ -220,7 +220,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 /* column dividers */
 .col-lines{position:absolute;inset:0;pointer-events:none;z-index:1;background:linear-gradient(to right,transparent 8.32%,rgba(255,255,255,0.05) 8.33%,transparent 8.34%,transparent 16.65%,rgba(255,255,255,0.05) 16.66%,transparent 16.67%,transparent 24.99%,rgba(255,255,255,0.06) 25%,transparent 25.01%,transparent 33.32%,rgba(255,255,255,0.06) 33.33%,transparent 33.34%,transparent 41.65%,rgba(201,168,76,0.18) 41.66%,transparent 41.67%,transparent 58.32%,rgba(201,168,76,0.18) 58.33%,transparent 58.34%,transparent 66.65%,rgba(255,255,255,0.06) 66.66%,transparent 66.67%,transparent 74.99%,rgba(255,255,255,0.06) 75%,transparent 75.01%,transparent 83.32%,rgba(255,255,255,0.05) 83.33%,transparent 83.34%,transparent 91.65%,rgba(255,255,255,0.05) 91.66%,transparent 91.67%);}
 
-.hero-shaft{position:absolute;left:50%;transform:translateX(-50%);top:0;bottom:0;width:2px;background:linear-gradient(to bottom,transparent,rgba(201,168,76,0.22) 20%,rgba(201,168,76,0.22) 80%,transparent);z-index:1;pointer-events:none;}
+.hero-shaft{display:none;}
 .hero-glow{position:absolute;bottom:-40px;left:50%;transform:translateX(-50%);width:55%;height:280px;background:radial-gradient(ellipse at center top,rgba(201,168,76,0.13) 0%,transparent 65%);z-index:1;pointer-events:none;}
 
 /* 3-col layout */
@@ -230,10 +230,10 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 .h-centre{display:flex;flex-direction:column;align-items:center;padding:0 3vw;}
 .h-num{display:flex;flex-direction:row;align-items:center;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(5.5rem,11vw,9.5rem);font-weight:400;color:#F0EAD6;line-height:1;letter-spacing:0;white-space:nowrap;font-style:normal;}
 .h-n{font-style:normal;letter-spacing:0;}
-.h-dash{display:block;width:0.13em;height:1.5px;background:#F0EAD6;margin:0 0.12em;flex-shrink:0;align-self:center;border-radius:0;}
+.h-dash{display:block;width:0.13em;height:1.5px;background:#F0EAD6;margin:0 0.12em;flex-shrink:0;align-self:center;border-radius:0;transform:translateY(0.18em);}
 .h-church-row{display:flex;align-items:center;width:100%;gap:0.6rem;margin-top:0.5rem;}
-.h-rule{flex:1;height:0.5px;background:rgba(201,168,76,0.3);}
-.h-church{font-family:'DM Sans',sans-serif;font-size:clamp(0.7rem,0.9vw,0.85rem);font-weight:500;letter-spacing:0.38em;text-transform:uppercase;color:#F0EAD6;font-style:normal;padding-right:0.38em;}
+.h-rule{display:none;}
+.h-church{font-family:'DM Sans',sans-serif;font-size:clamp(0.7rem,0.9vw,0.85rem);font-weight:500;letter-spacing:0.38em;text-transform:uppercase;color:#F0EAD6;font-style:normal;display:block;transform-origin:center center;white-space:nowrap;}
 
 /* buttons — both same gold style */
 /* verse cards */
@@ -255,7 +255,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
   }
 /* ═══ END HERO ═══ */
 @media(max-width:860px){}
-.hero-btns{display:flex;gap:1rem;margin-top:1.8rem;justify-content:center;}
+.hero-btns{display:flex;gap:1rem;margin-top:3.2rem;justify-content:center;}
 .hero-btn{font-family:'DM Sans',sans-serif;font-size:0.78rem;letter-spacing:0.13em;text-transform:uppercase;padding:0.8rem 0;width:190px;text-align:center;border-radius:2px;text-decoration:none;font-weight:500;transition:all 0.2s;white-space:nowrap;display:inline-block;background:var(--text-primary);color:var(--deep);}
 .hero-btn:hover{background:#fff;transform:translateY(-1px);}
 @media(max-width:860px){.hero-btns{flex-direction:column;align-items:center;}.hero-btn{width:80vw;}}
@@ -351,14 +351,14 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 
     <!-- CENTRE -->
     <div class="h-centre">
-      <div class="h-num">
+      <div class="h-num" id="h-num-el">
         <span class="h-n">2</span>
         <span class="h-dash"></span>
         <span class="h-n">22</span>
       </div>
       <div class="h-church-row">
         <span class="h-rule"></span>
-        <span class="h-church">Church</span>
+        <span class="h-church" id="h-church-text">A House Church Movement</span>
         <span class="h-rule"></span>
       </div>
       <div class="hero-btns">
@@ -754,6 +754,23 @@ document.querySelectorAll('.mobile-link').forEach(function(link) {
 });
 
 renderHomepagePosts();
+
+// Fit tagline to numeral width
+function fitTagline() {
+  var num = document.getElementById('h-num-el');
+  var tag = document.getElementById('h-church-text');
+  if (!num || !tag) return;
+  tag.style.transform = '';
+  var nw = num.offsetWidth;
+  var tw = tag.offsetWidth;
+  if (tw > 0 && nw > 0) {
+    tag.style.transform = 'scaleX(' + (nw / tw).toFixed(4) + ')';
+  }
+}
+document.fonts.ready.then(fitTagline);
+window.addEventListener('resize', fitTagline);
+setTimeout(fitTagline, 300);
+
 
 // Fade-in on scroll
 var observer = new IntersectionObserver(function(entries) {
