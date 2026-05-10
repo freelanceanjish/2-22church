@@ -59,7 +59,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 .hero-scroll::after{content:'';display:block;width:0.5px;height:40px;background:linear-gradient(to bottom,var(--gold-dark),transparent);}
 @keyframes bobble{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
 .about{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);border-bottom:0.5px solid var(--border-subtle);}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}@media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:3rem;}}
 .about-text p{color:var(--text-secondary);font-size:1rem;margin-bottom:1.2rem;line-height:1.85;}
 .about-text p strong{color:var(--text-primary);font-weight:500;}
 .dual-verse{background:var(--surface);border:0.5px solid var(--border);border-radius:4px;padding:2rem;margin-top:2rem;}
@@ -231,7 +231,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 .h-num{display:flex;flex-direction:row;align-items:center;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(5.5rem,11vw,9.5rem);font-weight:400;color:#F0EAD6;line-height:1;letter-spacing:0;white-space:nowrap;font-style:normal;}
 .h-n{font-style:normal;letter-spacing:0;}
 .h-dash{display:block;width:0.13em;height:1.5px;background:#F0EAD6;margin:0 0.12em;flex-shrink:0;align-self:center;border-radius:0;transform:translateY(0.18em);}
-.h-church-row{display:flex;align-items:center;width:100%;gap:0.6rem;margin-top:0.5rem;}
+.h-church-row{display:flex;align-items:center;justify-content:center;width:100%;margin-top:0.6rem;overflow:visible;}
 .h-rule{display:none;}
 .h-church{font-family:'DM Sans',sans-serif;font-size:clamp(0.7rem,0.9vw,0.85rem);font-weight:500;letter-spacing:0.38em;text-transform:uppercase;color:#F0EAD6;font-style:normal;display:inline-block;transform-origin:center center;white-space:nowrap;}
 
@@ -252,6 +252,8 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
   .vc{display:none;}
   .h-centre{padding:0;width:100%;max-width:380px;}
   .h-num{font-size:clamp(4rem,18vw,6rem);}
+  .h-church-row{justify-content:center;overflow:visible;}
+  .h-church{transform-origin:center center;}
   }
 /* ═══ END HERO ═══ */
 @media(max-width:860px){}
@@ -259,6 +261,40 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 .hero-btn{font-family:'DM Sans',sans-serif;font-size:0.78rem;letter-spacing:0.13em;text-transform:uppercase;padding:0.8rem 0;width:190px;text-align:center;border-radius:2px;text-decoration:none;font-weight:500;transition:all 0.2s;white-space:nowrap;display:inline-block;background:var(--text-primary);color:var(--deep);}
 .hero-btn:hover{background:#fff;transform:translateY(-1px);}
 @media(max-width:860px){.hero-btns{flex-direction:column;align-items:center;}.hero-btn{width:80vw;}}
+
+/* ── MOBILE TOTAL FIX ── */
+@media(max-width:860px){
+
+  /* Foundation section — stack columns */
+  .about-grid{grid-template-columns:1fr !important;gap:2.5rem !important;}
+
+  /* Dual-verse card and diagram — full width, readable padding */
+  .dual-verse{padding:1.5rem;}
+  .dual-verse h3{font-size:0.65rem;}
+
+  /* Photo mosaic — single column stack */
+  .photo-mosaic{grid-template-columns:1fr !important;grid-template-rows:auto !important;}
+  .photo-slot.large{grid-row:auto !important;height:220px;}
+  .photo-slot{height:180px;}
+
+  /* Community cards — ensure single column on small screens */
+  .community-grid{grid-template-columns:1fr !important;}
+
+  /* Belief cards — single column */
+  .beliefs-grid{grid-template-columns:1fr !important;}
+
+  /* Blog grid — single column */
+  .blog-grid{grid-template-columns:1fr !important;}
+  .blog-card.featured{grid-column:span 1 !important;}
+
+  /* Section spacing */
+  .community-statement{margin-bottom:2rem;}
+}
+
+@media(max-width:600px){
+  .about-grid{gap:2rem !important;}
+  .dual-verse{padding:1.2rem;}
+}
 </style>
 </head>
 <body>
@@ -760,16 +796,21 @@ function fitTagline() {
   var num = document.getElementById('h-num-el');
   var tag = document.getElementById('h-church-text');
   if (!num || !tag) return;
-  tag.style.transform = '';
-  var nw = num.offsetWidth;
-  var tw = tag.offsetWidth;
-  if (tw > 0 && nw > 0) {
-    tag.style.transform = 'scaleX(' + (nw / tw).toFixed(4) + ')';
-  }
+  tag.style.transform = 'none';
+  requestAnimationFrame(function() {
+    var nw = num.offsetWidth;
+    var tw = tag.offsetWidth;
+    if (tw > 0 && nw > 0) {
+      tag.style.transform = 'scaleX(' + (nw / tw).toFixed(4) + ')';
+    }
+  });
 }
-document.fonts.ready.then(fitTagline);
+document.fonts.ready.then(function() {
+  fitTagline();
+  setTimeout(fitTagline, 400);
+  setTimeout(fitTagline, 900);
+});
 window.addEventListener('resize', fitTagline);
-setTimeout(fitTagline, 300);
 
 
 // Fade-in on scroll
