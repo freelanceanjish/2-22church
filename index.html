@@ -264,31 +264,19 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 
 /* ── MOBILE TOTAL FIX ── */
 @media(max-width:860px){
-
-  /* Foundation section — stack columns */
   .about-grid{grid-template-columns:1fr !important;gap:2.5rem !important;}
-
-  /* Dual-verse card and diagram — full width, readable padding */
   .dual-verse{padding:1.5rem;}
   .dual-verse h3{font-size:0.65rem;}
-
-  /* Photo mosaic — single column stack */
   .photo-mosaic{grid-template-columns:1fr !important;grid-template-rows:auto !important;}
   .photo-slot.large{grid-row:auto !important;height:220px;}
   .photo-slot{height:180px;}
-
-  /* Community cards — ensure single column on small screens */
   .community-grid{grid-template-columns:1fr !important;}
-
-  /* Belief cards — single column */
   .beliefs-grid{grid-template-columns:1fr !important;}
-
-  /* Blog grid — single column */
   .blog-grid{grid-template-columns:1fr !important;}
   .blog-card.featured{grid-column:span 1 !important;}
-
-  /* Section spacing */
   .community-statement{margin-bottom:2rem;}
+  .proclaim-grid{grid-template-columns:1fr !important;gap:2rem !important;}
+  .proclaim-diagram{position:static !important;margin-top:0;}
 }
 
 @media(max-width:600px){
@@ -435,33 +423,21 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 <section class="about" id="about">
   <div class="container">
     <div class="about-grid">
+
+      <!-- LEFT: intro text -->
       <div class="about-text">
         <div class="section-label">Our Foundation</div>
-<h2 class="section-title">Built on the Foundation of the <em>Apostles and Prophets</em></h2>
+        <h2 class="section-title">Built on the Foundation of the <em>Apostles and Prophets</em></h2>
 
         <p>We are a &#8216;House Church Movement&#8217; that is returning to the &#8216;original model of faith&#8217; by gathering in small groups at homes, gardens, beaches, and backyards, continuing steadfastly in the apostles&#8217; doctrine and fellowship, and in the breaking of bread, and in prayers, as mentioned in <em>Acts 2:42</em>. We believe in the God the Hebrews believed in, <em>Deuteronomy 6:4</em>. We agree with the testimony Jesus gave about Himself and God in <em>John 17:3</em>, and with that we follow the footsteps of the Apostles as declared in <em>Acts 2:36, Ephesians 1:3,</em> and <em>1 Corinthians 8:6</em>.</p>
-
-        <p style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin:1.8rem 0 0.5rem;border-left:2px solid var(--gold);padding-left:0.75rem;">To Proclaim</p>
-
-        <div style="margin:1.5rem 0 1.8rem;text-align:center;">
-          <img src="Foundations.png" alt="Church Foundation — Apostles Teaching, Fellowship, Breaking Bread, Prayers" style="width:100%;max-width:380px;display:block;margin:0 auto;mix-blend-mode:screen;">
-        </div>
-
-        <p>We gather in the pattern of <em>Acts 2:42</em>, continuing steadfastly in the four pillars of apostolic life: <strong>Apostolic Teaching</strong>, <strong>Fellowship</strong>, <strong>Breaking of Bread</strong>, and <strong>Prayer</strong>. These are not optional extras — they are the foundation.</p> one and none other, to whom Jesus called <em>&#8216;My Father and your Father, my God and your God&#8217;</em> — <em>John 20:17</em>.</p>
-
-        <p><strong>We believe in Jesus Christ, God&#8217;s Son,</strong> whom He made Lord and Saviour over and of us all, as mentioned in <em>Hebrews 1:1&#8211;4</em>.</p>
-
-        <p><strong>We also believe the Holy Spirit is the Spirit of God Himself:</strong> indivisible, inseparable, unpartable, insecable, nondivisible, undissectable, unsplittable — therefore not a distinct person from God, as referenced in <em>1 Corinthians 2:11, Zechariah 4:6,</em> and <em>2 Corinthians 3:17</em>.</p>
-
-        <p>We encourage true worship that requires a devoted, broken, and poor heart, and not expensive instruments that generate phenomenal music through popular songs that present high production, rehearsed worship, and professional lighting that can feel emotionally manipulative but spiritually hollow. Therefore we do not strive for a skilled choir, but for hearts that are well-tamed for eternity, as warned in <em>Matthew 15:8&#8211;9</em> and <em>2 Timothy 3:5</em>.</p>
-
-        <p>We are the voice in the days of delusion, calling everyone back to Truth, asking them to separate themselves from the world as mentioned in <em>Revelation 18:4</em>. We are burdened to expose the darkness, advising against participating in sinful or &#8216;fruitless&#8217; deeds and calling instead for them to be brought to light — <em>Ephesians 5:11</em>.</p>
       </div>
+
+      <!-- RIGHT: name card -->
       <div>
         <div class="dual-verse">
           <h3>Why the name 2-22?</h3>
-          <div style="margin-bottom:1.5rem;">
-            <img src="2visions.png" alt="Two Visions — Passion for Purity" style="width:100%;max-width:260px;display:block;margin:0 auto 1.2rem;mix-blend-mode:screen;">
+          <div style="margin-bottom:1.5rem;text-align:center;">
+            <img src="2visions.png" alt="Two Visions — Passion for Purity" style="width:100%;max-width:240px;display:block;margin:0 auto 1.2rem;mix-blend-mode:screen;">
           </div>
           <div class="verse-block">
             <cite style="font-family:'DM Sans',sans-serif;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.5rem;">2:2 — First Vision</cite>
@@ -474,14 +450,46 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
             <p style="font-size:0.82rem;color:var(--text-muted);margin-top:0.5rem;line-height:1.6;">2 Timothy 2:22 — a call to pursue righteousness, faith, love and peace together. Purity that begins within, lived out in holy community. The two callings are inseparable — one digit shared between them.</p>
           </div>
         </div>
+      </div>
 
-        <div style="margin-top:1.5rem;border:0.5px solid var(--border);border-radius:4px;padding:1.5rem;background:var(--surface);">
+    </div><!-- /about-grid -->
+
+    <!-- FULL-WIDTH: Foundations image + Proclaim + YHWH diagram -->
+    <div style="margin-top:3.5rem;border-top:0.5px solid var(--border);padding-top:3rem;">
+
+      <!-- Foundations image centred above Proclaim -->
+      <div style="text-align:center;margin-bottom:2.5rem;">
+        <img src="Foundations.png" alt="Church Foundation — Apostles Teaching, Fellowship, Breaking Bread, Prayers" style="width:100%;max-width:460px;display:inline-block;mix-blend-mode:screen;">
+      </div>
+
+      <!-- Proclaim label -->
+      <p style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.8rem;border-left:2px solid var(--gold);padding-left:0.75rem;">To Proclaim</p>
+
+      <!-- Two-col: proclamations left, YHWH diagram right -->
+      <div class="proclaim-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;">
+
+        <div>
+          <p style="margin-bottom:1.4rem;">We gather in the pattern of <em>Acts 2:42</em>, continuing steadfastly in the four pillars of apostolic life: <strong>Apostolic Teaching</strong>, <strong>Fellowship</strong>, <strong>Breaking of Bread</strong>, and <strong>Prayer</strong>. These are not optional extras — they are the foundation.</p>
+
+          <p style="margin-bottom:1.4rem;"><strong>We believe in One True God,</strong> one and none other, to whom Jesus called <em>&#8216;My Father and your Father, my God and your God&#8217;</em> — <em>John 20:17</em>.</p>
+
+          <p style="margin-bottom:1.4rem;"><strong>We believe in Jesus Christ, God&#8217;s Son,</strong> whom He made Lord and Saviour over and of us all, as mentioned in <em>Hebrews 1:1&#8211;4</em>.</p>
+
+          <p style="margin-bottom:1.4rem;"><strong>We also believe the Holy Spirit is the Spirit of God Himself:</strong> indivisible, inseparable, unpartable — therefore not a distinct person from God, as referenced in <em>1 Corinthians 2:11, Zechariah 4:6,</em> and <em>2 Corinthians 3:17</em>.</p>
+
+          <p style="margin-bottom:1.4rem;">We encourage true worship that requires a devoted, broken, and poor heart — not expensive instruments or high production. We do not strive for a skilled choir, but for hearts well-tamed for eternity, as warned in <em>Matthew 15:8&#8211;9</em> and <em>2 Timothy 3:5</em>.</p>
+
+          <p>We are the voice in the days of delusion, calling everyone back to Truth, asking them to separate themselves from the world — <em>Revelation 18:4</em>. We are burdened to expose the darkness and call for the fruitless deeds to be brought to light — <em>Ephesians 5:11</em>.</p>
+        </div>
+
+        <div class="proclaim-diagram" style="border:0.5px solid var(--border);border-radius:4px;padding:1.5rem;background:var(--surface);position:sticky;top:6rem;">
           <h3 style="font-family:'Cormorant Garamond',serif;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem;">The Distinction</h3>
           <img src="yhwh_is_not_jesus_diagram.svg" alt="YHWH is not Jesus — theological distinction diagram" style="width:100%;height:auto;display:block;" loading="lazy">
         </div>
 
       </div>
-    </div>
+    </div><!-- /full-width proclaim -->
+
   </div>
 </section>
 
