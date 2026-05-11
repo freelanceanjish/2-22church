@@ -17,6 +17,144 @@
 
 const POSTS = [
   {
+    id: "let-jesus-speak-for-himself",
+    title: "Let Jesus Speak For Himself",
+    date: "11 May 2026",
+    category: "Teaching",
+    image: "Is_Jesus_GoD.jpg",
+    excerpt: "Centuries of councils have spoken about Jesus at great length. But remarkably little time is spent simply listening to what Jesus said about himself — in plain, unambiguous language. His own words. On the record. Then you decide.",
+    content: `
+<style>
+.ljs-lead{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;color:var(--gold);line-height:1.65;margin-bottom:1.8rem;border-left:2px solid var(--gold);padding-left:1.4rem;}
+.ljs-divider{display:flex;align-items:center;gap:1rem;margin:2.5rem 0;}
+.ljs-divider::before,.ljs-divider::after{content:'';flex:1;height:0.5px;background:var(--border);}
+.ljs-divider span{font-family:'Cormorant Garamond',serif;font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);}
+.ljs-card{background:var(--surface);border:0.5px solid var(--border);border-left:3px solid #8b1a1a;margin-bottom:1.6rem;padding:1.8rem 2rem 1.5rem;transition:background 0.2s;}
+.ljs-card:hover{background:var(--surface-light);}
+.ljs-label{font-size:0.65rem;letter-spacing:0.22em;text-transform:uppercase;color:#c0392b;margin-bottom:0.75rem;}
+.ljs-verse{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;color:var(--text-primary);line-height:1.7;margin-bottom:0.75rem;}
+.ljs-verse strong{font-style:normal;font-weight:600;color:#e07060;background:rgba(139,26,26,0.15);padding:0 2px;}
+.ljs-note{font-size:0.85rem;color:var(--text-muted);border-top:0.5px solid var(--border);padding-top:0.9rem;margin-top:0.75rem;line-height:1.75;}
+.ljs-question{background:var(--deep-mid);border:0.5px solid var(--border);padding:3rem 2rem;margin:3rem 0;text-align:center;}
+.ljs-q-eyebrow{font-size:0.65rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;}
+.ljs-q-text{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:300;color:var(--text-primary);line-height:1.3;margin-bottom:0.75rem;}
+.ljs-q-sub{font-size:0.88rem;font-style:italic;color:var(--text-muted);max-width:480px;margin:0 auto 2rem;}
+.ljs-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.ljs-btn{font-family:'DM Sans',sans-serif;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;padding:0.75rem 1.8rem;border:0.5px solid;cursor:pointer;background:transparent;transition:all 0.2s;border-radius:2px;}
+.ljs-btn-yes{border-color:var(--gold);color:var(--gold);}
+.ljs-btn-yes:hover{background:rgba(91,141,184,0.15);}
+.ljs-btn-no{border-color:rgba(139,26,26,0.5);color:#8b4a4a;}
+.ljs-btn-no:hover{background:rgba(139,26,26,0.1);color:#c07060;border-color:#c07060;}
+.ljs-resp{display:none;max-width:520px;margin:1.8rem auto 0;padding:1.4rem 1.8rem;border:0.5px solid;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;line-height:1.75;text-align:left;}
+.ljs-resp.yes{border-color:var(--gold);color:var(--gold-light);}
+.ljs-resp.no{border-color:#c0392b;color:#e07060;}
+.ljs-closing{margin:2.5rem 0 1rem;padding:2rem 0;border-top:0.5px solid var(--border);}
+.ljs-closing p{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;color:var(--text-secondary);margin-bottom:1rem;line-height:1.8;}
+.ljs-closing strong{font-style:normal;color:var(--text-primary);}
+</style>
+
+<p class="ljs-lead">"Before we debate what Jesus is — let us ask Jesus what he said about himself. Then we can ask each other: do you agree with him?"</p>
+
+<p>Centuries of councils, creeds, and controversies have spoken <em>about</em> Jesus at great length. But remarkably little time is spent simply listening to what Jesus said <em>about himself</em> — in plain, unambiguous language, recorded by those who walked with him.</p>
+
+<p>Below are his own words. No commentary. No theological framing. Just the man himself, speaking directly about who he is, who sent him, and who is greater than him.</p>
+
+<div class="ljs-divider"><span>The Words of Jesus</span></div>
+
+<div class="ljs-card">
+  <div class="ljs-label">John 17:3</div>
+  <div class="ljs-verse">"This is eternal life — that they know you, <strong>the only true God</strong>, and Jesus Christ <strong>whom you have sent.</strong>"</div>
+  <div class="ljs-note">Jesus himself names the Father as the only true God. He names himself as the one sent — two distinct roles, spoken by Jesus in the same breath.</div>
+</div>
+
+<div class="ljs-card">
+  <div class="ljs-label">John 14:28</div>
+  <div class="ljs-verse">"You heard me say I am going away and I am coming back to you. If you loved me, you would be glad that I am going to the Father, for <strong>the Father is greater than I.</strong>"</div>
+  <div class="ljs-note">Not equal. Not co-equal. Jesus says it simply and directly: the Father is greater. This is not humility rhetoric — it is a statement about rank and origin.</div>
+</div>
+
+<div class="ljs-card">
+  <div class="ljs-label">John 20:17</div>
+  <div class="ljs-verse">"Do not hold on to me… Go instead to my brothers and tell them: I am ascending to <strong>my Father and your Father, to my God and your God.</strong>"</div>
+  <div class="ljs-note">After resurrection — glorified, exalted — Jesus still calls the Father <em>my God</em>. The relationship does not dissolve into equality. It remains: Son and Father. Worshipper and God.</div>
+</div>
+
+<div class="ljs-card">
+  <div class="ljs-label">John 5:19</div>
+  <div class="ljs-verse">"Very truly I tell you, <strong>the Son can do nothing by himself</strong>; he can do only what he sees his Father doing, because whatever the Father does the Son also does."</div>
+  <div class="ljs-note">An independent co-equal divine person can act independently. Jesus says the Son cannot. His authority is derived, not inherent.</div>
+</div>
+
+<div class="ljs-card">
+  <div class="ljs-label">John 5:30</div>
+  <div class="ljs-verse">"By myself <strong>I can do nothing</strong>; I judge only as I hear, and my judgment is just, for I seek not to please myself but <strong>him who sent me.</strong>"</div>
+  <div class="ljs-note">The one who sent and the one sent are not the same person. Jesus consistently returns to this: he is the messenger, the Father is the source.</div>
+</div>
+
+<div class="ljs-card">
+  <div class="ljs-label">John 7:16</div>
+  <div class="ljs-verse">"My teaching <strong>is not my own.</strong> It comes from <strong>him who sent me.</strong>"</div>
+  <div class="ljs-note">His doctrine is not self-originated. The one who is the eternal co-equal Word of God would need no external source for teaching. Jesus traces everything back to the Father.</div>
+</div>
+
+<div class="ljs-card">
+  <div class="ljs-label">Mark 10:18</div>
+  <div class="ljs-verse">"Why do you call me good? <strong>No one is good — except God alone.</strong>"</div>
+  <div class="ljs-note">Jesus deflects the title of absolute goodness away from himself and toward God. He does not say "yes, I am good, I am God." He redirects. God alone holds that position.</div>
+</div>
+
+<div class="ljs-card">
+  <div class="ljs-label">Matthew 24:36</div>
+  <div class="ljs-verse">"About that day or hour <strong>no one knows</strong>, not even the angels in heaven, <strong>nor the Son</strong>, but only the Father."</div>
+  <div class="ljs-note">An omniscient co-equal God knows all things — including the hour. Jesus says the Son does not know it. His knowledge, like his authority, is given — not inherent.</div>
+</div>
+
+<div class="ljs-card">
+  <div class="ljs-label">John 6:57</div>
+  <div class="ljs-verse">"Just as <strong>the living Father sent me</strong> and I live <strong>because of the Father</strong>, so the one who feeds on me will live because of me."</div>
+  <div class="ljs-note">Jesus lives because of the Father. His life is sourced in God. He is not self-existent. He is the Son — dependent, derived, given life from the living Father.</div>
+</div>
+
+<div class="ljs-card">
+  <div class="ljs-label">John 14:10</div>
+  <div class="ljs-verse">"The words I say to you <strong>I do not speak on my own authority.</strong> Rather, it is the Father, living in me, who is doing his work."</div>
+  <div class="ljs-note">The Father dwelling in Jesus — not Jesus being the Father. Two distinct persons, one working through the other. The source is always the Father.</div>
+</div>
+
+<div class="ljs-question">
+  <div class="ljs-q-eyebrow">Now, a question for the room</div>
+  <div class="ljs-q-text">Do you agree with what Jesus said about himself?</div>
+  <div class="ljs-q-sub">He called the Father the only true God. He called himself the one sent. He said the Father is greater. These are his words — not ours.</div>
+  <div class="ljs-buttons">
+    <button class="ljs-btn ljs-btn-yes" onclick="ljsRespond('yes')">Yes — I take him at his word</button>
+    <button class="ljs-btn ljs-btn-no" onclick="ljsRespond('no')">No — I believe he meant something else</button>
+  </div>
+  <div id="ljs-resp-yes" class="ljs-resp yes">
+    Then we are agreed. The Father is the only true God. Jesus is His Son — sent, begotten, exalted. And the Spirit of God is God Himself going forth. One God. One truth. Let him who has ears hear.
+  </div>
+  <div id="ljs-resp-no" class="ljs-resp no">
+    Then the debate is no longer between us and theologians. It is between you and Jesus. He is on the record. The question now is — whose interpretation do you trust more: the councils of men, or the words of the man himself?
+  </div>
+</div>
+
+<div class="ljs-closing">
+  <p>Jesus never once said <strong>"I am the Father."</strong><br>He never said <strong>"I am co-equal with God."</strong><br>He never said <strong>"Worship me as the Most High."</strong></p>
+  <p>He said: <strong>"The Father is greater than I."</strong><br>He said: <strong>"My God and your God."</strong><br>He said: <strong>"The only true God — whom you have sent me."</strong></p>
+  <p>The simplest act of faith is to believe the man at his word.</p>
+</div>
+
+<script>
+function ljsRespond(choice) {
+  document.getElementById('ljs-resp-yes').style.display = 'none';
+  document.getElementById('ljs-resp-no').style.display = 'none';
+  var box = document.getElementById('ljs-resp-' + choice);
+  box.style.display = 'block';
+  box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>
+    `
+  },
+  {
     id: "autopsy-of-a-soul",
     title: "Autopsy of a Soul",
     date: "7 May 2026",
