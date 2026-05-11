@@ -1,0 +1,17 @@
+<svg viewBox="0 0 460 370" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Upper hand — palm down -->
+  <g stroke="#A8C4DC" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M148,108 C160,100 200,95 240,97 C280,99 320,104 338,112"/>
+    <path d="M148,108 C140,114 136,122 140,132 C143,140 152,144 162,140"/>
+    <path d="M338,112 C348,116 354,124 350,134 C346,142 334,146 320,142"/>
+    <path d="M162,140 C190,150 270,152 320,142"/>
+    <path d="M148,108 C142,102 138,94 144,88 C150,82 160,84 162,92"/>
+  </g>
+
+  <!-- Lower hand — palm up -->
+  <g stroke="#A8C4DC" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M142,242 C154,250 200,255 240,253 C280,251 318,246 336,238"/>
+    <path d="M142,242 C134,236 130,226 134,216 C138,208 148,205 158,210"/>
+    <path d="M336,238 C346,234 352,224 348,214 C344,206 332,202 318,208"/>
+    <path d="M158,210 C185
