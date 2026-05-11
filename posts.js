@@ -21,7 +21,7 @@ const POSTS = [
     title: "Let Jesus Speak For Himself",
     date: "11 May 2026",
     category: "Teaching",
-    image: "Is_Jesus_GoD.jpg",
+    image: "let_jesus_speak.jpg",
     excerpt: "Centuries of councils have spoken about Jesus at great length. But remarkably little time is spent simply listening to what Jesus said about himself — in plain, unambiguous language. His own words. On the record. Then you decide.",
     content: `
 <style>
