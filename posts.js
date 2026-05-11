@@ -129,12 +129,8 @@ const POSTS = [
     <button class="ljs-btn ljs-btn-yes" onclick="ljsRespond('yes')">Yes — I take him at his word</button>
     <button class="ljs-btn ljs-btn-no" onclick="ljsRespond('no')">No — I believe he meant something else</button>
   </div>
-  <div id="ljs-resp-yes" class="ljs-resp yes">
-    Then we are agreed. The Father is the only true God. Jesus is His Son — sent, begotten, exalted. And the Spirit of God is God Himself going forth. One God. One truth. Let him who has ears hear.
-  </div>
-  <div id="ljs-resp-no" class="ljs-resp no">
-    Then the debate is no longer between us and theologians. It is between you and Jesus. He is on the record. The question now is — whose interpretation do you trust more: the councils of men, or the words of the man himself?
-  </div>
+  <div id="ljs-resp-yes" class="ljs-resp yes" style="display:none;"></div>
+  <div id="ljs-resp-no" class="ljs-resp no" style="display:none;"></div>
 </div>
 
 <div class="ljs-closing">
@@ -145,11 +141,18 @@ const POSTS = [
 
 <script>
 function ljsRespond(choice) {
-  document.getElementById('ljs-resp-yes').style.display = 'none';
-  document.getElementById('ljs-resp-no').style.display = 'none';
-  var box = document.getElementById('ljs-resp-' + choice);
-  box.style.display = 'block';
-  box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  if (choice === 'yes') {
+    // Redirect to connect section
+    var connectEl = document.getElementById('join');
+    if (connectEl) {
+      connectEl.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.href = 'index.html#join';
+    }
+  } else {
+    // Open mailto for disagreement
+    window.location.href = 'mailto:contact@2-22church.com?subject=My%20Reasoning%20on%20Jesus%27%20Words&body=Please%20write%20to%20us%20why%2C%20we%20would%20like%20to%20hear%20your%20reasoning%3A%0A%0A';
+  }
 }
 </script>
     `

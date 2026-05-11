@@ -95,7 +95,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 section{padding:7rem 2rem;}
 .container{max-width:1100px;margin:0 auto;}
 .section-label{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:0.75rem;}
-.section-label::before{content:'';display:block;width:24px;height:0.5px;background:var(--gold);}
+.section-label::before{display:none;}
 .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;line-height:1.15;margin-bottom:1.5rem;}
 .section-title em{font-style:italic;color:var(--gold);}
 
@@ -203,9 +203,7 @@ a:hover{ color:var(--gold-light); }
   gap:0.75rem;
 }
 .section-label::before{
-  content:'';display:block;
-  width:24px;height:0.5px;
-  background:var(--gold);
+  display:none;
 }
 
 /* Section titles */
