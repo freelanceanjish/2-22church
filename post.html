@@ -244,6 +244,16 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   </div>
 </footer>
 
+<script>
+// Global handler for Let Jesus Speak buttons — must be global so onclick works after innerHTML injection
+function ljsRespond(choice) {
+  if (choice === 'yes') {
+    window.location.href = 'index.html#join';
+  } else {
+    window.location.href = 'mailto:contact@2-22church.com?subject=My%20Reasoning%20on%20Jesus%27%20Words&body=Hello%2C%0A%0AHere%20is%20my%20reasoning%3A%0A%0A';
+  }
+}
+</script>
 <script src="posts.js"></script>
 <script>
 var params = new URLSearchParams(window.location.search);

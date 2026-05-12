@@ -138,23 +138,6 @@ const POSTS = [
   <p>He said: <strong>"The Father is greater than I."</strong><br>He said: <strong>"My God and your God."</strong><br>He said: <strong>"The only true God — whom you have sent me."</strong></p>
   <p>The simplest act of faith is to believe the man at his word.</p>
 </div>
-
-<script>
-function ljsRespond(choice) {
-  if (choice === 'yes') {
-    // Redirect to connect section
-    var connectEl = document.getElementById('join');
-    if (connectEl) {
-      connectEl.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      window.location.href = 'index.html#join';
-    }
-  } else {
-    // Open mailto for disagreement
-    window.location.href = 'mailto:contact@2-22church.com?subject=My%20Reasoning%20on%20Jesus%27%20Words&body=Please%20write%20to%20us%20why%2C%20we%20would%20like%20to%20hear%20your%20reasoning%3A%0A%0A';
-  }
-}
-</script>
     `
   },
   {
