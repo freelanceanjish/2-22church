@@ -1,0 +1,25 @@
+<svg width="100%" viewBox="0 0 680 400" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Were the Apostles Confused or Did Translators Bias the Text?</title>
+  <desc>Minimalist blog image — two question marks, one clear one distorted</desc>
+
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #111; }
+      .t1 { fill: #e8ddb5; }
+      .t2 { fill: #5a4f2f; }
+    }
+    .bg { fill: #1a1710; }
+    .t1 { fill: #c8b97a; }
+    .t2 { fill: #5a4f2f; }
+  </style>
+
+  <rect class="bg" width="680" height="400"/>
+
+  <text x="200" y="250" text-anchor="middle" font-family="serif" font-size="180" font-weight="300" class="t1" opacity="0.95">?</text>
+
+  <line x1="340" y1="80" x2="340" y2="320" stroke="#3a3420" stroke-width="0.8"/>
+
+  <text x="490" y="250" text-anchor="middle" font-family="serif" font-size="180" font-weight="300" class="t2" opacity="0.6" transform="skewX(12) translate(-60,0)">?</text>
+
+  <text x="340" y="368" text-anchor="middle" font-family="serif" font-size="13" class="t1" opacity="0.5" letter-spacing="4">APOSTLES  ·  TRANSLATORS</text>
+</svg>

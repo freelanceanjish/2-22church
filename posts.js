@@ -17,6 +17,71 @@
 
 const POSTS = [
   {
+    id: "were-the-apostles-confused-or-did-translators-bias-the-text",
+    title: "Were the Apostles Confused or Did Translators Bias the Text?",
+    date: "19 May 2026",
+    category: "Teaching",
+    excerpt: "A sharp paradox runs through your Bible: in one verse Jesus is seemingly called God, and in the very next chapter the same Jesus calls the Father 'my God'. Were the Apostles contradictory writers — or did later translators insert their own theological biases into the text?",
+    image: "apostles_vs_translators.svg",
+    content: `
+<p>For centuries, mainstream theology has presented a highly complex, multi-personal view of the Godhead. We are told that Jesus is "God the Son," a co-equal, co-eternal member of a Trinity who came down, took on human flesh, and died for humanity.</p>
+
+<p>Yet, when you open a Bible and read the actual text, an unavoidable paradox emerges. In one verse, Jesus is seemingly labelled with the Greek word for God (<em>Theos</em>). In the very next chapter, the exact same Jesus looks up to heaven and speaks of the Father as "my God" (Revelation 3:12).</p>
+
+<p>This leaves readers with a sharp choice: were the Apostles deeply confused and contradictory writers, or did later translators insert their own theological biases into the text?</p>
+
+<p>When we strip away modern church filters and examine the raw scriptural evidence, the answer becomes undeniably clear: the Apostles were completely consistent. The confusion belongs entirely to modern translations.</p>
+
+<h2>1. The Real Paul vs. The Translated Paul</h2>
+
+<p>The Apostle Paul is frequently used to champion the idea of a literal incarnation. Modern English Bibles translate Titus 2:13 to announce: <em>"…the appearing of the glory of our great God and Savior Jesus Christ."</em></p>
+
+<p>To a casual reader, this looks like Paul is explicitly calling Jesus "our great God." But forcing this interpretation pushes Paul into a direct, logical contradiction with his other letters. Writing to Timothy, Paul lays down an ironclad, unyielding definition of the Supreme Creator:</p>
+
+<blockquote>"Now to the King eternal, immortal, invisible, the only God…" — 1 Timothy 1:17</blockquote>
+
+<blockquote>"…who alone possesses immortality and dwells in unapproachable light, whom no man has seen or can see." — 1 Timothy 6:16</blockquote>
+
+<p>The logic is simple. If God alone possesses inherent immortality, then Jesus — who genuinely died on a Roman cross — cannot be that self-existent God. If God is a being whom no man can see, but thousands of people physically touched and ate with Jesus, then Jesus cannot be identical to that invisible God.</p>
+
+<p>Paul was not a confused writer. The Greek grammar of Titus 2:13 easily allows for two separate entities: <em>"…the appearing of the glory of our great God, and [the appearing] of our Savior Jesus Christ."</em> Translators choose to merge them to fit later church formulas, creating an artificial contradiction.</p>
+
+<h2>2. The Internal Clash in the Writings of John</h2>
+
+<p>A similar translation issue occurs in the letters of John. Standard translations of 1 John 5:20 end with a dramatic claim regarding Jesus: <em>"…and we are in him who is true, in his Son Jesus Christ. He is the true God and eternal life."</em></p>
+
+<p>By rendering the Greek pronoun <em>houtos</em> as "He" and pointing it to Jesus, translators create a direct clash with the Gospel of John. In John 17:3, Jesus explicitly prays to the Father and defines reality:</p>
+
+<blockquote>"And this is eternal life, that they know you, the only true God, and Jesus Christ whom you have sent." — John 17:3</blockquote>
+
+<p>Jesus cannot name the Father as the only true God while John simultaneously claims Jesus is the true God. The original Greek pronoun <em>houtos</em> literally means "This One." In biblical Greek, it routinely points back to the main subject of the paragraph, not just the nearest word. When read correctly, 1 John 5:20 means: <em>"…we are in Him who is true [the Father], by means of His Son Jesus Christ. This One [the Father] is the true God."</em> By resolving the pronoun correctly, the contradiction vanishes entirely.</p>
+
+<h2>3. The Unchanging Apostolic Formula</h2>
+
+<p>If you read the opening greetings of the actual letters of the Apostles, they never merge God and Jesus into a single Trinitarian entity. They consistently maintain a clear hierarchy:</p>
+
+<blockquote>"Grace to you and peace from God our Father and the Lord Jesus Christ." — Romans 1:7</blockquote>
+
+<blockquote>"James, a servant of God and of the Lord Jesus Christ…" — James 1:1</blockquote>
+
+<p>The text refuses to use the late, post-biblical phrases coined by 4th and 5th-century church councils, such as "God the Son" or "God the Holy Spirit." Instead, the ultimate Apostolic summary is found in 1 Corinthians 8:6:</p>
+
+<blockquote>"…yet for us there is one God, the Father, from whom are all things… and one Lord, Jesus Christ, through whom are all things…" — 1 Corinthians 8:6</blockquote>
+
+<p>One God. The Father. One Lord. Jesus Christ. Two persons, named separately, in the same breath — exactly as every apostolic letter consistently states.</p>
+
+<h2>The Victory Reclaimed</h2>
+
+<p>Saying an immortal, unchangeable God came down and pretended to die is foreign to the very definition of God. It reduces the crucifixion to a scripted illusion. If a being cannot fail, the moral triumph of staying faithful unto death loses all its substance.</p>
+
+<p>The Apostles did not teach a confusing Greek philosophical paradox. They taught a beautifully uniform Hebrew truth: the Father is the sole, invisible, immortal source of all existence. Jesus was a real mortal man who achieved absolute victory over temptation and death through pure obedience. Because of that victory, God highly exalted him and granted him a seat at His right hand.</p>
+
+<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ." — Acts 2:36</blockquote>
+
+<p>The Apostles were not confused. It is time to stop letting biased translations make them sound like they were.</p>
+    `
+  },
+  {
     id: "let-jesus-speak-for-himself",
     title: "Let Jesus Speak For Himself",
     date: "11 May 2026",
