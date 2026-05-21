@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Word Judges History — 2:22 Church</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --gold:#5B8DB8;--gold-light:#A8C4DC;--gold-dark:#2E5F82;
+  --deep:#060C18;--deep-mid:#081020;--surface:#0C1830;--surface-light:#0E2040;
+  --text-primary:#F0EAD6;--text-secondary:#A8A090;--text-muted:#6B6358;
+  --border:rgba(91,141,184,0.18);--border-subtle:rgba(255,255,255,0.07);
+}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-primary);overflow-x:hidden;line-height:1.7;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(6,12,24,0.96);backdrop-filter:blur(16px);border-bottom:0.5px solid var(--border);}
+.nav-logo{text-decoration:none;flex-shrink:0;display:inline-flex;align-items:baseline;gap:0.5rem;}
+.nav-logo .logo-text{font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:600;color:var(--text-primary);letter-spacing:0.04em;line-height:1;font-style:normal;}
+.nav-logo .logo-colon{opacity:0.6;font-weight:400;}
+.nav-logo .logo-word{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:500;color:var(--text-primary);letter-spacing:0.26em;text-transform:uppercase;font-style:normal;opacity:0.85;padding-left:0.5rem;line-height:1;}
+.nav-links{display:flex;gap:1.4rem;list-style:none;}
+.nav-links li{list-style:none;}
+.nav-links a{font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-primary);font-weight:500;text-decoration:none;transition:color 0.2s;white-space:nowrap;font-style:normal;}
+.nav-links a:hover,.nav-links a.active{color:var(--gold);}
+.nav-cta{font-family:'DM Sans',sans-serif;font-size:0.75rem;letter-spacing:0.13em;text-transform:uppercase;font-weight:600;font-style:normal;padding:0.55rem 1.2rem;border-radius:2px;text-decoration:none;white-space:nowrap;transition:all 0.2s;display:inline-block;background:var(--text-primary);color:var(--deep);}
+.nav-cta:hover{background:#fff;}
+.nav-item{position:relative;list-style:none;}
+.nav-item>a{display:inline-flex;align-items:center;gap:4px;}
+.nav-item .caret{font-size:0.5rem;opacity:0.55;transition:transform 0.2s;}
+.nav-item.open .caret{transform:rotate(180deg);}
+.nav-dropdown{display:none;position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%);background:rgba(13,17,23,0.97);border:0.5px solid var(--border);backdrop-filter:blur(16px);min-width:170px;z-index:200;padding:0.4rem 0;}
+.nav-item.open .nav-dropdown{display:block;}
+.nav-dropdown a{display:block;padding:0.6rem 1.2rem;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-primary);font-weight:400;text-decoration:none;transition:all 0.15s;white-space:nowrap;font-style:normal;}
+.nav-dropdown a:hover{color:var(--gold);background:rgba(91,141,184,0.08);}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;flex-shrink:0;}
+.nav-hamburger span{display:block;width:22px;height:1px;background:var(--gold);}
+.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(6,12,24,0.98);z-index:150;flex-direction:column;align-items:center;justify-content:flex-start;padding:5rem 2rem 3rem;overflow-y:auto;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--text-primary);text-decoration:none;letter-spacing:0.06em;padding:0.7rem 0;border-bottom:0.5px solid var(--border-subtle);width:100%;text-align:center;transition:color 0.2s;}
+.mobile-menu a:hover{color:var(--gold);}
+.mobile-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:var(--text-muted);font-size:1.8rem;cursor:pointer;line-height:1;}
+
+/* HERO */
+.hero{padding:9rem 2rem 0;background:linear-gradient(to bottom,var(--deep-mid),var(--deep));border-bottom:0.5px solid var(--border);text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,transparent 8.32%,rgba(255,255,255,0.02) 8.33%,transparent 8.34%,transparent 24.99%,rgba(91,141,184,0.06) 25%,transparent 25.01%,transparent 74.99%,rgba(91,141,184,0.06) 75%,transparent 75.01%,transparent 91.65%,rgba(255,255,255,0.02) 91.66%,transparent 91.67%);}
+.eyebrow{font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.4rem;display:flex;align-items:center;justify-content:center;gap:1rem;position:relative;z-index:1;}
+.eyebrow::before,.eyebrow::after{content:'';display:block;width:30px;height:0.5px;background:var(--gold);opacity:0.5;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,6vw,4.4rem);font-weight:300;line-height:1.08;color:var(--text-primary);position:relative;z-index:1;max-width:700px;margin:0 auto 1rem;}
+.hero h1 em{font-style:italic;color:var(--gold);}
+.hero-sub{color:var(--text-secondary);font-size:0.95rem;max-width:520px;margin:0 auto 3rem;line-height:1.8;position:relative;z-index:1;}
+.hero-meta{display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:3rem;position:relative;z-index:1;}
+.blog-tag{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);background:rgba(91,141,184,0.1);padding:0.25rem 0.65rem;border-radius:2px;}
+.blog-date{font-size:0.72rem;color:var(--text-muted);}
+
+/* SVG PLATE */
+.svg-plate{max-width:480px;margin:0 auto;border:0.5px solid var(--border);position:relative;z-index:1;display:block;}
+.svg-plate svg{display:block;width:100%;}
+
+/* ARTICLE BODY */
+.article-wrap{max-width:740px;margin:0 auto;padding:5rem 2rem 2rem;}
+
+/* TYPOGRAPHY */
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,3.5vw,2.3rem);font-weight:300;color:var(--text-primary);line-height:1.15;margin-bottom:1.2rem;}
+h2 em{font-style:italic;color:var(--gold);}
+p{font-family:'DM Sans',sans-serif;font-size:0.97rem;color:var(--text-secondary);line-height:1.85;margin-bottom:1.4rem;}
+
+/* DROP CAP */
+.drop-cap::first-letter{font-family:'Cormorant Garamond',serif;font-size:5rem;font-weight:300;float:left;line-height:0.78;margin:0.12em 0.12em 0 0;color:var(--gold);}
+
+/* SECTION BREAK */
+.section-break{display:flex;align-items:center;gap:1rem;margin:3.5rem 0;}
+.section-break::before,.section-break::after{content:'';flex:1;height:0.5px;background:var(--border);}
+.section-break span{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold);opacity:0.6;}
+
+/* PULL QUOTE */
+.pull-quote{margin:2.5rem 0;padding:2rem 2rem 1.6rem;background:var(--surface);border:0.5px solid var(--border);border-left:2px solid var(--gold);position:relative;}
+.pull-quote p{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;font-weight:300;color:var(--text-primary);line-height:1.6;margin-bottom:0.6rem;}
+.pull-quote cite{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);display:block;font-style:normal;font-family:'DM Sans',sans-serif;}
+
+/* PUNCHY */
+.punchy{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;font-style:italic;color:var(--text-primary);border-left:2px solid var(--gold);padding-left:1.2rem;margin:2rem 0 1.4rem;line-height:1.5;}
+
+/* SIDE RULE */
+.side-rule{background:rgba(91,141,184,0.05);border:0.5px solid var(--border);padding:1.2rem 1.4rem;margin:1.8rem 0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--text-secondary);line-height:1.7;}
+
+/* QUESTION BOX */
+.question-box{border:0.5px solid var(--gold);background:rgba(91,141,184,0.06);padding:1.6rem 1.8rem;margin:2.4rem 0;}
+.question-box-label{font-size:0.65rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);font-family:'DM Sans',sans-serif;display:block;margin-bottom:1rem;}
+.question-box p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.08rem;color:var(--text-primary);margin-bottom:0.75rem;line-height:1.65;}
+.question-box p:last-child{margin-bottom:0;}
+
+/* CLOSING */
+.closing-block{background:var(--surface);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);margin:3rem 0;padding:2.5rem 2rem;}
+.closing-block p{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;font-weight:300;line-height:1.75;color:var(--text-primary);}
+
+/* FOOTER */
+footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);padding:4rem 2rem 2.5rem;}
+.footer-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:0.5px solid var(--border-subtle);}
+.footer-brand p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;max-width:260px;margin-top:0.75rem;}
+.footer-yt{display:inline-block;margin-bottom:0.75rem;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;}
+.footer-col h4{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-primary);opacity:0.65;margin-bottom:1.2rem;font-family:'DM Sans',sans-serif;}
+.footer-col ul{list-style:none;}
+.footer-col ul li{margin-bottom:0.65rem;}
+.footer-col ul li a{font-size:0.85rem;color:var(--text-muted);text-decoration:none;transition:color 0.2s;}
+.footer-col ul li a:hover{color:var(--text-primary);}
+.footer-bottom{max-width:1100px;margin:2rem auto 0;display:flex;align-items:center;justify-content:space-between;font-size:0.78rem;color:var(--text-muted);flex-wrap:wrap;gap:0.5rem;}
+.footer-verse{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.85rem;color:var(--text-muted);}
+
+strong{color:var(--gold-light);font-weight:500;}
+
+@media(max-width:860px){
+  nav{padding:1rem 1.5rem;}
+  .nav-links,.nav-cta{display:none;}
+  .nav-hamburger{display:flex;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}
+  .footer-brand{grid-column:1/-1;}
+  .footer-bottom{flex-direction:column;gap:0.5rem;text-align:center;}
+}
+@media(max-width:600px){
+  .footer-grid{grid-template-columns:1fr;}
+  .article-wrap{padding:3rem 1.2rem 2rem;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><span class="logo-text">2<span class="logo-colon">:</span>22</span><span class="logo-word">Church</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">Home</a></li>
+    <li class="nav-item">
+      <a href="our-story.html">About <span class="caret">&#9660;</span></a>
+      <div class="nav-dropdown">
+        <a href="our-story.html">Our Story</a>
+        <a href="gatherings.html">Gatherings</a>
+      </div>
+    </li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li class="nav-item">
+      <a href="cosmology.html">Learn <span class="caret">&#9660;</span></a>
+      <div class="nav-dropdown">
+        <a href="cosmology.html">Biblical Cosmology</a>
+        <a href="project314.html">God of Pi</a>
+        <a href="old-maps.html">Old Maps</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="references.html">Resources <span class="caret">&#9660;</span></a>
+      <div class="nav-dropdown">
+        <a href="references.html#one-god">One God</a>
+        <a href="references.html#short-season">Short Season</a>
+        <a href="references.html#biblical-earth">Biblical Earth</a>
+        <a href="references.html#podcasts">Podcasts</a>
+        <a href="references.html#debates">Debates</a>
+        <a href="references.html#articles">Articles</a>
+      </div>
+    </li>
+    <li><a href="qa.html">Q&amp;A</a></li>
+  </ul>
+  <a href="index.html#join" class="nav-cta">Connect</a>
+  <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
+  <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
+  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
+  <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
+  <a href="blog.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blog</a>
+  <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
+  <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
+  <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
+  <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
+</div>
+
+<div class="hero">
+  <div class="eyebrow">Biblical Epistemology</div>
+  <h1>The Word Judges History.<br><em>Not the Other Way Around.</em></h1>
+  <p class="hero-sub">On Scripturalism, the authority of God's Word, and why the Church has it backwards.</p>
+  <div class="hero-meta">
+    <span class="blog-tag">Doctrine</span>
+    <span class="blog-tag">Discernment</span>
+    <span class="blog-date">May 2026</span>
+  </div>
+
+  <div class="svg-plate">
+    <svg width="100%" viewBox="0 0 680 820" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>The Word Judges History — a scale with a book outweighing a long scroll</title>
+  <desc>A balance scale on dark background: on the left pan sits a single open book weighing it down, on the right pan sits a scroll of history, raised up.</desc>
+  <rect width="680" height="820" fill="#0e0e0e"/>
+  <line x1="300" y1="100" x2="380" y2="100" stroke="#e0d9ce" stroke-width="2" fill="none"/>
+  <line x1="340" y1="100" x2="340" y2="180" stroke="#e0d9ce" stroke-width="2" fill="none"/>
+  <circle cx="340" cy="180" r="6" fill="#c9a96e"/>
+  <line x1="140" y1="230" x2="540" y2="130" stroke="#e0d9ce" stroke-width="2.5" fill="none"/>
+  <line x1="140" y1="230" x2="120" y2="380" stroke="#555" stroke-width="1" fill="none"/>
+  <line x1="140" y1="230" x2="160" y2="380" stroke="#555" stroke-width="1" fill="none"/>
+  <line x1="100" y1="385" x2="180" y2="385" stroke="#e0d9ce" stroke-width="2"/>
+  <rect x="108" y="340" width="64" height="44" rx="2" fill="#222"/>
+  <rect x="108" y="340" width="64" height="44" rx="2" stroke="#c9a96e" stroke-width="1.5" fill="none"/>
+  <line x1="140" y1="340" x2="140" y2="384" stroke="#e0d9ce" stroke-width="1"/>
+  <line x1="116" y1="350" x2="136" y2="350" stroke="#555" stroke-width="0.6"/>
+  <line x1="116" y1="357" x2="136" y2="357" stroke="#555" stroke-width="0.6"/>
+  <line x1="116" y1="364" x2="136" y2="364" stroke="#555" stroke-width="0.6"/>
+  <line x1="116" y1="371" x2="136" y2="371" stroke="#555" stroke-width="0.6"/>
+  <line x1="144" y1="350" x2="164" y2="350" stroke="#555" stroke-width="0.6"/>
+  <line x1="144" y1="357" x2="164" y2="357" stroke="#555" stroke-width="0.6"/>
+  <line x1="144" y1="364" x2="164" y2="364" stroke="#555" stroke-width="0.6"/>
+  <line x1="144" y1="371" x2="164" y2="371" stroke="#555" stroke-width="0.6"/>
+  <ellipse cx="140" cy="395" rx="45" ry="5" fill="#00000055"/>
+  <line x1="540" y1="130" x2="480" y2="260" stroke="#555" stroke-width="1" fill="none"/>
+  <line x1="540" y1="130" x2="600" y2="260" stroke="#555" stroke-width="1" fill="none"/>
+  <line x1="460" y1="265" x2="620" y2="265" stroke="#e0d9ce" stroke-width="2"/>
+  <rect x="462" y="210" width="156" height="55" rx="4" fill="#1e1e1e"/>
+  <rect x="462" y="210" width="156" height="55" rx="4" stroke="#e0d9ce" stroke-width="1" fill="none"/>
+  <ellipse cx="468" cy="237" rx="8" ry="27" fill="#1e1e1e" stroke="#e0d9ce" stroke-width="1"/>
+  <ellipse cx="612" cy="237" rx="8" ry="27" fill="#1e1e1e" stroke="#e0d9ce" stroke-width="1"/>
+  <line x1="482" y1="225" x2="598" y2="225" stroke="#555" stroke-width="0.6"/>
+  <line x1="482" y1="233" x2="598" y2="233" stroke="#555" stroke-width="0.6"/>
+  <line x1="482" y1="241" x2="598" y2="241" stroke="#555" stroke-width="0.6"/>
+  <line x1="482" y1="249" x2="598" y2="249" stroke="#555" stroke-width="0.6"/>
+  <line x1="482" y1="257" x2="590" y2="257" stroke="#555" stroke-width="0.6"/>
+</svg>
+  </div>
+</div>
+
+<div class="article-wrap">
+
+  <p class="drop-cap">The Church today has a severe problem with authority. Not an absence of it. An inversion of it. Scholars, teachers, and theologians have quietly placed the historical record above the Word of God, and dressed the move in the language of academic rigor and intellectual honesty. It is neither. It is a surrender.</p>
+
+  <p>When external data (archaeological digs, ancient manuscripts, carbon-dated ruins) becomes the measuring rod by which Scripture is tested and verified, something catastrophic has occurred. The creature has been handed the gavel meant for the Creator.</p>
+
+  <div class="question-box">
+    <span class="question-box-label">Consider This</span>
+    <p>If a judge stepped into the courtroom and allowed the defendant to determine the rules of evidence, would you call that justice, or a rigged trial?</p>
+    <p>When Scripture is made to stand before the bar of secular scholarship, who exactly has been appointed judge?</p>
+  </div>
+
+  <div class="section-break"><span>✦</span></div>
+
+  <h2>The Apostles Never Did This</h2>
+
+  <p>When the Apostles followed Christ, they did not reach for Josephus. They did not consult the Roman census records to confirm what they had witnessed. They did not run the resurrection through Greco-Roman historiographical standards before deciding whether to proclaim it.</p>
+
+  <p class="punchy">They proclaimed because they knew. And they knew because the Word had spoken.</p>
+
+  <p>The modern impulse to validate Scripture through external sources is not a sign of intellectual maturity. It is a sign of weakened conviction, a faith that has quietly agreed to stand in the defendant's chair and wait for the world to render its verdict.</p>
+
+  <div class="question-box">
+    <span class="question-box-label">Reason Through It</span>
+    <p>Peter preached on the day of Pentecost: no footnotes, no external citations, no deference to Roman historians. Three thousand souls were converted. What does that tell you about where the power actually resides?</p>
+    <p>At what point did the Church decide that the world's approval was a prerequisite for the Word's authority?</p>
+  </div>
+
+  <div class="pull-quote">
+    <p>Scripture is the axiom. It is the self-authenticating foundation. You cannot justify it by appealing to something outside it without making that external thing the higher authority.</p>
+    <cite>Gordon H. Clark &nbsp;·&nbsp; Scripturalist Epistemology</cite>
+  </div>
+
+  <p>Clark's point is devastating in its simplicity. Every system of thought must rest on something it cannot prove by something prior to it. The Christian's axiom is Scripture. The moment you place something else (archaeology, secular history, scientific consensus) in the position of judge over the Word, you have already lost the argument. You have already conceded the throne.</p>
+
+  <div class="question-box">
+    <span class="question-box-label">Think Carefully</span>
+    <p>Every system of thought has a starting point it cannot prove. What is yours?</p>
+    <p>If you say "evidence," who taught you to trust evidence? If you say "reason," who validated reason? At some point, every thinker stands on an unprovable foundation. The Christian's is Scripture. What is the secular scholar's?</p>
+  </div>
+
+  <div class="section-break"><span>✦</span></div>
+
+  <h2>Knowledge Built on Sand</h2>
+
+  <p>Today, knowledge in Christian circles is largely measured by the volume of information available outside of Biblical writings. The more external sources a teacher can cite, the more credible they appear. This has opened a dangerous gate, a gate through which teachers enter with permission to <strong>test the Word of God</strong> against external information.</p>
+
+  <p>Some call it good practice. It is not. It is a fallible approach dressed in scholarly clothing.</p>
+
+  <p class="punchy">When you make the Word of God profound at the cost and expense of external information, you have already made external information the authority.</p>
+
+  <div class="side-rule">The real cost is not academic credibility. The real cost is the falsification of the biblical timeline, the rewriting of biblical architecture, not by enemies of the faith, but by those standing in pulpits.</div>
+
+  <p>This is not a minor theological adjustment. This is a structural collapse. When the chronology of Scripture is bent to accommodate secular dating systems, when the Genesis account is softened to match evolutionary timelines, when Revelation is reinterpreted through the lens of Roman political history rather than the other way around, we are no longer doing theology. We are doing archaeology with a Bible occasionally glanced at.</p>
+
+  <div class="question-box">
+    <span class="question-box-label">Search Your Experience</span>
+    <p>Has the teacher or pastor you most respect ever said, in effect: "The Bible seems to say this, but scholars believe that"? Did you notice, in that moment, who was quietly handed the higher authority?</p>
+    <p>And if the scholars change their minds next decade, as they often do, does the Word of God change with them?</p>
+  </div>
+
+  <div class="section-break"><span>✦</span></div>
+
+  <h2>Reverse the Order. <em>Everything Changes.</em></h2>
+
+  <p>The correct posture is the exact inversion of what is practiced. A believer should <strong>test historical events and available information based on the Word of God</strong>, not test the Word of God against historical events.</p>
+
+  <p>This is not obscurantism. This is not the rejection of evidence. It is the correct ordering of authority. External records can be used, but they are normed by Scripture, not the other way around.</p>
+
+  <p>When you bring this order to the text, something remarkable happens. Scripture stops being a defendant and starts being a judge. You go to the geological record and ask: where does this resist what the Word of God establishes about the flood? You go to archaeological timelines and ask: where have secular presuppositions been smuggled into the dating system? You go to ancient Near Eastern texts and ask: where does this confirm what Scripture already said, and where does it quietly contradict it, and why?</p>
+
+  <p class="punchy">The resistance of the external record to Scripture is not evidence against the Word. It is evidence of where secular scholarship has brought its own gods into the room.</p>
+
+  <div class="question-box">
+    <span class="question-box-label">Let This Land</span>
+    <p>If carbon dating, geological uniformitarianism, and evolutionary timelines all begin with the assumption that there was no global flood, what exactly are they measuring when they contradict Genesis?</p>
+    <p>Is it the Bible that is wrong? Or is it the starting assumption, quietly baked into the method itself, that needs to be cross-examined?</p>
+  </div>
+
+  <div class="pull-quote">
+    <p>The Bible is the supreme authority in all matters of faith and practice, and it alone interprets history, not the other way around.</p>
+    <cite>Armando Ballart &nbsp;·&nbsp; The End Is Behind Us</cite>
+  </div>
+
+  <div class="section-break"><span>✦</span></div>
+
+  <h2>The Millennium, the Little Season, and a Church That Got Lost</h2>
+
+  <p>Nowhere is the cost of the inverted approach more visible than in eschatology. The dominant prophetic systems, Premillennialism, Dispensationalism, and their popular offspring, did not arise in a vacuum. They arose in a context where external historical assumptions were already shaping how the text was read.</p>
+
+  <p>Armando Ballart, in a work that deserves far wider attention, applies Scripturalist epistemology directly to this problem. The question he raises is surgical: what if the prophetic timeline that virtually all of Western Christianity has assumed is not derived from Scripture, but imposed upon it?</p>
+
+  <div class="side-rule">What if the end is not ahead of us, but behind us? What if the Millennium has passed, and we are now in Satan's little season, the short time of his loosing described in Revelation 20? And what if we cannot see this because we have been reading the Bible through the lens of the world rather than the other way around?</div>
+
+  <p>This is not a fringe speculation. It is a disciplined, Scripture-first argument. Ballart does what the Scripturalist framework demands: he brings every conclusion back to the text and asks whether the text actually says what we have been told it says, or whether centuries of external historical assumption have quietly rewritten the reading.</p>
+
+  <div class="question-box">
+    <span class="question-box-label">A Question Worth Sitting With</span>
+    <p>You were taught a prophetic timeline. But who taught the people who taught you? And what sources were they reading when they constructed it?</p>
+    <p>If the dominant eschatology of the last two centuries was shaped more by Darby's system, Scofield's notes, and dispensationalist publishing houses than by a plain reading of Revelation, would you want to know?</p>
+    <p>And if you found out, would you have the courage to follow the text wherever it actually leads?</p>
+  </div>
+
+  <p class="punchy">Most of Christianity is living with a miscalibrated map of where we are in redemptive history, because they built the map with the wrong tools.</p>
+
+  <div class="section-break"><span>✦</span></div>
+
+  <h2>What Scripturalism Actually Demands</h2>
+
+  <p>This approach is not for the faint-hearted. It requires accepting that mainstream scholarship will frequently arrive at conclusions that Scripture, rightly handled, contradicts. It requires the intellectual courage to say the external record has been <strong>misread</strong> rather than that Scripture is wrong.</p>
+
+  <p>And it requires serious work, the kind of work that shows precisely where the misreading happens, not merely asserts it. Clark was emphatic on this point. Scripturalism is a <strong>rival epistemology</strong>, not an escape from rigorous thinking.</p>
+
+  <p>The call is not to ignore the world's scholarship. The call is to stop letting it sit in the judge's seat. Bring it in as a witness. Cross-examine it by the Word. And be willing to let the Word render the verdict, even when that verdict overturns centuries of received wisdom.</p>
+
+  <p class="punchy">The Church does not need more scholars who are brave enough to question Scripture. It needs more believers brave enough to question the scholars.</p>
+
+  <div class="question-box">
+    <span class="question-box-label">One Final Question</span>
+    <p>If Scripture is true, and you believe it is, then why does it need the world's permission to say so?</p>
+    <p>What would change in how you read the Bible tomorrow if you decided, once and for all, that it answers to no other court?</p>
+  </div>
+
+  <div class="closing-block">
+    <p>The Word of God is not a document waiting to be verified. It is the standard by which everything else is verified. When the Church recovers that conviction, not as a slogan but as a method, applied with rigor and without apology, it will find that Scripture does not merely survive the examination of history. It explains it.</p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;"><span class="logo-text">2<span class="logo-colon">:</span>22</span><span class="logo-word">Church</span></a>
+      <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
+      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="gatherings.html">Gatherings</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="qa.html">Q&amp;A</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="cosmology.html">Biblical Cosmology</a></li>
+        <li><a href="project314.html">God of Pi</a></li>
+        <li><a href="old-maps.html">Old Maps</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="references.html#one-god">One God</a></li>
+        <li><a href="references.html#short-season">Short Season</a></li>
+        <li><a href="references.html#podcasts">Podcasts</a></li>
+        <li><a href="references.html#articles">Articles</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 2:22 Church</span>
+    <span class="footer-verse">"Test all things; hold fast what is good." &mdash; 1 Thess. 5:21</span>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.nav-item > a').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var item=this.closest('.nav-item');
+    if(item.querySelector('.nav-dropdown')){
+      e.preventDefault();
+      item.classList.toggle('open');
+    }
+  });
+});
+document.addEventListener('click',function(e){
+  if(!e.target.closest('.nav-item')) document.querySelectorAll('.nav-item').forEach(function(i){i.classList.remove('open');});
+});
+</script>
+</body>
+</html>

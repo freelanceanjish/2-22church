@@ -1,0 +1,36 @@
+<svg width="100%" viewBox="0 0 680 820" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>The Word Judges History</title>
+  <desc>A balance scale on dark background: on the left pan sits a single open book weighing it down, on the right pan sits a scroll of history, raised up.</desc>
+  <rect width="680" height="820" fill="#0e0e0e"/>
+  <line x1="300" y1="100" x2="380" y2="100" stroke="#e0d9ce" stroke-width="2" fill="none"/>
+  <line x1="340" y1="100" x2="340" y2="180" stroke="#e0d9ce" stroke-width="2" fill="none"/>
+  <circle cx="340" cy="180" r="6" fill="#c9a96e"/>
+  <line x1="140" y1="230" x2="540" y2="130" stroke="#e0d9ce" stroke-width="2.5" fill="none"/>
+  <line x1="140" y1="230" x2="120" y2="380" stroke="#555" stroke-width="1" fill="none"/>
+  <line x1="140" y1="230" x2="160" y2="380" stroke="#555" stroke-width="1" fill="none"/>
+  <line x1="100" y1="385" x2="180" y2="385" stroke="#e0d9ce" stroke-width="2"/>
+  <rect x="108" y="340" width="64" height="44" rx="2" fill="#222"/>
+  <rect x="108" y="340" width="64" height="44" rx="2" stroke="#c9a96e" stroke-width="1.5" fill="none"/>
+  <line x1="140" y1="340" x2="140" y2="384" stroke="#e0d9ce" stroke-width="1"/>
+  <line x1="116" y1="350" x2="136" y2="350" stroke="#555" stroke-width="0.6"/>
+  <line x1="116" y1="357" x2="136" y2="357" stroke="#555" stroke-width="0.6"/>
+  <line x1="116" y1="364" x2="136" y2="364" stroke="#555" stroke-width="0.6"/>
+  <line x1="116" y1="371" x2="136" y2="371" stroke="#555" stroke-width="0.6"/>
+  <line x1="144" y1="350" x2="164" y2="350" stroke="#555" stroke-width="0.6"/>
+  <line x1="144" y1="357" x2="164" y2="357" stroke="#555" stroke-width="0.6"/>
+  <line x1="144" y1="364" x2="164" y2="364" stroke="#555" stroke-width="0.6"/>
+  <line x1="144" y1="371" x2="164" y2="371" stroke="#555" stroke-width="0.6"/>
+  <ellipse cx="140" cy="395" rx="45" ry="5" fill="#00000055"/>
+  <line x1="540" y1="130" x2="480" y2="260" stroke="#555" stroke-width="1" fill="none"/>
+  <line x1="540" y1="130" x2="600" y2="260" stroke="#555" stroke-width="1" fill="none"/>
+  <line x1="460" y1="265" x2="620" y2="265" stroke="#e0d9ce" stroke-width="2"/>
+  <rect x="462" y="210" width="156" height="55" rx="4" fill="#1e1e1e"/>
+  <rect x="462" y="210" width="156" height="55" rx="4" stroke="#e0d9ce" stroke-width="1" fill="none"/>
+  <ellipse cx="468" cy="237" rx="8" ry="27" fill="#1e1e1e" stroke="#e0d9ce" stroke-width="1"/>
+  <ellipse cx="612" cy="237" rx="8" ry="27" fill="#1e1e1e" stroke="#e0d9ce" stroke-width="1"/>
+  <line x1="482" y1="225" x2="598" y2="225" stroke="#555" stroke-width="0.6"/>
+  <line x1="482" y1="233" x2="598" y2="233" stroke="#555" stroke-width="0.6"/>
+  <line x1="482" y1="241" x2="598" y2="241" stroke="#555" stroke-width="0.6"/>
+  <line x1="482" y1="249" x2="598" y2="249" stroke="#555" stroke-width="0.6"/>
+  <line x1="482" y1="257" x2="590" y2="257" stroke="#555" stroke-width="0.6"/>
+</svg>

@@ -303,10 +303,11 @@ function renderPosts() {
 
   // Featured (first post)
   var f = filtered[0];
+  var fHref = f.link ? f.link : 'post.html?id=' + f.id;
   var fImg = f.image
     ? '<div class="pf-img"><img src="' + f.image + '" alt="' + f.title + '" loading="lazy"></div>'
     : '<div class="pf-img" style="display:flex;align-items:center;justify-content:center;background:var(--surface);"><span style="font-family:Cormorant Garamond,serif;font-size:5rem;color:var(--text-muted);opacity:0.2;">✦</span></div>';
-  featuredSlot.innerHTML = '<a href="post.html?id=' + f.id + '" class="post-featured">'
+  featuredSlot.innerHTML = '<a href="' + fHref + '" class="post-featured">'
     + fImg
     + '<div class="pf-body">'
     + '<div class="pf-label">Latest Post</div>'
@@ -326,10 +327,11 @@ function renderPosts() {
     grid.style.border = '';
     grid.style.background = '';
     grid.innerHTML = rest.map(function(post) {
+      var postHref = post.link ? post.link : 'post.html?id=' + post.id;
       var imgHtml = post.image
         ? '<div class="pc-img"><img src="' + post.image + '" alt="' + post.title + '" loading="lazy"></div>'
         : '<div class="pc-img no-img"><span>✦</span></div>';
-      return '<a href="post.html?id=' + post.id + '" class="post-card">'
+      return '<a href="' + postHref + '" class="post-card">'
         + imgHtml
         + '<div class="pc-body">'
         + '<div style="display:flex;align-items:center;gap:0.6rem;"><span class="blog-tag">' + post.category + '</span><span class="blog-date">' + post.date + '</span></div>'

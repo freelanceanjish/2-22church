@@ -17,6 +17,15 @@
 
 const POSTS = [
   {
+    id: "the-word-judges-history-not-the-other-way-around",
+    title: "The Word Judges History. Not the Other Way Around.",
+    date: "21 May 2026",
+    category: "Teaching",
+    excerpt: "On Scripturalism, the authority of God\u2019s Word, and why the Church has it backwards. When external data becomes the measuring rod by which Scripture is tested, something catastrophic has occurred. The creature has been handed the gavel meant for the Creator.",
+    image: "word_judges_history_dark.svg",
+    link: "scripturalism.html"
+  },
+  {
     id: "were-the-apostles-confused-or-did-translators-bias-the-text",
     title: "Were the Apostles Confused or Did Translators Bias the Text?",
     date: "19 May 2026",
