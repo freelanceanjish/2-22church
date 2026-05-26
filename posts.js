@@ -17,6 +17,591 @@
 
 const POSTS = [
   {
+    id: "the-seed-and-the-shadow",
+    title: "The Seed and the Shadow",
+    date: "26 May 2026",
+    category: "Teaching",
+    image: "bg-blog.jpg",
+    excerpt: "Nations wage wars, churches write cheques, and theologians draft endless justifications — all in the name of a covenant whose finest detail has been quietly overlooked. That detail is a single word: Seed. A word the Apostle Paul identified as the singular key that unlocks every promise God ever made to Abraham.",
+    content: `
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #1a1714;
+    --ink-mid: #3d3830;
+    --ink-soft: #7a7268;
+    --ink-faint: #b5ae9f;
+    --parchment: #f9f5ed;
+    --parchment-mid: #f0e9d8;
+    --parchment-dark: #e2d9c5;
+    --gold: #8b6914;
+    --gold-light: #c9a84c;
+    --rule: #d4cbb5;
+    --serif: 'EB Garamond', Georgia, serif;
+    --display: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--parchment);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 20px;
+    line-height: 1.85;
+    min-height: 100vh;
+  }
+
+  /* ── Masthead ── */
+  .masthead {
+    background: var(--ink);
+    color: var(--parchment-mid);
+    text-align: center;
+    padding: 4rem 2rem 3.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .masthead::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 39px,
+      rgba(255,255,255,0.03) 39px,
+      rgba(255,255,255,0.03) 40px
+    );
+    pointer-events: none;
+  }
+
+  .masthead-kicker {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 1.5rem;
+  }
+
+  .masthead h1 {
+    font-family: var(--display);
+    font-weight: 300;
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    line-height: 1.1;
+    color: var(--parchment);
+    letter-spacing: -0.01em;
+    margin-bottom: 0.4rem;
+  }
+
+  .masthead h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+
+  .masthead-sub {
+    font-family: var(--display);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: var(--ink-faint);
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .masthead-rule {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin: 0 auto;
+  }
+
+  /* ── Layout ── */
+  .article-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4rem 2rem 6rem;
+  }
+
+  /* ── Drop cap & opening ── */
+  .opening {
+    font-size: 1.15em;
+    color: var(--ink-mid);
+    border-left: 3px solid var(--gold);
+    padding-left: 1.5rem;
+    margin-bottom: 3rem;
+    font-style: italic;
+  }
+
+  /* ── Body prose ── */
+  p {
+    margin-bottom: 1.6rem;
+    color: var(--ink-mid);
+  }
+
+  p:first-of-type::first-letter {
+    font-family: var(--display);
+    font-size: 4.2rem;
+    font-weight: 400;
+    line-height: 0.8;
+    float: left;
+    margin: 0.12em 0.1em -0.05em 0;
+    color: var(--ink);
+  }
+
+  /* ── Section headings ── */
+  .section {
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-num {
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .section h2 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    line-height: 1.2;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  .section h2 em {
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+
+  /* ── Scripture blocks ── */
+  .scripture {
+    background: var(--parchment-dark);
+    border-left: 3px solid var(--gold);
+    padding: 1rem 1.5rem;
+    margin: 1.8rem 0;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .scripture p {
+    font-style: italic;
+    font-size: 0.95em;
+    color: var(--ink);
+    margin-bottom: 0.3rem;
+  }
+
+  .scripture p:last-child { margin-bottom: 0; }
+
+  .scripture-ref {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-top: 0.6rem;
+  }
+
+  /* ── Pull quote ── */
+  .pullquote {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin: 3rem -1rem;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .pullquote p {
+    font-family: var(--display);
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .pullquote p::before { content: '\201C'; color: var(--gold-light); }
+  .pullquote p::after  { content: '\201D'; color: var(--gold-light); }
+
+  /* ── Key terms inline ── */
+  .term {
+    font-style: italic;
+    color: var(--ink);
+  }
+
+  /* ── Irony callout ── */
+  .irony-box {
+    background: var(--ink);
+    color: var(--parchment-mid);
+    padding: 1.8rem 2rem;
+    margin: 2.5rem 0;
+    border-radius: 6px;
+  }
+
+  .irony-box .irony-label {
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+
+  .irony-box p {
+    color: var(--parchment-mid);
+    font-size: 0.95em;
+    margin-bottom: 0;
+  }
+
+  /* ── Sub-points ── */
+  .point {
+    padding: 1.2rem 0 1.2rem 1.5rem;
+    border-left: 1px solid var(--rule);
+    margin: 1.2rem 0;
+  }
+
+  .point-label {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+
+  .point p {
+    margin-bottom: 0;
+    font-size: 0.95em;
+  }
+
+  /* ── Divider ── */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 3rem 0;
+  }
+
+  .divider::before,
+  .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  .divider-mark {
+    color: var(--gold);
+    font-size: 1.1rem;
+    font-family: var(--display);
+  }
+
+  /* ── Conclusion ── */
+  .conclusion {
+    background: var(--parchment-dark);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 2.5rem;
+    margin-top: 3.5rem;
+  }
+
+  .conclusion-label {
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.2rem;
+    display: block;
+  }
+
+  .conclusion h3 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--ink);
+  }
+
+  .conclusion p {
+    font-size: 0.95em;
+  }
+
+  .three-truths {
+    margin: 1.5rem 0 0;
+    list-style: none;
+    counter-reset: truths;
+  }
+
+  .three-truths li {
+    counter-increment: truths;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.95em;
+    color: var(--ink-mid);
+  }
+
+  .three-truths li::before {
+    content: counter(truths);
+    font-family: var(--display);
+    font-size: 1.4rem;
+    color: var(--gold);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 1.4rem;
+  }
+
+  /* ── Footer ── */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-family: var(--sans);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--ink-faint);
+    border-top: 1px solid var(--rule);
+  }
+
+  @media (max-width: 600px) {
+    .article-wrap { padding: 2.5rem 1.25rem 4rem; }
+    .pullquote { margin: 2rem 0; }
+    .masthead { padding: 2.5rem 1.25rem 2rem; }
+  }
+</style>
+<p class="opening">
+    The people fighting for the "dirt" are using the name of a man who refused to settle for it — because he was looking at the stars.
+  </p>
+
+  <p>There is a remarkable irony at the centre of modern biblical debate. Nations wage wars, churches write cheques, and theologians draft endless justifications — all in the name of a covenant whose finest detail has been quietly overlooked. That detail is a single word. A word the Apostle Paul identified as the singular key that unlocks every promise God ever made to Abraham. The word is <span class="term">Seed</span>.</p>
+
+  <p>Paul's statement in Galatians 3:16 is not tentative. It is surgical: <em>"Now the promises were made to Abraham and to his offspring. It does not say, 'And to offsprings,' referring to many, but referring to one, 'And to your offspring,' who is Christ."</em> Paul is not offering an interpretation. He is announcing a legal fact. The covenant was made to a specific, singular recipient: Yeshua — the Christ. Everything else flows from this.</p>
+
+  <div class="divider"><span class="divider-mark">✦</span></div>
+
+  <div class="section">
+    <span class="section-num">Part I</span>
+    <h2>The Covenant Reread: <em>The Seed is a Person</em></h2>
+  </div>
+
+  <p>Once Paul's key is applied, the Genesis covenant passages transform entirely. What appeared to be a series of ethnic land-grants to a biological lineage reveals itself as something far more precise — a royal deed, issued to a specific King, who had not yet arrived.</p>
+
+  <div class="scripture">
+    <p>"To your offspring I will give this land." — "Blessing I will bless you, and multiplying I will multiply your offspring as the stars of the heaven and as the sand which is on the seashore; and your offspring shall possess the gate of his enemies."</p>
+    <span class="scripture-ref">Genesis 12:7 · 22:17</span>
+  </div>
+
+  <p>Notice the tension built into these verses from the beginning. In one breath the offspring is compared to the dust — countable grains — and in the next, to the stars of heaven. Abraham himself understood this tension. The Letter to the Hebrews tells us plainly that he was <em>"looking forward to the city that has foundations, whose designer and builder is God."</em> He was not anchoring his hope to a parcel of land between the Nile and the Euphrates. He was looking past the dirt, toward something celestial.</p>
+
+  <div class="irony-box">
+    <span class="irony-label">The Central Irony</span>
+    <p>If the Seed is singular and eternal, then "forever" only makes sense when the recipient is a Person who transcends time. A biological population dies, scatters, and ends. A King who rises from the dead does not. The promise requires an immortal recipient — and only one candidate qualifies.</p>
+  </div>
+
+  <p>The word translated "forever" — <em>olam</em> — carries the weight of perpetuity. It is the same word applied to God's own covenant relationship. For such a promise to hold, the recipient must be capable of enduring forever. This is not a description of any ethnic group. It is a description of Yeshua alone.</p>
+
+  <div class="divider"><span class="divider-mark">✦</span></div>
+
+  <div class="section">
+    <span class="section-num">Part II</span>
+    <h2>Union with the Seed: <em>One Body, One Inheritance</em></h2>
+  </div>
+
+  <p>If the promise belongs to Yeshua, the natural question follows: what of his followers? The New Testament answers this with a concept of breathtaking depth — the union of the believer with Christ. This is not metaphor or devotional warmth. It is presented by the Apostles as a legal and ontological reality.</p>
+
+  <p>When Yeshua appeared to the persecutor Saul on the Damascus road, he did not ask, <em>"Why are you persecuting my followers?"</em> He asked: <em>"Why are you persecuting Me?"</em> (Acts 9:4). The people Saul was imprisoning and killing were not separate from Yeshua. Their pain was His pain. Their bodies were, in some inexpressible way, His body.</p>
+
+  <p>Paul builds this logic into a formal doctrine. In 1 Corinthians 12, he writes that the Church <em>is</em> the body of Christ — not merely resembles it, not is spiritually close to it, but <em>is</em> it. Each believer is a member, as a hand or eye is a member of a living body. There is only one body. There is only one Seed.</p>
+
+  <div class="pullquote">
+    <p>A branch has no independent right to the soil. It draws life only because it remains attached to the Vine. The moment it severs itself from the root, it ceases to carry the promise.</p>
+  </div>
+
+  <p>The most explicit statement comes in Galatians 3:27–29: <em>"For as many of you as were baptized into Christ have put on Christ… And if you are Christ's, then you are Abraham's offspring, heirs according to promise."</em> Paul has collapsed the distance entirely. There is no second route to Abraham's covenant. There is no alternative track, no DNA-based bypass. The only path into the Seed is through the Seed himself.</p>
+
+  <p>This transforms the nature of inheritance. Believers do not inherit the land because of their genealogy. They inherit it because they are legally part of the Person who owns it — clothed in Him, as Paul says, like a garment grants entry into the King's court.</p>
+
+  <div class="divider"><span class="divider-mark">✦</span></div>
+
+  <div class="section">
+    <span class="section-num">Part III</span>
+    <h2>The Redefinition of Israel: <em>Nation of Faith, Not Flesh</em></h2>
+  </div>
+
+  <p>With the identity of the Seed established, the New Testament proceeds to methodically redefine the word <span class="term">Israel</span> itself. This is not a fringe theological maneuver. It is the explicit, sustained argument of Yeshua and all of his Apostles.</p>
+
+  <div class="point">
+    <span class="point-label">Romans 9:6–8</span>
+    <p>Paul announces the governing principle: <em>"For they are not all Israel who are descended from Israel."</em> The name "Israel" is not coextensive with a genetic population. Something more is required. That something is faith — participation in the promise through union with the Seed.</p>
+  </div>
+
+  <div class="point">
+    <span class="point-label">Romans 2:28–29</span>
+    <p>Paul presses further: a true Jew is one <em>inwardly</em>, and true circumcision is of the heart, by the Spirit. By this measure, a Gentile who belongs to Yeshua is more authentically "Jewish" before God than a biological descendant who walks in lawlessness.</p>
+  </div>
+
+  <div class="point">
+    <span class="point-label">1 Peter 2:9</span>
+    <p>Peter seals the argument by taking the titles once reserved exclusively for the physical nation — <em>"chosen race, royal priesthood, holy nation, a people for his own possession"</em> — and transferring them wholesale to the community of believers.</p>
+  </div>
+
+  <p>This transfer is not additive. Peter is not creating a second Israel running parallel to the first. He is announcing that the substance has arrived and the shadow is passing away. The "holy nation" God was always building was never a country with borders and a flag. It was a global, spiritual kingdom gathered from every tongue, tribe, and people — defined not by soil or bloodline, but by faith in and union with the Seed.</p>
+
+  <div class="divider"><span class="divider-mark">✦</span></div>
+
+  <div class="section">
+    <span class="section-num">Part IV</span>
+    <h2>The Shadow Mistaken for the Substance: <em>1948 and the Dispensationalist Claim</em></h2>
+  </div>
+
+  <p>Against this background, the dominant modern Christian justification for the political state established in 1948 presents a significant theological collision. Millions of believers, shaped by a relatively recent doctrinal framework known as Dispensationalism, read passages like Ezekiel 37 — the vision of dry bones assembled into a nation — and conclude that the return of Jewish populations to the land of Canaan is a direct fulfillment of God's promise to gather "His people."</p>
+
+  <p>The argument is intuitive at first glance. A people scattered for two thousand years return to the same geographical coordinates. The same language is revived. The same name is restored. Surely this is the hand of God keeping his covenant with the physical descendants of Abraham?</p>
+
+  <p>But this reading stands or falls on a prior question: <em>who is the Seed?</em> If Paul is correct — and the New Testament treats him as speaking under divine authority — then the covenant was never made to a biological population in the first place. It was made to a single Person. Any claim to the covenant's blessings that bypasses that Person is, in legal terms, a claim made outside the contract.</p>
+
+  <div class="irony-box">
+    <span class="irony-label">The Theological Collision</span>
+    <p>Those who use these verses to justify 1948 are claiming the blessings of the Seed for people who, in many cases, explicitly reject the Seed himself. They are treating Yeshua as incidental to a covenant in which, according to Paul, he is the sole named heir. This is not a minor interpretive difference. It is a fundamental inversion of the New Covenant.</p>
+  </div>
+
+  <p>Furthermore, the "gathering" language of the prophets, read through Paul's lens, points not to an airport in Tel Aviv but to the gathering of souls from every nation into the Body of Christ. The "nation" being assembled is not a geopolitical entity; it is the one new man that Yeshua came to create — Jew and Gentile together, the dividing wall demolished, reconciled in one body (Ephesians 2:14–15).</p>
+
+  <p>Yeshua himself drew the distinction plainly in Matthew 21, when he told the religious custodians of the physical nation: <em>"The kingdom of God will be taken away from you and given to a people producing its fruits."</em> He did not say it would be paused for two millennia and then handed back to a secular state. He announced a transfer — to a new people defined by fruitfulness, not ancestry.</p>
+
+  <div class="divider"><span class="divider-mark">✦</span></div>
+
+  <div class="section">
+    <span class="section-num">Part V</span>
+    <h2>One Tree, No Second Track: <em>The Apostolic Rejection of Parallelism</em></h2>
+  </div>
+
+  <p>Perhaps the deepest problem with the modern Christian Zionist framework is the "dual-track" it implies — the notion that God maintains two simultaneous, parallel plans: one for a secular ethnic nation and one for a spiritual Church. The New Testament does not merely fail to support this idea. It systematically dismantles it.</p>
+
+  <p>Paul's image in Romans 11 is a single olive tree. Not two trees. There is one trunk, one root, one source of nourishment. Some natural branches have been broken off; wild branches have been grafted in. But there is only ever one tree. If you are not attached to the root — to the Seed — you are not part of the covenant, regardless of what your genealogy says.</p>
+
+  <p>Dispensationalism, which took formal shape around the 1830s, effectively attempts to reconstruct the very dividing wall that Paul says Yeshua destroyed at the cross. It creates a category of divine favoritism based on ethnicity — precisely the kind of partiality that Acts 10:34 declares God does not show, and that Galatians 3:28 declares the Gospel has ended: <em>"There is neither Jew nor Greek… for you are all one in Christ Jesus."</em></p>
+
+  <p>Paul makes the consequence explicit in Galatians 4, using the allegory of Hagar and Sarah. The earthly Jerusalem — characterized by bondage to flesh and political power — corresponds to Hagar and her son of the flesh. The heavenly Jerusalem — the city Abraham was always seeking — corresponds to Sarah and the son of promise. Paul's conclusion is unambiguous: <em>"Cast out the slave woman and her son, for the son of the slave woman shall not inherit with the son of the free woman."</em></p>
+
+  <p>The ultimate irony is that the very entity many churches are funding today is, by Paul's own typology, the son of the flesh. While the Israel of God — the body of those who are in the Seed — is the son of the promise.</p>
+
+  <div class="divider"><span class="divider-mark">✦</span></div>
+
+  <div class="section">
+    <span class="section-num">Part VI</span>
+    <h2>The Temple and the Body: <em>Chasing the Shadow into Stone</em></h2>
+  </div>
+
+  <p>The contradiction sharpens when we turn to the movement for a Third Temple in Jerusalem. Here, certain segments of American Christianity have not merely endorsed a political state — they have begun funding the reconstruction of a religious institution whose entire purpose was to point forward to Yeshua, and which Yeshua himself declared superseded.</p>
+
+  <p>Paul warns in Colossians 2:17 that the rituals, sabbaths, temples, and festivals of the old order are <span class="term">a shadow of things to come, but the substance belongs to Christ.</span> The shadow was real and necessary — it was given by God to teach a people to recognize the shape of the One who was coming. But when the substance arrives, to keep pursuing the shadow is not faithfulness. It is a refusal to look up.</p>
+
+  <p>The Letter to the Hebrews extends this with surgical precision. The old covenant — which included the temple, its priesthood, and its sacrificial system — is declared <em>"obsolete and growing old"</em> (Hebrews 8:13). The author's word for "obsolete" is not gentle. It means rendered void, displaced, set aside. And the reason it has been displaced is that the <em>once-for-all</em> sacrifice of Yeshua has accomplished what ten thousand animal sacrifices could only gesture toward.</p>
+
+  <p>For American churches to fund the breeding of red heifers, the reconstruction of temple vessels, and the revival of a priesthood is — from within their own scriptures — to financially support a return to a system that the New Testament declares terminated by the death of the Seed himself. They are, in effect, writing cheques to the shadow, while standing with their backs turned to the Light that cast it.</p>
+
+  <div class="divider"><span class="divider-mark">✦</span></div>
+
+  <div class="conclusion">
+    <span class="conclusion-label">Conclusion</span>
+    <h3>Stars, Not Dirt</h3>
+
+    <p>Abraham was shown two things: the dust of the earth and the stars of the sky. He was told his Seed would be like both. But Abraham himself chose to look upward. He <em>"went out, not knowing where he was going,"</em> because he was <em>"looking forward to the city that has foundations, whose designer and builder is God."</em> He never received the land. He never built a house on it. He died a stranger and pilgrim — and the New Testament celebrates this not as his failure, but as his greatest act of faith.</p>
+
+    <p>The covenant was always about the stars, not the dirt. It was always about an eternal King, not a temporary population. It was always pointing toward the day when the Heavenly Jerusalem — the City of the Living God — would descend, and the meek would inherit not one sliver of contested land, but the whole renewed earth.</p>
+
+    <p>Those who invoke Abraham's name to justify earthly conquest in his name have, with great sincerity and great confusion, missed the very point Abraham himself never missed. They are fighting over the shadow. Abraham was walking toward the Substance.</p>
+
+    <ul class="three-truths">
+      <li>Israel-the-State is a secular political entity — it is not, and cannot be, a party to a covenant made with the singular Seed who it rejects.</li>
+      <li>Israel-the-People are those who are in the Seed: the body of Christ, drawn from every nation, defined by faith and not by flesh.</li>
+      <li>The Land is the whole earth, to be inherited not by military conquest but by the arrival of the Heavenly Jerusalem — when the Seed, seated at the right hand of the Father, returns to claim what was always His.</li>
+    </ul>
+  </div>
+    `
+  },
+  {
+    id: "autopsy-of-a-soul",
+    title: "Autopsy of a Soul",
+    date: "7 May 2026",
+    category: "Testimony",
+    image: "autopsy_of_soul.svg",
+    excerpt: "I was saved in 2009. I was sincere. But salvation is not a transaction that ends the moment you say yes to it. In the darkest hour, in the driest period, in the deepest bottom, God was designing something. He calls it an autopsy of the soul.",
+    image: "autopsy_of_soul.svg",
+    content: `
+<p>I was saved in 2009. I was sincere. I remember the hunger of those early years, the desire to know the Lord, to follow Him, to be close to Him. That was real. I do not doubt it. But salvation is not a transaction that ends the moment you say yes to it. Who said once saved, always saved? That is not scriptural. Faith is a living thing, held in close cooperation with God, and it demands everything you have, including the parts of yourself you have not yet had the courage to look at. We are always in the Lord's factory, always being built into the character of Yeshua, which means we are always being exposed to our own darkness, not as punishment, but as the necessary work of a God who loves us too much to leave us as we are.</p>
+
+<p>When I left my parents' home and stepped into the world as my own man, I thought I was ready. Then in 2013 I started working, and something shifted. The soul, unguarded, finds its distractions. Solomon knew this. A man of wisdom and devotion, and yet his heart was drawn away by the women he loved, women whose gods were not his God. I found myself on a similar road, not in the same measure, but on the same road. I moved through multiple relationships before marriage, each one a search for rest and alignment, for someone who would finally settle the weight I had been carrying. Some of these women had no interest in my faith. Others wore the mask of belief just long enough for me to lose my footing, and by the time I understood what had happened, it was already too late.</p>
+
+<p>God warned Samson. He warns all of us. But the warnings are easier to hear than to heed when the heart is pulling in a different direction. Those relationships left shadows on my soul, patterns of thinking and relating that I had not chosen but had absorbed, wounds that I carried forward without knowing their shape. Their personalities pressed into mine, and mine into theirs, and the man who came out the other side was carrying more than he knew.</p>
+
+<p>Then I found my wife. A woman with an extraordinary testimony of her own, someone who had genuinely encountered the Saviour and whose faith was not borrowed or performed. I loved her and I married her, and I meant every word of what I said. But I brought all of it into that marriage with me, the scars, the patterns, the undealt wounds from years of searching in the wrong places. I had sincere intent to serve the Lord, and I did serve Him, in India and outside India, giving what I had. But man, oh man. How deep is the soul of a man. Only the Spirit of God can reach those rooms, and He does not rush. He waits until we are still enough to let Him in.</p>
+
+<p>When the COVID lockdown came, my wife and I spent that year in my homeland with my parents. It was the first time in a long while that I had been forced to slow down. Then, four years ago, we moved to Belgium together, and I began what felt like the real chapter, a foreign country, a fresh start, a life being built from the ground up. I worked. I struggled with authority as I always had. I changed roles and companies and environments, always telling myself the problem was around me rather than within me.</p>
+
+<p>In June 2024, my first daughter was born, and something in me shifted with her arrival in a way I had not expected. Then in October of that same year, my employer told me to leave. I found another position, but there too I met heavy rejection from authority, confusion at every level, and eventually I was asked to step down and enter performance training. I had seen it coming, and instead of humbling myself and receiving it, I walked away. Since that day, nothing has opened. No door, no favour, no ground to stand on.</p>
+
+<p>What followed was a kind of stripping I had never imagined for myself. I had to leave the apartment we had made into a home. I sold my daughter's things, the furniture we had gathered, and the car. I packed what remained and flew back to my homeland, back to the house I had once left with great confidence in God. I moved back in with my parents, who are unbelievers, and I had no choice in the matter and nowhere else to turn.</p>
+
+<p>My father, the man who once burned my Bible, cursed the name of Jesus, and tore up my notes while I watched, became the one putting groceries on our table. God gave a contract to my unbelieving father just to keep me alive, and I sat across from him at meals while he questioned my faith, and I had no answer that felt honest. There was nowhere else to go, and I have come to understand that this was precisely the point. The Lord was not punishing me. In the darkest hour, in the driest period, in the unanswered prayers and the unopened doors and the deepest bottom, He was designing something. He was taking me to a separate room to operate. His love separates us from everything that is noise, and quietly, without asking our permission, begins the work.</p>
+
+<blockquote>"O God, You have rejected us and broken our defenses; You have been angry. O, restore us.", Psalm 60:1</blockquote>
+
+<p>That verse became mine. He had broken every defense I had built, every wall of pride, every strategy, every plan I had made for my own life. Not because He had abandoned me, but because He was answering a prayer deeper than the ones I had been praying. He was restoring me.</p>
+
+<blockquote>"It is good for me that I have been afflicted, that I may learn Your statutes.", Psalm 119:71</blockquote>
+
+<p>I did not understand this verse when I first read it. A man saying it is good that he suffered? But I understand it now. The affliction was the lesson. The emptiness was the curriculum. The shame was the classroom. I could not have learned what God needed to teach me in any other school.</p>
+
+<p>There, in that enforced stillness, I finally stopped running long enough to perform an autopsy on my own soul. What I found was not easy to name. Procrastination. Authority issues. A dual and confused mind that could never quite settle. A heart of lust tied to masturbation and pornography, carried quietly for years behind a different public face. Arrogance, anger, and jealousy. And underneath everything, my deepest trap: a subtle and dangerous pride that had convinced me, for most of my adult life, that I knew more than my seniors. I was never truly at peace with those above me. What I called principle and righteous conviction was, most of the time, my ego, and it had been costing me everything.</p>
+
+<p>The breaking point that cracked me open was my daughter. Seeing her being drawn toward the idols my parents keep in their house broke something in me that nothing else had reached, and I cried out to the Lord for rescue. It felt at first as though nothing was changing, but God was already moving beneath everything I could see.</p>
+
+<p>My wife and I humbled ourselves and moved to her parents' house for the final months of her pregnancy. Our marriage had been fracturing under the weight of my pride and her arrogance, with no real submission between us and a great deal of fighting. But God settled us in that season. She gave up her branded clothes and the modern way of living she had grown used to, and she began stitching her own clothes, embracing modesty, and serving her mother-in-law in the kitchen. I watched a woman I had genuinely wounded choose humility when she had every reason not to, and it undid something deep in me.</p>
+
+<p>As for me, I placed myself under my strict and authoritative father-in-law, without conditions and without argument. I water his garden, clean his car, and serve him in whatever way he needs. I have opened my heart to the people the world tends to pass over, the delivery boy, the waiter, the shopkeeper, the cleaner, people I once moved past without a second thought who now feel, genuinely, like brothers. I am finally paying my obligations and taking responsibility for the things I had been avoiding for years.</p>
+
+<p>God used two books as particular instruments to show me what had been hiding in my heart. The first was <em>Introduction to the Devout Life</em> by Francis de Sales, and the second was <em>A Tale of Three Kings</em> by Gene Edwards. Together they showed me plainly that I had been acting like a rebel king while calling it righteousness. The image of David refusing to raise his hand against Saul, even when Saul was clearly wrong, even when David had every justification, stayed with me for weeks. I had spent years raising my hand against every Saul in my life and telling myself that was discernment. God wanted a servant's heart from me, and I had been trying to offer Him a throne.</p>
+
+<blockquote>"Whoever wants to become great among you must be your servant, and whoever wants to be first must be your slave.", Matthew 20:26-27</blockquote>
+
+<p>It is not finished. I recently found myself speaking angrily to my father when he would not listen to my instructions about my daughter, and the old man in me rose up with that familiar heat. But this time I did not justify it. My own rebellion broke my heart, and I went back to God with nothing to offer except the honest confession that I had gone astray again.</p>
+
+<p>I am living in dryness, in a situation the world would call shameful, with no title, no platform, and no visible proof that any of this is producing anything. But for the first time in as long as I can remember, my mind is not at war with itself. I am waiting on the Lord. I am finding, in the middle of these empty places, a peace I was always running too fast to receive.</p>
+
+<p>Was David spared from his darkest chapter? Was Moses exempt from the wilderness? Was this a one-day job for either of them? It was a lifetime of progress, stumbling, restoration, and being used again. And those shameless acts, those failures recorded without apology, became the Scriptures of the Lord, for His glory and for the comfort of every broken man and woman who came after them.</p>
+
+<p>What shame then is there in sharing mine? Does this make me a hypocrite? Or does it make me a poor man crying the only thing he knows to cry: Son of David, have mercy on me.</p>
+
+<p>I know there are many reading this who are blaming God for the outcome of their lives. Many who are doubting whether He sees them at all. Many who have cried out and heard nothing back, and have started to wonder if anything is there to hear them. I was all of those people at different points in this journey.</p>
+
+<p>I am not writing this because I have arrived somewhere. I am writing it from the middle of the desert, with soil on my hands from a garden I did not plant, in a house that is not mine, learning things I should have learned years ago. But I am writing it because what God has done in this season, quietly and without announcement, is real. He did not leave. He was working in the breaking. In the darkest hour, in the driest period, in the most humbling corner of a man's life, He gets to design something beautiful. He calls it an autopsy of the soul.</p>
+
+<p>May this small piece of my story lift you, wherever you are. If He can do it here, He can do it where you are.</p>
+
+<blockquote>"The sacrifices of God are a broken spirit; a broken and contrite heart, O God, you will not despise.", Psalm 51:17</blockquote>
+
+    `
+  },
+  {
     id: "the-word-judges-history-not-the-other-way-around",
     title: "The Word Judges History. Not the Other Way Around.",
     date: "21 May 2026",
@@ -215,69 +800,6 @@ const POSTS = [
     `
   },
   {
-    id: "autopsy-of-a-soul",
-    title: "Autopsy of a Soul",
-    date: "7 May 2026",
-    category: "Testimony",
-    image: "autopsy_of_soul.svg",
-    excerpt: "I was saved in 2009. I was sincere. But salvation is not a transaction that ends the moment you say yes to it. In the darkest hour, in the driest period, in the deepest bottom, God was designing something. He calls it an autopsy of the soul.",
-    image: "autopsy_of_soul.svg",
-    content: `
-<p>I was saved in 2009. I was sincere. I remember the hunger of those early years, the desire to know the Lord, to follow Him, to be close to Him. That was real. I do not doubt it. But salvation is not a transaction that ends the moment you say yes to it. Who said once saved, always saved? That is not scriptural. Faith is a living thing, held in close cooperation with God, and it demands everything you have, including the parts of yourself you have not yet had the courage to look at. We are always in the Lord's factory, always being built into the character of Yeshua, which means we are always being exposed to our own darkness, not as punishment, but as the necessary work of a God who loves us too much to leave us as we are.</p>
-
-<p>When I left my parents' home and stepped into the world as my own man, I thought I was ready. Then in 2013 I started working, and something shifted. The soul, unguarded, finds its distractions. Solomon knew this. A man of wisdom and devotion, and yet his heart was drawn away by the women he loved, women whose gods were not his God. I found myself on a similar road, not in the same measure, but on the same road. I moved through multiple relationships before marriage, each one a search for rest and alignment, for someone who would finally settle the weight I had been carrying. Some of these women had no interest in my faith. Others wore the mask of belief just long enough for me to lose my footing, and by the time I understood what had happened, it was already too late.</p>
-
-<p>God warned Samson. He warns all of us. But the warnings are easier to hear than to heed when the heart is pulling in a different direction. Those relationships left shadows on my soul, patterns of thinking and relating that I had not chosen but had absorbed, wounds that I carried forward without knowing their shape. Their personalities pressed into mine, and mine into theirs, and the man who came out the other side was carrying more than he knew.</p>
-
-<p>Then I found my wife. A woman with an extraordinary testimony of her own, someone who had genuinely encountered the Saviour and whose faith was not borrowed or performed. I loved her and I married her, and I meant every word of what I said. But I brought all of it into that marriage with me, the scars, the patterns, the undealt wounds from years of searching in the wrong places. I had sincere intent to serve the Lord, and I did serve Him, in India and outside India, giving what I had. But man, oh man. How deep is the soul of a man. Only the Spirit of God can reach those rooms, and He does not rush. He waits until we are still enough to let Him in.</p>
-
-<p>When the COVID lockdown came, my wife and I spent that year in my homeland with my parents. It was the first time in a long while that I had been forced to slow down. Then, four years ago, we moved to Belgium together, and I began what felt like the real chapter, a foreign country, a fresh start, a life being built from the ground up. I worked. I struggled with authority as I always had. I changed roles and companies and environments, always telling myself the problem was around me rather than within me.</p>
-
-<p>In June 2024, my first daughter was born, and something in me shifted with her arrival in a way I had not expected. Then in October of that same year, my employer told me to leave. I found another position, but there too I met heavy rejection from authority, confusion at every level, and eventually I was asked to step down and enter performance training. I had seen it coming, and instead of humbling myself and receiving it, I walked away. Since that day, nothing has opened. No door, no favour, no ground to stand on.</p>
-
-<p>What followed was a kind of stripping I had never imagined for myself. I had to leave the apartment we had made into a home. I sold my daughter's things, the furniture we had gathered, and the car. I packed what remained and flew back to my homeland, back to the house I had once left with great confidence in God. I moved back in with my parents, who are unbelievers, and I had no choice in the matter and nowhere else to turn.</p>
-
-<p>My father, the man who once burned my Bible, cursed the name of Jesus, and tore up my notes while I watched, became the one putting groceries on our table. God gave a contract to my unbelieving father just to keep me alive, and I sat across from him at meals while he questioned my faith, and I had no answer that felt honest. There was nowhere else to go, and I have come to understand that this was precisely the point. The Lord was not punishing me. In the darkest hour, in the driest period, in the unanswered prayers and the unopened doors and the deepest bottom, He was designing something. He was taking me to a separate room to operate. His love separates us from everything that is noise, and quietly, without asking our permission, begins the work.</p>
-
-<blockquote>"O God, You have rejected us and broken our defenses; You have been angry. O, restore us.", Psalm 60:1</blockquote>
-
-<p>That verse became mine. He had broken every defense I had built, every wall of pride, every strategy, every plan I had made for my own life. Not because He had abandoned me, but because He was answering a prayer deeper than the ones I had been praying. He was restoring me.</p>
-
-<blockquote>"It is good for me that I have been afflicted, that I may learn Your statutes.", Psalm 119:71</blockquote>
-
-<p>I did not understand this verse when I first read it. A man saying it is good that he suffered? But I understand it now. The affliction was the lesson. The emptiness was the curriculum. The shame was the classroom. I could not have learned what God needed to teach me in any other school.</p>
-
-<p>There, in that enforced stillness, I finally stopped running long enough to perform an autopsy on my own soul. What I found was not easy to name. Procrastination. Authority issues. A dual and confused mind that could never quite settle. A heart of lust tied to masturbation and pornography, carried quietly for years behind a different public face. Arrogance, anger, and jealousy. And underneath everything, my deepest trap: a subtle and dangerous pride that had convinced me, for most of my adult life, that I knew more than my seniors. I was never truly at peace with those above me. What I called principle and righteous conviction was, most of the time, my ego, and it had been costing me everything.</p>
-
-<p>The breaking point that cracked me open was my daughter. Seeing her being drawn toward the idols my parents keep in their house broke something in me that nothing else had reached, and I cried out to the Lord for rescue. It felt at first as though nothing was changing, but God was already moving beneath everything I could see.</p>
-
-<p>My wife and I humbled ourselves and moved to her parents' house for the final months of her pregnancy. Our marriage had been fracturing under the weight of my pride and her arrogance, with no real submission between us and a great deal of fighting. But God settled us in that season. She gave up her branded clothes and the modern way of living she had grown used to, and she began stitching her own clothes, embracing modesty, and serving her mother-in-law in the kitchen. I watched a woman I had genuinely wounded choose humility when she had every reason not to, and it undid something deep in me.</p>
-
-<p>As for me, I placed myself under my strict and authoritative father-in-law, without conditions and without argument. I water his garden, clean his car, and serve him in whatever way he needs. I have opened my heart to the people the world tends to pass over, the delivery boy, the waiter, the shopkeeper, the cleaner, people I once moved past without a second thought who now feel, genuinely, like brothers. I am finally paying my obligations and taking responsibility for the things I had been avoiding for years.</p>
-
-<p>God used two books as particular instruments to show me what had been hiding in my heart. The first was <em>Introduction to the Devout Life</em> by Francis de Sales, and the second was <em>A Tale of Three Kings</em> by Gene Edwards. Together they showed me plainly that I had been acting like a rebel king while calling it righteousness. The image of David refusing to raise his hand against Saul, even when Saul was clearly wrong, even when David had every justification, stayed with me for weeks. I had spent years raising my hand against every Saul in my life and telling myself that was discernment. God wanted a servant's heart from me, and I had been trying to offer Him a throne.</p>
-
-<blockquote>"Whoever wants to become great among you must be your servant, and whoever wants to be first must be your slave.", Matthew 20:26-27</blockquote>
-
-<p>It is not finished. I recently found myself speaking angrily to my father when he would not listen to my instructions about my daughter, and the old man in me rose up with that familiar heat. But this time I did not justify it. My own rebellion broke my heart, and I went back to God with nothing to offer except the honest confession that I had gone astray again.</p>
-
-<p>I am living in dryness, in a situation the world would call shameful, with no title, no platform, and no visible proof that any of this is producing anything. But for the first time in as long as I can remember, my mind is not at war with itself. I am waiting on the Lord. I am finding, in the middle of these empty places, a peace I was always running too fast to receive.</p>
-
-<p>Was David spared from his darkest chapter? Was Moses exempt from the wilderness? Was this a one-day job for either of them? It was a lifetime of progress, stumbling, restoration, and being used again. And those shameless acts, those failures recorded without apology, became the Scriptures of the Lord, for His glory and for the comfort of every broken man and woman who came after them.</p>
-
-<p>What shame then is there in sharing mine? Does this make me a hypocrite? Or does it make me a poor man crying the only thing he knows to cry: Son of David, have mercy on me.</p>
-
-<p>I know there are many reading this who are blaming God for the outcome of their lives. Many who are doubting whether He sees them at all. Many who have cried out and heard nothing back, and have started to wonder if anything is there to hear them. I was all of those people at different points in this journey.</p>
-
-<p>I am not writing this because I have arrived somewhere. I am writing it from the middle of the desert, with soil on my hands from a garden I did not plant, in a house that is not mine, learning things I should have learned years ago. But I am writing it because what God has done in this season, quietly and without announcement, is real. He did not leave. He was working in the breaking. In the darkest hour, in the driest period, in the most humbling corner of a man's life, He gets to design something beautiful. He calls it an autopsy of the soul.</p>
-
-<p>May this small piece of my story lift you, wherever you are. If He can do it here, He can do it where you are.</p>
-
-<blockquote>"The sacrifices of God are a broken spirit; a broken and contrite heart, O God, you will not despise.", Psalm 51:17</blockquote>
-
-    `
-  },
-  {
     id: "agencies-of-god-how-the-almighty-speaks-acts-and-appears",
     title: "The Agencies of God: How the Almighty Speaks, Acts and Appears",
     date: "5 May 2026",
@@ -411,155 +933,6 @@ const POSTS = [
 <p>One God. One Mediator. The Man Christ Jesus. That is the apostolic testimony, stated plainly, needing no Trinity to hold it together.</p>
     `
   },
-  {
-    id: "what-does-it-mean-to-be-the-church",
-    title: "What Does It Mean to Be the Church?",
-    date: "14 July 2025",
-    category: "Teaching",
-    excerpt: "We have inherited a word, 'church', that has been buried under centuries of stone, steeple, and institution. But the New Testament paints a picture that looks very different.",
-    image: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=900&q=80",
-    content: `
-<p>We have inherited a word, "church", that has been buried under centuries of stone, steeple, and institution. When most people hear it, they picture a building: a pointed roof, stained glass, rows of pews. But the New Testament paints a picture that looks very different.</p>
-
-<p>The Greek word is <em>ekklesia</em>, meaning "the called-out ones," an assembly of people. Not a place. Not an organisation. People. Living, breathing, Spirit-filled people gathered in the name of Jesus Christ.</p>
-
-<h2>The Early Church Had No Buildings</h2>
-
-<p>For the first three centuries of Christian history, there were no church buildings. Believers met in homes, in courtyards, by riversides, in hired halls. The "church at Corinth" was not a building in Corinth, it was the community of believers living in that city. Paul wrote letters to people, not to addresses.</p>
-
-<blockquote>"Where two or three gather in my name, there am I with them.", Matthew 18:20</blockquote>
-
-<p>Jesus did not say "where a grand building stands" or "where an institution is registered." He said <em>where two or three gather</em>. The threshold is remarkably low. The promise is remarkably high.</p>
-
-<h2>What This Means for Us</h2>
-
-<p>At 2:22 Church, we take this seriously, not as a theological novelty but as a return to something ancient. When we gather in someone's living room, when we meet in the park on a Sunday morning, when we share a meal and open the Word together around a kitchen table, that is the church. Fully. Not a second-rate version of church.</p>
-
-<p>This does not mean we are disorganised or lacking in depth. The apostles' teaching, fellowship, breaking of bread, and prayer (Acts 2:42) can happen anywhere the people of God choose to meet. What it does mean is that we refuse to confuse the container with the contents.</p>
-
-<h2>You Are the Church</h2>
-
-<p>Perhaps the most important implication of all this is personal. You, if you have been born again by the Spirit of God, if you are following Jesus, <em>you are the church</em>. Not a member of it in the sense of a club. Not a customer attending a service. You are a living stone in a spiritual house (1 Peter 2:5).</p>
-
-<p>That means your daily life is not separate from your church life. How you treat your neighbour, how you serve the poor, how you speak truth in your workplace, all of this is the church being the church in the world. The gathering on Sunday (or whenever your community meets) is the equipping and encouragement. The rest of the week is the mission.</p>
-
-<p>We are not waiting to build something. We already are something. Let us live like it.</p>
-    `
-  },
-  {
-    id: "baptism-in-jesus-name",
-    title: "Baptism in Jesus' Name, What the Apostles Actually Did",
-    date: "7 July 2025",
-    category: "Baptism",
-    excerpt: "A close look at Acts and the early church practice of baptism, and why the outward act must follow genuine inward transformation.",
-    image: "https://images.unsplash.com/photo-1476234251651-f353703a034d?w=800&q=80",
-    content: `
-<p>Few topics in Christian history have generated as much debate as baptism. Who should be baptised? When? How much water? What words should be spoken? Behind all these questions lies a more important one: what is baptism actually <em>for</em>?</p>
-
-<p>At 2:22 Church, we follow the pattern of the early apostles. When Peter preached on the day of Pentecost and the crowd asked "What shall we do?" his answer was clear:</p>
-
-<blockquote>"Repent and be baptised, every one of you, in the name of Jesus Christ for the forgiveness of your sins. And you will receive the gift of the Holy Spirit.", Acts 2:38</blockquote>
-
-<h2>The Apostolic Pattern</h2>
-
-<p>Throughout the book of Acts, every recorded baptism is performed in the name of Jesus Christ. The Samaritans were baptised in the name of the Lord Jesus (Acts 8:16). Cornelius and his household were baptised in the name of Jesus Christ (Acts 10:48). The disciples at Ephesus were baptised in the name of the Lord Jesus (Acts 19:5).</p>
-
-<p>This is not a minor detail. The apostles who had walked with Jesus, who had received his final instructions, who had been filled with the Holy Spirit at Pentecost, these men consistently baptised in the name of Jesus. We follow their example.</p>
-
-<h2>Baptism Cannot Save You Alone</h2>
-
-<p>This is where we must be clear and honest. Baptism is a powerful, meaningful, public declaration of a transformed life. But the water itself does not save. The act itself does not save. What saves is genuine repentance, genuine faith in Jesus Christ, and the new birth from above by the Holy Spirit.</p>
-
-<p>Baptism is the outward sign of an inward reality. If the inward reality is not there, if there has been no genuine turning from sin, no real trust in Jesus, no experience of spiritual renewal, then baptism is just getting wet. Meaningful ceremony, no spiritual transaction.</p>
-
-<h2>The New Birth First</h2>
-
-<p>Jesus told Nicodemus that no one can see the kingdom of God unless they are born again (John 3:3). This new birth is not baptism. It is what baptism declares. The order matters: transformation, then testimony. New life within, then public declaration without.</p>
-
-<p>We baptise people when they have genuinely encountered Jesus Christ and want to declare it to the world. We do not rush people toward water as if the water will finish what the Spirit has not yet started.</p>
-    `
-  },
-  {
-    id: "we-live-by-practice-not-preaching",
-    title: "We Live by Practice, Not by Preaching",
-    date: "30 June 2025",
-    category: "Service",
-    excerpt: "What happens when a community decides that the measure of faith is not what they say on Sunday, but what they do the other six days of the week?",
-    image: "https://images.unsplash.com/photo-1609234656432-603831d5cbee?w=800&q=80",
-    content: `
-<p>There is a kind of Christianity that is very good at talking about itself. It produces excellent sermons, polished worship sets, and beautifully designed programmes. What it sometimes struggles to produce is changed lives and served communities.</p>
-
-<p>We want to be a different kind of community. Not better, we have no ground for pride, but different in this one specific way: <em>we measure ourselves by what we do, not what we say.</em></p>
-
-<h2>The Letter of James</h2>
-
-<p>James, the brother of Jesus, was blunt about this. "What good is it, my brothers and sisters, if someone claims to have faith but has no deeds? Can such faith save them?" (James 2:14). He goes on to paint a vivid picture of a brother or sister who is cold and hungry, and the believer who says "Go in peace, keep warm and well fed" but does nothing about their physical needs. Faith without works, James concludes, is dead.</p>
-
-<p>This is not salvation by works. It is the recognition that genuine faith produces genuine fruit, and that fruit is visible in how we treat people, especially the vulnerable.</p>
-
-<h2>What This Looks Like for Us</h2>
-
-<p>In our community, service is not a programme. There is no "service ministry" with a sign-up sheet. Instead, we try to cultivate a culture where every person is alert to need and equipped to meet it, in their own neighbourhood, workplace, family, and friendship circle.</p>
-
-<p>When someone in our gathering loses their job, others quietly find ways to help. When a single mother needs childcare, people step up. When a neighbour is sick, someone brings food. Not because we organised a rota. Because we are trying to follow Jesus, who himself came not to be served but to serve.</p>
-
-<h2>The Testimony of a Lived Life</h2>
-
-<p>Peter writes that we should live such good lives among people that even those who speak against us may see our good deeds and glorify God (1 Peter 2:12). The most powerful apologetic, the most compelling argument for the truth of the gospel, is a community of people whose lives have been visibly transformed and who are visibly laying those lives down for others.</p>
-
-<p>Preach by all means. Teach by all means. But let your life preach louder than your words.</p>
-    `
-  },
-  {
-    id: "why-we-dont-take-a-tithe",
-    title: "Why We Don't Take a Tithe",
-    date: "23 June 2025",
-    category: "Giving",
-    excerpt: "Generosity that flows from love looks very different from an obligation. Here is why we abandoned the 10% mandate, and what replaced it.",
-    image: "",
-    content: `
-<p>The tithe, the instruction to give one tenth of one's income to the church, is deeply embedded in many Christian traditions. It is taught from pulpits, printed on giving envelopes, and often framed as a non-negotiable spiritual discipline. We understand where it comes from. We respectfully disagree with how it is typically applied.</p>
-
-<h2>The Old Covenant Context</h2>
-
-<p>The tithe in the Old Testament was a specific instruction to the nation of Israel, functioning partly as a tax system to support the Levitical priesthood and the Temple, institutions that no longer exist in the same form. The New Testament does not repeat the tithe as a command to the church. What it does say, consistently and beautifully, is something more demanding and more freeing: give as you have decided in your heart, not reluctantly or under compulsion, for God loves a cheerful giver (2 Corinthians 9:7).</p>
-
-<h2>The Problem with Mandated Giving</h2>
-
-<p>When giving becomes a rule, two things tend to happen. First, people who give the 10% feel they have fulfilled their obligation, and stop thinking beyond it. Second, people who cannot give 10% (because they are poor, because they are struggling) carry guilt they were never meant to carry. Neither outcome reflects the generosity of the kingdom.</p>
-
-<h2>What We Do Instead</h2>
-
-<p>We encourage every person in our community to prayerfully ask: what cause can I support that builds the kingdom of God? That might mean buying groceries for a struggling family. It might mean helping someone with rent. It might mean funding a child's education, or supporting a believer who is working in a difficult place. It might mean giving financially to support the practical needs of our gatherings.</p>
-
-<p>We do not pass offering plates. We do not publish giving targets. We do not tell you what percentage to give. We trust the Spirit to lead generous people toward genuine need, and we have seen, again and again, that this works.</p>
-    `
-  },
-  {
-    id: "meeting-in-a-park-changed-everything",
-    title: "Meeting in a Park Changed Everything",
-    date: "16 June 2025",
-    category: "Community",
-    excerpt: "Our first outdoor gathering had no sound system, no order of service, and no offering plate. It was the most alive gathering we had experienced.",
-    image: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&q=80",
-    content: `
-<p>It was a cool Saturday morning. We had no venue booked, no chairs to arrange, no sound system to set up, and no order of service printed. What we had was a patch of grass under some trees, a few blankets, a thermos of tea, and about fourteen people who wanted to spend time with God and with each other.</p>
-
-<p>I will be honest: I was nervous. It felt too simple. Too informal. Not enough like what I had been taught church should look like.</p>
-
-<h2>What Happened</h2>
-
-<p>Someone opened with a prayer. Someone else read a passage from Luke. A third person said "that verse you just read, can I share something about it?" And for the next two hours, something extraordinary and completely ordinary happened at the same time: people talked about Jesus. Honestly. Personally. Without a microphone or a programme or a professional to manage the flow.</p>
-
-<p>A woman shared how a verse had kept her going through a very dark month. A young man asked a question he said he had never felt safe asking in a "normal church." An older believer answered it with gentleness and experience. We prayed for each other by name. We shared the bread and the cup together on the grass.</p>
-
-<h2>What It Taught Us</h2>
-
-<p>That morning reorganised something in me. I had been unconsciously equating "good church" with production value, with the quality of the sound, the polish of the worship, the length and structure of the sermon. The park stripped all of that away and left only the thing that actually matters: the presence of Jesus among his gathered people.</p>
-
-<p>We still meet in halls and homes. We still value good teaching and meaningful worship. But that morning under the trees reminded us what we are actually doing and why. We are not producing a religious experience. We are being a family. And families can meet anywhere.</p>
-    `
-  }
 ];
 
 // ============================================================
