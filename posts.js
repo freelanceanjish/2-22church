@@ -232,8 +232,8 @@ const POSTS = [
     margin: 0;
   }
 
-  .pullquote p::before { content: '\201C'; color: var(--gold-light); }
-  .pullquote p::after  { content: '\201D'; color: var(--gold-light); }
+  .pullquote p::before { content: '“'; color: var(--gold-light); }
+  .pullquote p::after  { content: '”'; color: var(--gold-light); }
 
   /* ── Key terms inline ── */
   .term {
@@ -387,12 +387,12 @@ const POSTS = [
   }
 </style>
 <p class="opening">
-    The people fighting for the "dirt" are using the name of a man who refused to settle for it — because he was looking at the stars.
+    The people fighting for the "dirt" are using the name of a man who refused to settle for it - because he was looking at the stars.
   </p>
 
-  <p>There is a remarkable irony at the centre of modern biblical debate. Nations wage wars, churches write cheques, and theologians draft endless justifications — all in the name of a covenant whose finest detail has been quietly overlooked. That detail is a single word. A word the Apostle Paul identified as the singular key that unlocks every promise God ever made to Abraham. The word is <span class="term">Seed</span>.</p>
+  <p>There is a remarkable irony at the centre of modern biblical debate. Nations wage wars, churches write cheques, and theologians draft endless justifications - all in the name of a covenant whose finest detail has been quietly overlooked. That detail is a single word. A word the Apostle Paul identified as the singular key that unlocks every promise God ever made to Abraham. The word is <span class="term">Seed</span>.</p>
 
-  <p>Paul's statement in Galatians 3:16 is not tentative. It is surgical: <em>"Now the promises were made to Abraham and to his offspring. It does not say, 'And to offsprings,' referring to many, but referring to one, 'And to your offspring,' who is Christ."</em> Paul is not offering an interpretation. He is announcing a legal fact. The covenant was made to a specific, singular recipient: Yeshua — the Christ. Everything else flows from this.</p>
+  <p>Paul's statement in Galatians 3:16 is not tentative. It is surgical: <em>"Now the promises were made to Abraham and to his offspring. It does not say, 'And to offsprings,' referring to many, but referring to one, 'And to your offspring,' who is Christ."</em> Paul is not offering an interpretation. He is announcing a legal fact. The covenant was made to a specific, singular recipient: Yeshua - the Christ. Everything else flows from this.</p>
 
   <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -401,21 +401,21 @@ const POSTS = [
     <h2>The Covenant Reread: <em>The Seed is a Person</em></h2>
   </div>
 
-  <p>Once Paul's key is applied, the Genesis covenant passages transform entirely. What appeared to be a series of ethnic land-grants to a biological lineage reveals itself as something far more precise — a royal deed, issued to a specific King, who had not yet arrived.</p>
+  <p>Once Paul's key is applied, the Genesis covenant passages transform entirely. What appeared to be a series of ethnic land-grants to a biological lineage reveals itself as something far more precise - a royal deed, issued to a specific King, who had not yet arrived.</p>
 
   <div class="scripture">
-    <p>"To your offspring I will give this land." — "Blessing I will bless you, and multiplying I will multiply your offspring as the stars of the heaven and as the sand which is on the seashore; and your offspring shall possess the gate of his enemies."</p>
+    <p>"To your offspring I will give this land." - "Blessing I will bless you, and multiplying I will multiply your offspring as the stars of the heaven and as the sand which is on the seashore; and your offspring shall possess the gate of his enemies."</p>
     <span class="scripture-ref">Genesis 12:7 · 22:17</span>
   </div>
 
-  <p>Notice the tension built into these verses from the beginning. In one breath the offspring is compared to the dust — countable grains — and in the next, to the stars of heaven. Abraham himself understood this tension. The Letter to the Hebrews tells us plainly that he was <em>"looking forward to the city that has foundations, whose designer and builder is God."</em> He was not anchoring his hope to a parcel of land between the Nile and the Euphrates. He was looking past the dirt, toward something celestial.</p>
+  <p>Notice the tension built into these verses from the beginning. In one breath the offspring is compared to the dust - countable grains - and in the next, to the stars of heaven. Abraham himself understood this tension. The Letter to the Hebrews tells us plainly that he was <em>"looking forward to the city that has foundations, whose designer and builder is God."</em> He was not anchoring his hope to a parcel of land between the Nile and the Euphrates. He was looking past the dirt, toward something celestial.</p>
 
   <div class="irony-box">
     <span class="irony-label">The Central Irony</span>
-    <p>If the Seed is singular and eternal, then "forever" only makes sense when the recipient is a Person who transcends time. A biological population dies, scatters, and ends. A King who rises from the dead does not. The promise requires an immortal recipient — and only one candidate qualifies.</p>
+    <p>If the Seed is singular and eternal, then "forever" only makes sense when the recipient is a Person who transcends time. A biological population dies, scatters, and ends. A King who rises from the dead does not. The promise requires an immortal recipient - and only one candidate qualifies.</p>
   </div>
 
-  <p>The word translated "forever" — <em>olam</em> — carries the weight of perpetuity. It is the same word applied to God's own covenant relationship. For such a promise to hold, the recipient must be capable of enduring forever. This is not a description of any ethnic group. It is a description of Yeshua alone.</p>
+  <p>The word translated "forever" - <em>olam</em> - carries the weight of perpetuity. It is the same word applied to God's own covenant relationship. For such a promise to hold, the recipient must be capable of enduring forever. This is not a description of any ethnic group. It is a description of Yeshua alone.</p>
 
   <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -424,11 +424,11 @@ const POSTS = [
     <h2>Union with the Seed: <em>One Body, One Inheritance</em></h2>
   </div>
 
-  <p>If the promise belongs to Yeshua, the natural question follows: what of his followers? The New Testament answers this with a concept of breathtaking depth — the union of the believer with Christ. This is not metaphor or devotional warmth. It is presented by the Apostles as a legal and ontological reality.</p>
+  <p>If the promise belongs to Yeshua, the natural question follows: what of his followers? The New Testament answers this with a concept of breathtaking depth - the union of the believer with Christ. This is not metaphor or devotional warmth. It is presented by the Apostles as a legal and ontological reality.</p>
 
   <p>When Yeshua appeared to the persecutor Saul on the Damascus road, he did not ask, <em>"Why are you persecuting my followers?"</em> He asked: <em>"Why are you persecuting Me?"</em> (Acts 9:4). The people Saul was imprisoning and killing were not separate from Yeshua. Their pain was His pain. Their bodies were, in some inexpressible way, His body.</p>
 
-  <p>Paul builds this logic into a formal doctrine. In 1 Corinthians 12, he writes that the Church <em>is</em> the body of Christ — not merely resembles it, not is spiritually close to it, but <em>is</em> it. Each believer is a member, as a hand or eye is a member of a living body. There is only one body. There is only one Seed.</p>
+  <p>Paul builds this logic into a formal doctrine. In 1 Corinthians 12, he writes that the Church <em>is</em> the body of Christ - not merely resembles it, not is spiritually close to it, but <em>is</em> it. Each believer is a member, as a hand or eye is a member of a living body. There is only one body. There is only one Seed.</p>
 
   <div class="pullquote">
     <p>A branch has no independent right to the soil. It draws life only because it remains attached to the Vine. The moment it severs itself from the root, it ceases to carry the promise.</p>
@@ -436,7 +436,7 @@ const POSTS = [
 
   <p>The most explicit statement comes in Galatians 3:27–29: <em>"For as many of you as were baptized into Christ have put on Christ… And if you are Christ's, then you are Abraham's offspring, heirs according to promise."</em> Paul has collapsed the distance entirely. There is no second route to Abraham's covenant. There is no alternative track, no DNA-based bypass. The only path into the Seed is through the Seed himself.</p>
 
-  <p>This transforms the nature of inheritance. Believers do not inherit the land because of their genealogy. They inherit it because they are legally part of the Person who owns it — clothed in Him, as Paul says, like a garment grants entry into the King's court.</p>
+  <p>This transforms the nature of inheritance. Believers do not inherit the land because of their genealogy. They inherit it because they are legally part of the Person who owns it - clothed in Him, as Paul says, like a garment grants entry into the King's court.</p>
 
   <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -449,7 +449,7 @@ const POSTS = [
 
   <div class="point">
     <span class="point-label">Romans 9:6–8</span>
-    <p>Paul announces the governing principle: <em>"For they are not all Israel who are descended from Israel."</em> The name "Israel" is not coextensive with a genetic population. Something more is required. That something is faith — participation in the promise through union with the Seed.</p>
+    <p>Paul announces the governing principle: <em>"For they are not all Israel who are descended from Israel."</em> The name "Israel" is not coextensive with a genetic population. Something more is required. That something is faith - participation in the promise through union with the Seed.</p>
   </div>
 
   <div class="point">
@@ -459,10 +459,10 @@ const POSTS = [
 
   <div class="point">
     <span class="point-label">1 Peter 2:9</span>
-    <p>Peter seals the argument by taking the titles once reserved exclusively for the physical nation — <em>"chosen race, royal priesthood, holy nation, a people for his own possession"</em> — and transferring them wholesale to the community of believers.</p>
+    <p>Peter seals the argument by taking the titles once reserved exclusively for the physical nation - <em>"chosen race, royal priesthood, holy nation, a people for his own possession"</em> - and transferring them wholesale to the community of believers.</p>
   </div>
 
-  <p>This transfer is not additive. Peter is not creating a second Israel running parallel to the first. He is announcing that the substance has arrived and the shadow is passing away. The "holy nation" God was always building was never a country with borders and a flag. It was a global, spiritual kingdom gathered from every tongue, tribe, and people — defined not by soil or bloodline, but by faith in and union with the Seed.</p>
+  <p>This transfer is not additive. Peter is not creating a second Israel running parallel to the first. He is announcing that the substance has arrived and the shadow is passing away. The "holy nation" God was always building was never a country with borders and a flag. It was a global, spiritual kingdom gathered from every tongue, tribe, and people - defined not by soil or bloodline, but by faith in and union with the Seed.</p>
 
   <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -471,20 +471,20 @@ const POSTS = [
     <h2>The Shadow Mistaken for the Substance: <em>1948 and the Dispensationalist Claim</em></h2>
   </div>
 
-  <p>Against this background, the dominant modern Christian justification for the political state established in 1948 presents a significant theological collision. Millions of believers, shaped by a relatively recent doctrinal framework known as Dispensationalism, read passages like Ezekiel 37 — the vision of dry bones assembled into a nation — and conclude that the return of Jewish populations to the land of Canaan is a direct fulfillment of God's promise to gather "His people."</p>
+  <p>Against this background, the dominant modern Christian justification for the political state established in 1948 presents a significant theological collision. Millions of believers, shaped by a relatively recent doctrinal framework known as Dispensationalism, read passages like Ezekiel 37 - the vision of dry bones assembled into a nation - and conclude that the return of Jewish populations to the land of Canaan is a direct fulfillment of God's promise to gather "His people."</p>
 
   <p>The argument is intuitive at first glance. A people scattered for two thousand years return to the same geographical coordinates. The same language is revived. The same name is restored. Surely this is the hand of God keeping his covenant with the physical descendants of Abraham?</p>
 
-  <p>But this reading stands or falls on a prior question: <em>who is the Seed?</em> If Paul is correct — and the New Testament treats him as speaking under divine authority — then the covenant was never made to a biological population in the first place. It was made to a single Person. Any claim to the covenant's blessings that bypasses that Person is, in legal terms, a claim made outside the contract.</p>
+  <p>But this reading stands or falls on a prior question: <em>who is the Seed?</em> If Paul is correct - and the New Testament treats him as speaking under divine authority - then the covenant was never made to a biological population in the first place. It was made to a single Person. Any claim to the covenant's blessings that bypasses that Person is, in legal terms, a claim made outside the contract.</p>
 
   <div class="irony-box">
     <span class="irony-label">The Theological Collision</span>
     <p>Those who use these verses to justify 1948 are claiming the blessings of the Seed for people who, in many cases, explicitly reject the Seed himself. They are treating Yeshua as incidental to a covenant in which, according to Paul, he is the sole named heir. This is not a minor interpretive difference. It is a fundamental inversion of the New Covenant.</p>
   </div>
 
-  <p>Furthermore, the "gathering" language of the prophets, read through Paul's lens, points not to an airport in Tel Aviv but to the gathering of souls from every nation into the Body of Christ. The "nation" being assembled is not a geopolitical entity; it is the one new man that Yeshua came to create — Jew and Gentile together, the dividing wall demolished, reconciled in one body (Ephesians 2:14–15).</p>
+  <p>Furthermore, the "gathering" language of the prophets, read through Paul's lens, points not to an airport in Tel Aviv but to the gathering of souls from every nation into the Body of Christ. The "nation" being assembled is not a geopolitical entity; it is the one new man that Yeshua came to create - Jew and Gentile together, the dividing wall demolished, reconciled in one body (Ephesians 2:14–15).</p>
 
-  <p>Yeshua himself drew the distinction plainly in Matthew 21, when he told the religious custodians of the physical nation: <em>"The kingdom of God will be taken away from you and given to a people producing its fruits."</em> He did not say it would be paused for two millennia and then handed back to a secular state. He announced a transfer — to a new people defined by fruitfulness, not ancestry.</p>
+  <p>Yeshua himself drew the distinction plainly in Matthew 21, when he told the religious custodians of the physical nation: <em>"The kingdom of God will be taken away from you and given to a people producing its fruits."</em> He did not say it would be paused for two millennia and then handed back to a secular state. He announced a transfer - to a new people defined by fruitfulness, not ancestry.</p>
 
   <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -493,15 +493,15 @@ const POSTS = [
     <h2>One Tree, No Second Track: <em>The Apostolic Rejection of Parallelism</em></h2>
   </div>
 
-  <p>Perhaps the deepest problem with the modern Christian Zionist framework is the "dual-track" it implies — the notion that God maintains two simultaneous, parallel plans: one for a secular ethnic nation and one for a spiritual Church. The New Testament does not merely fail to support this idea. It systematically dismantles it.</p>
+  <p>Perhaps the deepest problem with the modern Christian Zionist framework is the "dual-track" it implies - the notion that God maintains two simultaneous, parallel plans: one for a secular ethnic nation and one for a spiritual Church. The New Testament does not merely fail to support this idea. It systematically dismantles it.</p>
 
-  <p>Paul's image in Romans 11 is a single olive tree. Not two trees. There is one trunk, one root, one source of nourishment. Some natural branches have been broken off; wild branches have been grafted in. But there is only ever one tree. If you are not attached to the root — to the Seed — you are not part of the covenant, regardless of what your genealogy says.</p>
+  <p>Paul's image in Romans 11 is a single olive tree. Not two trees. There is one trunk, one root, one source of nourishment. Some natural branches have been broken off; wild branches have been grafted in. But there is only ever one tree. If you are not attached to the root - to the Seed - you are not part of the covenant, regardless of what your genealogy says.</p>
 
-  <p>Dispensationalism, which took formal shape around the 1830s, effectively attempts to reconstruct the very dividing wall that Paul says Yeshua destroyed at the cross. It creates a category of divine favoritism based on ethnicity — precisely the kind of partiality that Acts 10:34 declares God does not show, and that Galatians 3:28 declares the Gospel has ended: <em>"There is neither Jew nor Greek… for you are all one in Christ Jesus."</em></p>
+  <p>Dispensationalism, which took formal shape around the 1830s, effectively attempts to reconstruct the very dividing wall that Paul says Yeshua destroyed at the cross. It creates a category of divine favoritism based on ethnicity - precisely the kind of partiality that Acts 10:34 declares God does not show, and that Galatians 3:28 declares the Gospel has ended: <em>"There is neither Jew nor Greek… for you are all one in Christ Jesus."</em></p>
 
-  <p>Paul makes the consequence explicit in Galatians 4, using the allegory of Hagar and Sarah. The earthly Jerusalem — characterized by bondage to flesh and political power — corresponds to Hagar and her son of the flesh. The heavenly Jerusalem — the city Abraham was always seeking — corresponds to Sarah and the son of promise. Paul's conclusion is unambiguous: <em>"Cast out the slave woman and her son, for the son of the slave woman shall not inherit with the son of the free woman."</em></p>
+  <p>Paul makes the consequence explicit in Galatians 4, using the allegory of Hagar and Sarah. The earthly Jerusalem - characterized by bondage to flesh and political power - corresponds to Hagar and her son of the flesh. The heavenly Jerusalem - the city Abraham was always seeking - corresponds to Sarah and the son of promise. Paul's conclusion is unambiguous: <em>"Cast out the slave woman and her son, for the son of the slave woman shall not inherit with the son of the free woman."</em></p>
 
-  <p>The ultimate irony is that the very entity many churches are funding today is, by Paul's own typology, the son of the flesh. While the Israel of God — the body of those who are in the Seed — is the son of the promise.</p>
+  <p>The ultimate irony is that the very entity many churches are funding today is, by Paul's own typology, the son of the flesh. While the Israel of God - the body of those who are in the Seed - is the son of the promise.</p>
 
   <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -510,13 +510,13 @@ const POSTS = [
     <h2>The Temple and the Body: <em>Chasing the Shadow into Stone</em></h2>
   </div>
 
-  <p>The contradiction sharpens when we turn to the movement for a Third Temple in Jerusalem. Here, certain segments of American Christianity have not merely endorsed a political state — they have begun funding the reconstruction of a religious institution whose entire purpose was to point forward to Yeshua, and which Yeshua himself declared superseded.</p>
+  <p>The contradiction sharpens when we turn to the movement for a Third Temple in Jerusalem. Here, certain segments of American Christianity have not merely endorsed a political state - they have begun funding the reconstruction of a religious institution whose entire purpose was to point forward to Yeshua, and which Yeshua himself declared superseded.</p>
 
-  <p>Paul warns in Colossians 2:17 that the rituals, sabbaths, temples, and festivals of the old order are <span class="term">a shadow of things to come, but the substance belongs to Christ.</span> The shadow was real and necessary — it was given by God to teach a people to recognize the shape of the One who was coming. But when the substance arrives, to keep pursuing the shadow is not faithfulness. It is a refusal to look up.</p>
+  <p>Paul warns in Colossians 2:17 that the rituals, sabbaths, temples, and festivals of the old order are <span class="term">a shadow of things to come, but the substance belongs to Christ.</span> The shadow was real and necessary - it was given by God to teach a people to recognize the shape of the One who was coming. But when the substance arrives, to keep pursuing the shadow is not faithfulness. It is a refusal to look up.</p>
 
-  <p>The Letter to the Hebrews extends this with surgical precision. The old covenant — which included the temple, its priesthood, and its sacrificial system — is declared <em>"obsolete and growing old"</em> (Hebrews 8:13). The author's word for "obsolete" is not gentle. It means rendered void, displaced, set aside. And the reason it has been displaced is that the <em>once-for-all</em> sacrifice of Yeshua has accomplished what ten thousand animal sacrifices could only gesture toward.</p>
+  <p>The Letter to the Hebrews extends this with surgical precision. The old covenant - which included the temple, its priesthood, and its sacrificial system - is declared <em>"obsolete and growing old"</em> (Hebrews 8:13). The author's word for "obsolete" is not gentle. It means rendered void, displaced, set aside. And the reason it has been displaced is that the <em>once-for-all</em> sacrifice of Yeshua has accomplished what ten thousand animal sacrifices could only gesture toward.</p>
 
-  <p>For American churches to fund the breeding of red heifers, the reconstruction of temple vessels, and the revival of a priesthood is — from within their own scriptures — to financially support a return to a system that the New Testament declares terminated by the death of the Seed himself. They are, in effect, writing cheques to the shadow, while standing with their backs turned to the Light that cast it.</p>
+  <p>For American churches to fund the breeding of red heifers, the reconstruction of temple vessels, and the revival of a priesthood is - from within their own scriptures - to financially support a return to a system that the New Testament declares terminated by the death of the Seed himself. They are, in effect, writing cheques to the shadow, while standing with their backs turned to the Light that cast it.</p>
 
   <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -524,16 +524,16 @@ const POSTS = [
     <span class="conclusion-label">Conclusion</span>
     <h3>Stars, Not Dirt</h3>
 
-    <p>Abraham was shown two things: the dust of the earth and the stars of the sky. He was told his Seed would be like both. But Abraham himself chose to look upward. He <em>"went out, not knowing where he was going,"</em> because he was <em>"looking forward to the city that has foundations, whose designer and builder is God."</em> He never received the land. He never built a house on it. He died a stranger and pilgrim — and the New Testament celebrates this not as his failure, but as his greatest act of faith.</p>
+    <p>Abraham was shown two things: the dust of the earth and the stars of the sky. He was told his Seed would be like both. But Abraham himself chose to look upward. He <em>"went out, not knowing where he was going,"</em> because he was <em>"looking forward to the city that has foundations, whose designer and builder is God."</em> He never received the land. He never built a house on it. He died a stranger and pilgrim - and the New Testament celebrates this not as his failure, but as his greatest act of faith.</p>
 
-    <p>The covenant was always about the stars, not the dirt. It was always about an eternal King, not a temporary population. It was always pointing toward the day when the Heavenly Jerusalem — the City of the Living God — would descend, and the meek would inherit not one sliver of contested land, but the whole renewed earth.</p>
+    <p>The covenant was always about the stars, not the dirt. It was always about an eternal King, not a temporary population. It was always pointing toward the day when the Heavenly Jerusalem - the City of the Living God - would descend, and the meek would inherit not one sliver of contested land, but the whole renewed earth.</p>
 
     <p>Those who invoke Abraham's name to justify earthly conquest in his name have, with great sincerity and great confusion, missed the very point Abraham himself never missed. They are fighting over the shadow. Abraham was walking toward the Substance.</p>
 
     <ul class="three-truths">
-      <li>Israel-the-State is a secular political entity — it is not, and cannot be, a party to a covenant made with the singular Seed who it rejects.</li>
+      <li>Israel-the-State is a secular political entity - it is not, and cannot be, a party to a covenant made with the singular Seed who it rejects.</li>
       <li>Israel-the-People are those who are in the Seed: the body of Christ, drawn from every nation, defined by faith and not by flesh.</li>
-      <li>The Land is the whole earth, to be inherited not by military conquest but by the arrival of the Heavenly Jerusalem — when the Seed, seated at the right hand of the Father, returns to claim what was always His.</li>
+      <li>The Land is the whole earth, to be inherited not by military conquest but by the arrival of the Heavenly Jerusalem - when the Seed, seated at the right hand of the Father, returns to claim what was always His.</li>
     </ul>
   </div>
     `
