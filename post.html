@@ -25,7 +25,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-pr
 .nav-links a:hover,.nav-links a.active{color:var(--gold);}
 
 /* Post hero */
-.post-hero{padding:8rem 2rem 4rem;background:var(--deep-mid);border-bottom:0.5px solid var(--border-subtle);max-width:800px;margin:0 auto;}
+.post-hero{padding:8rem 2rem 4rem;background:var(--deep-mid);border-bottom:0.5px solid var(--border-subtle);max-width:1100px;margin:0 auto;}
 .post-back{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;margin-bottom:2.5rem;transition:color 0.2s;}
 .post-back::before{content:'←';transition:transform 0.2s;}
 .post-back:hover{color:var(--gold);}
@@ -37,11 +37,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-pr
 .post-excerpt{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--text-secondary);line-height:1.65;border-left:2px solid var(--gold);padding-left:1.4rem;}
 
 /* Cover image */
-.post-cover{max-width:800px;margin:0 auto;padding:0 2rem;}
+.post-cover{max-width:1100px;margin:0 auto;padding:0 2rem;}
 .post-cover img{width:100%;display:block;max-height:440px;object-fit:cover;filter:saturate(0.7) brightness(0.8);}
 
 /* Post body */
-.post-body{max-width:680px;margin:0 auto;padding:4rem 2rem 8rem;}
+.post-body{max-width:860px;margin:0 auto;padding:4rem 2rem 8rem;}
 .post-body p{font-size:1.05rem;color:var(--text-secondary);line-height:1.9;margin-bottom:1.5rem;}
 .post-body h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--text-primary);margin:2.5rem 0 1rem;line-height:1.2;}
 .post-body h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;color:var(--text-primary);margin:2rem 0 0.75rem;}
@@ -136,6 +136,166 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   color:#A8A090;text-decoration:none;white-space:nowrap;transition:all 0.15s;
 }
 .nav-dropdown a:hover{color:#5B8DB8;background:rgba(91,141,184,0.08);}
+
+/* ── Article-specific classes (Seed and Shadow + future articles) ── */
+.post-body .opening {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15em;
+  color: var(--text-secondary);
+  border-left: 2px solid var(--gold);
+  padding-left: 1.5rem;
+  margin-bottom: 2.5rem;
+  font-style: italic;
+  line-height: 1.75;
+}
+.post-body .section {
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+.post-body .section-num {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.post-body .section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-top: 0;
+}
+.post-body .scripture {
+  background: var(--surface);
+  border-left: 2px solid var(--gold);
+  padding: 1rem 1.5rem;
+  margin: 1.8rem 0;
+  border-radius: 0 4px 4px 0;
+}
+.post-body .scripture p {
+  font-style: italic;
+  font-size: 0.95em;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+.post-body .scripture p:last-child { margin-bottom: 0; }
+.post-body .scripture-ref {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-top: 0.6rem;
+}
+.post-body .pullquote {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin: 3rem 0;
+  border-top: 0.5px solid var(--border);
+  border-bottom: 0.5px solid var(--border);
+}
+.post-body .pullquote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--text-primary);
+  margin: 0;
+}
+.post-body .pullquote p::before { content: '“'; color: var(--gold-light); }
+.post-body .pullquote p::after  { content: '”'; color: var(--gold-light); }
+.post-body .term { font-style: italic; color: var(--text-primary); }
+.post-body .irony-box {
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  padding: 1.8rem 2rem;
+  margin: 2.5rem 0;
+  border-radius: 4px;
+}
+.post-body .irony-box .irony-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+.post-body .irony-box p { color: var(--text-secondary); font-size: 0.95em; margin-bottom: 0; }
+.post-body .point {
+  padding: 1.2rem 0 1.2rem 1.5rem;
+  border-left: 0.5px solid var(--border);
+  margin: 1.2rem 0;
+}
+.post-body .point-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.post-body .point p { margin-bottom: 0; font-size: 0.95em; }
+.post-body .divider {
+  display: flex; align-items: center; gap: 1rem; margin: 3rem 0;
+}
+.post-body .divider::before,
+.post-body .divider::after {
+  content: ''; flex: 1; height: 0.5px; background: var(--border);
+}
+.post-body .divider-mark {
+  color: var(--gold); font-size: 1.1rem; font-family: 'Cormorant Garamond', serif;
+}
+.post-body .conclusion {
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  border-radius: 4px;
+  padding: 2.5rem;
+  margin-top: 3.5rem;
+}
+.post-body .conclusion-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+  display: block;
+}
+.post-body .conclusion h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+.post-body .conclusion p { font-size: 0.95em; }
+.post-body .three-truths {
+  margin: 1.5rem 0 0; list-style: none; counter-reset: truths;
+}
+.post-body .three-truths li {
+  counter-increment: truths;
+  display: flex; gap: 1rem; margin-bottom: 0.8rem;
+  font-size: 0.95em; color: var(--text-secondary);
+}
+.post-body .three-truths li::before {
+  content: counter(truths);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem; color: var(--gold); line-height: 1; flex-shrink: 0; width: 1.4rem;
+}
+
 </style>
 </head>
 <body>
