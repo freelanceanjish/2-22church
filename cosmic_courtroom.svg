@@ -1,0 +1,224 @@
+<svg width="100%" viewBox="0 0 690 430" xmlns="http://www.w3.org/2000/svg">
+  <title>The Cosmic Courtroom: Heaven's Legal Hierarchy</title>
+  <defs>
+    <radialGradient id="throne-glow" cx="50%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#A8C4DC" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#5B8DB8" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#060C18" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lucifer-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cross-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5B8DB8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#5B8DB8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-blur">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+    <filter id="glow-sm">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="690" height="430" fill="#060C18"/>
+  <!-- Subtle gradient at top -->
+  <rect width="690" height="430" fill="url(#throne-glow)"/>
+
+  <!-- Stars -->
+  <circle cx="42" cy="28" r="0.9" fill="#F0EAD6" opacity="0.30"/>
+  <circle cx="118" cy="55" r="0.7" fill="#F0EAD6" opacity="0.22"/>
+  <circle cx="194" cy="18" r="1.1" fill="#F0EAD6" opacity="0.28"/>
+  <circle cx="310" cy="38" r="0.8" fill="#F0EAD6" opacity="0.20"/>
+  <circle cx="388" cy="12" r="1.0" fill="#F0EAD6" opacity="0.32"/>
+  <circle cx="460" cy="44" r="0.7" fill="#F0EAD6" opacity="0.18"/>
+  <circle cx="530" cy="22" r="1.1" fill="#F0EAD6" opacity="0.26"/>
+  <circle cx="614" cy="60" r="0.9" fill="#F0EAD6" opacity="0.24"/>
+  <circle cx="658" cy="35" r="0.8" fill="#F0EAD6" opacity="0.20"/>
+  <circle cx="78" cy="90" r="0.7" fill="#F0EAD6" opacity="0.14"/>
+  <circle cx="22" cy="150" r="0.9" fill="#F0EAD6" opacity="0.16"/>
+  <circle cx="670" cy="120" r="0.8" fill="#F0EAD6" opacity="0.14"/>
+  <circle cx="254" cy="75" r="0.7" fill="#F0EAD6" opacity="0.18"/>
+  <circle cx="572" cy="88" r="0.6" fill="#F0EAD6" opacity="0.14"/>
+  <circle cx="135" cy="130" r="0.8" fill="#F0EAD6" opacity="0.12"/>
+  <circle cx="48" cy="200" r="0.7" fill="#F0EAD6" opacity="0.10"/>
+  <circle cx="640" cy="180" r="0.9" fill="#F0EAD6" opacity="0.12"/>
+  <circle cx="350" cy="68" r="0.6" fill="#F0EAD6" opacity="0.16"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- THRONE ZONE — top centre -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <!-- Throne radiance halo -->
+  <ellipse cx="345" cy="82" rx="70" ry="50" fill="none" stroke="#A8C4DC" stroke-width="0.5" opacity="0.14" filter="url(#soft-blur)"/>
+  <ellipse cx="345" cy="82" rx="50" ry="34" fill="none" stroke="#A8C4DC" stroke-width="0.6" opacity="0.20"/>
+  <ellipse cx="345" cy="82" rx="32" ry="22" fill="#0C1830" stroke="#5B8DB8" stroke-width="0.8" opacity="0.9"/>
+
+  <!-- Throne rays -->
+  <g stroke="#A8C4DC" stroke-linecap="round" opacity="0.18">
+    <line x1="345" y1="50" x2="345" y2="35" stroke-width="1.2"/>
+    <line x1="345" y1="50" x2="360" y2="37" stroke-width="0.9" transform="rotate(20,345,82)"/>
+    <line x1="345" y1="50" x2="360" y2="37" stroke-width="0.9" transform="rotate(-20,345,82)"/>
+    <line x1="345" y1="50" x2="360" y2="37" stroke-width="0.7" transform="rotate(42,345,82)"/>
+    <line x1="345" y1="50" x2="360" y2="37" stroke-width="0.7" transform="rotate(-42,345,82)"/>
+    <line x1="345" y1="50" x2="360" y2="37" stroke-width="0.5" transform="rotate(62,345,82)"/>
+    <line x1="345" y1="50" x2="360" y2="37" stroke-width="0.5" transform="rotate(-62,345,82)"/>
+  </g>
+
+  <!-- Crown symbol -->
+  <polyline points="329,88 333,76 339,83 345,70 351,83 357,76 361,88" fill="none" stroke="#F0EAD6" stroke-width="1.2" stroke-linejoin="round" opacity="0.85"/>
+  <line x1="329" y1="90" x2="361" y2="90" stroke="#F0EAD6" stroke-width="1.0" opacity="0.85"/>
+
+  <!-- Label -->
+  <text x="345" y="108" text-anchor="middle" font-family="Georgia,serif" font-size="7.5" letter-spacing="2.2" fill="#A8C4DC" opacity="0.9" text-transform="uppercase">THE SOVEREIGN JUDGE</text>
+  <text x="345" y="118" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" letter-spacing="1.4" fill="#6B8FAA" opacity="0.7">God the Father</text>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- VERTICAL AXIS — throne down to world split -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <line x1="345" y1="122" x2="345" y2="185" stroke="#5B8DB8" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.45"/>
+  <!-- Arrow head -->
+  <polygon points="341,183 345,192 349,183" fill="#5B8DB8" opacity="0.45"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- LUCIFER / CHIEF COUNSEL — middle band -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <!-- Lucifer glow -->
+  <ellipse cx="345" cy="225" rx="48" ry="30" fill="url(#lucifer-glow)"/>
+
+  <!-- Seraph wings (stylised) -->
+  <!-- Left upper wing -->
+  <path d="M310,215 Q285,195 275,175 Q288,188 310,210" fill="#C9A84C" opacity="0.18"/>
+  <path d="M310,215 Q285,195 275,175" fill="none" stroke="#C9A84C" stroke-width="0.9" opacity="0.40"/>
+  <!-- Left lower wing -->
+  <path d="M310,220 Q282,225 268,240 Q282,228 310,222" fill="#C9A84C" opacity="0.12"/>
+  <path d="M310,220 Q282,225 268,240" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.30"/>
+  <!-- Right upper wing -->
+  <path d="M380,215 Q405,195 415,175 Q402,188 380,210" fill="#C9A84C" opacity="0.18"/>
+  <path d="M380,215 Q405,195 415,175" fill="none" stroke="#C9A84C" stroke-width="0.9" opacity="0.40"/>
+  <!-- Right lower wing -->
+  <path d="M380,220 Q408,225 422,240 Q408,228 380,222" fill="#C9A84C" opacity="0.12"/>
+  <path d="M380,220 Q408,225 422,240" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.30"/>
+
+  <!-- Lucifer node -->
+  <ellipse cx="345" cy="218" rx="26" ry="18" fill="#0E1828" stroke="#C9A84C" stroke-width="1.0" opacity="0.9"/>
+
+  <!-- Morning star symbol (8-point star) -->
+  <g transform="translate(345,218)" fill="#C9A84C" opacity="0.85">
+    <polygon points="0,-9 1.5,-1.5 9,0 1.5,1.5 0,9 -1.5,1.5 -9,0 -1.5,-1.5" opacity="0.7" transform="scale(0.7)"/>
+    <circle cx="0" cy="0" r="3.5" fill="none" stroke="#C9A84C" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="1.5" fill="#C9A84C" opacity="0.9"/>
+  </g>
+
+  <!-- Lucifer label -->
+  <text x="345" y="244" text-anchor="middle" font-family="Georgia,serif" font-size="7.5" letter-spacing="2.0" fill="#C9A84C" opacity="0.92">CHIEF COUNSEL</text>
+  <text x="345" y="254" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" letter-spacing="1.2" fill="#8A7040" opacity="0.75">Lucifer · Son of the Dawn · Seraph</text>
+  <text x="345" y="263" text-anchor="middle" font-family="Georgia,serif" font-size="6" letter-spacing="1.0" fill="#6B5830" opacity="0.60" font-style="italic">Helel ben Shachar · Anointed Guardian</text>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SPLIT ARROWS — to Eden and to World -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- Left branch to Eden/Sanctuary -->
+  <path d="M325,272 Q240,285 200,318" fill="none" stroke="#5B8DB8" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.40"/>
+  <polygon points="196,314 201,323 205,315" fill="#5B8DB8" opacity="0.40"/>
+
+  <!-- Right branch to World/Lawlessness -->
+  <path d="M365,272 Q450,285 490,318" fill="none" stroke="#C9A84C" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.40"/>
+  <polygon points="486,314 491,323 495,315" fill="#C9A84C" opacity="0.40"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- LEFT BOX — The Sanctuary / Eden -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="110" y="328" width="170" height="72" rx="1" fill="#0C1830" stroke="#5B8DB8" stroke-width="0.6" opacity="0.85"/>
+  <!-- Corner marks -->
+  <line x1="110" y1="336" x2="116" y2="336" stroke="#5B8DB8" stroke-width="0.8" opacity="0.5"/>
+  <line x1="110" y1="328" x2="110" y2="336" stroke="#5B8DB8" stroke-width="0.8" opacity="0.5"/>
+  <line x1="274" y1="328" x2="280" y2="328" stroke="#5B8DB8" stroke-width="0.8" opacity="0.5"/>
+  <line x1="280" y1="328" x2="280" y2="336" stroke="#5B8DB8" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Tree of life symbol -->
+  <g transform="translate(195,344)" stroke="#5B8DB8" fill="none" opacity="0.55">
+    <line x1="0" y1="8" x2="0" y2="-8" stroke-width="1.2"/>
+    <line x1="0" y1="2" x2="-7" y2="-4" stroke-width="0.9"/>
+    <line x1="0" y1="2" x2="7" y2="-4" stroke-width="0.9"/>
+    <line x1="0" y1="-2" x2="-5" y2="-7" stroke-width="0.7"/>
+    <line x1="0" y1="-2" x2="5" y2="-7" stroke-width="0.7"/>
+    <ellipse cx="0" cy="9" rx="6" ry="2" stroke-width="0.7" opacity="0.5"/>
+  </g>
+
+  <text x="195" y="364" text-anchor="middle" font-family="Georgia,serif" font-size="8" letter-spacing="2.0" fill="#A8C4DC" opacity="0.9">THE SANCTUARY</text>
+  <text x="195" y="374" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" letter-spacing="1.2" fill="#6B8FAA" opacity="0.75">Eden · The Realm of Grace</text>
+  <text x="195" y="384" text-anchor="middle" font-family="Georgia,serif" font-size="6" letter-spacing="0.8" fill="#5B8DB8" opacity="0.60" font-style="italic">Forfeited by Adam · Gen 3</text>
+  <text x="195" y="393" text-anchor="middle" font-family="Georgia,serif" font-size="6" letter-spacing="0.8" fill="#5B8DB8" opacity="0.50" font-style="italic">Reclaimed by Christ · John 14:30</text>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- RIGHT BOX — The World / Lawlessness -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="410" y="328" width="170" height="72" rx="1" fill="#0E1218" stroke="#C9A84C" stroke-width="0.6" opacity="0.85"/>
+  <!-- Corner marks -->
+  <line x1="410" y1="336" x2="416" y2="336" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+  <line x1="410" y1="328" x2="410" y2="336" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+  <line x1="574" y1="328" x2="580" y2="328" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+  <line x1="580" y1="328" x2="580" y2="336" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Broken chain / scales symbol -->
+  <g transform="translate(495,344)" stroke="#C9A84C" fill="none" opacity="0.50">
+    <line x1="-6" y1="0" x2="6" y2="0" stroke-width="1.0"/>
+    <line x1="0" y1="-9" x2="0" y2="9" stroke-width="1.0"/>
+    <circle cx="-9" cy="4" r="4" stroke-width="0.8"/>
+    <circle cx="9" cy="4" r="4" stroke-width="0.8"/>
+    <line x1="0" y1="-9" x2="-9" y2="0" stroke-width="0.7" opacity="0.6"/>
+    <line x1="0" y1="-9" x2="9" y2="0" stroke-width="0.7" opacity="0.6"/>
+  </g>
+
+  <text x="495" y="364" text-anchor="middle" font-family="Georgia,serif" font-size="8" letter-spacing="2.0" fill="#C9A84C" opacity="0.9">THE WORLD</text>
+  <text x="495" y="374" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" letter-spacing="1.2" fill="#8A7040" opacity="0.75">Kosmos · Realm of Lawlessness</text>
+  <text x="495" y="384" text-anchor="middle" font-family="Georgia,serif" font-size="6" letter-spacing="0.8" fill="#C9A84C" opacity="0.60" font-style="italic">Inherited by Lucifer · John 12:31</text>
+  <text x="495" y="393" text-anchor="middle" font-family="Georgia,serif" font-size="6" letter-spacing="0.8" fill="#C9A84C" opacity="0.50" font-style="italic">2 Thess 2:7 · Eph 2:2</text>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- CENTRE BOTTOM — The Cross / Legal Victory -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- Vertical line from Chief Counsel down -->
+  <line x1="345" y1="272" x2="345" y2="318" stroke="#5B8DB8" stroke-width="0.7" stroke-dasharray="2,4" opacity="0.30"/>
+
+  <ellipse cx="345" cy="340" rx="22" ry="22" fill="url(#cross-glow)"/>
+  <rect x="336" y="340" width="18" height="2.5" rx="0.5" fill="#F0EAD6" opacity="0.75"/>
+  <rect x="343.2" y="328" width="3.5" height="26" rx="0.5" fill="#F0EAD6" opacity="0.75"/>
+
+  <text x="345" y="370" text-anchor="middle" font-family="Georgia,serif" font-size="7" letter-spacing="1.6" fill="#A8C4DC" opacity="0.85">THE ADVOCATE</text>
+  <text x="345" y="379" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" letter-spacing="1.0" fill="#6B8FAA" opacity="0.70">Paraklētos · Defense Counsel</text>
+  <text x="345" y="388" text-anchor="middle" font-family="Georgia,serif" font-size="6" letter-spacing="0.8" fill="#5B8DB8" opacity="0.60" font-style="italic">"He has nothing in Me." — John 14:30</text>
+  <text x="345" y="396" text-anchor="middle" font-family="Georgia,serif" font-size="6" letter-spacing="0.8" fill="#5B8DB8" opacity="0.50" font-style="italic">Colossians 2:14 · Daniel 7:26</text>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- ROLE TAGS — flanking labels -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <!-- Left side annotation — Job 1:6 -->
+  <g opacity="0.55">
+    <line x1="36" y1="218" x2="82" y2="218" stroke="#5B8DB8" stroke-width="0.6" stroke-dasharray="2,3"/>
+    <text x="32" y="214" text-anchor="end" font-family="Georgia,serif" font-size="6.5" fill="#5B8DB8" font-style="italic">Grand Inquisitor</text>
+    <text x="32" y="222" text-anchor="end" font-family="Georgia,serif" font-size="5.5" fill="#5B8DB8">Job 1:6</text>
+  </g>
+
+  <!-- Right side annotation — Zech 3:1 -->
+  <g opacity="0.55">
+    <line x1="610" y1="218" x2="656" y2="218" stroke="#C9A84C" stroke-width="0.6" stroke-dasharray="2,3"/>
+    <text x="614" y="214" font-family="Georgia,serif" font-size="6.5" fill="#C9A84C" font-style="italic">Ha-Satan</text>
+    <text x="614" y="222" font-family="Georgia,serif" font-size="5.5" fill="#C9A84C">Zech 3:1</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- TITLE BAR at top-left -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <text x="22" y="20" font-family="Georgia,serif" font-size="7.5" letter-spacing="2.5" fill="#A8C4DC" opacity="0.60" text-transform="uppercase">THE COSMIC COURTROOM</text>
+  <line x1="22" y1="23" x2="220" y2="23" stroke="#5B8DB8" stroke-width="0.5" opacity="0.30"/>
+
+  <!-- Daniel 7:26 bottom citation -->
+  <text x="345" y="422" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" letter-spacing="0.8" fill="#3A5570" opacity="0.70" font-style="italic">"The court will sit, and his dominion will be taken away" — Daniel 7:26</text>
+</svg>
