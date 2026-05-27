@@ -116,7 +116,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 /* NAV DROPDOWN */
 .nav-item.open 
-/* NAV DROPDOWNS — self-contained, does not rely on style.css version */
+/* NAV DROPDOWNS, self-contained, does not rely on style.css version */
 .nav-item{position:relative;list-style:none;}
 .nav-item>a{display:inline-flex;align-items:center;gap:4px;cursor:pointer;}
 .nav-item .caret{font-size:0.5rem;opacity:0.55;transition:transform 0.2s;display:inline-block;}
@@ -408,7 +408,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 </footer>
 
 <script>
-// Global handler for Let Jesus Speak buttons — must be global so onclick works after innerHTML injection
+// Global handler for Let Jesus Speak buttons, must be global so onclick works after innerHTML injection
 function ljsRespond(choice) {
   if (choice === 'yes') {
     window.location.href = 'index.html#join';
