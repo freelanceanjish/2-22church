@@ -201,9 +201,9 @@
 
   <!-- Left side annotation — Job 1:6 -->
   <g opacity="0.55">
-    <line x1="36" y1="218" x2="82" y2="218" stroke="#5B8DB8" stroke-width="0.6" stroke-dasharray="2,3"/>
-    <text x="32" y="214" text-anchor="end" font-family="Georgia,serif" font-size="6.5" fill="#5B8DB8" font-style="italic">Grand Inquisitor</text>
-    <text x="32" y="222" text-anchor="end" font-family="Georgia,serif" font-size="5.5" fill="#5B8DB8">Job 1:6</text>
+    <line x1="14" y1="218" x2="82" y2="218" stroke="#5B8DB8" stroke-width="0.6" stroke-dasharray="2,3"/>
+    <text x="14" y="213" text-anchor="start" font-family="Georgia,serif" font-size="6.5" fill="#5B8DB8" font-style="italic">Grand Inquisitor</text>
+    <text x="14" y="223" text-anchor="start" font-family="Georgia,serif" font-size="5.5" fill="#5B8DB8">Job 1:6 · Job 2</text>
   </g>
 
   <!-- Right side annotation — Zech 3:1 -->
