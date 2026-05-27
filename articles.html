@@ -115,7 +115,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 /* NAV DROPDOWN */
 .nav-item.open 
-/* NAV DROPDOWNS — self-contained, does not rely on style.css version */
+/* NAV DROPDOWNS, self-contained, does not rely on style.css version */
 .nav-item{position:relative;list-style:none;}
 .nav-item>a{display:inline-flex;align-items:center;gap:4px;cursor:pointer;}
 .nav-item .caret{font-size:0.5rem;opacity:0.55;transition:transform 0.2s;display:inline-block;}
@@ -267,7 +267,7 @@ var currentCat = 'all';
 
 // Build category filter buttons
 var cats = ['all'];
-POSTS.forEach(function(p) { if (cats.indexOf(p.category) === -1) cats.push(p.category); });
+POSTS.forEach(function(p) { if (p.category !== 'Testimony' && cats.indexOf(p.category) === -1) cats.push(p.category); });
 var filterBar = document.getElementById('filter-bar');
 cats.forEach(function(cat) {
   if (cat === 'all') return;
@@ -288,7 +288,8 @@ filterBar.addEventListener('click', function(e) {
 });
 
 function renderPosts() {
-  var filtered = currentCat === 'all' ? POSTS : POSTS.filter(function(p){ return p.category === currentCat; });
+  var articlePosts = POSTS.filter(function(p){ return p.category !== 'Testimony'; });
+  var filtered = currentCat === 'all' ? articlePosts : articlePosts.filter(function(p){ return p.category === currentCat; });
   var featuredSlot = document.getElementById('featured-slot');
   var grid = document.getElementById('posts-grid');
   var empty = document.getElementById('empty-state');

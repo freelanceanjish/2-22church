@@ -22,50 +22,50 @@ const POSTS = [
     date: "27 May 2026",
     category: "Teaching",
     image: "cosmic_courtroom.svg",
-    excerpt: "The most dangerous man in any court is not the tyrant on the throne — it is the counselor who has the king's ear and hatred in his heart. The Bible keeps showing us this pattern in Joseph, Daniel, Mordecai. It is not a theme. It is a signature. Every royal court in history was a shadow of the one cosmic courtroom.",
+    excerpt: "The most dangerous man in any court is not the tyrant on the throne, it is the counselor who has the king's ear and hatred in his heart. The Bible keeps showing us this pattern in Joseph, Daniel, Mordecai. It is not a theme. It is a signature. Every royal court in history was a shadow of the one cosmic courtroom.",
     content: `
 <p class="opening">
   The most dangerous man in any court is not the tyrant on the throne. It is the counselor who has the king's ear and hatred in his heart.
 </p>
 
-<p>Most people have never thought about what Lucifer actually was. We got the horns and the fire, the fallen angel who wanted to be God — and that is not wrong exactly, but it misses something that changes how you read almost everything. His position, before the fall, was not just powerful. It was <em>legal</em>. He was not a rebel from outside the system. He was the system's highest officer. And when he fell, he did not lose his authority. He poisoned it.</p>
+<p>Most people have never thought about what Lucifer actually was. We got the horns and the fire, the fallen angel who wanted to be God, and that is not wrong exactly, but it misses something that changes how you read almost everything. His position, before the fall, was not just powerful. It was <em>legal</em>. He was not a rebel from outside the system. He was the system's highest officer. And when he fell, he did not lose his authority. He poisoned it.</p>
 
-<p>Here is what I mean. The ancient world did not separate the priesthood from the judiciary. The temple was the courthouse. The priests were the constitutional judges. Deuteronomy 17:8-9 makes this explicit — when a matter is too hard to decide, you bring it to the priests, and their word is final. Lucifer, as the Heavenly High Priest, was the supreme legal officer of the entire created order. Ezekiel 28 gives us his credentials: nine precious stones covering him, arranged in exactly the pattern of the High Priest's Breastplate of Judgment from Exodus 28. This was not decoration. It was a uniform of office. And Ezekiel 28:14 confirms his clearance level — anointed guardian, ordained, standing on the holy mountain of God. He had direct access to the Holy of Holies. Not occasional access. Daily.</p>
+<p>Here is what I mean. The ancient world did not separate the priesthood from the judiciary. The temple was the courthouse. The priests were the constitutional judges. Deuteronomy 17:8-9 makes this explicit, when a matter is too hard to decide, you bring it to the priests, and their word is final. Lucifer, as the Heavenly High Priest, was the supreme legal officer of the entire created order. Ezekiel 28 gives us his credentials: nine precious stones covering him, arranged in exactly the pattern of the High Priest's Breastplate of Judgment from Exodus 28. This was not decoration. It was a uniform of office. And Ezekiel 28:14 confirms his clearance level, anointed guardian, ordained, standing on the holy mountain of God. He had direct access to the Holy of Holies. Not occasional access. Daily.</p>
 
-<p>Isaiah called him <em>Helel ben Shachar</em> — the Shining One, Son of the Dawn. The first light. The highest created being in the framework, whose job was to stand between God's perfect standard and everything in creation, and ensure the Law was upheld.</p>
+<p>Isaiah called him <em>Helel ben Shachar</em>, the Shining One, Son of the Dawn. The first light. The highest created being in the framework, whose job was to stand between God's perfect standard and everything in creation, and ensure the Law was upheld.</p>
 
 <img src="cosmic_courtroom.svg" alt="The Cosmic Courtroom hierarchy diagram" style="width:100%;margin:2.5rem 0;border:0.5px solid rgba(91,141,184,0.18);">
 
-<p>Job 1 gives us the only actual transcript we have of him working. He shows up at a Divine Council session — the text just says he came along with the other sons of God, completely casually, as if this were routine, because it was. He is not sneaking in. He is a member. He has been out investigating the earth, which is exactly what a legal officer would do, gathering evidence, assessing covenant compliance. Then he opens a case against Job. Not out of nowhere — he files a proper challenge: Job's righteousness is circumstantial, bought by God's protection, and he wants permission to test it. God grants it. That is not God being careless. That is how the legal framework operated. The officer filed a motion and the Judge allowed it.</p>
+<p>Job 1 gives us the only actual transcript we have of him working. He shows up at a Divine Council session, the text just says he came along with the other sons of God, completely casually, as if this were routine, because it was. He is not sneaking in. He is a member. He has been out investigating the earth, which is exactly what a legal officer would do, gathering evidence, assessing covenant compliance. Then he opens a case against Job. Not out of nowhere, he files a proper challenge: Job's righteousness is circumstantial, bought by God's protection, and he wants permission to test it. God grants it. That is not God being careless. That is how the legal framework operated. The officer filed a motion and the Judge allowed it.</p>
 
-<p>Zechariah 3 shows the same scene. A heavenly courtroom. Joshua the High Priest standing before the Angel of the Lord. And ha-satan — the accuser — standing at his right hand to press charges. This is not metaphor. This is the actual structure of heaven's legal assembly, and Lucifer had a legitimate seat in it.</p>
+<p>Zechariah 3 shows the same scene. A heavenly courtroom. Joshua the High Priest standing before the Angel of the Lord. And ha-satan, the accuser, standing at his right hand to press charges. This is not metaphor. This is the actual structure of heaven's legal assembly, and Lucifer had a legitimate seat in it.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>What the Bible Keeps Showing Us in the Courts of Kings</h2>
 
-<p>Here is something the Bible does that I think gets overlooked: it keeps showing us the same pattern, played out in the courts of earthly kings, over and over. God plants a graceful counselor beside a powerful throne — someone who has the king's favour, who pleads for the people — and alongside them there is almost always a harsh counselor, a legalist, someone using their position of access not to serve but to destroy the people they hate. God inevitably judges the harsh one and vindicates the graceful one. This is not coincidence. It is the cosmic pattern rendered in flesh and history.</p>
+<p>Here is something the Bible does that I think gets overlooked: it keeps showing us the same pattern, played out in the courts of earthly kings, over and over. God plants a graceful counselor beside a powerful throne, someone who has the king's favour, who pleads for the people, and alongside them there is almost always a harsh counselor, a legalist, someone using their position of access not to serve but to destroy the people they hate. God inevitably judges the harsh one and vindicates the graceful one. This is not coincidence. It is the cosmic pattern rendered in flesh and history.</p>
 
-<p>Joseph is the clearest picture. Sold by his own brothers, imprisoned on a false accusation, completely discarded — and yet God puts him directly beside Pharaoh's ear. When the famine comes and every nation is perishing, it is Joseph, the Hebrew stranger, who holds the grain. He does not use that power to exact revenge. He weeps. He says <em>God sent me ahead of you.</em> He feeds the people who hated him. Pharaoh puts his signet ring on Joseph's hand, dresses him in fine linen and a gold chain, and makes him second only to the throne itself. The graceful counselor, carrying favour he never earned by politics, becomes the salvation of the nations. Egypt's own courtiers — Pharaoh's original wise men who could not interpret the dream — fade into irrelevance the moment God's man speaks.</p>
+<p>Joseph is the clearest picture. Sold by his own brothers, imprisoned on a false accusation, completely discarded, and yet God puts him directly beside Pharaoh's ear. When the famine comes and every nation is perishing, it is Joseph, the Hebrew stranger, who holds the grain. He does not use that power to exact revenge. He weeps. He says <em>God sent me ahead of you.</em> He feeds the people who hated him. Pharaoh puts his signet ring on Joseph's hand, dresses him in fine linen and a gold chain, and makes him second only to the throne itself. The graceful counselor, carrying favour he never earned by politics, becomes the salvation of the nations. Egypt's own courtiers, Pharaoh's original wise men who could not interpret the dream, fade into irrelevance the moment God's man speaks.</p>
 
-<p>Then look at what happens to a later Pharaoh's counselors. The ones who advised the enslavement of Israel, who pushed through the law to kill every Hebrew male child — they are not named, they are not remembered, and the nation they served is eventually buried under plague and waves. The legalistic counsel that targeted people out of fear and hatred brought the kingdom down.</p>
+<p>Then look at what happens to a later Pharaoh's counselors. The ones who advised the enslavement of Israel, who pushed through the law to kill every Hebrew male child, they are not named, they are not remembered, and the nation they served is eventually buried under plague and waves. The legalistic counsel that targeted people out of fear and hatred brought the kingdom down.</p>
 
-<p>Daniel is the same story, three times over. Nebuchadnezzar of Babylon has a full court of astrologers, enchanters, and wise men — credentialed professionals — and none of them can read the dream. Daniel, the captured foreigner, the man with no political standing, walks in and delivers what no one else could. And the king falls on his face before him. Later, when Darius the Mede comes to power, Daniel is so obviously gifted that the king plans to set him over the entire kingdom. That is when the other satraps convene. They cannot find a single charge against him, so they manufacture one — targeting specifically his faithfulness to God. They push through a law designed to destroy the one man they hate. The law works, Daniel goes into the lions' den, and then God shuts the lions' mouths. The satraps and their families are thrown to the same lions, and the king publishes a decree that the God of Daniel is to be revered throughout the whole empire. Every time: the harsh counselor who weaponises law against the righteous ends up beneath the verdict he tried to bring.</p>
+<p>Daniel is the same story, three times over. Nebuchadnezzar of Babylon has a full court of astrologers, enchanters, and wise men, credentialed professionals, and none of them can read the dream. Daniel, the captured foreigner, the man with no political standing, walks in and delivers what no one else could. And the king falls on his face before him. Later, when Darius the Mede comes to power, Daniel is so obviously gifted that the king plans to set him over the entire kingdom. That is when the other satraps convene. They cannot find a single charge against him, so they manufacture one, targeting specifically his faithfulness to God. They push through a law designed to destroy the one man they hate. The law works, Daniel goes into the lions' den, and then God shuts the lions' mouths. The satraps and their families are thrown to the same lions, and the king publishes a decree that the God of Daniel is to be revered throughout the whole empire. Every time: the harsh counselor who weaponises law against the righteous ends up beneath the verdict he tried to bring.</p>
 
-<p>Mordecai and Haman spell it out almost too plainly. Haman is the king's highest official. He has the signet ring, the authority, the king's ear. And he uses every bit of it to construct a legal mechanism — an irrevocable royal decree — to annihilate every Jew in the empire, because one man, Mordecai, would not bow to him. That is not governance. That is legalism in the service of personal hatred. Meanwhile Mordecai sits at the king's gate, Esther carries favour in the inner court, and when the moment comes, God turns the entire apparatus against Haman. The gallows Haman built for Mordecai becomes Haman's own execution. The decree he crafted to destroy a people becomes the ground on which those same people are authorised to defend themselves. He is hanged on his own construction.</p>
+<p>Mordecai and Haman spell it out almost too plainly. Haman is the king's highest official. He has the signet ring, the authority, the king's ear. And he uses every bit of it to construct a legal mechanism, an irrevocable royal decree, to annihilate every Jew in the empire, because one man, Mordecai, would not bow to him. That is not governance. That is legalism in the service of personal hatred. Meanwhile Mordecai sits at the king's gate, Esther carries favour in the inner court, and when the moment comes, God turns the entire apparatus against Haman. The gallows Haman built for Mordecai becomes Haman's own execution. The decree he crafted to destroy a people becomes the ground on which those same people are authorised to defend themselves. He is hanged on his own construction.</p>
 
 <div class="irony-box">
   <span class="irony-label">The Pattern That Never Breaks</span>
-  <p>The counselor who stands close to the throne and uses law as a weapon against those he hates — God always judges him. The counselor who carries the king's favour and pleads for the people — God always vindicates him. This is not a theme. It is a signature. The Bible is showing you the same cosmic reality in every generation: Lucifer's spirit versus Christ's spirit, playing out in every royal court in history.</p>
+  <p>The counselor who stands close to the throne and uses law as a weapon against those he hates, God always judges him. The counselor who carries the king's favour and pleads for the people, God always vindicates him. This is not a theme. It is a signature. The Bible is showing you the same cosmic reality in every generation: Lucifer's spirit versus Christ's spirit, playing out in every royal court in history.</p>
 </div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>The Corruption of the Office</h2>
 
-<p>This is exactly what Ezekiel 28:16-18 is describing when it says Lucifer's downfall came through "dishonest trade" — the Hebrew word <em>rekyllah</em>, which means trafficking in slander, circulating false reports, poisoning the record. He did not lose his legal authority. He bent it. He started filing malicious charges. He rigged the inquisitions. The Heavenly High Priest defiled his own courtroom, and this is why the language of eviction in Ezekiel is so absolute. A judge who corrupts his own bench cannot be reformed by a demotion. The office itself has to be stripped.</p>
+<p>This is exactly what Ezekiel 28:16-18 is describing when it says Lucifer's downfall came through "dishonest trade", the Hebrew word <em>rekyllah</em>, which means trafficking in slander, circulating false reports, poisoning the record. He did not lose his legal authority. He bent it. He started filing malicious charges. He rigged the inquisitions. The Heavenly High Priest defiled his own courtroom, and this is why the language of eviction in Ezekiel is so absolute. A judge who corrupts his own bench cannot be reformed by a demotion. The office itself has to be stripped.</p>
 
-<p>Isaiah 14 fills in the interior of what happened. Lucifer was not content to be the officer of the court. He wanted to be above the stars of God, to sit on the mount of assembly, to make himself like the Most High. That is not ambition in the ordinary sense. That is a legal coup — an attempt to seize the bench from the Judge. You cannot protect the Judge's Law if you are simultaneously plotting to remove the Judge.</p>
+<p>Isaiah 14 fills in the interior of what happened. Lucifer was not content to be the officer of the court. He wanted to be above the stars of God, to sit on the mount of assembly, to make himself like the Most High. That is not ambition in the ordinary sense. That is a legal coup, an attempt to seize the bench from the Judge. You cannot protect the Judge's Law if you are simultaneously plotting to remove the Judge.</p>
 
 <p>Jesus named the end result plainly: <em>a liar and the father of lies</em> (John 8:44). A corrupt witness. The man who poisons evidence is the most dangerous person in any legal system, because the whole architecture of justice depends on the integrity of what is presented before the bench. Lucifer took that integrity and destroyed it from the inside.</p>
 
@@ -73,11 +73,11 @@ const POSTS = [
 
 <h2>The Two Adams and the Wilderness Cross-Examination</h2>
 
-<p>His mandate — testing every claimant to lawful authority — did not stop at the fall. It culminated in two examinations that decided the whole thing.</p>
+<p>His mandate, testing every claimant to lawful authority, did not stop at the fall. It culminated in two examinations that decided the whole thing.</p>
 
-<p>Adam was placed in Eden as both king and priest. His authority was real but untested. Lucifer approached Eve with a precise legal challenge: <em>did God really say</em>. Not a threat. A question. He was cross-examining the covenant. Adam failed the examination, broke the contract, and the dominion legally transferred. Outside Eden — in the <em>kosmos</em>, the world defined by separation from God — the Law Protector became the automatic jurisdiction. That is why Jesus calls him the prince of this world without any qualifier. It is a matter of legal fact. Adam handed it over.</p>
+<p>Adam was placed in Eden as both king and priest. His authority was real but untested. Lucifer approached Eve with a precise legal challenge: <em>did God really say</em>. Not a threat. A question. He was cross-examining the covenant. Adam failed the examination, broke the contract, and the dominion legally transferred. Outside Eden, in the <em>kosmos</em>, the world defined by separation from God, the Law Protector became the automatic jurisdiction. That is why Jesus calls him the prince of this world without any qualifier. It is a matter of legal fact. Adam handed it over.</p>
 
-<p>So when Jesus went into the wilderness, this was not a spiritual test in the vague sense. Matthew 4:1 says He was led there specifically to be tested by the devil. That is an appointment. Lucifer had held the office of chief examiner since before the world, and this was the examination that mattered above all others. His cross-examination went straight for the one question he needed answered: is this man actually the Son of God, or is he something else? <em>If you are the Son of God, command these stones to become bread.</em> Not hunger, really. Jurisdiction. Can I get you to act as a created son rather than the Begotten Son — to reach for provision outside the Father's word?</p>
+<p>So when Jesus went into the wilderness, this was not a spiritual test in the vague sense. Matthew 4:1 says He was led there specifically to be tested by the devil. That is an appointment. Lucifer had held the office of chief examiner since before the world, and this was the examination that mattered above all others. His cross-examination went straight for the one question he needed answered: is this man actually the Son of God, or is he something else? <em>If you are the Son of God, command these stones to become bread.</em> Not hunger, really. Jurisdiction. Can I get you to act as a created son rather than the Begotten Son, to reach for provision outside the Father's word?</p>
 
 <p>Then the offer of the kingdoms of the world. Think about that seriously for a moment. He was not bluffing. The dominion was genuinely his to negotiate with. He had held it since Adam's departure from Eden. He was offering Jesus a legal settlement: take the kingdoms now, skip the cross, avoid the penalty clause. Jesus refused every single motion with the same instrument: <em>it is written</em>. The highest constitutional authority, the unimpeachable record. He would not step outside it even once.</p>
 
@@ -88,7 +88,7 @@ const POSTS = [
   <span class="scripture-ref">John 14:30</span>
 </div>
 
-<p><em>Ouk echei ouden</em> in the Greek — he has no claim, no foothold, no admissible evidence. The Chief Counsel examined thirty-three years of a human life and could not find one count of lawlessness to file. That is the only grounds on which what followed could work.</p>
+<p><em>Ouk echei ouden</em> in the Greek, he has no claim, no foothold, no admissible evidence. The Chief Counsel examined thirty-three years of a human life and could not find one count of lawlessness to file. That is the only grounds on which what followed could work.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -96,7 +96,7 @@ const POSTS = [
 
 <p>What Paul does in 1 Corinthians 5 is startling once you see the framework. A man in the church is living in ongoing, unrepentant lawlessness. Paul does not suggest prayer, or counseling, or a softer approach. He tells the assembly to hand the man over to Satan for the destruction of the flesh, so that his spirit might be saved.</p>
 
-<p>This is not a curse. It is a legal transfer. Paul knows that a believer walking in deliberate lawlessness has already stepped out from under the covering of Christ's jurisdiction, and Lucifer's mandate over that territory is still active. The church is simply making the transfer official. Lucifer's job, the one he cannot stop doing because it is built into him, is to prosecute lawlessness. The destruction of the flesh that follows is the prosecution doing its work. The mercy in it — and Paul says it is merciful — is that the suffering breaks the man's pride before it destroys him entirely, driving him back to the courtroom of Grace while there is still time.</p>
+<p>This is not a curse. It is a legal transfer. Paul knows that a believer walking in deliberate lawlessness has already stepped out from under the covering of Christ's jurisdiction, and Lucifer's mandate over that territory is still active. The church is simply making the transfer official. Lucifer's job, the one he cannot stop doing because it is built into him, is to prosecute lawlessness. The destruction of the flesh that follows is the prosecution doing its work. The mercy in it, and Paul says it is merciful, is that the suffering breaks the man's pride before it destroys him entirely, driving him back to the courtroom of Grace while there is still time.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -104,7 +104,7 @@ const POSTS = [
 
 <p>Lucifer's strategy from the fall had been to use God's own standard against God's own children. If the law demands death for lawbreakers, and every human being is a lawbreaker, then a just God has no choice but to condemn them. It is a brilliant legal trap. Either God compromises His justice or He destroys His creation. Lucifer had been pressing this case for millennia.</p>
 
-<p>What he did not account for was that the Advocate — <em>Paraklētos</em>, the defense counsel who stands beside the defendant — would absorb the penalty clause Himself. Colossians 2:14 says the certificate of debt was nailed to the cross. Not cancelled by decree, not overlooked out of sentiment. Paid. The law was not set aside. It was satisfied.</p>
+<p>What he did not account for was that the Advocate, <em>Paraklētos</em>, the defense counsel who stands beside the defendant, would absorb the penalty clause Himself. Colossians 2:14 says the certificate of debt was nailed to the cross. Not cancelled by decree, not overlooked out of sentiment. Paid. The law was not set aside. It was satisfied.</p>
 
 <p>That made what happened next an illegal overreach. Lucifer orchestrated the execution of the one man against whom he had no legal claim. That is not prosecutorial discretion. That is a crime within the court's own framework. And it gave grounds for the final verdict, which Daniel had seen centuries before:</p>
 
@@ -113,9 +113,9 @@ const POSTS = [
   <span class="scripture-ref">Daniel 7:26</span>
 </div>
 
-<p>The same pattern that played out in Pharaoh's court, in Nebuchadnezzar's court, in the court of Ahasuerus — the legalist who used his position to destroy the people he hated, judged by the very king he served — plays out one final time at the throne of God. Haman's gallows. The lions' den turned against the accusers. The irrevocable decree reversed by a higher decree written in blood.</p>
+<p>The same pattern that played out in Pharaoh's court, in Nebuchadnezzar's court, in the court of Ahasuerus, the legalist who used his position to destroy the people he hated, judged by the very king he served, plays out one final time at the throne of God. Haman's gallows. The lions' den turned against the accusers. The irrevocable decree reversed by a higher decree written in blood.</p>
 
-<p>The harsh counselor who sat closest to the throne, who knew the Law better than any created being, who used every instrument of his office to condemn the people God loved — he built his own gallows. And the graceful Counselor, the one who carried the Father's favour, who pleaded for the people rather than against them, took his place beside the throne forever.</p>
+<p>The harsh counselor who sat closest to the throne, who knew the Law better than any created being, who used every instrument of his office to condemn the people God loved, he built his own gallows. And the graceful Counselor, the one who carried the Father's favour, who pleaded for the people rather than against them, took his place beside the throne forever.</p>
 
 <div style="margin:3rem 0;padding:1.6rem 1.8rem;background:rgba(91,141,184,0.06);border:0.5px solid rgba(91,141,184,0.2);border-left:2px solid rgba(91,141,184,0.5);">
   <p style="font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:#5B8DB8;margin-bottom:0.75rem;">The Counselors at the King's Court</p>
@@ -129,24 +129,24 @@ const POSTS = [
     </thead>
     <tbody>
       <tr style="border-bottom:0.5px solid rgba(255,255,255,0.05);">
-        <td style="padding:0.5rem 0.6rem;color:#C9A84C;">Pharaoh's advisors — enslaved and destroyed Israel</td>
-        <td style="padding:0.5rem 0.6rem;color:#A8C4DC;">Joseph — fed the nations, wept over his brothers</td>
+        <td style="padding:0.5rem 0.6rem;color:#C9A84C;">Pharaoh's advisors, enslaved and destroyed Israel</td>
+        <td style="padding:0.5rem 0.6rem;color:#A8C4DC;">Joseph, fed the nations, wept over his brothers</td>
         <td style="padding:0.5rem 0.6rem;">Egypt broken by plagues; Joseph second to the throne</td>
       </tr>
       <tr style="border-bottom:0.5px solid rgba(255,255,255,0.05);">
-        <td style="padding:0.5rem 0.6rem;color:#C9A84C;">Satraps of Babylon — manufactured charges against Daniel</td>
-        <td style="padding:0.5rem 0.6rem;color:#A8C4DC;">Daniel — three kings, one verdict: the God of Daniel is real</td>
+        <td style="padding:0.5rem 0.6rem;color:#C9A84C;">Satraps of Babylon, manufactured charges against Daniel</td>
+        <td style="padding:0.5rem 0.6rem;color:#A8C4DC;">Daniel, three kings, one verdict: the God of Daniel is real</td>
         <td style="padding:0.5rem 0.6rem;">Accusers thrown to the lions; Daniel promoted each time</td>
       </tr>
       <tr style="border-bottom:0.5px solid rgba(255,255,255,0.05);">
-        <td style="padding:0.5rem 0.6rem;color:#C9A84C;">Haman — used the king's seal to legislate genocide</td>
-        <td style="padding:0.5rem 0.6rem;color:#A8C4DC;">Mordecai and Esther — carried favour, pleaded for the people</td>
+        <td style="padding:0.5rem 0.6rem;color:#C9A84C;">Haman, used the king's seal to legislate genocide</td>
+        <td style="padding:0.5rem 0.6rem;color:#A8C4DC;">Mordecai and Esther, carried favour, pleaded for the people</td>
         <td style="padding:0.5rem 0.6rem;">Haman hanged on his own gallows; Mordecai given the signet</td>
       </tr>
       <tr>
-        <td style="padding:0.5rem 0.6rem;color:#C9A84C;">Lucifer — filed charges against humanity for millennia</td>
-        <td style="padding:0.5rem 0.6rem;color:#A8C4DC;">Jesus — absorbed the penalty, left no claim standing</td>
-        <td style="padding:0.5rem 0.6rem;">His dominion stripped forever — Daniel 7:26</td>
+        <td style="padding:0.5rem 0.6rem;color:#C9A84C;">Lucifer, filed charges against humanity for millennia</td>
+        <td style="padding:0.5rem 0.6rem;color:#A8C4DC;">Jesus, absorbed the penalty, left no claim standing</td>
+        <td style="padding:0.5rem 0.6rem;">His dominion stripped forever, Daniel 7:26</td>
       </tr>
     </tbody>
   </table>
@@ -159,15 +159,15 @@ const POSTS = [
     date: "26 May 2026",
     category: "Teaching",
     image: "seed_and_shadow.svg",
-    excerpt: "Nations wage wars, churches write cheques, and theologians fill libraries — all in the name of a covenant whose most important detail keeps getting skipped over. That detail is a single word. Paul called it the key to everything God promised Abraham. The word is Seed.",
+    excerpt: "Nations wage wars, churches write cheques, and theologians fill libraries, all in the name of a covenant whose most important detail keeps getting skipped over. That detail is a single word. Paul called it the key to everything God promised Abraham. The word is Seed.",
     content: `
 <p class="opening">
-  The people fighting over the dirt are using the name of a man who refused to settle for it — because he was looking at the stars.
+  The people fighting over the dirt are using the name of a man who refused to settle for it, because he was looking at the stars.
 </p>
 
-<p>There is a strange irony sitting at the centre of all of this. Nations go to war. Churches raise funds. Pastors construct elaborate theological justifications for things that would have confused the very people those justifications are built on. And at the middle of all of it is a covenant — God's promise to Abraham — whose most important word has been quietly walked past for centuries. That word is <span class="term">Seed</span>. Singular. One.</p>
+<p>There is a strange irony sitting at the centre of all of this. Nations go to war. Churches raise funds. Pastors construct elaborate theological justifications for things that would have confused the very people those justifications are built on. And at the middle of all of it is a covenant, God's promise to Abraham, whose most important word has been quietly walked past for centuries. That word is <span class="term">Seed</span>. Singular. One.</p>
 
-<p>Paul noticed it. Galatians 3:16 — and he is not gentle about it. He says the promises were made to Abraham and to his <em>offspring</em>, and then he stops the reader cold: it does not say offsprings, plural. It says offspring, singular. And that singular offspring, Paul announces plainly, is Christ. Not a population. Not a modern state. A Person. This is not Paul offering a creative reading. He is pointing to grammar that was there the whole time, and saying: this changes everything. The covenant was signed with one Heir. Everything else flows from that, or it doesn't flow at all.</p>
+<p>Paul noticed it. Galatians 3:16, and he is not gentle about it. He says the promises were made to Abraham and to his <em>offspring</em>, and then he stops the reader cold: it does not say offsprings, plural. It says offspring, singular. And that singular offspring, Paul announces plainly, is Christ. Not a population. Not a modern state. A Person. This is not Paul offering a creative reading. He is pointing to grammar that was there the whole time, and saying: this changes everything. The covenant was signed with one Heir. Everything else flows from that, or it doesn't flow at all.</p>
 
 <img src="seed_and_shadow.svg" alt="Stars above, seed descending, shadow cast on the ground" style="width:100%;margin:2.5rem 0;border:0.5px solid rgba(91,141,184,0.12);">
 
@@ -179,58 +179,58 @@ const POSTS = [
 
 <p>Abraham understood which one he was walking toward. Hebrews 11 says he was looking for a city whose designer and builder is God. Not a city he would build. Not a parcel of land he would farm. A city God would design and construct, somewhere beyond what he could see. He died without receiving the land. He died a stranger and a pilgrim. And the New Testament does not present this as Abraham's tragedy. It presents it as his crowning act of faith. He was not cheated of the promise. He understood it better than most of his descendants ever would.</p>
 
-<p>The word translated "forever" in those covenant passages — <em>olam</em> — means perpetuity, without end. A biological lineage cannot receive a forever-promise. People die, nations scatter, empires fall. If you are going to make a covenant that lasts forever, you need a recipient who can endure forever. There is only one candidate in the whole of human history who qualifies. The promise was always describing Him.</p>
+<p>The word translated "forever" in those covenant passages, <em>olam</em>, means perpetuity, without end. A biological lineage cannot receive a forever-promise. People die, nations scatter, empires fall. If you are going to make a covenant that lasts forever, you need a recipient who can endure forever. There is only one candidate in the whole of human history who qualifies. The promise was always describing Him.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>You Get In Through the Seed, Not Around Him</h2>
 
-<p>The next question is obvious: if the covenant belongs to Yeshua, what does that mean for everyone else? Paul answers it in Galatians 3:27-29. Those who are baptised into Christ have put on Christ. And if you are Christ's, then you are Abraham's offspring — heirs according to promise. There it is. There is no DNA bypass. There is no second track. The only route into Abraham's inheritance runs directly through the Seed himself.</p>
+<p>The next question is obvious: if the covenant belongs to Yeshua, what does that mean for everyone else? Paul answers it in Galatians 3:27-29. Those who are baptised into Christ have put on Christ. And if you are Christ's, then you are Abraham's offspring, heirs according to promise. There it is. There is no DNA bypass. There is no second track. The only route into Abraham's inheritance runs directly through the Seed himself.</p>
 
-<p>When Yeshua appeared to Saul on the Damascus road, Saul had been hunting and imprisoning his followers. Yeshua did not say why are you persecuting my people. He said why are you persecuting <em>me</em>. The union is that complete. The church is not close to Yeshua. In Paul's language — and Paul is not being poetic — the church <em>is</em> his body. One body. One Seed. A branch draws its life from the vine it is attached to. The moment you sever the connection you no longer carry what the vine carries, and no amount of genealogy puts it back.</p>
+<p>When Yeshua appeared to Saul on the Damascus road, Saul had been hunting and imprisoning his followers. Yeshua did not say why are you persecuting my people. He said why are you persecuting <em>me</em>. The union is that complete. The church is not close to Yeshua. In Paul's language, and Paul is not being poetic, the church <em>is</em> his body. One body. One Seed. A branch draws its life from the vine it is attached to. The moment you sever the connection you no longer carry what the vine carries, and no amount of genealogy puts it back.</p>
 
 <div class="pullquote">
-  <p>A branch has no independent right to the soil. It draws life only because it stays attached to the root. The moment it separates, it stops carrying the promise — regardless of what it was before it broke off.</p>
+  <p>A branch has no independent right to the soil. It draws life only because it stays attached to the root. The moment it separates, it stops carrying the promise, regardless of what it was before it broke off.</p>
 </div>
 
-<p>Paul also redefines the word Israel itself, and he is not subtle about it. Romans 9:6 — not all who are descended from Israel are Israel. True circumcision is of the heart, by the Spirit, not of the flesh (Romans 2:28-29). Peter takes the titles that belonged exclusively to the physical nation — chosen race, royal priesthood, holy nation — and transfers them to the body of believers drawn from every people on earth (1 Peter 2:9). This is not Peter adding a second Israel alongside the first. He is saying the substance has arrived. The shadow served its purpose. The nation God was always building has no borders on any map.</p>
+<p>Paul also redefines the word Israel itself, and he is not subtle about it. Romans 9:6, not all who are descended from Israel are Israel. True circumcision is of the heart, by the Spirit, not of the flesh (Romans 2:28-29). Peter takes the titles that belonged exclusively to the physical nation, chosen race, royal priesthood, holy nation, and transfers them to the body of believers drawn from every people on earth (1 Peter 2:9). This is not Peter adding a second Israel alongside the first. He is saying the substance has arrived. The shadow served its purpose. The nation God was always building has no borders on any map.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>The Problem With 1948</h2>
 
-<p>This is where it gets uncomfortable, and I think it needs to be said plainly. The dominant Christian justification for treating the political state established in 1948 as a fulfilment of biblical prophecy rests entirely on a framework called Dispensationalism — a relatively recent theological system that took formal shape in the 1830s and has since been packaged and distributed so widely that millions of believers treat it as the obvious reading of Scripture.</p>
+<p>This is where it gets uncomfortable, and I think it needs to be said plainly. The dominant Christian justification for treating the political state established in 1948 as a fulfilment of biblical prophecy rests entirely on a framework called Dispensationalism, a relatively recent theological system that took formal shape in the 1830s and has since been packaged and distributed so widely that millions of believers treat it as the obvious reading of Scripture.</p>
 
 <p>The argument goes: a people scattered for two millennia returned to the same land, revived the same language, restored the same name. Surely this is God keeping his covenant with the physical descendants of Abraham?</p>
 
-<p>But the whole argument collapses the moment you ask who the Seed is. If Paul is right — and the New Testament treats him as speaking under divine authority — the covenant was made to a singular Person, not a biological population. Any claim to its blessings that bypasses that Person is a claim made outside the contract. You cannot be an heir to a will in which you are not named.</p>
+<p>But the whole argument collapses the moment you ask who the Seed is. If Paul is right, and the New Testament treats him as speaking under divine authority, the covenant was made to a singular Person, not a biological population. Any claim to its blessings that bypasses that Person is a claim made outside the contract. You cannot be an heir to a will in which you are not named.</p>
 
 <div class="irony-box">
   <span class="irony-label">The Inversion</span>
   <p>What is happening in many churches today is this: the blessings of the Seed are being claimed on behalf of people who, in many cases, explicitly reject the Seed himself. Yeshua is being treated as incidental to a covenant in which, according to Paul, he is the <em>only named heir</em>. That is not a minor interpretive disagreement. That is a fundamental inversion of the Gospel.</p>
 </div>
 
-<p>When Yeshua stood in the temple courts and said the kingdom of God will be taken away from you and given to a people producing its fruits, he was not announcing a two-thousand-year pause before handing it back to a secular state. He was announcing a transfer — to people defined by fruitfulness, not ancestry. The gathering language of the prophets, read through Paul's lens, points not to an airport in Tel Aviv but to the ingathering of souls from every nation into the Body of the Seed. One new man. Jew and Gentile together, the dividing wall demolished, reconciled in one body (Ephesians 2:14-15).</p>
+<p>When Yeshua stood in the temple courts and said the kingdom of God will be taken away from you and given to a people producing its fruits, he was not announcing a two-thousand-year pause before handing it back to a secular state. He was announcing a transfer, to people defined by fruitfulness, not ancestry. The gathering language of the prophets, read through Paul's lens, points not to an airport in Tel Aviv but to the ingathering of souls from every nation into the Body of the Seed. One new man. Jew and Gentile together, the dividing wall demolished, reconciled in one body (Ephesians 2:14-15).</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>One Tree. Not Two.</h2>
 
-<p>The dual-track idea — God has a separate, parallel plan for an ethnic nation running alongside his plan for the church — finds no support in the New Testament. It contradicts it outright. Paul's image in Romans 11 is a single olive tree. There is one trunk, one root, one source of nourishment. Branches have been broken off. Wild branches have been grafted in. But there has only ever been one tree. You are either attached to the root or you are not. Your ancestry does not change that calculus.</p>
+<p>The dual-track idea, God has a separate, parallel plan for an ethnic nation running alongside his plan for the church, finds no support in the New Testament. It contradicts it outright. Paul's image in Romans 11 is a single olive tree. There is one trunk, one root, one source of nourishment. Branches have been broken off. Wild branches have been grafted in. But there has only ever been one tree. You are either attached to the root or you are not. Your ancestry does not change that calculus.</p>
 
 <p>Dispensationalism effectively tries to rebuild the dividing wall that Paul says the cross destroyed. Galatians 3:28 leaves no ambiguity: there is neither Jew nor Greek, for you are all one in Christ. Acts 10:34 confirms it: God shows no partiality. Any theological system that re-introduces ethnic favouritism as a category of divine covenant standing is working against the grain of everything the apostles taught.</p>
 
-<p>Paul uses the allegory of Hagar and Sarah in Galatians 4 with real precision. The earthly Jerusalem, the city defined by political power, military conquest, and the law of flesh — that corresponds to Hagar and the son born by human effort. The heavenly Jerusalem, the city Abraham was always walking toward, corresponds to Sarah and the son of promise. His conclusion: cast out the slave woman and her son, for the son of the slave shall not inherit with the son of the free. The ultimate irony is that many churches are writing cheques to Hagar's son while calling it Abraham's inheritance.</p>
+<p>Paul uses the allegory of Hagar and Sarah in Galatians 4 with real precision. The earthly Jerusalem, the city defined by political power, military conquest, and the law of flesh, that corresponds to Hagar and the son born by human effort. The heavenly Jerusalem, the city Abraham was always walking toward, corresponds to Sarah and the son of promise. His conclusion: cast out the slave woman and her son, for the son of the slave shall not inherit with the son of the free. The ultimate irony is that many churches are writing cheques to Hagar's son while calling it Abraham's inheritance.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>Writing Cheques to the Shadow</h2>
 
-<p>It gets sharper still when you look at the Third Temple movement. Certain segments of American Christianity have gone beyond endorsing a political state — they are now funding the reconstruction of a religious institution whose entire design was to foreshadow Yeshua, and which Yeshua himself declared finished when he said <em>it is finished</em> from the cross.</p>
+<p>It gets sharper still when you look at the Third Temple movement. Certain segments of American Christianity have gone beyond endorsing a political state, they are now funding the reconstruction of a religious institution whose entire design was to foreshadow Yeshua, and which Yeshua himself declared finished when he said <em>it is finished</em> from the cross.</p>
 
-<p>Colossians 2:17 says the rituals, festivals, sabbaths, and temple system of the old order are a shadow of what was coming — but the substance belongs to Christ. The shadow was not a mistake. It was a God-given sketch of the Person who was coming, drawn large enough that people would recognise him when he arrived. But when the person arrives, clinging to the sketch is not faithfulness. It is refusing to look up.</p>
+<p>Colossians 2:17 says the rituals, festivals, sabbaths, and temple system of the old order are a shadow of what was coming, but the substance belongs to Christ. The shadow was not a mistake. It was a God-given sketch of the Person who was coming, drawn large enough that people would recognise him when he arrived. But when the person arrives, clinging to the sketch is not faithfulness. It is refusing to look up.</p>
 
-<p>Hebrews 8:13 says the old covenant is obsolete and growing old and will soon disappear. Not evolving. Not paused. Obsolete. Displaced by a once-for-all sacrifice that accomplished what the entire sacrificial system could only point toward. For churches to fund the breeding of red heifers and the reconstruction of temple vessels is — from within their own Scriptures — to financially support a return to a system the New Testament says was completed and set aside by the death of the very Seed they claim to follow. They are chasing the shadow with cheques while the Light that cast it stands before them.</p>
+<p>Hebrews 8:13 says the old covenant is obsolete and growing old and will soon disappear. Not evolving. Not paused. Obsolete. Displaced by a once-for-all sacrifice that accomplished what the entire sacrificial system could only point toward. For churches to fund the breeding of red heifers and the reconstruction of temple vessels is, from within their own Scriptures, to financially support a return to a system the New Testament says was completed and set aside by the death of the very Seed they claim to follow. They are chasing the shadow with cheques while the Light that cast it stands before them.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -238,12 +238,12 @@ const POSTS = [
   <span class="conclusion-label">Stars, Not Dirt</span>
   <h3>What Abraham Was Actually Looking For</h3>
 
-  <p>Abraham was shown the dust and the stars. He chose to fix his eyes on the stars. He left his homeland without knowing where he was going. He lived in tents his whole life on land that was promised to him. He never built a house on it. He died a stranger. And Hebrews does not call this a failure — it holds Abraham up as the father of faith precisely because he understood that the land was the shadow, and the city God was building was the substance.</p>
+  <p>Abraham was shown the dust and the stars. He chose to fix his eyes on the stars. He left his homeland without knowing where he was going. He lived in tents his whole life on land that was promised to him. He never built a house on it. He died a stranger. And Hebrews does not call this a failure, it holds Abraham up as the father of faith precisely because he understood that the land was the shadow, and the city God was building was the substance.</p>
 
   <p>The covenant was always about the stars. An eternal King, not a temporary population. A heavenly city, not a contested parcel of ground in the Middle East. The day is coming when the Seed seated at the right hand of the Father returns and the meek inherit not one strip of land but the whole renewed earth. That is the promise. That has always been the promise.</p>
 
   <ul class="three-truths">
-    <li>Israel-the-State is a secular political entity — it cannot be a party to a covenant whose sole named heir it rejects.</li>
+    <li>Israel-the-State is a secular political entity, it cannot be a party to a covenant whose sole named heir it rejects.</li>
     <li>Israel-the-People are those who are in the Seed: the body of Christ, drawn from every nation, defined by faith and union with Him.</li>
     <li>The Land is the whole earth, inherited not by military conquest but when the Seed returns to claim what has always been His.</li>
   </ul>
@@ -327,7 +327,7 @@ const POSTS = [
     title: "Were the Apostles Confused or Did Translators Bias the Text?",
     date: "19 May 2026",
     category: "Teaching",
-    excerpt: "A sharp paradox runs through your Bible: in one verse Jesus is seemingly called God, and in the very next chapter the same Jesus calls the Father 'my God'. Were the Apostles contradictory writers — or did later translators insert their own theological biases into the text?",
+    excerpt: "A sharp paradox runs through your Bible: in one verse Jesus is seemingly called God, and in the very next chapter the same Jesus calls the Father 'my God'. Were the Apostles contradictory writers, or did later translators insert their own theological biases into the text?",
     image: "apostles_vs_translators.svg",
     content: `
 <p>For centuries, mainstream theology has presented a highly complex, multi-personal view of the Godhead. We are told that Jesus is "God the Son," a co-equal, co-eternal member of a Trinity who came down, took on human flesh, and died for humanity.</p>
@@ -344,11 +344,11 @@ const POSTS = [
 
 <p>To a casual reader, this looks like Paul is explicitly calling Jesus "our great God." But forcing this interpretation pushes Paul into a direct, logical contradiction with his other letters. Writing to Timothy, Paul lays down an ironclad, unyielding definition of the Supreme Creator:</p>
 
-<blockquote>"Now to the King eternal, immortal, invisible, the only God…" — 1 Timothy 1:17</blockquote>
+<blockquote>"Now to the King eternal, immortal, invisible, the only God…", 1 Timothy 1:17</blockquote>
 
-<blockquote>"…who alone possesses immortality and dwells in unapproachable light, whom no man has seen or can see." — 1 Timothy 6:16</blockquote>
+<blockquote>"…who alone possesses immortality and dwells in unapproachable light, whom no man has seen or can see.", 1 Timothy 6:16</blockquote>
 
-<p>The logic is simple. If God alone possesses inherent immortality, then Jesus — who genuinely died on a Roman cross — cannot be that self-existent God. If God is a being whom no man can see, but thousands of people physically touched and ate with Jesus, then Jesus cannot be identical to that invisible God.</p>
+<p>The logic is simple. If God alone possesses inherent immortality, then Jesus, who genuinely died on a Roman cross, cannot be that self-existent God. If God is a being whom no man can see, but thousands of people physically touched and ate with Jesus, then Jesus cannot be identical to that invisible God.</p>
 
 <p>Paul was not a confused writer. The Greek grammar of Titus 2:13 easily allows for two separate entities: <em>"…the appearing of the glory of our great God, and [the appearing] of our Savior Jesus Christ."</em> Translators choose to merge them to fit later church formulas, creating an artificial contradiction.</p>
 
@@ -358,7 +358,7 @@ const POSTS = [
 
 <p>By rendering the Greek pronoun <em>houtos</em> as "He" and pointing it to Jesus, translators create a direct clash with the Gospel of John. In John 17:3, Jesus explicitly prays to the Father and defines reality:</p>
 
-<blockquote>"And this is eternal life, that they know you, the only true God, and Jesus Christ whom you have sent." — John 17:3</blockquote>
+<blockquote>"And this is eternal life, that they know you, the only true God, and Jesus Christ whom you have sent.", John 17:3</blockquote>
 
 <p>Jesus cannot name the Father as the only true God while John simultaneously claims Jesus is the true God. The original Greek pronoun <em>houtos</em> literally means "This One." In biblical Greek, it routinely points back to the main subject of the paragraph, not just the nearest word. When read correctly, 1 John 5:20 means: <em>"…we are in Him who is true [the Father], by means of His Son Jesus Christ. This One [the Father] is the true God."</em> By resolving the pronoun correctly, the contradiction vanishes entirely.</p>
 
@@ -366,15 +366,15 @@ const POSTS = [
 
 <p>If you read the opening greetings of the actual letters of the Apostles, they never merge God and Jesus into a single Trinitarian entity. They consistently maintain a clear hierarchy:</p>
 
-<blockquote>"Grace to you and peace from God our Father and the Lord Jesus Christ." — Romans 1:7</blockquote>
+<blockquote>"Grace to you and peace from God our Father and the Lord Jesus Christ.", Romans 1:7</blockquote>
 
-<blockquote>"James, a servant of God and of the Lord Jesus Christ…" — James 1:1</blockquote>
+<blockquote>"James, a servant of God and of the Lord Jesus Christ…", James 1:1</blockquote>
 
 <p>The text refuses to use the late, post-biblical phrases coined by 4th and 5th-century church councils, such as "God the Son" or "God the Holy Spirit." Instead, the ultimate Apostolic summary is found in 1 Corinthians 8:6:</p>
 
-<blockquote>"…yet for us there is one God, the Father, from whom are all things… and one Lord, Jesus Christ, through whom are all things…" — 1 Corinthians 8:6</blockquote>
+<blockquote>"…yet for us there is one God, the Father, from whom are all things… and one Lord, Jesus Christ, through whom are all things…", 1 Corinthians 8:6</blockquote>
 
-<p>One God. The Father. One Lord. Jesus Christ. Two persons, named separately, in the same breath — exactly as every apostolic letter consistently states.</p>
+<p>One God. The Father. One Lord. Jesus Christ. Two persons, named separately, in the same breath, exactly as every apostolic letter consistently states.</p>
 
 <h2>The Victory Reclaimed</h2>
 
@@ -382,7 +382,7 @@ const POSTS = [
 
 <p>The Apostles did not teach a confusing Greek philosophical paradox. They taught a beautifully uniform Hebrew truth: the Father is the sole, invisible, immortal source of all existence. Jesus was a real mortal man who achieved absolute victory over temptation and death through pure obedience. Because of that victory, God highly exalted him and granted him a seat at His right hand.</p>
 
-<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ." — Acts 2:36</blockquote>
+<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ.", Acts 2:36</blockquote>
 
 <p>The Apostles were not confused. It is time to stop letting biased translations make them sound like they were.</p>
     `
@@ -393,7 +393,7 @@ const POSTS = [
     date: "11 May 2026",
     category: "Teaching",
     image: "let_jesus_speak.jpg",
-    excerpt: "Centuries of councils have spoken about Jesus at great length. But remarkably little time is spent simply listening to what Jesus said about himself — in plain, unambiguous language. His own words. On the record. Then you decide.",
+    excerpt: "Centuries of councils have spoken about Jesus at great length. But remarkably little time is spent simply listening to what Jesus said about himself, in plain, unambiguous language. His own words. On the record. Then you decide.",
     content: `
 <style>
 .ljs-lead{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;color:var(--gold);line-height:1.65;margin-bottom:1.8rem;border-left:2px solid var(--gold);padding-left:1.4rem;}
@@ -424,9 +424,9 @@ const POSTS = [
 .ljs-closing strong{font-style:normal;color:var(--text-primary);}
 </style>
 
-<p class="ljs-lead">"Before we debate what Jesus is — let us ask Jesus what he said about himself. Then we can ask each other: do you agree with him?"</p>
+<p class="ljs-lead">"Before we debate what Jesus is, let us ask Jesus what he said about himself. Then we can ask each other: do you agree with him?"</p>
 
-<p>Centuries of councils, creeds, and controversies have spoken <em>about</em> Jesus at great length. But remarkably little time is spent simply listening to what Jesus said <em>about himself</em> — in plain, unambiguous language, recorded by those who walked with him.</p>
+<p>Centuries of councils, creeds, and controversies have spoken <em>about</em> Jesus at great length. But remarkably little time is spent simply listening to what Jesus said <em>about himself</em>, in plain, unambiguous language, recorded by those who walked with him.</p>
 
 <p>Below are his own words. No commentary. No theological framing. Just the man himself, speaking directly about who he is, who sent him, and who is greater than him.</p>
 
@@ -434,20 +434,20 @@ const POSTS = [
 
 <div class="ljs-card">
   <div class="ljs-label">John 17:3</div>
-  <div class="ljs-verse">"This is eternal life — that they know you, <strong>the only true God</strong>, and Jesus Christ <strong>whom you have sent.</strong>"</div>
-  <div class="ljs-note">Jesus himself names the Father as the only true God. He names himself as the one sent — two distinct roles, spoken by Jesus in the same breath.</div>
+  <div class="ljs-verse">"This is eternal life, that they know you, <strong>the only true God</strong>, and Jesus Christ <strong>whom you have sent.</strong>"</div>
+  <div class="ljs-note">Jesus himself names the Father as the only true God. He names himself as the one sent, two distinct roles, spoken by Jesus in the same breath.</div>
 </div>
 
 <div class="ljs-card">
   <div class="ljs-label">John 14:28</div>
   <div class="ljs-verse">"You heard me say I am going away and I am coming back to you. If you loved me, you would be glad that I am going to the Father, for <strong>the Father is greater than I.</strong>"</div>
-  <div class="ljs-note">Not equal. Not co-equal. Jesus says it simply and directly: the Father is greater. This is not humility rhetoric — it is a statement about rank and origin.</div>
+  <div class="ljs-note">Not equal. Not co-equal. Jesus says it simply and directly: the Father is greater. This is not humility rhetoric, it is a statement about rank and origin.</div>
 </div>
 
 <div class="ljs-card">
   <div class="ljs-label">John 20:17</div>
   <div class="ljs-verse">"Do not hold on to me… Go instead to my brothers and tell them: I am ascending to <strong>my Father and your Father, to my God and your God.</strong>"</div>
-  <div class="ljs-note">After resurrection — glorified, exalted — Jesus still calls the Father <em>my God</em>. The relationship does not dissolve into equality. It remains: Son and Father. Worshipper and God.</div>
+  <div class="ljs-note">After resurrection, glorified, exalted, Jesus still calls the Father <em>my God</em>. The relationship does not dissolve into equality. It remains: Son and Father. Worshipper and God.</div>
 </div>
 
 <div class="ljs-card">
@@ -470,35 +470,35 @@ const POSTS = [
 
 <div class="ljs-card">
   <div class="ljs-label">Mark 10:18</div>
-  <div class="ljs-verse">"Why do you call me good? <strong>No one is good — except God alone.</strong>"</div>
+  <div class="ljs-verse">"Why do you call me good? <strong>No one is good, except God alone.</strong>"</div>
   <div class="ljs-note">Jesus deflects the title of absolute goodness away from himself and toward God. He does not say "yes, I am good, I am God." He redirects. God alone holds that position.</div>
 </div>
 
 <div class="ljs-card">
   <div class="ljs-label">Matthew 24:36</div>
   <div class="ljs-verse">"About that day or hour <strong>no one knows</strong>, not even the angels in heaven, <strong>nor the Son</strong>, but only the Father."</div>
-  <div class="ljs-note">An omniscient co-equal God knows all things — including the hour. Jesus says the Son does not know it. His knowledge, like his authority, is given — not inherent.</div>
+  <div class="ljs-note">An omniscient co-equal God knows all things, including the hour. Jesus says the Son does not know it. His knowledge, like his authority, is given, not inherent.</div>
 </div>
 
 <div class="ljs-card">
   <div class="ljs-label">John 6:57</div>
   <div class="ljs-verse">"Just as <strong>the living Father sent me</strong> and I live <strong>because of the Father</strong>, so the one who feeds on me will live because of me."</div>
-  <div class="ljs-note">Jesus lives because of the Father. His life is sourced in God. He is not self-existent. He is the Son — dependent, derived, given life from the living Father.</div>
+  <div class="ljs-note">Jesus lives because of the Father. His life is sourced in God. He is not self-existent. He is the Son, dependent, derived, given life from the living Father.</div>
 </div>
 
 <div class="ljs-card">
   <div class="ljs-label">John 14:10</div>
   <div class="ljs-verse">"The words I say to you <strong>I do not speak on my own authority.</strong> Rather, it is the Father, living in me, who is doing his work."</div>
-  <div class="ljs-note">The Father dwelling in Jesus — not Jesus being the Father. Two distinct persons, one working through the other. The source is always the Father.</div>
+  <div class="ljs-note">The Father dwelling in Jesus, not Jesus being the Father. Two distinct persons, one working through the other. The source is always the Father.</div>
 </div>
 
 <div class="ljs-question">
   <div class="ljs-q-eyebrow">Now, a question for the room</div>
   <div class="ljs-q-text">Do you agree with what Jesus said about himself?</div>
-  <div class="ljs-q-sub">He called the Father the only true God. He called himself the one sent. He said the Father is greater. These are his words — not ours.</div>
+  <div class="ljs-q-sub">He called the Father the only true God. He called himself the one sent. He said the Father is greater. These are his words, not ours.</div>
   <div class="ljs-buttons">
-    <button class="ljs-btn ljs-btn-yes" onclick="ljsRespond('yes')">Yes — I take him at his word</button>
-    <button class="ljs-btn ljs-btn-no" onclick="ljsRespond('no')">No — I believe he meant something else</button>
+    <button class="ljs-btn ljs-btn-yes" onclick="ljsRespond('yes')">Yes, I take him at his word</button>
+    <button class="ljs-btn ljs-btn-no" onclick="ljsRespond('no')">No, I believe he meant something else</button>
   </div>
   <div id="ljs-resp-yes" class="ljs-resp yes" style="display:none;"></div>
   <div id="ljs-resp-no" class="ljs-resp no" style="display:none;"></div>
@@ -506,7 +506,7 @@ const POSTS = [
 
 <div class="ljs-closing">
   <p>Jesus never once said <strong>"I am the Father."</strong><br>He never said <strong>"I am co-equal with God."</strong><br>He never said <strong>"Worship me as the Most High."</strong></p>
-  <p>He said: <strong>"The Father is greater than I."</strong><br>He said: <strong>"My God and your God."</strong><br>He said: <strong>"The only true God — whom you have sent me."</strong></p>
+  <p>He said: <strong>"The Father is greater than I."</strong><br>He said: <strong>"My God and your God."</strong><br>He said: <strong>"The only true God, whom you have sent me."</strong></p>
   <p>The simplest act of faith is to believe the man at his word.</p>
 </div>
     `
@@ -541,7 +541,7 @@ const POSTS = [
 
 <p>But here is what must be said plainly. The Father remained the Father throughout all of this. He never became the Son. He never shared His throne with a co-equal person. He sent His agents, including finally His Son, to make Himself known to human beings. And when His Son had completed everything He was sent to do, the Father spoke His verdict over all of history:</p>
 
-<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ." — Acts 2:36</blockquote>
+<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ.", Acts 2:36</blockquote>
 
 <p>The Father made Him Lord. It is the Father's declaration, the Father's gift, to the glory of the Father. This is not a Trinity. This is one God who chose to reveal Himself through many agencies across many centuries, and then finally through His beloved Son, whom He has appointed Lord over all nations.</p>
 
@@ -628,11 +628,11 @@ const POSTS = [
 
 <p>Now look at what Scripture says directly about who made Jesus Lord.</p>
 
-<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ." — Acts 2:36</blockquote>
+<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ.", Acts 2:36</blockquote>
 
 <p>The Father made Him Lord. This is Peter at Pentecost, speaking under the full power of the Spirit. The Lordship of Jesus was conferred by the Father, not self-possessed from eternity. It was the Father's act of exaltation after the resurrection.</p>
 
-<blockquote>"Therefore God also has highly exalted Him and given Him the name which is above every name." — Philippians 2:9</blockquote>
+<blockquote>"Therefore God also has highly exalted Him and given Him the name which is above every name.", Philippians 2:9</blockquote>
 
 <p>God gave Him the name. God exalted Him. The Son received what the Father gave. This is not the language of two co-equal persons in a Trinity. This is the language of a Father honouring His Son.</p>
 
@@ -640,7 +640,7 @@ const POSTS = [
 
 <p>The simpler reading, the one every apostolic letter assumes without argument, is this: there is one God, the Father. And there is one Lord, Jesus Christ, His Son, through whom all things were made and through whom we are saved. These are not the same person. They are Father and Son. And that relationship is not a limitation. It is the very shape of the gospel.</p>
 
-<blockquote>"For there is one God and one Mediator between God and men, the Man Christ Jesus, who gave Himself a ransom for all." — 1 Timothy 2:5-6</blockquote>
+<blockquote>"For there is one God and one Mediator between God and men, the Man Christ Jesus, who gave Himself a ransom for all.", 1 Timothy 2:5-6</blockquote>
 
 <p>One God. One Mediator. The Man Christ Jesus. That is the apostolic testimony, stated plainly, needing no Trinity to hold it together.</p>
     `
