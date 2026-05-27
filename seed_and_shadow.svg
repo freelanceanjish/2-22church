@@ -1,0 +1,97 @@
+<svg width="100%" viewBox="0 0 690 380" xmlns="http://www.w3.org/2000/svg">
+  <title>The Seed and the Shadow</title>
+  <defs>
+    <radialGradient id="star-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F0EAD6" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#F0EAD6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="seed-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A8C4DC" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#A8C4DC" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sky-fade" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#0C1830" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#060C18" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="690" height="380" fill="#060C18"/>
+  <rect width="690" height="220" fill="url(#sky-fade)"/>
+
+  <!-- Ground band -->
+  <rect x="0" y="285" width="690" height="95" fill="#08100C" opacity="0.7"/>
+
+  <!-- Ground horizon line -->
+  <line x1="0" y1="285" x2="690" y2="285" stroke="#1E3020" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Soil texture lines -->
+  <line x1="60"  y1="305" x2="140" y2="305" stroke="#1A2A1C" stroke-width="0.6" opacity="0.5"/>
+  <line x1="200" y1="312" x2="310" y2="312" stroke="#1A2A1C" stroke-width="0.6" opacity="0.4"/>
+  <line x1="380" y1="300" x2="460" y2="300" stroke="#1A2A1C" stroke-width="0.6" opacity="0.5"/>
+  <line x1="530" y1="318" x2="630" y2="318" stroke="#1A2A1C" stroke-width="0.6" opacity="0.35"/>
+  <line x1="90"  y1="330" x2="200" y2="330" stroke="#1A2A1C" stroke-width="0.5" opacity="0.3"/>
+  <line x1="290" y1="338" x2="400" y2="338" stroke="#1A2A1C" stroke-width="0.5" opacity="0.25"/>
+  <line x1="460" y1="325" x2="560" y2="325" stroke="#1A2A1C" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Stars — scattered, varying sizes -->
+  <circle cx="58"  cy="22"  r="0.8" fill="#F0EAD6" opacity="0.55"/>
+  <circle cx="120" cy="44"  r="0.6" fill="#F0EAD6" opacity="0.38"/>
+  <circle cx="175" cy="15"  r="1.1" fill="#F0EAD6" opacity="0.65"/>
+  <circle cx="230" cy="55"  r="0.7" fill="#F0EAD6" opacity="0.40"/>
+  <circle cx="282" cy="28"  r="0.9" fill="#F0EAD6" opacity="0.50"/>
+  <circle cx="344" cy="10"  r="0.8" fill="#F0EAD6" opacity="0.45"/>
+  <circle cx="408" cy="38"  r="1.0" fill="#F0EAD6" opacity="0.60"/>
+  <circle cx="468" cy="18"  r="0.7" fill="#F0EAD6" opacity="0.42"/>
+  <circle cx="524" cy="52"  r="0.9" fill="#F0EAD6" opacity="0.48"/>
+  <circle cx="580" cy="24"  r="1.2" fill="#F0EAD6" opacity="0.68"/>
+  <circle cx="638" cy="44"  r="0.7" fill="#F0EAD6" opacity="0.38"/>
+  <circle cx="672" cy="15"  r="0.8" fill="#F0EAD6" opacity="0.44"/>
+  <circle cx="22"  cy="60"  r="0.7" fill="#F0EAD6" opacity="0.32"/>
+  <circle cx="96"  cy="80"  r="0.6" fill="#F0EAD6" opacity="0.28"/>
+  <circle cx="152" cy="70"  r="0.8" fill="#F0EAD6" opacity="0.35"/>
+  <circle cx="212" cy="90"  r="0.6" fill="#F0EAD6" opacity="0.25"/>
+  <circle cx="318" cy="68"  r="0.7" fill="#F0EAD6" opacity="0.30"/>
+  <circle cx="462" cy="72"  r="0.6" fill="#F0EAD6" opacity="0.28"/>
+  <circle cx="560" cy="78"  r="0.8" fill="#F0EAD6" opacity="0.32"/>
+  <circle cx="648" cy="75"  r="0.7" fill="#F0EAD6" opacity="0.30"/>
+  <!-- A few slightly brighter ones -->
+  <circle cx="175" cy="15" r="2.2" fill="#F0EAD6" opacity="0.08"/>
+  <circle cx="580" cy="24" r="2.6" fill="#F0EAD6" opacity="0.08"/>
+  <circle cx="408" cy="38" r="2.0" fill="#F0EAD6" opacity="0.07"/>
+
+  <!-- Dotted vertical descent line — from sky down to earth -->
+  <line x1="345" y1="108" x2="345" y2="272" stroke="#5B8DB8" stroke-width="0.7" stroke-dasharray="2,6" opacity="0.28"/>
+
+  <!-- Seed glow -->
+  <ellipse cx="345" cy="190" rx="44" ry="44" fill="url(#seed-glow)"/>
+
+  <!-- Seed shape — simple oval with pointed tip downward -->
+  <ellipse cx="345" cy="183" rx="13" ry="20" fill="none" stroke="#A8C4DC" stroke-width="0.9" opacity="0.75"/>
+  <!-- Seed inner line (embryo suggestion) -->
+  <path d="M345,168 Q352,180 345,198" fill="none" stroke="#A8C4DC" stroke-width="0.6" opacity="0.45"/>
+  <!-- Small root tip -->
+  <line x1="345" y1="202" x2="345" y2="212" stroke="#A8C4DC" stroke-width="0.8" opacity="0.45"/>
+  <line x1="345" y1="208" x2="340" y2="215" stroke="#A8C4DC" stroke-width="0.6" opacity="0.30"/>
+  <line x1="345" y1="208" x2="350" y2="215" stroke="#A8C4DC" stroke-width="0.6" opacity="0.30"/>
+
+  <!-- Shadow cast on ground — ellipse below seed -->
+  <ellipse cx="345" cy="288" rx="32" ry="5" fill="none" stroke="#1E3020" stroke-width="1.0" opacity="0.7"/>
+  <ellipse cx="345" cy="288" rx="20" ry="3" fill="#0A1A0C" opacity="0.5"/>
+
+  <!-- Label: STARS above seed zone -->
+  <text x="345" y="102" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" letter-spacing="3.5" fill="#A8C4DC" opacity="0.45">STARS OF HEAVEN</text>
+
+  <!-- Label: THE SEED -->
+  <text x="395" y="188" font-family="Georgia,serif" font-size="7" letter-spacing="2.0" fill="#A8C4DC" opacity="0.55">THE SEED</text>
+  <line x1="392" y1="185" x2="361" y2="185" stroke="#A8C4DC" stroke-width="0.5" opacity="0.35"/>
+
+  <!-- Label: SHADOW of the Seed -->
+  <text x="345" y="310" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" letter-spacing="2.5" fill="#2E4A30" opacity="0.7">THE SHADOW</text>
+
+  <!-- Label: DUST OF THE EARTH -->
+  <text x="345" y="358" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" letter-spacing="3.5" fill="#2E4030" opacity="0.45">DUST OF THE EARTH</text>
+
+  <!-- Quote fragment bottom -->
+  <text x="345" y="372" text-anchor="middle" font-family="Georgia,serif" font-size="6" letter-spacing="0.8" fill="#243824" opacity="0.55" font-style="italic">"He was looking forward to the city whose designer and builder is God." — Hebrews 11:10</text>
+</svg>
