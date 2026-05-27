@@ -187,7 +187,7 @@
   <line x1="345" y1="272" x2="345" y2="318" stroke="#5B8DB8" stroke-width="0.7" stroke-dasharray="2,4" opacity="0.30"/>
 
   <ellipse cx="345" cy="340" rx="22" ry="22" fill="url(#cross-glow)"/>
-  <rect x="336" y="340" width="18" height="2.5" rx="0.5" fill="#F0EAD6" opacity="0.75"/>
+  <rect x="336" y="333" width="18" height="2.5" rx="0.5" fill="#F0EAD6" opacity="0.75"/>
   <rect x="343.2" y="328" width="3.5" height="26" rx="0.5" fill="#F0EAD6" opacity="0.75"/>
 
   <text x="345" y="370" text-anchor="middle" font-family="Georgia,serif" font-size="7" letter-spacing="1.6" fill="#A8C4DC" opacity="0.85">THE ADVOCATE</text>
