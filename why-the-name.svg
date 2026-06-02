@@ -1,0 +1,13 @@
+<svg viewBox="120 120 784 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Two overlapping circles forming a flame  Apostolic Teaching and Inward Purity">
+  <defs>
+    <path id="wtnArc" d="M235 255 Q512 150 789 255"/>
+  </defs>
+  <g fill="none" stroke="#172A36" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M140 512 Q512 28 884 512 Q512 998 140 512 Z"/>
+    <path d="M512 455 Q541 527 512 600 Q483 527 512 455 Z"/>
+    <path d="M512 470 Q527 516 512 562 Q498 516 512 470 Z"/>
+  </g>
+  <text fill="#172A36" font-family="'Poppins',Arial,sans-serif" font-size="26" font-weight="400" letter-spacing="0.5">
+    <textPath href="#wtnArc" xlink:href="#wtnArc" startOffset="50%" text-anchor="middle">Apostolic Teaching &amp; Inward Purity</textPath>
+  </text>
+</svg>
