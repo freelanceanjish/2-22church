@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Articles, 2:22 Church</title>
+<title>Blogs, 2:22 Church</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" href="style.css">
@@ -150,8 +150,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
         <a href="gatherings.html">Gatherings</a>
       </div>
     </li>
-    <li><a href="articles.html" class="active">Articles</a></li>
-    <li><a href="blogs.html">Blogs</a></li>
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="blogs.html" class="active">Blogs</a></li>
     <li class="nav-item">
       <a href="cosmology.html">Study <span class="caret">&#9660;</span></a>
       <div class="nav-dropdown">
@@ -186,7 +186,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
   <a href="articles.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Articles</a>
-  <a href="blogs.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blogs</a>
+  <a href="blogs.html" onclick="this.closest(.mobile-menu).classList.remove(.open.)">Blogs</a>
   <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
   <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
   <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
@@ -196,13 +196,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 </div>
 
 <div class="page-header">
-  <div class="eyebrow">Weekly Word</div>
-  <h1>The <em>Articles</em></h1>
-  <p>Reflections on Scripture, community, service and the living faith of 2:22 Church. Published weekly.</p>
-</div>
-
-<div class="filter-bar" id="filter-bar">
-  <button class="filter-btn active" data-cat="all">All</button>
+  <div class="eyebrow">Stories of Faith</div>
+  <h1>Our <em>Blogs</em></h1>
+  <p>Real encounters with God. Personal stories of breaking, restoration, and the faithfulness of Jesus Christ, from the people of 2:22 Church.</p>
 </div>
 
 <div class="post-count" id="post-count"></div>
@@ -210,7 +206,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 <div class="blog-list">
   <div id="featured-slot"></div>
   <div class="posts-grid" id="posts-grid"></div>
-  <div class="empty-state" id="empty-state" style="display:none;"><p>No posts in this category yet.</p></div>
+  <div class="empty-state" id="empty-state" style="display:none;"><p>No blogs yet, but they are coming.</p></div>
 </div>
 
 <footer>
@@ -229,7 +225,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
       <li><a href="gatherings.html">Gatherings</a></li>
       <li><a href="qa.html">Q&amp;A</a></li>
       <li><a href="articles.html">Articles</a></li>
-    <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
       <li><a href="project314.html">God of Pi</a></li>
       <li><a href="cosmology.html">Biblical Cosmology</a></li>
       <li><a href="old-maps.html">Old Maps</a></li>
@@ -263,39 +259,16 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 <script src="posts.js"></script>
 <script>
-var currentCat = 'all';
+// Only show Testimony category posts
+var TESTIMONIES = POSTS.filter(function(p){ return p.category === 'Testimony'; });
 
-// Build category filter buttons
-var cats = ['all'];
-POSTS.forEach(function(p) { if (p.category !== 'Testimony' && cats.indexOf(p.category) === -1) cats.push(p.category); });
-var filterBar = document.getElementById('filter-bar');
-cats.forEach(function(cat) {
-  if (cat === 'all') return;
-  var btn = document.createElement('button');
-  btn.className = 'filter-btn';
-  btn.setAttribute('data-cat', cat);
-  btn.textContent = cat;
-  filterBar.appendChild(btn);
-});
-
-filterBar.addEventListener('click', function(e) {
-  var btn = e.target.closest('.filter-btn');
-  if (!btn) return;
-  document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
-  btn.classList.add('active');
-  currentCat = btn.getAttribute('data-cat');
-  renderPosts();
-});
-
-function renderPosts() {
-  var articlePosts = POSTS.filter(function(p){ return p.category !== 'Testimony'; });
-  var filtered = currentCat === 'all' ? articlePosts : articlePosts.filter(function(p){ return p.category === currentCat; });
+function renderTestimonies() {
   var featuredSlot = document.getElementById('featured-slot');
   var grid = document.getElementById('posts-grid');
   var empty = document.getElementById('empty-state');
   var countEl = document.getElementById('post-count');
 
-  if (filtered.length === 0) {
+  if (TESTIMONIES.length === 0) {
     featuredSlot.innerHTML = '';
     grid.innerHTML = '';
     empty.style.display = 'block';
@@ -303,10 +276,10 @@ function renderPosts() {
     return;
   }
   empty.style.display = 'none';
-  countEl.innerHTML = 'Showing <span>' + filtered.length + '</span> post' + (filtered.length !== 1 ? 's' : '');
+  countEl.innerHTML = 'Showing <span>' + TESTIMONIES.length + '</span> blog' + (TESTIMONIES.length !== 1 ? 's' : '');
 
   // Featured (first post)
-  var f = filtered[0];
+  var f = TESTIMONIES[0];
   var fHref = f.link ? f.link : 'post.html?id=' + f.id;
   var fImg = f.image
     ? '<div class="pf-img"><img src="' + f.image + '" alt="' + f.title + '" loading="lazy"></div>'
@@ -314,15 +287,15 @@ function renderPosts() {
   featuredSlot.innerHTML = '<a href="' + fHref + '" class="post-featured">'
     + fImg
     + '<div class="pf-body">'
-    + '<div class="pf-label">Latest Post</div>'
+    + '<div class="pf-label">Featured Blog</div>'
     + '<h2>' + f.title + '</h2>'
     + '<p>' + f.excerpt + '</p>'
     + '<div class="pf-meta"><span class="blog-tag">' + f.category + '</span><span class="blog-date">' + f.date + '</span></div>'
-    + '<span class="blog-read">Read full post</span>'
+    + '<span class="blog-read">Read full story</span>'
     + '</div></a>';
 
   // Rest of posts
-  var rest = filtered.slice(1);
+  var rest = TESTIMONIES.slice(1);
   if (rest.length === 0) {
     grid.innerHTML = '';
     grid.style.border = 'none';
@@ -347,23 +320,7 @@ function renderPosts() {
   }
 }
 
-renderPosts();
-
-// Hamburger menu
-var hamburger = document.getElementById('hamburger');
-var mobileMenu = document.getElementById('mobile-menu');
-hamburger.addEventListener('click', function() {
-  hamburger.classList.toggle('open');
-  mobileMenu.classList.toggle('open');
-  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
-});
-document.querySelectorAll('.mobile-link').forEach(function(link) {
-  link.addEventListener('click', function() {
-    hamburger.classList.remove('open');
-    mobileMenu.classList.remove('open');
-    document.body.style.overflow = '';
-  });
-});
+renderTestimonies();
 </script>
 <script>
 document.addEventListener('click', function(e) {
@@ -381,12 +338,6 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
   });
 });
 </script>
-
-
-
-
-
-
 <script>
 document.querySelectorAll('.nav-item').forEach(function(item){
   item.querySelector(':scope>a').addEventListener('click',function(e){
