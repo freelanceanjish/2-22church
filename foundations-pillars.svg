@@ -1,16 +1,29 @@
-<svg viewBox="120 320 784 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A house on four pillars  Teaching, Fellowship, Breaking Bread, Prayer  Acts 2:42">
-  <g fill="none" stroke="#172A36" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
-    <path d="M172 712 L172 500 L512 360 L852 500 L852 712 Z"/>
-    <line x1="342" y1="512" x2="342" y2="712"/>
-    <line x1="512" y1="500" x2="512" y2="712"/>
-    <line x1="682" y1="512" x2="682" y2="712"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">Acts 2:42 - House on four pillars</title>
+  <desc id="desc">A minimal house built on four pillars: Teaching, Fellowship, Breaking Bread, and Prayer.</desc>
+
+  <!-- Transparent background: parent page/card supplies #F4F7F5 or #fff -->
+
+  <g fill="none" stroke="#172A36" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M 120 400 L 600 400 L 600 248 L 360 152 L 120 248 Z"/>
+    <path d="M 240 400 L 240 248"/>
+    <path d="M 360 400 L 360 248"/>
+    <path d="M 480 400 L 480 248"/>
   </g>
-  <g fill="#172A36" font-family="'Poppins',Arial,sans-serif" font-size="21" font-weight="400" text-anchor="middle">
-    <text x="257" y="615">Teaching</text>
-    <text x="427" y="615">Fellowship</text>
-    <text x="597" y="601">Breaking</text>
-    <text x="597" y="629">Bread</text>
-    <text x="767" y="615">Prayer</text>
-  </g>
-  <text x="512" y="800" text-anchor="middle" fill="#6B7780" font-family="'Poppins',Arial,sans-serif" font-size="27" font-weight="400" letter-spacing="0.5">Acts 2:42</text>
+
+  <text text-anchor="middle" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#172A36">
+    <tspan x="180" y="332">Teaching</tspan>
+  </text>
+  <text text-anchor="middle" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#172A36">
+    <tspan x="300" y="332">Fellowship</tspan>
+  </text>
+  <text text-anchor="middle" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="11" font-weight="500" fill="#172A36">
+    <tspan x="420" y="326">Breaking</tspan>
+    <tspan x="420" dy="15">Bread</tspan>
+  </text>
+  <text text-anchor="middle" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#172A36">
+    <tspan x="540" y="332">Prayer</tspan>
+  </text>
+
+  <text text-anchor="middle" x="360" y="468" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="14" font-weight="300" fill="#47545B">Acts 2:42</text>
 </svg>
