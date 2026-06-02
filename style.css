@@ -60,6 +60,13 @@ nav{
   box-shadow:0 12px 34px rgba(23,42,54,0.07);
 }
 .nav-logo{text-decoration:none;flex-shrink:0;display:inline-flex;align-items:center;gap:0.55rem;}
+.nav-logo .logo-mark{
+  display:grid;place-items:center;flex-shrink:0;
+  width:38px;height:38px;border-radius:50%;
+  background:var(--gold);color:#fff;
+  font-family:'Poppins',Arial,sans-serif;
+  font-size:0.66rem;font-weight:600;letter-spacing:0.005em;line-height:1;font-style:normal;
+}
 .nav-logo .logo-text{
   font-family:'Poppins',Arial,sans-serif !important;
   font-size:1.05rem;font-weight:700;color:var(--text-primary) !important;
@@ -283,7 +290,8 @@ footer{
   color:#fff;border-top:0;padding:4.5rem 2rem 2.5rem;
 }
 .footer-grid{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.14);}
-footer .nav-logo .logo-text,footer .nav-logo .logo-word,footer h4{color:#fff !important;}
+footer .nav-logo .logo-word,footer h4{color:#fff !important;}
+footer .nav-logo .logo-mark{background:#fff !important;color:var(--gold) !important;}
 .footer-brand p,.footer-col ul li a,.footer-bottom,.footer-verse,.footer-yt{color:rgba(255,255,255,0.68) !important;}
 .footer-col ul{list-style:none;}
 .footer-col ul li{margin-bottom:0.65rem;}
