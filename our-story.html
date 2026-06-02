@@ -15,28 +15,28 @@
 .declaration strong{color:var(--gold);}
 .journey{font-size:1rem;color:var(--text-secondary);line-height:1.95;margin-bottom:1.6rem;}
 .journey strong{color:var(--text-primary);}
-.truth-line{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-style:italic;color:var(--gold);line-height:1.7;margin-bottom:1.6rem;}
-.babylon{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--text-primary);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);padding:1.2rem 0;margin-top:0.5rem;}
+.truth-line{font-family:'Poppins',Arial,sans-serif;font-size:1.4rem;font-style:italic;color:var(--gold);line-height:1.7;margin-bottom:1.6rem;}
+.babylon{font-family:'Poppins',Arial,sans-serif;font-size:1.1rem;font-style:italic;color:var(--text-primary);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);padding:1.2rem 0;margin-top:0.5rem;}
 .babylon strong{font-style:normal;color:var(--gold);}
 .story-section{margin-bottom:5.5rem;}
-.story-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:300;line-height:1.2;margin-bottom:1.2rem;}
+.story-section h2{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:300;line-height:1.2;margin-bottom:1.2rem;}
 .story-section h2 em{font-style:italic;color:var(--gold);}
 .story-section p{color:var(--text-secondary);font-size:1rem;line-height:1.9;margin-bottom:1.1rem;}
 .scripture-block{background:var(--surface);border:0.5px solid var(--border);border-left:2px solid var(--gold);padding:1.6rem 2rem;margin:2rem 0;}
 .scripture-ref{font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;display:block;}
-.scripture-text{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;line-height:1.75;color:var(--text-primary);}
+.scripture-text{font-family:'Poppins',Arial,sans-serif;font-size:1.05rem;font-style:italic;line-height:1.75;color:var(--text-primary);}
 .conclusions{margin-top:2.5rem;}
 .conclusion-item{display:flex;gap:1.5rem;align-items:flex-start;margin-bottom:2.4rem;padding-bottom:2.4rem;border-bottom:0.5px solid var(--border-subtle);}
 .conclusion-item:last-child{border-bottom:none;}
-.c-num{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;flex-shrink:0;min-width:2rem;opacity:0.7;}
+.c-num{font-family:'Poppins',Arial,sans-serif;font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;flex-shrink:0;min-width:2rem;opacity:0.7;}
 .c-body{flex:1;}
-.c-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:400;color:var(--text-primary);margin-bottom:0.4rem;line-height:1.3;}
+.c-title{font-family:'Poppins',Arial,sans-serif;font-size:1.2rem;font-weight:400;color:var(--text-primary);margin-bottom:0.4rem;line-height:1.3;}
 .c-title a{color:var(--text-primary);text-decoration:none;border-bottom:0.5px solid rgba(201,168,76,0.4);transition:color 0.2s;}
 .c-title a:hover{color:var(--gold);}
 .c-desc{font-size:0.9rem;color:var(--text-secondary);line-height:1.8;}
 .story-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--border);margin:2rem 0;}
 .s-card{background:var(--surface);padding:1.8rem 2rem;}
-.s-card h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;color:var(--text-primary);margin-bottom:0.5rem;}
+.s-card h3{font-family:'Poppins',Arial,sans-serif;font-size:1.1rem;font-weight:400;color:var(--text-primary);margin-bottom:0.5rem;}
 .s-card h3 em{color:var(--gold);font-style:italic;}
 .s-card p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;}
 @media(max-width:640px){.story-cards{grid-template-columns:1fr;}.conclusion-item{gap:1rem;}}
@@ -86,7 +86,7 @@
   </button>
 </nav>
 <div class="mobile-menu" id="mobile-menu">
-  <button class="mobile-close" onclick="document.getElementById('mm').classList.remove('open')">&times;</button>
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
   <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
   <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
@@ -236,7 +236,7 @@
 
 <div style="text-align:center;padding:4rem 2rem;background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);">
   <div class="section-label" style="justify-content:center;">Connect</div>
-  <h2 style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;margin-bottom:1rem;">Come as you <em style="color:var(--gold);font-style:italic;">are.</em></h2>
+  <h2 style="font-family:'Poppins',Arial,sans-serif;font-size:2rem;font-weight:300;margin-bottom:1rem;">Come as you <em style="color:var(--gold);font-style:italic;">are.</em></h2>
   <p style="color:var(--text-secondary);max-width:480px;margin:0 auto 2rem;line-height:1.8;">If this resonates, reach out. We are ordinary people who found the living Word and could not look away.</p>
   <a href="index.html#join" class="btn-primary">Connect With Us</a>
 </div>

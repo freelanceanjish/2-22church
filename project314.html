@@ -7,20 +7,20 @@
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="shortcut icon" href="favicon.ico">
 <style>
 :root{
-  --gold:#5B8DB8;--gold-light:#A8C4DC;--gold-dark:#2E5F82;
-  --deep:#060C18;--deep-mid:#081020;--surface:#0C1830;--surface-light:#0E2040;
-  --text-primary:#F0EAD6;--text-secondary:#A8A090;--text-muted:#6B6358;
-  --border:rgba(91,141,184,0.18);--border-subtle:rgba(255,255,255,0.06);
+  --gold:#172A36;--gold-light:#EAF1F4;--gold-dark:#0D171F;
+  --deep:#FFFFFF;--deep-mid:#F4F7F5;--surface:#FFFFFF;--surface-light:#EEF4F7;
+  --text-primary:#0E0E0E;--text-secondary:#47545B;--text-muted:#778187;
+  --border:rgba(23,42,54,0.14);--border-subtle:rgba(14,14,14,0.08);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
 
-body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-primary);overflow-x:hidden;line-height:1.7;}
+body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--text-primary);overflow-x:hidden;line-height:1.75;font-weight:300;}
 
 /* ── NAV ── */
 
@@ -46,18 +46,18 @@ body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-pr
 }
 
 /* layered overlays */
-.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(to bottom,rgba(13,17,23,0.72) 0%,rgba(13,17,23,0.52) 40%,rgba(13,17,23,0.82) 100%);}
+.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(to bottom,rgba(14,14,14,0.18) 0%,rgba(14,14,14,0.10) 40%,rgba(255,255,255,0.72) 100%);}
 .hero-overlay2{position:absolute;inset:0;z-index:2;background:radial-gradient(ellipse 60% 50% at 50% 40%,rgba(201,168,76,0.05) 0%,transparent 70%);}
 
 .hero-content{position:relative;z-index:3;}
 .hero-badge{display:inline-block;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);border:0.5px solid var(--border);padding:0.4rem 1rem;border-radius:2px;margin-bottom:1.5rem;}
 .hero-eyebrow{font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;justify-content:center;gap:1rem;}
 .hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:36px;height:0.5px;background:var(--gold);opacity:0.5;}
-.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,9vw,8rem);font-weight:300;line-height:1;margin-bottom:0.6rem;}
+.hero h1{font-family:'Poppins',Arial,sans-serif;font-size:clamp(3.2rem,9vw,8rem);font-weight:300;line-height:1;margin-bottom:0.6rem;}
 .hero h1 em{font-style:italic;color:var(--gold);}
-.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,2.5vw,1.7rem);font-weight:300;font-style:italic;color:var(--text-secondary);max-width:700px;margin:0 auto 2rem;}
-.hero-verse{font-family:'Cormorant Garamond',serif;font-size:1rem;font-style:italic;color:rgba(240,234,214,0.75);border-left:1.5px solid var(--gold);padding-left:1.2rem;text-align:left;max-width:460px;margin:0 auto 2.5rem;line-height:1.7;}
-.hero-verse cite{font-family:'DM Sans',sans-serif;font-style:normal;font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.4rem;}
+.hero-sub{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.1rem,2.5vw,1.7rem);font-weight:300;font-style:italic;color:var(--text-secondary);max-width:700px;margin:0 auto 2rem;}
+.hero-verse{font-family:'Poppins',Arial,sans-serif;font-size:1rem;font-style:italic;color:rgba(240,234,214,0.75);border-left:1.5px solid var(--gold);padding-left:1.2rem;text-align:left;max-width:460px;margin:0 auto 2.5rem;line-height:1.7;}
+.hero-verse cite{font-family:'Poppins',Arial,sans-serif;font-style:normal;font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.4rem;}
 .hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
 .hero-scroll{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:var(--text-muted);font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;animation:bobble 2.5s ease-in-out infinite;}
 .hero-scroll::after{content:'';display:block;width:0.5px;height:36px;background:linear-gradient(to bottom,var(--gold-dark),transparent);}
@@ -70,13 +70,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--deep);color:var(--text-pr
 .ap-text p{color:var(--text-secondary);font-size:1rem;line-height:1.9;margin-bottom:1.2rem;}
 .ap-text p strong{color:var(--text-primary);font-weight:500;}
 .pi-stat{background:var(--surface);border:0.5px solid var(--border);padding:2.5rem;text-align:center;}
-.pi-num{font-family:'Cormorant Garamond',serif;font-size:6.5rem;font-weight:300;color:var(--gold);line-height:1;}
-.pi-eq{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-style:italic;color:var(--text-secondary);margin:0.4rem 0 1.6rem;}
+.pi-num{font-family:'Poppins',Arial,sans-serif;font-size:6.5rem;font-weight:300;color:var(--gold);line-height:1;}
+.pi-eq{font-family:'Poppins',Arial,sans-serif;font-size:1.4rem;font-style:italic;color:var(--text-secondary);margin:0.4rem 0 1.6rem;}
 .pi-line{height:0.5px;background:var(--border);margin:1.5rem 0;}
 .pi-note{font-size:0.85rem;color:var(--text-muted);line-height:1.8;}
 .pi-note strong{color:var(--gold);}
-blockquote.pull{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--text-primary);line-height:1.7;border-left:2px solid var(--gold);padding-left:1.4rem;margin-top:1.5rem;}
-blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.6rem;}
+blockquote.pull{font-family:'Poppins',Arial,sans-serif;font-size:1.1rem;font-style:italic;color:var(--text-primary);line-height:1.7;border-left:2px solid var(--gold);padding-left:1.4rem;margin-top:1.5rem;}
+blockquote.pull cite{font-family:'Poppins',Arial,sans-serif;font-style:normal;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.6rem;}
 
 /* ── TABERNACLE DIAGRAMS, real images from project314.org ── */
 .diagrams{background:var(--deep);padding:7rem 2rem;}
@@ -86,7 +86,7 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
 .diag-img img{width:100%;max-height:260px;object-fit:contain;display:block;}
 .diag-body{padding:1.4rem 1.6rem 1.8rem;}
 .diag-label{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;}
-.diag-card h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:400;color:var(--text-primary);margin-bottom:0.6rem;}
+.diag-card h3{font-family:'Poppins',Arial,sans-serif;font-size:1.2rem;font-weight:400;color:var(--text-primary);margin-bottom:0.6rem;}
 .diag-card p{font-size:0.88rem;color:var(--text-secondary);line-height:1.75;}
 .diag-full{grid-column:1/-1;}
 .diag-full .diag-img{min-height:280px;}
@@ -97,20 +97,20 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
 .author-grid{display:grid;grid-template-columns:1fr 2fr;gap:5rem;align-items:start;}
 .author-left{position:sticky;top:7rem;}
 .author-portrait{background:var(--surface);border:0.5px solid var(--border);padding:2rem;text-align:center;}
-.author-initial{font-family:'Cormorant Garamond',serif;font-size:5rem;font-weight:300;color:var(--gold);opacity:0.7;line-height:1;margin-bottom:0.5rem;}
-.author-name{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--text-primary);margin-bottom:0.3rem;}
+.author-initial{font-family:'Poppins',Arial,sans-serif;font-size:5rem;font-weight:300;color:var(--gold);opacity:0.7;line-height:1;margin-bottom:0.5rem;}
+.author-name{font-family:'Poppins',Arial,sans-serif;font-size:1.5rem;font-weight:300;color:var(--text-primary);margin-bottom:0.3rem;}
 .author-title{font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;}
 .author-line{height:0.5px;background:var(--border);margin:1rem 0;}
 .author-fact{font-size:0.82rem;color:var(--text-muted);line-height:1.6;margin-bottom:0.6rem;}
 .author-fact strong{color:var(--text-secondary);}
-.author-body h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--gold);margin:2rem 0 0.75rem;}
+.author-body h3{font-family:'Poppins',Arial,sans-serif;font-size:1.5rem;font-weight:300;color:var(--gold);margin:2rem 0 0.75rem;}
 .author-body h3:first-child{margin-top:0;}
 .author-body p{color:var(--text-secondary);font-size:0.98rem;line-height:1.9;margin-bottom:1rem;}
 .author-body p strong{color:var(--text-primary);font-weight:500;}
 .timeline{margin:1.5rem 0;display:flex;flex-direction:column;gap:0;}
 .tl-item{display:grid;grid-template-columns:80px 1fr;gap:1.2rem;padding:1rem 0;border-bottom:0.5px solid var(--border-subtle);}
 .tl-item:last-child{border-bottom:none;}
-.tl-year{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--gold);font-weight:300;padding-top:2px;}
+.tl-year{font-family:'Poppins',Arial,sans-serif;font-size:1rem;color:var(--gold);font-weight:300;padding-top:2px;}
 .tl-desc{font-size:0.88rem;color:var(--text-secondary);line-height:1.7;}
 .tl-desc strong{color:var(--text-primary);}
 .media-links{display:flex;flex-direction:column;gap:0.5rem;margin-top:1.5rem;}
@@ -137,8 +137,8 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
 .prod-img{width:100%;background:var(--deep-mid);display:flex;align-items:center;justify-content:center;padding:2rem;min-height:200px;}
 .prod-img img{width:100%;max-height:220px;object-fit:contain;}
 .prod-body{padding:1.4rem 1.6rem 2rem;}
-.prod-tag{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);background:rgba(91,141,184,0.1);padding:0.25rem 0.65rem;border-radius:2px;display:inline-block;margin-bottom:0.75rem;}
-.prod-card h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:400;color:var(--text-primary);margin-bottom:0.65rem;line-height:1.25;}
+.prod-tag{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);background:rgba(23,42,54,0.08);padding:0.25rem 0.65rem;border-radius:2px;display:inline-block;margin-bottom:0.75rem;}
+.prod-card h3{font-family:'Poppins',Arial,sans-serif;font-size:1.35rem;font-weight:400;color:var(--text-primary);margin-bottom:0.65rem;line-height:1.25;}
 .prod-card p{font-size:0.88rem;color:var(--text-secondary);line-height:1.75;}
 .prod-link{display:inline-block;margin-top:1rem;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:0.5px solid var(--border);padding-bottom:1px;transition:border-color 0.2s;}
 .prod-link:hover{border-color:var(--gold);}
@@ -146,8 +146,8 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
 /* ── CTA ── */
 .cta{background:var(--deep);text-align:center;padding:8rem 2rem;}
 .cta-inner{max-width:640px;margin:0 auto;}
-.cta-pi{font-family:'Cormorant Garamond',serif;font-size:6rem;font-weight:300;color:var(--gold);opacity:0.15;line-height:1;user-select:none;}
-.cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;line-height:1.15;margin-bottom:1rem;}
+.cta-pi{font-family:'Poppins',Arial,sans-serif;font-size:6rem;font-weight:300;color:var(--gold);opacity:0.15;line-height:1;user-select:none;}
+.cta h2{font-family:'Poppins',Arial,sans-serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;line-height:1.15;margin-bottom:1rem;}
 .cta h2 em{font-style:italic;color:var(--gold);}
 .cta p{color:var(--text-secondary);font-size:1rem;line-height:1.85;margin-bottom:2.5rem;max-width:540px;margin-left:auto;margin-right:auto;}
 
@@ -173,17 +173,17 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
   display:none;
   position:absolute;top:calc(100% + 8px);left:50%;
   transform:translateX(-50%);
-  background:rgba(13,17,23,0.97);
-  border:0.5px solid rgba(91,141,184,0.2);
+  background:rgba(255,255,255,0.98);
+  border:0.5px solid rgba(23,42,54,0.16);
   min-width:170px;z-index:500;padding:0.4rem 0;
 }
 .nav-item.open .nav-dropdown{display:block;}
 .nav-dropdown a{
   display:block;padding:0.6rem 1.2rem;
   font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
-  color:#A8A090;text-decoration:none;white-space:nowrap;transition:all 0.15s;
+  color:var(--text-secondary);text-decoration:none;white-space:nowrap;transition:all 0.15s;
 }
-.nav-dropdown a:hover{color:#5B8DB8;background:rgba(91,141,184,0.08);}
+.nav-dropdown a:hover{color:var(--gold);background:rgba(23,42,54,0.08);}
 
 
 .hero-video-bg{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;}
@@ -236,7 +236,7 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
   </button>
 </nav>
 <div class="mobile-menu" id="mobile-menu">
-  <button class="mobile-close" onclick="document.getElementById('mm').classList.remove('open')">&times;</button>
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
   <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
   <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
@@ -269,7 +269,7 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
       <cite>Exodus 26:30</cite>
     </div>
     <div class="hero-btns">
-      <a href="https://project314.org" target="_blank" rel="noopener" class="btn-primary">Visit Project314.org ↗</a>
+      <a href="https://project314.org" target="_blank" rel="noopener" class="btn-primary">Visit Project314.org</a>
       <a href="#discovery" class="btn-ghost">The Discovery</a>
     </div>
   </div>
@@ -311,7 +311,7 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
           <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.75;">
             "Did you know the Exodus Tabernacle was a <strong style="color:var(--text-primary);">round and majestic yurt-like structure, towering 6 storeys</strong> above the ground, instead of a crude rectangular box as traditionally assumed? Project 314 was chartered to reveal these ancient secrets, lost in translation for thousands of years."
           </p>
-          <a href="https://www.youtube.com/@Project314" target="_blank" rel="noopener" style="display:inline-block;margin-top:1rem;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;border-bottom:0.5px solid var(--border-subtle);">Watch on YouTube ↗</a>
+          <a href="https://www.youtube.com/@Project314" target="_blank" rel="noopener" style="display:inline-block;margin-top:1rem;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;border-bottom:0.5px solid var(--border-subtle);">Watch on YouTube</a>
         </div>
       </div>
     </div>
@@ -422,19 +422,19 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
         </div>
         <div class="media-links" style="margin-top:1.5rem;">
           <a href="https://project314.org" target="_blank" rel="noopener" class="media-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B8DB8" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             <div><span class="media-link-title">project314.org</span><span class="media-link-text">Official website</span></div>
           </a>
           <a href="https://www.youtube.com/@Project314" target="_blank" rel="noopener" class="media-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B8DB8" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
             <div><span class="media-link-title">@Project314</span><span class="media-link-text">YouTube channel</span></div>
           </a>
           <a href="https://www.facebook.com/RoundTabernacle/" target="_blank" rel="noopener" class="media-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B8DB8" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             <div><span class="media-link-title">RoundTabernacle</span><span class="media-link-text">Facebook community</span></div>
           </a>
           <a href="https://www.patreon.com/project314" target="_blank" rel="noopener" class="media-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B8DB8" stroke-width="1.5"><circle cx="14.5" cy="9.5" r="6.5"/><path d="M5.5 21V4"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><circle cx="14.5" cy="9.5" r="6.5"/><path d="M5.5 21V4"/></svg>
             <div><span class="media-link-title">Patreon</span><span class="media-link-text">Support the project</span></div>
           </a>
         </div>
@@ -588,8 +588,8 @@ blockquote.pull cite{font-family:'DM Sans',sans-serif;font-style:normal;font-siz
     <h2>Reconsider <em>God's House</em></h2>
     <p>Project 314 is an open invitation to anyone willing to let the Hebrew text speak for itself, engineers, pastors, teachers, students, Jews, Christians, and sceptics alike. The discovery is documented. The math works. The engineering checks out. The question is whether we will receive it.</p>
     <div class="hero-btns" style="justify-content:center;">
-      <a href="https://project314.org" target="_blank" rel="noopener" class="btn-primary">Explore Project314.org ↗</a>
-      <a href="https://www.youtube.com/@Project314" target="_blank" rel="noopener" class="btn-ghost">Watch on YouTube ↗</a>
+      <a href="https://project314.org" target="_blank" rel="noopener" class="btn-primary">Explore Project314.org</a>
+      <a href="https://www.youtube.com/@Project314" target="_blank" rel="noopener" class="btn-ghost">Watch on YouTube</a>
     </div>
     <p style="margin-top:1.5rem;font-size:0.75rem;color:var(--text-muted);letter-spacing:0.1em;">Promoted by 2:22 Church · <a href="https://project314.org" target="_blank" rel="noopener" style="color:var(--text-secondary);text-decoration:none;">project314.org</a> · Phone: 314-628-0159 (no texts)</p>
   </div>

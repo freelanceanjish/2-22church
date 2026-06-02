@@ -40,7 +40,7 @@ const POSTS = [
 
 <p>Zechariah 3 shows the same scene. A heavenly courtroom. Joshua the High Priest standing before the Angel of the Lord. And ha-satan, the accuser, standing at his right hand to press charges. This is not metaphor. This is the actual structure of heaven's legal assembly, and Lucifer had a legitimate seat in it.</p>
 
-<div class="divider"><span class="divider-mark">✦</span></div>
+<div class="divider"><span class="divider-mark">-</span></div>
 
 <h2>What the Bible Keeps Showing Us in the Courts of Kings</h2>
 
@@ -59,7 +59,7 @@ const POSTS = [
   <p>The counselor who stands close to the throne and uses law as a weapon against those he hates, God always judges him. The counselor who carries the king's favour and pleads for the people, God always vindicates him. This is not a theme. It is a signature. The Bible is showing you the same cosmic reality in every generation: Lucifer's spirit versus Christ's spirit, playing out in every royal court in history.</p>
 </div>
 
-<div class="divider"><span class="divider-mark">✦</span></div>
+<div class="divider"><span class="divider-mark">-</span></div>
 
 <h2>The Corruption of the Office</h2>
 
@@ -69,7 +69,7 @@ const POSTS = [
 
 <p>Jesus named the end result plainly: <em>a liar and the father of lies</em> (John 8:44). A corrupt witness. The man who poisons evidence is the most dangerous person in any legal system, because the whole architecture of justice depends on the integrity of what is presented before the bench. Lucifer took that integrity and destroyed it from the inside.</p>
 
-<div class="divider"><span class="divider-mark">✦</span></div>
+<div class="divider"><span class="divider-mark">-</span></div>
 
 <h2>The Two Adams and the Wilderness Cross-Examination</h2>
 
@@ -90,7 +90,7 @@ const POSTS = [
 
 <p><em>Ouk echei ouden</em> in the Greek, he has no claim, no foothold, no admissible evidence. The Chief Counsel examined thirty-three years of a human life and could not find one count of lawlessness to file. That is the only grounds on which what followed could work.</p>
 
-<div class="divider"><span class="divider-mark">✦</span></div>
+<div class="divider"><span class="divider-mark">-</span></div>
 
 <h2>Paul's Use of the Same Mechanics</h2>
 
@@ -98,7 +98,7 @@ const POSTS = [
 
 <p>This is not a curse. It is a legal transfer. Paul knows that a believer walking in deliberate lawlessness has already stepped out from under the covering of Christ's jurisdiction, and Lucifer's mandate over that territory is still active. The church is simply making the transfer official. Lucifer's job, the one he cannot stop doing because it is built into him, is to prosecute lawlessness. The destruction of the flesh that follows is the prosecution doing its work. The mercy in it, and Paul says it is merciful, is that the suffering breaks the man's pride before it destroys him entirely, driving him back to the courtroom of Grace while there is still time.</p>
 
-<div class="divider"><span class="divider-mark">✦</span></div>
+<div class="divider"><span class="divider-mark">-</span></div>
 
 <h2>The Cross as Legal Checkmate</h2>
 
@@ -119,12 +119,12 @@ const POSTS = [
 
 <div style="margin:3rem 0;padding:1.6rem 1.8rem;background:rgba(91,141,184,0.06);border:0.5px solid rgba(91,141,184,0.2);border-left:2px solid rgba(91,141,184,0.5);">
   <p style="font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:#5B8DB8;margin-bottom:0.75rem;">The Counselors at the King's Court</p>
-  <table style="width:100%;border-collapse:collapse;font-size:0.82rem;color:#A8A090;line-height:1.8;">
+  <table style="width:100%;border-collapse:collapse;font-size:0.82rem;color:var(--text-secondary);line-height:1.8;">
     <thead>
       <tr style="border-bottom:0.5px solid rgba(91,141,184,0.25);">
-        <th style="text-align:left;padding:0.4rem 0.6rem;color:#F0EAD6;font-weight:400;letter-spacing:0.06em;font-size:0.72rem;text-transform:uppercase;">The Harsh Counselor</th>
-        <th style="text-align:left;padding:0.4rem 0.6rem;color:#F0EAD6;font-weight:400;letter-spacing:0.06em;font-size:0.72rem;text-transform:uppercase;">The Graceful Counselor</th>
-        <th style="text-align:left;padding:0.4rem 0.6rem;color:#F0EAD6;font-weight:400;letter-spacing:0.06em;font-size:0.72rem;text-transform:uppercase;">God's Verdict</th>
+        <th style="text-align:left;padding:0.4rem 0.6rem;color:var(--text-primary);font-weight:400;letter-spacing:0.06em;font-size:0.72rem;text-transform:uppercase;">The Harsh Counselor</th>
+        <th style="text-align:left;padding:0.4rem 0.6rem;color:var(--text-primary);font-weight:400;letter-spacing:0.06em;font-size:0.72rem;text-transform:uppercase;">The Graceful Counselor</th>
+        <th style="text-align:left;padding:0.4rem 0.6rem;color:var(--text-primary);font-weight:400;letter-spacing:0.06em;font-size:0.72rem;text-transform:uppercase;">God's Verdict</th>
       </tr>
     </thead>
     <tbody>
@@ -171,7 +171,7 @@ const POSTS = [
 
 <img src="seed_and_shadow.svg" alt="Stars above, seed descending, shadow cast on the ground" style="width:100%;margin:2.5rem 0;border:0.5px solid rgba(91,141,184,0.12);">
 
-<div class="divider"><span class="divider-mark">✦</span></div>
+<div class="divider"><span class="divider-mark">-</span></div>
 
 <h2>Abraham Was Always Looking Past the Land</h2>
 
@@ -181,7 +181,7 @@ const POSTS = [
 
 <p>The word translated "forever" in those covenant passages, <em>olam</em>, means perpetuity, without end. A biological lineage cannot receive a forever-promise. People die, nations scatter, empires fall. If you are going to make a covenant that lasts forever, you need a recipient who can endure forever. There is only one candidate in the whole of human history who qualifies. The promise was always describing Him.</p>
 
-<div class="divider"><span class="divider-mark">✦</span></div>
+<div class="divider"><span class="divider-mark">-</span></div>
 
 <h2>You Get In Through the Seed, Not Around Him</h2>
 
@@ -195,7 +195,7 @@ const POSTS = [
 
 <p>Paul also redefines the word Israel itself, and he is not subtle about it. Romans 9:6, not all who are descended from Israel are Israel. True circumcision is of the heart, by the Spirit, not of the flesh (Romans 2:28-29). Peter takes the titles that belonged exclusively to the physical nation, chosen race, royal priesthood, holy nation, and transfers them to the body of believers drawn from every people on earth (1 Peter 2:9). This is not Peter adding a second Israel alongside the first. He is saying the substance has arrived. The shadow served its purpose. The nation God was always building has no borders on any map.</p>
 
-<div class="divider"><span class="divider-mark">✦</span></div>
+<div class="divider"><span class="divider-mark">-</span></div>
 
 <h2>The Problem With 1948</h2>
 
@@ -212,7 +212,7 @@ const POSTS = [
 
 <p>When Yeshua stood in the temple courts and said the kingdom of God will be taken away from you and given to a people producing its fruits, he was not announcing a two-thousand-year pause before handing it back to a secular state. He was announcing a transfer, to people defined by fruitfulness, not ancestry. The gathering language of the prophets, read through Paul's lens, points not to an airport in Tel Aviv but to the ingathering of souls from every nation into the Body of the Seed. One new man. Jew and Gentile together, the dividing wall demolished, reconciled in one body (Ephesians 2:14-15).</p>
 
-<div class="divider"><span class="divider-mark">✦</span></div>
+<div class="divider"><span class="divider-mark">-</span></div>
 
 <h2>One Tree. Not Two.</h2>
 
@@ -222,7 +222,7 @@ const POSTS = [
 
 <p>Paul uses the allegory of Hagar and Sarah in Galatians 4 with real precision. The earthly Jerusalem, the city defined by political power, military conquest, and the law of flesh, that corresponds to Hagar and the son born by human effort. The heavenly Jerusalem, the city Abraham was always walking toward, corresponds to Sarah and the son of promise. His conclusion: cast out the slave woman and her son, for the son of the slave shall not inherit with the son of the free. The ultimate irony is that many churches are writing cheques to Hagar's son while calling it Abraham's inheritance.</p>
 
-<div class="divider"><span class="divider-mark">✦</span></div>
+<div class="divider"><span class="divider-mark">-</span></div>
 
 <h2>Writing Cheques to the Shadow</h2>
 
@@ -232,7 +232,7 @@ const POSTS = [
 
 <p>Hebrews 8:13 says the old covenant is obsolete and growing old and will soon disappear. Not evolving. Not paused. Obsolete. Displaced by a once-for-all sacrifice that accomplished what the entire sacrificial system could only point toward. For churches to fund the breeding of red heifers and the reconstruction of temple vessels is, from within their own Scriptures, to financially support a return to a system the New Testament says was completed and set aside by the death of the very Seed they claim to follow. They are chasing the shadow with cheques while the Light that cast it stands before them.</p>
 
-<div class="divider"><span class="divider-mark">✦</span></div>
+<div class="divider"><span class="divider-mark">-</span></div>
 
 <div class="conclusion">
   <span class="conclusion-label">Stars, Not Dirt</span>
@@ -397,31 +397,31 @@ const POSTS = [
     excerpt: "Centuries of councils have spoken about Jesus at great length. But remarkably little time is spent simply listening to what Jesus said about himself, in plain, unambiguous language. His own words. On the record. Then you decide.",
     content: `
 <style>
-.ljs-lead{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;color:var(--gold);line-height:1.65;margin-bottom:1.8rem;border-left:2px solid var(--gold);padding-left:1.4rem;}
+.ljs-lead{font-family:'Poppins',Arial,sans-serif;font-size:1.25rem;font-style:italic;color:var(--gold);line-height:1.65;margin-bottom:1.8rem;border-left:2px solid var(--gold);padding-left:1.4rem;}
 .ljs-divider{display:flex;align-items:center;gap:1rem;margin:2.5rem 0;}
 .ljs-divider::before,.ljs-divider::after{content:'';flex:1;height:0.5px;background:var(--border);}
-.ljs-divider span{font-family:'Cormorant Garamond',serif;font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);}
+.ljs-divider span{font-family:'Poppins',Arial,sans-serif;font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);}
 .ljs-card{background:var(--surface);border:0.5px solid var(--border);border-left:3px solid #8b1a1a;margin-bottom:1.6rem;padding:1.8rem 2rem 1.5rem;transition:background 0.2s;}
 .ljs-card:hover{background:var(--surface-light);}
 .ljs-label{font-size:0.65rem;letter-spacing:0.22em;text-transform:uppercase;color:#c0392b;margin-bottom:0.75rem;}
-.ljs-verse{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;color:var(--text-primary);line-height:1.7;margin-bottom:0.75rem;}
+.ljs-verse{font-family:'Poppins',Arial,sans-serif;font-size:1.25rem;font-style:italic;color:var(--text-primary);line-height:1.7;margin-bottom:0.75rem;}
 .ljs-verse strong{font-style:normal;font-weight:600;color:#e07060;background:rgba(139,26,26,0.15);padding:0 2px;}
 .ljs-note{font-size:0.85rem;color:var(--text-muted);border-top:0.5px solid var(--border);padding-top:0.9rem;margin-top:0.75rem;line-height:1.75;}
 .ljs-question{background:var(--deep-mid);border:0.5px solid var(--border);padding:3rem 2rem;margin:3rem 0;text-align:center;}
 .ljs-q-eyebrow{font-size:0.65rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;}
-.ljs-q-text{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:300;color:var(--text-primary);line-height:1.3;margin-bottom:0.75rem;}
+.ljs-q-text{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:300;color:var(--text-primary);line-height:1.3;margin-bottom:0.75rem;}
 .ljs-q-sub{font-size:0.88rem;font-style:italic;color:var(--text-muted);max-width:480px;margin:0 auto 2rem;}
 .ljs-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
-.ljs-btn{font-family:'DM Sans',sans-serif;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;padding:0.75rem 1.8rem;border:0.5px solid;cursor:pointer;background:transparent;transition:all 0.2s;border-radius:2px;}
+.ljs-btn{font-family:'Poppins',Arial,sans-serif;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;padding:0.75rem 1.8rem;border:0.5px solid;cursor:pointer;background:transparent;transition:all 0.2s;border-radius:2px;}
 .ljs-btn-yes{border-color:var(--gold);color:var(--gold);}
 .ljs-btn-yes:hover{background:rgba(91,141,184,0.15);}
 .ljs-btn-no{border-color:rgba(139,26,26,0.5);color:#8b4a4a;}
 .ljs-btn-no:hover{background:rgba(139,26,26,0.1);color:#c07060;border-color:#c07060;}
-.ljs-resp{display:none;max-width:520px;margin:1.8rem auto 0;padding:1.4rem 1.8rem;border:0.5px solid;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;line-height:1.75;text-align:left;}
+.ljs-resp{display:none;max-width:520px;margin:1.8rem auto 0;padding:1.4rem 1.8rem;border:0.5px solid;font-family:'Poppins',Arial,sans-serif;font-size:1.1rem;font-style:italic;line-height:1.75;text-align:left;}
 .ljs-resp.yes{border-color:var(--gold);color:var(--gold-light);}
 .ljs-resp.no{border-color:#c0392b;color:#e07060;}
 .ljs-closing{margin:2.5rem 0 1rem;padding:2rem 0;border-top:0.5px solid var(--border);}
-.ljs-closing p{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;color:var(--text-secondary);margin-bottom:1rem;line-height:1.8;}
+.ljs-closing p{font-family:'Poppins',Arial,sans-serif;font-size:1.15rem;font-style:italic;color:var(--text-secondary);margin-bottom:1rem;line-height:1.8;}
 .ljs-closing strong{font-style:normal;color:var(--text-primary);}
 </style>
 
@@ -599,7 +599,7 @@ const POSTS = [
 
 <div style="margin:3rem 0;padding:1.6rem 1.8rem;background:rgba(201,168,76,0.06);border:0.5px solid rgba(201,168,76,0.2);border-left:2px solid rgba(201,168,76,0.5);">
   <p style="font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:#C9A84C;margin-bottom:0.75rem;">Editorial Note</p>
-  <p style="font-size:0.88rem;color:#A8A090;line-height:1.85;">2:22 Church does not endorse Catholicism, its institutional practices, or any Trinitarian doctrine. The writings of Francis de Sales are cited solely because they contain God-inspired reflection, pure in intent, useful for the edification and uplifting of those who desire to be true disciples of Jesus the Messiah, known in Hebrew as <strong style="color:#F0EAD6;">Yeshua</strong> (יֵשׁוּעַ), rendered in Greek as <strong style="color:#F0EAD6;">Iēsous</strong> (Ἰησοῦς), from which the name Jesus is derived. We test all things by Scripture alone.</p>
+  <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.85;">2:22 Church does not endorse Catholicism, its institutional practices, or any Trinitarian doctrine. The writings of Francis de Sales are cited solely because they contain God-inspired reflection, pure in intent, useful for the edification and uplifting of those who desire to be true disciples of Jesus the Messiah, known in Hebrew as <strong style="color:var(--text-primary);">Yeshua</strong> (יֵשׁוּעַ), rendered in Greek as <strong style="color:var(--text-primary);">Iēsous</strong> (Ἰησοῦς), from which the name Jesus is derived. We test all things by Scripture alone.</p>
 </div>
     `
   },
