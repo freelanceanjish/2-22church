@@ -13,12 +13,12 @@
 .qa-intro{text-align:center;margin-bottom:4rem;}
 .qa-intro p{font-size:1rem;color:var(--text-secondary);line-height:1.85;}
 .qa-group{margin-bottom:3rem;}
-.qa-group-title{font-family:'DM Sans',sans-serif;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;padding-bottom:0.6rem;border-bottom:0.5px solid var(--border);}
+.qa-group-title{font-family:'Poppins',Arial,sans-serif;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;padding-bottom:0.6rem;border-bottom:0.5px solid var(--border);}
 .qa-item{border-bottom:0.5px solid var(--border-subtle);}
 .qa-item:first-of-type{border-top:0.5px solid var(--border-subtle);}
 .qa-question{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:1.4rem 0;cursor:pointer;user-select:none;}
 .qa-question-text{
-  font-family:'Cormorant Garamond',serif;
+  font-family:'Poppins',Arial,sans-serif;
   font-size:1.15rem;font-weight:400;
   color:var(--text-primary);line-height:1.4;
 }
@@ -35,14 +35,11 @@
   transform:rotate(45deg);
 }
 .qa-answer{
-  display:grid;
-  grid-template-rows:0fr;
-  transition:grid-template-rows 0.35s ease;
+  max-height:0;overflow:hidden;
+  transition:max-height 0.35s ease;
 }
-.qa-item.open .qa-answer{grid-template-rows:1fr;}
+.qa-item.open .qa-answer{max-height:600px;}
 .qa-answer-inner{
-  overflow:hidden;
-  min-height:0;
   padding:0 0 1.6rem 0;
   color:var(--text-secondary);
   font-size:0.95rem;line-height:1.9;
@@ -53,8 +50,8 @@
   border-left:2px solid var(--gold);
   padding:0.8rem 1.2rem;
   margin:1rem 0;
-  background:rgba(23,42,54,0.04);
-  font-family:'Cormorant Garamond',serif;
+  background:rgba(91,141,184,0.05);
+  font-family:'Poppins',Arial,sans-serif;
   font-style:italic;
   color:var(--text-primary);
   font-size:1rem;
@@ -67,7 +64,7 @@
   font-style:normal;
 }
 .qa-cta{text-align:center;padding:4rem 2rem;background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);}
-.qa-cta h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;margin-bottom:0.8rem;}
+.qa-cta h2{font-family:'Poppins',Arial,sans-serif;font-size:1.8rem;font-weight:300;margin-bottom:0.8rem;}
 .qa-cta h2 em{color:var(--gold);font-style:italic;}
 .qa-cta p{color:var(--text-secondary);max-width:460px;margin:0 auto 1.8rem;line-height:1.8;}
 
@@ -81,30 +78,30 @@
   display:none;
   position:absolute;top:calc(100% + 8px);left:50%;
   transform:translateX(-50%);
-  background:rgba(13,17,23,0.97);
-  border:0.5px solid rgba(91,141,184,0.2);
+  background:rgba(255,255,255,0.98);
+  border:0.5px solid rgba(23,42,54,0.16);
   min-width:170px;z-index:500;padding:0.4rem 0;
 }
 .nav-item.open .nav-dropdown{display:block;}
 .nav-dropdown a{
   display:block;padding:0.6rem 1.2rem;
   font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
-  color:#A8A090;text-decoration:none;white-space:nowrap;transition:all 0.15s;
+  color:var(--text-secondary);text-decoration:none;white-space:nowrap;transition:all 0.15s;
 }
-.nav-dropdown a:hover{color:#5B8DB8;background:rgba(91,141,184,0.08);}
+.nav-dropdown a:hover{color:var(--gold);background:rgba(23,42,54,0.08);}
 
 
 .blog-snippet{margin-top:1.2rem;padding:1rem 1.2rem;background:var(--surface);border:0.5px solid var(--border);display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;}
 .blog-snippet-label{font-size:0.6rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.3rem;}
-.blog-snippet-title{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:400;color:var(--text-primary);line-height:1.3;}
-.blog-snippet-link{flex-shrink:0;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;white-space:nowrap;padding-top:0.2rem;border-bottom:0.5px solid rgba(23,42,54,0.3);}
+.blog-snippet-title{font-family:'Poppins',Arial,sans-serif;font-size:1rem;font-weight:400;color:var(--text-primary);line-height:1.3;}
+.blog-snippet-link{flex-shrink:0;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;white-space:nowrap;padding-top:0.2rem;border-bottom:0.5px solid rgba(201,168,76,0.4);}
 .blog-snippet-link:hover{color:var(--gold-light);}
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo"><span class="logo-text">2<span class="logo-colon">:</span>22</span><span class="logo-word">Church</span></a>
+  <a href="index.html" class="nav-logo"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
   <ul class="nav-links">
     <li><a href="index.html#about">Home</a></li>
     <li class="nav-item">
@@ -145,7 +142,7 @@
   </button>
 </nav>
 <div class="mobile-menu" id="mobile-menu">
-  <button class="mobile-close" onclick="document.getElementById('mm').classList.remove('open')">&times;</button>
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
   <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
   <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
@@ -485,7 +482,7 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;"><span class="logo-text">2<span class="logo-colon">:</span>22</span><span class="logo-word">Church</span></a>
+      <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
       <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
       <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
     </div>
