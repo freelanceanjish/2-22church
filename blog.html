@@ -330,7 +330,7 @@ function renderPosts() {
       var postHref = post.link ? post.link : 'post.html?id=' + post.id;
       var imgHtml = post.image
         ? '<div class="pc-img"><img src="' + post.image + '" alt="' + post.title + '" loading="lazy"></div>'
-        : '<div class="pc-img no-img"><span>No image</span></div>';
+        : '<div class="pc-img no-img"><span>✦</span></div>';
       return '<a href="' + postHref + '" class="post-card">'
         + imgHtml
         + '<div class="pc-body">'

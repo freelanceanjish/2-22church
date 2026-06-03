@@ -40,7 +40,7 @@ const POSTS = [
 
 <p>Zechariah 3 shows the same scene. A heavenly courtroom. Joshua the High Priest standing before the Angel of the Lord. And ha-satan, the accuser, standing at his right hand to press charges. This is not metaphor. This is the actual structure of heaven's legal assembly, and Lucifer had a legitimate seat in it.</p>
 
-<div class="divider"><span class="divider-mark">-</span></div>
+<div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>What the Bible Keeps Showing Us in the Courts of Kings</h2>
 
@@ -59,7 +59,7 @@ const POSTS = [
   <p>The counselor who stands close to the throne and uses law as a weapon against those he hates, God always judges him. The counselor who carries the king's favour and pleads for the people, God always vindicates him. This is not a theme. It is a signature. The Bible is showing you the same cosmic reality in every generation: Lucifer's spirit versus Christ's spirit, playing out in every royal court in history.</p>
 </div>
 
-<div class="divider"><span class="divider-mark">-</span></div>
+<div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>The Corruption of the Office</h2>
 
@@ -69,7 +69,7 @@ const POSTS = [
 
 <p>Jesus named the end result plainly: <em>a liar and the father of lies</em> (John 8:44). A corrupt witness. The man who poisons evidence is the most dangerous person in any legal system, because the whole architecture of justice depends on the integrity of what is presented before the bench. Lucifer took that integrity and destroyed it from the inside.</p>
 
-<div class="divider"><span class="divider-mark">-</span></div>
+<div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>The Two Adams and the Wilderness Cross-Examination</h2>
 
@@ -90,7 +90,7 @@ const POSTS = [
 
 <p><em>Ouk echei ouden</em> in the Greek, he has no claim, no foothold, no admissible evidence. The Chief Counsel examined thirty-three years of a human life and could not find one count of lawlessness to file. That is the only grounds on which what followed could work.</p>
 
-<div class="divider"><span class="divider-mark">-</span></div>
+<div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>Paul's Use of the Same Mechanics</h2>
 
@@ -98,7 +98,7 @@ const POSTS = [
 
 <p>This is not a curse. It is a legal transfer. Paul knows that a believer walking in deliberate lawlessness has already stepped out from under the covering of Christ's jurisdiction, and Lucifer's mandate over that territory is still active. The church is simply making the transfer official. Lucifer's job, the one he cannot stop doing because it is built into him, is to prosecute lawlessness. The destruction of the flesh that follows is the prosecution doing its work. The mercy in it, and Paul says it is merciful, is that the suffering breaks the man's pride before it destroys him entirely, driving him back to the courtroom of Grace while there is still time.</p>
 
-<div class="divider"><span class="divider-mark">-</span></div>
+<div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>The Cross as Legal Checkmate</h2>
 
@@ -119,12 +119,12 @@ const POSTS = [
 
 <div style="margin:3rem 0;padding:1.6rem 1.8rem;background:rgba(91,141,184,0.06);border:0.5px solid rgba(91,141,184,0.2);border-left:2px solid rgba(91,141,184,0.5);">
   <p style="font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:#5B8DB8;margin-bottom:0.75rem;">The Counselors at the King's Court</p>
-  <table style="width:100%;border-collapse:collapse;font-size:0.82rem;color:var(--text-secondary);line-height:1.8;">
+  <table style="width:100%;border-collapse:collapse;font-size:0.82rem;color:#A8A090;line-height:1.8;">
     <thead>
       <tr style="border-bottom:0.5px solid rgba(91,141,184,0.25);">
-        <th style="text-align:left;padding:0.4rem 0.6rem;color:var(--text-primary);font-weight:400;letter-spacing:0.06em;font-size:0.72rem;text-transform:uppercase;">The Harsh Counselor</th>
-        <th style="text-align:left;padding:0.4rem 0.6rem;color:var(--text-primary);font-weight:400;letter-spacing:0.06em;font-size:0.72rem;text-transform:uppercase;">The Graceful Counselor</th>
-        <th style="text-align:left;padding:0.4rem 0.6rem;color:var(--text-primary);font-weight:400;letter-spacing:0.06em;font-size:0.72rem;text-transform:uppercase;">God's Verdict</th>
+        <th style="text-align:left;padding:0.4rem 0.6rem;color:#F0EAD6;font-weight:400;letter-spacing:0.06em;font-size:0.72rem;text-transform:uppercase;">The Harsh Counselor</th>
+        <th style="text-align:left;padding:0.4rem 0.6rem;color:#F0EAD6;font-weight:400;letter-spacing:0.06em;font-size:0.72rem;text-transform:uppercase;">The Graceful Counselor</th>
+        <th style="text-align:left;padding:0.4rem 0.6rem;color:#F0EAD6;font-weight:400;letter-spacing:0.06em;font-size:0.72rem;text-transform:uppercase;">God's Verdict</th>
       </tr>
     </thead>
     <tbody>
@@ -171,7 +171,7 @@ const POSTS = [
 
 <img src="seed_and_shadow.svg" alt="Stars above, seed descending, shadow cast on the ground" style="width:100%;margin:2.5rem 0;border:0.5px solid rgba(91,141,184,0.12);">
 
-<div class="divider"><span class="divider-mark">-</span></div>
+<div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>Abraham Was Always Looking Past the Land</h2>
 
@@ -181,7 +181,7 @@ const POSTS = [
 
 <p>The word translated "forever" in those covenant passages, <em>olam</em>, means perpetuity, without end. A biological lineage cannot receive a forever-promise. People die, nations scatter, empires fall. If you are going to make a covenant that lasts forever, you need a recipient who can endure forever. There is only one candidate in the whole of human history who qualifies. The promise was always describing Him.</p>
 
-<div class="divider"><span class="divider-mark">-</span></div>
+<div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>You Get In Through the Seed, Not Around Him</h2>
 
@@ -195,7 +195,7 @@ const POSTS = [
 
 <p>Paul also redefines the word Israel itself, and he is not subtle about it. Romans 9:6, not all who are descended from Israel are Israel. True circumcision is of the heart, by the Spirit, not of the flesh (Romans 2:28-29). Peter takes the titles that belonged exclusively to the physical nation, chosen race, royal priesthood, holy nation, and transfers them to the body of believers drawn from every people on earth (1 Peter 2:9). This is not Peter adding a second Israel alongside the first. He is saying the substance has arrived. The shadow served its purpose. The nation God was always building has no borders on any map.</p>
 
-<div class="divider"><span class="divider-mark">-</span></div>
+<div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>The Problem With 1948</h2>
 
@@ -212,7 +212,7 @@ const POSTS = [
 
 <p>When Yeshua stood in the temple courts and said the kingdom of God will be taken away from you and given to a people producing its fruits, he was not announcing a two-thousand-year pause before handing it back to a secular state. He was announcing a transfer, to people defined by fruitfulness, not ancestry. The gathering language of the prophets, read through Paul's lens, points not to an airport in Tel Aviv but to the ingathering of souls from every nation into the Body of the Seed. One new man. Jew and Gentile together, the dividing wall demolished, reconciled in one body (Ephesians 2:14-15).</p>
 
-<div class="divider"><span class="divider-mark">-</span></div>
+<div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>One Tree. Not Two.</h2>
 
@@ -222,7 +222,7 @@ const POSTS = [
 
 <p>Paul uses the allegory of Hagar and Sarah in Galatians 4 with real precision. The earthly Jerusalem, the city defined by political power, military conquest, and the law of flesh, that corresponds to Hagar and the son born by human effort. The heavenly Jerusalem, the city Abraham was always walking toward, corresponds to Sarah and the son of promise. His conclusion: cast out the slave woman and her son, for the son of the slave shall not inherit with the son of the free. The ultimate irony is that many churches are writing cheques to Hagar's son while calling it Abraham's inheritance.</p>
 
-<div class="divider"><span class="divider-mark">-</span></div>
+<div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>Writing Cheques to the Shadow</h2>
 
@@ -232,7 +232,7 @@ const POSTS = [
 
 <p>Hebrews 8:13 says the old covenant is obsolete and growing old and will soon disappear. Not evolving. Not paused. Obsolete. Displaced by a once-for-all sacrifice that accomplished what the entire sacrificial system could only point toward. For churches to fund the breeding of red heifers and the reconstruction of temple vessels is, from within their own Scriptures, to financially support a return to a system the New Testament says was completed and set aside by the death of the very Seed they claim to follow. They are chasing the shadow with cheques while the Light that cast it stands before them.</p>
 
-<div class="divider"><span class="divider-mark">-</span></div>
+<div class="divider"><span class="divider-mark">✦</span></div>
 
 <div class="conclusion">
   <span class="conclusion-label">Stars, Not Dirt</span>
@@ -256,70 +256,70 @@ const POSTS = [
     date: "7 May 2026",
     category: "Testimony",
     image: "autopsy_of_soul.svg",
-    excerpt: "I was saved in 2009. I was sincere. But nobody told me that salvation is just the beginning — that God, in His love, will one day take you to a room you did not choose, and open what you have been carrying for years. He did that to me. And I am still breathing.",
+    excerpt: "I was saved in 2009. I was sincere. But nobody told me that salvation is just the beginning. that God, in His love, will one day take you to a room you did not choose, and open what you have been carrying for years. He did that to me. And I am still breathing.",
     content: `
 <p class="opening">
   Nobody warned me that the most dangerous season of a believer's life is not before you find God. It is the long stretch after, when you think you are fine.
 </p>
 
-<p>I was saved in 2009, and I mean that. The hunger I had in those early years was real — the desire to know the Lord, to follow Him closely, to be <em>near</em> Him. I do not doubt any of it. But here is what I did not understand then, and it took years of wreckage to learn: salvation is not a transaction that ends the moment you say yes to it. It is the beginning of a lifelong reckoning. And God, because He actually loves you, will not leave the dark rooms of your soul untouched forever. He will wait. He will wait until you are still enough, broken enough, quiet enough — and then He will walk in with a lamp.</p>
+<p>I was saved in 2009, and I mean that. The hunger I had in those early years was real. the desire to know the Lord, to follow Him closely, to be <em>near</em> Him. I do not doubt any of it. But here is what I did not understand then, and it took years of wreckage to learn: salvation is not a transaction that ends the moment you say yes to it. It is the beginning of a lifelong reckoning. And God, because He actually loves you, will not leave the dark rooms of your soul untouched forever. He will wait. He will wait until you are still enough, broken enough, quiet enough. and then He will walk in with a lamp.</p>
 
-<p>When I left my parents' home and stepped into the world as my own man, I thought I was ready. I was not. What followed was a long chapter of searching — moving through multiple relationships before marriage, each one a quiet attempt to find rest, to find someone who would finally settle the weight I had been carrying without quite knowing its name. Some of those women had no interest in my faith. Others wore the mask of belief just long enough for me to lose my footing. By the time I understood what had happened, the wounds were already in me, shaped like the people who had left them there. Their patterns had pressed into mine. I carried all of it forward without knowing the shape of what I was carrying.</p>
+<p>When I left my parents' home and stepped into the world as my own man, I thought I was ready. I was not. What followed was a long chapter of searching. moving through multiple relationships before marriage, each one a quiet attempt to find rest, to find someone who would finally settle the weight I had been carrying without quite knowing its name. Some of those women had no interest in my faith. Others wore the mask of belief just long enough for me to lose my footing. By the time I understood what had happened, the wounds were already in me, shaped like the people who had left them there. Their patterns had pressed into mine. I carried all of it forward without knowing the shape of what I was carrying.</p>
 
 <p>God warned Samson. He warns all of us. But a warning you can hear is not the same as a warning you can <em>heed</em>, not when the heart is pulling hard in another direction.</p>
 
-<p>Then I found my wife — a woman with an extraordinary story of her own, someone who had genuinely met the Saviour, whose faith was not borrowed or performed. I loved her. I married her. I meant every word I said. But I brought all of it into that marriage with me: the scars, the patterns, the undealt wounds from years of looking in the wrong places. I served the Lord sincerely, in India and outside India. I gave what I had. But, man. How <em>deep</em> is the soul of a man. Only the Spirit of God can reach those rooms, and He does not rush. He waits until we are still enough to let Him in.</p>
+<p>Then I found my wife. a woman with an extraordinary story of her own, someone who had genuinely met the Saviour, whose faith was not borrowed or performed. I loved her. I married her. I meant every word I said. But I brought all of it into that marriage with me: the scars, the patterns, the undealt wounds from years of looking in the wrong places. I served the Lord sincerely, in India and outside India. I gave what I had. But, man. How <em>deep</em> is the soul of a man. Only the Spirit of God can reach those rooms, and He does not rush. He waits until we are still enough to let Him in.</p>
 
-<p>In June 2024, my first daughter was born. Something shifted in me with her arrival that I did not expect and could not explain. Then, in October of that same year, my employer told me to leave. I found another position — but there too I walked straight into heavy rejection, confusion at every level, and eventually I was asked to enter performance training. I had seen it coming, and instead of humbling myself and receiving it, I walked away. Since that day, nothing has opened. No door, no favour, no ground to stand on.</p>
+<p>In June 2024, my first daughter was born. Something shifted in me with her arrival that I did not expect and could not explain. Then, in October of that same year, my employer told me to leave. I found another position. but there too I walked straight into heavy rejection, confusion at every level, and eventually I was asked to enter performance training. I had seen it coming, and instead of humbling myself and receiving it, I walked away. Since that day, nothing has opened. No door, no favour, no ground to stand on.</p>
 
-<p>What followed was a kind of stripping I had never imagined for myself. I had to leave the apartment we had made into a home. I sold my daughter's things — the furniture we had gathered together, the car. I packed what remained and flew back to my homeland, back to the house I had once left with great confidence in God. I moved back in with my parents. My parents, who are unbelievers. And I had no choice. Nowhere else to go.</p>
+<p>What followed was a kind of stripping I had never imagined for myself. I had to leave the apartment we had made into a home. I sold my daughter's things. the furniture we had gathered together, the car. I packed what remained and flew back to my homeland, back to the house I had once left with great confidence in God. I moved back in with my parents. My parents, who are unbelievers. And I had no choice. Nowhere else to go.</p>
 
-<p>My father — the man who once burned my Bible, who cursed the name of Jesus and tore up my notes while I watched — became the one putting groceries on our table. God gave a contract to my unbelieving father <em>just to keep me alive.</em> And I sat across from him at meals while he questioned my faith, and I had no honest answer. That was the point, I came to understand. The Lord was not punishing me. He was taking me to a separate room to operate. His love does this — it separates us from the noise, quietly, without asking our permission, and begins the work that we would never have agreed to voluntarily.</p>
+<p>My father. the man who once burned my Bible, who cursed the name of Jesus and tore up my notes while I watched. became the one putting groceries on our table. God gave a contract to my unbelieving father <em>just to keep me alive.</em> And I sat across from him at meals while he questioned my faith, and I had no honest answer. That was the point, I came to understand. The Lord was not punishing me. He was taking me to a separate room to operate. His love does this. it separates us from the noise, quietly, without asking our permission, and begins the work that we would never have agreed to voluntarily.</p>
 
-<blockquote>"O God, You have rejected us and broken our defenses; You have been angry. O, restore us." — Psalm 60:1</blockquote>
+<blockquote>"O God, You have rejected us and broken our defenses; You have been angry. O, restore us.". Psalm 60:1</blockquote>
 
 <p>That verse became mine. He had broken every defense I had built: every wall of pride, every strategy, every plan I had made for my own life. Not because He had abandoned me. Because He was answering a prayer deeper than the ones I had been praying out loud. He was restoring me.</p>
 
-<blockquote>"It is good for me that I have been afflicted, that I may learn Your statutes." — Psalm 119:71</blockquote>
+<blockquote>"It is good for me that I have been afflicted, that I may learn Your statutes.". Psalm 119:71</blockquote>
 
-<p>I did not understand that verse when I first read it. A man saying it is <em>good</em> that he suffered? But I understand it now. The affliction was the lesson. The emptiness was the curriculum. The shame — and there was real shame, the kind you cannot dress up — was the classroom. I could not have learned what God needed to teach me in any other school.</p>
+<p>I did not understand that verse when I first read it. A man saying it is <em>good</em> that he suffered? But I understand it now. The affliction was the lesson. The emptiness was the curriculum. The shame. and there was real shame, the kind you cannot dress up. was the classroom. I could not have learned what God needed to teach me in any other school.</p>
 
-<p>There, in that enforced stillness, I finally stopped running long enough to do something I had been avoiding my whole adult life: I performed an autopsy on my own soul. And what I found was not easy to name. Procrastination. Deep, stubborn issues with authority. A dual and confused mind that could never quite settle. A heart of lust tied to masturbation and pornography, carried quietly for years behind a very different public face. Arrogance. Anger. Jealousy. And underneath all of it, the deepest trap of all — a subtle, dangerous pride that had convinced me, for most of my adult life, that I knew more than my seniors. I was never truly at peace with those above me. What I called principle, what I called righteous conviction, was, most of the time, my ego. And it had been costing me everything.</p>
+<p>There, in that enforced stillness, I finally stopped running long enough to do something I had been avoiding my whole adult life: I performed an autopsy on my own soul. And what I found was not easy to name. Procrastination. Deep, stubborn issues with authority. A dual and confused mind that could never quite settle. A heart of lust tied to masturbation and pornography, carried quietly for years behind a very different public face. Arrogance. Anger. Jealousy. And underneath all of it, the deepest trap of all. a subtle, dangerous pride that had convinced me, for most of my adult life, that I knew more than my seniors. I was never truly at peace with those above me. What I called principle, what I called righteous conviction, was, most of the time, my ego. And it had been costing me everything.</p>
 
-<p>The breaking point that finally cracked me open was my daughter. Watching her being drawn toward the idols my parents keep in their house — it broke something in me that nothing else had reached. I cried out to the Lord for rescue. It felt, at first, as though nothing was changing. But God was already moving beneath everything I could see.</p>
+<p>The breaking point that finally cracked me open was my daughter. Watching her being drawn toward the idols my parents keep in their house. it broke something in me that nothing else had reached. I cried out to the Lord for rescue. It felt, at first, as though nothing was changing. But God was already moving beneath everything I could see.</p>
 
-<p>My wife and I humbled ourselves and moved to her parents' house. Our marriage had been fracturing under the weight of my pride and her arrogance, with no real submission between us and a great deal of fighting. But God settled us in that season. She gave up the branded clothes and the modern way of living she had grown used to. She began stitching her own clothes, embracing modesty, serving her mother-in-law in the kitchen. I watched a woman I had genuinely wounded choose humility when she had every reason not to — and it undid something deep in me.</p>
+<p>My wife and I humbled ourselves and moved to her parents' house. Our marriage had been fracturing under the weight of my pride and her arrogance, with no real submission between us and a great deal of fighting. But God settled us in that season. She gave up the branded clothes and the modern way of living she had grown used to. She began stitching her own clothes, embracing modesty, serving her mother-in-law in the kitchen. I watched a woman I had genuinely wounded choose humility when she had every reason not to. and it undid something deep in me.</p>
 
-<p>As for me, I placed myself under my strict and authoritative father-in-law, without conditions and without argument. I water his garden. I clean his car. I serve him in whatever way he needs. I have opened my heart to the people the world tends to pass over — the delivery boy, the waiter, the shopkeeper, the cleaner. People I once moved past without a second thought who now feel, genuinely, like brothers. I am paying my obligations. I am taking responsibility for the things I had been avoiding for years.</p>
+<p>As for me, I placed myself under my strict and authoritative father-in-law, without conditions and without argument. I water his garden. I clean his car. I serve him in whatever way he needs. I have opened my heart to the people the world tends to pass over. the delivery boy, the waiter, the shopkeeper, the cleaner. People I once moved past without a second thought who now feel, genuinely, like brothers. I am paying my obligations. I am taking responsibility for the things I had been avoiding for years.</p>
 
-<p>God used two books as particular instruments to show me what had been hiding. The first was <em>Introduction to the Devout Life</em> by Francis de Sales. The second was <em>A Tale of Three Kings</em> by Gene Edwards. Together they showed me plainly that I had been acting like a rebel king while calling it righteousness. The image of David refusing to raise his hand against Saul — even when Saul was clearly wrong, even when David had every justification — stayed with me for weeks. I had spent years raising my hand against every Saul in my life and telling myself that was discernment. God wanted a servant's heart from me, and I had been trying to offer Him a throne.</p>
+<p>God used two books as particular instruments to show me what had been hiding. The first was <em>Introduction to the Devout Life</em> by Francis de Sales. The second was <em>A Tale of Three Kings</em> by Gene Edwards. Together they showed me plainly that I had been acting like a rebel king while calling it righteousness. The image of David refusing to raise his hand against Saul. even when Saul was clearly wrong, even when David had every justification. stayed with me for weeks. I had spent years raising my hand against every Saul in my life and telling myself that was discernment. God wanted a servant's heart from me, and I had been trying to offer Him a throne.</p>
 
-<blockquote>"Whoever wants to become great among you must be your servant, and whoever wants to be first must be your slave." — Matthew 20:26-27</blockquote>
+<blockquote>"Whoever wants to become great among you must be your servant, and whoever wants to be first must be your slave.". Matthew 20:26-27</blockquote>
 
-<p>It is not finished! I recently found myself speaking angrily to my father when he would not listen to my instructions about my daughter, and the old man in me rose up with that familiar heat. But this time I did not justify it. My own rebellion broke my heart. I went back to God with nothing to offer except the honest confession that I had gone astray again. That is the progress, I think — not that the flesh never rises, but that I can no longer lie to myself about what it is.</p>
+<p>It is not finished! I recently found myself speaking angrily to my father when he would not listen to my instructions about my daughter, and the old man in me rose up with that familiar heat. But this time I did not justify it. My own rebellion broke my heart. I went back to God with nothing to offer except the honest confession that I had gone astray again. That is the progress, I think. not that the flesh never rises, but that I can no longer lie to myself about what it is.</p>
 
-<p>I am living in dryness right now. A situation the world would call shameful — no title, no platform, no visible proof that any of this is producing anything. But for the first time in as long as I can remember, my mind is not at war with itself. I am waiting on the Lord. And I am finding, in the middle of these empty places, a peace I was always running too fast to receive.</p>
+<p>I am living in dryness right now. A situation the world would call shameful. no title, no platform, no visible proof that any of this is producing anything. But for the first time in as long as I can remember, my mind is not at war with itself. I am waiting on the Lord. And I am finding, in the middle of these empty places, a peace I was always running too fast to receive.</p>
 
-<p>Was David spared from his darkest chapter? Was Moses exempt from the wilderness? Was any of this a one-day job for either of them? It was a lifetime of progress, stumbling, restoration, and being used again. And those shameless failures — recorded without apology, laid bare in the Scriptures of the Lord — became a comfort to every broken man and woman who came after them.</p>
+<p>Was David spared from his darkest chapter? Was Moses exempt from the wilderness? Was any of this a one-day job for either of them? It was a lifetime of progress, stumbling, restoration, and being used again. And those shameless failures. recorded without apology, laid bare in the Scriptures of the Lord. became a comfort to every broken man and woman who came after them.</p>
 
 <p>What shame, then, is there in sharing mine?</p>
 
 <p>I know there are people reading this who are blaming God for the outcome of their lives. People who have cried out and heard nothing back, who have started to wonder if anything is there to hear them. I was all of those people at different points in this journey. I am not writing this because I have arrived somewhere. I am writing it from the middle of the desert, with soil on my hands from a garden I did not plant, in a house that is not mine, learning things I should have learned years ago.</p>
 
-<p>But what God has done in this season — quietly, without announcement, without asking my permission — is real. He did not leave. He was working in the breaking. In the darkest hour, in the driest period, in the most humbling corner of a man's life, He was designing something beautiful. He calls it an autopsy of the soul.</p>
+<p>But what God has done in this season. quietly, without announcement, without asking my permission. is real. He did not leave. He was working in the breaking. In the darkest hour, in the driest period, in the most humbling corner of a man's life, He was designing something beautiful. He calls it an autopsy of the soul.</p>
 
-<p>May this small piece of my story lift you, wherever you are. If He can do it here — <em>He can do it where you are.</em></p>
+<p>May this small piece of my story lift you, wherever you are. If He can do it here. <em>He can do it where you are.</em></p>
 
-<blockquote>"The sacrifices of God are a broken spirit; a broken and contrite heart, O God, you will not despise." — Psalm 51:17</blockquote>
+<blockquote>"The sacrifices of God are a broken spirit; a broken and contrite heart, O God, you will not despise.". Psalm 51:17</blockquote>
 
     `
   },
   {
     id: "the-word-judges-history-not-the-other-way-around",
-    title: "The Word Judges History. Not the Other Way Around.",
+    title: "Scripturalism: The Word Judges History",
     date: "21 May 2026",
     category: "Teaching",
-    excerpt: "On Scripturalism, the authority of God\u2019s Word, and why the Church has it backwards. When external data becomes the measuring rod by which Scripture is tested, something catastrophic has occurred. The creature has been handed the gavel meant for the Creator.",
+    excerpt: "On Scripturalism and why the church keeps getting the order wrong. When archaeology, carbon dating, or secular history becomes the test for Scripture, we have handed the gavel to the creature.",
     image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgdmlld0JveD0iMCAwIDY4MCA4MjAiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8dGl0bGU+VGhlIFdvcmQgSnVkZ2VzIEhpc3Rvcnk8L3RpdGxlPgogIDxkZXNjPkEgYmFsYW5jZSBzY2FsZSBvbiBkYXJrIGJhY2tncm91bmQ6IG9uIHRoZSBsZWZ0IHBhbiBzaXRzIGEgc2luZ2xlIG9wZW4gYm9vayB3ZWlnaGluZyBpdCBkb3duLCBvbiB0aGUgcmlnaHQgcGFuIHNpdHMgYSBzY3JvbGwgb2YgaGlzdG9yeSwgcmFpc2VkIHVwLjwvZGVzYz4KICA8cmVjdCB3aWR0aD0iNjgwIiBoZWlnaHQ9IjgyMCIgZmlsbD0iIzBlMGUwZSIvPgogIDxsaW5lIHgxPSIzMDAiIHkxPSIxMDAiIHgyPSIzODAiIHkyPSIxMDAiIHN0cm9rZT0iI2UwZDljZSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+CiAgPGxpbmUgeDE9IjM0MCIgeTE9IjEwMCIgeDI9IjM0MCIgeTI9IjE4MCIgc3Ryb2tlPSIjZTBkOWNlIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4KICA8Y2lyY2xlIGN4PSIzNDAiIGN5PSIxODAiIHI9IjYiIGZpbGw9IiNjOWE5NmUiLz4KICA8bGluZSB4MT0iMTQwIiB5MT0iMjMwIiB4Mj0iNTQwIiB5Mj0iMTMwIiBzdHJva2U9IiNlMGQ5Y2UiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIi8+CiAgPGxpbmUgeDE9IjE0MCIgeTE9IjIzMCIgeDI9IjEyMCIgeTI9IjM4MCIgc3Ryb2tlPSIjNTU1IiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiLz4KICA8bGluZSB4MT0iMTQwIiB5MT0iMjMwIiB4Mj0iMTYwIiB5Mj0iMzgwIiBzdHJva2U9IiM1NTUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIvPgogIDxsaW5lIHgxPSIxMDAiIHkxPSIzODUiIHgyPSIxODAiIHkyPSIzODUiIHN0cm9rZT0iI2UwZDljZSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHJlY3QgeD0iMTA4IiB5PSIzNDAiIHdpZHRoPSI2NCIgaGVpZ2h0PSI0NCIgcng9IjIiIGZpbGw9IiMyMjIiLz4KICA8cmVjdCB4PSIxMDgiIHk9IjM0MCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjQ0IiByeD0iMiIgc3Ryb2tlPSIjYzlhOTZlIiBzdHJva2Utd2lkdGg9IjEuNSIgZmlsbD0ibm9uZSIvPgogIDxsaW5lIHgxPSIxNDAiIHkxPSIzNDAiIHgyPSIxNDAiIHkyPSIzODQiIHN0cm9rZT0iI2UwZDljZSIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPGxpbmUgeDE9IjExNiIgeTE9IjM1MCIgeDI9IjEzNiIgeTI9IjM1MCIgc3Ryb2tlPSIjNTU1IiBzdHJva2Utd2lkdGg9IjAuNiIvPgogIDxsaW5lIHgxPSIxMTYiIHkxPSIzNTciIHgyPSIxMzYiIHkyPSIzNTciIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLXdpZHRoPSIwLjYiLz4KICA8bGluZSB4MT0iMTE2IiB5MT0iMzY0IiB4Mj0iMTM2IiB5Mj0iMzY0IiBzdHJva2U9IiM1NTUiIHN0cm9rZS13aWR0aD0iMC42Ii8+CiAgPGxpbmUgeDE9IjExNiIgeTE9IjM3MSIgeDI9IjEzNiIgeTI9IjM3MSIgc3Ryb2tlPSIjNTU1IiBzdHJva2Utd2lkdGg9IjAuNiIvPgogIDxsaW5lIHgxPSIxNDQiIHkxPSIzNTAiIHgyPSIxNjQiIHkyPSIzNTAiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLXdpZHRoPSIwLjYiLz4KICA8bGluZSB4MT0iMTQ0IiB5MT0iMzU3IiB4Mj0iMTY0IiB5Mj0iMzU3IiBzdHJva2U9IiM1NTUiIHN0cm9rZS13aWR0aD0iMC42Ii8+CiAgPGxpbmUgeDE9IjE0NCIgeTE9IjM2NCIgeDI9IjE2NCIgeTI9IjM2NCIgc3Ryb2tlPSIjNTU1IiBzdHJva2Utd2lkdGg9IjAuNiIvPgogIDxsaW5lIHgxPSIxNDQiIHkxPSIzNzEiIHgyPSIxNjQiIHkyPSIzNzEiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLXdpZHRoPSIwLjYiLz4KICA8ZWxsaXBzZSBjeD0iMTQwIiBjeT0iMzk1IiByeD0iNDUiIHJ5PSI1IiBmaWxsPSIjMDAwMDAwNTUiLz4KICA8bGluZSB4MT0iNTQwIiB5MT0iMTMwIiB4Mj0iNDgwIiB5Mj0iMjYwIiBzdHJva2U9IiM1NTUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIvPgogIDxsaW5lIHgxPSI1NDAiIHkxPSIxMzAiIHgyPSI2MDAiIHkyPSIyNjAiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIi8+CiAgPGxpbmUgeDE9IjQ2MCIgeTE9IjI2NSIgeDI9IjYyMCIgeTI9IjI2NSIgc3Ryb2tlPSIjZTBkOWNlIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8cmVjdCB4PSI0NjIiIHk9IjIxMCIgd2lkdGg9IjE1NiIgaGVpZ2h0PSI1NSIgcng9IjQiIGZpbGw9IiMxZTFlMWUiLz4KICA8cmVjdCB4PSI0NjIiIHk9IjIxMCIgd2lkdGg9IjE1NiIgaGVpZ2h0PSI1NSIgcng9IjQiIHN0cm9rZT0iI2UwZDljZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIi8+CiAgPGVsbGlwc2UgY3g9IjQ2OCIgY3k9IjIzNyIgcng9IjgiIHJ5PSIyNyIgZmlsbD0iIzFlMWUxZSIgc3Ryb2tlPSIjZTBkOWNlIiBzdHJva2Utd2lkdGg9IjEiLz4KICA8ZWxsaXBzZSBjeD0iNjEyIiBjeT0iMjM3IiByeD0iOCIgcnk9IjI3IiBmaWxsPSIjMWUxZTFlIiBzdHJva2U9IiNlMGQ5Y2UiIHN0cm9rZS13aWR0aD0iMSIvPgogIDxsaW5lIHgxPSI0ODIiIHkxPSIyMjUiIHgyPSI1OTgiIHkyPSIyMjUiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLXdpZHRoPSIwLjYiLz4KICA8bGluZSB4MT0iNDgyIiB5MT0iMjMzIiB4Mj0iNTk4IiB5Mj0iMjMzIiBzdHJva2U9IiM1NTUiIHN0cm9rZS13aWR0aD0iMC42Ii8+CiAgPGxpbmUgeDE9IjQ4MiIgeTE9IjI0MSIgeDI9IjU5OCIgeTI9IjI0MSIgc3Ryb2tlPSIjNTU1IiBzdHJva2Utd2lkdGg9IjAuNiIvPgogIDxsaW5lIHgxPSI0ODIiIHkxPSIyNDkiIHgyPSI1OTgiIHkyPSIyNDkiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLXdpZHRoPSIwLjYiLz4KICA8bGluZSB4MT0iNDgyIiB5MT0iMjU3IiB4Mj0iNTkwIiB5Mj0iMjU3IiBzdHJva2U9IiM1NTUiIHN0cm9rZS13aWR0aD0iMC42Ii8+Cjwvc3ZnPg==",
     link: "scripturalism.html"
   },
@@ -397,31 +397,31 @@ const POSTS = [
     excerpt: "Centuries of councils have spoken about Jesus at great length. But remarkably little time is spent simply listening to what Jesus said about himself, in plain, unambiguous language. His own words. On the record. Then you decide.",
     content: `
 <style>
-.ljs-lead{font-family:'Poppins',Arial,sans-serif;font-size:1.25rem;font-style:italic;color:var(--gold);line-height:1.65;margin-bottom:1.8rem;border-left:2px solid var(--gold);padding-left:1.4rem;}
+.ljs-lead{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;color:var(--gold);line-height:1.65;margin-bottom:1.8rem;border-left:2px solid var(--gold);padding-left:1.4rem;}
 .ljs-divider{display:flex;align-items:center;gap:1rem;margin:2.5rem 0;}
 .ljs-divider::before,.ljs-divider::after{content:'';flex:1;height:0.5px;background:var(--border);}
-.ljs-divider span{font-family:'Poppins',Arial,sans-serif;font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);}
+.ljs-divider span{font-family:'Cormorant Garamond',serif;font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);}
 .ljs-card{background:var(--surface);border:0.5px solid var(--border);border-left:3px solid #8b1a1a;margin-bottom:1.6rem;padding:1.8rem 2rem 1.5rem;transition:background 0.2s;}
 .ljs-card:hover{background:var(--surface-light);}
 .ljs-label{font-size:0.65rem;letter-spacing:0.22em;text-transform:uppercase;color:#c0392b;margin-bottom:0.75rem;}
-.ljs-verse{font-family:'Poppins',Arial,sans-serif;font-size:1.25rem;font-style:italic;color:var(--text-primary);line-height:1.7;margin-bottom:0.75rem;}
+.ljs-verse{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;color:var(--text-primary);line-height:1.7;margin-bottom:0.75rem;}
 .ljs-verse strong{font-style:normal;font-weight:600;color:#e07060;background:rgba(139,26,26,0.15);padding:0 2px;}
 .ljs-note{font-size:0.85rem;color:var(--text-muted);border-top:0.5px solid var(--border);padding-top:0.9rem;margin-top:0.75rem;line-height:1.75;}
 .ljs-question{background:var(--deep-mid);border:0.5px solid var(--border);padding:3rem 2rem;margin:3rem 0;text-align:center;}
 .ljs-q-eyebrow{font-size:0.65rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;}
-.ljs-q-text{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:300;color:var(--text-primary);line-height:1.3;margin-bottom:0.75rem;}
+.ljs-q-text{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:300;color:var(--text-primary);line-height:1.3;margin-bottom:0.75rem;}
 .ljs-q-sub{font-size:0.88rem;font-style:italic;color:var(--text-muted);max-width:480px;margin:0 auto 2rem;}
 .ljs-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
-.ljs-btn{font-family:'Poppins',Arial,sans-serif;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;padding:0.75rem 1.8rem;border:0.5px solid;cursor:pointer;background:transparent;transition:all 0.2s;border-radius:2px;}
+.ljs-btn{font-family:'DM Sans',sans-serif;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;padding:0.75rem 1.8rem;border:0.5px solid;cursor:pointer;background:transparent;transition:all 0.2s;border-radius:2px;}
 .ljs-btn-yes{border-color:var(--gold);color:var(--gold);}
 .ljs-btn-yes:hover{background:rgba(91,141,184,0.15);}
 .ljs-btn-no{border-color:rgba(139,26,26,0.5);color:#8b4a4a;}
 .ljs-btn-no:hover{background:rgba(139,26,26,0.1);color:#c07060;border-color:#c07060;}
-.ljs-resp{display:none;max-width:520px;margin:1.8rem auto 0;padding:1.4rem 1.8rem;border:0.5px solid;font-family:'Poppins',Arial,sans-serif;font-size:1.1rem;font-style:italic;line-height:1.75;text-align:left;}
+.ljs-resp{display:none;max-width:520px;margin:1.8rem auto 0;padding:1.4rem 1.8rem;border:0.5px solid;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;line-height:1.75;text-align:left;}
 .ljs-resp.yes{border-color:var(--gold);color:var(--gold-light);}
 .ljs-resp.no{border-color:#c0392b;color:#e07060;}
 .ljs-closing{margin:2.5rem 0 1rem;padding:2rem 0;border-top:0.5px solid var(--border);}
-.ljs-closing p{font-family:'Poppins',Arial,sans-serif;font-size:1.15rem;font-style:italic;color:var(--text-secondary);margin-bottom:1rem;line-height:1.8;}
+.ljs-closing p{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;color:var(--text-secondary);margin-bottom:1rem;line-height:1.8;}
 .ljs-closing strong{font-style:normal;color:var(--text-primary);}
 </style>
 
@@ -599,7 +599,7 @@ const POSTS = [
 
 <div style="margin:3rem 0;padding:1.6rem 1.8rem;background:rgba(201,168,76,0.06);border:0.5px solid rgba(201,168,76,0.2);border-left:2px solid rgba(201,168,76,0.5);">
   <p style="font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:#C9A84C;margin-bottom:0.75rem;">Editorial Note</p>
-  <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.85;">2:22 Church does not endorse Catholicism, its institutional practices, or any Trinitarian doctrine. The writings of Francis de Sales are cited solely because they contain God-inspired reflection, pure in intent, useful for the edification and uplifting of those who desire to be true disciples of Jesus the Messiah, known in Hebrew as <strong style="color:var(--text-primary);">Yeshua</strong> (יֵשׁוּעַ), rendered in Greek as <strong style="color:var(--text-primary);">Iēsous</strong> (Ἰησοῦς), from which the name Jesus is derived. We test all things by Scripture alone.</p>
+  <p style="font-size:0.88rem;color:#A8A090;line-height:1.85;">2:22 Church does not endorse Catholicism, its institutional practices, or any Trinitarian doctrine. The writings of Francis de Sales are cited solely because they contain God-inspired reflection, pure in intent, useful for the edification and uplifting of those who desire to be true disciples of Jesus the Messiah, known in Hebrew as <strong style="color:#F0EAD6;">Yeshua</strong> (יֵשׁוּעַ), rendered in Greek as <strong style="color:#F0EAD6;">Iēsous</strong> (Ἰησοῦς), from which the name Jesus is derived. We test all things by Scripture alone.</p>
 </div>
     `
   },
