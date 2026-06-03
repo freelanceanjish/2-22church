@@ -232,12 +232,12 @@ a{color:inherit;text-decoration:none;}
     <li><a href="qa.html">Q&amp;A</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
-  <button class="nav-hamburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+  <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 <div class="mobile-menu" id="mobile-menu">
-  <button class="mobile-close" type="button" aria-label="Close menu">&times;</button>
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
   <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
   <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
@@ -553,6 +553,5 @@ document.addEventListener('click',function(e){
     document.querySelectorAll('.nav-item.open').forEach(function(el){el.classList.remove('open');});
 });
 </script>
-<script src="nav.js"></script>
 </body>
 </html>
