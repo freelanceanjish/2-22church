@@ -1,0 +1,16 @@
+name: Theme guard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-theme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify light theme was not regressed
+        run: bash scripts/check-theme.sh
