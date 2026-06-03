@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Scripturalism: The Word Judges History, 2:22 Church</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -20,9 +23,14 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(255,255,255,0.92);backdrop-filter:blur(16px);border-bottom:0.5px solid var(--border);}
-.nav-logo{text-decoration:none;flex-shrink:0;display:inline-flex;align-items:baseline;gap:0.5rem;}
-.nav-logo .logo-text{font-family:'Poppins',Arial,sans-serif;font-size:1rem;font-weight:600;color:var(--text-primary);letter-spacing:0.04em;line-height:1;font-style:normal;}
-.nav-logo .logo-colon{opacity:0.6;font-weight:400;}
+.nav-logo{text-decoration:none;flex-shrink:0;display:inline-flex;align-items:center;gap:0.5rem;}
+.nav-logo .logo-mark{
+  display:grid;place-items:center;flex-shrink:0;
+  width:38px;height:38px;border-radius:50%;
+  background:var(--gold);color:#fff;
+  font-family:'Poppins',Arial,sans-serif;
+  font-size:0.66rem;font-weight:600;letter-spacing:0.005em;line-height:1;font-style:normal;
+}
 .nav-logo .logo-word{font-family:'Poppins',Arial,sans-serif;font-size:0.75rem;font-weight:500;color:var(--text-primary);letter-spacing:0.26em;text-transform:uppercase;font-style:normal;opacity:0.85;padding-left:0.5rem;line-height:1;}
 .nav-links{display:flex;gap:1.4rem;list-style:none;}
 .nav-links li{list-style:none;}
@@ -63,7 +71,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .svg-plate svg{display:block;width:100%;}
 
 /* ARTICLE BODY */
-.article-wrap{max-width:740px;margin:0 auto;padding:5rem 2rem 2rem;}
+.article-wrap{max-width:960px;margin:0 auto;padding:5rem 2rem 2rem;}
 
 /* TYPOGRAPHY */
 h2{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.7rem,3.5vw,2.3rem);font-weight:300;color:var(--text-primary);line-height:1.15;margin-bottom:1.2rem;}
@@ -109,6 +117,7 @@ footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);pa
 .footer-col ul li{margin-bottom:0.65rem;}
 .footer-col ul li a{font-size:0.85rem;color:var(--text-muted);text-decoration:none;transition:color 0.2s;}
 .footer-col ul li a:hover{color:var(--text-primary);}
+footer .nav-logo .logo-mark{background:#fff !important;color:var(--gold) !important;}
 .footer-bottom{max-width:1100px;margin:2rem auto 0;display:flex;align-items:center;justify-content:space-between;font-size:0.78rem;color:var(--text-muted);flex-wrap:wrap;gap:0.5rem;}
 .footer-verse{font-family:'Poppins',Arial,sans-serif;font-style:italic;font-size:0.85rem;color:var(--text-muted);}
 
