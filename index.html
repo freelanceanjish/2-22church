@@ -602,8 +602,9 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 
       <div class="belief-card" data-num="02">
         <h3>Baptism in Jesus Name</h3>
-        <p>The formula of baptism in the apostolic church was never disputed among those who were there. Peter commanded it at Pentecost. Paul re-baptised those who had received only John's baptism. The record of Acts gives us at least three clear witnesses, Peter, Paul, and the household of Cornelius, all baptised in the name of Jesus Christ. This is not a minority tradition. It is the apostolic practice.</p>
+        <p>When Philip met the Ethiopian eunuch on the desert road, the man read Isaiah and asked what it meant. Philip opened the Scriptures, preached Jesus, and at the first pool of water the eunuch said, "Look, here is water. What can stand in the way of my being baptized?" Philip baptized him in the name of Jesus Christ. That is the pattern we follow. Peter commanded it at Pentecost. Paul re-baptised those who had only received John's baptism. The book of Acts gives us witness after witness: Peter, Philip, Paul, and the household of Cornelius, all baptised in the name of Jesus Christ.</p>
         <div class="belief-scriptures">
+          <div class="bs-item"><span class="bs-ref">Acts 8:36-38, Philip and the Ethiopian</span><p>"Why shouldn't I be baptized?" As they traveled along the road, they came to some water and the eunuch said, "Look, here is water." Philip baptized him in the name of Jesus Christ.</p></div>
           <div class="bs-item"><span class="bs-ref">Acts 2:38, Peter</span><p>"Repent and be baptised, every one of you, in the name of Jesus Christ for the forgiveness of your sins."</p></div>
           <div class="bs-item"><span class="bs-ref">Acts 10:48, Peter again</span><p>"So he ordered that they be baptised in the name of Jesus Christ."</p></div>
           <div class="bs-item"><span class="bs-ref">Acts 19:5, Paul</span><p>"On hearing this, they were baptised in the name of the Lord Jesus."</p></div>
@@ -875,13 +876,15 @@ function renderHomepagePosts() {
 }
 
 // Hamburger menu
-var hamburger = document.getElementById('hamburger');
+var hamburger = document.querySelector('.nav-hamburger');
 var mobileMenu = document.getElementById('mobile-menu');
-hamburger.addEventListener('click', function() {
-  hamburger.classList.toggle('open');
-  mobileMenu.classList.toggle('open');
-  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
-});
+if (hamburger && mobileMenu) {
+  hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+  });
+}
 document.querySelectorAll('.mobile-link').forEach(function(link) {
   link.addEventListener('click', function() {
     hamburger.classList.remove('open');
