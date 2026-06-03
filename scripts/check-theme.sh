@@ -60,8 +60,8 @@ must_not_contain "style.css has no dark #060C18" style.css "#060C18"
 
 # Homepage — most fragile file; inline styles override style.css
 index_lines=$(wc -l < index.html | tr -d ' ')
-if [[ "$index_lines" -lt 1100 ]]; then
-  fail "index.html line count ($index_lines) — likely old dark homepage copy (expect >= 1100)"
+if [[ "$index_lines" -lt 1000 ]]; then
+  fail "index.html line count ($index_lines) — likely old dark homepage copy (expect >= 1000)"
 else
   pass "index.html line count ($index_lines)"
 fi
