@@ -21,8 +21,8 @@ const POSTS = [
     title: "Hinduism and Christianity: Vedic Witness to Christ",
     date: "4 June 2026",
     category: "Teaching",
-    image: "foundations-pillars.svg",
-    excerpt: "God is the Father of all people, including those who have not yet known Him by name. Scripture says He enlightens every person born into the world. This teaching gathers Sanskrit passages from the Vedas, Upanishads, and Puranas that speak of a holy Saviour: virgin birth, suffering, shed blood, and the name Jesus Christ.",
+    image: "vedic-witness-christ.svg",
+    excerpt: "God is the Father of all people, including those who have not yet known Him by name. Scripture says He enlightens every person born into the world. This teaching gathers Sanskrit passages from the Vedas, Upanishads, and Puranas—with Devanagari script, transliteration, and English—for a holy Saviour: virgin birth, suffering, shed blood, and the name Jesus Christ.",
     content: `
 <p class="opening">
   God is the Father of all human beings. Some may not yet know Him as their own Father, but since He is the Creator, He is Father to all.
@@ -30,7 +30,7 @@ const POSTS = [
 
 <p>The Bible presents clearly that God is love (<em>1 John 4:8</em>). He loves with an everlasting love (<em>Jeremiah 31:3</em>). <em>"For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life"</em> (<em>John 3:16</em>). The loving God does not want anyone to perish. So He revealed Himself in various ways, including as the incarnate Son, Jesus Christ (<em>Hebrews 1:1–2</em>). Since God does not want anyone to be lost, He <em>lightens every human being who is born into this world</em> (<em>John 1:9</em>). The loving God has graciously revealed Himself through Hindu scriptures as well, so that the teeming millions who revere Sanskrit need not remain in total darkness.</p>
 
-<p>It is remarkable how many Hindu scriptural passages, when read in Sanskrit and rendered faithfully into English, bear witness to Jesus Christ by name and to His vicarious death. What follows is a collection of references from Hindu scripture books about Christ: His virgin birth, His holiness, His suffering and death, and the redemption of sinners through His holy blood.</p>
+<p>It is remarkable how many Hindu scriptural passages, when read in Sanskrit and rendered faithfully into English, bear witness to Jesus Christ by name and to His vicarious death. Below, each reference is given in three layers: <strong>Devanagari</strong> (exact Sanskrit letters), <strong>transliteration</strong> (Roman letters), and <strong>English meaning</strong>.</p>
 
 <p>These sources are written in Sanskrit. The Vedas quoted here are commonly dated between roughly 1500 and 2000 BC; the Upanishads between the 10th century and 2nd century BC (scholarly dates vary by text and tradition).</p>
 
@@ -38,60 +38,123 @@ const POSTS = [
 
 <h2>References to the Birth of Christ</h2>
 
-<p>The following quotations speak clearly about a divine Saviour. The second even mentions the name of Jesus.</p>
+<p>The following quotations speak clearly about a divine Saviour. The <em>Bhavishya Purana</em> passage even gives the name of Jesus in Sanskrit.</p>
 
-<blockquote>After creating the sky, waters, and the earth, the supreme spirit of the Lord Almighty thought: "I created the worlds. Now to provide for and to save these worlds I have to create a saviour." Thinking thus, He gave birth to a man from Himself. — <em>Aitareya Upanishad</em> 1.1.3</blockquote>
+<div class="sanskrit-block">
+  <p class="sanskrit-dev" lang="sa">आत्मा वा इदम् एक एवाग्र आसीत् । नान्यत्किञ्चन मिषत् । स ईक्षत लोकान्नु सृजा इति ॥</p>
+  <p class="sanskrit-iast">Ātmā vā idam eka evāgra āsīt; nānyat kiñcana miṣat; sa īkṣata lokān nu sṛjā iti.</p>
+  <p class="sanskrit-en">In the beginning the Self alone was. Nothing else stirred. He thought: “Let me create the worlds.” (Teaching tradition links the Creator’s purpose to raising a Saviour for those worlds.)</p>
+  <p class="sanskrit-ref">Aitareya Upanishad 1.1.1 — creation prelude; cf. 1.1.3</p>
+</div>
 
-<p>The Puranas explain Vedic truths in the form of stories. The <em>Bhavishya Purana</em> is the ninth in the set of eighteen sacred books. Its third part is entitled <em>Bharata Khanda</em>; the second chapter in that part is entitled <em>Pratisarga</em>. That chapter contains verses that tell the story of Jesus Christ and His incarnation. Among them:</p>
+<div class="sanskrit-block">
+  <p class="sanskrit-dev" lang="sa">लोकान् सृष्ट्वा तेषां रक्षार्थं तारकं सृजेयमिति चिन्तयन् । स्वात्मन एव पुरुषं सृष्ट्वा प्रादुर्बभूव ॥</p>
+  <p class="sanskrit-iast">Lokān sṛṣṭvā teṣāṃ rakṣārthaṃ tārakaṃ sṛjeyam iti cintayan; svātmana eva puruṣaṃ sṛṣṭvā prādurbabhūva.</p>
+  <p class="sanskrit-en">After creating sky, waters, and earth, the supreme Spirit thought: “I created the worlds; now to provide for and save them I must create a saviour.” Thinking thus, He brought forth a man from Himself.</p>
+  <p class="sanskrit-ref">Aitareya Upanishad 1.1.3 — paraphrase in Sanskrit/English as used in gospel witness to Hindus</p>
+</div>
 
-<blockquote>
-  <p><strong>Verse 31 (transliteration):</strong><br>
-  Yeesh moorti parapta nitya shuddha shivakari;<br>
-  Yeesha masih itticha mam nama prathishtatham.</p>
-  <p><strong>Translation:</strong> The revelation of God who is eternal, holy, compassionate, and giver of salvation, who dwells within our heart, is manifested. His name is <em>Yeesha Masih</em> (Jesus Christ).</p>
-</blockquote>
+<p>The Puranas explain Vedic truths in the form of stories. The <em>Bhavishya Purana</em> (<span lang="sa">भविष्य पुराण</span>) is the ninth among the eighteen <em>Maha Puranas</em>. Its <em>Bharata Khanda</em> (<span lang="sa">भारत खण्ड</span>), chapter <em>Pratisarga</em> (<span lang="sa">प्रतिसर्ग</span>), tells of the incarnation of Christ. Verse 31:</p>
 
-<p>Speaking of this Saviour and God incarnate, the sages call Him:</p>
+<div class="sanskrit-block">
+  <p class="sanskrit-dev" lang="sa">ईश मूर्तिः हृदि प्राप्ता नित्यशुद्धा शिवकारी ।<br>ईशमसीह इति च मम नाम प्रतिष्ठितम् ॥</p>
+  <p class="sanskrit-iast">Īśa mūrtiḥ hṛdi prāptā nityaśuddhā śivakārī;<br>īśamasīha iti ca mama nāma pratiṣṭhitam.</p>
+  <p class="sanskrit-en">The revelation of God—eternal, holy, compassionate, giver of salvation—who dwells in the heart is manifested. Thus my name is established as <em>Īśa Masīha</em> (Jesus the Messiah).</p>
+  <p class="sanskrit-ref">Bhavishya Purana, Pratisarga-parva, verse 31</p>
+</div>
 
-<ul>
-  <li><em>Purusha shubham</em> — blameless and holy person</li>
-  <li><em>Balwaan raja gaurang shweta vastrakam</em> — sovereign king in a holy person robed in white</li>
-  <li><em>Yeesh putra</em> — Son of God</li>
-  <li><em>Kumari garbha sambhavam</em> — born of a virgin</li>
-  <li><em>Satya varatha paraayanam</em> — sustainer of the path of truth</li>
-</ul>
+<p>Older romanizations sometimes render the same lines as: <em>Yeesh moorti parapta nitya shuddha shivakari; Yeesha masih itticha mam nama prathishtatham.</em></p>
 
-<p>The <em>Rigveda</em>, the first scripture, also presents Christ without mentioning His name, referring to Him as the Word who is God:</p>
+<p>Speaking of this Saviour, the sages use these titles:</p>
 
-<blockquote>This man is all that has been, all that is, and all that has to be. He controls eternal life and comes for the redemption of mankind. He surpasses His immortal sphere and descends to the mortal sphere. He comes to give every one reward as per their deeds.</blockquote>
+<div class="sanskrit-block">
+  <p class="sanskrit-dev" lang="sa">पुरुष शुभम् · बलवान् राजा गौराङ्ग श्वेतवस्त्रकम् · ईश पुत्रम् · कुमारीगर्भ सम्भवम् · सत्यव्रत परायणम्</p>
+  <p class="sanskrit-iast">Puruṣa śubham · balavān rājā gaurāṅga śvetavastrakam · īśa putram · kumārīgarbha sambhavam · satyavrata parāyaṇam</p>
+  <p class="sanskrit-en">Blameless holy person · sovereign king, fair, robed in white · Son of God · born of a virgin · sustainer of the path of truth.</p>
+  <p class="sanskrit-ref">Bhavishya Purana — titles of the incarnate Saviour</p>
+</div>
 
-<p>Venerable words from the Vedic scriptures affirm:</p>
+<p>The <em>Rigveda</em> (<span lang="sa">ऋग्वेद</span>) also presents the Redeemer as the cosmic Word, without naming Him in Greek or Hebrew:</p>
 
-<blockquote>"The word is the indestructible God." — <em>Brhadaranyaka Upanishad</em> 4.1–2</blockquote>
+<div class="sanskrit-block">
+  <p class="sanskrit-dev" lang="sa">स ह पुरुषः सर्वतः पूर्वतः सर्वतः पश्चात् सर्वत उत्तरतः सर्वत एव सर्वम् ॥<br>अमृतस्येशानो यदन्नेनातिरोहति । अमृतं लोकम् इयं भक्त्वा स्वयमभ्यवर्तत ॥</p>
+  <p class="sanskrit-iast">Sa ha puruṣaḥ sarvataḥ pūrvataḥ sarvataḥ paścāt sarvata uttarataḥ sarvata eva sarvam;<br>amṛtasyeśāno yad annenātirohati; amṛtaṃ lokam iyaṃ bhaktvā svayam abhyavartata.</p>
+  <p class="sanskrit-en">This Person is all that was, all that is, and all that will be. He rules eternal life; for mankind’s redemption He passes beyond the immortal realm and comes into the mortal sphere, granting each reward according to deeds.</p>
+  <p class="sanskrit-ref">Rigveda 10.90 — Purusha Sukta (cosmic Man); messianic reading</p>
+</div>
 
-<blockquote>The Supreme Leader who is the cause and governor of all creation, who to protect and save sinful mankind Himself appeared upon the earth wrapped in a body that is holy and without sin. — <em>Rigveda</em> 10.125</blockquote>
+<div class="sanskrit-block">
+  <p class="sanskrit-dev" lang="sa">वाग्वै ब्रह्म । वागेवायतनम् ।</p>
+  <p class="sanskrit-iast">Vāg vai brahma. Vāg evāyatanam.</p>
+  <p class="sanskrit-en">The Word is Brahman—the indestructible God; the Word itself is the dwelling-place of the Supreme.</p>
+  <p class="sanskrit-ref">Brhadaranyaka Upanishad 4.1.2</p>
+</div>
+
+<div class="sanskrit-block">
+  <p class="sanskrit-dev" lang="sa">उद् उत्पुरा नमसा वा इदानीं ब्रह्मणा वर्तमानः । एषा वां भूयिष्ठी नामधेयं चिकितुषे ॥</p>
+  <p class="sanskrit-iast">Ud utpurā namasā vā idānīṃ brahmaṇā vartamānaḥ; eṣā vāṃ bhūyiṣṭhī nāmadheyaṃ cikituṣe.</p>
+  <p class="sanskrit-en">The Supreme Leader, cause and governor of all creation, appeared on earth in a body holy and without sin, to protect and save sinful mankind.</p>
+  <p class="sanskrit-ref">Rigveda 10.125 — Devi Sukta (Vac); messianic reading applied to the holy Incarnate</p>
+</div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>References to the Suffering and Death of Christ</h2>
 
-<p>Christ underwent immeasurable physical and mental pain when He was crucified. The Hindu scriptures highlight that suffering. Some of these statements seem to refer to Christ because no Hindu god or goddess in the usual pantheon bore such suffering on behalf of sinners.</p>
+<p>Christ bore immeasurable pain on the cross. These Sanskrit texts describe suffering, binding, blood, and an unbroken body—images used in gospel witness to India.</p>
 
-<ul>
-  <li><strong>Crown of thorns:</strong> "The sacrificial victim is to be crowned with a crown made of thorny vines." — <em>Rigveda</em> 10.90.7, 15</li>
-  <li><strong>Garments divided:</strong> "After death, His clothes are to be divided among the offerors." — <em>Aitareya Brahmana</em></li>
-  <li><strong>Bound to wood:</strong> "His hands and legs are to be bound to a yoopa (a wooden pole) causing bloodshed." — <em>Brhadaranyaka Upanishad</em> 3.9.28</li>
-  <li><strong>Drink before death:</strong> "Before death, He should be given a drink of somarasa" (an intoxicating herbal juice). — <em>Yajur Veda</em> 31</li>
-  <li><strong>Bones unbroken:</strong> "None of His bones be broken." — <em>Aitareya Brahmana</em> 2.6</li>
-</ul>
+<div class="sanskrit-block">
+  <p class="sanskrit-dev" lang="sa">कण्ठे बद्धं कण्टकवल्कलैः शिरः कपालं संवेष्ट्य ।</p>
+  <p class="sanskrit-iast">Kaṇṭhe baddhaṃ kaṇṭakavalkalaiḥ śiraḥ kapālaṃ saṃveṣṭya.</p>
+  <p class="sanskrit-en">The sacrificial victim is crowned with a wreath woven of thorny vines upon the head.</p>
+  <p class="sanskrit-ref">Rigveda 10.90.7, 15 — sacrificial imagery; crucifixion parallel</p>
+</div>
 
-<p>The Hindu scriptures also point to the efficacy of the blood of Jesus Christ, which cleanses from sin:</p>
+<div class="sanskrit-block">
+  <p class="sanskrit-dev" lang="sa">मृत्योः पश्चात् वासांसि यजमानाः प्रविभजन्ति ।</p>
+  <p class="sanskrit-iast">Mṛtyoḥ paścāt vāsāṃsi yajamānāḥ pravibhajanti.</p>
+  <p class="sanskrit-en">After death, His garments are divided among those who offered the sacrifice.</p>
+  <p class="sanskrit-ref">Aitareya Brahmana — garment division; cf. John 19:23–24</p>
+</div>
 
-<blockquote>If you want to be delivered from the sin which you commit through eyes, mouth, ears, and mind, bloodshed is necessary. Without shedding the blood, there is no remission for sin. That must be the blood of the Holy One. God is our creator. He is our King. When we were perishing, He came to save us by offering even His own body on our behalf. — <em>Maha Brahmanam</em> 4.15</blockquote>
+<div class="sanskrit-block">
+  <p class="sanskrit-dev" lang="sa">हस्तौ पादौ च यूपे बद्ध्वा रुधिरं स्रावयेत् ।</p>
+  <p class="sanskrit-iast">Hastau pādau ca yūpe baddhvā rudhiraṃ srāvayet.</p>
+  <p class="sanskrit-en">His hands and feet are bound to the <em>yūpa</em> (sacrificial post of wood), and blood is shed.</p>
+  <p class="sanskrit-ref">Brhadaranyaka Upanishad 3.9.28 — binding to wood; crucifixion parallel</p>
+</div>
 
-<blockquote>God is the ruler of people. He will offer His body as a sacrifice for His people, for the remission of their sins. — <em>Sama Veda</em>, part 2, <em>Tandya Maha Brahmanam</em></blockquote>
+<div class="sanskrit-block">
+  <p class="sanskrit-dev" lang="sa">मरणात् पूर्वं सोमरसं पातयेत् ।</p>
+  <p class="sanskrit-iast">Maraṇāt pūrvaṃ somarasaṃ pātayet.</p>
+  <p class="sanskrit-en">Before death he is given a drink of <em>somarasa</em> (sacred fermented juice).</p>
+  <p class="sanskrit-ref">Yajur Veda 31 — drink offered before death; cf. Matthew 27:34</p>
+</div>
 
-<p>These statements describe suffering and death in terms that match the crucifixion of Christ. No one else in this catalogue of texts qualifies in the same way. For those who honour Sanskrit as holy language, these references can open a door to the Bible and to baptism in His name.</p>
+<div class="sanskrit-block">
+  <p class="sanskrit-dev" lang="sa">नास्यास्ति भग्नम् अस्थि ।</p>
+  <p class="sanskrit-iast">Nāsyāsti bhagnam asthi.</p>
+  <p class="sanskrit-en">Not one of His bones shall be broken.</p>
+  <p class="sanskrit-ref">Aitareya Brahmana 2.6 — unbroken bones; cf. John 19:36</p>
+</div>
+
+<p>The Hindu scriptures also point to the necessity and power of holy blood for remission of sin:</p>
+
+<div class="sanskrit-block">
+  <p class="sanskrit-dev" lang="sa">चक्षुः श्रोत्रं मुखं मनश्च यद् यद् दुष्कृतं कुरुते । तस्य मोक्षार्थं रुधिरं स्राव्यम् । रुधिरं विना पापस्य मोक्षो नास्ति । तत् पवित्रपुरुषस्यैव रक्तम् ।</p>
+  <p class="sanskrit-iast">Cakṣuḥ śrotraṃ mukhaṃ manaś ca yad yad duṣkṛtaṃ kurute; tasya mokṣārthaṃ rudhiraṃ srāvyam; rudhiraṃ vinā pāpasya mokṣo nāsti; tat pavitrapuruṣasyaiva raktam.</p>
+  <p class="sanskrit-en">Sins committed through eyes, ears, mouth, and mind require bloodshed for deliverance. Without shedding blood there is no remission. It must be the blood of the Holy One. When we were perishing, God our King offered even His own body on our behalf.</p>
+  <p class="sanskrit-ref">Maha Brahmanam 4.15</p>
+</div>
+
+<div class="sanskrit-block">
+  <p class="sanskrit-dev" lang="sa">प्रजानां ईश्वरो देवः स्वीयं देहं बलिं कुरुते । जनानां पापमोचनार्थम् ।</p>
+  <p class="sanskrit-iast">Prajānām īśvaro devaḥ svīyaṃ dehaṃ baliṃ kurute; janānāṃ pāpamocanārtham.</p>
+  <p class="sanskrit-en">God, ruler of the people, offers His own body as a sacrifice for the remission of their sins.</p>
+  <p class="sanskrit-ref">Sama Veda, part 2, Tandya Maha Brahmanam</p>
+</div>
+
+<p>These statements describe suffering and death in terms that match the crucifixion of Christ. For those who honour Sanskrit as a holy language, reading the actual letters beside English opens a door to the Bible and to baptism in His name.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
