@@ -76,6 +76,23 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 .empty-state{text-align:center;padding:5rem 2rem;color:var(--text-muted);}
 .empty-state p{font-family:'Poppins',Arial,sans-serif;font-size:1.4rem;font-style:italic;}
 
+/* Waiting list */
+.blog-queue{padding:0 2rem 8rem;max-width:1100px;margin:0 auto;}
+.blog-queue-inner{border:0.5px solid var(--border);background:var(--surface);padding:2.5rem 2.8rem;}
+.blog-queue-head{margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:0.5px solid var(--border-subtle);}
+.blog-queue-head .eyebrow{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;}
+.blog-queue-head h2{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:300;line-height:1.2;margin-bottom:0.6rem;}
+.blog-queue-head p{font-size:0.88rem;color:var(--text-secondary);max-width:640px;line-height:1.75;}
+.queue-list{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-subtle);}
+.queue-item{display:grid;grid-template-columns:2.5rem 1fr;gap:1rem;padding:1.25rem 1.4rem;background:var(--surface);align-items:start;}
+.queue-item:hover{background:var(--surface-light);}
+.queue-num{font-family:'Poppins',Arial,sans-serif;font-size:0.72rem;letter-spacing:0.12em;color:var(--gold);padding-top:0.15rem;}
+.queue-body h3{font-family:'Poppins',Arial,sans-serif;font-size:1rem;font-weight:500;line-height:1.35;color:var(--text-primary);margin-bottom:0.35rem;}
+.queue-body p{font-size:0.82rem;color:var(--text-secondary);line-height:1.7;margin-bottom:0.55rem;}
+.queue-meta{display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;}
+.queue-tag{font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);background:rgba(23,42,54,0.08);padding:0.2rem 0.55rem;border-radius:2px;display:inline-block;}
+.queue-soon{font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);border:0.5px solid var(--border);padding:0.2rem 0.55rem;border-radius:2px;display:inline-block;}
+
 /* Footer */
 
  .nav-hamburger-x{flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:4px;z-index:200;}
@@ -97,6 +114,9 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
   .post-count{padding:1rem 1.2rem 0;}
   .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}.footer-brand{grid-column:1/-1;}
   .footer-bottom{flex-direction:column;gap:0.5rem;text-align:center;}
+  .queue-list{grid-template-columns:1fr;}
+  .blog-queue{padding:0 1.2rem 5rem;}
+  .blog-queue-inner{padding:1.8rem 1.4rem;}
 }
 
 /* ── NAV ── */
@@ -210,6 +230,17 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   <div class="posts-grid" id="posts-grid"></div>
   <div class="empty-state" id="empty-state" style="display:none;"><p>No blogs yet, but they are coming.</p></div>
 </div>
+
+<section class="blog-queue" id="blog-queue" aria-label="Upcoming blog topics">
+  <div class="blog-queue-inner">
+    <div class="blog-queue-head">
+      <div class="eyebrow">Waiting List</div>
+      <h2>Topics <em>Coming Soon</em></h2>
+      <p>Thirteen personal reflections queued for the blog. Testimony, discipleship, and the walk of faith.</p>
+    </div>
+    <ol class="queue-list" id="queue-list"></ol>
+  </div>
+</section>
 
 <footer>
   <div class="footer-grid">
@@ -326,6 +357,22 @@ function renderTestimonies() {
 }
 
 renderTestimonies();
+
+function renderQueue() {
+  var list = document.getElementById('queue-list');
+  if (!list || !window.BLOG_QUEUE) return;
+  list.innerHTML = BLOG_QUEUE.map(function(item) {
+    return '<li class="queue-item">'
+      + '<span class="queue-num">' + String(item.num).padStart(2, '0') + '</span>'
+      + '<div class="queue-body">'
+      + '<h3>' + item.title + '</h3>'
+      + '<p>' + item.note + '</p>'
+      + '<div class="queue-meta"><span class="queue-tag">' + item.category + '</span><span class="queue-soon">Coming Soon</span></div>'
+      + '</div></li>';
+  }).join('');
+}
+
+renderQueue();
 </script>
 <script>
 document.addEventListener('click', function(e) {

@@ -89,7 +89,9 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 .queue-num{font-family:'Poppins',Arial,sans-serif;font-size:0.72rem;letter-spacing:0.12em;color:var(--gold);padding-top:0.15rem;}
 .queue-body h3{font-family:'Poppins',Arial,sans-serif;font-size:1rem;font-weight:500;line-height:1.35;color:var(--text-primary);margin-bottom:0.35rem;}
 .queue-body p{font-size:0.82rem;color:var(--text-secondary);line-height:1.7;margin-bottom:0.55rem;}
+.queue-meta{display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;}
 .queue-tag{font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);background:rgba(23,42,54,0.08);padding:0.2rem 0.55rem;border-radius:2px;display:inline-block;}
+.queue-soon{font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);border:0.5px solid var(--border);padding:0.2rem 0.55rem;border-radius:2px;display:inline-block;}
 
 /* Footer */
 
@@ -388,7 +390,7 @@ function renderQueue() {
       + '<div class="queue-body">'
       + '<h3>' + item.title + '</h3>'
       + '<p>' + item.note + '</p>'
-      + '<span class="queue-tag">' + item.category + '</span>'
+      + '<div class="queue-meta"><span class="queue-tag">' + item.category + '</span><span class="queue-soon">Coming Soon</span></div>'
       + '</div></li>';
   }).join('');
 }
