@@ -649,6 +649,93 @@ const POSTS = [
 ];
 
 // ============================================================
+//  BLOG WAITING LIST
+//  Topics queued for future posts. Shown on blog.html.
+//  When you publish one, move it into POSTS above and remove it here.
+// ============================================================
+
+const BLOG_QUEUE = [
+  {
+    num: 1,
+    title: "How I Came to Jesus",
+    category: "Testimony",
+    note: "Personal testimony of coming to faith in Christ."
+  },
+  {
+    num: 2,
+    title: "New Believer, This Is for You",
+    category: "Testimony",
+    note: "How I struggled, stayed consistent, and remained patient with God in faith as a new believer."
+  },
+  {
+    num: 3,
+    title: "Persecution Is Real",
+    category: "Testimony",
+    note: "The cost of following Christ in a world that pushes back."
+  },
+  {
+    num: 4,
+    title: "God and the World",
+    category: "Reflection",
+    note: "How believers still go astray in the world, and why none is good."
+  },
+  {
+    num: 5,
+    title: "Put God First",
+    category: "Teaching",
+    note: "Family, friends, desires, and every competing loyalty."
+  },
+  {
+    num: 6,
+    title: "Praying Isn't a Ritual",
+    category: "Prayer",
+    note: "Prayer is your relationship with God, like talking to your own father. Language doesn't matter."
+  },
+  {
+    num: 7,
+    title: "Getting Into Marriage",
+    category: "Testimony",
+    note: "How God helped me choose my wife."
+  },
+  {
+    num: 8,
+    title: "Manhood",
+    category: "Leadership",
+    note: "What man was created for, and how to balance family."
+  },
+  {
+    num: 9,
+    title: "The Wilderness Is True",
+    category: "Reflection",
+    note: "The stripping seasons God uses to form His people."
+  },
+  {
+    num: 10,
+    title: "There Is Always One Truth",
+    category: "Teaching",
+    note: "Majority doesn't count the truth."
+  },
+  {
+    num: 11,
+    title: "Waiting on God Is Important",
+    category: "Reflection",
+    note: "Why patience before the Lord is not wasted time."
+  },
+  {
+    num: 12,
+    title: "Humble, Kind, Loving, Wise, Understanding",
+    category: "Reflection",
+    note: "The character God is forming in His disciples."
+  },
+  {
+    num: 13,
+    title: "Accepting Mistakes Quickly",
+    category: "Reflection",
+    note: "Quick confession and repentance as restoration of the heart."
+  }
+];
+
+// ============================================================
 //  TEMPLATE, Copy this block to add a new post
 //  Paste it at the TOP of the POSTS array above (after the [)
 // ============================================================
