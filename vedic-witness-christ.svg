@@ -13,10 +13,10 @@
     <line x1="112" y1="152" x2="304" y2="152" opacity="0.28"/>
     <line x1="112" y1="186" x2="316" y2="186" opacity="0.22"/>
     <line x1="112" y1="220" x2="288" y2="220" opacity="0.18"/>
-    <!-- Cross -->
-    <line x1="520" y1="108" x2="520" y2="292"/>
-    <line x1="452" y1="200" x2="588" y2="200"/>
-    <circle cx="520" cy="200" r="88" stroke-width="1.25" opacity="0.2"/>
+    <!-- Latin cross (long vertical, short horizontal in upper third — not a plus) -->
+    <line x1="520" y1="92" x2="520" y2="308"/>
+    <line x1="468" y1="148" x2="572" y2="148"/>
+    <circle cx="520" cy="168" r="92" stroke-width="1.25" opacity="0.2"/>
   </g>
 
   <!-- Devanagari via numeric entities (reliable when served as img) -->
