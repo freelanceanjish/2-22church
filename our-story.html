@@ -11,37 +11,54 @@
 <link rel="stylesheet" href="style.css">
 <style>
 /* OUR STORY, page specific only */
-.story-body{max-width:900px;margin:0 auto;padding:5rem 2rem 8rem;}
-.story-opening{max-width:740px;margin:0 auto 5rem;text-align:center;}
-.declaration{font-size:1.15rem;color:var(--text-primary);line-height:2;margin-bottom:1.6rem;}
-.declaration strong{color:var(--gold);}
-.journey{font-size:1rem;color:var(--text-secondary);line-height:1.95;margin-bottom:1.6rem;}
-.journey strong{color:var(--text-primary);}
-.truth-line{font-family:'Poppins',Arial,sans-serif;font-size:1.4rem;font-style:italic;color:var(--gold);line-height:1.7;margin-bottom:1.6rem;}
-.babylon{font-family:'Poppins',Arial,sans-serif;font-size:1.1rem;font-style:italic;color:var(--text-primary);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);padding:1.2rem 0;margin-top:0.5rem;}
-.babylon strong{font-style:normal;color:var(--gold);}
-.story-section{margin-bottom:5.5rem;}
-.story-section h2{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:300;line-height:1.2;margin-bottom:1.2rem;}
+.story-body{max-width:980px;margin:0 auto;padding:4.5rem 2rem 7rem;}
+
+/* Opening */
+.story-opening{max-width:760px;margin:0 auto 5.5rem;text-align:center;}
+.declaration{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.3rem,2.6vw,1.7rem);font-weight:300;color:var(--text-primary);line-height:1.65;margin-bottom:1.8rem;letter-spacing:-0.01em;}
+.declaration strong{color:var(--gold);font-weight:500;}
+.journey{font-size:1.02rem;color:var(--text-secondary);line-height:1.95;margin:0 auto 2rem;max-width:660px;}
+.journey strong{color:var(--text-primary);font-weight:500;}
+.truth-line{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.25rem,2.4vw,1.55rem);font-style:italic;color:var(--gold);line-height:1.55;margin-bottom:2.2rem;}
+.babylon{font-family:'Poppins',Arial,sans-serif;font-size:1.12rem;font-style:italic;color:var(--text-primary);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);padding:1.5rem 0;margin:0 auto;max-width:560px;line-height:1.7;}
+.babylon strong{font-style:normal;color:var(--gold);font-weight:500;}
+
+/* Sections */
+.story-section{margin-bottom:5rem;}
+.story-section .section-label{margin-bottom:0.9rem;}
+.story-section h2{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:300;line-height:1.15;letter-spacing:-0.02em;margin-bottom:1.3rem;}
 .story-section h2 em{font-style:italic;color:var(--gold);}
-.story-section p{color:var(--text-secondary);font-size:1rem;line-height:1.9;margin-bottom:1.1rem;}
-.scripture-block{background:var(--surface);border:0.5px solid var(--border);border-left:2px solid var(--gold);padding:1.6rem 2rem;margin:2rem 0;}
+.story-section>p{color:var(--text-secondary);font-size:1.02rem;line-height:1.95;margin-bottom:1.1rem;max-width:760px;}
+
+/* Scripture */
+.scripture-block{background:var(--surface);border:0.5px solid var(--border);border-left:3px solid var(--gold);border-radius:6px;padding:1.7rem 2rem;margin:2.4rem 0;}
 .scripture-ref{font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;display:block;}
-.scripture-text{font-family:'Poppins',Arial,sans-serif;font-size:1.05rem;font-style:italic;line-height:1.75;color:var(--text-primary);}
-.conclusions{margin-top:2.5rem;}
-.conclusion-item{display:flex;gap:1.5rem;align-items:flex-start;margin-bottom:2.4rem;padding-bottom:2.4rem;border-bottom:0.5px solid var(--border-subtle);}
-.conclusion-item:last-child{border-bottom:none;}
-.c-num{font-family:'Poppins',Arial,sans-serif;font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;flex-shrink:0;min-width:2rem;opacity:0.7;}
+.scripture-text{font-family:'Poppins',Arial,sans-serif;font-size:1.08rem;font-style:italic;line-height:1.75;color:var(--text-primary);}
+
+/* Conclusions, card grid */
+.conclusions{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:0.5px solid var(--border);border-radius:8px;overflow:hidden;margin-top:2.6rem;}
+.conclusion-item{display:flex;gap:1.1rem;align-items:flex-start;background:var(--surface);padding:1.8rem 1.8rem;margin:0;border:none;transition:background 0.2s;}
+.conclusion-item:hover{background:var(--surface-light);}
+.c-num{font-family:'Poppins',Arial,sans-serif;font-size:1.55rem;font-weight:300;color:var(--gold);line-height:1;flex-shrink:0;min-width:1.6rem;opacity:0.55;}
 .c-body{flex:1;}
-.c-title{font-family:'Poppins',Arial,sans-serif;font-size:1.2rem;font-weight:400;color:var(--text-primary);margin-bottom:0.4rem;line-height:1.3;}
-.c-title a{color:var(--text-primary);text-decoration:none;border-bottom:0.5px solid rgba(201,168,76,0.4);transition:color 0.2s;}
-.c-title a:hover{color:var(--gold);}
-.c-desc{font-size:0.9rem;color:var(--text-secondary);line-height:1.8;}
-.story-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--border);margin:2rem 0;}
-.s-card{background:var(--surface);padding:1.8rem 2rem;}
-.s-card h3{font-family:'Poppins',Arial,sans-serif;font-size:1.1rem;font-weight:400;color:var(--text-primary);margin-bottom:0.5rem;}
+.c-title{font-family:'Poppins',Arial,sans-serif;font-size:1.08rem;font-weight:500;color:var(--text-primary);margin-bottom:0.5rem;line-height:1.35;}
+.c-title a{color:var(--text-primary);text-decoration:none;border-bottom:0.5px solid rgba(23,42,54,0.25);transition:color 0.2s,border-color 0.2s;}
+.c-title a:hover{color:var(--gold);border-color:var(--gold);}
+.c-desc{font-size:0.88rem;color:var(--text-secondary);line-height:1.75;}
+
+/* Why we share cards */
+.story-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:0.5px solid var(--border);border-radius:8px;overflow:hidden;margin:2.4rem 0;}
+.s-card{background:var(--surface);padding:1.9rem 2rem;transition:background 0.2s;}
+.s-card:hover{background:var(--surface-light);}
+.s-card h3{font-family:'Poppins',Arial,sans-serif;font-size:1.15rem;font-weight:400;color:var(--text-primary);margin-bottom:0.55rem;}
 .s-card h3 em{color:var(--gold);font-style:italic;}
-.s-card p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;}
-@media(max-width:640px){.story-cards{grid-template-columns:1fr;}.conclusion-item{gap:1rem;}}
+.s-card p{font-size:0.86rem;color:var(--text-muted);line-height:1.75;}
+
+@media(max-width:720px){
+  .conclusions{grid-template-columns:1fr;}
+  .story-cards{grid-template-columns:1fr;}
+  .conclusion-item{gap:1rem;}
+}
 </style>
 </head>
 <body>

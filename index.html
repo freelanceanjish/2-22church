@@ -457,7 +457,8 @@ section.about{padding-top:7.5rem;}
   margin:0 auto;
   border-radius:12px;
 }
-.home-figure.home-figure-foundation img{max-width:440px;}
+.home-figure.home-figure-foundation{padding:2rem;}
+.home-figure.home-figure-foundation img{max-width:100%;width:100%;}
 .home-figure.home-figure-visions img{max-width:300px;border-radius:14px;}
 .home-figure.home-figure-distinction{padding:1.6rem;}
 
@@ -489,6 +490,32 @@ section.about{padding-top:7.5rem;}
 .foundation-box p{margin:0;color:var(--text-secondary);font-size:0.95rem;line-height:1.7;}
 /* Hero now showcases two scriptures only */
 .home-hero .hero-info-grid{align-content:center;}
+
+/* STANDALONE CALL SECTION (moved out of We Proclaim) */
+.proclaim-call{
+  background:var(--deep-mid);
+  border-top:0.5px solid var(--border-subtle);
+  border-bottom:0.5px solid var(--border-subtle);
+}
+.proclaim-call-inner{max-width:780px;margin:0 auto;text-align:center;}
+.proclaim-call .pc-eyebrow{
+  display:inline-block;font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;
+  color:var(--gold);font-weight:500;margin-bottom:1.4rem;
+}
+.proclaim-call .pc-statement{
+  font-family:'Poppins',Arial,sans-serif;
+  font-size:clamp(1.5rem,3.2vw,2.2rem);font-weight:300;font-style:italic;
+  line-height:1.45;color:var(--text-primary);margin:0 auto 1.4rem;max-width:680px;
+}
+.proclaim-call .pc-statement strong{font-style:normal;font-weight:600;color:var(--gold);}
+.proclaim-call .pc-sub{
+  font-size:1rem;color:var(--text-secondary);line-height:1.85;
+  max-width:560px;margin:0 auto 1.5rem;
+}
+.proclaim-call .pc-sub strong{color:var(--text-primary);font-weight:500;}
+.proclaim-call .pc-refs{
+  display:inline-block;font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);
+}
 
 </style>
 </head>
@@ -635,7 +662,7 @@ section.about{padding-top:7.5rem;}
     <div style="margin-top:3rem;border-top:0.5px solid var(--border);padding-top:3rem;">
 
       <!-- Proclaim label -->
-      <p style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:2.5rem;border-left:2px solid var(--gold);padding-left:0.75rem;">To Proclaim</p>
+      <p style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:2.5rem;border-left:2px solid var(--gold);padding-left:0.75rem;">We Proclaim</p>
 
       <!-- Two-column: rich text left, diagram right -->
       <div class="proclaim-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
@@ -646,7 +673,7 @@ section.about{padding-top:7.5rem;}
           <!-- Belief 1: One God -->
           <div style="margin-bottom:2rem;padding-bottom:2rem;border-bottom:0.5px solid var(--border-subtle);">
             <div style="font-family:'Poppins',Arial,sans-serif;font-size:1.65rem;font-weight:300;line-height:1.2;margin-bottom:0.6rem;">
-              We believe in <em style="color:var(--gold);font-style:italic;">One True God</em>
+              We believe in <em style="color:var(--gold);font-style:italic;font-weight:700;">One True God</em>
             </div>
             <p style="font-size:0.87rem;color:var(--text-secondary);line-height:1.85;">
               One and none other, to whom Jesus himself declared:
@@ -660,7 +687,7 @@ section.about{padding-top:7.5rem;}
           <!-- Belief 2: Jesus -->
           <div style="margin-bottom:2rem;padding-bottom:2rem;border-bottom:0.5px solid var(--border-subtle);">
             <div style="font-family:'Poppins',Arial,sans-serif;font-size:1.65rem;font-weight:300;line-height:1.2;margin-bottom:0.6rem;">
-              We believe in <em style="color:var(--gold);font-style:italic;">Jesus Christ, God&#8217;s Son</em>
+              We believe in <em style="color:var(--gold);font-style:italic;font-weight:700;">Jesus Christ, God&#8217;s Son</em>
             </div>
             <p style="font-size:0.87rem;color:var(--text-secondary);line-height:1.85;">
               Whom the Father made <strong style="color:var(--text-primary);font-weight:500;">Lord and Saviour</strong> over and of us all —
@@ -670,46 +697,17 @@ section.about{padding-top:7.5rem;}
           </div>
 
           <!-- Belief 3: Holy Spirit -->
-          <div style="margin-bottom:2rem;padding-bottom:2rem;border-bottom:0.5px solid var(--border-subtle);">
+          <div>
             <div style="font-family:'Poppins',Arial,sans-serif;font-size:1.65rem;font-weight:300;line-height:1.2;margin-bottom:0.6rem;">
-              The Holy Spirit is <em style="color:var(--gold);font-style:italic;">the Spirit of God Himself</em>
+              The Holy Spirit is <em style="color:var(--gold);font-style:italic;font-weight:700;">the Spirit of God Himself</em>
             </div>
             <p style="font-size:0.87rem;color:var(--text-secondary);line-height:1.85;margin-bottom:0.6rem;">
               Not a third person, but the very breath, power, and presence of God:
             </p>
             <p style="font-family:'Poppins',Arial,sans-serif;font-size:1.1rem;color:var(--text-primary);letter-spacing:0.04em;line-height:1.6;">
-              <em>Indivisible.&nbsp; Inseparable.&nbsp; Unpartable.</em>
+              <em style="font-weight:700;">Indivisible.&nbsp; Inseparable.&nbsp; Unpartable.</em>
             </p>
             <span style="font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.6rem;">1 Cor 2:11 &nbsp;·&nbsp; Zech 4:6 &nbsp;·&nbsp; 2 Cor 3:17</span>
-          </div>
-
-          <!-- Worship -->
-          <div style="margin-bottom:2rem;padding-bottom:2rem;border-bottom:0.5px solid var(--border-subtle);">
-            <div style="font-family:'Poppins',Arial,sans-serif;font-size:1.65rem;font-weight:300;line-height:1.2;margin-bottom:0.6rem;">
-              True <em style="color:var(--gold);font-style:italic;">Worship</em> begins within
-            </div>
-            <p style="font-size:0.87rem;color:var(--text-secondary);line-height:1.85;">
-              Not expensive instruments. Not high production. Not a skilled choir.<br>
-              What God requires is a <strong style="color:var(--text-primary);font-weight:500;">devoted, broken, and poor heart</strong> —
-              tamed for eternity, not performance.
-            </p>
-            <blockquote style="font-family:'Poppins',Arial,sans-serif;font-style:italic;font-size:1.05rem;color:var(--text-primary);border-left:2px solid rgba(23,42,54,0.24);padding:0.6rem 1rem;margin:0.85rem 0 0.6rem;line-height:1.7;">
-              &#8220;I will not offer burnt offerings to the LORD my God that cost me nothing.&#8221;
-            </blockquote>
-            <span style="font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.6rem;">2 Samuel 24:24 &nbsp;·&nbsp; Matthew 15:8&#8211;9 &nbsp;·&nbsp; 2 Timothy 3:5</span>
-          </div>
-
-          <!-- Closing call, pull quote -->
-          <div style="background:rgba(91,141,184,0.06);border-left:2px solid var(--gold);padding:1.2rem 1.5rem;">
-            <p style="font-family:'Poppins',Arial,sans-serif;font-size:1.15rem;font-style:italic;color:var(--text-primary);line-height:1.8;margin-bottom:0.75rem;">
-              We are <strong style="font-style:normal;font-weight:400;color:var(--gold);">the voice in the days of delusion</strong> —
-              calling everyone back to Truth, asking them to separate themselves from the world.
-            </p>
-            <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.75;">
-              Burdened to <strong style="color:var(--text-primary);font-weight:500;">expose the darkness</strong> and call
-              for fruitless deeds to be brought to light.
-            </p>
-            <span style="font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.75rem;">Revelation 18:4 &nbsp;·&nbsp; Ephesians 5:11</span>
           </div>
 
         </div><!-- /left proclamation -->
@@ -728,6 +726,17 @@ section.about{padding-top:7.5rem;}
 
     </div><!-- /proclaim row -->
 
+  </div>
+</section>
+
+<section class="proclaim-call">
+  <div class="container">
+    <div class="proclaim-call-inner">
+      <span class="pc-eyebrow">Our Call</span>
+      <p class="pc-statement">We are <strong>the voice in the days of delusion</strong> &#8212; calling everyone back to Truth, asking them to separate themselves from the world.</p>
+      <p class="pc-sub">Burdened to <strong>expose the darkness</strong> and call for fruitless deeds to be brought to light.</p>
+      <span class="pc-refs">Revelation 18:4 &nbsp;&#183;&nbsp; Ephesians 5:11</span>
+    </div>
   </div>
 </section>
 
@@ -770,13 +779,17 @@ section.about{padding-top:7.5rem;}
       </div>
 
       <div class="belief-card" data-num="03">
-        <h3>The Living Church</h3>
+        <h3>Living Church &amp; Worship</h3>
         <p>Community halls, expensive buildings, theatres and auditoriums were never at the heart of God. People were. The apostles met in homes, in the temple courts, by riversides, in upper rooms, in marketplaces, in prisons. What made it the church was never the address. It was the people gathered, the Spirit present, and the name of Jesus honoured among them.</p>
+        <p>And true worship begins within. Not expensive instruments, not high production, not a skilled choir. What God requires is a <strong style="color:var(--text-primary);font-weight:500;">devoted, broken, and poor heart</strong>, tamed for eternity, not performance.</p>
         <div class="belief-scriptures">
           <div class="bs-item"><span class="bs-ref">Acts 2:46</span><p>"Every day they continued to meet together in the temple courts. They broke bread in their homes and ate together with glad and sincere hearts."</p></div>
           <div class="bs-item"><span class="bs-ref">Romans 16:5, Paul</span><p>"Greet also the church that meets at their house."</p></div>
           <div class="bs-item"><span class="bs-ref">Colossians 4:15</span><p>"Give my greetings to the brothers and sisters at Laodicea, and to Nympha and the church in her house."</p></div>
           <div class="bs-item"><span class="bs-ref">Matthew 18:20</span><p>"For where two or three gather in my name, there am I with them."</p></div>
+          <div class="bs-item"><span class="bs-ref">2 Samuel 24:24, David</span><p>"I will not offer burnt offerings to the LORD my God that cost me nothing."</p></div>
+          <div class="bs-item"><span class="bs-ref">Matthew 15:8-9</span><p>"These people honour me with their lips, but their hearts are far from me. They worship me in vain."</p></div>
+          <div class="bs-item"><span class="bs-ref">2 Timothy 3:5</span><p>"Having a form of godliness but denying its power. Have nothing to do with such people."</p></div>
         </div>
       </div>
 
