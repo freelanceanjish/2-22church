@@ -303,6 +303,10 @@ footer .nav-logo .logo-mark{background:#fff !important;color:var(--gold) !import
 .footer-col ul li a{font-size:0.85rem;text-decoration:none;transition:color 0.2s;}
 .footer-col ul li a:hover{color:#fff !important;}
 .footer-bottom{max-width:1120px;margin:2rem auto 0;display:flex;align-items:center;justify-content:space-between;font-size:0.78rem;flex-wrap:wrap;gap:0.5rem;}
+.footer-social{display:flex;align-items:center;gap:0.6rem;margin-bottom:0.9rem;}
+.footer-social a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.82) !important;text-decoration:none;transition:background 0.2s,color 0.2s,border-color 0.2s,transform 0.2s;}
+.footer-social a:hover{background:#fff;color:var(--gold-dark) !important;border-color:#fff;transform:translateY(-1px);}
+.footer-social svg{width:18px;height:18px;fill:currentColor;display:block;}
 
 /* RESPONSIVE */
 @media(max-width:980px){
