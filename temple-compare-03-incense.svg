@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="260" viewBox="0 0 680 260" role="img">
+  <rect width="680" height="260" fill="#EEF4F7"/>
+  <text x="340" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="0.14em" fill="#172A36">03 · INCENSE OFFERING</text>
+  <line x1="340" y1="40" x2="340" y2="230" stroke="#172A36" stroke-width="1" opacity="0.2"/>
+  <text x="170" y="52" text-anchor="middle" font-size="9" font-weight="700" fill="#172A36">DHjPA</text>
+  <text x="510" y="52" text-anchor="middle" font-size="9" font-weight="700" fill="#172A36">KETORET</text>
+  <g fill="none" stroke="#172A36" stroke-width="1.2" opacity="0.5">
+    <path d="M150 200 Q155 160 160 130 Q165 100 170 75"/>
+    <path d="M175 200 Q180 155 185 125 Q190 95 195 70"/>
+    <path d="M190 200 Q192 165 194 140"/>
+  </g>
+  <g fill="none" stroke="#172A36" stroke-width="1.2" opacity="0.5">
+    <path d="M490 200 Q495 160 500 130 Q505 100 510 75"/>
+    <path d="M515 200 Q520 155 525 125"/>
+  </g>
+  <rect x="148" y="198" width="44" height="10" fill="#172A36"/>
+  <rect x="488" y="198" width="44" height="10" fill="#172A36" rx="1"/>
+  <rect x="130" y="208" width="80" height="6" fill="#172A36" opacity="0.3"/>
+  <rect x="470" y="208" width="80" height="6" fill="#172A36" opacity="0.3"/>
+  <text x="170" y="232" text-anchor="middle" font-size="8" fill="#47545B">Guggulu · camphor · sandal</text>
+  <text x="510" y="232" text-anchor="middle" font-size="8" fill="#47545B">Golden altar before veil · 2× daily</text>
+  <rect x="155" y="175" width="30" height="22" fill="#FFF" stroke="#172A36"/>
+  <rect x="495" y="172" width="36" height="26" fill="#FFF" stroke="#172A36"/>
+  <text x="170" y="188" text-anchor="middle" font-size="6" fill="#172A36">dhkpa</text>
+  <text x="513" y="188" text-anchor="middle" font-size="6" fill="#172A36">ketoret</text>
+</svg>
