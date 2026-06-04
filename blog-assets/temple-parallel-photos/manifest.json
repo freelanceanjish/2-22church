@@ -1,0 +1,17 @@
+{
+  "license_note": "Images from Wikimedia Commons under CC BY-SA or compatible licenses. Attribution in page credits.",
+  "sections": {
+    "01": {"hindu": "01-garbhagriha-interior.jpg", "hebrew": "01-ark-timna-replica.jpg", "extra": ["01-temple-mandapa-khajuraho.jpg", "01-tabernacle-timna-court.jpg", "01-garbhagriha-aihole.jpg"]},
+    "02": {"hindu": "02-ganges-ritual-bath.jpg", "hebrew": "02-mikveh-qumran.jpg"},
+    "03": {"hindu": "03-temple-incense-india.jpg", "hebrew": "01-tabernacle-timna-court.jpg"},
+    "04": {"hindu": "04-sashtanga-pranam.jpg", "hebrew": "04-jewish-prayer-western-wall.jpg"},
+    "05": {"hindu": "05-akhanda-deepam-lamps.jpg", "hebrew": "05-menorah-tabernacle.jpg"},
+    "06": {"hindu": "06-naivedyam-offering.jpg", "hebrew": "06-showbread-tabernacle.jpg"},
+    "07": {"hindu": "07-upanayana-thread-ceremony.jpg", "hebrew": "07-tzitzit-tallit.jpg"},
+    "08": {"hindu": "08-abhishekam-shiva.jpg", "hebrew": "08-anointing-oil-bible.jpg"},
+    "09": {"hindu": "09-india-harvest-festival.jpg", "hebrew": "09-bikkurim-first-fruits.jpg"},
+    "10": {"hindu": "10-holi-bonfire.jpg", "hebrew": "10-bronze-altar-timna.jpg"},
+    "11": {"hindu": "11-dnyaneshwar-palkhi.jpg", "hebrew": "11-ark-carrying-illustration.jpg", "extra": ["11-tukaram-palkhi.jpg"]}
+  },
+  "hero": ["hero-meenakshi-gopuram.jpg", "hero-rath-yatra.jpg", "01-garbhagriha-interior.jpg"]
+}

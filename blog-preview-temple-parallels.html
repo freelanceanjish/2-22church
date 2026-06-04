@@ -15,29 +15,27 @@
   --deep:#FFFFFF;--deep-mid:#F4F7F5;--surface:#FFFFFF;--surface-light:#EEF4F7;
   --text-primary:#0E0E0E;--text-secondary:#47545B;--text-muted:#778187;
   --border:rgba(23,42,54,0.14);--border-subtle:rgba(14,14,14,0.08);
+  --shadow:0 20px 60px rgba(23,42,54,0.18);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--text-primary);line-height:1.75;font-weight:300;}
 
-.preview-banner{
-  position:sticky;top:0;z-index:200;
-  background:#0D171F;color:#EAF1F4;
-  text-align:center;padding:0.65rem 1rem;
-  font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;
-}
+.preview-banner{position:sticky;top:0;z-index:200;background:#0D171F;color:#EAF1F4;text-align:center;padding:0.65rem 1rem;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;}
 .preview-banner strong{color:#fff;font-weight:500;}
 
-.post-hero{padding:5rem 2rem 4rem;background:var(--deep-mid);border-bottom:0.5px solid var(--border-subtle);max-width:960px;margin:0 auto;}
+.post-hero{padding:5.5rem 2rem 3rem;background:linear-gradient(180deg,var(--deep-mid) 0%,var(--deep) 100%);border-bottom:0.5px solid var(--border-subtle);max-width:1140px;margin:0 auto;}
 .post-meta{display:flex;align-items:center;gap:0.75rem;margin-bottom:1.5rem;flex-wrap:wrap;}
 .blog-tag{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);background:rgba(23,42,54,0.08);padding:0.25rem 0.65rem;border-radius:2px;}
 .blog-date{font-size:0.72rem;color:var(--text-muted);}
-.post-title{font-size:clamp(1.8rem,5vw,3.2rem);font-weight:300;line-height:1.12;margin-bottom:1.5rem;}
-.post-excerpt{font-size:1.15rem;font-style:italic;color:var(--text-secondary);border-left:2px solid var(--gold);padding-left:1.4rem;line-height:1.65;}
+.post-title{font-size:clamp(2rem,5vw,3.4rem);font-weight:300;line-height:1.1;margin-bottom:1.25rem;letter-spacing:-0.02em;}
+.post-excerpt{font-size:1.12rem;font-style:italic;color:var(--text-secondary);border-left:3px solid var(--gold);padding-left:1.4rem;line-height:1.7;max-width:52rem;}
 
-.post-cover{max-width:960px;margin:0 auto;padding:0 2rem;}
-.post-cover img{width:100%;display:block;object-fit:contain;background:var(--deep-mid);border:0.5px solid var(--border);border-radius:4px;padding:1rem;}
+.hero-mosaic{max-width:1140px;margin:0 auto;padding:0 1.5rem 2.5rem;display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:220px 220px;gap:0.65rem;}
+.hero-mosaic img{width:100%;height:100%;object-fit:cover;border-radius:6px;box-shadow:var(--shadow);}
+.hero-mosaic .hero-main{grid-row:1/3;grid-column:1;}
+.hero-mosaic .hero-cap{grid-column:1/-1;font-size:0.72rem;color:var(--text-muted);text-align:center;padding-top:0.35rem;}
 
-.post-body{max-width:960px;margin:0 auto;padding:4rem 2rem 8rem;}
+.post-body{max-width:1140px;margin:0 auto;padding:3.5rem 1.5rem 8rem;}
 .post-body p{font-size:1.05rem;color:var(--text-secondary);line-height:1.9;margin-bottom:1.5rem;}
 .post-body h2{font-size:1.75rem;font-weight:300;color:var(--text-primary);margin:2.5rem 0 1rem;line-height:1.2;}
 .post-body h3{font-size:1.25rem;font-weight:400;margin:1.5rem 0 0.75rem;}
@@ -51,19 +49,35 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 .divider::before,.divider::after{content:'';flex:1;height:0.5px;background:var(--border);}
 .divider-mark{color:var(--gold);font-size:1.1rem;}
 
-.compare-figure{margin:1.75rem 0 2.25rem;}
-.compare-figure img{width:100%;min-height:120px;border:0.5px solid var(--border);border-radius:4px;background:var(--surface-light);}
-.post-cover img{min-height:200px;}
-.compare-caption{font-size:0.8rem;color:var(--text-muted);margin-top:0.75rem;line-height:1.6;text-align:center;}
-.topic-compare{margin:0 0 2rem;}
-.topic-compare img{width:100%;display:block;}
-.photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2rem 0;}
-.photo-pair figure{margin:0;}
-.photo-pair img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;border:0.5px solid var(--border);}
-.photo-pair figcaption{font-size:0.72rem;color:var(--text-muted);margin-top:0.5rem;line-height:1.5;}
-.photo-pair .dev-label{font-family:'Noto Sans Devanagari',sans-serif;font-size:0.85rem;color:var(--gold);display:block;margin-bottom:0.25rem;}
 .sanskrit-inline{font-family:'Noto Sans Devanagari',sans-serif;font-weight:500;color:var(--text-primary);}
-@media(max-width:600px){.photo-pair{grid-template-columns:1fr;}}
+
+.section-block{margin:3.5rem 0 4rem;padding:0;border-top:0.5px solid var(--border-subtle);}
+.section-block .section{margin-top:0;}
+.section-block .section h2{font-size:clamp(1.6rem,3.5vw,2.2rem);}
+
+.visual-compare{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.75rem 0 1.25rem;}
+.visual-panel{position:relative;margin:0;border-radius:8px;overflow:hidden;box-shadow:var(--shadow);min-height:340px;background:#0D171F;}
+.visual-panel img{width:100%;height:100%;min-height:340px;object-fit:cover;display:block;transition:transform 0.5s ease;}
+.visual-panel:hover img{transform:scale(1.03);}
+.visual-label{position:absolute;left:0;right:0;bottom:0;padding:2.8rem 1.2rem 1.1rem;background:linear-gradient(0deg,rgba(13,23,31,0.92) 0%,rgba(13,23,31,0.55) 55%,transparent 100%);color:#fff;}
+.visual-dev,.visual-heb{display:block;font-family:'Noto Sans Devanagari',sans-serif;font-size:1.15rem;font-weight:600;margin-bottom:0.35rem;letter-spacing:0.02em;}
+.visual-heb{font-family:'Poppins',Arial,sans-serif;font-size:1rem;letter-spacing:0.08em;}
+.visual-cap{display:block;font-size:0.78rem;line-height:1.45;opacity:0.92;font-weight:300;}
+.visual-panel--hindu .visual-label{border-top:3px solid rgba(234,241,244,0.35);}
+.visual-panel--hebrew .visual-label{border-top:3px solid rgba(234,241,244,0.35);}
+.visual-summary{font-size:0.95rem;color:var(--text-muted);font-style:italic;margin:0 0 1.75rem;padding:0.9rem 1.2rem;background:var(--surface-light);border-left:3px solid var(--gold);border-radius:0 6px 6px 0;}
+
+.photo-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:0.65rem;margin:2rem 0;}
+.photo-strip img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px;box-shadow:0 8px 28px rgba(23,42,54,0.12);}
+.photo-strip figcaption{grid-column:1/-1;font-size:0.72rem;color:var(--text-muted);}
+
+.research-box{margin:2rem 0;padding:1.8rem 2rem;background:var(--surface);border:0.5px solid var(--border);border-radius:8px;box-shadow:0 4px 24px rgba(23,42,54,0.06);}
+.research-box h3{font-size:1.1rem;font-weight:500;color:var(--gold);margin-bottom:0.75rem;letter-spacing:0.06em;text-transform:uppercase;}
+.research-box p{font-size:0.95rem;margin-bottom:0.75rem;}
+.research-box p:last-child{margin-bottom:0;}
+
+.photo-credits{margin-top:4rem;padding:2rem;background:var(--deep-mid);border-radius:8px;font-size:0.78rem;color:var(--text-muted);line-height:1.7;}
+.photo-credits h3{font-size:0.85rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;}
 
 .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:0.5px solid var(--border);margin:2rem 0;border-radius:4px;overflow:hidden;}
 .compare-col{background:var(--surface);padding:1.4rem 1.6rem;}
@@ -101,17 +115,24 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
   overflow-x:auto;
 }
 
+@media(max-width:900px){
+  .visual-compare,.compare-grid{grid-template-columns:1fr;}
+  .hero-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px;}
+  .hero-mosaic .hero-main{grid-row:auto;grid-column:1/-1;}
+  .photo-strip{grid-template-columns:1fr;}
+}
 @media(max-width:700px){
-  .compare-grid{grid-template-columns:1fr;}
-  .post-hero{padding:4.5rem 1.2rem 2.5rem;}
-  .post-body{padding:2.5rem 1.2rem 5rem;}
+  .post-hero{padding:4.5rem 1.2rem 2rem;}
+  .post-body{padding:2.5rem 1rem 5rem;}
+  .visual-panel{min-height:260px;}
+  .visual-panel img{min-height:260px;}
 }
 </style>
 </head>
 <body>
 
 <div class="preview-banner">
-  <strong>Sample for approval</strong> — 11 topics with Devanagari diagrams + reference photos. Say “publish” to add to <code>posts.js</code>.
+  <strong>Photo-led preview</strong> — 28+ Wikimedia reference images, rich layout (not minimal SVG). Say “publish” for <code>posts.js</code>.
 </div>
 
 <header class="post-hero">
@@ -121,11 +142,16 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
     <span class="blog-tag" style="background:rgba(180,60,40,0.1);color:#8b3a2a;">Preview only</span>
   </div>
   <h1 class="post-title">Sacred Architecture: Eleven Deep Parallels Between the Vedic Temple and the Hebrew Sanctuary</h1>
-  <p class="post-excerpt">Graded sanctity, Holika fire beside burnt offerings, the <span class="sanskrit-inline">पालखी</span> beside the Ark, and nine more ritual structures — with floor plans, Devanagari labels, and side-by-side study for those who honour Sanskrit and Scripture.</p>
+  <p class="post-excerpt">A photo-led comparative study: garbhagriha and Holy of Holies, <span class="sanskrit-inline">होलिका दहन</span> beside burnt offerings, <span class="sanskrit-inline">पालखी</span> beside the Ark — eleven parallels with real temple and Tabernacle photography for those who honour Sanskrit and Scripture.</p>
 </header>
 
-<div class="post-cover">
-  <img src="temple-hero-eleven-parallels.svg?v=3" alt="Eleven parallels between Vedic temple and Hebrew sanctuary">
+<div class="hero-mosaic" aria-label="Temple and Tabernacle photography">
+  <img class="hero-main" src="blog-assets/temple-parallel-photos/hero-meenakshi-gopuram.jpg" alt="Meenakshi Amman Temple gopuram, Madurai" loading="eager">
+  <img src="blog-assets/temple-parallel-photos/hero-rath-yatra.jpg" alt="Rath Yatra chariot procession, Puri" loading="lazy">
+  <img src="blog-assets/temple-parallel-photos/01-garbhagriha-interior.jpg" alt="Garbhagriha interior sanctum" loading="lazy">
+  <img src="blog-assets/temple-parallel-photos/01-tabernacle-timna-court.jpg" alt="Tabernacle replica outer court, Timna Israel" loading="lazy">
+  <img src="blog-assets/temple-parallel-photos/10-holi-bonfire.jpg" alt="Holika Dahan sacred bonfire" loading="lazy">
+  <p class="hero-cap">Photography: Hindu temple architecture, pilgrimage, garbhagriha, Tabernacle replica (Timna), Holika fire — Wikimedia Commons / CC BY-SA</p>
 </div>
 
 <article class="post-body">
@@ -136,28 +162,30 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 
 <p>This article is a thorough comparative study of <strong>eleven structural and ritual parallels</strong> — including two of the most visible public rites in India: <strong>Holika Dahan</strong> (sacred fire that consumes) and the <strong>palkhi</strong> procession (the deity borne on poles among the people), which mirror Israel’s <strong>burnt offerings</strong> and the <strong>Ark of the Covenant</strong> carried on acacia wood.</p>
 
-<div class="compare-figure">
-  <img src="temple-ritual-parallels.svg?v=3" alt="Chart comparing eleven ritual elements in Indian and Hebrew traditions">
-  <p class="compare-caption">Summary grid — <span class="sanskrit-inline">धूप · अखण्ड दीप · होलिका · पालखी</span> and Hebrew counterparts (each section below has its own diagram).</p>
-</div>
-
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<!-- SECTION 1 -->
-<div class="section">
-  <span class="section-num">Parallel 01</span>
-  <h2>Architectural Zoning and Degrees of Sanctity</h2>
+<div class="section-block" id="parallel-01">
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/01-garbhagriha-interior.jpg" alt="Inner sanctum (Garbhagriha), Ananthashayana Temple" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">गर्भगृह · मण्डप · प्राकार</span>
+      <span class="visual-cap">Inner sanctum (Garbhagriha), Ananthashayana Temple</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/01-ark-timna-replica.jpg" alt="Ark of the Covenant replica, Timna Tabernacle, Israel" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">קֹדֶשׁ · הֵיכָל</span>
+      <span class="visual-cap">Ark of the Covenant replica, Timna Tabernacle, Israel</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Graded sanctity: public courtyard → priestly hall → one minister in the inner chamber.</p>
 </div>
 
-<div class="compare-figure topic-compare">
-  <img src="temple-compare-01-zones.svg?v=3" alt="Comparison: Garbhagriha zones beside Holy of Holies zones">
-  <p class="compare-caption">Figure 01 — Graded sanctity: <span class="sanskrit-inline">गर्भगृह</span> and Holy of Holies at the centre.</p>
-</div>
 
-<div class="compare-figure topic-compare">
-  <img src="temple-compare-01-floorplan.svg?v=3" alt="Detailed floor plan Hindu temple and Hebrew Tabernacle">
-  <p class="compare-caption">Figure 01b — Floor plan: <span class="sanskrit-inline">गोपुरम् → प्रदक्षिणा → मण्डप → गर्भगृह</span> beside court, altar, holy place, and veil.</p>
-</div>
+
 
 <p>Both traditions structured sacred space as a journey inward — from what is public, to what is priestly, to what only one purified minister may enter.</p>
 
@@ -184,16 +212,28 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<!-- SECTION 2 -->
-<div class="section">
-  <span class="section-num">Parallel 02</span>
-  <h2>Ritual Impurity and Quarantine Laws</h2>
+<div class="section-block" id="parallel-02">
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/02-ganges-ritual-bath.jpg" alt="Ritual bathing in the Ganges (Varanasi ghats)" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">स्नान · सूतक</span>
+      <span class="visual-cap">Ritual bathing in the Ganges (Varanasi ghats)</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/02-mikveh-qumran.jpg" alt="Steps descending to a mikveh (ritual immersion pool)" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">מִקְוֶה · טומאה</span>
+      <span class="visual-cap">Steps descending to a mikveh (ritual immersion pool)</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Temporary impurity blocks the shrine until immersion and prescribed rites.</p>
 </div>
 
-<div class="compare-figure topic-compare">
-  <img src="temple-compare-02-purity.svg?v=3" alt="Comparison: Sutak and Snana beside Tumah, Red Heifer, and Mikveh">
-  <p class="compare-caption">Figure 02 — Temporary impurity blocks the shrine; bathing and prescribed rites restore access.</p>
-</div>
+
+
 
 <p>In neither tradition does ritual impurity mean “God hates you.” <strong>Asaucham</strong> in Sanskrit and <strong>ṭum’ah</strong> in Hebrew describe a temporary state that blocks access to holy ground until removed by time, washing, or prescribed rites.</p>
 
@@ -229,16 +269,28 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<!-- SECTION 3 -->
-<div class="section">
-  <span class="section-num">Parallel 03</span>
-  <h2>Incense as Daily Fragrant Offering</h2>
+<div class="section-block" id="parallel-03">
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/03-temple-incense-india.jpg" alt="Devotee offering incense at a Hindu mandir" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">धूप</span>
+      <span class="visual-cap">Devotee offering incense at a Hindu mandir</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/01-tabernacle-timna-court.jpg" alt="Tabernacle replica: outer court and altar (Timna, Israel)" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">קטורת</span>
+      <span class="visual-cap">Tabernacle replica: outer court and altar (Timna, Israel)</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Fragrant smoke morning and evening — dhupa in shodashopachara; ketoret before the veil.</p>
 </div>
 
-<div class="compare-figure topic-compare">
-  <img src="temple-compare-03-incense.svg?v=3" alt="Comparison: Dhupa incense beside Ketoret on golden altar">
-  <p class="compare-caption">Figure 03 — Fragrant smoke twice daily: Dhupa in sixteenfold worship; Ketoret before the veil.</p>
-</div>
+
+
 
 <p>Sweet smoke rises. Prayers ride on it. The air of the sanctuary is <em>changed</em>.</p>
 
@@ -260,16 +312,28 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<!-- SECTION 4 -->
-<div class="section">
-  <span class="section-num">Parallel 04</span>
-  <h2>Prostration and Physical Postures of Worship</h2>
+<div class="section-block" id="parallel-04">
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/04-sashtanga-pranam.jpg" alt="Worship at Sri Mariamman Temple, Singapore" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">दण्डवत् · षष्ठाङ्ग</span>
+      <span class="visual-cap">Worship at Sri Mariamman Temple, Singapore</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/04-jewish-prayer-western-wall.jpg" alt="Prayer at the Western Wall, Jerusalem" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">השתחֲוָיָה</span>
+      <span class="visual-cap">Prayer at the Western Wall, Jerusalem</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Worship as bodily surrender — face and limbs to the ground before the holy.</p>
 </div>
 
-<div class="compare-figure topic-compare">
-  <img src="temple-compare-04-prostration.svg?v=3" alt="Comparison: Dandavat and Sashtanga beside Hebrew face-down prostration">
-  <p class="compare-caption">Figure 04 — Full bodily surrender: daṇḍavat / ṣaṣṭāṅga and korim u-mishtachavim.</p>
-</div>
+
+
 
 <p>Worship is not only speech. It is <strong>body</strong> surrendered.</p>
 
@@ -291,16 +355,28 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<!-- SECTION 5 -->
-<div class="section">
-  <span class="section-num">Parallel 05</span>
-  <h2>Eternal Flames and Unceasing Lights</h2>
+<div class="section-block" id="parallel-05">
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/05-akhanda-deepam-lamps.jpg" alt="Oil lamps (deepam) at a Hindu temple" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">अखण्ड दीप</span>
+      <span class="visual-cap">Oil lamps (deepam) at a Hindu temple</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/05-menorah-tabernacle.jpg" alt="Menorah, Knesset garden, Jerusalem" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">נר תמיד · מנורה</span>
+      <span class="visual-cap">Menorah, Knesset garden, Jerusalem</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Sacred fire must not go out — tended lamps in both traditions.</p>
 </div>
 
-<div class="compare-figure topic-compare">
-  <img src="temple-compare-05-lamp.svg?v=3" alt="Comparison: Akhanda Deepa beside Menorah and Ner Tamid">
-  <p class="compare-caption">Figure 05 — Lights that must not go out: akhaṇḍa dīpa and the tended Menorah.</p>
-</div>
+
+
 
 <p>Once a place is consecrated, the light must not die.</p>
 
@@ -322,16 +398,28 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<!-- SECTION 6 -->
-<div class="section">
-  <span class="section-num">Parallel 06</span>
-  <h2>Naivedyam and the Bread of the Presence</h2>
+<div class="section-block" id="parallel-06">
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/06-naivedyam-offering.jpg" alt="Food offering (prasadam preparation) in India" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">नैवेद्यम् · प्रसाद</span>
+      <span class="visual-cap">Food offering (prasadam preparation) in India</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/09-bikkurim-first-fruits.jpg" alt="First-fruits offering (Bikkurim) — biblical illustration" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">לחם פנים</span>
+      <span class="visual-cap">First-fruits offering (Bikkurim) — biblical illustration</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">The best food set before God, then shared by priests and community.</p>
 </div>
 
-<div class="compare-figure topic-compare">
-  <img src="temple-compare-06-food.svg?v=3" alt="Comparison: Naivedyam tray beside Table of Showbread">
-  <p class="compare-caption">Figure 06 — Food set before God: naivedyam → prasādam and lechem hapanim (12 loaves).</p>
-</div>
+
+
 
 <p>God is honoured with <strong>food</strong> — the best, the fresh, the arranged.</p>
 
@@ -353,16 +441,28 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<!-- SECTION 7 -->
-<div class="section">
-  <span class="section-num">Parallel 07</span>
-  <h2>Sacred Threads and Priestly Sashes</h2>
+<div class="section-block" id="parallel-07">
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/07-upanayana-thread-ceremony.jpg" alt="Upanayana — sacred thread ceremony" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">यज्ञोपवीत</span>
+      <span class="visual-cap">Upanayana — sacred thread ceremony</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/07-tzitzit-tallit.jpg" alt="Tzitzit fringes on a tallit prayer shawl" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">ציצית</span>
+      <span class="visual-cap">Tzitzit fringes on a tallit prayer shawl</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Clothing marks covenant initiation and remembrance of commandments.</p>
 </div>
 
-<div class="compare-figure topic-compare">
-  <img src="temple-compare-07-thread.svg?v=3" alt="Comparison: Yajnopavita beside Tzitzit and priestly Avnet">
-  <p class="compare-caption">Figure 07 — Sacred dress marks initiation: yajñopavīta and tzitzit / avnet.</p>
-</div>
+
+
 
 <p>Clothing marks covenant status.</p>
 
@@ -379,16 +479,28 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<!-- SECTION 8 -->
-<div class="section">
-  <span class="section-num">Parallel 08</span>
-  <h2>Anointing with Sacred Oils and Pastes</h2>
+<div class="section-block" id="parallel-08">
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/08-abhishekam-shiva.jpg" alt="Abhishekam — ritual pouring over Shiva lingam" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">अभिषेक</span>
+      <span class="visual-cap">Abhishekam — ritual pouring over Shiva lingam</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/08-anointing-oil-bible.jpg" alt="Anointing oil and Tabernacle furnishings (Torah illustration)" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">שמן משחה</span>
+      <span class="visual-cap">Anointing oil and Tabernacle furnishings (Torah illustration)</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Pouring sets persons and vessels apart for holy service.</p>
 </div>
 
-<div class="compare-figure topic-compare">
-  <img src="temple-compare-08-anointing.svg?v=3" alt="Comparison: Abhishekam pouring beside Shemen HaMishchah">
-  <p class="compare-caption">Figure 08 — Pouring sets apart: abhiṣekam / chandan and the holy anointing oil.</p>
-</div>
+
+
 
 <p>To anoint is to transfer holiness from common to set-apart.</p>
 
@@ -405,16 +517,28 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<!-- SECTION 9 -->
-<div class="section">
-  <span class="section-num">Parallel 09</span>
-  <h2>Tithing and First-Fruit Offerings</h2>
+<div class="section-block" id="parallel-09">
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/09-india-harvest-festival.jpg" alt="Pongal harvest festival kolam and offerings" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">अग्र पूजा · दक्षिणा</span>
+      <span class="visual-cap">Pongal harvest festival kolam and offerings</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/09-bikkurim-first-fruits.jpg" alt="Bikkurim — first fruits brought to the priests" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">ביכורים · מעשר</span>
+      <span class="visual-cap">Bikkurim — first fruits brought to the priests</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">First yield of field and flock sustains the temple and priesthood.</p>
 </div>
 
-<div class="compare-figure topic-compare">
-  <img src="temple-compare-09-tithing.svg?v=3" alt="Comparison: first harvest basket beside Bikkurim procession">
-  <p class="compare-caption">Figure 09 — First and best returned: agra-pūjā / dakṣiṇā and bikkurim / ma’aser.</p>
-</div>
+
+
 
 <p>Temples do not run on sentiment. They run on <strong>first-fruits</strong> returned to God.</p>
 
@@ -431,31 +555,30 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<!-- SECTION 10 -->
-<div class="section">
-  <span class="section-num">Parallel 10</span>
-  <h2>Holika Dahan and the Altar of Burnt Offering</h2>
+<div class="section-block" id="parallel-10">
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/10-holi-bonfire.jpg" alt="Holika Dahan — sacred bonfire before Holi" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">होलिका दहन · हवन</span>
+      <span class="visual-cap">Holika Dahan — sacred bonfire before Holi</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/10-bronze-altar-timna.jpg" alt="Bronze altar of burnt offering, Tabernacle replica (Timna)" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">עֹלָה · מזבח הנחושת</span>
+      <span class="visual-cap">Bronze altar of burnt offering, Tabernacle replica (Timna)</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Fire consumes the offering wholly — community bonfire and national altar.</p>
 </div>
 
-<div class="compare-figure topic-compare">
-  <img src="temple-compare-10-holika.svg?v=3" alt="Holika Dahan bonfire compared to Hebrew burnt offering altar">
-  <p class="compare-caption">Figure 10 — <span class="sanskrit-inline">होलिका दहन</span> (sacred fire consuming) beside the <em>olah</em> ascending from the bronze altar.</p>
-</div>
+
+
 
 <p>Among the most dramatic public parallels is <strong>fire that takes away sin and impurity</strong>. Before Holi, millions gather for <strong>Holika Dahan</strong> — lighting a bonfire, often with effigy or symbolic burning, praising the victory of devotion over malice, and passing through smoke and flame as purification. The Vedic world already knew fire-altar logic: the <strong>havan kunda</strong> (<span class="sanskrit-inline">हवन कुण्ड</span>) and <strong>yajna vedi</strong> where offerings are fed to <em>agni</em> so that smoke carries the gift upward.</p>
-
-<div class="photo-pair">
-  <figure>
-    <span class="dev-label">होलिका दहन</span>
-    <img src="blog-assets/temple-parallels/holi-bonfire.jpg" alt="Holi bonfire Holika Dahan" loading="lazy">
-    <figcaption>Holika Dahan bonfire (Hyderabad). Photo: Wikimedia Commons / CC BY-SA — stored locally for reliable display.</figcaption>
-  </figure>
-  <figure>
-    <span class="dev-label">עֹלָה · מזבח</span>
-    <img src="temple-compare-10-holika.svg?v=3" alt="Diagram: Vedic fire altar beside Hebrew burnt offering">
-    <figcaption>Burnt offering (<em>olah</em>) on the bronze altar — diagram paired with community fire rite (Leviticus 1; 6:12–13).</figcaption>
-  </figure>
-</div>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -485,35 +608,29 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<!-- SECTION 11 -->
-<div class="section">
-  <span class="section-num">Parallel 11</span>
-  <h2>Palkhi Procession and the Ark of the Covenant</h2>
+<div class="section-block" id="parallel-11">
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/11-dnyaneshwar-palkhi.jpg" alt="Dnyaneshwar Maharaj Palkhi — Pandharpur Wari" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">पालखी · वारी</span>
+      <span class="visual-cap">Dnyaneshwar Maharaj Palkhi — Pandharpur Wari</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/11-ark-carrying-illustration.jpg" alt="Ark of the Covenant crossing the Jordan (illustration)" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">אָרוֹן הַבְּרִית</span>
+      <span class="visual-cap">Ark of the Covenant crossing the Jordan (illustration)</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">The presence of God borne on poles among the people on pilgrimage.</p>
 </div>
 
-<div class="compare-figure topic-compare">
-  <img src="temple-compare-11-palkhi.svg?v=3" alt="Palkhi palanquin compared to Ark of the Covenant on poles">
-  <p class="compare-caption">Figure 11 — <span class="sanskrit-inline">पालखी</span> (utsava murti borne on shoulders) beside the Ark carried by Levites on poles.</p>
-</div>
+
 
 <p>If fire answers the question “how is guilt removed?”, the <strong>portable throne</strong> answers “how does God travel with His people?” In Maharashtra and across India, the <strong>palkhi</strong> (<span class="sanskrit-inline">पालखी</span>) — a palanquin shrine — carries the utsava murti of a saint or deity for <strong>wari</strong> pilgrimage and temple festivals. Devotees bear the poles; the image passes among the crowds; the whole road becomes sacred corridor.</p>
-
-<div class="photo-pair">
-  <figure>
-    <span class="dev-label">पालखी · वारी</span>
-    <img src="blog-assets/temple-parallels/dnyaneshwar-palkhi.jpg" alt="Dnyaneshwar Maharaj Palkhi procession" loading="lazy">
-    <figcaption>Dnyaneshwar Maharaj Palkhi arriving in Pune (Pandharpur Wari). Photo: Wikimedia Commons / CC BY-SA.</figcaption>
-  </figure>
-  <figure>
-    <span class="dev-label">אָרוֹן הַבְּרִית</span>
-    <img src="temple-compare-11-palkhi.svg?v=3" alt="Diagram: palkhi palanquin beside Ark on poles">
-    <figcaption>Ark of the Covenant on poles — Levites bear it; none may touch (Exodus 25:14–15; Numbers 4:15).</figcaption>
-  </figure>
-</div>
-<div class="compare-figure" style="margin-top:1.5rem;">
-  <img src="blog-assets/temple-parallels/tukaram-palkhi.jpg" alt="Tukaram Maharaj palkhi palanquin" loading="lazy" style="max-height:320px;object-fit:cover;width:100%;">
-  <p class="compare-caption">Tukaram Maharaj <em>palkhi</em> — another major wari procession (Wikimedia Commons / CC BY-SA).</p>
-</div>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -598,7 +715,7 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
   <ol style="text-align:left;max-width:520px;margin:0 auto 2rem;font-size:0.9rem;color:var(--text-secondary);line-height:1.8;">
     <li>Add the post to <code>posts.js</code> (id: <code>sacred-architecture-vedic-hebrew-temple-parallels</code>)</li>
     <li>Set your chosen publish date</li>
-    <li>Commit <code>temple-compare-01</code> … <code>11</code> SVGs, floor plan, hero, and run <code>python3 scripts/generate-temple-svgs.py</code> to regenerate art</li>
+    <li>Commit <code>blog-assets/temple-parallel-photos/</code> (~28 JPGs) + run download scripts if refreshing images</li>
   </ol>
   <p style="font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);">2:22 Church — sample HTML for review</p>
 </footer>
