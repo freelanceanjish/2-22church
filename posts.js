@@ -21,7 +21,7 @@ const POSTS = [
     title: "Hinduism and Christianity: Vedic Witness to Christ",
     date: "4 June 2026",
     category: "Teaching",
-    image: "vedic-witness-christ.svg?v=5",
+    image: "vedic-witness-christ.png",
     excerpt: "God is the Father of all people, including those who have not yet known Him by name. Scripture says He enlightens every person born into the world. This teaching gathers Sanskrit passages from the Vedas, Upanishads, and Puranas—with Devanagari script, transliteration, and English—for a holy Saviour: virgin birth, suffering, shed blood, and the name Jesus Christ.",
     content: `
 <p class="opening">

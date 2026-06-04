@@ -41,7 +41,7 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 /* Cover image */
 .post-cover{max-width:960px;margin:0 auto;padding:0 2rem;}
 .post-cover img{width:100%;display:block;max-height:440px;object-fit:cover;filter:saturate(0.7) brightness(0.8);}
-.post-cover img[src*=".svg"]{object-fit:contain;max-height:400px;min-height:220px;filter:none;background:var(--deep-mid);border:0.5px solid var(--border);border-radius:4px;padding:1rem;width:100%;height:auto;}
+.post-cover-diagram img{object-fit:contain;max-height:400px;min-height:220px;filter:none;background:var(--deep-mid);border:0.5px solid var(--border);border-radius:4px;padding:1rem;width:100%;height:auto;}
 
 /* Post body */
 .post-body{max-width:960px;margin:0 auto;padding:4rem 2rem 8rem;}
@@ -458,7 +458,7 @@ function ljsRespond(choice) {
   }
 }
 </script>
-<script src="posts.js?v=8"></script>
+<script src="posts.js?v=9"></script>
 <script>
 var params = new URLSearchParams(window.location.search);
 var postId = params.get('id');
@@ -473,8 +473,9 @@ if (!post) {
   document.title = post.title + ', 2:22 Church';
 
   // Cover image
+  var diagramCover = post.image && /vedic-witness-christ|\.svg$/i.test(post.image);
   var coverHtml = post.image
-    ? '<div class="post-cover"><img src="' + post.image + '" alt="' + post.title + '"></div>'
+    ? '<div class="post-cover' + (diagramCover ? ' post-cover-diagram' : '') + '"><img src="' + post.image + '" alt="' + post.title + '" loading="eager" decoding="async"></div>'
     : '';
 
   contentEl.innerHTML =
