@@ -244,7 +244,7 @@ blockquote{
   line-height:1.75;
 }
 blockquote cite,blockquote footer,.bs-ref,.vc-ref,.cc-label,.pf-label,.blog-tag,.blog-read,.post-count span,
-.qa-group-title,.footer-col h4{
+.qa-group-title{
   font-family:'Poppins',Arial,sans-serif !important;
   color:var(--gold) !important;
   font-weight:500;
@@ -290,9 +290,10 @@ footer{
   color:#fff;border-top:0;padding:4.5rem 2rem 2.5rem;
 }
 .footer-grid{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.14);}
-footer .nav-logo .logo-word,footer h4{color:#fff !important;}
+footer .nav-logo .logo-word,footer .footer-col h4{color:#fff !important;}
 footer .nav-logo .logo-mark{background:#fff !important;color:var(--gold) !important;}
 .footer-brand p,.footer-col ul li a,.footer-bottom,.footer-verse,.footer-yt{color:rgba(255,255,255,0.68) !important;}
+.footer-col h4{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:1.2rem;font-weight:500;}
 .footer-col ul{list-style:none;}
 .footer-col ul li{margin-bottom:0.65rem;}
 .footer-col ul li a{font-size:0.85rem;text-decoration:none;transition:color 0.2s;}
