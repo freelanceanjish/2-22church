@@ -16,10 +16,14 @@
     <line x1="100" y1="232" x2="276" y2="232"/>
   </g>
 
-  <!-- Latin cross: filled beams (long stem, short bar high — not a plus) -->
+  <!-- Latin cross: three pieces (short top + crossbar + long bottom) — never a plus -->
   <g fill="#172A36">
-    <rect x="502" y="72" width="36" height="256" rx="2"/>
-    <rect x="438" y="118" width="164" height="36" rx="2"/>
+    <!-- Top of stem (short, above crossbar) -->
+    <rect x="508" y="76" width="24" height="38" rx="1"/>
+    <!-- Crossbar (narrow, high on the stem) -->
+    <rect x="462" y="114" width="116" height="22" rx="1"/>
+    <!-- Bottom of stem (long, below crossbar) -->
+    <rect x="508" y="136" width="24" height="188" rx="1"/>
   </g>
 
   <text x="212" y="248" text-anchor="middle" font-size="46" font-weight="500" fill="#172A36">&#x908;&#x936; &#x92E;&#x938;&#x940;&#x939;</text>
