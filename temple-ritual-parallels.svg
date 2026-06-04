@@ -1,64 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
-  <title id="title">Nine ritual parallels between Vedic temple culture and the Hebrew sanctuary</title>
-  <desc id="desc">Grid comparing incense, lamps, food offerings, purity laws, prostration, anointing, tithing, sacred threads, and ritual bathing.</desc>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img" aria-label="Nine ritual parallels grid">
   <rect width="720" height="480" fill="#EEF4F7"/>
-
-  <text x="360" y="32" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" letter-spacing="0.12em" fill="#172A36">PARALLEL RITUAL ELEMENTS</text>
+  <text x="360" y="32" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="600" letter-spacing="0.12em" fill="#172A36">PARALLEL RITUAL ELEMENTS</text>
   <line x1="48" y1="48" x2="672" y2="48" stroke="#172A36" stroke-width="1" opacity="0.2"/>
-
-  <!-- Column headers -->
-  <text x="200" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#172A36">INDIAN / VEDIC</text>
-  <text x="520" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#172A36">HEBREW</text>
-
-  <g font-family="Arial, sans-serif" font-size="9" fill="#47545B">
-    <!-- Row 1 -->
-    <rect x="48" y="88" width="624" height="36" fill="#FFFFFF" stroke="#172A36" stroke-width="0.75" opacity="0.9"/>
-    <text x="72" y="110" font-weight="600" fill="#172A36">Incense</text>
-    <text x="200" y="110" text-anchor="middle">Dhupa · Ketoret</text>
-    <text x="520" y="110" text-anchor="middle">Altar before veil</text>
-    <!-- Row 2 -->
-    <rect x="48" y="128" width="624" height="36" fill="rgba(23,42,54,0.04)" stroke="#172A36" stroke-width="0.75"/>
-    <text x="72" y="150" font-weight="600" fill="#172A36">Eternal lamp</text>
-    <text x="200" y="150" text-anchor="middle">Akhanda Deepa</text>
-    <text x="520" y="150" text-anchor="middle">Menorah · Ner Tamid</text>
-    <!-- Row 3 -->
-    <rect x="48" y="168" width="624" height="36" fill="#FFFFFF" stroke="#172A36" stroke-width="0.75"/>
-    <text x="72" y="190" font-weight="600" fill="#172A36">Holy food</text>
-    <text x="200" y="190" text-anchor="middle">Naivedyam · Prasadam</text>
-    <text x="520" y="190" text-anchor="middle">Lechem HaPanim</text>
-    <!-- Row 4 -->
-    <rect x="48" y="208" width="624" height="36" fill="rgba(23,42,54,0.04)" stroke="#172A36" stroke-width="0.75"/>
-    <text x="72" y="230" font-weight="600" fill="#172A36">Ritual bath</text>
-    <text x="200" y="230" text-anchor="middle">Snana / Snanam</text>
-    <text x="520" y="230" text-anchor="middle">Mikveh</text>
-    <!-- Row 5 -->
-    <rect x="48" y="248" width="624" height="36" fill="#FFFFFF" stroke="#172A36" stroke-width="0.75"/>
-    <text x="72" y="270" font-weight="600" fill="#172A36">Sacred veil</text>
-    <text x="200" y="270" text-anchor="middle">Parda · Javanika</text>
-    <text x="520" y="270" text-anchor="middle">Parochet</text>
-    <!-- Row 6 -->
-    <rect x="48" y="288" width="624" height="36" fill="rgba(23,42,54,0.04)" stroke="#172A36" stroke-width="0.75"/>
-    <text x="72" y="310" font-weight="600" fill="#172A36">Anointing</text>
-    <text x="200" y="310" text-anchor="middle">Abhishekam · Chandan</text>
-    <text x="520" y="310" text-anchor="middle">Shemen HaMishchah</text>
-    <!-- Row 7 -->
-    <rect x="48" y="328" width="624" height="36" fill="#FFFFFF" stroke="#172A36" stroke-width="0.75"/>
-    <text x="72" y="350" font-weight="600" fill="#172A36">Sacred thread</text>
-    <text x="200" y="350" text-anchor="middle">Yajnopavita</text>
-    <text x="520" y="350" text-anchor="middle">Tzitzit · Avnet</text>
-    <!-- Row 8 -->
-    <rect x="48" y="368" width="624" height="36" fill="rgba(23,42,54,0.04)" stroke="#172A36" stroke-width="0.75"/>
-    <text x="72" y="390" font-weight="600" fill="#172A36">First fruits</text>
-    <text x="200" y="390" text-anchor="middle">Agra-Pooja · Dakshina</text>
-    <text x="520" y="390" text-anchor="middle">Bikkurim · Ma'aser</text>
-    <!-- Row 9 -->
-    <rect x="48" y="408" width="624" height="36" fill="#FFFFFF" stroke="#172A36" stroke-width="0.75"/>
-    <text x="72" y="430" font-weight="600" fill="#172A36">Death impurity</text>
-    <text x="200" y="430" text-anchor="middle">Sutak · Asaucham</text>
-    <text x="520" y="430" text-anchor="middle">Tamei · Red Heifer</text>
-  </g>
-
-  <text x="360" y="468" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#778187">Structural parallels  not proof of borrowing; invitation to study Scripture</text>
+  <text x="200" y="72" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#172A36">INDIAN / VEDIC</text>
+  <text x="520" y="72" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#172A36">HEBREW</text>
+  <rect x="48" y="88" width="624" height="36" fill="#FFFFFF" stroke="#172A36" stroke-width="0.75"/>
+  <text x="72" y="110" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="600" fill="#172A36">Incense</text>
+  <text x="200" y="110" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Dhupa</text>
+  <text x="520" y="110" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Ketoret</text>
+  <rect x="48" y="128" width="624" height="36" fill="rgba(23,42,54,0.04)" stroke="#172A36" stroke-width="0.75"/>
+  <text x="72" y="150" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="600" fill="#172A36">Eternal lamp</text>
+  <text x="200" y="150" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Akhanda Deepa</text>
+  <text x="520" y="150" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Menorah / Ner Tamid</text>
+  <rect x="48" y="168" width="624" height="36" fill="#FFFFFF" stroke="#172A36" stroke-width="0.75"/>
+  <text x="72" y="190" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="600" fill="#172A36">Holy food</text>
+  <text x="200" y="190" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Naivedyam</text>
+  <text x="520" y="190" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Showbread</text>
+  <rect x="48" y="208" width="624" height="36" fill="rgba(23,42,54,0.04)" stroke="#172A36" stroke-width="0.75"/>
+  <text x="72" y="230" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="600" fill="#172A36">Ritual bath</text>
+  <text x="200" y="230" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Snana</text>
+  <text x="520" y="230" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Mikveh</text>
+  <rect x="48" y="248" width="624" height="36" fill="#FFFFFF" stroke="#172A36" stroke-width="0.75"/>
+  <text x="72" y="270" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="600" fill="#172A36">Sacred veil</text>
+  <text x="200" y="270" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Parda / Javanika</text>
+  <text x="520" y="270" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Parochet</text>
+  <rect x="48" y="288" width="624" height="36" fill="rgba(23,42,54,0.04)" stroke="#172A36" stroke-width="0.75"/>
+  <text x="72" y="310" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="600" fill="#172A36">Anointing</text>
+  <text x="200" y="310" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Abhishekam</text>
+  <text x="520" y="310" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Holy anointing oil</text>
+  <rect x="48" y="328" width="624" height="36" fill="#FFFFFF" stroke="#172A36" stroke-width="0.75"/>
+  <text x="72" y="350" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="600" fill="#172A36">Sacred thread</text>
+  <text x="200" y="350" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Yajnopavita</text>
+  <text x="520" y="350" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Tzitzit / Avnet</text>
+  <rect x="48" y="368" width="624" height="36" fill="rgba(23,42,54,0.04)" stroke="#172A36" stroke-width="0.75"/>
+  <text x="72" y="390" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="600" fill="#172A36">First fruits</text>
+  <text x="200" y="390" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Agra-Puja</text>
+  <text x="520" y="390" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Bikkurim / Maaser</text>
+  <rect x="48" y="408" width="624" height="36" fill="#FFFFFF" stroke="#172A36" stroke-width="0.75"/>
+  <text x="72" y="430" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="600" fill="#172A36">Death impurity</text>
+  <text x="200" y="430" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Sutak / Asaucham</text>
+  <text x="520" y="430" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Tumah / Red Heifer</text>
+  <text x="360" y="468" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#778187">Structural parallels - invitation to study Scripture</text>
 </svg>

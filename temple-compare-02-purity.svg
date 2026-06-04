@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="260" viewBox="0 0 680 260" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="260" viewBox="0 0 680 260" role="img" aria-label="Ritual impurity and purification">
   <rect width="680" height="260" fill="#EEF4F7"/>
-  <text x="340" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="0.14em" fill="#172A36">02 · RITUAL IMPURITY &amp; PURIFICATION</text>
+  <text x="340" y="28" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="0.14em" fill="#172A36">02 - RITUAL IMPURITY AND PURIFICATION</text>
   <line x1="340" y1="40" x2="340" y2="230" stroke="#172A36" stroke-width="1" opacity="0.2"/>
-  <text x="170" y="52" text-anchor="middle" font-size="9" font-weight="700" fill="#172A36">SUTAK · ASAUCHAM</text>
-  <text x="510" y="52" text-anchor="middle" font-size="9" font-weight="700" fill="#172A36">lUM'AH · MIKVEH</text>
-  <!-- Left: barred gate + water -->
-  <rect x="88" y="78" width="164" height="100" rx="3" fill="#FFF" stroke="#172A36" stroke-width="1.2"/>
+  <text x="170" y="52" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#172A36">SUTAK - ASAUCHAM</text>
+  <text x="510" y="52" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#172A36">TUMAH - MIKVEH</text>
+  <rect x="88" y="78" width="164" height="100" rx="3" fill="#FFFFFF" stroke="#172A36" stroke-width="1.2"/>
   <line x1="108" y1="98" x2="232" y2="158" stroke="#172A36" stroke-width="2"/>
-  <text x="170" y="118" text-anchor="middle" font-size="8" fill="#47545B">Temple access blocked</text>
+  <text x="170" y="118" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">Temple access blocked</text>
   <ellipse cx="170" cy="200" rx="48" ry="14" fill="none" stroke="#172A36" stroke-width="1.2"/>
-  <text x="170" y="204" text-anchor="middle" font-size="8" fill="#172A36">Snna / river bath</text>
-  <!-- Right: red heifer + mikveh -->
-  <rect x="428" y="78" width="164" height="100" rx="3" fill="#FFF" stroke="#172A36" stroke-width="1.2"/>
+  <text x="170" y="204" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#172A36">Snana / river bath</text>
+  <rect x="428" y="78" width="164" height="100" rx="3" fill="#FFFFFF" stroke="#172A36" stroke-width="1.2"/>
   <ellipse cx="510" cy="128" rx="28" ry="18" fill="rgba(23,42,54,0.15)" stroke="#172A36"/>
-  <text x="510" y="108" text-anchor="middle" font-size="7" fill="#47545B">7 days · corpse</text>
-  <text x="510" y="132" text-anchor="middle" font-size="7" fill="#172A36">Para Aduma ashes</text>
+  <text x="510" y="108" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="#47545B">7 days - corpse contact</text>
+  <text x="510" y="132" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="#172A36">Red heifer ashes</text>
   <rect x="468" y="188" width="84" height="28" rx="14" fill="rgba(23,42,54,0.12)" stroke="#172A36"/>
-  <text x="510" y="206" text-anchor="middle" font-size="8" fill="#172A36">Mikveh immersion</text>
+  <text x="510" y="206" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#172A36">Mikveh immersion</text>
 </svg>
