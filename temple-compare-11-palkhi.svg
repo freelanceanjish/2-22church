@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="260" viewBox="0 0 680 260" role="img">
+  <title>Palkhi and Ark of the Covenant</title>
+  <rect width="680" height="260" fill="#EEF4F7"/>
+  <text x="340" y="28" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="0.12em" fill="#172A36">11 - PROCESSION OF PRESENCE</text>
+  <line x1="340" y1="40" x2="340" y2="230" stroke="#172A36" stroke-width="1" opacity="0.18"/><text x="170" y="62" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="13" fill="#172A36">पालखी</text><text x="510" y="62" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="13" fill="#172A36">אָרוֹן הַבְּרִית</text>
+  <text x="170" y="78" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" letter-spacing="0.1em" fill="#47545B">PALKHI / RATH YATRA</text>
+  <text x="510" y="78" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" letter-spacing="0.1em" fill="#47545B">ARK OF THE COVENANT</text>
+  <!-- Palanquin -->
+  <rect x="115" y="155" width="110" height="48" rx="4" fill="#FFF" stroke="#172A36" stroke-width="1.5"/>
+  <path d="M125 155 Q170 125 215 155" fill="none" stroke="#172A36" stroke-width="1.5"/>
+  <line x1="130" y1="203" x2="130" y2="218" stroke="#172A36" stroke-width="3"/>
+  <line x1="210" y1="203" x2="210" y2="218" stroke="#172A36" stroke-width="3"/>
+  <circle cx="130" cy="222" r="6" fill="#172A36"/><circle cx="210" cy="222" r="6" fill="#172A36"/>
+  <line x1="145" y1="218" x2="145" y2="200" stroke="#172A36" stroke-width="2"/>
+  <line x1="195" y1="218" x2="195" y2="200" stroke="#172A36" stroke-width="2"/>
+  <text x="170" y="182" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="11" fill="#172A36">उत्सव मूर्ति</text>
+  <text x="170" y="238" text-anchor="middle" font-size="7" fill="#47545B">Shoulders of devotees · pradakshina</text>
+  <!-- Ark -->
+  <rect x="455" y="148" width="110" height="58" rx="3" fill="#FFF" stroke="#172A36" stroke-width="1.5"/>
+  <circle cx="510" cy="172" r="14" fill="rgba(23,42,54,0.15)" stroke="#172A36"/>
+  <line x1="468" y1="206" x2="468" y2="222" stroke="#172A36" stroke-width="4"/>
+  <line x1="552" y1="206" x2="552" y2="222" stroke="#172A36" stroke-width="4"/>
+  <text x="510" y="178" text-anchor="middle" font-size="8" fill="#172A36">mercy seat</text>
+  <text x="510" y="238" text-anchor="middle" font-size="7" fill="#47545B">Levites · poles · must not touch</text>
+  <text x="510" y="250" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="8" fill="#47545B">Numbers 4:15</text>
+
+</svg>

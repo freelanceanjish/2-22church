@@ -3,14 +3,14 @@
 
 {
   id: "sacred-architecture-vedic-hebrew-temple-parallels",
-  title: "Sacred Architecture: Nine Deep Parallels Between the Vedic Temple and the Hebrew Sanctuary",
+  title: "Sacred Architecture: Eleven Deep Parallels Between the Vedic Temple and the Hebrew Sanctuary",
   date: "CHANGE_ME",  // e.g. "12 March 2026"
   category: "Teaching",
-  image: "temple-compare-01-zones.svg",
-  excerpt: "Graded sanctity, ritual impurity, incense, eternal lamps, holy food, sacred threads, anointing, and first-fruits — ancient India and ancient Israel built worship around the same structural logic. A comparative study with diagrams for seekers who honour both Sanskrit and Scripture.",
+  image: "temple-hero-eleven-parallels.svg",
+  excerpt: "Eleven parallels: garbhagriha and Holy of Holies, Holika Dahan and burnt offerings, palkhi and the Ark, plus incense, lamps, food, purity, threads, and tithes — with Devanagari diagrams, floor plans, and photos for seekers who honour Sanskrit and Scripture.",
   content: `COPY INNER HTML FROM blog-preview-temple-parallels.html <article class="post-body"> ... </article>`
 }
 
 // Full article body is in blog-preview-temple-parallels.html (article.post-body section).
-// Assets per section: temple-compare-01-zones.svg … temple-compare-09-tithing.svg
-// Summary: temple-ritual-parallels.svg
+// Assets: temple-compare-01-zones.svg, temple-compare-01-floorplan.svg, 02…11, temple-hero-eleven-parallels.svg
+// Regenerate: python3 scripts/generate-temple-svgs.py

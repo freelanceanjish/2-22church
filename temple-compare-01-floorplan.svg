@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="420" viewBox="0 0 680 420" role="img">
+  <title>Temple floor plans</title>
+  <rect width="680" height="420" fill="#EEF4F7"/>
+  
+  <text x="340" y="24" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" fill="#172A36">01 - TEMPLE FLOOR PLAN (GRADED SANCTITY)</text>
+  <line x1="340" y1="36" x2="340" y2="400" stroke="#172A36" stroke-width="1" opacity="0.15"/>
+  <text x="170" y="48" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="14" fill="#172A36">दक्षिण भारतीय मंदिर</text>
+  <text x="510" y="48" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#47545B">TABERNACLE / TEMPLE</text>
+  <!-- Hindu plan -->
+  <rect x="40" y="60" width="260" height="320" fill="#FFF" stroke="#172A36" stroke-width="1.2"/>
+  <rect x="55" y="75" width="230" height="50" fill="rgba(23,42,54,0.05)" stroke="#172A36" stroke-width="0.8"/>
+  <text x="170" y="105" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="11" fill="#47545B">गोपुरम् · प्राकार</text>
+  <rect x="70" y="140" width="200" height="90" fill="none" stroke="#172A36" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="170" y="168" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="10" fill="#47545B">प्रदक्षिणा पथ</text>
+  <rect x="95" y="200" width="150" height="70" fill="rgba(23,42,54,0.08)" stroke="#172A36" stroke-width="1"/>
+  <text x="170" y="232" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="11" fill="#172A36">मण्डप</text>
+  <rect x="125" y="285" width="90" height="70" fill="#172A36"/>
+  <text x="170" y="318" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="12" fill="#FFF">गर्भगृह</text>
+  <text x="170" y="336" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="#EAF1F4">one pujari</text>
+  <!-- Hebrew plan -->
+  <rect x="380" y="60" width="260" height="320" fill="#FFF" stroke="#172A36" stroke-width="1.2"/>
+  <rect x="395" y="75" width="230" height="120" fill="rgba(23,42,54,0.04)" stroke="#172A36" stroke-width="0.8"/>
+  <text x="510" y="100" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">OUTER COURT</text>
+  <rect x="430" y="115" width="50" height="35" fill="#172A36" opacity="0.85"/>
+  <text x="455" y="136" text-anchor="middle" font-size="7" fill="#FFF">altar</text>
+  <ellipse cx="560" cy="132" rx="22" ry="14" fill="none" stroke="#172A36" stroke-width="1"/>
+  <text x="560" y="136" text-anchor="middle" font-size="7" fill="#47545B">laver</text>
+  <rect x="420" y="210" width="180" height="100" fill="rgba(23,42,54,0.08)" stroke="#172A36" stroke-width="1"/>
+  <text x="510" y="238" text-anchor="middle" font-size="8" fill="#47545B">HOLY PLACE · menorah · bread</text>
+  <line x1="500" y1="210" x2="500" y2="310" stroke="#172A36" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="492" y="265" font-size="7" fill="#172A36">veil</text>
+  <rect x="465" y="285" width="90" height="55" fill="#172A36"/>
+  <text x="510" y="312" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#FFF">ARK</text>
+  <text x="340" y="398" text-anchor="middle" font-size="10" fill="#172A36">Public → priestly → single minister at centre</text>
+
+</svg>

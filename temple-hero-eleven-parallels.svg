@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="280" viewBox="0 0 680 280" role="img">
+  <title>Eleven temple parallels</title>
+  <rect width="680" height="280" fill="#EEF4F7"/>
+  
+  <text x="340" y="32" text-anchor="middle" font-size="12" font-weight="600" fill="#172A36">VEDIC TEMPLE · HEBREW SANCTUARY</text>
+  <text x="340" y="52" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="16" fill="#172A36">गर्भगृह  ·  קֹדֶשׁ הַקֳּדָשִׁים</text>
+  <rect x="60" y="75" width="260" height="150" fill="#FFF" stroke="#172A36"/>
+  <text x="190" y="120" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="14" fill="#172A36">होलिका · पालखी</text>
+  <text x="190" y="145" text-anchor="middle" font-size="9" fill="#47545B">fire · procession · food · lamp</text>
+  <rect x="360" y="75" width="260" height="150" fill="#FFF" stroke="#172A36"/>
+  <text x="490" y="120" text-anchor="middle" font-size="11" fill="#172A36">Olah · Aron · Ketoret</text>
+  <text x="490" y="145" text-anchor="middle" font-size="9" fill="#47545B">burnt offering · ark · incense</text>
+  <text x="340" y="250" text-anchor="middle" font-size="10" fill="#47545B">11 structural parallels — sample artwork</text>
+
+</svg>

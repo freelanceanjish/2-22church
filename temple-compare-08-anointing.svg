@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="260" viewBox="0 0 680 260" role="img" aria-label="Anointing Abhishekam and holy oil">
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="260" viewBox="0 0 680 260" role="img">
+  <title>ANOINTING</title>
   <rect width="680" height="260" fill="#EEF4F7"/>
-  <text x="340" y="28" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="0.14em" fill="#172A36">08 - ANOINTING</text>
-  <line x1="340" y1="40" x2="340" y2="230" stroke="#172A36" stroke-width="1" opacity="0.2"/>
-  <text x="170" y="52" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#172A36">ABHISHEKAM</text>
-  <text x="510" y="52" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#172A36">SHEMEN HAMISHCHAH</text>
-  <ellipse cx="170" cy="175" rx="24" ry="40" fill="#172A36" opacity="0.2"/>
-  <line x1="162" y1="90" x2="158" y2="130" stroke="#172A36" stroke-width="1.5" opacity="0.5"/>
-  <line x1="170" y1="88" x2="170" y2="140" stroke="#172A36" stroke-width="1.5" opacity="0.5"/>
-  <line x1="178" y1="90" x2="182" y2="130" stroke="#172A36" stroke-width="1.5" opacity="0.5"/>
-  <text x="170" y="232" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">Panchamrita, chandan paste</text>
-  <rect x="492" y="165" width="36" height="48" rx="4" fill="#FFFFFF" stroke="#172A36" stroke-width="1.2"/>
-  <line x1="510" y1="130" x2="510" y2="168" stroke="#172A36" stroke-width="2"/>
-  <ellipse cx="510" cy="125" rx="8" ry="4" fill="#172A36"/>
-  <text x="510" y="232" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">Holy oil for Tabernacle and priests</text>
+  <text x="340" y="28" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="0.12em" fill="#172A36">08 - ANOINTING</text>
+  <line x1="340" y1="40" x2="340" y2="230" stroke="#172A36" stroke-width="1" opacity="0.18"/><text x="170" y="62" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="13" fill="#172A36">अभिषेक</text><text x="510" y="62" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="13" fill="#172A36">שמן משחה</text>
+  <text x="170" y="78" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" letter-spacing="0.1em" fill="#47545B">ABHISHEKAM</text>
+  <text x="510" y="78" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" letter-spacing="0.1em" fill="#47545B">HOLY OIL</text>
+  <line x1="165" y1="95" x2="175" y2="140" stroke="#172A36" opacity="0.5"/><ellipse cx="170" cy="175" rx="20" ry="35" fill="rgba(23,42,54,0.15)"/>
+  <rect x="498" y="165" width="24" height="40" fill="#FFF" stroke="#172A36"/><line x1="510" y1="125" x2="510" y2="165" stroke="#172A36" stroke-width="2"/>
 </svg>

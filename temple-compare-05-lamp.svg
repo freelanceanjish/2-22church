@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="260" viewBox="0 0 680 260" role="img" aria-label="Eternal lamp Akhanda Deepa and Menorah">
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="260" viewBox="0 0 680 260" role="img">
+  <title>ETERNAL LAMP</title>
   <rect width="680" height="260" fill="#EEF4F7"/>
-  <text x="340" y="28" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="0.14em" fill="#172A36">05 - ETERNAL FLAME</text>
-  <line x1="340" y1="40" x2="340" y2="230" stroke="#172A36" stroke-width="1" opacity="0.2"/>
-  <text x="170" y="52" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#172A36">AKHANDA DIPA</text>
-  <text x="510" y="52" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#172A36">MENORAH - NER TAMID</text>
-  <path d="M155 210 L185 210 L178 175 L162 175 Z" fill="#172A36"/>
-  <ellipse cx="170" cy="158" rx="14" ry="20" fill="#172A36" opacity="0.85"/>
-  <ellipse cx="170" cy="145" rx="8" ry="12" fill="#172A36"/>
-  <text x="170" y="232" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">Ghee/oil - never extinguished</text>
-  <rect x="488" y="195" width="44" height="16" fill="#172A36"/>
-  <line x1="510" y1="195" x2="510" y2="120" stroke="#172A36" stroke-width="4"/>
-  <line x1="460" y1="155" x2="560" y2="155" stroke="#172A36" stroke-width="3"/>
-  <line x1="475" y1="135" x2="545" y2="135" stroke="#172A36" stroke-width="3"/>
-  <line x1="490" y1="175" x2="530" y2="175" stroke="#172A36" stroke-width="3"/>
-  <circle cx="460" cy="152" r="6" fill="#172A36"/>
-  <circle cx="560" cy="152" r="6" fill="#172A36"/>
-  <circle cx="510" cy="118" r="7" fill="#172A36"/>
-  <text x="510" y="232" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">Tended morning and evening</text>
+  <text x="340" y="28" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="0.12em" fill="#172A36">05 - ETERNAL LAMP</text>
+  <line x1="340" y1="40" x2="340" y2="230" stroke="#172A36" stroke-width="1" opacity="0.18"/><text x="170" y="62" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="13" fill="#172A36">अखण्ड दीप</text><text x="510" y="62" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="13" fill="#172A36">נר תמיד</text>
+  <text x="170" y="78" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" letter-spacing="0.1em" fill="#47545B">AKHANDA DIPA</text>
+  <text x="510" y="78" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" letter-spacing="0.1em" fill="#47545B">MENORAH</text>
+  <ellipse cx="170" cy="155" rx="10" ry="18" fill="#172A36"/><rect x="162" y="175" width="16" height="25" fill="#172A36"/>
+  <line x1="510" y1="195" x2="510" y2="115" stroke="#172A36" stroke-width="3"/><line x1="460" y1="155" x2="560" y2="155" stroke="#172A36" stroke-width="2"/>
+  <circle cx="510" cy="110" r="6" fill="#172A36"/>
 </svg>
