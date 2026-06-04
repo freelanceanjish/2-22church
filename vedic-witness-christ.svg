@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 720 400" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400" role="img" aria-labelledby="title desc">
   <title id="title">Vedic witness to Christ</title>
-  <desc id="desc">Minimal manuscript and cross with the name Isha Masih in Devanagari.</desc>
+  <desc id="desc">Manuscript and a bold Latin cross with Isha Masih in Devanagari.</desc>
 
-  <!-- Light fill so the image is visible on white post pages -->
   <rect width="720" height="400" fill="#EEF4F7"/>
 
-  <g fill="none" stroke="#172A36" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-    <!-- Open book / manuscript -->
-    <rect x="88" y="72" width="264" height="256" rx="3" fill="#FFFFFF" stroke="#172A36"/>
-    <line x1="112" y1="118" x2="328" y2="118" opacity="0.35"/>
-    <line x1="112" y1="152" x2="304" y2="152" opacity="0.28"/>
-    <line x1="112" y1="186" x2="316" y2="186" opacity="0.22"/>
-    <line x1="112" y1="220" x2="288" y2="220" opacity="0.18"/>
-    <!-- Latin cross (long vertical, short horizontal in upper third — not a plus) -->
-    <line x1="520" y1="92" x2="520" y2="308"/>
-    <line x1="468" y1="148" x2="572" y2="148"/>
-    <circle cx="520" cy="168" r="92" stroke-width="1.25" opacity="0.2"/>
+  <!-- Manuscript -->
+  <g fill="#FFFFFF" stroke="#172A36" stroke-width="2">
+    <rect x="72" y="64" width="280" height="272" rx="4"/>
+  </g>
+  <g stroke="#172A36" stroke-width="1.5" opacity="0.3">
+    <line x1="100" y1="112" x2="324" y2="112"/>
+    <line x1="100" y1="152" x2="300" y2="152"/>
+    <line x1="100" y1="192" x2="312" y2="192"/>
+    <line x1="100" y1="232" x2="276" y2="232"/>
   </g>
 
-  <!-- Devanagari via numeric entities (reliable when served as img) -->
-  <text x="220" y="252" text-anchor="middle" font-size="44" font-weight="500" fill="#172A36">&#x908;&#x936; &#x92E;&#x938;&#x940;&#x939;</text>
+  <!-- Latin cross: filled beams (long stem, short bar high — not a plus) -->
+  <g fill="#172A36">
+    <rect x="502" y="72" width="36" height="256" rx="2"/>
+    <rect x="438" y="118" width="164" height="36" rx="2"/>
+  </g>
 
-  <text x="220" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" letter-spacing="0.22em" fill="#47545B">ISA MASIH</text>
-  <text x="520" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#778187">Vedic witness to Christ</text>
+  <text x="212" y="248" text-anchor="middle" font-size="46" font-weight="500" fill="#172A36">&#x908;&#x936; &#x92E;&#x938;&#x940;&#x939;</text>
+  <text x="212" y="290" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="0.2em" fill="#47545B">ISA MASIH</text>
+  <text x="520" y="360" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="500" fill="#172A36">Vedic witness to Christ</text>
 </svg>
