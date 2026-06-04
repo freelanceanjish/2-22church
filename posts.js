@@ -17,6 +17,101 @@
 
 const POSTS = [
   {
+    id: "hinduism-christianity-vedic-witness-to-christ",
+    title: "Hinduism and Christianity: Vedic Witness to Christ",
+    date: "4 June 2026",
+    category: "Teaching",
+    image: "foundations-pillars.svg",
+    excerpt: "God is the Father of all people, including those who have not yet known Him by name. Scripture says He enlightens every person born into the world. This teaching gathers Sanskrit passages from the Vedas, Upanishads, and Puranas that speak of a holy Saviour: virgin birth, suffering, shed blood, and the name Jesus Christ.",
+    content: `
+<p class="opening">
+  God is the Father of all human beings. Some may not yet know Him as their own Father, but since He is the Creator, He is Father to all.
+</p>
+
+<p>The Bible presents clearly that God is love (<em>1 John 4:8</em>). He loves with an everlasting love (<em>Jeremiah 31:3</em>). <em>"For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life"</em> (<em>John 3:16</em>). The loving God does not want anyone to perish. So He revealed Himself in various ways, including as the incarnate Son, Jesus Christ (<em>Hebrews 1:1–2</em>). Since God does not want anyone to be lost, He <em>lightens every human being who is born into this world</em> (<em>John 1:9</em>). The loving God has graciously revealed Himself through Hindu scriptures as well, so that the teeming millions who revere Sanskrit need not remain in total darkness.</p>
+
+<p>It is remarkable how many Hindu scriptural passages, when read in Sanskrit and rendered faithfully into English, bear witness to Jesus Christ by name and to His vicarious death. What follows is a collection of references from Hindu scripture books about Christ: His virgin birth, His holiness, His suffering and death, and the redemption of sinners through His holy blood.</p>
+
+<p>These sources are written in Sanskrit. The Vedas quoted here are commonly dated between roughly 1500 and 2000 BC; the Upanishads between the 10th century and 2nd century BC (scholarly dates vary by text and tradition).</p>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<h2>References to the Birth of Christ</h2>
+
+<p>The following quotations speak clearly about a divine Saviour. The second even mentions the name of Jesus.</p>
+
+<blockquote>After creating the sky, waters, and the earth, the supreme spirit of the Lord Almighty thought: "I created the worlds. Now to provide for and to save these worlds I have to create a saviour." Thinking thus, He gave birth to a man from Himself. — <em>Aitareya Upanishad</em> 1.1.3</blockquote>
+
+<p>The Puranas explain Vedic truths in the form of stories. The <em>Bhavishya Purana</em> is the ninth in the set of eighteen sacred books. Its third part is entitled <em>Bharata Khanda</em>; the second chapter in that part is entitled <em>Pratisarga</em>. That chapter contains verses that tell the story of Jesus Christ and His incarnation. Among them:</p>
+
+<blockquote>
+  <p><strong>Verse 31 (transliteration):</strong><br>
+  Yeesh moorti parapta nitya shuddha shivakari;<br>
+  Yeesha masih itticha mam nama prathishtatham.</p>
+  <p><strong>Translation:</strong> The revelation of God who is eternal, holy, compassionate, and giver of salvation, who dwells within our heart, is manifested. His name is <em>Yeesha Masih</em> (Jesus Christ).</p>
+</blockquote>
+
+<p>Speaking of this Saviour and God incarnate, the sages call Him:</p>
+
+<ul>
+  <li><em>Purusha shubham</em> — blameless and holy person</li>
+  <li><em>Balwaan raja gaurang shweta vastrakam</em> — sovereign king in a holy person robed in white</li>
+  <li><em>Yeesh putra</em> — Son of God</li>
+  <li><em>Kumari garbha sambhavam</em> — born of a virgin</li>
+  <li><em>Satya varatha paraayanam</em> — sustainer of the path of truth</li>
+</ul>
+
+<p>The <em>Rigveda</em>, the first scripture, also presents Christ without mentioning His name, referring to Him as the Word who is God:</p>
+
+<blockquote>This man is all that has been, all that is, and all that has to be. He controls eternal life and comes for the redemption of mankind. He surpasses His immortal sphere and descends to the mortal sphere. He comes to give every one reward as per their deeds.</blockquote>
+
+<p>Venerable words from the Vedic scriptures affirm:</p>
+
+<blockquote>"The word is the indestructible God." — <em>Brhadaranyaka Upanishad</em> 4.1–2</blockquote>
+
+<blockquote>The Supreme Leader who is the cause and governor of all creation, who to protect and save sinful mankind Himself appeared upon the earth wrapped in a body that is holy and without sin. — <em>Rigveda</em> 10.125</blockquote>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<h2>References to the Suffering and Death of Christ</h2>
+
+<p>Christ underwent immeasurable physical and mental pain when He was crucified. The Hindu scriptures highlight that suffering. Some of these statements seem to refer to Christ because no Hindu god or goddess in the usual pantheon bore such suffering on behalf of sinners.</p>
+
+<ul>
+  <li><strong>Crown of thorns:</strong> "The sacrificial victim is to be crowned with a crown made of thorny vines." — <em>Rigveda</em> 10.90.7, 15</li>
+  <li><strong>Garments divided:</strong> "After death, His clothes are to be divided among the offerors." — <em>Aitareya Brahmana</em></li>
+  <li><strong>Bound to wood:</strong> "His hands and legs are to be bound to a yoopa (a wooden pole) causing bloodshed." — <em>Brhadaranyaka Upanishad</em> 3.9.28</li>
+  <li><strong>Drink before death:</strong> "Before death, He should be given a drink of somarasa" (an intoxicating herbal juice). — <em>Yajur Veda</em> 31</li>
+  <li><strong>Bones unbroken:</strong> "None of His bones be broken." — <em>Aitareya Brahmana</em> 2.6</li>
+</ul>
+
+<p>The Hindu scriptures also point to the efficacy of the blood of Jesus Christ, which cleanses from sin:</p>
+
+<blockquote>If you want to be delivered from the sin which you commit through eyes, mouth, ears, and mind, bloodshed is necessary. Without shedding the blood, there is no remission for sin. That must be the blood of the Holy One. God is our creator. He is our King. When we were perishing, He came to save us by offering even His own body on our behalf. — <em>Maha Brahmanam</em> 4.15</blockquote>
+
+<blockquote>God is the ruler of people. He will offer His body as a sacrifice for His people, for the remission of their sins. — <em>Sama Veda</em>, part 2, <em>Tandya Maha Brahmanam</em></blockquote>
+
+<p>These statements describe suffering and death in terms that match the crucifixion of Christ. No one else in this catalogue of texts qualifies in the same way. For those who honour Sanskrit as holy language, these references can open a door to the Bible and to baptism in His name.</p>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<h2>Presenting Jesus to Hindu Seekers</h2>
+
+<p>These scattered but clear-cut references to Christ can be a great help in presenting Jesus to orthodox Hindus. As a second step, Jesus can be shown as the true incarnate Son of God, meeting their expectations by using their own scriptures as the starting point.</p>
+
+<p>Such seekers have come to the Bible and to Christ, embraced Christianity through baptism, and witnessed marvelously for Him. The <em>Bhavishya Purana</em> — <em>bhavishya</em> means "future" — is said to be the only Purana among the eighteen that contains the name of Jesus explicitly, including material about the virgin birth of Christ.</p>
+
+<p>Yet the final court of appeal for every disciple remains the apostles' testimony: one God the Father, one Lord Jesus Christ, salvation through His blood, and life by faith in the gospel proclaimed in Scripture.</p>
+
+<blockquote>"Neither is there salvation in any other: for there is none other name under heaven given among men, whereby we must be saved." — <em>Acts 4:12</em></blockquote>
+
+<div style="margin:3rem 0;padding:1.6rem 1.8rem;background:rgba(201,168,76,0.06);border:0.5px solid rgba(201,168,76,0.2);border-left:2px solid rgba(201,168,76,0.5);">
+  <p style="font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:#C9A84C;margin-bottom:0.75rem;">Editorial Note</p>
+  <p style="font-size:0.88rem;color:#A8A090;line-height:1.85;">2:22 Church presents this material as an invitation to study Scripture and Sanskrit sources with open hearts. Hindu and Western scholars disagree on the dating and interpretation of several passages (especially portions of the <em>Bhavishya Purana</em>, which many historians assign to later manuscript layers). Traditional Hindu exegesis often reads hymns such as <em>Rigveda</em> 10.125 as addressed to deities other than the Messiah. We do not require acceptance of every parallel above as a condition of fellowship. We do require that every believer test all things by the word of God alone, and that Jesus be known as the Man Christ Jesus, the Father's exalted Son, in whom alone is eternal life.</p>
+</div>
+    `
+  },
+  {
     id: "the-cosmic-courtroom-lucifer-heavens-chief-counsel",
     title: "The Cosmic Courtroom: Lucifer as Heaven's Chief Counsel",
     date: "27 May 2026",
