@@ -1,17 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-labelledby="title desc">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 720 400" role="img" aria-labelledby="title desc">
   <title id="title">Vedic witness to Christ</title>
-  <desc id="desc">Minimal open manuscript with Devanagari Isha Masih and a simple cross.</desc>
+  <desc id="desc">Minimal manuscript and cross with the name Isha Masih in Devanagari.</desc>
 
-  <g fill="none" stroke="#172A36" stroke-width="1.25" stroke-linecap="square">
-    <rect x="96" y="88" width="248" height="224" rx="2"/>
-    <line x1="120" y1="132" x2="320" y2="132" opacity="0.3"/>
-    <line x1="120" y1="164" x2="300" y2="164" opacity="0.22"/>
-    <line x1="120" y1="196" x2="312" y2="196" opacity="0.16"/>
-    <line x1="448" y1="120" x2="448" y2="280"/>
-    <line x1="448" y1="200" x2="624" y2="200"/>
+  <!-- Light fill so the image is visible on white post pages -->
+  <rect width="720" height="400" fill="#EEF4F7"/>
+
+  <g fill="none" stroke="#172A36" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+    <!-- Open book / manuscript -->
+    <rect x="88" y="72" width="264" height="256" rx="3" fill="#FFFFFF" stroke="#172A36"/>
+    <line x1="112" y1="118" x2="328" y2="118" opacity="0.35"/>
+    <line x1="112" y1="152" x2="304" y2="152" opacity="0.28"/>
+    <line x1="112" y1="186" x2="316" y2="186" opacity="0.22"/>
+    <line x1="112" y1="220" x2="288" y2="220" opacity="0.18"/>
+    <!-- Cross -->
+    <line x1="520" y1="108" x2="520" y2="292"/>
+    <line x1="452" y1="200" x2="588" y2="200"/>
+    <circle cx="520" cy="200" r="88" stroke-width="1.25" opacity="0.2"/>
   </g>
 
-  <text x="220" y="248" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="40" fill="#172A36">?? ????</text>
-  <text x="220" y="284" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="0.2em" fill="#47545B">SANSKRIT · MESSIAH</text>
-  <text x="536" y="368" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="12" font-weight="300" fill="#778187">Vedic witness to Christ</text>
+  <!-- Devanagari via numeric entities (reliable when served as img) -->
+  <text x="220" y="252" text-anchor="middle" font-size="44" font-weight="500" fill="#172A36">&#x908;&#x936; &#x92E;&#x938;&#x940;&#x939;</text>
+
+  <text x="220" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" letter-spacing="0.22em" fill="#47545B">ISA MASIH</text>
+  <text x="520" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#778187">Vedic witness to Christ</text>
 </svg>

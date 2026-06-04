@@ -41,6 +41,7 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 /* Cover image */
 .post-cover{max-width:960px;margin:0 auto;padding:0 2rem;}
 .post-cover img{width:100%;display:block;max-height:440px;object-fit:cover;filter:saturate(0.7) brightness(0.8);}
+.post-cover img[src$=".svg"]{object-fit:contain;max-height:380px;filter:none;background:var(--deep-mid);border:0.5px solid var(--border);border-radius:4px;padding:1.5rem;}
 
 /* Post body */
 .post-body{max-width:960px;margin:0 auto;padding:4rem 2rem 8rem;}
@@ -473,7 +474,7 @@ if (!post) {
 
   // Cover image
   var coverHtml = post.image
-    ? '<div class="post-cover"><img src="' + post.image + '" alt="' + post.title + '"></div>'
+    ? '<div class="post-cover"><img src="' + post.image + '?v=2" alt="' + post.title + '"></div>'
     : '';
 
   contentEl.innerHTML =
