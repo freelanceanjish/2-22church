@@ -51,18 +51,20 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(to bottom,rgba(14,14,14,0.18) 0%,rgba(14,14,14,0.10) 40%,rgba(255,255,255,0.72) 100%);}
 .hero-overlay2{position:absolute;inset:0;z-index:2;background:radial-gradient(ellipse 60% 50% at 50% 40%,rgba(201,168,76,0.05) 0%,transparent 70%);}
 
-.hero-content{position:relative;z-index:3;}
-.hero-badge{display:inline-block;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);border:0.5px solid var(--border);padding:0.4rem 1rem;border-radius:2px;margin-bottom:1.5rem;}
-.hero-eyebrow{font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;justify-content:center;gap:1rem;}
-.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:36px;height:0.5px;background:var(--gold);opacity:0.5;}
-.hero h1{font-family:'Poppins',Arial,sans-serif;font-size:clamp(3.2rem,9vw,8rem);font-weight:300;line-height:1;margin-bottom:0.6rem;}
-.hero h1 em{font-style:italic;color:var(--gold);}
-.hero-sub{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.1rem,2.5vw,1.7rem);font-weight:300;font-style:italic;color:var(--text-secondary);max-width:700px;margin:0 auto 2rem;}
-.hero-verse{font-family:'Poppins',Arial,sans-serif;font-size:1rem;font-style:italic;color:rgba(240,234,214,0.75);border-left:1.5px solid var(--gold);padding-left:1.2rem;text-align:left;max-width:460px;margin:0 auto 2.5rem;line-height:1.7;}
-.hero-verse cite{font-family:'Poppins',Arial,sans-serif;font-style:normal;font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.4rem;}
+.hero-content{position:relative;z-index:3;color:#fff;}
+.hero-badge{display:inline-block;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.82);border:0.5px solid rgba(255,255,255,0.35);padding:0.4rem 1rem;border-radius:2px;margin-bottom:1.5rem;}
+.hero-eyebrow{font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:#EAF1F4;margin-bottom:1.2rem;display:flex;align-items:center;justify-content:center;gap:1rem;}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:36px;height:0.5px;background:rgba(255,255,255,0.55);}
+.hero h1{font-family:'Poppins',Arial,sans-serif;font-size:clamp(3.2rem,9vw,8rem);font-weight:300;line-height:1;margin-bottom:0.6rem;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,0.35);}
+.hero h1 em{font-style:italic;color:#EAF1F4;}
+.hero-sub{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.1rem,2.5vw,1.7rem);font-weight:300;font-style:italic;color:rgba(255,255,255,0.9);max-width:700px;margin:0 auto 2rem;text-shadow:0 1px 16px rgba(0,0,0,0.28);}
+.hero-verse{font-family:'Poppins',Arial,sans-serif;font-size:1rem;font-style:italic;color:rgba(255,255,255,0.88);border-left:1.5px solid rgba(255,255,255,0.45);padding-left:1.2rem;text-align:left;max-width:460px;margin:0 auto 2.5rem;line-height:1.7;}
+.hero-verse cite{font-family:'Poppins',Arial,sans-serif;font-style:normal;font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:#EAF1F4;display:block;margin-top:0.4rem;}
 .hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
-.hero-scroll{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:var(--text-muted);font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;animation:bobble 2.5s ease-in-out infinite;}
-.hero-scroll::after{content:'';display:block;width:0.5px;height:36px;background:linear-gradient(to bottom,var(--gold-dark),transparent);}
+.hero .btn-ghost{background:rgba(255,255,255,0.1);color:#fff;border-color:rgba(255,255,255,0.45);}
+.hero .btn-ghost:hover{background:rgba(255,255,255,0.2);border-color:rgba(255,255,255,0.65);}
+.hero-scroll{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:rgba(255,255,255,0.72);font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;animation:bobble 2.5s ease-in-out infinite;}
+.hero-scroll::after{content:'';display:block;width:0.5px;height:36px;background:linear-gradient(to bottom,rgba(255,255,255,0.65),transparent);}
 @keyframes bobble{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(7px);}}
 
 /* ── SHARED ── */
