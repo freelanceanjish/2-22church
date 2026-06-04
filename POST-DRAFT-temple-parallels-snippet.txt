@@ -1,0 +1,15 @@
+// Paste at TOP of POSTS array in posts.js after approval
+// Hero image: temple-zones-comparison.svg
+
+{
+  id: "sacred-architecture-vedic-hebrew-temple-parallels",
+  title: "Sacred Architecture: Nine Deep Parallels Between the Vedic Temple and the Hebrew Sanctuary",
+  date: "CHANGE_ME",  // e.g. "12 March 2026"
+  category: "Teaching",
+  image: "temple-zones-comparison.svg",
+  excerpt: "Graded sanctity, ritual impurity, incense, eternal lamps, holy food, sacred threads, anointing, and first-fruits — ancient India and ancient Israel built worship around the same structural logic. A comparative study with diagrams for seekers who honour both Sanskrit and Scripture.",
+  content: `COPY INNER HTML FROM blog-preview-temple-parallels.html <article class="post-body"> ... </article>`
+}
+
+// Full article body is in blog-preview-temple-parallels.html (article.post-body section).
+// Assets: temple-zones-comparison.svg, temple-ritual-parallels.svg
