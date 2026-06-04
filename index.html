@@ -974,7 +974,7 @@ section.about{padding-top:7.5rem;}
   </div>
 </footer>
 
-<script src="posts.js"></script>
+<script src="posts.js?v=5"></script>
 <script>
 function handleJoin(e) {
   e.preventDefault();
@@ -1007,7 +1007,7 @@ function exportSubscribers(){
 // Render latest 5 posts into homepage blog grid
 function renderHomepagePosts() {
   var grid = document.getElementById('blog-grid');
-  if (!grid || !window.POSTS) return;
+  if (!grid || typeof POSTS === 'undefined') return;
   var recent = POSTS.slice(0, 5);
   grid.innerHTML = recent.map(function(post, i) {
     var href = post.link ? post.link : 'post.html?id=' + post.id;

@@ -830,6 +830,11 @@ const BLOG_QUEUE = [
   }
 ];
 
+// Expose for pages that check window.POSTS (e.g. homepage blog grid)
+if (typeof window !== 'undefined') {
+  window.POSTS = POSTS;
+}
+
 // ============================================================
 //  TEMPLATE, Copy this block to add a new post
 //  Paste it at the TOP of the POSTS array above (after the [)
