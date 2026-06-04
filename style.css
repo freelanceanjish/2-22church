@@ -277,6 +277,11 @@ blockquote cite,blockquote footer,.bs-ref,.vc-ref,.cc-label,.pf-label,.blog-tag,
 .photo-slot img,.blog-card-img img,.post-featured .pf-img img,.post-card .pc-img img,.map-img img{
   filter:saturate(0.95) brightness(1) !important;
 }
+.blog-card-img img[src*=".svg"],.post-featured .pf-img img[src*=".svg"],.post-card .pc-img img[src*=".svg"]{
+  object-fit:contain !important;
+  padding:1rem !important;
+  background:var(--deep-mid) !important;
+}
 .photo-slot:hover img,.blog-card:hover .blog-card-img img,.post-featured:hover .pf-img img,.post-card:hover .pc-img img{
   filter:saturate(1.03) brightness(1) !important;
 }
