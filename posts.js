@@ -17,6 +17,680 @@
 
 const POSTS = [
   {
+    id: "sacred-architecture-vedic-hebrew-temple-parallels",
+    title: "Sacred Architecture: Fourteen Deep Parallels Between the Vedic Temple and the Hebrew Sanctuary",
+    date: "5 June 2026",
+    category: "Teaching",
+    image: "blog-assets/temple-parallel-photos/10-holi-dahan.png",
+    excerpt: "Fourteen parallels: graded sanctity, sacred veil, doorpost signs, yajna fire, pakwan and Seder, samai and menorah, prayer shawls and caps, palkhi and the Ark — with reference photos and diagrams. Jewish tradition historically predates the Vedic record.",
+    content: `
+<p class="opening">The closer you walk toward the centre, the fewer may follow. That single rule governed both the Vedic temple campus and the Tabernacle Moses built — not as decoration, but as theology made of stone, curtain, and fire.</p>
+
+<p>Students of religion often treat Hindu and Hebrew worship as worlds apart. One speaks Sanskrit and circles a <em>lingam</em> in a dark inner room; the other speaks Hebrew and faces an Ark behind a woven veil. Yet when you set the sources side by side — <em>Śruti</em>, <em>Smriti</em>, the Law of Moses, and the prophets — a remarkable pattern appears. Both cultures organised sacred space in <strong>concentric degrees of holiness</strong>. Both treated ritual impurity as a temporary barrier, not a moral verdict. Both fed the divine presence with fire, fragrance, food, oil, and the first-fruits of the land.</p>
+
+<p>On chronology: the priestly temple tradition of Israel — the Tabernacle of Moses and the Jerusalem sanctuary — belongs to the second millennium BC as Scripture records it. The classical Vedic <em>śruti</em>, by the usual scholarly dating of the Rigveda and later texts, comes later (commonly placed around 1500–1200 BC onward, with much debate). <strong>Historically, Jewish tradition predates the Vedic record.</strong> That ordering does not rank souls; it clarifies that graded holiness, sacrifice, and priesthood are not foreign imports into the Bible — they are woven into Israel’s worship from the beginning.</p>
+
+<p>This article is a thorough comparative study of <strong>fourteen structural and ritual parallels</strong> — from the <strong>sacred veil</strong> and <strong>doorpost signs</strong> to <strong>Holika Dahan</strong>, <strong>yajna</strong>, <strong>pakwan</strong> and Seder, prayer shawls, anointing, and the <strong>Ark of the Covenant</strong> carried on acacia wood.</p>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<div class="section-block" id="parallel-01">
+<h2 class="section-heading"><span class="section-num">01</span>Graded Sanctity — Garbhagriha &amp; Holy of Holies</h2>
+<div class="minimal-design" aria-label="Graded sanctity — diagram overview">
+  <div class="diagram-row">
+    <img src="temple-compare-01-zones.svg" alt="Graded sanctity: garbhagriha and Holy of Holies zones" loading="lazy">
+    <img src="temple-compare-01-floorplan.svg" alt="Floor plan: temple campus and Tabernacle layout" loading="lazy">
+  </div>
+  <div class="zone-flow">[ Outer Courtyard / Temple Campus ]  →  open to devotees &amp; sacrifices
+         ↓
+[ Holy Place / Mandapa ]            →  initiated priests only
+         ↓
+[ Holy of Holies / Garbhagriha ]    →  ultimate centre; one priest</div>
+  <p class="minimal-cap">गर्भगृह · मण्डप · प्राकार — קֹדֶשׁ · הֵיכָל · קֹדֶשׁ הַקֳּדָשִׁים</p>
+</div>
+<p class="visual-summary">Graded sanctity: public courtyard → priestly hall → one minister in the inner chamber.</p>
+</div>
+
+
+
+
+<p>Both traditions structured sacred space as a journey inward — from what is public, to what is priestly, to what only one purified minister may enter.</p>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Indian tradition</h4>
+    <p>The <strong>prākāra</strong> (outer complex) welcomes all who come to worship. The <strong>maṇḍapa</strong> is the pavilion where preparations, music, and secondary rites occur — still sacred, but not the innermost mystery.</p>
+    <p>The <strong>garbhagṛha</strong> (“womb chamber”) is small, often dark, housing the mūrti or emblem of divine presence. Only the head <strong>pujārī</strong>, after <em>snāna</em> and mantra, enters to offer the direct worship.</p>
+  </div>
+  <div class="compare-col">
+    <h4>Hebrew tradition</h4>
+    <p>The <strong>Outer Court</strong> received Israel and the nations’ sacrifices at the bronze altar. The <strong>Holy Place</strong> (<em>Kodesh</em>) held the Menorah, the Table of Showbread, and the Altar of Incense — accessible only to officiating priests in linen.</p>
+    <p>Behind the <strong>Parochet</strong> (veil) stood the <strong>Holy of Holies</strong> (<em>Kodesh HaKodashim</em>), containing the Ark. After the golden calf, entry was restricted to the High Priest — and after the monarchy, <strong>once a year</strong> on Yom Kippur (Leviticus 16).</p>
+  </div>
+</div>
+
+<p>The geometry differs — circle and square — but the <em>logic</em> is identical: holiness is spatial, progressive, and guarded. To rush inward without purification is not devotion; it is violation.</p>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<div class="section-block" id="parallel-02">
+<h2 class="section-heading"><span class="section-num">02</span>Sacred Veil — Parda &amp; Parochet</h2>
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/01-sacred-veil-parda.jpg" alt="Parda — sacred curtain before the inner shrine" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">पर्दा · जवनिका</span>
+      <span class="visual-cap">Parda — curtain drawn before the garbhagriha</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/01-tabernacle-curtains.jpeg" alt="Tabernacle woven curtains — barrier of holiness" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">פָּרֹכֶת</span>
+      <span class="visual-cap">Parochet — woven veil before the Holy of Holies</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">A woven barrier stands between the people and the holiest presence.</p>
+</div>
+
+<p>Not everyone may see everything. Both traditions hang a <strong>veil</strong> — cloth boundary between outer worship and inner mystery.</p>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Parda · Javanika</h4>
+    <p>The <strong>parda</strong> or <strong>javanika</strong> screens the garbhagriha. Devotees see the deity only when the curtain is drawn open for <em>darśan</em>; the veil itself teaches that divine presence is guarded, not casual.</p>
+  </div>
+  <div class="compare-col">
+    <h4>Parochet</h4>
+    <p>Exodus describes the <strong>parochet</strong> — blue, purple, and scarlet yarn with cherubim — hung before the Ark (Exodus 26:31–33). Only the High Priest passed it, once a year. The veil was theology in fabric.</p>
+  </div>
+</div>
+
+<div class="scripture">
+  <p>“You shall make a veil of blue and purple and scarlet yarns and fine twined linen… and the veil shall separate for you the Holy Place from the Most Holy.”</p>
+  <span class="scripture-ref">Exodus 26:31–33</span>
+</div>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<div class="section-block" id="parallel-03">
+<h2 class="section-heading"><span class="section-num">03</span>Doorpost Holy Signs</h2>
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/03-doorpost-hindu-red-hand.webp" alt="Red handprint on the doorpost — Hindu threshold blessing" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">हस्त चिह्न · कुमकुम</span>
+      <span class="visual-cap">Red hand on the lintel — blessing a new threshold</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/03-doorpost-jewish-sign.jpeg" alt="Blood on the doorpost — Passover sign in Egypt" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">מְזוּזָה · סִימָן בַּדֶּלֶת</span>
+      <span class="visual-cap">Blood on the doorposts — Passover protection sign</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Holy marks on the doorframe — threshold between home and judgment, blessing and deliverance.</p>
+</div>
+
+<p>Holiness does not stay inside the temple. It marks the <strong>doorpost</strong> — the place where household meets heaven.</p>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Threshold signs — India</h4>
+    <p>Red <strong>kumkum</strong> handprints, <strong>toran</strong> of mango leaves, and festival marks on the lintel declare a home under blessing — especially at weddings and <em>gṛhapraveśa</em> (house-entering rites).</p>
+  </div>
+  <div class="compare-col">
+    <h4>Mezuzah · Passover blood</h4>
+    <p>Israel marked doorposts with lamb’s blood in Egypt (Exodus 12:7). Ever after, the <strong>mezuzah</strong> — Scripture in a case on the doorframe — reminded each household that God claims the threshold (Deuteronomy 6:9).</p>
+  </div>
+</div>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<div class="section-block" id="parallel-04">
+<h2 class="section-heading"><span class="section-num">04</span>Ritual Immersion — Snanam &amp; Mikveh</h2>
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/02-snanam-bath-hindu.jpeg" alt="Ritual snanam — pouring water at sunrise" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">स्नान · सूतक</span>
+      <span class="visual-cap">Ritual snanam — immersion and pouring water</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/02-mikveh-bath.jpeg" alt="Mikveh ritual immersion bath" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">מִקְוֶה · טומאה</span>
+      <span class="visual-cap">Mikveh — ritual immersion pool</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Temporary impurity blocks the shrine until immersion and prescribed rites.</p>
+</div>
+
+
+
+
+<p>In neither tradition does ritual impurity mean “God hates you.” <strong>Asaucham</strong> in Sanskrit and <strong>ṭum’ah</strong> in Hebrew describe a temporary state that blocks access to holy ground until removed by time, washing, or prescribed rites.</p>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Contact with death</h4>
+    <ul>
+      <li><strong>Sutak</strong> — family mourning periods after a death; home temporarily set apart.</li>
+      <li>Cremation grounds and corpse-handling carry extended defilement in <em>Dharmaśāstra</em> traditions.</li>
+    </ul>
+  </div>
+  <div class="compare-col">
+    <h4>Numbers 19 — Red Heifer</h4>
+    <ul>
+      <li>Touching a corpse brings seven days of impurity.</li>
+      <li>Purification requires sprinkling with ashes of the <strong>para aduma</strong> (red heifer) — a ritual unique in its difficulty.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Childbirth</h4>
+    <p>Regional Hindu practice often observes <strong>11 to 40 days</strong> before the mother returns to temple worship — rest, dietary rules, and family seclusion.</p>
+  </div>
+  <div class="compare-col">
+    <h4>Leviticus 12</h4>
+    <p>Moses prescribes specific days of separation for a mother after birth, then an offering to restore her to assembly worship.</p>
+  </div>
+</div>
+
+<p><strong>Bodily emissions</strong> — blood, seminal flux — trigger impurity in both systems. Restoration comes through <strong>immersion</strong>: the <em>snāna</em> / river bath in India, the <strong>mikveh</strong> in Israel. Again: the categories match.</p>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<div class="section-block" id="parallel-05">
+<h2 class="section-heading"><span class="section-num">05</span>Incense — Dhupa &amp; Ketoret</h2>
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/03-incense-hindu.webp" alt="Temple incense burner with burning sticks" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">धूप</span>
+      <span class="visual-cap">Temple incense burner — dhupa offering</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/03-incense-hebrew.jpeg" alt="High priest offering incense at the golden altar" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">קטורת</span>
+      <span class="visual-cap">Ketoret — incense on the golden altar before the veil</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Fragrant smoke morning and evening — dhupa in shodashopachara; ketoret before the veil.</p>
+</div>
+
+
+
+
+<p>Sweet smoke rises. Prayers ride on it. The air of the sanctuary is <em>changed</em>.</p>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Dhupa — India</h4>
+    <p><strong>Dhūpa</strong> is indispensable in <strong>ṣoḍaśopacāra</strong> (the sixteenfold daily service): resins such as <strong>guggulu</strong>, camphor (<em>karpūra</em>), sandal, and herbs. It purifies the atmosphere and “pleases” the deity’s presence.</p>
+  </div>
+  <div class="compare-col">
+    <h4>Ketoret — Israel</h4>
+    <p>The <strong>ketoret</strong> blend (frankincense, stacte, onycha, galbanum — Exodus 30:34–38) burned morning and evening on the golden altar <strong>before the veil</strong>. Compounding it for private use was forbidden — the recipe was guarded like a state secret.</p>
+  </div>
+</div>
+
+<div class="scripture">
+  <p>“Aaron shall burn fragrant incense on it; every morning when he dresses the lamps he shall burn it, and when Aaron sets up the lamps at twilight, he shall burn it…”</p>
+  <span class="scripture-ref">Exodus 30:7–8</span>
+</div>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<div class="section-block" id="parallel-06">
+<h2 class="section-heading"><span class="section-num">06</span>Pranam vs Bowing</h2>
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/04-dandavat-pranam.jpeg" alt="Dandavat pranam — full prostration before the deity" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">दण्डवत् · षष्ठाङ्ग</span>
+      <span class="visual-cap">Daṇḍavat praṇām — the body flat before the Lord</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/04-bowing-hebrew.webp" alt="Bowing and prostration in the sanctuary" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">השתחֲוָיָה</span>
+      <span class="visual-cap">Korim u-mishtachavim — bowing low before the holy</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Pranam vs bowing — worship as bodily surrender before the holy.</p>
+</div>
+
+
+
+
+<p>Worship is not only speech. It is <strong>body</strong> surrendered.</p>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Daṇḍavat &amp; ṣaṣṭāṅga</h4>
+    <p><strong>Daṇḍavat praṇāma</strong> — falling flat like a staff. <strong>Ṣaṣṭāṅga</strong> — “six limbs” touching earth: toes, knees, hands, chest, chin, and mind. Total self-emptying before the Lord.</p>
+  </div>
+  <div class="compare-col">
+    <h4>Korim u-Mishtachavim</h4>
+    <p>Prophets and kings “fell on their faces” before the Ark or the glory of the Lord. Temple worship assumed <strong>full prostration</strong> on stone — not casual nodding, but the body itself confessing smallness.</p>
+  </div>
+</div>
+
+<div class="scripture">
+  <p>“…they fell on their faces and said, ‘God, the God of the spirits of all flesh…’”</p>
+  <span class="scripture-ref">Numbers 16:22</span>
+</div>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<div class="section-block" id="parallel-07">
+<h2 class="section-heading"><span class="section-num">07</span>Samai &amp; Menorah — Seven Lights</h2>
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/05-samai-lamp.jpg" alt="Brass samai oil lamp with peacock motif" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">समई · सात दीप</span>
+      <span class="visual-cap">Samai — seven wick-points before the deity</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/05-menorah-lampstand.jpeg" alt="Seven-branched menorah lampstand" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">מנורה · שבעה קנים</span>
+      <span class="visual-cap">Menorah — seven branches of hammered gold</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Seven lights — samai wick-points and menorah branches both mark perpetual sacred flame.</p>
+</div>
+
+
+
+
+<p>Once a place is consecrated, the light must not die — and both lamps speak in <strong>sevens</strong>.</p>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Samai · Akhanda Dīpa</h4>
+    <p>The <strong>samai</strong> stands with <strong>seven</strong> oil points (often a star of wick-notches around the bowl plus the central finial). The <strong>akhaṇḍa dīpa</strong> — unbroken flame — burns before the deity as a sign that divine consciousness never sleeps.</p>
+  </div>
+  <div class="compare-col">
+    <h4>Menorah — Ner Tamid</h4>
+    <p>Exodus commands a menorah of <strong>seven</strong> branches — three on each side of the central stem (Exodus 25:32). Tended morning and evening, the <strong>ner tamid</strong> became the eternal light before every Ark.</p>
+  </div>
+</div>
+
+<div class="scripture">
+  <p>“Command the people of Israel to bring you pure oil of beaten olives for the light, that a lamp may regularly be set up to burn…”</p>
+  <span class="scripture-ref">Leviticus 24:2</span>
+</div>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<div class="section-block" id="parallel-08">
+<h2 class="section-heading"><span class="section-num">08</span>Naivedyam / Pakwan &amp; Seder Offering</h2>
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/06-thali-naivedyam.webp" alt="Indian thali — pakwan naivedyam meal offering" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">पक्वान · नैवेद्यम्</span>
+      <span class="visual-cap">Pakwan thali — five or six dishes set before the deity</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/06-seder-plate.jpeg" alt="Passover Seder plate — symbolic food offerings" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">לוח פסח · לחם פנים</span>
+      <span class="visual-cap">Seder plate — six symbolic foods before the LORD</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Pakwan and Seder — five or six key foods arranged as covenant meal before God.</p>
+</div>
+
+
+
+
+<p>God is honoured with <strong>food</strong> — not random dishes, but a fixed set of items with meaning.</p>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Pakwan · Naivedyam → Prasādam</h4>
+    <p>Temple <strong>pakwan</strong> (cooked offering) is served in a compartment tray — typically <strong>five or six</strong> items: rice, dal, vegetable, bread or sweet, salad, and dessert. After acceptance, it becomes <strong>prasādam</strong> shared with priests and devotees.</p>
+  </div>
+  <div class="compare-col">
+    <h4>Seder · Lechem HaPanim</h4>
+    <p>The Passover <strong>Seder plate</strong> holds <strong>six</strong> symbolic foods — <em>maror</em>, <em>charoset</em>, <em>karpas</em>, <em>zeroa</em>, <em>beitzah</em>, <em>chazeret</em> — each recalling Exodus. In the Temple, twelve loaves of showbread stood weekly before the LORD.</p>
+  </div>
+</div>
+
+<div class="scripture">
+  <p>“You shall set them in two piles, six in a pile, on the table of pure gold before the LORD.”</p>
+  <span class="scripture-ref">Leviticus 24:6</span>
+</div>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<div class="section-block" id="parallel-09">
+<h2 class="section-heading"><span class="section-num">09</span>Prayer Shawl — Uttariya &amp; Tallit</h2>
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/07-hindu-prayer-shawl.jpeg" alt="Saffron prayer shawl worn for temple worship" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">उत्तरीय · अंगवस्त्र</span>
+      <span class="visual-cap">Saffron shawl — marked cloth for prayer and shrine entry</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/07-jewish-tallit.jpg" alt="Tallit prayer shawl with tzitzit fringes" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">טלית · ציצית</span>
+      <span class="visual-cap">Tallit — prayer shawl with knotted fringes</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Prayer shawl — marked cloth that frames worship before the holy.</p>
+</div>
+
+
+
+
+<p>Before speech, the body is <strong>clothed for prayer</strong>.</p>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Uttarīya · Angavastram</h4>
+    <p>Devotees drape a saffron or white <strong>uttariya</strong> / <strong>angavastram</strong> over the shoulder when entering the mandir or sitting for <em>pūjā</em>. The cloth marks reverence, modesty, and separation from ordinary street dress.</p>
+  </div>
+  <div class="compare-col">
+    <h4>Tallit · Tzitzit</h4>
+    <p>Jewish men wrap the <strong>tallit</strong> for morning prayer and Shabbat — its <strong>tzitzit</strong> fringes with a blue thread recall the commandments (Numbers 15:38–39). The shawl itself becomes a portable “holy place” around the worshipper.</p>
+  </div>
+</div>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<div class="section-block" id="parallel-10">
+<h2 class="section-heading"><span class="section-num">10</span>Anointing — Abhisheka &amp; Shemen HaMishchah</h2>
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/08-abhishekam-anointing.jpeg" alt="Abhisheka — blessing oil poured on the devotee" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">अभिषेक · तैलम्</span>
+      <span class="visual-cap">Abhisheka — oil and blessing on head and person</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/08-anointing-hebrew.webp" alt="Anointing with sacred oil in Hebrew tradition" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">שמן משחה</span>
+      <span class="visual-cap">Shemen HaMishchah — anointing priests and kings</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Anointing — oil sets persons and vessels apart for holy service.</p>
+</div>
+
+
+
+
+<p>To anoint is to transfer holiness from common to set-apart.</p>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Abhiṣeka</h4>
+    <p><strong>Abhiṣekam</strong> pours milk, honey, ghee, curd, and water (<strong>pañcāmṛta</strong>) or <strong>chandan</strong> (sandal paste) over the deity or a king at coronation.</p>
+  </div>
+  <div class="compare-col">
+    <h4>Shemen HaMishchah</h4>
+    <p>Exclusive olive oil compounded with myrrh, cinnamon, and cassia (Exodus 30:22–33). Moses anointed Tabernacle, vessels, Aaron, and later the kings. The formula was forbidden for ordinary use.</p>
+  </div>
+</div>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<div class="section-block" id="parallel-11">
+<h2 class="section-heading"><span class="section-num">11</span>First Fruits — Agra-Puja &amp; Bikkurim</h2>
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/09-fruit-offering-hindu.png" alt="Festive fruit offering display at a temple" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">अग्र पूजा · दक्षिणा</span>
+      <span class="visual-cap">Agra-puja — first fruits and dakshina before the shrine</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/09-bikkurim-ki-tavo.jpeg" alt="Bikkurim — first fruits brought to the priests (Parashat Ki Tavo)" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">ביכורים · מעשר</span>
+      <span class="visual-cap">Bikkurim — first fruits procession to Jerusalem</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">First yield of field and flock sustains the temple and priesthood.</p>
+</div>
+
+
+
+
+<p>Temples do not run on sentiment. They run on <strong>first-fruits</strong> returned to God.</p>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Dakṣiṇā &amp; Agra-Pūjā</h4>
+    <p>Farmers bring the first sheaf, first fruit, or first milk to the local shrine before the household eats. <strong>Dakṣiṇā</strong> sustains the priesthood.</p>
+  </div>
+  <div class="compare-col">
+    <h4>Bikkurim &amp; Ma’aser</h4>
+    <p><strong>Bikkurim</strong> — firstfruits procession to Jerusalem. <strong>Ma’aser</strong> — tithes of grain, wine, and oil for Levites (Numbers 18). The nation’s worship was economically embedded.</p>
+  </div>
+</div>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<div class="section-block" id="parallel-12">
+<h2 class="section-heading"><span class="section-num">12</span>Sacred Fire — Holika, Yajna &amp; Burnt Offering</h2>
+<div class="photo-strip" aria-label="Three forms of sacred fire">
+  <img src="blog-assets/temple-parallel-photos/10-holi-dahan.png" alt="Holika Dahan community bonfire" loading="lazy">
+  <img src="blog-assets/temple-parallel-photos/10-yadnya-homa.jpeg" alt="Yajna homa kunda — sacrificial fire altar" loading="lazy">
+  <img src="blog-assets/temple-parallel-photos/10-bronze-altar-sacrifice.jpg" alt="Bronze altar of burnt offering" loading="lazy">
+  <figcaption>Holika Dahan · <span class="sanskrit-inline">यज्ञ / होम</span> kunda · Mizbeach olah</figcaption>
+</div>
+<p class="visual-summary">Fire consumes the offering wholly — community bonfire, yajna altar, and national Mizbeach.</p>
+</div>
+
+
+
+
+<p>Among the most dramatic public parallels is <strong>fire that takes away sin and impurity</strong>. Before Holi, millions gather for <strong>Holika Dahan</strong> — lighting a bonfire, often with effigy or symbolic burning, praising the victory of devotion over malice, and passing through smoke and flame as purification. The Vedic world already knew fire-altar logic: the <strong>havan kunda</strong> (<span class="sanskrit-inline">हवन कुण्ड</span>), <strong>yajna vedi</strong>, and <strong>yadnya / homa</strong> (<span class="sanskrit-inline">यज्ञ</span>) where ghee, grains, and herbs are fed to <em>agni</em> so that smoke carries the gift upward — the priest tending fire as mediator between earth and heaven.</p>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Indian / Vedic fire</h4>
+    <ul>
+      <li><strong>Holika Dahan</strong> — annual sacred bonfire; burning as release of evil and seasonal renewal.</li>
+      <li><strong>Yajna · Homa · Havan</strong> — the tiered <em>homa kuṇḍa</em> receives sacrificial offerings; fire is <em>agni</em>, witness and carrier of the gift.</li>
+      <li><strong>Yadnya</strong> — the full sacrificial rite: mantras, fire, and offering together; not spectacle but covenant logic made of flame.</li>
+      <li>Fire is not decorative; it <strong>transforms</strong> what is placed in it (offerings, symbols, impurity).</li>
+    </ul>
+  </div>
+  <div class="compare-col">
+    <h4>Hebrew burnt offering</h4>
+    <ul>
+      <li><strong>Olah</strong> (burnt offering) — the whole sacrifice ascends in smoke “as a pleasing aroma to the LORD” (Leviticus 1:9).</li>
+      <li><strong>Mizbeach</strong> (bronze altar) stood in the outer court; fire was kept burning and not allowed to go out (Leviticus 6:12–13).</li>
+      <li>Israel’s national worship was unimaginable without <strong>blood and fire</strong> at the centre of the camp.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="scripture">
+  <p>“If his offering is a burnt offering from the herd… it shall be accepted for him to make atonement for him… the priest shall burn all of it on the altar, as a burnt offering, a food offering with a pleasing aroma to the LORD.”</p>
+  <span class="scripture-ref">Leviticus 1:3–9</span>
+</div>
+
+<p>The gospel does not abolish the logic of fire but fulfils it: one offering, fully consumed in love, and the smoke of praise rising from a single cross outside the city.</p>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<div class="section-block" id="parallel-13">
+<h2 class="section-heading"><span class="section-num">13</span>Palkhi &amp; Ark of the Covenant</h2>
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/11-palkhi.webp" alt="Decorative palkhi palanquin shrine" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">पालखी · वारी</span>
+      <span class="visual-cap">Palkhi — deity borne on poles among the people</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/11-ark-covenant.jpeg" alt="Ark of the Covenant with cherubim" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">אָרוֹן הַבְּרִית</span>
+      <span class="visual-cap">Aron HaBrit — carried on acacia-wood poles</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">The presence of God borne on poles among the people on pilgrimage.</p>
+</div>
+
+
+
+<p>If fire answers the question “how is guilt removed?”, the <strong>portable throne</strong> answers “how does God travel with His people?” In Maharashtra and across India, the <strong>palkhi</strong> (<span class="sanskrit-inline">पालखी</span>) — a palanquin shrine — carries the utsava murti of a saint or deity for <strong>wari</strong> pilgrimage and temple festivals. Devotees bear the poles; the image passes among the crowds; the whole road becomes sacred corridor.</p>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Palkhi / rath culture</h4>
+    <ul>
+      <li>The deity’s presence is <strong>mobile</strong> — brought into villages that cannot all travel to the stone temple.</li>
+      <li>Bearing the poles is an honour and a discipline; the community walks <strong>with</strong> the image.</li>
+      <li><strong>Rath Yatra</strong> (chariot festival) extends the same logic on wheels — Lord “comes out” to the people.</li>
+    </ul>
+  </div>
+  <div class="compare-col">
+    <h4>Ark of the Covenant</h4>
+    <ul>
+      <li>Gold-overlaid acacia box with cherubim; carried on <strong>poles</strong> inserted through rings — not touched by common hands (Exodus 25:14–15).</li>
+      <li>Only designated Levites bore it; when Uzzah steadied it with his hand, judgment followed (2 Samuel 6:6–7) — holiness and danger together.</li>
+      <li>When the Ark crossed Jordan or circled Jericho, the nation’s <strong>victory and identity</strong> moved with it (Joshua 3–6).</li>
+    </ul>
+  </div>
+</div>
+
+<div class="scripture">
+  <p>“You shall put the poles into the rings on the sides of the ark to carry the ark by them. The poles shall remain in the rings of the ark; they shall not be taken from it… they shall not go in to look on the holy things even for a moment, lest they die.”</p>
+  <span class="scripture-ref">Exodus 25:14–15; Numbers 4:20</span>
+</div>
+
+<p>David danced before the Ark when it came home — not casual celebration, but the joy of a king before the footstool of the Most High (2 Samuel 6:14). The form of the palkhi and the form of the Ark differ; the question is the same: <em>who is allowed to carry the presence of God among men?</em></p>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<div class="section-block" id="parallel-14">
+<h2 class="section-heading"><span class="section-num">14</span>Prayer Cap — Topi &amp; Kippah</h2>
+<div class="visual-compare">
+  <figure class="visual-panel visual-panel--hindu">
+    <img src="blog-assets/temple-parallel-photos/14-hindu-ceremony-topi.jpg" alt="Hindu ceremony topi — prayer cap at festival" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-dev">टोपी · फेटा · रुमाल</span>
+      <span class="visual-cap">Ceremony topi — head covered at sacred rites</span>
+    </figcaption>
+  </figure>
+  <figure class="visual-panel visual-panel--hebrew">
+    <img src="blog-assets/temple-parallel-photos/14-jewish-ceremony-cap.jpeg" alt="Kippah at Torah ceremony" loading="lazy">
+    <figcaption class="visual-label">
+      <span class="visual-heb">כִּפָּה</span>
+      <span class="visual-cap">Kippah — covered head before the Torah</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="visual-summary">Prayer cap — topi, pheta, and rumal beside the kippah.</p>
+</div>
+
+
+
+
+<p>Who may stand before God? Both traditions answer with <strong>what covers the head</strong> — not only the large turban of procession, but the simple <strong>cap of daily prayer</strong>.</p>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Topi · Pheta · Pagri · Rumal</h4>
+    <p>From the white <strong>topi</strong> at upanayana to the brocade <strong>pheta</strong> at weddings, Hindu ceremony marks the head as set apart. The shoulder <strong>rumal</strong> and folded <strong>pagri</strong> complete the dress of shrine and festival.</p>
+  </div>
+  <div class="compare-col">
+    <h4>Kippah · Mitznefet</h4>
+    <p>Every Jewish man covers the head in prayer with a <strong>kippah</strong> — humility before heaven. Aaron and the High Priest wore the <strong>mitznefet</strong> — a wrapped linen turban — when entering the sanctuary (Exodus 28:4, 37).</p>
+  </div>
+</div>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<h2>Summary: Comparative Terminology</h2>
+
+<table class="term-table">
+  <thead>
+    <tr>
+      <th>Concept</th>
+      <th>Vedic / Indian</th>
+      <th>Ancient Hebrew</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Inner sanctum</td><td>Garbhagṛha</td><td>Kodesh HaKodashim (Holy of Holies)</td></tr>
+    <tr><td>Sacred fire</td><td><span class="sanskrit-inline">होलिका दहन</span> · <span class="sanskrit-inline">यज्ञ</span> / Homa</td><td>Olah / Mizbeaḥ (burnt offering)</td></tr>
+    <tr><td>Procession of presence</td><td><span class="sanskrit-inline">पालखी</span> / Rath Yatra</td><td>Aron HaBrit (Ark of the Covenant)</td></tr>
+    <tr><td>Ritual immersion</td><td>Snāna / Snanam</td><td>Mikveh</td></tr>
+    <tr><td>Sacred veil</td><td>Parda / Javanika</td><td>Parochet</td></tr>
+    <tr><td>Prayer shawl</td><td>Uttarīya / Angavastram</td><td>Tallit · Tzitzit</td></tr>
+    <tr><td>Prayer cap</td><td>Topi · Pheta · Rumal</td><td>Kippah · Mitznefet</td></tr>
+    <tr><td>Doorpost sign</td><td>Hasta cihn · Toran</td><td>Mezuzah · Passover blood</td></tr>
+    <tr><td>Food offering</td><td>Pakwan · Naivedyam</td><td>Seder · Lechem HaPanim</td></tr>
+    <tr><td>Anointing</td><td>Abhisheka · Tailam</td><td>Shemen HaMishchah</td></tr>
+    <tr><td>Eternal lamp</td><td>Samai · Akhanda Dīpa</td><td>Ner Tamid (Menorah)</td></tr>
+    <tr><td>Incense</td><td>Dhūpa</td><td>Ketoret</td></tr>
+    <tr><td>Death impurity</td><td>Sutak / Asaucham</td><td>Ṭum’ah / Para Aduma</td></tr>
+    <tr><td>First fruits</td><td>Agra-Pūjā / Dakṣiṇā</td><td>Bikkurim / Ma’aser</td></tr>
+  </tbody>
+</table>
+
+<h2>What These Parallels Do — and Do Not — Prove</h2>
+
+<p>Similarity of form does not by itself prove historical contact, shared origin, or that one tradition “copied” the other. Scholars debate chronology, regional trade, and whether parallels arise from common human response to the holy. Israel’s tabernacle-temple pattern is attested in Torah before the Rigveda’s usual scholarly dating — <strong>Jewish tradition historically predates Vedic tradition</strong> in the written record — so when forms resemble one another, the direction of influence (if any) must not be assumed either way. What the parallels <em>do</em> accomplish for the disciple of Jesus is practical:</p>
+
+<ul style="margin:1.5rem 0 2rem 1.4rem;color:var(--text-secondary);font-size:1rem;line-height:1.85;">
+  <li>They show that <strong>temple logic</strong> in India is not alien to the God of Abraham — graded holiness, priesthood, sacrifice, and purity are deeply biblical categories.</li>
+  <li>They give vocabulary to speak with Hindu family and friends without ridiculing their shrines — many instincts (remove shoes, wash, offer food, light lamps) are structurally biblical.</li>
+  <li>They prepare the ground for the gospel: if the <em>form</em> of worship points upward, the <strong>substance</strong> is fulfilled in one High Priest who entered the true Holy of Holies once for all (Hebrews 9).</li>
+</ul>
+
+<div class="scripture">
+  <p>“Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain…”</p>
+  <span class="scripture-ref">Hebrews 10:19–20</span>
+</div>
+
+<p>Christ is not one deity among many behind a veil. He is the Son sent by the Father — the veil torn, the garbhagṛha of heaven opened to those who come through faith and baptism in His name.</p>
+
+<div class="editorial">
+  <p class="editorial-label">Editorial Note</p>
+  <p>2:22 Church presents this study as an invitation to compare primary sources with humility. Reference photographs and diagrams are supplied for illustration only; brand marks on source photos have been obscured where needed. Hindu and Jewish scholars disagree on dating, regional variation, and whether every parallel implies historical contact. We note for chronology that the Mosaic sanctuary precedes the classical Vedic <em>śruti</em> as scholars usually date them — Jewish tradition historically predates Vedic tradition in the written record, though both continued to develop for millennia. We do not require acceptance of all fourteen parallels as proof of ancient borrowing. We do require that every believer test all things by Scripture alone — one God the Father, one Lord Jesus Christ, and salvation through His blood. Temple forms may echo one another; eternal life is found only in the name God has exalted above every name.</p>
+</div>
+`
+  },
+
+  {
     id: "hinduism-christianity-vedic-witness-to-christ",
     title: "Hinduism and Christianity: Vedic Witness to Christ",
     date: "4 June 2026",

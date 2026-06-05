@@ -3,8 +3,8 @@
 
 {
   id: "sacred-architecture-vedic-hebrew-temple-parallels",
-  title: "Sacred Architecture: Eleven Deep Parallels Between the Vedic Temple and the Hebrew Sanctuary",
-  date: "CHANGE_ME",  // e.g. "12 March 2026"
+  title: "Sacred Architecture: Fourteen Deep Parallels Between the Vedic Temple and the Hebrew Sanctuary",
+  date: "5 June 2026",
   category: "Teaching",
   image: "blog-assets/temple-parallel-photos/10-holi-dahan.png",
   excerpt: "Fourteen parallels: graded sanctity, sacred veil, doorpost signs, yajna fire, pakwan and Seder, samai and menorah, prayer shawls and caps, palkhi and the Ark — with your reference photos and diagrams.",
