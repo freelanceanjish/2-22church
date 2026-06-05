@@ -24,9 +24,9 @@ const POSTS = [
     image: "temple-shadow-and-original.svg",
     excerpt: "Fourteen temple parallels: graded sanctity, sacred veil, yajna fire, pakwan and Seder, palkhi and the Ark. Vedic culture came long after Moses; the rituals of Deuteronomy echo across cultures and point the Hindu reader to the Messiah's coming, death, resurrection, and ascension.",
     content: `
-<div class="minimal-design hero-diagram" aria-label="Shadow and original: tracing the roots">
-  <img src="temple-shadow-and-original.svg" alt="Shadow and original diagram: Vedic echo beside Mosaic source" loading="eager" decoding="async">
-  <p class="minimal-cap">Shadow | Original: celebrating the forms that echo Sinai, tracing the roots God gave at the Tabernacle</p>
+<div class="minimal-design hero-diagram" aria-label="Man and shadow: original and echo">
+  <img src="temple-shadow-and-original.svg" alt="Minimal figure of a man and his shadow: the original form and its echo" loading="eager" decoding="async">
+  <p class="minimal-cap">Man and shadow: the solid figure is the root given at Sinai; the shadow is the ritual echo traced in later cultures</p>
 </div>
 
 <p class="opening">The closer you walk toward the centre, the fewer may follow. That single rule governed both the Vedic temple campus and the Tabernacle Moses built: not as decoration, but as theology made of stone, curtain, and fire.</p>
