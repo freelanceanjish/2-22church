@@ -22,7 +22,7 @@ const POSTS = [
     date: "5 June 2026",
     category: "Teaching",
     image: "following-jesus-footsteps-disciple.jpg",
-    excerpt: "Fourteen temple parallels: graded sanctity, sacred veil, yajna fire, pakwan and Seder, palkhi and the Ark. Vedic culture came long after Moses; the rituals of Deuteronomy echo across cultures and point the Hindu reader to the Messiah's coming, death, resurrection, and ascension.",
+    excerpt: "Born in Hindu culture, the author found Christ in 2009 and began tracing Tabernacle parallels. Fourteen temple echoes from ~1600 BC Vedic forms to Mosaic worship: shadows pointing to Messiah Yeshua.",
     content: `
 <div class="minimal-design hero-diagram hero-diagram--photo" aria-label="Following in the footsteps: shadow or reality">
   <img src="following-jesus-footsteps-disciple.jpg" alt="Disciple walking in footsteps on the sand: tracing the path toward reality" loading="eager" decoding="async">
@@ -35,7 +35,12 @@ const POSTS = [
 
 <p>Students of religion often treat Hindu and Hebrew worship as worlds apart. One speaks Sanskrit and circles a <em>lingam</em> in a dark inner room; the other speaks Hebrew and faces an Ark behind a woven veil. Yet when you set the sources side by side, <em>Śruti</em>, <em>Smriti</em>, the Law of Moses, and the prophets, a remarkable pattern appears in the <strong>architecture of ritual</strong>. Israel's sanctuary was ordered by the true God through Moses. India's temples, centuries later, built comparable patterns of concentric holiness, impurity, and offering toward other objects of devotion. The resemblance is real; the <strong>Object of worship is not the same</strong>.</p>
 
-<p>On chronology: the priestly temple tradition of Israel, the Tabernacle of Moses and the Law given at Sinai, including the ritual instructions of Exodus, Leviticus, and <strong>Deuteronomy</strong>, belongs to the second millennium BC as Scripture records it. The classical Vedic <em>śruti</em>, by the usual scholarly dating of the Rigveda and later texts, comes <strong>much later</strong> (commonly placed around 1500 to 1200 BC onward, with much debate). <strong>Vedic culture began long after the Law of the Tabernacle and the Law of Moses.</strong> That ordering does not rank souls; it tells us which pattern came first, and which cultures may be carrying echoes of it.</p>
+<p>On chronology: <strong>Vedic culture began taking shape around 1600 BC</strong> (the usual scholarly range for the Rigveda and classical <em>śruti</em>, with much debate). The priestly temple tradition of Israel, the Tabernacle of Moses and the Law given at Sinai, including the ritual instructions of Exodus, Leviticus, and <strong>Deuteronomy</strong>, belongs to the second millennium BC as Scripture records it (roughly <strong>1400 BC</strong> onward). Hindu <strong>temple ritual as lived today</strong> developed across the centuries after both, yet its graded sanctity, fire, veil, and offering read like <strong>echoes of the worship God gave through Moses</strong>: shadows of something real, not a wholly separate human invention. That ordering does not rank souls; it asks which pattern was given by the God of Israel, and which cultures may still be carrying its shadow.</p>
+
+<div class="editorial">
+  <p class="editorial-label">Heart of This Study</p>
+  <p>I was born into Hindu culture. After I met Jesus Christ as my personal Saviour in <strong>2009</strong>, the parallels between Tabernacle ritual and the forms I had known all my life began to intrigue me. In my heart I knew my people carried <strong>shadows and echoes of something real</strong>: not inventions from nothing, but traces of worship that once pointed toward the holy. Today those forms often run under the name of religion yet <strong>miss the mark of reality</strong>: the Messiah, <strong>Yeshua</strong>, whom the veil, the fire, and the offering were always meant to reveal.</p>
+</div>
 
 <p>This article has three movements: an <strong>introduction</strong> to the chronology, an <strong>explanation</strong> of fourteen structural and ritual parallels side by side, and a <strong>conclusion</strong> on what those shadows point toward. The parallels run from the sacred veil and doorpost signs to Holika Dahan, yajna, pakwan and Seder, prayer shawls, anointing, and the Ark of the Covenant carried on acacia wood.</p>
 
@@ -44,7 +49,7 @@ const POSTS = [
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2 class="article-part-title"><span class="article-part-label">Explanation</span>Fourteen Parallels: Mosaic Root and Vedic Echo</h2>
-<p>Each topic below pairs the Hebrew pattern first (Torah and Tabernacle, from roughly <strong>1400 BC</strong> onward as Scripture records) with the Indian form that appears later in the Vedic and temple tradition (classical <em>śruti</em> commonly dated from <strong>1500 BC</strong> onward, with ongoing debate).</p>
+<p>Each topic below pairs the Hebrew pattern first (Torah and Tabernacle, from roughly <strong>1400 BC</strong> onward as Scripture records) with the Indian form that appears in the Vedic and temple tradition (Vedic culture from around <strong>1600 BC</strong> onward, with ongoing debate).</p>
 
 <div class="section-block" id="parallel-01">
 <h2 class="section-heading"><span class="section-num">01</span>Graded Sanctity: Garbhagriha &amp; Holy of Holies</h2>
@@ -580,7 +585,7 @@ const POSTS = [
     </figcaption>
   </figure>
   <figure class="visual-panel visual-panel--hebrew">
-    <img src="blog-assets/temple-parallel-photos/14-jewish-ceremony-cap.jpeg" alt="Kippah at Torah ceremony" loading="lazy">
+    <img src="blog-assets/temple-parallel-photos/14-jewish-ceremony-cap.webp" alt="Jewish prayer caps: kippah at sacred ceremony" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-heb">כִּפָּה</span>
       <span class="visual-cap">Kippah: covered head before the Torah</span>
@@ -605,14 +610,14 @@ const POSTS = [
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<h2 class="article-part-title"><span class="article-part-label">Summary</span>Comparative Terminology (Mosaic ~1400 BC | Vedic from ~1500 BC)</h2>
+<h2 class="article-part-title"><span class="article-part-label">Summary</span>Comparative Terminology (Mosaic ~1400 BC | Vedic from ~1600 BC)</h2>
 <p>A quick reference table. The Hebrew column reflects worship given through Moses at Sinai; the Indian column reflects forms that develop later in the Vedic and temple world.</p>
 
 <table class="term-table">
   <thead>
     <tr>
       <th>Concept</th>
-      <th>Vedic / Indian (from ~1500 BC onward)</th>
+      <th>Vedic / Indian (from ~1600 BC onward)</th>
       <th>Hebrew / Mosaic (from ~1400 BC onward)</th>
     </tr>
   </thead>
@@ -638,7 +643,7 @@ const POSTS = [
 
 <h2 class="article-part-title"><span class="article-part-label">Conclusion</span>Echoes of Moses, Pointers to the Messiah</h2>
 
-<p>When the chronology is weighed honestly, the picture becomes difficult to ignore. <strong>Vedic culture arose long after</strong> the Law of the Tabernacle and the Law of Moses. Graded sanctity, sacrifice, impurity and cleansing, first-fruits, doorpost signs, sacred fire, anointing, and the rest are not vague human inventions that two civilisations happened to dream up independently: they are spelled out with precision in Torah, above all in the priestly codes and in <strong>Deuteronomy</strong>, centuries before the classical Vedic record.</p>
+<p>When the chronology is weighed honestly, the picture becomes difficult to ignore. <strong>Vedic culture took shape around 1600 BC</strong>, while the Law of the Tabernacle and the Law of Moses belong, as Scripture records them, to roughly <strong>1400 BC</strong>. Graded sanctity, sacrifice, impurity and cleansing, first-fruits, doorpost signs, sacred fire, anointing, and the rest are not vague human inventions that two civilisations happened to dream up independently: they are spelled out with precision in Torah, above all in the priestly codes and in <strong>Deuteronomy</strong>, as worship the God of Israel gave through Moses: and India's temple forms carry unmistakable echoes of that grammar.</p>
 
 <p>To us, the resemblance is <strong>very clear</strong>: the ritual notions Moses received at Sinai were carried, in fragment and shadow, into many cultures across the ancient world. Vedic temple life preserves that pattern: veil, fire, immersion, offering, procession of presence: yet the Vedic world did <strong>not</strong> worship the God of Abraham, Isaac, and Jacob. The forms remained; the true Object of worship was lost. What survives in the shrine is not proof that India invented temple logic. It is evidence that the Creator once placed a grammar of holiness before His people, and that grammar did not stay contained in one nation.</p>
 
@@ -667,7 +672,7 @@ const POSTS = [
 
 <div class="editorial">
   <p class="editorial-label">Editorial Note</p>
-  <p>2:22 Church presents this study as an invitation to compare primary sources with open hearts and honest questions. Brand marks on reference photos have been obscured where needed. Scholars continue to debate how ritual patterns travelled: trade routes, migration, oral tradition, or parallel human response to the holy: and we do not claim to settle that debate here. What we do hold, on the basis of Scripture and chronology, is that the Mosaic sanctuary and the Law of Moses precede the classical Vedic record, and that the fourteen parallels listed above are too structured to dismiss as mere coincidence. Our conviction is that God placed a grammar of holiness before Israel so that, even where His name was forgotten, the <strong>forms of worship might still point toward the Messiah</strong>: His coming, death, resurrection, and ascension. We do not require acceptance of every parallel as proof of ancient borrowing. We do require that Jesus be known as the <strong>Man Christ Jesus</strong>, the Father’s exalted Son: one God the Father, one Lord, and salvation through His blood alone.</p>
+  <p>2:22 Church presents this study as an invitation to compare primary sources with open hearts and honest questions. Brand marks on reference photos have been obscured where needed. Scholars continue to debate how ritual patterns travelled: trade routes, migration, oral tradition, or parallel human response to the holy: and we do not claim to settle that debate here. What we do hold, on the basis of Scripture, is that the ritual grammar of the Mosaic sanctuary was given by the God of Israel at Sinai, and that the fourteen parallels listed above are too structured to dismiss as mere coincidence. Our conviction is that God placed a grammar of holiness before Israel so that, even where His name was forgotten, the <strong>forms of worship might still point toward the Messiah</strong>: His coming, death, resurrection, and ascension. We do not require acceptance of every parallel as proof of ancient borrowing. We do require that Jesus be known as the <strong>Man Christ Jesus</strong>, the Father’s exalted Son: one God the Father, one Lord, and salvation through His blood alone.</p>
 </div>
 `
   },
