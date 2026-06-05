@@ -17,6 +17,199 @@
 
 const POSTS = [
   {
+    id: "vedic-hebrew-zodiac-lunar-calendar-parallels",
+    title: "Twelve signs in the sky: pride, pattern, and the path to truth",
+    date: "5 June 2026",
+    category: "Teaching",
+    image: "astro-12-sign-wheel.svg",
+    excerpt: "The Rashi Chakra and the Hebrew Mazzaroth share one sky: twelve signs, luni-solar calendars, and a 13th-month correction. Jyotish was never India's alone. It was meant to guide hearts toward the truth behind the lights.",
+    content: `
+<div class="minimal-design hero-diagram" aria-label="Twelve cosmic signs: Rashi Chakra and Mazzaroth">
+  <img src="astro-12-sign-wheel.svg" alt="Side by side wheels: Vedic Rashi Chakra and Hebrew Mazzaroth with twelve signs" loading="eager" decoding="async">
+  <p class="minimal-cap">One belt of constellations, two sacred names: the wheel in the sky was never meant to feed pride, but to guide the soul toward the One who set the lights.</p>
+</div>
+
+<h2 class="article-part-title"><span class="article-part-label">Introduction</span>The Sky, the Calendar, and the Question of Origin</h2>
+
+<p class="opening">Look up on a clear night and the same stars shine over Varanasi and Jerusalem. Long before smartphones and satellite maps, both the Vedic world and the people of Israel learned to <strong>read the sky as a calendar</strong>: twelve signs, a cycling Moon, seasons that must not drift, and a thirteenth month inserted now and then so spring festivals stay in spring. That is not superstition dressed in Sanskrit. It is <strong>astronomical reality</strong> woven into worship.</p>
+
+<p>Yet many Hindu readers have been taught, subtly or openly, that <strong>astrology was born in India</strong>: that <em>Jyotish</em> is a uniquely Hindu science, a source of civilisational pride. Pride feels flattering. It also <strong>blinds</strong>. It hides a harder, more wonderful question: <em>If the twelve signs, the lunar months, and the leap-month correction appear with mathematical precision in both the Vedic calendar and the Jewish calendar, who placed that pattern in the heavens first?</em></p>
+
+<p>This article compares the <strong>Rashi Chakra</strong> (<span class="sanskrit-inline">राशि चक्र</span>) and the Hebrew <strong>Mazzaroth</strong> (מַזָּרוֹת) without mockery and without nationalist bias. We are not ranking souls by birth culture. We are tracing whether the sky's grammar points to a <strong>Maker</strong> and whether that Maker intended the lights to guide us toward <strong>truth</strong>: ultimately toward the Messiah, <strong>Yeshua</strong>, not toward endless horoscope fear.</p>
+
+<div class="editorial">
+  <p class="editorial-label">Heart of This Study</p>
+  <p>I was raised where <em>kundali</em> charts and <em>rashi</em> talk are everyday language. When I met Jesus Christ as my Saviour in <strong>2009</strong>, I began to see that the sky I had been taught to read for fate was carrying something older and truer: <strong>seasons, accountability, and pointers toward the living God</strong>. The essence of astrological <em>reality</em> is not "India invented the stars." The stars declare glory. The calendar was meant to <strong>guide</strong>, not to imprison.</p>
+</div>
+
+<p>Three movements follow: an <strong>introduction</strong> to the shared structure, an <strong>explanation</strong> of how the Vedic and Jewish systems align month by month and moon by moon, and a <strong>conclusion</strong> on what the pattern is for.</p>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<h2 class="article-part-title"><span class="article-part-label">Explanation</span>One Sky, Two Sacred Grammars</h2>
+
+<h2 class="section-heading"><span class="section-num">01</span>Structural Comparison: Wheels, Months, and Correction</h2>
+
+<p>At the structural level, Hindu <em>Jyotish</em> and the Jewish festival calendar are both <strong>luni-solar</strong>. They let the Moon mark months while the Sun guards seasons. When the lunar year falls short of the solar year, neither tradition invents a thirteenth zodiac sign. Each inserts an <strong>extra month</strong> and doubles one existing sign's window instead.</p>
+
+<table class="term-table">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Vedic / Hindu System</th>
+      <th>Jewish System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Primary term for zodiac</td><td><strong>Rashi Chakra</strong> (<span class="sanskrit-inline">राशि चक्र</span>) · wheel of signs</td><td><strong>Mazzaroth</strong> · belt of constellations (Job 38:32)</td></tr>
+    <tr><td>Individual sign</td><td><strong>Rashi</strong> · constellation / sign</td><td><strong>Mazzal</strong> · constellation / destiny</td></tr>
+    <tr><td>Calendar type</td><td>Luni-solar (<em>Amanta</em> or <em>Purnimanta</em> reckoning)</td><td>Luni-solar (fixed mathematical calendar)</td></tr>
+    <tr><td>Lunar month basis</td><td>Moon's phase against <strong>Nakshatras</strong> (star mansions)</td><td><strong>Molad</strong> · calculated / observed new moon</td></tr>
+    <tr><td>13th month purpose</td><td>Keep seasonal festivals (e.g. Holi / spring) aligned with the Sun</td><td>Keep Passover and spring feasts aligned with the Sun</td></tr>
+    <tr><td>Leap month frequency</td><td>Roughly every 2.7 years (~32.5 months)</td><td>7 times in a 19-year Metonic cycle (~2.7 years)</td></tr>
+  </tbody>
+</table>
+
+<p class="visual-summary">Same problem (lunar drift), same solution class (leap month), same refusal to create a thirteenth sign.</p>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<h2 class="section-heading"><span class="section-num">02</span>Twelve Months, Twelve Signs: Month by Month</h2>
+
+<p>Both traditions pair their twelve festival months with the twelve constellations of the zodiac belt. Names differ; the <strong>zoological sequence</strong> does not. Ram, bull, twins, crab, lion, virgin, scales, scorpion, archer, goat, water-bearer, fish: the sky's story is one story.</p>
+
+<table class="term-table">
+  <thead>
+    <tr>
+      <th>Constellation</th>
+      <th>Vedic Month</th>
+      <th>Vedic Rashi</th>
+      <th>Hebrew Month</th>
+      <th>Hebrew Mazzal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Aries (Ram)</td><td>Chaitra</td><td>Mesha</td><td>Nissan</td><td>T'leh</td></tr>
+    <tr><td>Taurus (Bull)</td><td>Vaishakha</td><td>Vrishabha</td><td>Iyar</td><td>Shor</td></tr>
+    <tr><td>Gemini (Twins)</td><td>Jyeshtha</td><td>Mithuna</td><td>Sivan</td><td>T'umim</td></tr>
+    <tr><td>Cancer (Crab)</td><td>Ashadha</td><td>Karka</td><td>Tammuz</td><td>Sartan</td></tr>
+    <tr><td>Leo (Lion)</td><td>Shravana</td><td>Simha</td><td>Av</td><td>Aryeh</td></tr>
+    <tr><td>Virgo (Virgin)</td><td>Bhadrapada</td><td>Kanya</td><td>Elul</td><td>Betulah</td></tr>
+    <tr><td>Libra (Scales)</td><td>Ashvin</td><td>Tula</td><td>Tishrei</td><td>Moznayim</td></tr>
+    <tr><td>Scorpio (Scorpion)</td><td>Kartika</td><td>Vrischika</td><td>Cheshvan</td><td>Akrav</td></tr>
+    <tr><td>Sagittarius (Archer)</td><td>Margashirsha</td><td>Dhanu</td><td>Kislev</td><td>Keshet</td></tr>
+    <tr><td>Capricorn (Goat)</td><td>Pausha</td><td>Makara</td><td>Tevet</td><td>Gedi</td></tr>
+    <tr><td>Aquarius (Water Bearer)</td><td>Magha</td><td>Kumbha</td><td>Shevat</td><td>D'li</td></tr>
+    <tr><td>Pisces (Fish)</td><td>Phalguna</td><td>Meena</td><td>Adar</td><td>Dagim</td></tr>
+  </tbody>
+</table>
+
+<p>Regional naming varies in India; the table reflects the common North Indian month-rashi pairing used in <em>panchang</em> tradition. The point is not spelling perfection in every province. The point is the <strong>stable twelve-fold map</strong> shared across civilisations that never shared a modern classroom.</p>
+
+<div class="minimal-design" aria-label="Twelve sign wheels compared">
+  <div class="diagram-row">
+    <img src="astro-12-sign-wheel.svg" alt="Rashi Chakra and Mazzaroth: twelve signs in parallel wheels" loading="lazy">
+    <img src="astro-moon-primacy.svg" alt="Moon primacy: Janma Rashi and Rosh Chodesh" loading="lazy">
+  </div>
+  <p class="minimal-cap">राशि चक्र · מַזָּרוֹת · Moon before Sun in both sacred calendars</p>
+</div>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<h2 class="section-heading"><span class="section-num">03</span>Why the Calendar Needs a Thirteenth Month</h2>
+
+<p>Twelve lunar months total about <strong>354 days</strong>. A solar year is about <strong>365 days</strong>. Left alone, the gap (~11 days annually) would push harvest festivals into winter within a few years. Both the Vedic and Jewish systems correct that drift by adding a month, not by rewriting the zodiac.</p>
+
+<div class="minimal-design" aria-label="Lunar-solar drift diagram">
+  <img src="astro-lunar-solar-drift.svg" alt="Diagram: 354-day lunar year vs 365-day solar year and eleven-day drift" loading="lazy">
+  <p class="minimal-cap">The drift is astronomical fact · the correction is theological memory kept in time</p>
+</div>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Adhika Masa (Vedic)</h4>
+    <p>A normal lunar month includes a <strong>Sankranti</strong>: the moment the Sun enters a new <em>Rashi</em>. When the Moon moves quickly and a lunar month passes <strong>without</strong> that solar crossing, that month is flagged as <strong>Adhika Masa</strong> (extra month).</p>
+    <p>It takes the <strong>name of the next month</strong> and shares its zodiac sign, effectively doubling one <em>Rashi</em> window for that year. There is still no thirteenth constellation.</p>
+  </div>
+  <div class="compare-col">
+    <h4>Adar Rishon (Jewish)</h4>
+    <p>The Jewish calendar uses the <strong>Metonic cycle</strong>: seven leap years in every nineteen. In a leap year, the month of <strong>Adar</strong> is doubled.</p>
+    <p><strong>Adar I</strong> is inserted before <strong>Adar II</strong>. Both months bear the same <strong>Mazzal</strong> of <em>Dagim</em> (Pisces). Passover remains anchored in spring. Again: no thirteenth sign.</p>
+  </div>
+</div>
+
+<div class="minimal-design" aria-label="Leap month mechanism compared">
+  <img src="astro-leap-month-mechanism.svg" alt="Adhika Masa and Adar Rishon: both double one month and sign" loading="lazy">
+  <p class="minimal-cap">अधिक मास · אדר א׳ · repeat the sign, heal the year</p>
+</div>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<h2 class="section-heading"><span class="section-num">04</span>Moon, Mysticism, and Human Accountability</h2>
+
+<p>Unlike much Western newspaper astrology, both Vedic <em>Jyotish</em> and Jewish practice place the <strong>Moon first</strong>. In India your <strong>Janma Rashi</strong> (birth Moon sign) often matters more than the Sun sign. In Israel, <strong>Rosh Chodesh</strong> (head of the month) marks spiritual renewal tied to the lunar phase, and festival dates follow the Moon's rhythm.</p>
+
+<div class="scripture">
+  <p>"And God said, 'Let there be lights in the expanse of the heavens to separate the day from the night. And let them be for signs and for seasons, and for days and years…'"</p>
+  <span class="scripture-ref">Genesis 1:14</span>
+</div>
+
+<p>The lights were made for <strong>signs</strong> (<em>otot</em>) and <strong>appointed times</strong> (<em>moedim</em>): not so that humanity could boast of owning them, but so that worship, harvest, and remembrance would stay ordered before the Creator.</p>
+
+<p>Beyond mathematics, both traditions pour moral meaning into the twelve windows:</p>
+
+<div class="compare-grid">
+  <div class="compare-col">
+    <h4>Vedic framing</h4>
+    <p>The twelve <em>Rashis</em> map to the four <strong>Purusharthas</strong>: <em>Dharma</em> (duty), <em>Artha</em> (provision), <em>Kama</em> (desire), and <em>Moksha</em> (liberation). The sky becomes a mirror for human vocation.</p>
+  </div>
+  <div class="compare-col">
+    <h4>Jewish framing</h4>
+    <p>In Kabbalistic tradition, the twelve <em>Mazzaroth</em> correspond to the <strong>twelve tribes of Israel</strong>, each expressing a distinct facet of covenant character before God.</p>
+  </div>
+</div>
+
+<p>Those mystic layers are not proof that India authored the heavens. They are proof that <strong>both cultures heard something in the sky demanding ethical seriousness</strong>: time is not empty; months are not mere numbers; the wheel above asks something of the heart.</p>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<h2 class="article-part-title"><span class="article-part-label">Conclusion</span>From Pride to Guidance, From Signs to the Saviour</h2>
+
+<p>So was astrology "born in India"? The honest answer is <strong>no</strong>. The constellations predate every nation. The Ram and the Fish were not patented at Taxila. What India preserved, often with remarkable astronomical skill, is a <strong>luni-solar memory</strong>: the same memory Israel preserved in the <strong>Mazzaroth</strong>, the <strong>Molad</strong>, and the leap month that guards Passover.</p>
+
+<p>That parallel should humble us, not inflate us. Pride says, "Our culture owns the stars." Humility says, "The stars were set by a Voice we did not invent." Scripture names that Voice plainly. Job speaks of the <strong>Mazzaroth</strong> as something the LORD alone brings out on season (Job 38:32). The Psalmist says the heavens <strong>declare the glory of God</strong> without speech in any one human language (Psalm 19:1-4).</p>
+
+<p>If the calendar grammar is shared, the purpose is also shared: <strong>guidance toward truth</strong>. Seasons for planting and worship. Months for repentance and joy. Signs that train the heart to expect a <strong>Redeemer</strong> who enters history on time: not a planet's whim, but the Father's promise.</p>
+
+<div class="scripture">
+  <p>"Can you bind the chains of the Pleiades or loose the cords of Orion? … Do you know the ordinances of the heavens? Can you establish their rule on the earth?"</p>
+  <span class="scripture-ref">Job 38:31,33</span>
+</div>
+
+<p>Hindu friends who have lived under fear of <em>dosha</em>, <em>shani</em>, or a fixed fatal chart should hear the better news: the sky is not a prison. It is a <strong>clock and a witness</strong>. The Jewish calendar waited centuries for the Lamb whose death and resurrection fulfilled the feast cycle. The Vedic wheel, read with open eyes, points to the same horizon: <strong>one Mediator</strong>, one Lord who holds the stars He made.</p>
+
+<div class="scripture">
+  <p>"For there is one God, and there is one Mediator between God and men, the Man Christ Jesus, who gave Himself a ransom for all…"</p>
+  <span class="scripture-ref">1 Timothy 2:5-6</span>
+</div>
+
+<p><strong>Yeshua</strong> is not one more planetary force. He is the Son through whom the universe holds together. To read the <em>Rashi Chakra</em> with pride is to stop halfway. To read it as a signpost is to walk toward the One who said He came <strong>in the fullness of time</strong> (Galatians 4:4): when the calendar, the prophets, and the heavens had prepared a people to meet their King.</p>
+
+<p>We invite every Hindu reader to lay down the pride of origin and pick up the question of destiny: <em>Who set the twelve signs, and why?</em> Follow the lights to their Maker. Meet the Messiah they were always meant to announce.</p>
+
+<div class="editorial">
+  <p class="editorial-label">Disclaimer</p>
+  <p>2:22 Church publishes this study as <strong>gospel teaching and comparative witness</strong>, not as academic astrology or fortune-telling. Month names, <em>panchang</em> systems (<em>Amanta</em> / <em>Purnimanta</em>), and historical dating vary by region and scholar. We do not claim that every parallel proves direct transmission between ancient India and Israel. We do reject the notion that the zodiac is a uniquely Hindu invention. Diagrams illustrate structural comparison only. Nothing here replaces medical, legal, or financial counsel commonly sought from astrologers. Every reader is invited to <strong>test all things by Scripture alone</strong>.</p>
+</div>
+
+<div class="editorial">
+  <p class="editorial-label">Editorial Note</p>
+  <p>This article continues the same question raised in our temple-parallels study: if forms of worship and time-keeping echo across cultures, <strong>what reality stands behind the echo?</strong> Our conviction is that the God of Abraham, Isaac, and Jacob appointed the lights for signs and seasons, and that Jesus Christ is the fulfilment toward which those signs point. We write with respect for Hindu astronomers and Jewish sages alike, and with urgency for readers still searching the sky for fate instead of the Saviour.</p>
+</div>
+`
+  },
+
+  {
     id: "sacred-architecture-vedic-hebrew-temple-parallels",
     title: "Celebrating the shadows or tracing the reality?",
     date: "5 June 2026",
