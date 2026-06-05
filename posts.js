@@ -18,7 +18,7 @@
 const POSTS = [
   {
     id: "sacred-architecture-vedic-hebrew-temple-parallels",
-    title: "Sacred Architecture: Fourteen Deep Parallels Between the Vedic Temple and the Hebrew Sanctuary",
+    title: "Celebrating the Shadows: Tracing the Roots",
     date: "5 June 2026",
     category: "Teaching",
     image: "blog-assets/temple-parallel-photos/10-holi-dahan.png",
