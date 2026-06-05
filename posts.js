@@ -22,13 +22,13 @@ const POSTS = [
     date: "5 June 2026",
     category: "Teaching",
     image: "blog-assets/temple-parallel-photos/10-holi-dahan.png",
-    excerpt: "Fourteen parallels: graded sanctity, sacred veil, doorpost signs, yajna fire, pakwan and Seder, samai and menorah, prayer shawls and caps, palkhi and the Ark — with reference photos and diagrams. Jewish tradition historically predates the Vedic record.",
+    excerpt: "Fourteen temple parallels — graded sanctity, sacred veil, yajna fire, pakwan and Seder, palkhi and the Ark. Vedic culture came long after Moses; the rituals of Deuteronomy echo across cultures and point the Hindu reader to the Messiah's coming, death, resurrection, and ascension.",
     content: `
 <p class="opening">The closer you walk toward the centre, the fewer may follow. That single rule governed both the Vedic temple campus and the Tabernacle Moses built — not as decoration, but as theology made of stone, curtain, and fire.</p>
 
 <p>Students of religion often treat Hindu and Hebrew worship as worlds apart. One speaks Sanskrit and circles a <em>lingam</em> in a dark inner room; the other speaks Hebrew and faces an Ark behind a woven veil. Yet when you set the sources side by side — <em>Śruti</em>, <em>Smriti</em>, the Law of Moses, and the prophets — a remarkable pattern appears. Both cultures organised sacred space in <strong>concentric degrees of holiness</strong>. Both treated ritual impurity as a temporary barrier, not a moral verdict. Both fed the divine presence with fire, fragrance, food, oil, and the first-fruits of the land.</p>
 
-<p>On chronology: the priestly temple tradition of Israel — the Tabernacle of Moses and the Jerusalem sanctuary — belongs to the second millennium BC as Scripture records it. The classical Vedic <em>śruti</em>, by the usual scholarly dating of the Rigveda and later texts, comes later (commonly placed around 1500–1200 BC onward, with much debate). <strong>Historically, Jewish tradition predates the Vedic record.</strong> That ordering does not rank souls; it clarifies that graded holiness, sacrifice, and priesthood are not foreign imports into the Bible — they are woven into Israel’s worship from the beginning.</p>
+<p>On chronology: the priestly temple tradition of Israel — the Tabernacle of Moses and the Law given at Sinai, including the ritual instructions of Exodus, Leviticus, and <strong>Deuteronomy</strong> — belongs to the second millennium BC as Scripture records it. The classical Vedic <em>śruti</em>, by the usual scholarly dating of the Rigveda and later texts, comes <strong>much later</strong> (commonly placed around 1500–1200 BC onward, with much debate). <strong>Vedic culture began long after the Law of the Tabernacle and the Law of Moses.</strong> That ordering does not rank souls; it tells us which pattern came first — and which cultures may be carrying echoes of it.</p>
 
 <p>This article is a thorough comparative study of <strong>fourteen structural and ritual parallels</strong> — from the <strong>sacred veil</strong> and <strong>doorpost signs</strong> to <strong>Holika Dahan</strong>, <strong>yajna</strong>, <strong>pakwan</strong> and Seder, prayer shawls, anointing, and the <strong>Ark of the Covenant</strong> carried on acacia wood.</p>
 
@@ -666,26 +666,33 @@ const POSTS = [
   </tbody>
 </table>
 
-<h2>What These Parallels Do — and Do Not — Prove</h2>
+<h2>Conclusion: Echoes of Moses, Pointers to the Messiah</h2>
 
-<p>Similarity of form does not by itself prove historical contact, shared origin, or that one tradition “copied” the other. Scholars debate chronology, regional trade, and whether parallels arise from common human response to the holy. Israel’s tabernacle-temple pattern is attested in Torah before the Rigveda’s usual scholarly dating — <strong>Jewish tradition historically predates Vedic tradition</strong> in the written record — so when forms resemble one another, the direction of influence (if any) must not be assumed either way. What the parallels <em>do</em> accomplish for the disciple of Jesus is practical:</p>
+<p>When the chronology is weighed honestly, the picture becomes difficult to ignore. <strong>Vedic culture arose long after</strong> the Law of the Tabernacle and the Law of Moses. Graded sanctity, sacrifice, impurity and cleansing, first-fruits, doorpost signs, sacred fire, anointing, and the rest are not vague human inventions that two civilisations happened to dream up independently — they are spelled out with precision in Torah, above all in the priestly codes and in <strong>Deuteronomy</strong>, centuries before the classical Vedic record.</p>
 
-<ul style="margin:1.5rem 0 2rem 1.4rem;color:var(--text-secondary);font-size:1rem;line-height:1.85;">
-  <li>They show that <strong>temple logic</strong> in India is not alien to the God of Abraham — graded holiness, priesthood, sacrifice, and purity are deeply biblical categories.</li>
-  <li>They give vocabulary to speak with Hindu family and friends without ridiculing their shrines — many instincts (remove shoes, wash, offer food, light lamps) are structurally biblical.</li>
-  <li>They prepare the ground for the gospel: if the <em>form</em> of worship points upward, the <strong>substance</strong> is fulfilled in one High Priest who entered the true Holy of Holies once for all (Hebrews 9).</li>
-</ul>
+<p>To us, the resemblance is <strong>very clear</strong>: the ritual notions Moses received at Sinai were carried, in fragment and shadow, into many cultures across the ancient world. Vedic temple life preserves that pattern — veil, fire, immersion, offering, procession of presence — yet the Vedic world did <strong>not</strong> worship the God of Abraham, Isaac, and Jacob. The forms remained; the true Object of worship was lost. What survives in the shrine is not proof that India invented temple logic. It is evidence that the Creator once placed a grammar of holiness before His people, and that grammar did not stay contained in one nation.</p>
+
+<p>That is why this study matters <strong>immensely</strong> for a Hindu reader willing to ask an honest question: <em>Where did these rituals come from?</em> If the answer is not “we invented them from nothing,” but “they echo something older, something given,” then the next question follows naturally: <strong>Who gave them, and why?</strong></p>
+
+<p>We believe the answer is the one God, the Father — who ordered worship so that every washing, every lamp, every offering, every veil, every procession of presence would train the human heart to look for <strong>one Mediator</strong>, one sacrifice that truly removes sin, one High Priest who enters the true Holy of Holies. Those forms were never ends in themselves. They were signposts along a road that leads to the <strong>Messiah</strong> — His <strong>coming</strong>, His <strong>death</strong> as the one offering that ascends in smoke no bonfire can duplicate, His <strong>resurrection</strong> as the proof that death’s impurity is overcome, and His <strong>ascension</strong> as the Son who passed through the heavens and sat down at the right hand of the Father.</p>
+
+<div class="scripture">
+  <p>“For there is one God, and there is one Mediator between God and men, the Man Christ Jesus, who gave Himself a ransom for all…”</p>
+  <span class="scripture-ref">1 Timothy 2:5–6</span>
+</div>
+
+<p>When a Hindu person sees that their own <em>snanam</em>, <em>yajna</em>, <em>naivedyam</em>, and <em>parda</em> are not alien to Scripture but anticipate it, the dots begin to connect. The garbhagṛha was always pointing beyond itself. The veil was always waiting to be torn. The fire was always waiting for the Lamb who takes away the sin of the world. Christ is not one deity among many behind a curtain. He is the Son sent by the Father — crucified, raised, ascended — and the only name under heaven by which we must be saved.</p>
 
 <div class="scripture">
   <p>“Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain…”</p>
   <span class="scripture-ref">Hebrews 10:19–20</span>
 </div>
 
-<p>Christ is not one deity among many behind a veil. He is the Son sent by the Father — the veil torn, the garbhagṛha of heaven opened to those who come through faith and baptism in His name.</p>
+<p>Faith and baptism in His name are not a rejection of reverence; they are the fulfilment of every instinct the temple ever taught — that God is holy, that sin must be removed, that a way must be opened, and that the worshipper may at last draw near.</p>
 
 <div class="editorial">
   <p class="editorial-label">Editorial Note</p>
-  <p>2:22 Church presents this study as an invitation to compare primary sources with humility. Reference photographs and diagrams are supplied for illustration only; brand marks on source photos have been obscured where needed. Hindu and Jewish scholars disagree on dating, regional variation, and whether every parallel implies historical contact. We note for chronology that the Mosaic sanctuary precedes the classical Vedic <em>śruti</em> as scholars usually date them — Jewish tradition historically predates Vedic tradition in the written record, though both continued to develop for millennia. We do not require acceptance of all fourteen parallels as proof of ancient borrowing. We do require that every believer test all things by Scripture alone — one God the Father, one Lord Jesus Christ, and salvation through His blood. Temple forms may echo one another; eternal life is found only in the name God has exalted above every name.</p>
+  <p>2:22 Church presents this study as an invitation to compare primary sources with open hearts. Reference photographs and diagrams are supplied for illustration only; brand marks on source photos have been obscured where needed. Scholars debate the exact routes by which ancient ritual patterns spread — trade, migration, oral memory — but the chronological fact remains: the Mosaic sanctuary and the Law of Moses precede the classical Vedic <em>śruti</em> as sources are usually dated. Our conclusion is that the parallels are not accidental; they are echoes of worship God gave at Sinai, later reshaped where He was not known by name. We do not require agreement on every detail of transmission. We do require that every believer test all things by Scripture alone — one God the Father, one Lord Jesus Christ, and salvation through His blood, death, resurrection, and ascension.</p>
 </div>
 `
   },
