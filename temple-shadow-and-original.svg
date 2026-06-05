@@ -1,44 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="320" viewBox="0 0 720 320" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="360" viewBox="0 0 800 360" role="img">
   <title>Shadow and original: tracing the roots of temple worship</title>
-  <rect width="720" height="320" fill="#EEF4F7"/>
-  <text x="360" y="32" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="0.14em" fill="#172A36">CELEBRATING THE SHADOWS · TRACING THE ROOTS</text>
-  <text x="360" y="52" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" letter-spacing="0.08em" fill="#778187">Form in outline · Form in source</text>
+  <rect width="800" height="360" fill="#FFFFFF"/>
+  <rect x="12" y="12" width="776" height="336" rx="8" fill="#EEF4F7" stroke="#172A36" stroke-width="2"/>
+  <text x="400" y="44" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="0.14em" fill="#172A36">CELEBRATING THE SHADOWS | TRACING THE ROOTS</text>
+  <text x="400" y="66" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" letter-spacing="0.08em" fill="#47545B">Form in outline | Form in source</text>
 
-  <!-- Shadow (echo) -->
-  <text x="200" y="88" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" letter-spacing="0.12em" fill="#778187">SHADOW</text>
-  <text x="200" y="102" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#778187">echo · fragment · later form</text>
-  <g opacity="0.42" stroke="#172A36" stroke-width="1.4" fill="none" stroke-dasharray="5 4">
-    <rect x="118" y="118" width="164" height="118" rx="4"/>
-    <rect x="148" y="148" width="104" height="72" rx="2"/>
-    <rect x="178" y="172" width="44" height="36" rx="1"/>
-    <path d="M200 236 L200 252 M188 252 L212 252"/>
-    <circle cx="200" cy="112" r="10" fill="rgba(23,42,54,0.06)" stroke="#172A36" stroke-width="1"/>
+  <text x="220" y="104" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="0.12em" fill="#172A36">SHADOW</text>
+  <text x="220" y="122" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">echo | fragment | later form</text>
+  <g stroke="#172A36" stroke-width="2" fill="none">
+    <rect x="128" y="138" width="184" height="132" rx="6" stroke-dasharray="7 5" opacity="0.75"/>
+    <rect x="158" y="168" width="124" height="82" rx="3" stroke-dasharray="7 5" opacity="0.75"/>
+    <rect x="188" y="194" width="64" height="44" rx="2" stroke-dasharray="7 5" opacity="0.75"/>
+    <line x1="220" y1="270" x2="220" y2="292" opacity="0.75"/>
+    <line x1="206" y1="292" x2="234" y2="292" opacity="0.75"/>
+    <circle cx="220" cy="126" r="12" fill="rgba(23,42,54,0.08)" stroke="#172A36" stroke-width="1.5"/>
   </g>
 
-  <!-- Arrow -->
-  <path d="M290 188 L330 188" stroke="#172A36" stroke-width="1" opacity="0.35" marker-end="url(#arrow)"/>
-  <defs>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#172A36" opacity="0.45"/>
-    </marker>
-  </defs>
-  <text x="360" y="182" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" letter-spacing="0.1em" fill="#47545B">TRACE BACK</text>
+  <line x1="318" y1="210" x2="368" y2="210" stroke="#172A36" stroke-width="2"/>
+  <polygon points="368,206 378,210 368,214" fill="#172A36"/>
+  <text x="400" y="204" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" letter-spacing="0.12em" fill="#172A36">TRACE BACK</text>
 
-  <!-- Original (source) -->
-  <text x="520" y="88" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" letter-spacing="0.12em" fill="#172A36">ORIGINAL</text>
-  <text x="520" y="102" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">given · Sinai · root pattern</text>
-  <g fill="#172A36" stroke="#172A36" stroke-width="1.2">
-    <rect x="438" y="118" width="164" height="118" rx="4" fill="none" opacity="0.35"/>
-    <rect x="468" y="148" width="104" height="72" rx="2" fill="rgba(23,42,54,0.1)" stroke="#172A36"/>
-    <rect x="498" y="172" width="44" height="36" rx="1"/>
-    <path d="M520 236 L520 252 M508 252 L532 252" fill="none"/>
-    <circle cx="520" cy="112" r="10" fill="#172A36"/>
-    <text x="520" y="115" text-anchor="middle" font-size="7" fill="#EEF4F7" font-family="Arial,Helvetica,sans-serif">&</text>
+  <text x="580" y="104" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="0.12em" fill="#172A36">ORIGINAL</text>
+  <text x="580" y="122" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">given | Sinai | root pattern</text>
+  <g fill="#172A36" stroke="#172A36" stroke-width="2">
+    <rect x="488" y="138" width="184" height="132" rx="6" fill="none"/>
+    <rect x="518" y="168" width="124" height="82" rx="3" fill="rgba(23,42,54,0.14)"/>
+    <rect x="548" y="194" width="64" height="44" rx="2"/>
+    <line x1="580" y1="270" x2="580" y2="292" fill="none"/>
+    <line x1="566" y1="292" x2="594" y2="292" fill="none"/>
+    <circle cx="580" cy="126" r="12" fill="#172A36"/>
   </g>
 
-  <text x="200" y="278" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="10" fill="#47545B">*0M&> · /M · 8M(>(</text>
-  <text x="520" y="278" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172A36">Parochet · Olah · Mikveh</text>
-  <line x1="120" y1="292" x2="600" y2="292" stroke="#172A36" stroke-width="0.5" opacity="0.2"/>
-  <text x="360" y="308" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-style="italic" fill="#778187">the shadow preserves the shape · the original reveals the Giver</text>
+  <text x="220" y="318" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="11" fill="#172A36">????? | ???? | ?????</text>
+  <text x="580" y="318" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#172A36">Parochet | Olah | Mikveh</text>
+  <line x1="140" y1="334" x2="660" y2="334" stroke="#172A36" stroke-width="1" opacity="0.25"/>
+  <text x="400" y="350" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-style="italic" fill="#47545B">the shadow preserves the shape | the original reveals the Giver</text>
 </svg>

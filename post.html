@@ -367,6 +367,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .post-body .minimal-design .diagram-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;}
 .post-body .minimal-design .diagram-row img{width:100%;height:auto;border-radius:6px;border:0.5px solid var(--border-subtle);background:#fff;}
 .post-body .minimal-design .minimal-cap{font-size:0.76rem;color:var(--text-muted);text-align:center;margin-top:0.4rem;font-style:italic;}
+.post-body .hero-diagram{margin:0 0 2.5rem;padding:1.6rem;background:var(--surface-light);border:1.5px solid var(--gold);border-radius:8px;box-shadow:0 8px 32px rgba(23,42,54,0.1);}
+.post-body .hero-diagram img{width:100%;height:auto;display:block;border-radius:6px;border:0.5px solid var(--border);background:#fff;}
+.post-body .hero-diagram .minimal-cap{margin-top:1rem;font-size:0.82rem;color:var(--text-secondary);}
 .post-body .zone-flow{background:var(--surface-light);border:0.5px solid var(--border);border-radius:4px;padding:1.3rem 1.5rem;margin:1.5rem 0;font-family:ui-monospace,monospace;font-size:0.8rem;line-height:1.65;color:var(--text-primary);white-space:pre;overflow-x:auto;}
 .post-body .editorial{margin:3rem 0;padding:1.5rem 1.6rem;background:rgba(23,42,54,0.04);border:0.5px solid var(--border);border-left:2px solid var(--gold);border-radius:0 4px 4px 0;}
 .post-body .editorial-label{font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.7rem;font-weight:500;}
@@ -501,7 +504,7 @@ function ljsRespond(choice) {
   }
 }
 </script>
-<script src="posts.js?v=15"></script>
+<script src="posts.js?v=16"></script>
 <script>
 var params = new URLSearchParams(window.location.search);
 var postId = params.get('id');
@@ -515,9 +518,10 @@ if (!post) {
   // Set page title
   document.title = post.title + ', 2:22 Church';
 
-  // Cover image
+  // Cover image (skip when article embeds its own hero diagram in content)
+  var hasHeroDiagram = post.content && post.content.indexOf('hero-diagram') !== -1;
   var diagramCover = post.image && /vedic-witness-christ|temple-shadow-and-original|temple-compare|\.svg$/i.test(post.image);
-  var coverHtml = post.image
+  var coverHtml = post.image && !hasHeroDiagram
     ? '<div class="post-cover' + (diagramCover ? ' post-cover-diagram' : '') + '"><img src="' + post.image + '" alt="' + post.title + '" loading="eager" decoding="async"></div>'
     : '';
 

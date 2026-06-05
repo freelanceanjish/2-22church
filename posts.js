@@ -24,6 +24,11 @@ const POSTS = [
     image: "temple-shadow-and-original.svg",
     excerpt: "Fourteen temple parallels: graded sanctity, sacred veil, yajna fire, pakwan and Seder, palkhi and the Ark. Vedic culture came long after Moses; the rituals of Deuteronomy echo across cultures and point the Hindu reader to the Messiah's coming, death, resurrection, and ascension.",
     content: `
+<div class="minimal-design hero-diagram" aria-label="Shadow and original: tracing the roots">
+  <img src="temple-shadow-and-original.svg" alt="Shadow and original diagram: Vedic echo beside Mosaic source" loading="eager" decoding="async">
+  <p class="minimal-cap">Shadow | Original: celebrating the forms that echo Sinai, tracing the roots God gave at the Tabernacle</p>
+</div>
+
 <p class="opening">The closer you walk toward the centre, the fewer may follow. That single rule governed both the Vedic temple campus and the Tabernacle Moses built: not as decoration, but as theology made of stone, curtain, and fire.</p>
 
 <p>Students of religion often treat Hindu and Hebrew worship as worlds apart. One speaks Sanskrit and circles a <em>lingam</em> in a dark inner room; the other speaks Hebrew and faces an Ark behind a woven veil. Yet when you set the sources side by side, <em>Śruti</em>, <em>Smriti</em>, the Law of Moses, and the prophets, a remarkable pattern appears. Both cultures organised sacred space in <strong>concentric degrees of holiness</strong>. Both treated ritual impurity as a temporary barrier, not a moral verdict. Both fed the divine presence with fire, fragrance, food, oil, and the first-fruits of the land.</p>
