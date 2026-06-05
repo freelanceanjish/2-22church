@@ -53,11 +53,13 @@ const POSTS = [
 
 <div class="section-block" id="parallel-01">
 <h2 class="section-heading"><span class="section-num">01</span>Graded Sanctity: Garbhagriha &amp; Holy of Holies</h2>
-<div class="minimal-design" aria-label="Graded sanctity: diagram overview">
-  <div class="diagram-row">
-    <img src="temple-compare-01-zones.svg" alt="Graded sanctity: garbhagriha and Holy of Holies zones" loading="lazy">
-    <img src="temple-compare-01-floorplan.svg" alt="Floor plan: temple campus and Tabernacle layout" loading="lazy">
-  </div>
+<div class="photo-strip" aria-label="Sacred architecture comparison: Tabernacle decagon, Hindu temple campus, and stupa">
+  <img src="blog-assets/temple-parallel-photos/01-tabernacle-decagon.jpg" alt="Tabernacle decagon layout: concentric graded sanctity toward the Holy of Holies" loading="lazy">
+  <img src="blog-assets/temple-parallel-photos/01-hindu-temple.jpg" alt="Hindu temple campus: prākāra walls and garbhagṛha at the centre" loading="lazy">
+  <img src="blog-assets/temple-parallel-photos/01-stupa.webp" alt="Stupa: circumambulation path winding inward toward the sacred dome" loading="lazy">
+  <figcaption>Tabernacle decagon · Hindu temple campus · Stūpa: three geometries, one journey toward the centre</figcaption>
+</div>
+<div class="minimal-design" aria-label="Graded sanctity zones">
   <div class="zone-flow">[ Outer Courtyard / Temple Campus ]  →  open to devotees &amp; sacrifices
          ↓
 [ Holy Place / Mandapa ]            →  initiated priests only
@@ -82,7 +84,7 @@ const POSTS = [
   </div>
 </div>
 
-<p>The geometry differs: circle and square: but the <em>logic</em> is identical: holiness is spatial, progressive, and guarded. To rush inward without purification is not devotion; it is violation.</p>
+<p>The geometry differs: decagon, temple campus, and stupa dome: but the <em>logic</em> is identical: holiness is spatial, progressive, and guarded. Whether the worshipper walks a pradakṣiṇā path around a stūpa or a priest alone enters the garbhagṛha, the centre is not casual ground. To rush inward without purification is not devotion; it is violation.</p>
 </div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>

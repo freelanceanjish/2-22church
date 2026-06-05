@@ -1,7 +1,7 @@
 {
   "license_note": "User-supplied reference photographs. Each image used once in blog-preview-temple-parallels.html.",
   "sections": {
-    "01": {"type": "minimal-diagram", "diagrams": ["temple-compare-01-zones.svg", "temple-compare-01-floorplan.svg"]},
+    "01": {"title": "Graded Sanctity", "images": ["01-tabernacle-decagon.jpg", "01-hindu-temple.jpg", "01-stupa.webp"]},
     "02": {"title": "Sacred Veil", "hindu": "01-sacred-veil-parda.jpg", "hebrew": "01-tabernacle-curtains.jpeg"},
     "03": {"title": "Doorpost Holy Signs", "hindu": "03-doorpost-hindu-red-hand.webp", "hebrew": "03-doorpost-jewish-sign.jpeg"},
     "04": {"title": "Ritual Immersion", "hindu": "02-snanam-bath-hindu.jpeg", "hebrew": "02-mikveh-bath.jpeg"},
