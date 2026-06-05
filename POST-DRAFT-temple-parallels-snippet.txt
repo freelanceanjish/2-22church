@@ -6,7 +6,7 @@
   title: "Celebrating the Shadows: Tracing the Roots",
   date: "5 June 2026",
   category: "Teaching",
-  image: "blog-assets/temple-parallel-photos/10-holi-dahan.png",
+  image: "temple-shadow-and-original.svg",
   excerpt: "Fourteen parallels: graded sanctity, sacred veil, doorpost signs, yajna fire, pakwan and Seder, samai and menorah, prayer shawls and caps, palkhi and the Ark — with your reference photos and diagrams.",
   content: `COPY INNER HTML FROM blog-preview-temple-parallels.html <article class="post-body"> ... </article>`
 }
