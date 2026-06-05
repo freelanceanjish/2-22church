@@ -115,8 +115,18 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
   overflow-x:auto;
 }
 
+.minimal-design{margin:1.75rem 0 1.25rem;padding:1.5rem;background:var(--surface-light);border:0.5px solid var(--border);border-radius:8px;}
+.minimal-design .diagram-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.25rem;}
+.minimal-design .diagram-row img{width:100%;height:auto;border-radius:6px;border:0.5px solid var(--border-subtle);background:#fff;}
+.minimal-design .minimal-cap{font-size:0.78rem;color:var(--text-muted);text-align:center;margin-top:0.5rem;font-style:italic;}
+
+.visual-panel--diagram{min-height:auto;background:var(--surface-light);}
+.visual-panel--diagram img{min-height:auto;object-fit:contain;padding:1rem;background:var(--surface-light);}
+.visual-compare--single{grid-template-columns:1fr;}
+.visual-compare--single .visual-panel--diagram img{max-height:280px;margin:0 auto;}
+
 @media(max-width:900px){
-  .visual-compare,.compare-grid{grid-template-columns:1fr;}
+  .visual-compare,.compare-grid,.minimal-design .diagram-row{grid-template-columns:1fr;}
   .hero-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px;}
   .hero-mosaic .hero-main{grid-row:auto;grid-column:1/-1;}
   .photo-strip{grid-template-columns:1fr;}
@@ -132,7 +142,7 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 <body>
 
 <div class="preview-banner">
-  <strong>Photo-led preview</strong> — 28+ Wikimedia reference images, rich layout (not minimal SVG). Say “publish” for <code>posts.js</code>.
+  <strong>Editorial preview</strong> — your uploaded reference photos + minimal diagrams where no image was provided. Say “publish” for <code>posts.js</code>.
 </div>
 
 <header class="post-hero">
@@ -146,12 +156,12 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 </header>
 
 <div class="hero-mosaic" aria-label="Temple and Tabernacle photography">
-  <img class="hero-main" src="blog-assets/temple-parallel-photos/hero-meenakshi-gopuram.jpg" alt="Meenakshi Amman Temple gopuram, Madurai" loading="eager">
-  <img src="blog-assets/temple-parallel-photos/hero-rath-yatra.jpg" alt="Rath Yatra chariot procession, Puri" loading="lazy">
-  <img src="blog-assets/temple-parallel-photos/01-garbhagriha-interior.jpg" alt="Garbhagriha interior sanctum" loading="lazy">
-  <img src="blog-assets/temple-parallel-photos/01-tabernacle-timna-court.jpg" alt="Tabernacle replica outer court, Timna Israel" loading="lazy">
-  <img src="blog-assets/temple-parallel-photos/10-holi-bonfire.jpg" alt="Holika Dahan sacred bonfire" loading="lazy">
-  <p class="hero-cap">Photography: Hindu temple architecture, pilgrimage, garbhagriha, Tabernacle replica (Timna), Holika fire — Wikimedia Commons / CC BY-SA</p>
+  <img class="hero-main" src="blog-assets/temple-parallel-photos/10-holi-dahan.png" alt="Holika Dahan sacred bonfire at night" loading="eager">
+  <img src="blog-assets/temple-parallel-photos/11-palkhi.webp" alt="Decorative palkhi palanquin shrine" loading="lazy">
+  <img src="blog-assets/temple-parallel-photos/11-ark-covenant.jpeg" alt="Ark of the Covenant" loading="lazy">
+  <img src="blog-assets/temple-parallel-photos/01-tabernacle-curtains.jpeg" alt="Tabernacle courtyard curtains" loading="lazy">
+  <img src="blog-assets/temple-parallel-photos/05-samai-lamp.jpg" alt="Brass samai oil lamp" loading="lazy">
+  <p class="hero-cap">Reference photography supplied for this study — Holika fire, palkhi, Ark, Tabernacle curtains, temple lamp</p>
 </div>
 
 <article class="post-body">
@@ -165,21 +175,17 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <div class="section-block" id="parallel-01">
-<div class="visual-compare">
-  <figure class="visual-panel visual-panel--hindu">
-    <img src="blog-assets/temple-parallel-photos/01-garbhagriha-interior.jpg" alt="Inner sanctum (Garbhagriha), Ananthashayana Temple" loading="lazy">
-    <figcaption class="visual-label">
-      <span class="visual-dev">गर्भगृह · मण्डप · प्राकार</span>
-      <span class="visual-cap">Inner sanctum (Garbhagriha), Ananthashayana Temple</span>
-    </figcaption>
-  </figure>
-  <figure class="visual-panel visual-panel--hebrew">
-    <img src="blog-assets/temple-parallel-photos/01-ark-timna-replica.jpg" alt="Ark of the Covenant replica, Timna Tabernacle, Israel" loading="lazy">
-    <figcaption class="visual-label">
-      <span class="visual-heb">קֹדֶשׁ · הֵיכָל</span>
-      <span class="visual-cap">Ark of the Covenant replica, Timna Tabernacle, Israel</span>
-    </figcaption>
-  </figure>
+<div class="minimal-design" aria-label="Graded sanctity — diagram overview">
+  <div class="diagram-row">
+    <img src="temple-compare-01-zones.svg" alt="Graded sanctity: garbhagriha and Holy of Holies zones" loading="lazy">
+    <img src="temple-compare-01-floorplan.svg" alt="Floor plan: temple campus and Tabernacle layout" loading="lazy">
+  </div>
+  <div class="zone-flow">[ Outer Courtyard / Temple Campus ]  →  open to devotees &amp; sacrifices
+         ↓
+[ Holy Place / Mandapa ]            →  initiated priests only
+         ↓
+[ Holy of Holies / Garbhagriha ]    →  ultimate centre; one priest</div>
+  <p class="minimal-cap">गर्भगृह · मण्डप · प्राकार — קֹדֶשׁ · הֵיכָל · קֹדֶשׁ הַקֳּדָשִׁים</p>
 </div>
 <p class="visual-summary">Graded sanctity: public courtyard → priestly hall → one minister in the inner chamber.</p>
 </div>
@@ -188,12 +194,6 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 
 
 <p>Both traditions structured sacred space as a journey inward — from what is public, to what is priestly, to what only one purified minister may enter.</p>
-
-<div class="zone-flow">[ Outer Courtyard / Temple Campus ]  →  open to devotees &amp; sacrifices
-         ↓
-[ Holy Place / Mandapa ]            →  initiated priests only
-         ↓
-[ Holy of Holies / Garbhagriha ]    →  ultimate centre; one priest</div>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -215,17 +215,17 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 <div class="section-block" id="parallel-02">
 <div class="visual-compare">
   <figure class="visual-panel visual-panel--hindu">
-    <img src="blog-assets/temple-parallel-photos/02-ganges-ritual-bath.jpg" alt="Ritual bathing in the Ganges (Varanasi ghats)" loading="lazy">
+    <img src="blog-assets/temple-parallel-photos/02-snanam-bath-hindu.jpeg" alt="Ritual snanam — pouring water at sunrise" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-dev">स्नान · सूतक</span>
-      <span class="visual-cap">Ritual bathing in the Ganges (Varanasi ghats)</span>
+      <span class="visual-cap">Ritual snanam — immersion and pouring water</span>
     </figcaption>
   </figure>
   <figure class="visual-panel visual-panel--hebrew">
-    <img src="blog-assets/temple-parallel-photos/02-mikveh-qumran.jpg" alt="Steps descending to a mikveh (ritual immersion pool)" loading="lazy">
+    <img src="blog-assets/temple-parallel-photos/02-mikveh-bath.jpeg" alt="Mikveh ritual immersion bath" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-heb">מִקְוֶה · טומאה</span>
-      <span class="visual-cap">Steps descending to a mikveh (ritual immersion pool)</span>
+      <span class="visual-cap">Mikveh — ritual immersion pool</span>
     </figcaption>
   </figure>
 </div>
@@ -272,17 +272,17 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 <div class="section-block" id="parallel-03">
 <div class="visual-compare">
   <figure class="visual-panel visual-panel--hindu">
-    <img src="blog-assets/temple-parallel-photos/03-temple-incense-india.jpg" alt="Devotee offering incense at a Hindu mandir" loading="lazy">
+    <img src="blog-assets/temple-parallel-photos/03-incense-hindu.webp" alt="Temple incense burner with burning sticks" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-dev">धूप</span>
-      <span class="visual-cap">Devotee offering incense at a Hindu mandir</span>
+      <span class="visual-cap">Temple incense burner — dhupa offering</span>
     </figcaption>
   </figure>
   <figure class="visual-panel visual-panel--hebrew">
-    <img src="blog-assets/temple-parallel-photos/01-tabernacle-timna-court.jpg" alt="Tabernacle replica: outer court and altar (Timna, Israel)" loading="lazy">
+    <img src="blog-assets/temple-parallel-photos/03-incense-hebrew.jpeg" alt="High priest offering incense at the golden altar" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-heb">קטורת</span>
-      <span class="visual-cap">Tabernacle replica: outer court and altar (Timna, Israel)</span>
+      <span class="visual-cap">Ketoret — incense on the golden altar before the veil</span>
     </figcaption>
   </figure>
 </div>
@@ -313,19 +313,13 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <div class="section-block" id="parallel-04">
-<div class="visual-compare">
-  <figure class="visual-panel visual-panel--hindu">
-    <img src="blog-assets/temple-parallel-photos/04-sashtanga-pranam.jpg" alt="Worship at Sri Mariamman Temple, Singapore" loading="lazy">
+<div class="visual-compare visual-compare--single">
+  <figure class="visual-panel visual-panel--diagram">
+    <img src="temple-compare-04-prostration.svg" alt="Prostration comparison: dandavat and face before the Ark" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-dev">दण्डवत् · षष्ठाङ्ग</span>
-      <span class="visual-cap">Worship at Sri Mariamman Temple, Singapore</span>
-    </figcaption>
-  </figure>
-  <figure class="visual-panel visual-panel--hebrew">
-    <img src="blog-assets/temple-parallel-photos/04-jewish-prayer-western-wall.jpg" alt="Prayer at the Western Wall, Jerusalem" loading="lazy">
-    <figcaption class="visual-label">
       <span class="visual-heb">השתחֲוָיָה</span>
-      <span class="visual-cap">Prayer at the Western Wall, Jerusalem</span>
+      <span class="visual-cap">Worship as bodily surrender — face and limbs to the ground before the holy</span>
     </figcaption>
   </figure>
 </div>
@@ -358,17 +352,17 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 <div class="section-block" id="parallel-05">
 <div class="visual-compare">
   <figure class="visual-panel visual-panel--hindu">
-    <img src="blog-assets/temple-parallel-photos/05-akhanda-deepam-lamps.jpg" alt="Oil lamps (deepam) at a Hindu temple" loading="lazy">
+    <img src="blog-assets/temple-parallel-photos/05-samai-lamp.jpg" alt="Brass samai oil lamp (nilavilakku)" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-dev">अखण्ड दीप</span>
-      <span class="visual-cap">Oil lamps (deepam) at a Hindu temple</span>
+      <span class="visual-cap">Samai — standing brass oil lamp before the deity</span>
     </figcaption>
   </figure>
   <figure class="visual-panel visual-panel--hebrew">
-    <img src="blog-assets/temple-parallel-photos/05-menorah-tabernacle.jpg" alt="Menorah, Knesset garden, Jerusalem" loading="lazy">
+    <img src="blog-assets/temple-parallel-photos/05-menorah-lampstand.jpeg" alt="Seven-branched menorah lampstand" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-heb">נר תמיד · מנורה</span>
-      <span class="visual-cap">Menorah, Knesset garden, Jerusalem</span>
+      <span class="visual-cap">Menorah — seven branches of hammered gold</span>
     </figcaption>
   </figure>
 </div>
@@ -401,17 +395,17 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 <div class="section-block" id="parallel-06">
 <div class="visual-compare">
   <figure class="visual-panel visual-panel--hindu">
-    <img src="blog-assets/temple-parallel-photos/06-naivedyam-offering.jpg" alt="Food offering (prasadam preparation) in India" loading="lazy">
+    <img src="blog-assets/temple-parallel-photos/06-thali-naivedyam.webp" alt="Indian thali — naivedyam meal offering" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-dev">नैवेद्यम् · प्रसाद</span>
-      <span class="visual-cap">Food offering (prasadam preparation) in India</span>
+      <span class="visual-cap">Naivedyam — cooked food set before the deity</span>
     </figcaption>
   </figure>
   <figure class="visual-panel visual-panel--hebrew">
-    <img src="blog-assets/temple-parallel-photos/09-bikkurim-first-fruits.jpg" alt="First-fruits offering (Bikkurim) — biblical illustration" loading="lazy">
+    <img src="blog-assets/temple-parallel-photos/06-seder-plate.jpeg" alt="Passover Seder plate — symbolic food offerings" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-heb">לחם פנים</span>
-      <span class="visual-cap">First-fruits offering (Bikkurim) — biblical illustration</span>
+      <span class="visual-cap">Showbread and sacred meal — food set before the LORD</span>
     </figcaption>
   </figure>
 </div>
@@ -442,19 +436,13 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <div class="section-block" id="parallel-07">
-<div class="visual-compare">
-  <figure class="visual-panel visual-panel--hindu">
-    <img src="blog-assets/temple-parallel-photos/07-upanayana-thread-ceremony.jpg" alt="Upanayana — sacred thread ceremony" loading="lazy">
+<div class="visual-compare visual-compare--single">
+  <figure class="visual-panel visual-panel--diagram">
+    <img src="temple-compare-07-thread.svg" alt="Sacred thread comparison: yajnopavita and tzitzit" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-dev">यज्ञोपवीत</span>
-      <span class="visual-cap">Upanayana — sacred thread ceremony</span>
-    </figcaption>
-  </figure>
-  <figure class="visual-panel visual-panel--hebrew">
-    <img src="blog-assets/temple-parallel-photos/07-tzitzit-tallit.jpg" alt="Tzitzit fringes on a tallit prayer shawl" loading="lazy">
-    <figcaption class="visual-label">
       <span class="visual-heb">ציצית</span>
-      <span class="visual-cap">Tzitzit fringes on a tallit prayer shawl</span>
+      <span class="visual-cap">Clothing marks covenant initiation and remembrance of commandments</span>
     </figcaption>
   </figure>
 </div>
@@ -480,19 +468,13 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <div class="section-block" id="parallel-08">
-<div class="visual-compare">
-  <figure class="visual-panel visual-panel--hindu">
-    <img src="blog-assets/temple-parallel-photos/08-abhishekam-shiva.jpg" alt="Abhishekam — ritual pouring over Shiva lingam" loading="lazy">
+<div class="visual-compare visual-compare--single">
+  <figure class="visual-panel visual-panel--diagram">
+    <img src="temple-compare-08-anointing.svg" alt="Anointing comparison: abhisheka and shemen hamishchah" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-dev">अभिषेक</span>
-      <span class="visual-cap">Abhishekam — ritual pouring over Shiva lingam</span>
-    </figcaption>
-  </figure>
-  <figure class="visual-panel visual-panel--hebrew">
-    <img src="blog-assets/temple-parallel-photos/08-anointing-oil-bible.jpg" alt="Anointing oil and Tabernacle furnishings (Torah illustration)" loading="lazy">
-    <figcaption class="visual-label">
       <span class="visual-heb">שמן משחה</span>
-      <span class="visual-cap">Anointing oil and Tabernacle furnishings (Torah illustration)</span>
+      <span class="visual-cap">Pouring sets persons and vessels apart for holy service</span>
     </figcaption>
   </figure>
 </div>
@@ -520,17 +502,17 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 <div class="section-block" id="parallel-09">
 <div class="visual-compare">
   <figure class="visual-panel visual-panel--hindu">
-    <img src="blog-assets/temple-parallel-photos/09-india-harvest-festival.jpg" alt="Pongal harvest festival kolam and offerings" loading="lazy">
+    <img src="blog-assets/temple-parallel-photos/09-fruit-offering-hindu.png" alt="Festive fruit offering display at a temple" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-dev">अग्र पूजा · दक्षिणा</span>
-      <span class="visual-cap">Pongal harvest festival kolam and offerings</span>
+      <span class="visual-cap">Agra-puja — first fruits and dakshina before the shrine</span>
     </figcaption>
   </figure>
   <figure class="visual-panel visual-panel--hebrew">
-    <img src="blog-assets/temple-parallel-photos/09-bikkurim-first-fruits.jpg" alt="Bikkurim — first fruits brought to the priests" loading="lazy">
+    <img src="blog-assets/temple-parallel-photos/09-bikkurim-ki-tavo.jpeg" alt="Bikkurim — first fruits brought to the priests (Parashat Ki Tavo)" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-heb">ביכורים · מעשר</span>
-      <span class="visual-cap">Bikkurim — first fruits brought to the priests</span>
+      <span class="visual-cap">Bikkurim — first fruits procession to Jerusalem</span>
     </figcaption>
   </figure>
 </div>
@@ -558,17 +540,17 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 <div class="section-block" id="parallel-10">
 <div class="visual-compare">
   <figure class="visual-panel visual-panel--hindu">
-    <img src="blog-assets/temple-parallel-photos/10-holi-bonfire.jpg" alt="Holika Dahan — sacred bonfire before Holi" loading="lazy">
+    <img src="blog-assets/temple-parallel-photos/10-holi-dahan.png" alt="Holika Dahan — sacred bonfire before Holi" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-dev">होलिका दहन · हवन</span>
       <span class="visual-cap">Holika Dahan — sacred bonfire before Holi</span>
     </figcaption>
   </figure>
   <figure class="visual-panel visual-panel--hebrew">
-    <img src="blog-assets/temple-parallel-photos/10-bronze-altar-timna.jpg" alt="Bronze altar of burnt offering, Tabernacle replica (Timna)" loading="lazy">
+    <img src="blog-assets/temple-parallel-photos/10-bronze-altar-sacrifice.jpg" alt="Bronze altar of burnt offering in the desert" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-heb">עֹלָה · מזבח הנחושת</span>
-      <span class="visual-cap">Bronze altar of burnt offering, Tabernacle replica (Timna)</span>
+      <span class="visual-cap">Mizbeach — bronze altar of burnt offering</span>
     </figcaption>
   </figure>
 </div>
@@ -611,17 +593,17 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 <div class="section-block" id="parallel-11">
 <div class="visual-compare">
   <figure class="visual-panel visual-panel--hindu">
-    <img src="blog-assets/temple-parallel-photos/11-dnyaneshwar-palkhi.jpg" alt="Dnyaneshwar Maharaj Palkhi — Pandharpur Wari" loading="lazy">
+    <img src="blog-assets/temple-parallel-photos/11-palkhi.webp" alt="Decorative palkhi palanquin shrine" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-dev">पालखी · वारी</span>
-      <span class="visual-cap">Dnyaneshwar Maharaj Palkhi — Pandharpur Wari</span>
+      <span class="visual-cap">Palkhi — deity borne on poles among the people</span>
     </figcaption>
   </figure>
   <figure class="visual-panel visual-panel--hebrew">
-    <img src="blog-assets/temple-parallel-photos/11-ark-carrying-illustration.jpg" alt="Ark of the Covenant crossing the Jordan (illustration)" loading="lazy">
+    <img src="blog-assets/temple-parallel-photos/11-ark-covenant.jpeg" alt="Ark of the Covenant with cherubim" loading="lazy">
     <figcaption class="visual-label">
       <span class="visual-heb">אָרוֹן הַבְּרִית</span>
-      <span class="visual-cap">Ark of the Covenant crossing the Jordan (illustration)</span>
+      <span class="visual-cap">Aron HaBrit — carried on acacia-wood poles</span>
     </figcaption>
   </figure>
 </div>
@@ -705,7 +687,7 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 
 <div class="editorial">
   <p class="editorial-label">Editorial Note</p>
-  <p>2:22 Church presents this study as an invitation to compare primary sources with humility. Reference photographs are from Wikimedia Commons (CC BY-SA) for illustration only. Hindu and Jewish scholars disagree on dating, regional variation, and whether every parallel implies historical contact. We do not require acceptance of all eleven parallels as proof of ancient borrowing. We do require that every believer test all things by Scripture alone — one God the Father, one Lord Jesus Christ, and salvation through His blood. Temple forms may echo one another; eternal life is found only in the name God has exalted above every name.</p>
+  <p>2:22 Church presents this study as an invitation to compare primary sources with humility. Reference photographs and diagrams are supplied for illustration only. Hindu and Jewish scholars disagree on dating, regional variation, and whether every parallel implies historical contact. We do not require acceptance of all eleven parallels as proof of ancient borrowing. We do require that every believer test all things by Scripture alone — one God the Father, one Lord Jesus Christ, and salvation through His blood. Temple forms may echo one another; eternal life is found only in the name God has exalted above every name.</p>
 </div>
 
 </article>
@@ -715,7 +697,7 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
   <ol style="text-align:left;max-width:520px;margin:0 auto 2rem;font-size:0.9rem;color:var(--text-secondary);line-height:1.8;">
     <li>Add the post to <code>posts.js</code> (id: <code>sacred-architecture-vedic-hebrew-temple-parallels</code>)</li>
     <li>Set your chosen publish date</li>
-    <li>Commit <code>blog-assets/temple-parallel-photos/</code> (~28 JPGs) + run download scripts if refreshing images</li>
+    <li>Commit <code>blog-assets/temple-parallel-photos/</code> (your uploaded reference images)</li>
   </ol>
   <p style="font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);">2:22 Church — sample HTML for review</p>
 </footer>
