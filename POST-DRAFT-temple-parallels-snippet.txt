@@ -3,10 +3,10 @@
 
 {
   id: "sacred-architecture-vedic-hebrew-temple-parallels",
-  title: "Celebrating the Shadows: Tracing the Roots",
+  title: "Celebrating the shadows or tracing the reality?",
   date: "5 June 2026",
   category: "Teaching",
-  image: "temple-shadow-and-original.svg",
+  image: "following-jesus-footsteps-disciple.jpg",
   excerpt: "Fourteen parallels: graded sanctity, sacred veil, doorpost signs, yajna fire, pakwan and Seder, samai and menorah, prayer shawls and caps, palkhi and the Ark — with your reference photos and diagrams.",
   content: `COPY INNER HTML FROM blog-preview-temple-parallels.html <article class="post-body"> ... </article>`
 }

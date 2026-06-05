@@ -18,15 +18,15 @@
 const POSTS = [
   {
     id: "sacred-architecture-vedic-hebrew-temple-parallels",
-    title: "Celebrating the Shadows: Tracing the Roots",
+    title: "Celebrating the shadows or tracing the reality?",
     date: "5 June 2026",
     category: "Teaching",
-    image: "temple-shadow-and-original.svg",
+    image: "following-jesus-footsteps-disciple.jpg",
     excerpt: "Fourteen temple parallels: graded sanctity, sacred veil, yajna fire, pakwan and Seder, palkhi and the Ark. Vedic culture came long after Moses; the rituals of Deuteronomy echo across cultures and point the Hindu reader to the Messiah's coming, death, resurrection, and ascension.",
     content: `
-<div class="minimal-design hero-diagram" aria-label="Man and shadow: original and echo">
-  <img src="temple-shadow-and-original.svg" alt="Minimal figure of a man and his shadow: the original form and its echo" loading="eager" decoding="async">
-  <p class="minimal-cap">Man and shadow: the solid figure is the root given at Sinai; the shadow is the ritual echo traced in later cultures</p>
+<div class="minimal-design hero-diagram hero-diagram--photo" aria-label="Following in the footsteps: shadow or reality">
+  <img src="following-jesus-footsteps-disciple.jpg" alt="Disciple walking in footsteps on the sand: tracing the path toward reality" loading="eager" decoding="async">
+  <p class="minimal-cap">Footsteps in the sand: will we follow the shadow of ritual, or trace the path back to the reality Moses received at Sinai?</p>
 </div>
 
 <h2 class="article-part-title"><span class="article-part-label">Introduction</span>Man, Shadow, and the Question of Origins</h2>
