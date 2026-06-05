@@ -1,17 +1,18 @@
 {
-  "license_note": "User-supplied reference photographs for the temple-parallels blog preview. Diagrams (SVG) used where no photo was provided.",
+  "license_note": "User-supplied reference photographs for the temple-parallels blog preview. Commons-sourced images used only for head-covering comparison (12).",
   "sections": {
-    "01": {"type": "minimal-diagram", "diagrams": ["temple-compare-01-zones.svg", "temple-compare-01-floorplan.svg"], "extra": ["01-tabernacle-curtains.jpeg", "01-sacred-veil-parda.jpg"]},
+    "01": {"type": "minimal-diagram", "diagrams": ["temple-compare-01-zones.svg", "temple-compare-01-floorplan.svg"]},
     "02": {"hindu": "02-snanam-bath-hindu.jpeg", "hebrew": "02-mikveh-bath.jpeg"},
     "03": {"hindu": "03-incense-hindu.webp", "hebrew": "03-incense-hebrew.jpeg"},
-    "04": {"type": "diagram", "file": "temple-compare-04-prostration.svg"},
+    "04": {"hindu": "04-dandavat-pranam.jpeg", "hebrew": "04-bowing-hebrew.webp"},
     "05": {"hindu": "05-samai-lamp.jpg", "hebrew": "05-menorah-lampstand.jpeg"},
     "06": {"hindu": "06-thali-naivedyam.webp", "hebrew": "06-seder-plate.jpeg"},
-    "07": {"type": "diagram", "file": "temple-compare-07-thread.svg"},
-    "08": {"type": "diagram", "file": "temple-compare-08-anointing.svg"},
+    "07": {"hindu": "07-hindu-prayer-shawl.jpeg", "hebrew": "07-jewish-tallit.jpg"},
+    "08": {"hindu": "08-abhishekam-anointing.jpeg", "hebrew": "08-anointing-hebrew.webp"},
     "09": {"hindu": "09-fruit-offering-hindu.png", "hebrew": "09-bikkurim-ki-tavo.jpeg"},
-    "10": {"hindu": "10-holi-dahan.png", "hebrew": "10-bronze-altar-sacrifice.jpg"},
-    "11": {"hindu": "11-palkhi.webp", "hebrew": "11-ark-covenant.jpeg"}
+    "10": {"hindu": ["10-holi-dahan.png", "10-yadnya-homa.jpeg"], "hebrew": "10-bronze-altar-sacrifice.jpg"},
+    "11": {"hindu": "11-palkhi.webp", "hebrew": "11-ark-covenant.jpeg"},
+    "12": {"hindu": "12-hindu-pheta-turban.jpg", "hebrew": ["12-jewish-kippah.jpg", "12-jewish-priest-turban.jpeg"], "commons": ["12-hindu-pheta-turban.jpg", "12-jewish-kippah.jpg"]}
   },
   "hero": ["10-holi-dahan.png", "11-palkhi.webp", "11-ark-covenant.jpeg", "01-tabernacle-curtains.jpeg", "05-samai-lamp.jpg"]
 }
