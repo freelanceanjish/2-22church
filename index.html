@@ -974,7 +974,7 @@ section.about{padding-top:7.5rem;}
   </div>
 </footer>
 
-<script src="posts.js?v=10"></script>
+<script src="posts.js?v=11"></script>
 <script>
 function handleJoin(e) {
   e.preventDefault();
@@ -1008,7 +1008,7 @@ function exportSubscribers(){
 function renderHomepagePosts() {
   var grid = document.getElementById('blog-grid');
   if (!grid || typeof POSTS === 'undefined') return;
-  var recent = POSTS.slice(0, 5);
+  var recent = POSTS.filter(function(p){ return p.category !== 'Testimony'; }).slice(0, 5);
   grid.innerHTML = recent.map(function(post, i) {
     var href = post.link ? post.link : 'post.html?id=' + post.id;
     var imgHtml = post.image
