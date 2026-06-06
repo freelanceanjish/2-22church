@@ -191,7 +191,7 @@ blockquote.pull cite{font-family:'Poppins',Arial,sans-serif;font-style:normal;fo
 
 
 .hero-video-bg{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;}
-.hero-video-bg iframe{position:absolute;top:50%;left:50%;width:177.78vh;min-width:100%;height:56.25vw;min-height:100%;transform:translate(-50%,-50%);border:none;}
+.hero-video-bg video{position:absolute;top:50%;left:50%;min-width:100%;min-height:100%;width:auto;height:auto;transform:translate(-50%,-50%);object-fit:cover;border:none;}
 .hero-video-overlay{position:absolute;inset:0;z-index:1;background:rgba(4,8,16,0.72);}
 </style>
 </head>
@@ -200,13 +200,36 @@ blockquote.pull cite{font-family:'Poppins',Arial,sans-serif;font-style:normal;fo
 <!-- NAV -->
 <nav>
   <a href="index.html" class="nav-logo"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-    <ul class="nav-links">
+      <ul class="nav-links">
     <li><a href="index.html#about">Home</a></li>
     <li><a href="articles.html">Articles</a></li>
     <li><a href="blogs.html">Blogs</a></li>
-    <li><a href="study.html" class="active">Study</a></li>
-    <li><a href="references.html">Resources</a></li>
-    <li><a href="qa.html">Q&A</a></li>
+    <li class="nav-item">
+      <a href="study.html" class="active">Study</a>
+      <div class="nav-dropdown">
+        <a href="study.html">Study Hub</a>
+        <a href="cosmology.html">Biblical Cosmology</a>
+        <a href="project314.html">God of Pi</a>
+        <a href="noahs-ark.html">Noah's Ark</a>
+        <a href="solomons-temple.html">Solomon's Temple</a>
+        <a href="heavenly-jerusalem.html">Heavenly Jerusalem</a>
+        <a href="old-maps.html">Old Maps</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="references.html">Resources</a>
+      <div class="nav-dropdown">
+        <a href="references.html#one-god">One God</a>
+        <a href="references.html#short-season">Short Season</a>
+        <a href="references.html#biblical-earth">Biblical Earth</a>
+        <a href="references.html#podcasts">Podcasts</a>
+        <a href="references.html#debates">Debates</a>
+        <a href="references.html#articles">Articles</a>
+        <a href="references.html#archives">Archives</a>
+        <a href="references.html#documentaries">Documentaries</a>
+      </div>
+    </li>
+    <li><a href="qa.html">Q&amp;A</a></li>
     <li><a href="our-story.html">Our Story</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
@@ -219,17 +242,25 @@ blockquote.pull cite{font-family:'Poppins',Arial,sans-serif;font-style:normal;fo
   <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
   <a href="articles.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Articles</a>
   <a href="blogs.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blogs</a>
-  <a href="study.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study</a>
+  <a href="study.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study Hub</a>
+  <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
+  <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="noahs-ark.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Noah's Ark</a>
+  <a href="solomons-temple.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Solomon's Temple</a>
+  <a href="heavenly-jerusalem.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Heavenly Jerusalem</a>
+  <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
-  <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&A</a>
+  <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
   <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
-<!-- HERO, YouTube video background 18s–37s loop -->
+<!-- HERO, Tabernacle.mp4 background -->
 <section class="hero">
   <div class="hero-video-bg">
-    <iframe src="https://www.youtube.com/embed/y9vwgARhy4w?autoplay=1&mute=1&loop=1&playlist=y9vwgARhy4w&start=39&controls=0&showinfo=0&rel=0&playsinline=1" allow="autoplay;encrypted-media" allowfullscreen></iframe>
+    <video autoplay muted loop playsinline preload="auto" aria-hidden="true">
+      <source src="Tabernacle.mp4" type="video/mp4">
+    </video>
   </div>
   <div class="hero-video-overlay"></div>
   <div class="hero-overlay"></div>

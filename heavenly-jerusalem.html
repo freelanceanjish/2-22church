@@ -7,10 +7,23 @@
 <link rel="stylesheet" href="style.css?v=3">
 <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
 <style>
-.cosmo-body{max-width:900px;margin:0 auto;padding:5rem 2rem 8rem;}
-.cosmo-section{margin-bottom:6rem;}
-.cosmo-body p{color:var(--text-secondary);font-size:1rem;line-height:1.9;margin-bottom:1.1rem;}
-.cosmo-body p strong{color:var(--text-primary);font-weight:500;}
+.study-doc{max-width:900px;margin:0 auto;padding:5rem 2rem 8rem;}
+.study-outline{background:var(--surface-light);border:0.5px solid var(--border);border-left:3px solid var(--gold);padding:1.5rem 2rem;margin:0 0 3rem;border-radius:0 8px 8px 0;}
+.study-outline h2{font-family:'Poppins',Arial,sans-serif;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin:0 0 0.9rem;}
+.study-outline ol{margin:0;padding-left:1.2rem;color:var(--text-secondary);font-size:0.9rem;line-height:1.9;}
+.study-outline a{color:var(--text-secondary);text-decoration:none;}
+.study-outline a:hover{color:var(--gold);}
+.study-tagline{font-family:'Poppins',Arial,sans-serif;font-size:1.08rem;font-style:italic;color:var(--gold);line-height:1.65;border-left:3px solid var(--gold);padding:1rem 1.4rem;margin:0 0 2.5rem;background:var(--surface-light);border-radius:0 8px 8px 0;}
+.study-section{margin-bottom:5rem;scroll-margin-top:7rem;}
+.study-num{font-family:'Poppins',Arial,sans-serif;font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.35rem;}
+.study-doc p{color:var(--text-secondary);font-size:1rem;line-height:1.9;margin-bottom:1.1rem;}
+.study-doc p strong{color:var(--text-primary);font-weight:500;}
+.contrast-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:0.5px solid var(--border);margin:2rem 0;}
+.contrast-item{background:var(--surface);padding:1.5rem 1.6rem;}
+.contrast-item h4{font-family:'Poppins',Arial,sans-serif;font-size:0.95rem;font-weight:500;margin-bottom:0.6rem;}
+.contrast-item.trad h4{color:var(--text-muted);}
+.contrast-item.context h4{color:var(--gold);}
+.contrast-item p{font-size:0.88rem;margin:0;line-height:1.75;}
 .scripture-block{background:var(--surface);border:0.5px solid var(--border);border-left:2px solid var(--gold);padding:1.6rem 2rem;margin:2rem 0;}
 .scripture-ref{font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;display:block;}
 .scripture-text{font-family:'Poppins',Arial,sans-serif;font-size:1.05rem;font-style:italic;line-height:1.75;color:var(--text-primary);}
@@ -18,22 +31,20 @@
 .sg-item{background:var(--surface);padding:1.4rem 1.6rem;}
 .sg-ref{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;display:block;}
 .sg-text{font-family:'Poppins',Arial,sans-serif;font-size:0.95rem;font-style:italic;line-height:1.7;color:var(--text-primary);}
-.pull-quote{font-family:'Poppins',Arial,sans-serif;font-size:1.25rem;font-style:italic;font-weight:300;color:var(--text-primary);line-height:1.6;border-left:2px solid var(--gold);padding:1rem 1.5rem;margin:2.5rem 0;}
-.img-card{background:var(--surface);border:0.5px solid var(--border);overflow:hidden;margin:2rem 0;}
-.img-card img{width:100%;display:block;}
-.img-card-cap{padding:1rem 1.4rem;font-size:0.82rem;color:var(--text-muted);line-height:1.65;}
-.calc-box{background:var(--surface-light);border:0.5px solid var(--border);padding:1.6rem 2rem;margin:2rem 0;border-radius:6px;}
-.calc-box h4{font-family:'Poppins',Arial,sans-serif;font-size:1rem;font-weight:500;color:var(--gold);margin-bottom:0.75rem;}
-.calc-box p{font-size:0.9rem;margin-bottom:0.5rem;}
-.source-note{background:rgba(91,141,184,0.05);border:0.5px solid var(--border);padding:1.4rem 1.8rem;margin:3rem 0;}
+.calc-box{background:var(--surface-light);border:0.5px solid var(--border);padding:1.6rem 2rem;margin:1.5rem 0;border-radius:6px;}
+.calc-box h4{font-family:'Poppins',Arial,sans-serif;font-size:0.95rem;font-weight:500;color:var(--gold);margin-bottom:0.75rem;}
+.calc-box p{font-size:0.9rem;margin-bottom:0.45rem;}
+.diagram-block{background:var(--surface);border:0.5px solid var(--border);margin:2.5rem 0;overflow:hidden;}
+.diagram-block img{width:100%;display:block;}
+.diagram-cap{padding:1rem 1.4rem;font-size:0.82rem;color:var(--text-muted);line-height:1.7;border-top:0.5px solid var(--border);}
+.source-note{background:rgba(91,141,184,0.05);border:0.5px solid var(--border);padding:1.4rem 1.8rem;margin:2rem 0;}
 .source-note p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;margin:0;}
-.source-note a{color:var(--gold);text-decoration:none;border-bottom:0.5px solid var(--border);}
-.tagline{font-family:'Poppins',Arial,sans-serif;font-size:1.1rem;font-style:italic;color:var(--gold);line-height:1.65;border-left:3px solid var(--gold);padding:1rem 1.4rem;margin:0 0 2.5rem;background:var(--surface-light);border-radius:0 8px 8px 0;}
+.source-note a{color:var(--gold);}
 .quick-nav{background:var(--deep);border-bottom:0.5px solid var(--border-subtle);padding:1.2rem 2rem;position:sticky;top:64px;z-index:90;}
-.quick-nav-inner{max-width:1000px;margin:0 auto;display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;}
-.quick-nav a{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;}
+.quick-nav-inner{max-width:1000px;margin:0 auto;display:flex;gap:1.2rem;flex-wrap:wrap;justify-content:center;}
+.quick-nav a{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;}
 .quick-nav a:hover{color:var(--gold);}
-@media(max-width:720px){.scripture-grid{grid-template-columns:1fr;}}
+@media(max-width:720px){.contrast-grid,.scripture-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -44,8 +55,31 @@
     <li><a href="index.html#about">Home</a></li>
     <li><a href="articles.html">Articles</a></li>
     <li><a href="blogs.html">Blogs</a></li>
-    <li><a href="study.html" class="active">Study</a></li>
-    <li><a href="references.html">Resources</a></li>
+    <li class="nav-item">
+      <a href="study.html" class="active">Study</a>
+      <div class="nav-dropdown">
+        <a href="study.html">Study Hub</a>
+        <a href="cosmology.html">Biblical Cosmology</a>
+        <a href="project314.html">God of Pi</a>
+        <a href="noahs-ark.html">Noah's Ark</a>
+        <a href="solomons-temple.html">Solomon's Temple</a>
+        <a href="heavenly-jerusalem.html">Heavenly Jerusalem</a>
+        <a href="old-maps.html">Old Maps</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="references.html">Resources</a>
+      <div class="nav-dropdown">
+        <a href="references.html#one-god">One God</a>
+        <a href="references.html#short-season">Short Season</a>
+        <a href="references.html#biblical-earth">Biblical Earth</a>
+        <a href="references.html#podcasts">Podcasts</a>
+        <a href="references.html#debates">Debates</a>
+        <a href="references.html#articles">Articles</a>
+        <a href="references.html#archives">Archives</a>
+        <a href="references.html#documentaries">Documentaries</a>
+      </div>
+    </li>
     <li><a href="qa.html">Q&amp;A</a></li>
     <li><a href="our-story.html">Our Story</a></li>
   </ul>
@@ -57,7 +91,13 @@
   <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
   <a href="articles.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Articles</a>
   <a href="blogs.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blogs</a>
-  <a href="study.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study</a>
+  <a href="study.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study Hub</a>
+  <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
+  <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="noahs-ark.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Noah's Ark</a>
+  <a href="solomons-temple.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Solomon's Temple</a>
+  <a href="heavenly-jerusalem.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Heavenly Jerusalem</a>
+  <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
   <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
   <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
@@ -65,44 +105,65 @@
 </div>
 
 <div class="page-header">
-  <div class="eyebrow">Revelation 21–22</div>
+  <div class="eyebrow">Study Document · Revelation 21–22</div>
   <h1>Heavenly <em>Jerusalem</em></h1>
-  <p>Not a cold cube dropped from heaven. A radiant dome whose measurements, read in context, echo pi and the patterns of ark, tabernacle, and temple.</p>
+  <p>The final structure in Scripture's architectural sequence — read as dome, not cube.</p>
 </div>
 
 <nav class="quick-nav" aria-label="Page sections">
   <div class="quick-nav-inner">
-    <a href="#question">The Question</a>
-    <a href="#scripture">Scripture</a>
-    <a href="#geometry">Geometry</a>
-    <a href="#math">Calculations</a>
-    <a href="#sources">Sources</a>
+    <a href="#s1">I. Inherited Model</a>
+    <a href="#s2">II. Scripture</a>
+    <a href="#s3">III. Dome Geometry</a>
+    <a href="#s4">IV. Arithmetic</a>
+    <a href="#s5">V. Pattern</a>
+    <a href="#s6">VI. Sources</a>
   </div>
 </nav>
 
-<div class="cosmo-body">
+<div class="study-doc">
 
-  <p class="tagline">I doubted the shoe-box temples in my heart long before I wrote a word. Sunflowers, pinecones, ferns: the Creator wove holy geometry into creation. Why would His city at the end of all things look like the one shape He never plants in the field?</p>
+  <p class="study-tagline">I doubted the shoe-box temples in my heart long before I wrote a word. At the end of Revelation, why would the Bride descend as the one shape the Creator never plants in the field?</p>
+
+  <div class="study-outline">
+    <h2>Document Outline</h2>
+    <ol>
+      <li><a href="#s1">The cubic city of modern charts</a></li>
+      <li><a href="#s2">Revelation 21, Isaiah 40, 4 Ezra</a></li>
+      <li><a href="#s3">Contextual dome geometry</a></li>
+      <li><a href="#s4">Furlongs, miles, and pi in the footprint</a></li>
+      <li><a href="#s5">Ark to city: one architectural gospel</a></li>
+      <li><a href="#s6">Credits</a></li>
+    </ol>
+  </div>
 
   <div class="source-note">
-    <p>Contextual geometry developed in conversation with <strong>Project Arc</strong> at <a href="https://www.renformation.com/" target="_blank" rel="noopener">renformation.com</a>. This page presents our own arithmetic and Scripture work. Earlier sacred-structure studies on this site: <a href="project314.html">God of Pi</a>, <a href="noahs-ark.html">Noah's Ark</a>, <a href="solomons-temple.html">Solomon's Temple</a>.</p>
+    <p>Contextual geometry developed in conversation with <strong>Project Arc</strong> at <a href="https://www.renformation.com/" target="_blank" rel="noopener">renformation.com</a>. Arithmetic and prose are our own. Related studies: <a href="project314.html">God of Pi</a>, <a href="noahs-ark.html">Noah's Ark</a>, <a href="solomons-temple.html">Solomon's Temple</a>.</p>
   </div>
 
-  <div class="cosmo-section" id="question">
-    <div class="section-label">Revelation 21</div>
-    <h2 class="section-title">Cube or <em>cap</em>?</h2>
-    <p>John sees the holy city descending prepared as a bride. Modern charts draw a steel-grey cube 1,500 miles on each side. That reading hangs on one word — <strong>"foursquare"</strong> — and the assumption that length, breadth, and height must describe a box.</p>
-    <p>But Scripture has been describing sacred space as <strong>curved, circular, and domed</strong> from Genesis onward: the ark's shell, the tabernacle decagon, Solomon's sea of pi, Ezekiel's enthroned firmament. Why would the final city break the pattern?</p>
-    <div class="pull-quote">What if "length as large as breadth" describes a circular base, and equal height describes a dome rising to the throne — the same grammar of measurement read in context rather than imported from modern zoning codes?</div>
+  <div class="study-section" id="s1">
+    <div class="study-num">Section I</div>
+    <div class="section-label">Before the Text</div>
+    <h2 class="section-title">The inherited <em>cube</em></h2>
+    <p>Modern prophecy charts draw New Jerusalem as a steel-grey cube 1,500 miles per side — a city the size of a small moon. That reading hangs on the word <strong>"foursquare"</strong> and the assumption that length, breadth, and height must mean a box.</p>
+
+    <div class="contrast-grid">
+      <div class="contrast-item trad">
+        <h4>Mainstream assumption</h4>
+        <p>12,000 furlongs per edge = cube. Flat faces, right angles, city as warehouse. Volume ≈ 3.4 billion cubic miles.</p>
+      </div>
+      <div class="contrast-item context">
+        <h4>Contextual reading</h4>
+        <p>Length equal to breadth = circular base. Equal height = dome ascending to throne. Radiant cap, not cold box. Footprint area in pi-square form.</p>
+      </div>
+    </div>
+
+    <p>Scripture has described sacred space as curved from Genesis onward. The final city is not where the pattern breaks. It is where the pattern <strong>completes</strong>.</p>
   </div>
 
-  <div class="img-card">
-    <img src="blog-assets/study/study-heavenly-jerusalem.png" alt="Illustration of Heavenly Jerusalem as a vast domed city of light" loading="lazy">
-    <div class="img-card-cap"><strong>Original illustration.</strong> Dome-like city descending in light. Generated for this study; not copied from external artwork.</div>
-  </div>
-
-  <div class="cosmo-section" id="scripture">
-    <div class="section-label">Primary Text</div>
+  <div class="study-section" id="s2">
+    <div class="study-num">Section II</div>
+    <div class="section-label">Primary Sources</div>
     <h2 class="section-title">What John <em>measured</em></h2>
 
     <div class="scripture-block">
@@ -113,103 +174,90 @@
     <div class="scripture-grid">
       <div class="sg-item">
         <span class="sg-ref">Revelation 21:10–11</span>
-        <div class="sg-text">He carried me away in the spirit to a great and high mountain, and shewed me that great city, the holy Jerusalem, descending out of heaven from God, having the glory of God: and her light was like unto a stone most precious.</div>
+        <div class="sg-text">That great city, the holy Jerusalem, descending out of heaven from God, having the glory of God: and her light was like unto a stone most precious.</div>
       </div>
       <div class="sg-item">
         <span class="sg-ref">Revelation 21:22–23</span>
-        <div class="sg-text">The Lord God Almighty and the Lamb are the temple of it. The city had no need of the sun, neither of the moon, to shine in it: for the glory of God did lighten it.</div>
+        <div class="sg-text">The Lord God Almighty and the Lamb are the temple of it. The glory of God did lighten it.</div>
       </div>
       <div class="sg-item">
         <span class="sg-ref">Isaiah 40:22</span>
-        <div class="sg-text">He sitteth upon the circle of the earth, and the inhabitants thereof are as grasshoppers; that stretcheth out the heavens as a curtain.</div>
+        <div class="sg-text">He sitteth upon the circle of the earth, and stretcheth out the heavens as a curtain, and spreadeth them out as a tent to dwell in.</div>
       </div>
       <div class="sg-item">
-        <span class="sg-ref">4 Ezra 10:55–59 (apocryphal)</span>
-        <div class="sg-text">Esdras sees Zion restored in glory — a bridal city whose appearance exceeds earthly architecture, consistent with later Johannine vision.</div>
+        <span class="sg-ref">4 Ezra 10:55–59</span>
+        <div class="sg-text">Esdras sees Zion restored in bridal glory — an appearance exceeding earthly architecture.</div>
       </div>
     </div>
 
-    <p>The wall is measured separately at <strong>144 cubits</strong> — twelve squared, the tribal number squared again. Gates numbered twelve, foundations twelve. The city breathes <strong>duodecimal symmetry</strong>, the same family of numbers that governs the tabernacle's woven loops and the zodiac bands of the firmament.</p>
+    <p>Wall measured separately: <strong>144 cubits</strong> = 12². Twelve gates, twelve foundations — the city's signature integer is duodecimal symmetry, the same family as tabernacle loops and tribal order.</p>
   </div>
 
-  <div class="cosmo-section" id="geometry">
-    <div class="section-label">Pattern Continuity</div>
-    <h2 class="section-title">One architectural <em>grammar</em></h2>
-    <p>Ark → Tabernacle → Temple → City. Each stage increases scale but repeats the same question: will we read measurements as God gave them, or flatten them into shoeboxes because Babylon taught us bricks?</p>
-    <p>A dome decagon tabernacle casts a shadow. A circular Solomonic house gathers that shadow in stone and cedar. The heavenly city is the substance — light, circumference, throne above firmament, pi in the floor.</p>
+  <div class="study-section" id="s3">
+    <div class="study-num">Section III</div>
+    <div class="section-label">Contextual Geometry</div>
+    <h2 class="section-title">Dome, not <em>cube</em></h2>
+    <p>When length equals breadth on a level measurement, both may describe <strong>diameter</strong>. When height equals the same reed-length, the third dimension may describe <strong>apex altitude</strong> of a dome — the tent Isaiah 40:22 describes, scaled to the measure of God.</p>
+    <p>God's throne sits above the firmament throughout Scripture (Ezekiel 1:26; Isaiah 66:1). A domed city is not decorative speculation. It is where the architectural grammar has been pointing since the ark.</p>
+
+    <div class="diagram-block">
+      <img src="blog-assets/study/study-heavenly-jerusalem.png" alt="Contextual schematic: vast domed city of light with circular base — no cube" loading="lazy">
+      <div class="diagram-cap"><strong>Contextual schematic only.</strong> Luminous dome with wide circular footprint. No cube, no rectangular city grid. Original generated illustration.</div>
+    </div>
   </div>
 
-  <div class="cosmo-section" id="math">
+  <div class="study-section" id="s4">
+    <div class="study-num">Section IV</div>
     <div class="section-label">Arithmetic</div>
-    <h2 class="section-title">Working the <em>furlongs</em></h2>
+    <h2 class="section-title">Furlongs and <em>miles</em></h2>
 
     <div class="calc-box">
-      <h4>Standard furlong conversion</h4>
-      <p>1 furlong = 1/8 mile (statute).</p>
-      <p>12,000 furlongs = 12,000 ÷ 8 = <strong>1,500 miles</strong> per side in the cubic reading.</p>
-      <p>Volume (cube model) = 1,500³ = <strong>3.375 billion cubic miles</strong> — larger than many moons, yet John sees it descending to earth.</p>
+      <h4>Cubic reading (comparison)</h4>
+      <p>12,000 furlongs ÷ 8 = <strong>1,500 miles</strong> per edge.</p>
+      <p>Volume = 1,500³ = <strong>3.375 billion cubic miles</strong> — difficult to reconcile with a city descending to earth.</p>
     </div>
 
     <div class="calc-box">
-      <h4>Contextual dome reading (Project Arc pattern)</h4>
-      <p>When length equals breadth on a circular plan, both terms describe <strong>diameter</strong>.</p>
-      <p>Proposed base diameter: <strong>2,800 miles</strong>. Radius r = 1,400 miles.</p>
-      <p>Base footprint area = π × r² = π × 1,400² = <strong>1,960,000π square miles</strong> (area in pi-square form: 1,960,000 units squared, scaled by π).</p>
-      <p>Proposed dome height (apex to base): <strong>14,000 miles</strong> — ten times the radius, a 5:1 height-to-radius ratio evoking tent-pole ascent (Isaiah 40:22, "curtain... tent to dwell in").</p>
+      <h4>Contextual dome reading</h4>
+      <p>Base diameter: <strong>2,800 miles</strong>. Radius r = 1,400 miles.</p>
+      <p>Footprint area = π × r² = π × 1,400² = <strong>1,960,000π square miles</strong> (area in pi-square form).</p>
+      <p>Dome apex height: <strong>14,000 miles</strong> — height-to-radius ratio 10:1, evoking tent pole ascent under the firmament curtain.</p>
     </div>
 
     <div class="calc-box">
-      <h4>Wall and gate numbers</h4>
-      <p>Wall height/thickness: <strong>144 cubits</strong> = 12 × 12.</p>
-      <p>12 gates × 12 foundations = <strong>144</strong> again — the city's signature integer is a square of twelve, not a cube of arbitrary miles.</p>
-      <p>144 ÷ 12 = 12; √(144) = 12 — every wall measure points back to the tribal dozen, not to secular metrology alone.</p>
+      <h4>Wall and gate integers</h4>
+      <p>Wall: <strong>144 cubits</strong> = 12 × 12. Gates × foundations = 12 × 12 = <strong>144</strong>.</p>
+      <p>√144 = 12. The city counts by dozens, not by secular zoning blocks.</p>
     </div>
-
-    <p>The cubic model produces a city so vast it could swallow continents. The dome model produces a city vast beyond human building yet <strong>structurally continuous</strong> with every curved sanctuary that came before it. We find the second reading more faithful to the architectural gospel Scripture has been telling all along.</p>
   </div>
 
-  <div class="cosmo-section" id="sources">
-    <div class="section-label">Further Reading</div>
-    <h2 class="section-title">Credits and <em>next steps</em></h2>
+  <div class="study-section" id="s5">
+    <div class="study-num">Section V</div>
+    <div class="section-label">Pattern Continuity</div>
+    <h2 class="section-title">The architectural <em>gospel</em></h2>
+    <p>Ark shell → tabernacle decagon → Solomonic dome → bridal city. Four movements, one question: will we let God out of the box tradition built around Him?</p>
+  </div>
+
+  <div class="study-section" id="s6">
+    <div class="study-num">Section VI</div>
+    <div class="section-label">Conclusion</div>
+    <h2 class="section-title">Credits</h2>
     <div class="source-note">
-      <p><strong>Primary researcher:</strong> <a href="https://www.renformation.com/" target="_blank" rel="noopener">Project Arc / Renformation</a>. <strong>Related studies:</strong> <a href="study.html">Study hub</a>, <a href="project314.html">God of Pi</a>, <a href="noahs-ark.html">Noah's Ark</a>, <a href="solomons-temple.html">Solomon's Temple</a>. <strong>Our conclusion:</strong> <a href="our-story.html">Our Story</a>, truth 12.</p>
+      <p><strong>Research credit:</strong> <a href="https://www.renformation.com/" target="_blank" rel="noopener">Project Arc / Renformation</a>. <strong>Related:</strong> <a href="study.html">Study hub</a> · <a href="our-story.html">Our Story</a> truth 12.</p>
     </div>
   </div>
 
 </div>
 
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Study</h4>
-      <ul>
-        <li><a href="study.html">Study Hub</a></li>
-        <li><a href="cosmology.html">Biblical Cosmology</a></li>
-        <li><a href="project314.html">God of Pi</a></li>
-        <li><a href="noahs-ark.html">Noah's Ark</a></li>
-        <li><a href="solomons-temple.html">Solomon's Temple</a></li>
-        <li><a href="heavenly-jerusalem.html">Heavenly Jerusalem</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Connect</h4>
-      <ul>
-        <li><a href="index.html#join">Join a Gathering</a></li>
-        <li><a href="mailto:contact@2-22church.com">Email Us</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>All copyrights reserved. @2-22 Church, 2026</span>
-  </div>
-</footer>
+<footer><div class="footer-bottom" style="padding:2rem;"><span>All copyrights reserved. @2-22 Church, 2026</span></div></footer>
 <script>
 document.querySelector('.nav-hamburger')?.addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('open');});
-document.querySelectorAll('.mobile-menu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mobile-menu').classList.remove('open');});});
+document.querySelectorAll('.nav-item').forEach(function(item){
+  item.querySelector(':scope>a').addEventListener('click',function(e){
+    if(item.querySelector('.nav-dropdown')){e.preventDefault();item.classList.toggle('open');}
+  });
+});
+document.addEventListener('click',function(e){if(!e.target.closest('.nav-item'))document.querySelectorAll('.nav-item.open').forEach(function(i){i.classList.remove('open');});});
 </script>
 </body>
 </html>

@@ -7,10 +7,23 @@
 <link rel="stylesheet" href="style.css?v=3">
 <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
 <style>
-.cosmo-body{max-width:900px;margin:0 auto;padding:5rem 2rem 8rem;}
-.cosmo-section{margin-bottom:6rem;}
-.cosmo-body p{color:var(--text-secondary);font-size:1rem;line-height:1.9;margin-bottom:1.1rem;}
-.cosmo-body p strong{color:var(--text-primary);font-weight:500;}
+.study-doc{max-width:900px;margin:0 auto;padding:5rem 2rem 8rem;}
+.study-outline{background:var(--surface-light);border:0.5px solid var(--border);border-left:3px solid var(--gold);padding:1.5rem 2rem;margin:0 0 3rem;border-radius:0 8px 8px 0;}
+.study-outline h2{font-family:'Poppins',Arial,sans-serif;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin:0 0 0.9rem;}
+.study-outline ol{margin:0;padding-left:1.2rem;color:var(--text-secondary);font-size:0.9rem;line-height:1.9;}
+.study-outline a{color:var(--text-secondary);text-decoration:none;}
+.study-outline a:hover{color:var(--gold);}
+.study-tagline{font-family:'Poppins',Arial,sans-serif;font-size:1.08rem;font-style:italic;color:var(--gold);line-height:1.65;border-left:3px solid var(--gold);padding:1rem 1.4rem;margin:0 0 2.5rem;background:var(--surface-light);border-radius:0 8px 8px 0;}
+.study-section{margin-bottom:5rem;scroll-margin-top:7rem;}
+.study-num{font-family:'Poppins',Arial,sans-serif;font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.35rem;}
+.study-doc p{color:var(--text-secondary);font-size:1rem;line-height:1.9;margin-bottom:1.1rem;}
+.study-doc p strong{color:var(--text-primary);font-weight:500;}
+.contrast-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:0.5px solid var(--border);margin:2rem 0;}
+.contrast-item{background:var(--surface);padding:1.5rem 1.6rem;}
+.contrast-item h4{font-family:'Poppins',Arial,sans-serif;font-size:0.95rem;font-weight:500;margin-bottom:0.6rem;}
+.contrast-item.trad h4{color:var(--text-muted);}
+.contrast-item.context h4{color:var(--gold);}
+.contrast-item p{font-size:0.88rem;margin:0;line-height:1.75;}
 .scripture-block{background:var(--surface);border:0.5px solid var(--border);border-left:2px solid var(--gold);padding:1.6rem 2rem;margin:2rem 0;}
 .scripture-ref{font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;display:block;}
 .scripture-text{font-family:'Poppins',Arial,sans-serif;font-size:1.05rem;font-style:italic;line-height:1.75;color:var(--text-primary);}
@@ -18,22 +31,20 @@
 .sg-item{background:var(--surface);padding:1.4rem 1.6rem;}
 .sg-ref{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;display:block;}
 .sg-text{font-family:'Poppins',Arial,sans-serif;font-size:0.95rem;font-style:italic;line-height:1.7;color:var(--text-primary);}
-.pull-quote{font-family:'Poppins',Arial,sans-serif;font-size:1.25rem;font-style:italic;font-weight:300;color:var(--text-primary);line-height:1.6;border-left:2px solid var(--gold);padding:1rem 1.5rem;margin:2.5rem 0;}
-.img-card{background:var(--surface);border:0.5px solid var(--border);overflow:hidden;margin:2rem 0;}
-.img-card img{width:100%;display:block;}
-.img-card-cap{padding:1rem 1.4rem;font-size:0.82rem;color:var(--text-muted);line-height:1.65;}
-.calc-box{background:var(--surface-light);border:0.5px solid var(--border);padding:1.6rem 2rem;margin:2rem 0;border-radius:6px;}
-.calc-box h4{font-family:'Poppins',Arial,sans-serif;font-size:1rem;font-weight:500;color:var(--gold);margin-bottom:0.75rem;}
-.calc-box p{font-size:0.9rem;margin-bottom:0.5rem;}
-.source-note{background:rgba(91,141,184,0.05);border:0.5px solid var(--border);padding:1.4rem 1.8rem;margin:3rem 0;}
+.calc-box{background:var(--surface-light);border:0.5px solid var(--border);padding:1.6rem 2rem;margin:1.5rem 0;border-radius:6px;}
+.calc-box h4{font-family:'Poppins',Arial,sans-serif;font-size:0.95rem;font-weight:500;color:var(--gold);margin-bottom:0.75rem;}
+.calc-box p{font-size:0.9rem;margin-bottom:0.45rem;}
+.diagram-block{background:var(--surface);border:0.5px solid var(--border);margin:2.5rem 0;overflow:hidden;}
+.diagram-block img{width:100%;display:block;}
+.diagram-cap{padding:1rem 1.4rem;font-size:0.82rem;color:var(--text-muted);line-height:1.7;border-top:0.5px solid var(--border);}
+.source-note{background:rgba(91,141,184,0.05);border:0.5px solid var(--border);padding:1.4rem 1.8rem;margin:2rem 0;}
 .source-note p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;margin:0;}
-.source-note a{color:var(--gold);text-decoration:none;border-bottom:0.5px solid var(--border);}
-.tagline{font-family:'Poppins',Arial,sans-serif;font-size:1.1rem;font-style:italic;color:var(--gold);line-height:1.65;border-left:3px solid var(--gold);padding:1rem 1.4rem;margin:0 0 2.5rem;background:var(--surface-light);border-radius:0 8px 8px 0;}
+.source-note a{color:var(--gold);}
 .quick-nav{background:var(--deep);border-bottom:0.5px solid var(--border-subtle);padding:1.2rem 2rem;position:sticky;top:64px;z-index:90;}
-.quick-nav-inner{max-width:1000px;margin:0 auto;display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;}
-.quick-nav a{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;}
+.quick-nav-inner{max-width:1000px;margin:0 auto;display:flex;gap:1.2rem;flex-wrap:wrap;justify-content:center;}
+.quick-nav a{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;}
 .quick-nav a:hover{color:var(--gold);}
-@media(max-width:720px){.scripture-grid{grid-template-columns:1fr;}}
+@media(max-width:720px){.contrast-grid,.scripture-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -44,8 +55,31 @@
     <li><a href="index.html#about">Home</a></li>
     <li><a href="articles.html">Articles</a></li>
     <li><a href="blogs.html">Blogs</a></li>
-    <li><a href="study.html" class="active">Study</a></li>
-    <li><a href="references.html">Resources</a></li>
+    <li class="nav-item">
+      <a href="study.html" class="active">Study</a>
+      <div class="nav-dropdown">
+        <a href="study.html">Study Hub</a>
+        <a href="cosmology.html">Biblical Cosmology</a>
+        <a href="project314.html">God of Pi</a>
+        <a href="noahs-ark.html">Noah's Ark</a>
+        <a href="solomons-temple.html">Solomon's Temple</a>
+        <a href="heavenly-jerusalem.html">Heavenly Jerusalem</a>
+        <a href="old-maps.html">Old Maps</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="references.html">Resources</a>
+      <div class="nav-dropdown">
+        <a href="references.html#one-god">One God</a>
+        <a href="references.html#short-season">Short Season</a>
+        <a href="references.html#biblical-earth">Biblical Earth</a>
+        <a href="references.html#podcasts">Podcasts</a>
+        <a href="references.html#debates">Debates</a>
+        <a href="references.html#articles">Articles</a>
+        <a href="references.html#archives">Archives</a>
+        <a href="references.html#documentaries">Documentaries</a>
+      </div>
+    </li>
     <li><a href="qa.html">Q&amp;A</a></li>
     <li><a href="our-story.html">Our Story</a></li>
   </ul>
@@ -57,7 +91,13 @@
   <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
   <a href="articles.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Articles</a>
   <a href="blogs.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blogs</a>
-  <a href="study.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study</a>
+  <a href="study.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study Hub</a>
+  <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
+  <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="noahs-ark.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Noah's Ark</a>
+  <a href="solomons-temple.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Solomon's Temple</a>
+  <a href="heavenly-jerusalem.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Heavenly Jerusalem</a>
+  <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
   <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
   <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
@@ -65,44 +105,65 @@
 </div>
 
 <div class="page-header">
-  <div class="eyebrow">959 BC · First Temple</div>
+  <div class="eyebrow">Study Document · 959 BC</div>
   <h1>Solomon's <em>Temple</em></h1>
-  <p>Not a shoebox imposed by Babylonian memory. A circular dwelling with dome, shadowing Ezekiel's vision as Henry Sulley drew it.</p>
+  <p>First Temple geometry read in context — before Babylon flattened the pattern.</p>
 </div>
 
 <nav class="quick-nav" aria-label="Page sections">
   <div class="quick-nav-inner">
-    <a href="#question">The Question</a>
-    <a href="#scripture">Scripture</a>
-    <a href="#sulley">Sulley &amp; Ezekiel</a>
-    <a href="#math">Measurements</a>
-    <a href="#sources">Sources</a>
+    <a href="#s1">I. Inherited Model</a>
+    <a href="#s2">II. Scripture</a>
+    <a href="#s3">III. Sulley &amp; Ezekiel</a>
+    <a href="#s4">IV. Arithmetic</a>
+    <a href="#s5">V. Pattern</a>
+    <a href="#s6">VI. Sources</a>
   </div>
 </nav>
 
-<div class="cosmo-body">
+<div class="study-doc">
 
-  <p class="tagline">I doubted the shoe-box temples in my heart long before I wrote a word. Sunflowers, pinecones, ferns: the Creator wove holy geometry into creation. Why would His house look like a Babylonian brick when His patterns curve through everything He made?</p>
+  <p class="study-tagline">I doubted the shoe-box temples in my heart long before I wrote a word. The Creator curves everything He calls good. Why would His house in Jerusalem be the one exception?</p>
+
+  <div class="study-outline">
+    <h2>Document Outline</h2>
+    <ol>
+      <li><a href="#s1">The shoebox model and the Babylonian transposition</a></li>
+      <li><a href="#s2">1 Kings, 2 Chronicles, and the molten sea</a></li>
+      <li><a href="#s3">Henry Sulley, Ezekiel 40–48, and circular vision</a></li>
+      <li><a href="#s4">Cubits, pi, and First vs Second Temple</a></li>
+      <li><a href="#s5">From tabernacle decagon to heavenly city</a></li>
+      <li><a href="#s6">Credits</a></li>
+    </ol>
+  </div>
 
   <div class="source-note">
-    <p>Research context from <strong>Project Arc</strong> at <a href="https://www.renformation.com/" target="_blank" rel="noopener">renformation.com</a>. Henry Sulley's <em>Temple of Ezekiel's Prophecy</em> (1887) and Thomas Newberry's earlier dome models are cited by that project. Tabernacle geometry on this site credits <a href="project314.html">Project314.org</a>.</p>
+    <p>Research context from <strong>Project Arc</strong> at <a href="https://www.renformation.com/" target="_blank" rel="noopener">renformation.com</a>. Historical models by Henry Sulley (1887) and Thomas Newberry are discussed. Tabernacle geometry credits <a href="project314.html">Project314.org</a> and Andrew Hoy.</p>
   </div>
 
-  <div class="cosmo-section" id="question">
-    <div class="section-label">1 Kings 6</div>
-    <h2 class="section-title">First Temple vs <em>Second Temple</em></h2>
-    <p>Solomon's Temple was completed around <strong>959 BC</strong> (1 Kings 6:38). It was built of hewn stone and cedar before Israel ever saw Babylon's Ishtar Gate (c. 575 BC). After exile, elders wept when the Second Temple foundation was laid — not only because it looked poorer, but because the <strong>form</strong> had changed (Ezra 3:12; Haggai 2:3).</p>
-    <p>Scripture records Solomon's house as <strong>60 × 20 × 30 cubits</strong>. The Second Temple platform measurements trend toward a <strong>60 × 60</strong> cubit footprint in later descriptions — squarer, more monumental, more Babylonian. We believe centuries of exile transposed brick-box assumptions onto Solomon's earlier pattern.</p>
-    <div class="pull-quote">What if the house David's son built was circular under its cedar, with a dome catching light the way Ezekiel later saw heaven opened?</div>
+  <div class="study-section" id="s1">
+    <div class="study-num">Section I</div>
+    <div class="section-label">Before the Text</div>
+    <h2 class="section-title">The inherited <em>shoebox</em></h2>
+    <p>Every museum model of Solomon's Temple shows the same thing: a rectangular stone hall with a flat roof or shallow pitch, copied from post-exilic descriptions and Babylonian gate architecture. That image was not what elders mourned when the Second Temple foundation was laid (Ezra 3:12).</p>
+
+    <div class="contrast-grid">
+      <div class="contrast-item trad">
+        <h4>Mainstream assumption</h4>
+        <p>60 × 20 × 30 cubits = rectangular hall. Influenced by Second Temple's squarer 60 × 60 footprint and Ishtar Gate proportions after Babylonian exile.</p>
+      </div>
+      <div class="contrast-item context">
+        <h4>Contextual reading</h4>
+        <p>Circular plan with central dome. Twenty cubits as diameter. Sixty cubits as perimeter or decagonal arc. Oracle cube (20³) as holy centre within curved house — shadow of Ezekiel's vision.</p>
+      </div>
+    </div>
+
+    <p>Solomon's Temple was completed c. <strong>959 BC</strong>, built of hewn stone and cedar <em>before</em> Jerusalem fell to Babylon. The Second Temple, rebuilt after decades surrounded by brick monumentalism, measures differently in Scripture. We believe later generations projected Babylon's boxes backward onto Solomon's house.</p>
   </div>
 
-  <div class="img-card">
-    <img src="blog-assets/study/study-solomons-temple.png" alt="Illustration of Solomon's Temple as circular domed structure" loading="lazy">
-    <div class="img-card-cap"><strong>Original illustration.</strong> Circular plan with central dome — a contextual alternative to the shoebox model. Generated for this study.</div>
-  </div>
-
-  <div class="cosmo-section" id="scripture">
-    <div class="section-label">Primary Text</div>
+  <div class="study-section" id="s2">
+    <div class="study-num">Section II</div>
+    <div class="section-label">Primary Sources</div>
     <h2 class="section-title">What the kings <em>recorded</em></h2>
 
     <div class="scripture-block">
@@ -110,107 +171,92 @@
       <div class="scripture-text">And the house which king Solomon built for the Lord, the length thereof was threescore cubits, and the breadth thereof twenty cubits, and the height thereof thirty cubits. And the porch before the temple of the house, twenty cubits was the length thereof, according to the breadth of the house; and ten cubits was the breadth thereof before the house.</div>
     </div>
 
-    <p>The porch breadth equals the house breadth (twenty cubits). The porch length equals the house length (sixty cubits). In a circular reading, <strong>sixty cubits may describe circumference or perimeter segments</strong>, while twenty cubits marks diameter — the same way tabernacle measurements encode pi when read in context (see <a href="project314.html">God of Pi</a>).</p>
+    <p>Porch length equals house length (sixty). Porch breadth equals house breadth (twenty). In a circular reading, <strong>twenty cubits is the diameter</strong> and sixty describes the outer perimeter or decagonal shell — the same grammatical move that unlocks pi in the tabernacle (<a href="project314.html">God of Pi</a>).</p>
 
     <div class="scripture-grid">
       <div class="sg-item">
         <span class="sg-ref">1 Kings 6:20</span>
-        <div class="sg-text">The oracle in the house: twenty cubits in length, breadth, and height — a perfect cube of holy space within the larger house.</div>
+        <div class="sg-text">The oracle within: twenty cubits long, broad, and high — a perfect cube of Most Holy space at the centre.</div>
       </div>
       <div class="sg-item">
         <span class="sg-ref">1 Kings 7:23</span>
-        <div class="sg-text">The molten sea: ten cubits from brim to brim, round, and thirty cubits compass — pi embedded in temple furnishings.</div>
+        <div class="sg-text">Molten sea: ten cubits brim to brim, round; thirty cubits compass. Diameter 10, circumference 30 — biblical pi at the temple threshold.</div>
       </div>
       <div class="sg-item">
         <span class="sg-ref">2 Chronicles 3:4</span>
-        <div class="sg-text">The porch height was 120 cubits — a vertical emphasis suggesting towered or domed ascent toward heaven.</div>
+        <div class="sg-text">Porch height 120 cubits — vertical ascent toward heaven, not flat Babylonian gate profile.</div>
       </div>
       <div class="sg-item">
-        <span class="sg-ref">Ezekiel 43:4–7</span>
-        <div class="sg-text">The glory of the Lord came into the house by the way of the gate whose prospect is toward the east.</div>
+        <span class="sg-ref">Haggai 2:3</span>
+        <div class="sg-text">Who is left that saw this house in her first glory? How do you see it now? Is it not in your eyes as nothing?</div>
       </div>
     </div>
   </div>
 
-  <div class="cosmo-section" id="sulley">
-    <div class="section-label">Henry Sulley · 1887</div>
-    <h2 class="section-title">Ezekiel's vision <em>made visible</em></h2>
-    <p>Henry Sulley published <em>The Temple of Ezekiel's Prophecy</em> in 1887, attempting to render Ezekiel 40–48 as a unified architectural model. His drawing places a <strong>great circular enclosure</strong> with four outer towers evoking the four living creatures, twenty-four inner chambers echoing the elders, and a central throne area where sacrifice points to the Lamb.</p>
-    <p>Sulley was not alone. Thomas Newberry (1831–1901) produced a Solomon's Temple model with a <strong>prominent central dome</strong> decades earlier. These were British scholars working from Scripture before modern "nonlinear architecture" language existed.</p>
-    <p>We do not treat any Victorian model as infallible. We treat them as proof that <strong>serious readers already saw curvature in the text</strong> before Hollywood and Sunday-school flannelgraphs flattened everything into rectangles.</p>
+  <div class="study-section" id="s3">
+    <div class="study-num">Section III</div>
+    <div class="section-label">Prophetic Architecture</div>
+    <h2 class="section-title">Sulley and <em>Ezekiel's</em> circle</h2>
+    <p>Henry Sulley's <em>Temple of Ezekiel's Prophecy</em> (1887) renders Ezekiel 40–48 as a <strong>great circular enclosure</strong>: four outer towers like the four living creatures, twenty-four inner places like the elders, central throne where sacrifice points to the Lamb. Thomas Newberry's earlier model (1883) placed a prominent dome over Solomon's house.</p>
+    <p>Neither Victorian scholar had modern "nonlinear" language. Both saw what tradition had flattened: <strong>circumference, dome, and throne above firmament</strong> — the same grammar from Ezekiel 1:22–28.</p>
 
-    <div class="scripture-block">
-      <span class="scripture-ref">Ezekiel 1:22, 26–28</span>
-      <div class="scripture-text">The firmament upon the heads of the living creature was as the colour of the terrible crystal... above the firmament a throne, as the appearance of a sapphire stone... and the likeness of a man above upon it.</div>
+    <div class="diagram-block">
+      <img src="blog-assets/study/study-solomons-temple.png" alt="Contextual schematic: circular domed temple plan with concentric rings — no rectangular shoebox" loading="lazy">
+      <div class="diagram-cap"><strong>Contextual schematic only.</strong> Circular plan with central dome and concentric courts. No rectangular shoebox or Babylonian gate form. Original generated illustration.</div>
     </div>
   </div>
 
-  <div class="cosmo-section" id="math">
+  <div class="study-section" id="s4">
+    <div class="study-num">Section IV</div>
     <div class="section-label">Arithmetic</div>
-    <h2 class="section-title">Numbers in the <em>pattern</em></h2>
+    <h2 class="section-title">Working the <em>pattern</em></h2>
 
     <div class="calc-box">
-      <h4>Rectangular volume (traditional reading)</h4>
-      <p>60 × 20 × 30 = <strong>36,000 cubic cubits</strong> internal volume (simplified).</p>
-      <p>Floor footprint = 60 × 20 = <strong>1,200 square cubits</strong>.</p>
+      <h4>Rectangular assumption (comparison)</h4>
+      <p>Volume ≈ 60 × 20 × 30 = <strong>36,000 cubic cubits</strong>. Footprint = <strong>1,200 sq cubits</strong>.</p>
     </div>
 
     <div class="calc-box">
       <h4>Circular reading (diameter = 20 cubits)</h4>
-      <p>Radius = 10 cubits. Floor area = π × 10² ≈ <strong>314.16 square cubits</strong> — pi again.</p>
-      <p>If outer perimeter ring totals sixty cubits of arc around a decagonal shell, each face ≈ 6 cubits — linking Solomon's house to the <strong>dome decagon</strong> pattern of the wilderness tabernacle.</p>
-      <p>Molten sea: diameter 10, circumference 30 → ratio <strong>30 ÷ 10 = 3</strong> (biblical approximation of π), placed at the threshold between court and house.</p>
+      <p>Radius = 10 cubits. Floor area = π × 10² ≈ <strong>314.16 sq cubits</strong>.</p>
+      <p>Molten sea: C ÷ d = 30 ÷ 10 = <strong>3</strong> (scriptural π approximation).</p>
+      <p>Oracle cube: 20³ = <strong>8,000 cubic cubits</strong> of Most Holy space at centre.</p>
     </div>
 
     <div class="calc-box">
-      <h4>First vs Second Temple (Ezra-era contrast)</h4>
-      <p>Solomon: 60 × 20 × 30 — elongated footprint, lower relative width-to-height.</p>
-      <p>Second Temple descriptions trending 60 × 60 — <strong>three times the width</strong> in the squarer dimension, consistent with post-exilic monumental gates and flat platforms.</p>
+      <h4>First Temple vs Second Temple</h4>
+      <p>Solomon: 60 × 20 × 30 — elongated, lower width-to-height ratio.</p>
+      <p>Second Temple trends 60 × 60 — squarer footprint after exile among Babylonian brick architecture.</p>
     </div>
   </div>
 
-  <div class="cosmo-section" id="sources">
-    <div class="section-label">Further Reading</div>
-    <h2 class="section-title">Credits and <em>next steps</em></h2>
+  <div class="study-section" id="s5">
+    <div class="study-num">Section V</div>
+    <div class="section-label">Pattern Continuity</div>
+    <h2 class="section-title">Shadow becoming <em>substance</em></h2>
+    <p>Ark → tabernacle decagon → Solomonic dome → heavenly Jerusalem. Each stage scales the same question: will we read God's measurements in context, or import boxes from the civilization that carried us into exile?</p>
+  </div>
+
+  <div class="study-section" id="s6">
+    <div class="study-num">Section VI</div>
+    <div class="section-label">Conclusion</div>
+    <h2 class="section-title">Credits</h2>
     <div class="source-note">
-      <p><strong>Primary researcher:</strong> <a href="https://www.renformation.com/" target="_blank" rel="noopener">Project Arc / Renformation</a>. <strong>Historical models:</strong> Henry Sulley, <em>Temple of Ezekiel's Prophecy</em> (1887); Thomas Newberry's temple reconstructions. <strong>Related:</strong> <a href="project314.html">God of Pi</a>, <a href="noahs-ark.html">Noah's Ark</a>, <a href="heavenly-jerusalem.html">Heavenly Jerusalem</a>, <a href="study.html">Study hub</a>.</p>
+      <p><strong>Research credit:</strong> <a href="https://www.renformation.com/" target="_blank" rel="noopener">Project Arc / Renformation</a>. <strong>Historical:</strong> Henry Sulley, <em>Temple of Ezekiel's Prophecy</em> (1887); Thomas Newberry. <strong>Related:</strong> <a href="study.html">Study hub</a> · <a href="project314.html">God of Pi</a> · <a href="noahs-ark.html">Noah's Ark</a> · <a href="heavenly-jerusalem.html">Heavenly Jerusalem</a> · <a href="our-story.html">Our Story</a> truth 11.</p>
     </div>
   </div>
 
 </div>
 
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Study</h4>
-      <ul>
-        <li><a href="study.html">Study Hub</a></li>
-        <li><a href="cosmology.html">Biblical Cosmology</a></li>
-        <li><a href="project314.html">God of Pi</a></li>
-        <li><a href="noahs-ark.html">Noah's Ark</a></li>
-        <li><a href="solomons-temple.html">Solomon's Temple</a></li>
-        <li><a href="heavenly-jerusalem.html">Heavenly Jerusalem</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Connect</h4>
-      <ul>
-        <li><a href="index.html#join">Join a Gathering</a></li>
-        <li><a href="mailto:contact@2-22church.com">Email Us</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>All copyrights reserved. @2-22 Church, 2026</span>
-  </div>
-</footer>
+<footer><div class="footer-bottom" style="padding:2rem;"><span>All copyrights reserved. @2-22 Church, 2026</span></div></footer>
 <script>
 document.querySelector('.nav-hamburger')?.addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('open');});
-document.querySelectorAll('.mobile-menu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mobile-menu').classList.remove('open');});});
+document.querySelectorAll('.nav-item').forEach(function(item){
+  item.querySelector(':scope>a').addEventListener('click',function(e){
+    if(item.querySelector('.nav-dropdown')){e.preventDefault();item.classList.toggle('open');}
+  });
+});
+document.addEventListener('click',function(e){if(!e.target.closest('.nav-item'))document.querySelectorAll('.nav-item.open').forEach(function(i){i.classList.remove('open');});});
 </script>
 </body>
 </html>
