@@ -97,9 +97,10 @@
 .source-note{background:rgba(91,141,184,0.05);border:0.5px solid var(--border);padding:1.4rem 1.8rem;margin:2rem 0;}
 .source-note p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;margin:0;}
 .source-note a{color:var(--gold);}
-.quick-nav{background:var(--deep);border-bottom:0.5px solid var(--border-subtle);padding:1.2rem 2rem;position:sticky;top:64px;z-index:90;}
-.quick-nav-inner{max-width:1000px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;}
-.quick-nav a{font-size:0.66rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;}
+.quick-nav{background:var(--deep);border-bottom:0.5px solid var(--border-subtle);padding:0.85rem 1.5rem;position:sticky;top:64px;z-index:90;}
+.quick-nav-inner{max-width:1000px;margin:0 auto;display:flex;gap:1rem;flex-wrap:nowrap;justify-content:center;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.quick-nav-inner::-webkit-scrollbar{display:none;}
+.quick-nav a{font-size:0.66rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;white-space:nowrap;flex-shrink:0;padding:0.2rem 0;}
 .quick-nav a:hover{color:var(--gold);}
 
 /* ── Study hub: creation geometry showcase ── */
@@ -127,4 +128,8 @@
 @media(max-width:720px){
   .contrast-visual,.contrast-grid,.study-gallery,.geometry-showcase,.study-grid{grid-template-columns:1fr;}
   .study-hero{min-height:60vh;padding-top:7rem;}
+  .quick-nav{padding:0.55rem 1rem;top:58px;}
+  .quick-nav-inner{justify-content:flex-start;gap:0.75rem;}
+  .quick-nav a{font-size:0.62rem;}
+  .study-section{scroll-margin-top:6.5rem;}
 }
