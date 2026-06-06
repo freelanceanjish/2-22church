@@ -46,7 +46,23 @@
   <a href="index.html#join" class="nav-cta">Connect</a>
   <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
-<div class="mobile-menu" id="mobile-menu"><button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button></div>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-hamburger').classList.remove('open');document.body.style.overflow='';">&times;</button>
+  <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
+  <a href="articles.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Articles</a>
+  <a href="blogs.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blogs</a>
+  <a href="study.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study</a>
+  <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
+  <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="noahs-ark.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Noah's Ark</a>
+  <a href="solomons-temple.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Solomon's Temple</a>
+  <a href="heavenly-jerusalem.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Heavenly Jerusalem</a>
+  <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
+  <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
+  <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
+  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
+  <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
+</div>
 
 <section class="study-hero">
   <div class="study-hero-bg">
@@ -165,7 +181,9 @@
 <footer><div class="footer-bottom" style="padding:2rem;"><span>All copyrights reserved. @2-22 Church, 2026</span></div></footer>
 <script>
 (function(){var v=document.getElementById('study-video'),f=document.getElementById('study-video-fallback');if(v&&f){v.addEventListener('loadeddata',function(){f.style.display='none';});v.addEventListener('error',function(){v.style.display='none';});if(v.networkState===3)v.style.display='none';}})();
-var h=document.querySelector('.nav-hamburger'),m=document.getElementById('mobile-menu');if(h&&m)h.addEventListener('click',function(){m.classList.toggle('open');});
+var h=document.querySelector('.nav-hamburger'),m=document.getElementById('mobile-menu');
+if(h&&m){h.addEventListener('click',function(){h.classList.toggle('open');m.classList.toggle('open');document.body.style.overflow=m.classList.contains('open')?'hidden':'';});}
+document.querySelectorAll('.mobile-menu a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');document.body.style.overflow='';});});
 </script>
 </body>
 </html>

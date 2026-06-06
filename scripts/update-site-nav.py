@@ -134,8 +134,13 @@ def patch_file(path: Path):
         return False
 
     text3 = re.sub(
-        r"(<div class=\"mobile-menu\" id=\"mobile-menu\">.*?<button class=\"mobile-close\"[^>]*>.*?</button>\n)(.*?)(\n</div>)",
-        lambda m: m.group(1) + new_mobile + m.group(3),
+        r"<div class=\"mobile-menu\" id=\"mobile-menu\">.*?<button class=\"mobile-close\"[^>]*>.*?</button>\s*(.*?)\s*</div>",
+        lambda m: (
+            '<div class="mobile-menu" id="mobile-menu">\n'
+            '  <button class="mobile-close" onclick="document.getElementById(\'mobile-menu\').classList.remove(\'open\')">&times;</button>\n'
+            + new_mobile
+            + "\n</div>"
+        ),
         text2,
         count=1,
         flags=re.DOTALL,
