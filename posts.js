@@ -1209,7 +1209,7 @@ const POSTS = [
 
 <div class="irony-box">
   <span class="irony-label">The Inversion</span>
-  <p>What is happening in many churches today: the blessings of the Seed are being claimed on behalf of people who, in many cases, explicitly reject the Seed himself. Yeshua is being treated as incidental to a covenant in which, according to Paul, he is the <em>only named heir</em>. That is not a minor interpretive disagreement. That is a fundamental inversion of the Gospel.</p>
+  <p>What is happening in many churches today: the blessings of the Seed are being claimed on behalf of people who, in many cases, explicitly reject the Seed himself. Yeshua is being treated as incidental to a covenant in which, according to Paul, he is the <em>only named heir</em>. I do not think that is a minor interpretive disagreement; it is a fundamental inversion of the Gospel.</p>
 </div>
 
 <p>When Yeshua stood in the temple courts and said the kingdom of God will be taken away from you and given to a people producing its fruits, he was not announcing a two-thousand-year pause before handing it back to a secular state. He was announcing a transfer. To people defined by fruitfulness, not ancestry. The gathering language of the prophets, read through Paul's lens, points not to an airport in Tel Aviv but to the ingathering of souls from every nation into the Body of the Seed. One new man. Jew and Gentile together, the dividing wall demolished, reconciled in one body (Ephesians 2:14-15).</p>
