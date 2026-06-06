@@ -22,7 +22,7 @@ const POSTS = [
     date: "5 June 2026",
     category: "Teaching",
     image: "blog-assets/astro-parallels/12-constellations-firmament.jpg",
-    excerpt: "I grew up with kundali talk and rashi pride. The twelve signs rotate in the firmament above every nation. Vedic and Jewish calendars match moon, month, and leap year. The sky was meant to guide us toward truth, not trap us in fate.",
+    excerpt: "I grew up on kundali talk and rashi pride, the kind every auntie has an opinion about. The same twelve signs turn above every nation. Vedic and Jewish calendars keep the same lunar months, the same leap-year fix. The sky was meant to guide us toward truth. Not trap us in fate.",
     content: `
 <div class="minimal-design hero-diagram hero-diagram--photo" aria-label="Twelve constellations rotating in the firmament">
   <img src="blog-assets/astro-parallels/12-constellations-firmament.jpg" alt="The twelve zodiac constellations arranged in a wheel against the night sky" loading="eager" decoding="async">
@@ -31,11 +31,11 @@ const POSTS = [
 
 <h2 class="article-part-title"><span class="article-part-label">Introduction</span>What I Was Taught, and What the Sky Actually Shows</h2>
 
-<p class="opening">I grew up hearing about <em>rashi</em>, <em>nakshatra</em>, and whose <em>kundali</em> matched whose. Astrology was treated as something India understood better than the rest of the world. That pride felt natural. It also kept me from asking the obvious question: <strong>if the same twelve signs, the same lunar months, and the same leap-month fix show up in the Hebrew calendar, who put them in the sky before either culture could claim ownership?</strong></p>
+<p class="opening">I grew up in a house where <em>rashi</em>, <em>nakshatra</em>, and whose <em>kundali</em> matched whose were ordinary dinner-table talk. Astrology was treated as something India understood better than the rest of the world, and honestly, that pride felt natural. It also kept me from asking the obvious question for years: <strong>if the same twelve signs, the same lunar months, and the same leap-month fix show up in the Hebrew calendar, who put them in the sky before either culture could claim ownership?</strong></p>
 
-<p>When I met Jesus Christ as my Saviour in <strong>2009</strong>, I did not stop looking at the heavens. I started reading them differently. The <strong>Rashi Chakra</strong> (<span class="sanskrit-inline">राशि चक्र</span>) and the Hebrew <strong>Mazzaroth</strong> (מַזָּרוֹת) are not rivals. They are two names for one belt of lights turning overhead. The essence of astrological reality is not "India invented the stars." The stars were meant to <strong>guide toward truth</strong>. Pride blinds that path.</p>
+<p>When I met Jesus Christ as my Saviour in <strong>2009</strong>, I did not stop looking at the heavens. I started reading them differently. The <strong>Rashi Chakra</strong> (<span class="sanskrit-inline">राशि चक्र</span>) and the Hebrew <strong>Mazzaroth</strong> (מַזָּרוֹת) are not rivals at all. They are two names for one belt of lights turning overhead. The point is not "India invented the stars." The stars were meant to <strong>guide toward truth</strong>. Pride blinds that path, and I had plenty of it.</p>
 
-<p>What follows is plain comparison: how the Vedic and Jewish systems line up, month by month and moon by moon, and where that pattern points when you stop reading the chart for fear and start reading it for the Maker.</p>
+<p>What follows is the plain comparison I wish someone had handed me earlier: how the Vedic and Jewish systems line up month by month and moon by moon, and where that pattern points once you stop reading the chart for fear and start reading it for the Maker.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -43,7 +43,7 @@ const POSTS = [
 
 <h2 class="section-heading"><span class="section-num">01</span>How the Two Systems Are Built</h2>
 
-<p>Strip away the slogans and the math is simple. Hindu <em>Jyotish</em> and the Jewish festival calendar are both <strong>luni-solar</strong>. The Moon counts the month. The Sun guards the season. When twelve lunar months fall short of the solar year, neither side invents a thirteenth zodiac sign. They add an <strong>extra month</strong> and let one sign run twice that year.</p>
+<p>Strip away the slogans and the math is surprisingly simple. Hindu <em>Jyotish</em> and the Jewish festival calendar are both <strong>luni-solar</strong>: the Moon counts the month, the Sun guards the season. When twelve lunar months fall short of a solar year, neither tradition invents a thirteenth zodiac sign. Both add an <strong>extra month</strong> and let one sign run twice that year.</p>
 
 <table class="term-table">
   <thead>
@@ -69,7 +69,7 @@ const POSTS = [
 
 <h2 class="section-heading"><span class="section-num">02</span>The Twelve Months Lined Up Sign by Sign</h2>
 
-<p>Look at the wheel in the image above. Ram, bull, twins, crab, lion, virgin, scales, scorpion, archer, goat, water-bearer, fish. The sequence does not change because you cross a border. Vedic month names and Hebrew month names differ. The animals in the sky do not.</p>
+<p>Look at the wheel in the image above. Ram, bull, twins, crab, lion, virgin, scales, scorpion, archer, goat, water-bearer, fish. The sequence does not change because you cross a border. Vedic month names and Hebrew month names differ; the animals in the sky do not.</p>
 
 <table class="term-table">
   <thead>
@@ -108,7 +108,7 @@ const POSTS = [
 
 <h2 class="section-heading"><span class="section-num">03</span>The Thirteenth Month (Not a Thirteenth Sign)</h2>
 
-<p>Twelve lunar months give you about <strong>354 days</strong>. The solar year is about <strong>365</strong>. That gap is roughly eleven days every year. Ignore it and Holi drifts into winter. Passover drifts with it. So both calendars add a month. Neither adds a constellation.</p>
+<p>Twelve lunar months give you about <strong>354 days</strong>. A solar year is about <strong>365</strong>. That leaves a gap of roughly eleven days every year. Ignore it and Holi drifts into winter. Passover drifts with it. So both calendars add a month, and neither adds a constellation.</p>
 
 <div class="minimal-design" aria-label="Lunar-solar drift diagram">
   <img src="astro-lunar-solar-drift.svg" alt="Diagram: 354-day lunar year vs 365-day solar year and eleven-day drift" loading="lazy">
@@ -137,16 +137,14 @@ const POSTS = [
 
 <h2 class="section-heading"><span class="section-num">04</span>Why the Moon Comes First</h2>
 
-<p>Newspaper horoscopes obsess over your Sun sign. My elders asked about the <strong>Moon</strong>. In <em>Jyotish</em>, your <strong>Janma Rashi</strong> is your Moon sign. In Israel, <strong>Rosh Chodesh</strong> begins each month at the new moon, and the feasts ride that rhythm. Two cultures, same priority.</p>
+<p>Newspaper horoscopes obsess over your Sun sign. My elders asked about the <strong>Moon</strong>. In <em>Jyotish</em>, your <strong>Janma Rashi</strong> is your Moon sign. In Israel, <strong>Rosh Chodesh</strong> begins each month at the new moon, and the feasts ride that rhythm. Two cultures, same priority, and I notice that now in a way I did not before.</p>
 
 <div class="scripture">
   <p>"And God said, 'Let there be lights in the expanse of the heavens to separate the day from the night. And let them be for signs and for seasons, and for days and years…'"</p>
   <span class="scripture-ref">Genesis 1:14</span>
 </div>
 
-<p>Signs and seasons. Days and years. That is what Genesis 1:14 says the lights are for. Not a licence for any nation to boast that it owns the sky.</p>
-
-<p>Both traditions also treat the twelve windows as moral, not merely mechanical:</p>
+<p>Signs and seasons, days and years. That is what Genesis 1:14 says the lights are for: not a licence for any nation to boast that it owns the sky. Both traditions also treat the twelve windows as moral, not merely mechanical:</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -165,11 +163,11 @@ const POSTS = [
 
 <h2 class="article-part-title"><span class="article-part-label">Conclusion</span>Where the Wheel Points</h2>
 
-<p>Was astrology born in India? No. The Ram and the Fish were turning long before any <em>pandit</em> or rabbi wrote a manual. What India kept, often with real skill, is a luni-solar memory. Israel kept the same memory in the <strong>Mazzaroth</strong>, the <strong>Molad</strong>, and the leap month that holds Passover in spring.</p>
+<p>Was astrology born in India? No. The Ram and the Fish were turning long before any <em>pandit</em> or rabbi wrote a manual. What India kept, often with real skill, is a luni-solar memory. Israel kept the same memory in the <strong>Mazzaroth</strong>, the <strong>Molad</strong>, and the leap month that holds Passover in spring. Same wheel, different accents.</p>
 
-<p>That should humble a Hindu reader, not puff him up. Pride says, "This is ours." Humility says, "Someone else hung these lights." Job calls the <strong>Mazzaroth</strong> something only the LORD brings out in its season (Job 38:32). Psalm 19 says the sky preaches without a Sanskrit or Hebrew accent.</p>
+<p>That should humble a Hindu reader, not puff him up. I say that as someone who needed the humbling myself. Pride says, "This is ours." Humility says, "Someone else hung these lights." Job calls the <strong>Mazzaroth</strong> something only the LORD brings out in its season (Job 38:32). Psalm 19 says the sky preaches without a Sanskrit or Hebrew accent.</p>
 
-<p>Shared math, shared purpose: the calendar was meant to <strong>guide</strong>. Plant in season. Repent on time. Watch for the Redeemer the months were counting toward.</p>
+<p>The shared math has a shared purpose. The calendar was meant to <strong>guide</strong>: plant in season, repent on time, watch for the Redeemer the months were counting toward.</p>
 
 <div class="scripture">
   <p>"Can you bind the chains of the Pleiades or loose the cords of Orion? … Do you know the ordinances of the heavens? Can you establish their rule on the earth?"</p>
@@ -183,9 +181,9 @@ const POSTS = [
   <span class="scripture-ref">1 Timothy 2:5-6</span>
 </div>
 
-<p><strong>Yeshua</strong> is not another graha to fear or appease. He is the Son who came <strong>in the fullness of time</strong> (Galatians 4:4), when the calendar itself had counted down to His hour. Read the <em>Rashi Chakra</em> with pride and you stop at culture. Read it as a signpost and you meet the King the months were naming all along.</p>
+<p><strong>Yeshua</strong> is not another graha to fear or appease. He is the Son who came <strong>in the fullness of time</strong> (Galatians 4:4), when the calendar itself had counted down to His hour. Read the <em>Rashi Chakra</em> with pride and you stop at culture. Read it as a signpost and you meet the King the months were naming all along. That is the turn I am still making in my own heart.</p>
 
-<p>That is what I am asking my own people to consider. Who set the twelve signs in the firmament, and why? Follow the lights to their Maker. The wheel was never meant to trap you. It was meant to bring you to <strong>Messiah Yeshua</strong>.</p>
+<p>So here is what I am asking my own people to consider. Who set the twelve signs in the firmament, and why? Follow the lights to their Maker. The wheel was never meant to trap you. It was meant to bring you to <strong>Messiah Yeshua</strong>.</p>
 
 <div class="editorial">
   <p class="editorial-label">Disclaimer</p>
@@ -205,7 +203,7 @@ const POSTS = [
     date: "5 June 2026",
     category: "Teaching",
     image: "following-jesus-footsteps-disciple.jpg",
-    excerpt: "Born in Hindu culture, the author found Christ in 2009 and began tracing Tabernacle parallels. Fourteen temple echoes from ~1600 BC Vedic forms to Mosaic worship: shadows pointing to Messiah Yeshua.",
+    excerpt: "I was born into Hindu culture and met Christ in 2009. Since then I have been tracing Tabernacle parallels I cannot unsee: fourteen temple echoes from Vedic forms around 1600 BC to the worship Moses received at Sinai. Shadows, every one of them, pointing toward Messiah Yeshua.",
     content: `
 <div class="minimal-design hero-diagram hero-diagram--photo" aria-label="Following in the footsteps: shadow or reality">
   <img src="following-jesus-footsteps-disciple.jpg" alt="Disciple walking in footsteps on the sand: tracing the path toward reality" loading="eager" decoding="async">
@@ -214,25 +212,25 @@ const POSTS = [
 
 <h2 class="article-part-title"><span class="article-part-label">Introduction</span>Man, Shadow, and the Question of Origins</h2>
 
-<p class="opening">The closer you walk toward the centre, the fewer may follow. That single rule governed <strong>only</strong> the Tabernacle Moses built at the command of the <strong>God of Israel</strong>: not as decoration, but as theology made of curtain, altar, and fire. Centuries later, Vedic temple campuses took on a <strong>similar outward shape</strong> of graded holiness, yet toward other objects of devotion and <strong>without</strong> command from the God of Abraham, Isaac, and Jacob. He did <strong>not</strong> prescribe, authorise, or govern Hindu worship. What we compare below is <strong>form that echoes</strong>, not shared lordship.</p>
+<p class="opening">Here is something I keep coming back to. The closer you walk toward the centre of the Tabernacle Moses built, the fewer may follow. That was not decoration. It was theology made of curtain, altar, and fire, ordered by the <strong>God of Israel</strong>. Centuries later, Vedic temple campuses grew into a <strong>similar outward shape</strong> of graded holiness. Yet they bowed toward other objects of devotion, <strong>without</strong> any command from the God of Abraham, Isaac, and Jacob. He did <strong>not</strong> prescribe, authorise, or govern Hindu worship. I am not comparing two equal faiths here. I am tracing <strong>form that echoes</strong>, not shared lordship.</p>
 
-<p>Students of religion often treat Hindu and Hebrew worship as worlds apart. One speaks Sanskrit and circles a <em>lingam</em> in a dark inner room; the other speaks Hebrew and faces an Ark behind a woven veil. Yet when you set the sources side by side, <em>Śruti</em>, <em>Smriti</em>, the Law of Moses, and the prophets, a remarkable pattern appears in the <strong>architecture of ritual</strong>. Israel's sanctuary was ordered by the true God through Moses. India's temples, centuries later, built comparable patterns of concentric holiness, impurity, and offering toward other objects of devotion. The resemblance is real; the <strong>Object of worship is not the same</strong>.</p>
+<p>Students of religion often treat Hindu and Hebrew worship as worlds apart. One speaks Sanskrit and circles a <em>lingam</em> in a dark inner room. The other speaks Hebrew and faces an Ark behind a woven veil. Set the sources side by side, though, <em>Śruti</em>, <em>Smriti</em>, the Law of Moses, the prophets, and a pattern appears in the <strong>architecture of ritual</strong> that I did not expect when I first started reading. Israel's sanctuary was ordered by the true God through Moses. India's temples, centuries later, built comparable patterns of concentric holiness, impurity, and offering toward other objects of devotion. The resemblance is real. The <strong>Object of worship is not the same</strong>.</p>
 
-<p>On chronology: <strong>Vedic culture began taking shape around 1600 BC</strong> (the usual scholarly range for the Rigveda and classical <em>śruti</em>, with much debate). The priestly temple tradition of Israel, the Tabernacle of Moses and the Law given at Sinai, including the ritual instructions of Exodus, Leviticus, and <strong>Deuteronomy</strong>, belongs to the second millennium BC as Scripture records it (roughly <strong>1400 BC</strong> onward). Hindu <strong>temple ritual as lived today</strong> developed across the centuries after both, yet its graded sanctity, fire, veil, and offering read like <strong>echoes of the worship God gave through Moses</strong>: shadows of something real, not a wholly separate human invention. That ordering does not rank souls; it asks which pattern was given by the God of Israel, and which cultures may still be carrying its shadow.</p>
+<p>On chronology (and yes, scholars debate this): <strong>Vedic culture began taking shape around 1600 BC</strong>, the usual range for the Rigveda and classical <em>śruti</em>. The priestly tradition of Israel, the Tabernacle of Moses and the Law given at Sinai, including Exodus, Leviticus, and <strong>Deuteronomy</strong>, belongs to the second millennium BC as Scripture records it, roughly <strong>1400 BC</strong> onward. Hindu <strong>temple ritual as lived today</strong> developed across centuries after both. Still, its graded sanctity, fire, veil, and offering read to me like <strong>echoes of the worship God gave through Moses</strong>: shadows of something real, not a wholly separate human invention. That ordering does not rank souls. It asks which pattern was given by the God of Israel, and which cultures may still be carrying its shadow.</p>
 
 <div class="editorial">
   <p class="editorial-label">Heart of This Study</p>
-  <p>I was born into Hindu culture. After I met Jesus Christ as my personal Saviour in <strong>2009</strong>, the parallels between Tabernacle ritual and the forms I had known all my life began to intrigue me. In my heart I knew my people carried <strong>shadows and echoes of something real</strong>: not inventions from nothing, but traces of worship that once pointed toward the holy. Today those forms often run under the name of religion yet <strong>miss the mark of reality</strong>: the Messiah, <strong>Yeshua</strong>, whom the veil, the fire, and the offering were always meant to reveal.</p>
+  <p>I was born into Hindu culture. After I met Jesus Christ as my personal Saviour in <strong>2009</strong>, the parallels between Tabernacle ritual and the forms I had known all my life began to haunt me in the best way. In my heart I knew my people carried <strong>shadows and echoes of something real</strong>: not inventions from nothing, but traces of worship that once pointed toward the holy. Today those forms often run under the name of religion yet <strong>miss the mark of reality</strong>: the Messiah, <strong>Yeshua</strong>, whom the veil, the fire, and the offering were always meant to reveal.</p>
 </div>
 
-<p>This article has three movements: an <strong>introduction</strong> to the chronology, an <strong>explanation</strong> of fourteen structural and ritual parallels side by side, and a <strong>conclusion</strong> on what those shadows point toward. The parallels run from the sacred veil and doorpost signs to Holika Dahan, yajna, pakwan and Seder, prayer shawls, anointing, and the Ark of the Covenant carried on acacia wood.</p>
+<p>This article moves in three parts. An <strong>introduction</strong> on chronology. An <strong>explanation</strong> of fourteen structural and ritual parallels side by side. A <strong>conclusion</strong> on what those shadows point toward. The parallels run from the sacred veil and doorpost signs to Holika Dahan, yajna, pakwan and Seder, prayer shawls, anointing, and the Ark of the Covenant carried on acacia wood.</p>
 
 
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2 class="article-part-title"><span class="article-part-label">Explanation</span>Fourteen Parallels: Mosaic Root and Vedic Echo</h2>
-<p>Each topic below pairs the Hebrew pattern first (Torah and Tabernacle, from roughly <strong>1400 BC</strong> onward as Scripture records) with the Indian form that appears in the Vedic and temple tradition (Vedic culture from around <strong>1600 BC</strong> onward, with ongoing debate).</p>
+<p>Each topic below pairs the Hebrew pattern first (Torah and Tabernacle, from roughly <strong>1400 BC</strong> onward as Scripture records) with the Indian form that shows up in the Vedic and temple tradition (Vedic culture from around <strong>1600 BC</strong> onward, with ongoing debate). I lay them out the way I wish someone had laid them out for me.</p>
 
 <div class="section-block" id="parallel-01">
 <h2 class="section-heading"><span class="section-num">01</span>Graded Sanctity: Garbhagriha &amp; Holy of Holies</h2>
@@ -252,7 +250,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Graded sanctity: public courtyard → priestly hall → one minister in the inner chamber.</p>
 
-<p>Both traditions structured sacred space as a journey inward: from what is public, to what is priestly, to what only one purified minister may enter.</p>
+<p>Both traditions built sacred space as a journey inward: from what is public, to what is priestly, to what only one purified minister may enter.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -267,7 +265,7 @@ const POSTS = [
   </div>
 </div>
 
-<p>The geometry differs: decagon, temple campus, and stupa dome: but the <em>logic</em> is identical: holiness is spatial, progressive, and guarded. Whether the worshipper walks a pradakṣiṇā path around a stūpa or a priest alone enters the garbhagṛha, the centre is not casual ground. To rush inward without purification is not devotion; it is violation.</p>
+<p>The geometry differs: decagon, temple campus, stupa dome. But the <em>logic</em> is identical. Holiness is spatial, progressive, and guarded. Whether the worshipper walks a pradakṣiṇā path around a stūpa or a priest alone enters the garbhagṛha, the centre is not casual ground. To rush inward without purification is not devotion. It is violation.</p>
 </div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
@@ -292,7 +290,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">A woven barrier stands between the people and the holiest presence.</p>
 
-<p>Not everyone may see everything. Both traditions hang a <strong>veil</strong>: cloth boundary between outer worship and inner mystery.</p>
+<p>Not everyone gets to see everything. Both traditions hang a <strong>veil</strong>, a cloth boundary between outer worship and inner mystery.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -332,7 +330,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Holy marks on the doorframe: threshold between home and judgment, blessing and deliverance.</p>
 
-<p>Holiness does not stay inside the temple. It marks the <strong>doorpost</strong>: the place where household meets heaven.</p>
+<p>Holiness does not stay inside the temple. It marks the <strong>doorpost</strong>, the place where household meets heaven.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -367,7 +365,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Temporary impurity blocks the shrine until immersion and prescribed rites.</p>
 
-<p>In neither tradition does ritual impurity mean “God hates you.” <strong>Asaucham</strong> in Sanskrit and <strong>ṭum’ah</strong> in Hebrew describe a temporary state that blocks access to holy ground until removed by time, washing, or prescribed rites.</p>
+<p>In neither tradition does ritual impurity mean God hates you. <strong>Asaucham</strong> in Sanskrit and <strong>ṭum’ah</strong> in Hebrew describe a temporary state that blocks access to holy ground until removed by time, washing, or prescribed rites.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -397,7 +395,7 @@ const POSTS = [
   </div>
 </div>
 
-<p><strong>Bodily emissions</strong>: blood, seminal flux: trigger impurity in both systems. Restoration comes through <strong>immersion</strong>: the <em>snāna</em> / river bath in India, the <strong>mikveh</strong> in Israel. Again: the categories match.</p>
+<p><strong>Bodily emissions</strong>, blood and seminal flux, trigger impurity in both systems. Restoration comes through <strong>immersion</strong>: the <em>snāna</em> / river bath in India, the <strong>mikveh</strong> in Israel. The categories match.</p>
 </div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
@@ -422,7 +420,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Fragrant smoke morning and evening: dhupa in shodashopachara; ketoret before the veil.</p>
 
-<p>Sweet smoke rises. Prayers ride on it. The air of the sanctuary is <em>changed</em>.</p>
+<p>Sweet smoke rises in both sanctuaries, prayers riding on it, the air itself <em>changed</em>.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -462,7 +460,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Pranam vs bowing: worship as bodily surrender before the holy.</p>
 
-<p>Worship is not only speech. It is <strong>body</strong> surrendered.</p>
+<p>Worship is never only speech. It is <strong>body</strong> surrendered.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -502,7 +500,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Seven lights: samai wick-points and menorah branches both mark perpetual sacred flame.</p>
 
-<p>Once a place is consecrated, the light must not die: and both lamps speak in <strong>sevens</strong>.</p>
+<p>Once a place is consecrated, the light must not die. Both lamps speak in <strong>sevens</strong>.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -542,7 +540,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Pakwan and Seder: five or six key foods arranged as covenant meal before God.</p>
 
-<p>God is honoured with <strong>food</strong>: not random dishes, but a fixed set of items with meaning.</p>
+<p>God is honoured with <strong>food</strong> here: not random dishes, but a fixed set of items each carrying meaning.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -582,7 +580,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Prayer shawl: marked cloth that frames worship before the holy.</p>
 
-<p>Before speech, the body is <strong>clothed for prayer</strong>.</p>
+<p>Before speech, the body is <strong>clothed for prayer</strong>, marked as set apart from ordinary street dress.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -617,7 +615,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Anointing: oil sets persons and vessels apart for holy service.</p>
 
-<p>To anoint is to transfer holiness from common to set-apart.</p>
+<p>To anoint is to transfer holiness from common to set-apart, whether over a king, a priest, or the shrine itself.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -652,7 +650,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">First yield of field and flock sustains the temple and priesthood.</p>
 
-<p>Temples do not run on sentiment. They run on <strong>first-fruits</strong> returned to God.</p>
+<p>Temples do not run on sentiment alone. They run on <strong>first-fruits</strong> returned to God.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -676,7 +674,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Fire consumes the offering wholly: yajna altar and national Mizbeach.</p>
 
-<p>Among the most dramatic public parallels is <strong>fire that takes away sin and impurity</strong>. Before Holi, millions gather for <strong>Holika Dahan</strong>: lighting a bonfire, often with effigy or symbolic burning, praising the victory of devotion over malice, and passing through smoke and flame as purification. The Vedic world already knew fire-altar logic: the <strong>havan kunda</strong> (<span class="sanskrit-inline">हवन कुण्ड</span>), <strong>yajna vedi</strong>, and <strong>yadnya / homa</strong> (<span class="sanskrit-inline">यज्ञ</span>) where ghee, grains, and herbs are fed to <em>agni</em> so that smoke carries the gift upward: the priest tending fire as mediator between earth and heaven.</p>
+<p>Among the most dramatic public parallels I have found is <strong>fire that takes away sin and impurity</strong>. Before Holi, millions gather for <strong>Holika Dahan</strong>, lighting a bonfire, often with effigy or symbolic burning, praising the victory of devotion over malice, passing through smoke and flame as purification. The Vedic world already knew fire-altar logic: the <strong>havan kunda</strong> (<span class="sanskrit-inline">हवन कुण्ड</span>), <strong>yajna vedi</strong>, and <strong>yadnya / homa</strong> (<span class="sanskrit-inline">यज्ञ</span>) where ghee, grains, and herbs are fed to <em>agni</em> so that smoke carries the gift upward, the priest tending fire as mediator between earth and heaven.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -703,7 +701,7 @@ const POSTS = [
   <span class="scripture-ref">Leviticus 1:3-9</span>
 </div>
 
-<p>The gospel does not abolish the logic of fire but fulfils it: one offering, fully consumed in love, and the smoke of praise rising from a single cross outside the city.</p>
+<p>The gospel does not abolish the logic of fire but fulfils it: one offering fully consumed in love, the smoke of praise rising from a single cross outside the city.</p>
 </div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
@@ -728,7 +726,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">The presence of God borne on poles among the people on pilgrimage.</p>
 
-<p>If fire answers the question “how is guilt removed?”, the <strong>portable throne</strong> answers “how does God travel with His people?” In Maharashtra and across India, the <strong>palkhi</strong> (<span class="sanskrit-inline">पालखी</span>): a palanquin shrine: carries the utsava murti of a saint or deity for <strong>wari</strong> pilgrimage and temple festivals. Devotees bear the poles; the image passes among the crowds; the whole road becomes sacred corridor.</p>
+<p>If fire answers the question "how is guilt removed?", the <strong>portable throne</strong> answers "how does God travel with His people?" In Maharashtra and across India, the <strong>palkhi</strong> (<span class="sanskrit-inline">पालखी</span>), a palanquin shrine, carries the utsava murti of a saint or deity for <strong>wari</strong> pilgrimage and temple festivals. Devotees bear the poles. The image passes among the crowds. The whole road becomes a sacred corridor.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -754,7 +752,7 @@ const POSTS = [
   <span class="scripture-ref">Exodus 25:14-15; Numbers 4:20</span>
 </div>
 
-<p>David danced before the Ark when it came home: not casual celebration, but the joy of a king before the footstool of the Most High (2 Samuel 6:14). The form of the palkhi and the form of the Ark differ; the question is the same: <em>who is allowed to carry the presence of God among men?</em></p>
+<p>David danced before the Ark when it came home, not casual celebration but the joy of a king before the footstool of the Most High (2 Samuel 6:14). The form of the palkhi and the form of the Ark differ. The question is the same: <em>who is allowed to carry the presence of God among men?</em></p>
 </div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
@@ -779,7 +777,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Prayer cap: topi, pheta, and rumal beside the kippah.</p>
 
-<p>Who may stand before God? Both traditions answer with <strong>what covers the head</strong>: not only the large turban of procession, but the simple <strong>cap of daily prayer</strong>.</p>
+<p>Who may stand before God? Both traditions answer with <strong>what covers the head</strong>, not only the large turban of procession but the simple <strong>cap of daily prayer</strong>.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -796,7 +794,7 @@ const POSTS = [
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2 class="article-part-title"><span class="article-part-label">Summary</span>Comparative Terminology (Mosaic ~1400 BC | Vedic from ~1600 BC)</h2>
-<p>A quick reference table. The Hebrew column reflects worship given through Moses at Sinai; the Indian column reflects forms that develop later in the Vedic and temple world.</p>
+<p>A quick reference table for when you want the terms in one place. The Hebrew column reflects worship given through Moses at Sinai. The Indian column reflects forms that develop later in the Vedic and temple world.</p>
 
 <table class="term-table">
   <thead>
@@ -828,13 +826,13 @@ const POSTS = [
 
 <h2 class="article-part-title"><span class="article-part-label">Conclusion</span>Echoes of Moses, Pointers to the Messiah</h2>
 
-<p>When the chronology is weighed honestly, the picture becomes difficult to ignore. <strong>Vedic culture took shape around 1600 BC</strong>, while the Law of the Tabernacle and the Law of Moses belong, as Scripture records them, to roughly <strong>1400 BC</strong>. Graded sanctity, sacrifice, impurity and cleansing, first-fruits, doorpost signs, sacred fire, anointing, and the rest are not vague human inventions that two civilisations happened to dream up independently: they are spelled out with precision in Torah, above all in the priestly codes and in <strong>Deuteronomy</strong>, as worship the God of Israel gave through Moses: and India's temple forms carry unmistakable echoes of that grammar.</p>
+<p>When I weigh the chronology honestly, the picture becomes difficult to ignore. <strong>Vedic culture took shape around 1600 BC</strong>, while the Law of the Tabernacle and the Law of Moses belong, as Scripture records them, to roughly <strong>1400 BC</strong>. Graded sanctity, sacrifice, impurity and cleansing, first-fruits, doorpost signs, sacred fire, anointing, and the rest are not vague human inventions that two civilisations happened to dream up independently. They are spelled out with precision in Torah, above all in the priestly codes and in <strong>Deuteronomy</strong>, as worship the God of Israel gave through Moses. India's temple forms carry unmistakable echoes of that grammar.</p>
 
-<p>To us, the resemblance is <strong>very clear</strong>: the ritual notions Moses received at Sinai were carried, in fragment and shadow, into many cultures across the ancient world. Vedic temple life preserves that pattern: veil, fire, immersion, offering, procession of presence: yet the Vedic world did <strong>not</strong> worship the God of Abraham, Isaac, and Jacob. The forms remained; the true Object of worship was lost. What survives in the shrine is not proof that India invented temple logic. It is evidence that the Creator once placed a grammar of holiness before His people, and that grammar did not stay contained in one nation.</p>
+<p>To me, the resemblance is <strong>very clear</strong>. The ritual notions Moses received at Sinai were carried, in fragment and shadow, into many cultures across the ancient world. Vedic temple life preserves that pattern: veil, fire, immersion, offering, procession of presence. Yet the Vedic world did <strong>not</strong> worship the God of Abraham, Isaac, and Jacob. The forms remained. The true Object of worship was lost. What survives in the shrine is not proof that India invented temple logic. It is evidence that the Creator once placed a grammar of holiness before His people, and that grammar did not stay contained in one nation.</p>
 
-<p>That is why this study matters <strong>immensely</strong> for a Hindu reader willing to ask an honest question: <em>Where did these rituals come from?</em> If the answer is not “we invented them from nothing,” but “they echo something older, something given,” then the next question follows naturally: <strong>Who gave them, and why?</strong></p>
+<p>That is why this study matters <strong>immensely</strong> for a Hindu reader willing to ask an honest question: <em>Where did these rituals come from?</em> If the answer is not "we invented them from nothing," but "they echo something older, something given," then the next question follows naturally: <strong>Who gave them, and why?</strong></p>
 
-<p>We believe the answer is the one God, the Father: who ordered worship so that every washing, every lamp, every offering, every veil, every procession of presence would train the human heart to look for <strong>one Mediator</strong>, one sacrifice that truly removes sin, one High Priest who enters the true Holy of Holies. Those forms were never ends in themselves. They were signposts along a road that leads to the <strong>Messiah</strong>: His <strong>coming</strong>, His <strong>death</strong> as the one offering that ascends in smoke no bonfire can duplicate, His <strong>resurrection</strong> as the proof that death’s impurity is overcome, and His <strong>ascension</strong> as the Son who passed through the heavens and sat down at the right hand of the Father.</p>
+<p>I believe the answer is the one God, the Father, who ordered worship so that every washing, every lamp, every offering, every veil, every procession of presence would train the human heart to look for <strong>one Mediator</strong>, one sacrifice that truly removes sin, one High Priest who enters the true Holy of Holies. Those forms were never ends in themselves. They were signposts along a road that leads to the <strong>Messiah</strong>: His <strong>coming</strong>, His <strong>death</strong> as the one offering that ascends in smoke no bonfire can duplicate, His <strong>resurrection</strong> as the proof that death's impurity is overcome, His <strong>ascension</strong> as the Son who passed through the heavens and sat down at the right hand of the Father.</p>
 
 <div class="scripture">
   <p>“For there is one God, and there is one Mediator between God and men, the Man Christ Jesus, who gave Himself a ransom for all…”</p>
@@ -848,7 +846,7 @@ const POSTS = [
   <span class="scripture-ref">Hebrews 10:19-20</span>
 </div>
 
-<p>Faith and baptism in His name are not a rejection of reverence; they are the fulfilment of every instinct the temple ever taught: that God is holy, that sin must be removed, that a way must be opened, and that the worshipper may at last draw near.</p>
+<p>Faith and baptism in His name are not a rejection of reverence. They are the fulfilment of every instinct the temple ever taught: that God is holy, that sin must be removed, that a way must be opened, and that the worshipper may at last draw near.</p>
 
 <div class="editorial">
   <p class="editorial-label">Disclaimer</p>
@@ -868,23 +866,23 @@ const POSTS = [
     date: "4 June 2026",
     category: "Teaching",
     image: "vedic-witness-christ.png",
-    excerpt: "God is the Father of all people, including those who have not yet known Him by name. Scripture says He enlightens every person born into the world. This teaching gathers Sanskrit passages from the Vedas, Upanishads, and Puranas—with Devanagari script, transliteration, and English—for a holy Saviour: virgin birth, suffering, shed blood, and the name Jesus Christ.",
+    excerpt: "God is Father to all people, even those who have not yet known Him by name. Scripture says He enlightens every soul born into the world. Here I have gathered Sanskrit passages from the Vedas, Upanishads, and Puranas, with Devanagari script, transliteration, and English, all pointing to a holy Saviour: virgin birth, suffering, shed blood, and the name Jesus Christ.",
     content: `
 <p class="opening">
-  God is the Father of all human beings. Some may not yet know Him as their own Father, but since He is the Creator, He is Father to all.
+  God is Father to every human being. Some may not yet know Him as their own Father, but He made them, and that makes Him Father to all.
 </p>
 
-<p>The Bible presents clearly that God is love (<em>1 John 4:8</em>). He loves with an everlasting love (<em>Jeremiah 31:3</em>). <em>"For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life"</em> (<em>John 3:16</em>). The loving God does not want anyone to perish. So He revealed Himself in various ways, including as the incarnate Son, Jesus Christ (<em>Hebrews 1:1–2</em>). Since God does not want anyone to be lost, He <em>lightens every human being who is born into this world</em> (<em>John 1:9</em>). The loving God has graciously revealed Himself through Hindu scriptures as well, so that the teeming millions who revere Sanskrit need not remain in total darkness.</p>
+<p>The Bible does not keep this quiet. God is love (<em>1 John 4:8</em>). He loves with an everlasting love (<em>Jeremiah 31:3</em>). <em>"For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life"</em> (<em>John 3:16</em>). He does not want anyone to perish. So He has revealed Himself in many ways, including as the incarnate Son, Jesus Christ (<em>Hebrews 1:1–2</em>). And because He does not want anyone to be lost, He <em>lightens every human being who is born into this world</em> (<em>John 1:9</em>). The same loving God has also spoken through Hindu scriptures, so that the teeming millions who revere Sanskrit do not have to remain in total darkness.</p>
 
-<p>It is remarkable how many Hindu scriptural passages, when read in Sanskrit and rendered faithfully into English, bear witness to Jesus Christ by name and to His vicarious death. Below, each reference is given in three layers: <strong>Devanagari</strong> (exact Sanskrit letters), <strong>transliteration</strong> (Roman letters), and <strong>English meaning</strong>.</p>
+<p>What strikes me is how many of these passages, read in Sanskrit and rendered faithfully into English, bear witness to Jesus Christ by name and to His vicarious death. Below, each reference appears in three layers: <strong>Devanagari</strong> (the exact Sanskrit letters), <strong>transliteration</strong> (Roman letters), and <strong>English meaning</strong>.</p>
 
-<p>These sources are written in Sanskrit. The Vedas quoted here are commonly dated between roughly 1500 and 2000 BC; the Upanishads between the 10th century and 2nd century BC (scholarly dates vary by text and tradition).</p>
+<p>These sources are written in Sanskrit. The Vedas quoted here are commonly dated between roughly 1500 and 2000 BC; the Upanishads between the 10th century and 2nd century BC, though scholarly dates vary by text and tradition.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>References to the Birth of Christ</h2>
 
-<p>The following quotations speak clearly about a divine Saviour. The <em>Bhavishya Purana</em> passage even gives the name of Jesus in Sanskrit.</p>
+<p>The quotations below speak plainly about a divine Saviour. One passage in the <em>Bhavishya Purana</em> even gives the name of Jesus in Sanskrit.</p>
 
 <div class="sanskrit-block">
   <p class="sanskrit-dev" lang="sa">आत्मा वा इदम् एक एवाग्र आसीत् । नान्यत्किञ्चन मिषत् । स ईक्षत लोकान्नु सृजा इति ॥</p>
@@ -947,7 +945,7 @@ const POSTS = [
 
 <h2>References to the Suffering and Death of Christ</h2>
 
-<p>Christ bore immeasurable pain on the cross. These Sanskrit texts describe suffering, binding, blood, and an unbroken body—images used in gospel witness to India.</p>
+<p>Christ bore immeasurable pain on the cross. These Sanskrit texts describe suffering, binding, blood, and an unbroken body, the same images used in gospel witness to India.</p>
 
 <div class="sanskrit-block">
   <p class="sanskrit-dev" lang="sa">कण्ठे बद्धं कण्टकवल्कलैः शिरः कपालं संवेष्ट्य ।</p>
@@ -1000,23 +998,23 @@ const POSTS = [
   <p class="sanskrit-ref">Sama Veda, part 2, Tandya Maha Brahmanam</p>
 </div>
 
-<p>These statements describe suffering and death in terms that match the crucifixion of Christ. For those who honour Sanskrit as a holy language, reading the actual letters beside English opens a door to the Bible and to baptism in His name.</p>
+<p>Read together, these statements describe suffering and death in terms that match the crucifixion of Christ. For those who honour Sanskrit as a holy language, seeing the actual letters beside the English opens a door to the Bible and to baptism in His name.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>Presenting Jesus to Hindu Seekers</h2>
 
-<p>These scattered but clear-cut references to Christ can be a great help in presenting Jesus to orthodox Hindus. As a second step, Jesus can be shown as the true incarnate Son of God, meeting their expectations by using their own scriptures as the starting point.</p>
+<p>These scattered but clear references to Christ can be a real help when presenting Jesus to orthodox Hindus. From there, He can be shown as the true incarnate Son of God, meeting their expectations by starting with their own scriptures.</p>
 
-<p>Such seekers have come to the Bible and to Christ, embraced Christianity through baptism, and witnessed marvelously for Him. The <em>Bhavishya Purana</em> — <em>bhavishya</em> means "future" — is said to be the only Purana among the eighteen that contains the name of Jesus explicitly, including material about the virgin birth of Christ.</p>
+<p>I have seen seekers come to the Bible and to Christ this way. They embraced Christianity through baptism and witnessed marvelously for Him. The <em>Bhavishya Purana</em> (<em>bhavishya</em> means "future") is said to be the only Purana among the eighteen that contains the name of Jesus explicitly, including material about the virgin birth of Christ.</p>
 
-<p>Yet the final court of appeal for every disciple remains the apostles' testimony: one God the Father, one Lord Jesus Christ, salvation through His blood, and life by faith in the gospel proclaimed in Scripture.</p>
+<p>Still, the final court of appeal for every disciple remains the apostles' testimony: one God the Father, one Lord Jesus Christ, salvation through His blood, and life by faith in the gospel proclaimed in Scripture.</p>
 
 <blockquote>"Neither is there salvation in any other: for there is none other name under heaven given among men, whereby we must be saved." — <em>Acts 4:12</em></blockquote>
 
 <div style="margin:3rem 0;padding:1.6rem 1.8rem;background:rgba(201,168,76,0.06);border:0.5px solid rgba(201,168,76,0.2);border-left:2px solid rgba(201,168,76,0.5);">
   <p style="font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:#C9A84C;margin-bottom:0.75rem;">Editorial Note</p>
-  <p style="font-size:0.88rem;color:#A8A090;line-height:1.85;">2:22 Church presents this material as an invitation to study Scripture and Sanskrit sources with open hearts. Hindu and Western scholars disagree on the dating and interpretation of several passages (especially portions of the <em>Bhavishya Purana</em>, which many historians assign to later manuscript layers). Traditional Hindu exegesis often reads hymns such as <em>Rigveda</em> 10.125 as addressed to deities other than the Messiah. We do not require acceptance of every parallel above as a condition of fellowship. We do require that every believer test all things by the word of God alone, and that Jesus be known as the Man Christ Jesus, the Father's exalted Son, in whom alone is eternal life.</p>
+  <p style="font-size:0.88rem;color:#A8A090;line-height:1.85;">We present this material as an invitation to study Scripture and Sanskrit sources with open hearts. Hindu and Western scholars disagree on the dating and interpretation of several passages, especially portions of the <em>Bhavishya Purana</em>, which many historians assign to later manuscript layers. Traditional Hindu exegesis often reads hymns such as <em>Rigveda</em> 10.125 as addressed to deities other than the Messiah. We do not require acceptance of every parallel above as a condition of fellowship. We do require that every believer test all things by the word of God alone, and that Jesus be known as the Man Christ Jesus, the Father's exalted Son, in whom alone is eternal life.</p>
 </div>
     `
   },
