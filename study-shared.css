@@ -1,0 +1,130 @@
+/* Shared styles for Study hub and study document pages */
+
+/* ── Study hero (image background, same feel as God of Pi) ── */
+.study-hero{
+  position:relative;min-height:72vh;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:9rem 2rem 5rem;overflow:hidden;margin-top:0;
+}
+.study-hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;}
+.study-hero-bg img,.study-hero-bg video{
+  position:absolute;top:50%;left:50%;min-width:100%;min-height:100%;width:auto;height:auto;
+  transform:translate(-50%,-50%);object-fit:cover;
+}
+.study-hero-overlay{position:absolute;inset:0;z-index:1;background:rgba(4,8,16,0.72);}
+.study-hero-overlay2{position:absolute;inset:0;z-index:2;background:radial-gradient(ellipse 60% 50% at 50% 40%,rgba(23,42,54,0.12) 0%,transparent 70%);}
+.study-hero-content{position:relative;z-index:3;color:#fff;max-width:820px;}
+.study-hero-content .hero-badge{
+  display:inline-block;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;
+  color:rgba(255,255,255,0.82);border:0.5px solid rgba(255,255,255,0.35);
+  padding:0.4rem 1rem;border-radius:2px;margin-bottom:1.2rem;
+}
+.study-hero-content .hero-eyebrow{
+  font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:#EAF1F4;
+  margin-bottom:1rem;
+}
+.study-hero-content h1{
+  font-family:'Poppins',Arial,sans-serif;font-size:clamp(2.8rem,8vw,5.5rem);
+  font-weight:300;line-height:1.05;margin-bottom:0.8rem;color:#fff;
+  text-shadow:0 2px 24px rgba(0,0,0,0.35);
+}
+.study-hero-content h1 em{font-style:italic;color:#EAF1F4;}
+.study-hero-content .hero-sub{
+  font-family:'Poppins',Arial,sans-serif;font-size:clamp(1rem,2.2vw,1.35rem);
+  font-weight:300;font-style:italic;color:rgba(255,255,255,0.9);line-height:1.6;
+  margin:0 auto;max-width:640px;text-shadow:0 1px 16px rgba(0,0,0,0.28);
+}
+
+/* ── Study document body ── */
+.study-doc{max-width:920px;margin:0 auto;padding:4.5rem 2rem 8rem;}
+.study-outline{background:var(--surface-light);border:0.5px solid var(--border);border-left:3px solid var(--gold);padding:1.5rem 2rem;margin:0 0 3rem;border-radius:0 8px 8px 0;}
+.study-outline h2{font-family:'Poppins',Arial,sans-serif;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin:0 0 0.9rem;}
+.study-outline ol{margin:0;padding-left:1.2rem;color:var(--text-secondary);font-size:0.9rem;line-height:1.9;}
+.study-outline a{color:var(--text-secondary);text-decoration:none;}
+.study-outline a:hover{color:var(--gold);}
+.study-tagline{font-family:'Poppins',Arial,sans-serif;font-size:1.08rem;font-style:italic;color:var(--gold);line-height:1.65;border-left:3px solid var(--gold);padding:1rem 1.4rem;margin:0 0 2rem;background:var(--surface-light);border-radius:0 8px 8px 0;}
+.study-section{margin-bottom:5rem;scroll-margin-top:7rem;}
+.study-num{font-family:'Poppins',Arial,sans-serif;font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.35rem;}
+.study-doc p{color:var(--text-secondary);font-size:1rem;line-height:1.9;margin-bottom:1.1rem;}
+.study-doc p strong{color:var(--text-primary);font-weight:500;}
+
+/* ── Traditional vs contextual contrast panels ── */
+.contrast-visual{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:0.5px solid var(--border);margin:2rem 0;overflow:hidden;}
+.contrast-panel{background:var(--surface);display:flex;flex-direction:column;}
+.contrast-panel img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+.contrast-panel-body{padding:1.2rem 1.4rem 1.5rem;}
+.contrast-panel.fail .contrast-label{color:#8b3a3a;background:rgba(139,58,58,0.08);}
+.contrast-panel.hold .contrast-label{color:var(--gold);background:rgba(23,42,54,0.08);}
+.contrast-label{display:inline-block;font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;padding:0.25rem 0.6rem;border-radius:2px;margin-bottom:0.6rem;font-weight:500;}
+.contrast-panel h4{font-family:'Poppins',Arial,sans-serif;font-size:1rem;font-weight:500;color:var(--text-primary);margin:0 0 0.5rem;}
+.contrast-panel p{font-size:0.86rem;color:var(--text-secondary);line-height:1.75;margin:0;}
+
+.contrast-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:0.5px solid var(--border);margin:2rem 0;}
+.contrast-item{background:var(--surface);padding:1.5rem 1.6rem;}
+.contrast-item h4{font-family:'Poppins',Arial,sans-serif;font-size:0.95rem;font-weight:500;margin-bottom:0.6rem;}
+.contrast-item.trad h4{color:#8b3a3a;}
+.contrast-item.context h4{color:var(--gold);}
+.contrast-item p{font-size:0.88rem;margin:0;line-height:1.75;color:var(--text-secondary);}
+
+.fail-list{margin:1.5rem 0;padding:0;list-style:none;}
+.fail-list li{position:relative;padding:0.65rem 0 0.65rem 1.4rem;border-bottom:0.5px solid var(--border-subtle);font-size:0.92rem;color:var(--text-secondary);line-height:1.7;}
+.fail-list li::before{content:'✕';position:absolute;left:0;color:#8b3a3a;font-size:0.75rem;top:0.85rem;}
+
+/* ── Image gallery (3–4 per topic) ── */
+.study-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:0.5px solid var(--border);margin:2.5rem 0;}
+.gallery-item{background:var(--surface);overflow:hidden;}
+.gallery-item img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;}
+.gallery-cap{padding:0.9rem 1.2rem;font-size:0.8rem;color:var(--text-muted);line-height:1.65;}
+.gallery-cap strong{color:var(--text-secondary);}
+
+/* ── 3D video slot ── */
+.study-video-block{margin:3rem 0;padding:2rem;background:var(--surface-light);border:0.5px solid var(--border);border-radius:8px;}
+.study-video-block h3{font-family:'Poppins',Arial,sans-serif;font-size:1.2rem;font-weight:400;color:var(--text-primary);margin:0 0 0.5rem;}
+.study-video-block > p{font-size:0.88rem;color:var(--text-muted);margin-bottom:1.2rem;}
+.study-video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:6px;background:var(--deep-mid);border:0.5px solid var(--border);}
+.study-video-wrap video,.study-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border:none;}
+.video-slot-empty{
+  position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:2rem;color:var(--text-muted);font-size:0.88rem;line-height:1.7;
+}
+.video-slot-empty code{font-size:0.78rem;color:var(--gold);background:var(--surface);padding:0.2rem 0.5rem;border-radius:3px;}
+
+.scripture-block{background:var(--surface);border:0.5px solid var(--border);border-left:2px solid var(--gold);padding:1.6rem 2rem;margin:2rem 0;}
+.scripture-ref{font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;display:block;}
+.scripture-text{font-family:'Poppins',Arial,sans-serif;font-size:1.05rem;font-style:italic;line-height:1.75;color:var(--text-primary);}
+.calc-box{background:var(--surface-light);border:0.5px solid var(--border);padding:1.6rem 2rem;margin:1.5rem 0;border-radius:6px;}
+.calc-box h4{font-family:'Poppins',Arial,sans-serif;font-size:0.95rem;font-weight:500;color:var(--gold);margin-bottom:0.75rem;}
+.calc-box p{font-size:0.9rem;margin-bottom:0.45rem;color:var(--text-secondary);}
+.source-note{background:rgba(91,141,184,0.05);border:0.5px solid var(--border);padding:1.4rem 1.8rem;margin:2rem 0;}
+.source-note p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;margin:0;}
+.source-note a{color:var(--gold);}
+.quick-nav{background:var(--deep);border-bottom:0.5px solid var(--border-subtle);padding:1.2rem 2rem;position:sticky;top:64px;z-index:90;}
+.quick-nav-inner{max-width:1000px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;}
+.quick-nav a{font-size:0.66rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;}
+.quick-nav a:hover{color:var(--gold);}
+
+/* ── Study hub: creation geometry showcase ── */
+.hub-hero{position:relative;min-height:55vh;display:flex;align-items:flex-end;padding:8rem 2rem 4rem;overflow:hidden;}
+.hub-hero-bg{position:absolute;inset:0;z-index:0;}
+.hub-hero-bg img{width:100%;height:100%;object-fit:cover;filter:saturate(0.85);}
+.hub-hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(255,255,255,0.97) 0%,rgba(255,255,255,0.55) 55%,rgba(4,8,16,0.35) 100%);}
+.hub-hero-inner{position:relative;z-index:2;max-width:900px;margin:0 auto;width:100%;}
+.geometry-showcase{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:0.5px solid var(--border);margin:3rem 0;border-radius:8px;overflow:hidden;}
+.geo-card{background:var(--surface);text-align:center;}
+.geo-card img{width:100%;aspect-ratio:1;object-fit:cover;display:block;}
+.geo-card-body{padding:1.2rem 1rem 1.4rem;}
+.geo-card h3{font-family:'Poppins',Arial,sans-serif;font-size:0.95rem;font-weight:500;color:var(--text-primary);margin:0 0 0.4rem;}
+.geo-card p{font-size:0.8rem;color:var(--text-muted);line-height:1.65;margin:0;}
+.hub-body{max-width:900px;margin:0 auto;padding:2rem 2rem 6rem;}
+.hub-body p{color:var(--text-secondary);font-size:1.02rem;line-height:1.95;margin-bottom:1.1rem;}
+.study-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:0.5px solid var(--border);border-radius:8px;overflow:hidden;margin-top:3rem;}
+.study-card{background:var(--surface);padding:1.8rem;display:flex;flex-direction:column;gap:0.75rem;transition:background 0.2s;text-decoration:none;color:inherit;}
+.study-card:hover{background:var(--surface-light);}
+.study-card img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:6px;border:0.5px solid var(--border);}
+.study-card h3{font-family:'Poppins',Arial,sans-serif;font-size:1.15rem;font-weight:400;color:var(--text-primary);margin:0;}
+.study-card p{font-size:0.86rem;color:var(--text-secondary);line-height:1.75;margin:0;flex:1;}
+.study-card .study-go{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);}
+
+@media(max-width:720px){
+  .contrast-visual,.contrast-grid,.study-gallery,.geometry-showcase,.study-grid{grid-template-columns:1fr;}
+  .study-hero{min-height:60vh;padding-top:7rem;}
+}

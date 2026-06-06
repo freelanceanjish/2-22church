@@ -123,6 +123,9 @@ nav{
   box-shadow:0 20px 55px rgba(23,42,54,0.14);
 }
 .nav-item.open .nav-dropdown{display:block;}
+@media (min-width:861px){
+  .nav-item:hover .nav-dropdown,.nav-item:focus-within .nav-dropdown{display:block;}
+}
 .nav-dropdown a{
   display:block;padding:0.65rem 0.8rem;border-radius:10px;font-size:0.68rem;letter-spacing:0.08em;
   text-transform:uppercase;color:var(--text-primary) !important;font-weight:400;text-decoration:none;

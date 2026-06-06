@@ -27,7 +27,6 @@ ACTIVE = {
 }
 
 STUDY_LINKS = [
-    ("Study Hub", "study.html"),
     ("Biblical Cosmology", "cosmology.html"),
     ("God of Pi", "project314.html"),
     ("Noah's Ark", "noahs-ark.html"),
@@ -97,6 +96,7 @@ def mobile_nav() -> str:
         '  <a href="index.html#about" onclick="this.closest(\'.mobile-menu\').classList.remove(\'open\')">Home</a>',
         '  <a href="articles.html" onclick="this.closest(\'.mobile-menu\').classList.remove(\'open\')">Articles</a>',
         '  <a href="blogs.html" onclick="this.closest(\'.mobile-menu\').classList.remove(\'open\')">Blogs</a>',
+        '  <a href="study.html" onclick="this.closest(\'.mobile-menu\').classList.remove(\'open\')">Study</a>',
     ]
     for label, href in STUDY_LINKS:
         lines.append(
