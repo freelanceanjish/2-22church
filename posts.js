@@ -888,14 +888,14 @@ const POSTS = [
   <p class="sanskrit-dev" lang="sa">आत्मा वा इदम् एक एवाग्र आसीत् । नान्यत्किञ्चन मिषत् । स ईक्षत लोकान्नु सृजा इति ॥</p>
   <p class="sanskrit-iast">Ātmā vā idam eka evāgra āsīt; nānyat kiñcana miṣat; sa īkṣata lokān nu sṛjā iti.</p>
   <p class="sanskrit-en">In the beginning the Self alone was. Nothing else stirred. He thought: “Let me create the worlds.” (Teaching tradition links the Creator’s purpose to raising a Saviour for those worlds.)</p>
-  <p class="sanskrit-ref">Aitareya Upanishad 1.1.1 — creation prelude; cf. 1.1.3</p>
+  <p class="sanskrit-ref">Aitareya Upanishad 1.1.1, creation prelude; cf. 1.1.3</p>
 </div>
 
 <div class="sanskrit-block">
   <p class="sanskrit-dev" lang="sa">लोकान् सृष्ट्वा तेषां रक्षार्थं तारकं सृजेयमिति चिन्तयन् । स्वात्मन एव पुरुषं सृष्ट्वा प्रादुर्बभूव ॥</p>
   <p class="sanskrit-iast">Lokān sṛṣṭvā teṣāṃ rakṣārthaṃ tārakaṃ sṛjeyam iti cintayan; svātmana eva puruṣaṃ sṛṣṭvā prādurbabhūva.</p>
   <p class="sanskrit-en">After creating sky, waters, and earth, the supreme Spirit thought: “I created the worlds; now to provide for and save them I must create a saviour.” Thinking thus, He brought forth a man from Himself.</p>
-  <p class="sanskrit-ref">Aitareya Upanishad 1.1.3 — paraphrase in Sanskrit/English as used in gospel witness to Hindus</p>
+  <p class="sanskrit-ref">Aitareya Upanishad 1.1.3, paraphrase in Sanskrit/English as used in gospel witness to Hindus</p>
 </div>
 
 <p>The Puranas explain Vedic truths in the form of stories. The <em>Bhavishya Purana</em> (<span lang="sa">भविष्य पुराण</span>) is the ninth among the eighteen <em>Maha Puranas</em>. Its <em>Bharata Khanda</em> (<span lang="sa">भारत खण्ड</span>), chapter <em>Pratisarga</em> (<span lang="sa">प्रतिसर्ग</span>), tells of the incarnation of Christ. Verse 31:</p>
@@ -903,7 +903,7 @@ const POSTS = [
 <div class="sanskrit-block">
   <p class="sanskrit-dev" lang="sa">ईश मूर्तिः हृदि प्राप्ता नित्यशुद्धा शिवकारी ।<br>ईशमसीह इति च मम नाम प्रतिष्ठितम् ॥</p>
   <p class="sanskrit-iast">Īśa mūrtiḥ hṛdi prāptā nityaśuddhā śivakārī;<br>īśamasīha iti ca mama nāma pratiṣṭhitam.</p>
-  <p class="sanskrit-en">The revelation of God—eternal, holy, compassionate, giver of salvation—who dwells in the heart is manifested. Thus my name is established as <em>Īśa Masīha</em> (Jesus the Messiah).</p>
+  <p class="sanskrit-en">The revelation of God, eternal, holy, compassionate, giver of salvation, who dwells in the heart is manifested. Thus my name is established as <em>Īśa Masīha</em> (Jesus the Messiah).</p>
   <p class="sanskrit-ref">Bhavishya Purana, Pratisarga-parva, verse 31</p>
 </div>
 
@@ -915,7 +915,7 @@ const POSTS = [
   <p class="sanskrit-dev" lang="sa">पुरुष शुभम् · बलवान् राजा गौराङ्ग श्वेतवस्त्रकम् · ईश पुत्रम् · कुमारीगर्भ सम्भवम् · सत्यव्रत परायणम्</p>
   <p class="sanskrit-iast">Puruṣa śubham · balavān rājā gaurāṅga śvetavastrakam · īśa putram · kumārīgarbha sambhavam · satyavrata parāyaṇam</p>
   <p class="sanskrit-en">Blameless holy person · sovereign king, fair, robed in white · Son of God · born of a virgin · sustainer of the path of truth.</p>
-  <p class="sanskrit-ref">Bhavishya Purana — titles of the incarnate Saviour</p>
+  <p class="sanskrit-ref">Bhavishya Purana, titles of the incarnate Saviour</p>
 </div>
 
 <p>The <em>Rigveda</em> (<span lang="sa">ऋग्वेद</span>) also presents the Redeemer as the cosmic Word, without naming Him in Greek or Hebrew:</p>
@@ -924,13 +924,13 @@ const POSTS = [
   <p class="sanskrit-dev" lang="sa">स ह पुरुषः सर्वतः पूर्वतः सर्वतः पश्चात् सर्वत उत्तरतः सर्वत एव सर्वम् ॥<br>अमृतस्येशानो यदन्नेनातिरोहति । अमृतं लोकम् इयं भक्त्वा स्वयमभ्यवर्तत ॥</p>
   <p class="sanskrit-iast">Sa ha puruṣaḥ sarvataḥ pūrvataḥ sarvataḥ paścāt sarvata uttarataḥ sarvata eva sarvam;<br>amṛtasyeśāno yad annenātirohati; amṛtaṃ lokam iyaṃ bhaktvā svayam abhyavartata.</p>
   <p class="sanskrit-en">This Person is all that was, all that is, and all that will be. He rules eternal life; for mankind’s redemption He passes beyond the immortal realm and comes into the mortal sphere, granting each reward according to deeds.</p>
-  <p class="sanskrit-ref">Rigveda 10.90 — Purusha Sukta (cosmic Man); messianic reading</p>
+  <p class="sanskrit-ref">Rigveda 10.90, Purusha Sukta (cosmic Man); messianic reading</p>
 </div>
 
 <div class="sanskrit-block">
   <p class="sanskrit-dev" lang="sa">वाग्वै ब्रह्म । वागेवायतनम् ।</p>
   <p class="sanskrit-iast">Vāg vai brahma. Vāg evāyatanam.</p>
-  <p class="sanskrit-en">The Word is Brahman—the indestructible God; the Word itself is the dwelling-place of the Supreme.</p>
+  <p class="sanskrit-en">The Word is Brahman, the indestructible God; the Word itself is the dwelling-place of the Supreme.</p>
   <p class="sanskrit-ref">Brhadaranyaka Upanishad 4.1.2</p>
 </div>
 
@@ -938,7 +938,7 @@ const POSTS = [
   <p class="sanskrit-dev" lang="sa">उद् उत्पुरा नमसा वा इदानीं ब्रह्मणा वर्तमानः । एषा वां भूयिष्ठी नामधेयं चिकितुषे ॥</p>
   <p class="sanskrit-iast">Ud utpurā namasā vā idānīṃ brahmaṇā vartamānaḥ; eṣā vāṃ bhūyiṣṭhī nāmadheyaṃ cikituṣe.</p>
   <p class="sanskrit-en">The Supreme Leader, cause and governor of all creation, appeared on earth in a body holy and without sin, to protect and save sinful mankind.</p>
-  <p class="sanskrit-ref">Rigveda 10.125 — Devi Sukta (Vac); messianic reading applied to the holy Incarnate</p>
+  <p class="sanskrit-ref">Rigveda 10.125, Devi Sukta (Vac); messianic reading applied to the holy Incarnate</p>
 </div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
@@ -951,35 +951,35 @@ const POSTS = [
   <p class="sanskrit-dev" lang="sa">कण्ठे बद्धं कण्टकवल्कलैः शिरः कपालं संवेष्ट्य ।</p>
   <p class="sanskrit-iast">Kaṇṭhe baddhaṃ kaṇṭakavalkalaiḥ śiraḥ kapālaṃ saṃveṣṭya.</p>
   <p class="sanskrit-en">The sacrificial victim is crowned with a wreath woven of thorny vines upon the head.</p>
-  <p class="sanskrit-ref">Rigveda 10.90.7, 15 — sacrificial imagery; crucifixion parallel</p>
+  <p class="sanskrit-ref">Rigveda 10.90.7, 15, sacrificial imagery; crucifixion parallel</p>
 </div>
 
 <div class="sanskrit-block">
   <p class="sanskrit-dev" lang="sa">मृत्योः पश्चात् वासांसि यजमानाः प्रविभजन्ति ।</p>
   <p class="sanskrit-iast">Mṛtyoḥ paścāt vāsāṃsi yajamānāḥ pravibhajanti.</p>
   <p class="sanskrit-en">After death, His garments are divided among those who offered the sacrifice.</p>
-  <p class="sanskrit-ref">Aitareya Brahmana — garment division; cf. John 19:23–24</p>
+  <p class="sanskrit-ref">Aitareya Brahmana, garment division; cf. John 19:23–24</p>
 </div>
 
 <div class="sanskrit-block">
   <p class="sanskrit-dev" lang="sa">हस्तौ पादौ च यूपे बद्ध्वा रुधिरं स्रावयेत् ।</p>
   <p class="sanskrit-iast">Hastau pādau ca yūpe baddhvā rudhiraṃ srāvayet.</p>
   <p class="sanskrit-en">His hands and feet are bound to the <em>yūpa</em> (sacrificial post of wood), and blood is shed.</p>
-  <p class="sanskrit-ref">Brhadaranyaka Upanishad 3.9.28 — binding to wood; crucifixion parallel</p>
+  <p class="sanskrit-ref">Brhadaranyaka Upanishad 3.9.28, binding to wood; crucifixion parallel</p>
 </div>
 
 <div class="sanskrit-block">
   <p class="sanskrit-dev" lang="sa">मरणात् पूर्वं सोमरसं पातयेत् ।</p>
   <p class="sanskrit-iast">Maraṇāt pūrvaṃ somarasaṃ pātayet.</p>
   <p class="sanskrit-en">Before death he is given a drink of <em>somarasa</em> (sacred fermented juice).</p>
-  <p class="sanskrit-ref">Yajur Veda 31 — drink offered before death; cf. Matthew 27:34</p>
+  <p class="sanskrit-ref">Yajur Veda 31, drink offered before death; cf. Matthew 27:34</p>
 </div>
 
 <div class="sanskrit-block">
   <p class="sanskrit-dev" lang="sa">नास्यास्ति भग्नम् अस्थि ।</p>
   <p class="sanskrit-iast">Nāsyāsti bhagnam asthi.</p>
   <p class="sanskrit-en">Not one of His bones shall be broken.</p>
-  <p class="sanskrit-ref">Aitareya Brahmana 2.6 — unbroken bones; cf. John 19:36</p>
+  <p class="sanskrit-ref">Aitareya Brahmana 2.6, unbroken bones; cf. John 19:36</p>
 </div>
 
 <p>The Hindu scriptures also point to the necessity and power of holy blood for remission of sin:</p>
@@ -1010,7 +1010,7 @@ const POSTS = [
 
 <p>Still, the final court of appeal for every disciple remains the apostles' testimony: one God the Father, one Lord Jesus Christ, salvation through His blood, and life by faith in the gospel proclaimed in Scripture.</p>
 
-<blockquote>"Neither is there salvation in any other: for there is none other name under heaven given among men, whereby we must be saved." — <em>Acts 4:12</em></blockquote>
+<blockquote>"Neither is there salvation in any other: for there is none other name under heaven given among men, whereby we must be saved.", <em>Acts 4:12</em></blockquote>
 
 <div style="margin:3rem 0;padding:1.6rem 1.8rem;background:rgba(201,168,76,0.06);border:0.5px solid rgba(201,168,76,0.2);border-left:2px solid rgba(201,168,76,0.5);">
   <p style="font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:#C9A84C;margin-bottom:0.75rem;">Editorial Note</p>
@@ -1321,7 +1321,7 @@ const POSTS = [
     title: "Scripturalism: The Word Judges History",
     date: "21 May 2026",
     category: "Teaching",
-    excerpt: "The church keeps getting the order wrong. When archaeology, carbon dating, or secular history becomes the test for Scripture, we have handed the gavel to the creature — and I did that too, for years.",
+    excerpt: "The church keeps getting the order wrong. When archaeology, carbon dating, or secular history becomes the test for Scripture, we have handed the gavel to the creature, and I did that too, for years.",
     image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgdmlld0JveD0iMCAwIDY4MCA4MjAiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8dGl0bGU+VGhlIFdvcmQgSnVkZ2VzIEhpc3Rvcnk8L3RpdGxlPgogIDxkZXNjPkEgYmFsYW5jZSBzY2FsZSBvbiBkYXJrIGJhY2tncm91bmQ6IG9uIHRoZSBsZWZ0IHBhbiBzaXRzIGEgc2luZ2xlIG9wZW4gYm9vayB3ZWlnaGluZyBpdCBkb3duLCBvbiB0aGUgcmlnaHQgcGFuIHNpdHMgYSBzY3JvbGwgb2YgaGlzdG9yeSwgcmFpc2VkIHVwLjwvZGVzYz4KICA8cmVjdCB3aWR0aD0iNjgwIiBoZWlnaHQ9IjgyMCIgZmlsbD0iIzBlMGUwZSIvPgogIDxsaW5lIHgxPSIzMDAiIHkxPSIxMDAiIHgyPSIzODAiIHkyPSIxMDAiIHN0cm9rZT0iI2UwZDljZSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+CiAgPGxpbmUgeDE9IjM0MCIgeTE9IjEwMCIgeDI9IjM0MCIgeTI9IjE4MCIgc3Ryb2tlPSIjZTBkOWNlIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4KICA8Y2lyY2xlIGN4PSIzNDAiIGN5PSIxODAiIHI9IjYiIGZpbGw9IiNjOWE5NmUiLz4KICA8bGluZSB4MT0iMTQwIiB5MT0iMjMwIiB4Mj0iNTQwIiB5Mj0iMTMwIiBzdHJva2U9IiNlMGQ5Y2UiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIi8+CiAgPGxpbmUgeDE9IjE0MCIgeTE9IjIzMCIgeDI9IjEyMCIgeTI9IjM4MCIgc3Ryb2tlPSIjNTU1IiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiLz4KICA8bGluZSB4MT0iMTQwIiB5MT0iMjMwIiB4Mj0iMTYwIiB5Mj0iMzgwIiBzdHJva2U9IiM1NTUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIvPgogIDxsaW5lIHgxPSIxMDAiIHkxPSIzODUiIHgyPSIxODAiIHkyPSIzODUiIHN0cm9rZT0iI2UwZDljZSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHJlY3QgeD0iMTA4IiB5PSIzNDAiIHdpZHRoPSI2NCIgaGVpZ2h0PSI0NCIgcng9IjIiIGZpbGw9IiMyMjIiLz4KICA8cmVjdCB4PSIxMDgiIHk9IjM0MCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjQ0IiByeD0iMiIgc3Ryb2tlPSIjYzlhOTZlIiBzdHJva2Utd2lkdGg9IjEuNSIgZmlsbD0ibm9uZSIvPgogIDxsaW5lIHgxPSIxNDAiIHkxPSIzNDAiIHgyPSIxNDAiIHkyPSIzODQiIHN0cm9rZT0iI2UwZDljZSIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPGxpbmUgeDE9IjExNiIgeTE9IjM1MCIgeDI9IjEzNiIgeTI9IjM1MCIgc3Ryb2tlPSIjNTU1IiBzdHJva2Utd2lkdGg9IjAuNiIvPgogIDxsaW5lIHgxPSIxMTYiIHkxPSIzNTciIHgyPSIxMzYiIHkyPSIzNTciIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLXdpZHRoPSIwLjYiLz4KICA8bGluZSB4MT0iMTE2IiB5MT0iMzY0IiB4Mj0iMTM2IiB5Mj0iMzY0IiBzdHJva2U9IiM1NTUiIHN0cm9rZS13aWR0aD0iMC42Ii8+CiAgPGxpbmUgeDE9IjExNiIgeTE9IjM3MSIgeDI9IjEzNiIgeTI9IjM3MSIgc3Ryb2tlPSIjNTU1IiBzdHJva2Utd2lkdGg9IjAuNiIvPgogIDxsaW5lIHgxPSIxNDQiIHkxPSIzNTAiIHgyPSIxNjQiIHkyPSIzNTAiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLXdpZHRoPSIwLjYiLz4KICA8bGluZSB4MT0iMTQ0IiB5MT0iMzU3IiB4Mj0iMTY0IiB5Mj0iMzU3IiBzdHJva2U9IiM1NTUiIHN0cm9rZS13aWR0aD0iMC42Ii8+CiAgPGxpbmUgeDE9IjE0NCIgeTE9IjM2NCIgeDI9IjE2NCIgeTI9IjM2NCIgc3Ryb2tlPSIjNTU1IiBzdHJva2Utd2lkdGg9IjAuNiIvPgogIDxsaW5lIHgxPSIxNDQiIHkxPSIzNzEiIHgyPSIxNjQiIHkyPSIzNzEiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLXdpZHRoPSIwLjYiLz4KICA8ZWxsaXBzZSBjeD0iMTQwIiBjeT0iMzk1IiByeD0iNDUiIHJ5PSI1IiBmaWxsPSIjMDAwMDAwNTUiLz4KICA8bGluZSB4MT0iNTQwIiB5MT0iMTMwIiB4Mj0iNDgwIiB5Mj0iMjYwIiBzdHJva2U9IiM1NTUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIvPgogIDxsaW5lIHgxPSI1NDAiIHkxPSIxMzAiIHgyPSI2MDAiIHkyPSIyNjAiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIi8+CiAgPGxpbmUgeDE9IjQ2MCIgeTE9IjI2NSIgeDI9IjYyMCIgeTI9IjI2NSIgc3Ryb2tlPSIjZTBkOWNlIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8cmVjdCB4PSI0NjIiIHk9IjIxMCIgd2lkdGg9IjE1NiIgaGVpZ2h0PSI1NSIgcng9IjQiIGZpbGw9IiMxZTFlMWUiLz4KICA8cmVjdCB4PSI0NjIiIHk9IjIxMCIgd2lkdGg9IjE1NiIgaGVpZ2h0PSI1NSIgcng9IjQiIHN0cm9rZT0iI2UwZDljZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIi8+CiAgPGVsbGlwc2UgY3g9IjQ2OCIgY3k9IjIzNyIgcng9IjgiIHJ5PSIyNyIgZmlsbD0iIzFlMWUxZSIgc3Ryb2tlPSIjZTBkOWNlIiBzdHJva2Utd2lkdGg9IjEiLz4KICA8ZWxsaXBzZSBjeD0iNjEyIiBjeT0iMjM3IiByeD0iOCIgcnk9IjI3IiBmaWxsPSIjMWUxZTFlIiBzdHJva2U9IiNlMGQ5Y2UiIHN0cm9rZS13aWR0aD0iMSIvPgogIDxsaW5lIHgxPSI0ODIiIHkxPSIyMjUiIHgyPSI1OTgiIHkyPSIyMjUiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLXdpZHRoPSIwLjYiLz4KICA8bGluZSB4MT0iNDgyIiB5MT0iMjMzIiB4Mj0iNTk4IiB5Mj0iMjMzIiBzdHJva2U9IiM1NTUiIHN0cm9rZS13aWR0aD0iMC42Ii8+CiAgPGxpbmUgeDE9IjQ4MiIgeTE9IjI0MSIgeDI9IjU5OCIgeTI9IjI0MSIgc3Ryb2tlPSIjNTU1IiBzdHJva2Utd2lkdGg9IjAuNiIvPgogIDxsaW5lIHgxPSI0ODIiIHkxPSIyNDkiIHgyPSI1OTgiIHkyPSIyNDkiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLXdpZHRoPSIwLjYiLz4KICA8bGluZSB4MT0iNDgyIiB5MT0iMjU3IiB4Mj0iNTkwIiB5Mj0iMjU3IiBzdHJva2U9IiM1NTUiIHN0cm9rZS13aWR0aD0iMC42Ii8+Cjwvc3ZnPg==",
     link: "scripturalism.html"
   },
@@ -1519,7 +1519,7 @@ const POSTS = [
     title: "The Agencies of God: How the Almighty Speaks, Acts and Appears",
     date: "5 May 2026",
     category: "Teaching",
-    excerpt: "No man has seen God at any time — yet Abraham sat down with visitors, Moses met someone in a burning bush, Jacob wrestled until dawn. I wrestled with that contradiction for years before I found divine agency in Scripture.",
+    excerpt: "No man has seen God at any time, yet Abraham sat down with visitors, Moses met someone in a burning bush, Jacob wrestled until dawn. I wrestled with that contradiction for years before I found divine agency in Scripture.",
     image: "agencies_of_god.svg",
     content: `
 <p>Here is something that puzzled me for a long time. The Bible says clearly that no one has ever seen God. Yet Abraham sat down and had a meal with three visitors. Moses spoke face to face with someone at a burning bush. Jacob wrestled a man through the entire night. How do we make sense of this?</p>
@@ -1610,7 +1610,7 @@ const POSTS = [
     title: "Was Jesus God? A Biblical Examination",
     date: "22 April 2026",
     category: "Teaching",
-    excerpt: "I do not belong to any denomination, nor am I starting a cult. What follows is my verse-by-verse look at what Scripture actually says about Jesus Christ — and why the Trinitarian position, honestly read, cannot stand.",
+    excerpt: "I do not belong to any denomination, nor am I starting a cult. What follows is my verse-by-verse look at what Scripture actually says about Jesus Christ, and why the Trinitarian position, honestly read, cannot stand.",
     image: "Is_Jesus_GoD.jpg",
     content: `
 <p>Let me ask you something simple. When you open any letter Paul wrote, what does the first line say about God and Jesus?</p>
