@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study - 2:22 Church</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+<link rel="stylesheet" href="style.css?v=3">
+<style>
+.study-hub{max-width:1100px;margin:0 auto;padding:3rem 2rem 6rem;}
+.study-tagline{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.05rem,2.2vw,1.25rem);font-style:italic;color:var(--gold);line-height:1.65;border-left:3px solid var(--gold);padding:1rem 1.4rem;margin:0 0 2.5rem;background:var(--surface-light);border-radius:0 8px 8px 0;}
+.study-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:0.5px solid var(--border);border-radius:8px;overflow:hidden;}
+.study-card{background:var(--surface);padding:1.8rem;display:flex;flex-direction:column;gap:0.75rem;transition:background 0.2s;text-decoration:none;color:inherit;}
+.study-card:hover{background:var(--surface-light);}
+.study-card img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:6px;border:0.5px solid var(--border);}
+.study-card h3{font-family:'Poppins',Arial,sans-serif;font-size:1.15rem;font-weight:400;color:var(--text-primary);margin:0;}
+.study-card p{font-size:0.86rem;color:var(--text-secondary);line-height:1.75;margin:0;flex:1;}
+.study-card .study-go{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);}
+@media(max-width:720px){.study-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">Home</a></li>
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="blogs.html">Blogs</a></li>
+    <li><a href="study.html" class="active">Study</a></li>
+    <li><a href="references.html">Resources</a></li>
+    <li><a href="qa.html">Q&amp;A</a></li>
+    <li><a href="our-story.html">Our Story</a></li>
+  </ul>
+  <a href="index.html#join" class="nav-cta">Connect</a>
+  <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
+  <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
+  <a href="articles.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Articles</a>
+  <a href="blogs.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blogs</a>
+  <a href="study.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study</a>
+  <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
+  <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
+  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
+  <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
+</div>
+
+<div class="page-header">
+  <div class="eyebrow">Scripture and Structure</div>
+  <h1>Biblical <em>Study</em></h1>
+  <p>Long-form studies on cosmology, sacred architecture, and the patterns Scripture describes for ark, tabernacle, temple, and city.</p>
+</div>
+
+<div class="study-hub">
+  <p class="study-tagline">I doubted the shoe-box temples in my heart long before I wrote a word. Sunflowers, pinecones, ferns: the Creator wove holy geometry into creation. Why would His ark, tabernacle, temple, and city look like rectangles we never see in what He made?</p>
+
+  <div class="study-grid">
+    <a class="study-card" href="cosmology.html">
+      <img src="https://images.weserv.nl/?url=www.testingtheglobe.com/images/topbanner.jpg" alt="Biblical cosmology study" loading="lazy" onerror="this.style.display='none'">
+      <h3>Biblical Cosmology</h3>
+      <p>Firmament, fixed earth, sun and moon inside the raqia. Letting Genesis through Revelation speak without modern assumptions.</p>
+      <span class="study-go">Open study</span>
+    </a>
+    <a class="study-card" href="project314.html">
+      <img src="temple-compare-01-zones.svg" alt="God of Pi tabernacle study" loading="lazy">
+      <h3>God of Pi (Tabernacle)</h3>
+      <p>The wilderness tabernacle as dome decagon. Pi embedded in the pattern God gave Moses. Credits Project314.org and Andrew Hoy.</p>
+      <span class="study-go">Open study</span>
+    </a>
+    <a class="study-card" href="noahs-ark.html">
+      <img src="blog-assets/study/study-noahs-ark.png" alt="Noah's ark study illustration" loading="lazy">
+      <h3>Noah's Ark</h3>
+      <p>Not a giant sailing ship. Omnidirectional design for ventilation, compression, and survival on the flood.</p>
+      <span class="study-go">Open study</span>
+    </a>
+    <a class="study-card" href="solomons-temple.html">
+      <img src="blog-assets/study/study-solomons-temple.png" alt="Solomon's temple study illustration" loading="lazy">
+      <h3>Solomon's First Temple (959 BC)</h3>
+      <p>Circular plan with dome. Shadows of Ezekiel's vision and Henry Sulley's architectural model.</p>
+      <span class="study-go">Open study</span>
+    </a>
+    <a class="study-card" href="heavenly-jerusalem.html">
+      <img src="blog-assets/study/study-heavenly-jerusalem.png" alt="Heavenly Jerusalem study illustration" loading="lazy">
+      <h3>Heavenly Jerusalem</h3>
+      <p>Revelation's city measured with a golden reed. Dome geometry, pi in the footprint, scale that fits Scripture's numbers.</p>
+      <span class="study-go">Open study</span>
+    </a>
+    <a class="study-card" href="old-maps.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Vincenzo_Coronelli_-_Terrestrial_Globe_-_Google_Art_Project.jpg/640px-Vincenzo_Coronelli_-_Terrestrial_Globe_-_Google_Art_Project.jpg" alt="Historical maps study" loading="lazy" onerror="this.style.display='none'">
+      <h3>Old Maps</h3>
+      <p>17th and 18th century cartography before the globe model became fixed in the public mind.</p>
+      <span class="study-go">Open study</span>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-bottom" style="padding:2rem;">
+    <span>All copyrights reserved. @2-22 Church, 2026</span>
+  </div>
+</footer>
+<script>
+var hamburger=document.querySelector('.nav-hamburger'),mobileMenu=document.getElementById('mobile-menu');
+if(hamburger&&mobileMenu){hamburger.addEventListener('click',function(){hamburger.classList.toggle('open');mobileMenu.classList.toggle('open');document.body.style.overflow=mobileMenu.classList.contains('open')?'hidden':'';});}
+</script>
+</body>
+</html>
