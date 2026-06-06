@@ -207,7 +207,7 @@ const POSTS = [
     content: `
 <div class="minimal-design hero-diagram hero-diagram--photo" aria-label="Following in the footsteps: shadow or reality">
   <img src="following-jesus-footsteps-disciple.jpg" alt="Disciple walking in footsteps on the sand: tracing the path toward reality" loading="eager" decoding="async">
-  <p class="minimal-cap">Footsteps in the sand: will we follow the shadow of ritual, or trace the path back to the reality Moses received at Sinai?</p>
+  <p class="minimal-cap">Footsteps in the sand. Will we follow the shadow of ritual, or trace the path back to the reality Moses received at Sinai?</p>
 </div>
 
 <h2 class="article-part-title"><span class="article-part-label">Introduction</span>Man, Shadow, and the Question of Origins</h2>
@@ -255,13 +255,13 @@ const POSTS = [
 <div class="compare-grid">
   <div class="compare-col">
     <h4>Indian tradition</h4>
-    <p>The <strong>prākāra</strong> (outer complex) welcomes all who come to worship. The <strong>maṇḍapa</strong> is the pavilion where preparations, music, and secondary rites occur: still sacred, but not the innermost mystery.</p>
+    <p>The <strong>prākāra</strong> (outer complex) welcomes all who come to worship. The <strong>maṇḍapa</strong> is the pavilion where preparations, music, and secondary rites occur, still sacred but not the innermost mystery.</p>
     <p>The <strong>garbhagṛha</strong> (“womb chamber”) is small, often dark, housing the mūrti or emblem of divine presence. Only the head <strong>pujārī</strong>, after <em>snāna</em> and mantra, enters to offer the direct worship.</p>
   </div>
   <div class="compare-col">
     <h4>Hebrew tradition</h4>
-    <p>The <strong>Outer Court</strong> received Israel and the nations’ sacrifices at the bronze altar. The <strong>Holy Place</strong> (<em>Kodesh</em>) held the Menorah, the Table of Showbread, and the Altar of Incense: accessible only to officiating priests in linen.</p>
-    <p>Behind the <strong>Parochet</strong> (veil) stood the <strong>Holy of Holies</strong> (<em>Kodesh HaKodashim</em>), containing the Ark. After the golden calf, entry was restricted to the High Priest: and after the monarchy, <strong>once a year</strong> on Yom Kippur (Leviticus 16).</p>
+    <p>The <strong>Outer Court</strong> received Israel and the nations’ sacrifices at the bronze altar. The <strong>Holy Place</strong> (<em>Kodesh</em>) held the Menorah, the Table of Showbread, and the Altar of Incense, accessible only to officiating priests in linen.</p>
+    <p>Behind the <strong>Parochet</strong> (veil) stood the <strong>Holy of Holies</strong> (<em>Kodesh HaKodashim</em>), containing the Ark. After the golden calf, entry was restricted to the High Priest, and after the monarchy, <strong>once a year</strong> on Yom Kippur (Leviticus 16).</p>
   </div>
 </div>
 
@@ -299,7 +299,7 @@ const POSTS = [
   </div>
   <div class="compare-col">
     <h4>Parochet</h4>
-    <p>Exodus describes the <strong>parochet</strong>: blue, purple, and scarlet yarn with cherubim: hung before the Ark (Exodus 26:31-33). Only the High Priest passed it, once a year. The veil was theology in fabric.</p>
+    <p>Exodus describes the <strong>parochet</strong>, blue, purple, and scarlet yarn with cherubim, hung before the Ark (Exodus 26:31-33). Only the High Priest passed it, once a year. The veil was theology in fabric.</p>
   </div>
 </div>
 
@@ -339,7 +339,7 @@ const POSTS = [
   </div>
   <div class="compare-col">
     <h4>Mezuzah · Passover blood</h4>
-    <p>Israel marked doorposts with lamb’s blood in Egypt (Exodus 12:7). Ever after, the <strong>mezuzah</strong>: Scripture in a case on the doorframe: reminded each household that God claims the threshold (Deuteronomy 6:9).</p>
+    <p>Israel marked doorposts with lamb's blood in Egypt (Exodus 12:7). Ever after, the <strong>mezuzah</strong>, Scripture in a case on the doorframe, reminded each household that God claims the threshold (Deuteronomy 6:9).</p>
   </div>
 </div>
 
@@ -465,11 +465,11 @@ const POSTS = [
 <div class="compare-grid">
   <div class="compare-col">
     <h4>Daṇḍavat &amp; ṣaṣṭāṅga</h4>
-    <p><strong>Daṇḍavat praṇāma</strong>: falling flat like a staff. <strong>Ṣaṣṭāṅga</strong>: “six limbs” touching earth: toes, knees, hands, chest, chin, and mind. Total self-emptying before the Lord.</p>
+    <p><strong>Daṇḍavat praṇāma</strong>, falling flat like a staff. <strong>Ṣaṣṭāṅga</strong>, "six limbs" touching earth, toes, knees, hands, chest, chin, and mind. Total self-emptying before the Lord.</p>
   </div>
   <div class="compare-col">
     <h4>Korim u-Mishtachavim</h4>
-    <p>Prophets and kings “fell on their faces” before the Ark or the glory of the Lord. Temple worship assumed <strong>full prostration</strong> on stone: not casual nodding, but the body itself confessing smallness.</p>
+    <p>Prophets and kings "fell on their faces" before the Ark or the glory of the Lord. Temple worship assumed <strong>full prostration</strong> on stone, not casual nodding but the body itself confessing smallness.</p>
   </div>
 </div>
 
@@ -505,11 +505,11 @@ const POSTS = [
 <div class="compare-grid">
   <div class="compare-col">
     <h4>Samai · Akhanda Dīpa</h4>
-    <p>The <strong>samai</strong> stands with <strong>seven</strong> oil points (often a star of wick-notches around the bowl plus the central finial). The <strong>akhaṇḍa dīpa</strong>: unbroken flame: burns before the deity as a sign that divine consciousness never sleeps.</p>
+    <p>The <strong>samai</strong> stands with <strong>seven</strong> oil points (often a star of wick-notches around the bowl plus the central finial). The <strong>akhaṇḍa dīpa</strong>, the unbroken flame, burns before the deity as a sign that divine consciousness never sleeps.</p>
   </div>
   <div class="compare-col">
     <h4>Menorah: Ner Tamid</h4>
-    <p>Exodus commands a menorah of <strong>seven</strong> branches: three on each side of the central stem (Exodus 25:32). Tended morning and evening, the <strong>ner tamid</strong> became the eternal light before every Ark.</p>
+    <p>Exodus commands a menorah of <strong>seven</strong> branches, three on each side of the central stem (Exodus 25:32). Tended morning and evening, the <strong>ner tamid</strong> became the eternal light before every Ark.</p>
   </div>
 </div>
 
@@ -545,11 +545,11 @@ const POSTS = [
 <div class="compare-grid">
   <div class="compare-col">
     <h4>Pakwan · Naivedyam → Prasādam</h4>
-    <p>Temple <strong>pakwan</strong> (cooked offering) is served in a compartment tray: typically <strong>five or six</strong> items: rice, dal, vegetable, bread or sweet, salad, and dessert. After acceptance, it becomes <strong>prasādam</strong> shared with priests and devotees.</p>
+    <p>Temple <strong>pakwan</strong> (cooked offering) is served in a compartment tray, typically <strong>five or six</strong> items: rice, dal, vegetable, bread or sweet, salad, and dessert. After acceptance, it becomes <strong>prasādam</strong> shared with priests and devotees.</p>
   </div>
   <div class="compare-col">
     <h4>Seder · Lechem HaPanim</h4>
-    <p>The Passover <strong>Seder plate</strong> holds <strong>six</strong> symbolic foods: <em>maror</em>, <em>charoset</em>, <em>karpas</em>, <em>zeroa</em>, <em>beitzah</em>, <em>chazeret</em>: each recalling Exodus. In the Temple, twelve loaves of showbread stood weekly before the LORD.</p>
+    <p>The Passover <strong>Seder plate</strong> holds <strong>six</strong> symbolic foods, <em>maror</em>, <em>charoset</em>, <em>karpas</em>, <em>zeroa</em>, <em>beitzah</em>, <em>chazeret</em>, each recalling Exodus. In the Temple, twelve loaves of showbread stood weekly before the LORD.</p>
   </div>
 </div>
 
@@ -589,7 +589,7 @@ const POSTS = [
   </div>
   <div class="compare-col">
     <h4>Tallit · Tzitzit</h4>
-    <p>Jewish men wrap the <strong>tallit</strong> for morning prayer and Shabbat: its <strong>tzitzit</strong> fringes with a blue thread recall the commandments (Numbers 15:38-39). The shawl itself becomes a portable “holy place” around the worshipper.</p>
+    <p>Jewish men wrap the <strong>tallit</strong> for morning prayer and Shabbat. Its <strong>tzitzit</strong> fringes with a blue thread recall the commandments (Numbers 15:38-39). The shawl itself becomes a portable "holy place" around the worshipper.</p>
   </div>
 </div>
 
@@ -786,7 +786,7 @@ const POSTS = [
   </div>
   <div class="compare-col">
     <h4>Kippah · Mitznefet</h4>
-    <p>Every Jewish man covers the head in prayer with a <strong>kippah</strong>: humility before heaven. Aaron and the High Priest wore the <strong>mitznefet</strong>: a wrapped linen turban: when entering the sanctuary (Exodus 28:4, 37).</p>
+    <p>Every Jewish man covers the head in prayer with a <strong>kippah</strong>, humility before heaven. Aaron and the High Priest wore the <strong>mitznefet</strong>, a wrapped linen turban, when entering the sanctuary (Exodus 28:4, 37).</p>
   </div>
 </div>
 </div>
@@ -839,7 +839,7 @@ const POSTS = [
   <span class="scripture-ref">1 Timothy 2:5-6</span>
 </div>
 
-<p>When a Hindu person sees that their own <em>snanam</em>, <em>yajna</em>, <em>naivedyam</em>, and <em>parda</em> are not alien to Scripture but anticipate it, the dots begin to connect. The garbhagṛha was always pointing beyond itself. The veil was always waiting to be torn. The fire was always waiting for the Lamb who takes away the sin of the world. Christ is not one deity among many behind a curtain. He is the Son sent by the Father: crucified, raised, ascended: and the only name under heaven by which we must be saved.</p>
+<p>When a Hindu person sees that their own <em>snanam</em>, <em>yajna</em>, <em>naivedyam</em>, and <em>parda</em> are not alien to Scripture but anticipate it, the dots begin to connect. That is what happened in my own reading. The garbhagṛha was always pointing beyond itself. The veil was always waiting to be torn. The fire was always waiting for the Lamb who takes away the sin of the world. Christ is not one deity among many behind a curtain. He is the Son sent by the Father, crucified, raised, ascended, the only name under heaven by which we must be saved.</p>
 
 <div class="scripture">
   <p>“Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain…”</p>
