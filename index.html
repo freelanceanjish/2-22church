@@ -457,10 +457,12 @@ section.about{padding-top:7.5rem;}
   margin:0 auto;
   border-radius:12px;
 }
-.home-figure.home-figure-foundation{padding:2rem;}
+.home-figure.home-figure-foundation{padding:1.4rem;}
 .home-figure.home-figure-foundation img{max-width:100%;width:100%;}
-.home-figure.home-figure-visions img{max-width:300px;border-radius:14px;}
-.home-figure.home-figure-distinction{padding:1.6rem;}
+.home-figure.home-figure-visions{padding:1.2rem 1.4rem;}
+.home-figure.home-figure-visions img{max-width:100%;width:100%;border-radius:12px;}
+.home-figure.home-figure-distinction{padding:1.2rem 1.4rem;}
+.home-figure.home-figure-distinction img{max-width:100%;width:100%;}
 
 
 /* FOUNDATION SUMMARY BOX (moved out of hero, under the Foundation title) */
@@ -523,39 +525,14 @@ section.about{padding-top:7.5rem;}
 
 <nav>
   <a href="index.html" class="nav-logo"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-  <ul class="nav-links">
+    <ul class="nav-links">
     <li><a href="index.html#about" class="active">Home</a></li>
-    <li class="nav-item">
-      <a href="our-story.html">About <span class="caret">&#9660;</span></a>
-      <div class="nav-dropdown">
-        <a href="our-story.html">Our Story</a>
-        <a href="gatherings.html">Gatherings</a>
-      </div>
-    </li>
     <li><a href="articles.html">Articles</a></li>
     <li><a href="blogs.html">Blogs</a></li>
-    <li class="nav-item">
-      <a href="cosmology.html">Study <span class="caret">&#9660;</span></a>
-      <div class="nav-dropdown">
-        <a href="cosmology.html">Biblical Cosmology</a>
-        <a href="project314.html">God of Pi</a>
-        <a href="old-maps.html">Old Maps</a>
-      </div>
-    </li>
-    <li class="nav-item">
-      <a href="references.html">Resources <span class="caret">&#9660;</span></a>
-      <div class="nav-dropdown">
-        <a href="references.html#one-god">One God</a>
-        <a href="references.html#short-season">Short Season</a>
-        <a href="references.html#biblical-earth">Biblical Earth</a>
-        <a href="references.html#podcasts">Podcasts</a>
-        <a href="references.html#debates">Debates</a>
-        <a href="references.html#articles">Articles</a>
-        <a href="references.html#archives">Archives</a>
-        <a href="references.html#documentaries">Documentaries</a>
-      </div>
-    </li>
-    <li><a href="qa.html">Q&amp;A</a></li>
+    <li><a href="study.html">Study</a></li>
+    <li><a href="references.html">Resources</a></li>
+    <li><a href="qa.html">Q&A</a></li>
+    <li><a href="our-story.html">Our Story</a></li>
   </ul>
   <a href="#join" class="nav-cta">Connect</a>
   <button class="nav-hamburger" aria-label="Menu">
@@ -565,16 +542,13 @@ section.about{padding-top:7.5rem;}
 <div class="mobile-menu" id="mobile-menu">
   <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
   <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
-  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
-  <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
   <a href="articles.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Articles</a>
   <a href="blogs.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blogs</a>
-  <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
-  <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
-  <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
+  <a href="study.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
-  <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
-  <a href="index.html#join" style="color:var(--text-primary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
+  <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&A</a>
+  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
+  <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 <section class="hero home-hero" id="hero-section">
   <div class="hero-media" aria-hidden="true"></div>
@@ -825,18 +799,6 @@ section.about{padding-top:7.5rem;}
           <div class="bs-item"><span class="bs-ref">Romans 15:26</span><p>"For Macedonia and Achaia were pleased to make a contribution for the poor among the Lord's people in Jerusalem."</p></div>
         </div>
       </div>
-
-    
-      <div class="belief-card" data-num="07">
-        <h3>Biblical Earth</h3>
-        <p>We believe the consistent cosmological testimony of Scripture, from Genesis through Job and Isaiah to Revelation, describes a circular earth founded upon pillars, enclosed by a firmament with heavenly waters above it. We do not read this symbolically. It is the plain reading of the text as the biblical authors wrote it.</p>
-        <blockquote>"He sits enthroned above the circle of the earth... He stretches out the heavens like a canopy.", Isaiah 40:22</blockquote>
-      </div>
-
-      <div class="belief-card" data-num="08">
-        <h3>The Short Season</h3>
-        <p>We do not believe we are in the Church Age of popular eschatology. The millennial reign of Yeshua with His saints happened on this earth. What began roughly 250 years ago through colonisation, revolution, and world war marked a turning point in the prophetic calendar. The buried and ruined architectures still visible around the world bear witness to that history.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -846,6 +808,7 @@ section.about{padding-top:7.5rem;}
   <div class="container">
     <div class="section-label">Life Together</div>
     <h2 class="section-title">Where <em>People</em> Gather</h2>
+    <p style="margin:-0.5rem 0 1.8rem;"><a href="gatherings.html" style="font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:0.5px solid rgba(23,42,54,0.25);">Find a gathering near you →</a></p>
 
     <div class="community-statement">
       <p>The word "church" has been abused in our generation. Buildings get mortgaged. Costly equipment, instruments, lights and production gear are bought in the name of God. Congregations are drained financially to fund institutions that, on paper, belong to a ministry, a company, or a pastoral family, not the people of God. That is not the church of the New Testament. It never was.</p>
