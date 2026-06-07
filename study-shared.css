@@ -184,13 +184,47 @@
 .arch-motivation-body h3{font-family:'Poppins',Arial,sans-serif;font-size:1.05rem;font-weight:500;color:var(--text-primary);margin:0;}
 .arch-motivation-body p{font-size:0.84rem;color:var(--text-secondary);line-height:1.7;margin:0;flex:1;}
 .study-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:0.5px solid var(--border);border-radius:8px;overflow:hidden;margin-top:3rem;}
-.hub-body .study-grid{gap:1.25rem;background:transparent;border:none;border-radius:0;overflow:visible;margin-top:2rem;}
-.study-card{background:var(--surface);padding:1.8rem;display:flex;flex-direction:column;gap:0.75rem;transition:background 0.2s;text-decoration:none;color:inherit;}
-.hub-body .study-card{background:transparent;padding:0;border-radius:0;}
-.hub-body .study-card:hover{background:transparent;}
+.hub-body .study-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1.5rem;
+  background:transparent;
+  border:none;
+  border-radius:0;
+  overflow:visible;
+  margin-top:2rem;
+}
+.study-card{background:var(--surface);padding:1.8rem;display:flex;flex-direction:column;gap:0.75rem;transition:background 0.2s,border-color 0.2s,box-shadow 0.2s;text-decoration:none;color:inherit;}
+.hub-body .study-card{
+  background:var(--surface);
+  padding:0.9rem;
+  border-radius:14px;
+  border:0.5px solid var(--border);
+  overflow:hidden;
+}
+.hub-body .study-card:hover{
+  background:var(--surface-light);
+  border-color:rgba(23,42,54,0.22);
+  box-shadow:0 14px 36px rgba(23,42,54,0.08);
+}
 .study-card:hover{background:var(--surface-light);}
 .study-card img{width:100%;height:auto;object-fit:contain;object-position:center;border-radius:6px;border:0.5px solid var(--border);background:var(--surface-light);padding:0.5rem;}
-.hub-body .study-card img{width:100%;max-width:100%;max-height:190px;object-fit:contain;object-position:left center;border:none;border-radius:10px;background:transparent;padding:0;}
+.hub-body .study-card img{
+  width:100%;
+  max-width:100%;
+  height:clamp(170px,20vw,230px);
+  max-height:none;
+  object-fit:cover;
+  object-position:center;
+  border:none;
+  border-radius:10px;
+  background:var(--surface-light);
+  padding:0;
+}
+.hub-body .study-card.study-card--diagram img{
+  object-fit:contain;
+  padding:0.4rem;
+  background:#f8f6f1;
+}
 .researcher-card img{max-height:170px;object-fit:contain;}
 .study-card h3{font-family:'Poppins',Arial,sans-serif;font-size:1.15rem;font-weight:400;color:var(--text-primary);margin:0;}
 .study-card p{font-size:0.86rem;color:var(--text-secondary);line-height:1.75;margin:0;flex:1;}
@@ -212,8 +246,12 @@
 .worship-teaser p{font-size:0.9rem;color:var(--text-secondary);line-height:1.85;margin:0 0 0.75rem;}
 .worship-teaser a{color:var(--gold);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;}
 
+@media(max-width:960px){
+  .hub-body .study-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
 @media(max-width:720px){
   .contrast-visual,.contrast-grid,.study-gallery,.geometry-showcase,.study-grid,.researcher-grid,.arch-motivation-grid{grid-template-columns:1fr;}
+  .hub-body .study-grid{grid-template-columns:1fr;}
   .geometry-showcase{gap:2rem;}
   .hub-question{padding-left:1.2rem;margin:3rem 0;}
   .study-hero{min-height:60vh;padding-top:7rem;}
