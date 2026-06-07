@@ -164,6 +164,15 @@
 .study-card h3{font-family:'Poppins',Arial,sans-serif;font-size:1.15rem;font-weight:400;color:var(--text-primary);margin:0;}
 .study-card p{font-size:0.86rem;color:var(--text-secondary);line-height:1.75;margin:0;flex:1;}
 .study-card .study-go{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);}
+.josiah-callout{background:var(--surface-light);border:0.5px solid var(--border);border-left:3px solid var(--gold);padding:1.8rem 2rem;margin:0 0 2.5rem;border-radius:0 8px 8px 0;}
+.josiah-callout h2{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.5rem,3.2vw,2.1rem);font-weight:300;line-height:1.2;margin:0 0 1rem;color:var(--text-primary) !important;}
+.josiah-callout h2 em{font-style:italic !important;color:var(--text-secondary) !important;}
+.josiah-callout p{color:var(--text-secondary);font-size:1.02rem;line-height:1.95;margin-bottom:1rem;}
+.josiah-callout p:last-child{margin-bottom:0;}
+.worship-teaser{margin:2.5rem 0;padding:1.6rem 2rem;background:rgba(91,141,184,0.05);border:0.5px solid var(--border);border-radius:8px;}
+.worship-teaser h3{font-family:'Poppins',Arial,sans-serif;font-size:1.1rem;font-weight:400;color:var(--text-primary);margin:0 0 0.6rem;}
+.worship-teaser p{font-size:0.9rem;color:var(--text-secondary);line-height:1.85;margin:0 0 0.75rem;}
+.worship-teaser a{color:var(--gold);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;}
 
 @media(max-width:720px){
   .contrast-visual,.contrast-grid,.study-gallery,.geometry-showcase,.study-grid,.researcher-grid{grid-template-columns:1fr;}

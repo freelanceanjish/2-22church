@@ -8,7 +8,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=2">
 <link rel="icon" href="favicon.ico?v=2" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=6">
 <style>
 /* OUR STORY, page specific only */
 .story-body{max-width:980px;margin:0 auto;padding:4.5rem 2rem 7rem;}
@@ -54,10 +54,25 @@
 .s-card h3 em{color:var(--gold);font-style:italic;}
 .s-card p{font-size:0.86rem;color:var(--text-muted);line-height:1.75;}
 
+.worship-anthem{margin:2.5rem 0;border:0.5px solid var(--border);border-radius:8px;overflow:hidden;background:var(--surface);}
+.worship-anthem-head{padding:1.6rem 2rem;background:var(--surface-light);border-bottom:0.5px solid var(--border);}
+.worship-anthem-head h3{font-family:'Poppins',Arial,sans-serif;font-size:1.2rem;font-weight:400;color:var(--text-primary);margin:0 0 0.5rem;}
+.worship-anthem-head p{font-size:0.88rem;color:var(--text-secondary);line-height:1.8;margin:0;}
+.worship-anthem-head a{color:var(--gold);}
+.worship-video{position:relative;padding-bottom:56.25%;height:0;background:var(--deep-mid);}
+.worship-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
+.worship-lyrics{padding:1.8rem 2rem;max-height:520px;overflow-y:auto;}
+.worship-lyrics .wl-part{margin-bottom:1.4rem;}
+.worship-lyrics .wl-label{font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.45rem;}
+.worship-lyrics p{font-family:'Poppins',Arial,sans-serif;font-size:0.92rem;font-style:italic;color:var(--text-secondary);line-height:1.85;margin:0;white-space:pre-line;}
+.worship-note{padding:1rem 2rem 1.4rem;border-top:0.5px solid var(--border-subtle);font-size:0.78rem;color:var(--text-muted);line-height:1.7;}
+.passion-prose p{color:var(--text-secondary);font-size:1.02rem;line-height:1.95;margin-bottom:1.1rem;max-width:760px;}
+.passion-prose p strong{color:var(--text-primary);font-weight:500;}
 @media(max-width:720px){
   .conclusions{grid-template-columns:1fr;}
   .story-cards{grid-template-columns:1fr;}
   .conclusion-item{gap:1rem;}
+  .worship-lyrics{padding:1.4rem 1.2rem;max-height:420px;}
 }
 </style>
 </head>
@@ -119,10 +134,21 @@
   <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
+<div class="passion-strip" role="complementary">
+  <div class="passion-strip-inner">
+    <p class="passion-strip-text"><strong>House church is the most passionate work of my life.</strong> Every page here carries soul, written to help humanity come out of religion, mainstream slavery, westernised truth, and institutional pride that binds the gospel.</p>
+    <div class="passion-strip-links">
+      <a href="our-story.html#house-church">Our burden</a>
+      <a href="study.html#josiah">Study hub</a>
+      <a href="our-story.html#shachah">Shachah</a>
+    </div>
+  </div>
+</div>
+
 <div class="page-header">
   <div class="eyebrow">Who We Are</div>
   <h1>Our <em>Story</em></h1>
-  <p>I carry these convictions with compassion for people still lost in religion and ritual, and I set them out here so you can search Scripture yourself rather than take my word for anything.</p>
+  <p>The house church movement is the most passionate project I have ever worked on. Every article on this site carries soul, with intent to help humanity come out of shadows, religion, mainstream slavery, westernised truth, theological pride, and the colonising mindset that bound the gospel in buildings and brands.</p>
 </div>
 
 <div class="story-body">
@@ -150,6 +176,27 @@
       I think it is time to turn our hearts to the truth and come out of what Scripture calls
       <strong>Babylon.</strong>
     </p>
+  </div>
+
+  <div class="story-section passion-prose" id="house-church">
+    <div class="section-label">The burden on my heart</div>
+    <h2 class="section-title">House church is not a <em>hobby.</em></h2>
+    <p>The house church movement is close to my heart because it is the most passionate work I am living for. I carry a burden to create a spiritual family around apostolic faith, not to polish another institution with a better logo. Every article here has soul, written to help sincere people come out of religion, ritual, mainstream slavery, westernised truth, theological and institutional pride, and the so called ownership of the gospel that has become a western stumbling block on which many have fallen in their pursuit of truth.</p>
+    <p>These writings express something heavier than opinion. I believe they carry the anger of the LORD, Creator of all, against those who used His name to bind humanity rather than free it. Great are the sins of people who traded the compassionate way of the LORD for control, and I say that with tears for the sincere ones still trapped inside the system, not with pride over them.</p>
+  </div>
+
+  <div class="story-section passion-prose" id="western-stumbling-block">
+    <div class="section-label">What western religion did</div>
+    <h2 class="section-title">A stumbling block dressed as <em>Jesus.</em></h2>
+    <p>Over centuries western powers presented Jesus as a means of suppressing the world's cultures, colonising nations, and ruling people by romanising the ways of the LORD. Like King Saul, religion ruined the compassionate way of the LORD while keeping the vocabulary of devotion. People were banned from understanding the nature of their own home, this earth, its ecosystem, its ways of natural healing, and simple love for the animals God called good.</p>
+    <p>Forced English education, western clothing, western worship inside expensive buildings, and a financial model sold as missions while establishers bought mansions, planes, and every earthly pleasure in the name of the LORD. That is not Shachah. That is performance with a crown still on the heart.</p>
+  </div>
+
+  <div class="story-section passion-prose" id="institutional-pride">
+    <div class="section-label">Why we rebuke pride</div>
+    <h2 class="section-title">They act as if the Book is <em>closed.</em></h2>
+    <p>Institutional pride is at its peak, as if western Christianity already knows everything in Scripture and what it thinks is the only way of the LORD. Sincere researchers are mocked or silenced when they ask whether Noah's ark, Moses's tabernacle, Solomon's temple, Heavenly Jerusalem, and our own earth were designed in the contextual references of the text rather than in flannelgraph tradition.</p>
+    <p>I will not apologize for boldness here. When wrong ways are dismissed with a smile and a stage, someone has to cry out for the people still searching. That is why 2:22 Church exists, and why the <a href="study.html">Study hub</a> showcases holy geometry as motivation to research Scripture's structures again, the same call God gave Josiah when the Book was found in the house of the LORD.</p>
   </div>
 
   <!-- The Journey -->
@@ -258,12 +305,127 @@
     </div>
   </div>
 
+  <div class="story-section" id="shachah">
+    <div class="section-label">True Worship</div>
+    <h2 class="section-title">Shachah, worship that <em>costs.</em></h2>
+    <p>We promote this anthem because its lyrics name what western religion forgot. Shachah (שָׁחָה) means to bow down, to worship. Not performance. Not emotion passing through. Face to the ground. Life poured out before the King.</p>
+    <div class="worship-anthem">
+      <div class="worship-anthem-head">
+        <h3>True Worship</h3>
+        <p>Written by <strong>Yael S. Worth</strong> / Hebrew Hahas. <a href="https://www.youtube.com/watch?v=FdJKFcVkVAQ" target="_blank" rel="noopener">Watch the original video on YouTube</a>.</p>
+      </div>
+      <div class="worship-video">
+        <iframe src="https://www.youtube.com/embed/FdJKFcVkVAQ" title="True Worship by Yael S. Worth / Hebrew Hahas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="worship-lyrics">
+        <div class="wl-part"><div class="wl-label">Verse 1</div><p>We dim the lights
+We raise the sound
+But hearts stay standing tall with crowns
+
+We sing Your Name
+Yet keep our throne
+Call it worship while we guard our own
+
+But Abraham climbed with trembling hands
+Wood and promise, mountain path
+No smoke machine, no anthem line
+Just costly trust and sacrifice</p></div>
+        <div class="wl-part"><div class="wl-label">Chorus</div><p>Shachah…
+Bow low…
+Shachah…
+Lay it down…
+Shachah
+
+Not performance
+Not emotion passing through
+Shachah
+Face to the ground
+Life poured out in front of You
+
+Let my worship cost me something
+Let obedience be my song
+Not just words inside a sanctuary
+But surrender all day long</p></div>
+        <div class="wl-part"><div class="wl-label">Verse 2</div><p>Israel danced beside the sea
+Tambourines and victory
+Then days later cursed the road
+Longing for the chains of old
+
+And I have sung with lifted hands
+While hiding idols deep within
+Mercy on this double heart
+Tear the stage performance apart</p></div>
+        <div class="wl-part"><div class="wl-label">Chorus</div><p>Shachah…
+Break pride…
+Shachah…
+Crucify…
+Shachah
+
+Not a concert
+Not a feeling manufactured
+Shachah
+Justice rolling
+Mercy walking after worship</p></div>
+        <div class="wl-part"><div class="wl-label">Bridge</div><p>Feed the hungry
+Clothe the broken
+Love the ones the world ignores
+If my songs don't move my footsteps
+Are they worship anymore?
+
+Wash the feet
+Bear the burdens
+Sit beside the grieving soul
+Open homes
+Break your bread
+Give your coat when nights are cold
+
+Change the diapers
+Do the dishes
+Serve when no one sees at all
+Hidden incense rises higher
+Than the loudest festival
+
+Cain brought leftovers
+Abel brought first
+One gave convenience
+One understood worth
+
+David cried
+"I will not bring
+What costs me nothing
+Before the King"</p></div>
+        <div class="wl-part"><div class="wl-label">Verse 3</div><p>And Yeshua bowed beneath the wood
+Perfect love and perfect good
+Every wound and every scar
+Shachah written on His heart</p></div>
+        <div class="wl-part"><div class="wl-label">Final chorus</div><p>Shachah
+Here's my life now
+Not just tears beneath a song
+Shachah
+Make me living
+Holy sacrifice alone
+
+When the music fades to silence
+And the crowds have all gone home
+May my everyday obedience
+Still bow low before Your throne
+
+Shachah…
+Bow low…
+Shachah…
+Yielded heart…
+Shachah</p></div>
+      </div>
+      <div class="worship-note">Shachah (שָׁחָה) = to bow down / worship. Credit: Yael S. Worth / Hebrew Hahas. <a href="https://www.youtube.com/watch?v=FdJKFcVkVAQ" target="_blank" rel="noopener">Original video</a>.</div>
+    </div>
+  </div>
+
   <!-- Why we share -->
   <div class="story-section">
     <div class="section-label">Why We Share This</div>
-    <h2 class="section-title">Not to argue. <em>To invite.</em></h2>
+    <h2 class="section-title">A cry to help, not a <em>debate.</em></h2>
     <p>I share these conclusions because I know there are people who have reached similar places privately and have not found others willing to say plainly what they have come to believe. If you have arrived at any of these and are looking for people who take the question seriously, you are in the right place.</p>
-    <p>Search the Scriptures for yourself. Test everything. Hold fast to what proves true.</p>
+    <p>Search the Scriptures for yourself. Test everything. Hold fast to what proves true. And if your worship has been performance, let Shachah break it open.</p>
     <div class="story-cards">
       <div class="s-card"><h3>Open <em>Tables</em></h3><p>Food, Scripture, questions, meals are the oldest fellowship the church has ever known.</p></div>
       <div class="s-card"><h3>No <em>Platform</em></h3><p>No pastor, no stage, no production; everyone contributes, the pattern of 1 Corinthians 14:26.</p></div>
