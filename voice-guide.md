@@ -37,3 +37,7 @@ Write from burden (called to speak, to gather, to pass on truth) and compassion 
 ## Read-aloud test
 
 If you would not say it to someone over tea, rewrite it. If it sounds like a blog template, a FAQ bot, or a theology brochure, rewrite it.
+
+## Do not duplicate copy
+
+Write each page with its own purpose. Do not paste the same burden paragraph, house church essay, or passion block across headers, banners, and body sections. The full personal burden lives on **Our Story** (`#house-church`). Other pages get a short, page-specific line only, or a link back to Our Story when context needs it.

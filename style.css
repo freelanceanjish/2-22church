@@ -364,19 +364,3 @@ footer .nav-logo .logo-mark{background:#fff !important;color:var(--gold) !import
   .join-form button{width:100%;}
   .queue-grid{grid-template-columns:1fr;}
 }
-
-/* Passion strip, site-wide burden statement */
-.passion-strip{background:var(--surface-light);border-bottom:0.5px solid var(--border);padding:0.9rem 2rem;}
-.passion-strip-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.85rem 1.5rem;}
-.passion-strip-text{font-size:0.82rem;color:var(--text-secondary);line-height:1.75;flex:1;min-width:min(100%,280px);margin:0;}
-.passion-strip-text strong{color:var(--text-primary);font-weight:500;}
-.passion-strip-links{display:flex;flex-wrap:wrap;gap:0.35rem 1.1rem;flex-shrink:0;}
-.passion-strip-links a{font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);text-decoration:none;white-space:nowrap;}
-.passion-strip-links a:hover{opacity:0.72;}
-.passion-strip + .study-hero,.passion-strip + .hub-hero{padding-top:7rem;}
-.passion-strip + .page-header{padding-top:6.5rem !important;}
-.passion-strip + .home-hero{padding-top:7.5rem;}
-@media(max-width:720px){
-  .passion-strip{padding:0.75rem 1.2rem;}
-  .passion-strip-text{font-size:0.78rem;}
-}
