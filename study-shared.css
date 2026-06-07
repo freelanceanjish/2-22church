@@ -17,8 +17,10 @@
 .study-hero--solid .study-hero-overlay{background:rgba(4,8,16,0.55);}
 .study-hero--readable .study-hero-bg img{filter:blur(14px) brightness(0.3) saturate(0.45);transform:translate(-50%,-50%) scale(1.2);}
 .study-hero--readable .study-hero-overlay{background:rgba(4,8,16,0.9);}
+.study-hero--video .study-hero-bg video{filter:brightness(0.55) saturate(0.85);}
+.study-hero--video .study-hero-overlay{background:rgba(4,8,16,0.72);}
 .study-hero-content{position:relative;z-index:3;color:#fff;max-width:820px;}
-.study-hero--solid .study-hero-content,.study-hero--readable .study-hero-content{
+.study-hero--solid .study-hero-content,.study-hero--readable .study-hero-content,.study-hero--video .study-hero-content{
   background:rgba(4,8,16,0.5);padding:2rem 2.4rem;border-radius:10px;
   border:0.5px solid rgba(255,255,255,0.12);backdrop-filter:blur(6px);
 }

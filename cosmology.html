@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Biblical Cosmology, 2:22 Church</title>
 <link rel="stylesheet" href="style.css?v=6">
-<link rel="stylesheet" href="study-shared.css?v=8">
+<link rel="stylesheet" href="study-shared.css?v=13">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -177,9 +177,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
-<section class="study-hero study-hero--readable">
+<section class="study-hero study-hero--video">
   <div class="study-hero-bg">
-    <img src="https://images.weserv.nl/?url=www.testingtheglobe.com/images/topbanner.jpg" alt="Biblical cosmology firmament study">
+    <video id="cosmology-hero-video" autoplay muted playsinline preload="auto" aria-hidden="true">
+      <source src="Flatearth.mp4" type="video/mp4">
+    </video>
   </div>
   <div class="study-hero-overlay"></div>
   <div class="study-hero-overlay2"></div>
@@ -586,6 +588,19 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 </footer>
 
 <script>
+(function () {
+  var video = document.getElementById('cosmology-hero-video');
+  if (!video) return;
+  var endAt = 5;
+  function loopClip() {
+    if (video.currentTime >= endAt) video.currentTime = 0;
+  }
+  video.addEventListener('loadedmetadata', function () {
+    video.currentTime = 0;
+    video.play().catch(function () {});
+  });
+  video.addEventListener('timeupdate', loopClip);
+})();
 document.addEventListener('click', function(e) {
   var menu = document.getElementById('mobile-menu');
   var hamburger = document.querySelector('.nav-hamburger');
