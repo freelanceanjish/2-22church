@@ -11,19 +11,19 @@
     <path d="M 480 400 L 480 248"/>
   </g>
 
-  <text text-anchor="middle" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#172A36">
+  <text text-anchor="middle" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="15" font-weight="500" fill="#172A36">
     <tspan x="180" y="332">Teaching</tspan>
   </text>
-  <text text-anchor="middle" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#172A36">
+  <text text-anchor="middle" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="15" font-weight="500" fill="#172A36">
     <tspan x="300" y="332">Fellowship</tspan>
   </text>
-  <text text-anchor="middle" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="11" font-weight="500" fill="#172A36">
-    <tspan x="420" y="326">Breaking</tspan>
-    <tspan x="420" dy="15">Bread</tspan>
+  <text text-anchor="middle" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="14" font-weight="500" fill="#172A36">
+    <tspan x="420" y="324">Breaking</tspan>
+    <tspan x="420" dy="17">Bread</tspan>
   </text>
-  <text text-anchor="middle" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#172A36">
+  <text text-anchor="middle" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="15" font-weight="500" fill="#172A36">
     <tspan x="540" y="332">Prayer</tspan>
   </text>
 
-  <text text-anchor="middle" x="360" y="468" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="14" font-weight="300" fill="#47545B">Acts 2:42</text>
+  <text text-anchor="middle" x="360" y="468" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="16" font-weight="300" fill="#47545B">Acts 2:42</text>
 </svg>
