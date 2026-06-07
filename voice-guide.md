@@ -4,7 +4,9 @@ Saved from author direction. Apply to every page, article, and study before publ
 
 ## Who is speaking
 
-One human voice. Conviction to write, compassion for people lost in religion, ritual, and mainstream Christianity. Written with love. No pride. No arrogance. No show-off tone.
+**We** for the church voice on most pages: study hub, home, gatherings, Q&amp;A, promoted research summaries, and site-wide banners. **I** only where the writing is personal testimony: Our Story, blogs, articles, and first-person testimony posts.
+
+One human voice behind We, with conviction to write and compassion for people lost in religion, ritual, and mainstream Christianity. Written with love. No pride. No arrogance. No show-off tone.
 
 The goal is to present facts that help genuine people in their pursuit of truth, and to lead them out of the darkness of religion, fake Christianity, performance, and lies.
 
