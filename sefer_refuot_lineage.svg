@@ -55,13 +55,13 @@
   <rect x="80" y="508" width="280" height="96" rx="4" fill="#EAF1F4" stroke="#172A36" stroke-width="1.6"/>
   <text x="220" y="546" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="600" letter-spacing="2" fill="#172A36">AYURVEDA</text>
   <text x="220" y="570" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="12" fill="#47545B">Charaka Samhita, Sushruta Samhita</text>
-  <text x="220" y="588" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="11" letter-spacing="1.5" fill="#778187">SANSKRIT ADAPTATION</text>
+  <text x="220" y="588" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="11" letter-spacing="1.5" fill="#778187">DEVANAGARI · SANSKRIT ALPHABET</text>
 
   <!-- right result: Sefer Asaph -->
   <rect x="540" y="508" width="280" height="96" rx="4" fill="#EAF1F4" stroke="#172A36" stroke-width="1.6"/>
   <text x="680" y="546" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="600" letter-spacing="2" fill="#172A36">SEFER ASAPH</text>
   <text x="680" y="570" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="12" fill="#47545B">Oldest surviving Hebrew medical text</text>
-  <text x="680" y="588" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="11" letter-spacing="1.5" fill="#778187">HEBREW PRESERVATION</text>
+  <text x="680" y="588" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="11" letter-spacing="1.5" fill="#778187">PALEO-HEBREW · ANCIENT HEBREW</text>
 
   <!-- bottom convergence note -->
   <line x1="220" y1="604" x2="220" y2="650" stroke="#778187" stroke-width="1.2" stroke-dasharray="4 4"/>

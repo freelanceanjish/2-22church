@@ -58,8 +58,13 @@
       <path d="M235 70 C253 68 263 62 269 52 C255 52 243 60 235 70 Z"/>
     </g>
 
+    <!-- Devanagari sample on palm leaf -->
+    <text x="235" y="148" text-anchor="middle" font-family="Noto Sans Devanagari, Poppins, Arial, sans-serif" font-size="15" fill="#47545B" opacity="0.72">चरक संहिता</text>
+    <text x="235" y="218" text-anchor="middle" font-family="Noto Sans Devanagari, Poppins, Arial, sans-serif" font-size="13" fill="#47545B" opacity="0.58">आयुर्वेद</text>
+    <text x="235" y="286" text-anchor="middle" font-family="Noto Sans Devanagari, Poppins, Arial, sans-serif" font-size="12" fill="#47545B" opacity="0.52">देवनागरी</text>
+
     <text x="235" y="345" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="13" letter-spacing="4" fill="#47545B">CHARAKA SAMHITA</text>
-    <text x="235" y="365" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="10" letter-spacing="2.5" fill="#778187">PALM LEAF, SANSKRIT</text>
+    <text x="235" y="365" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="10" letter-spacing="2.5" fill="#778187">DEVANAGARI · SANSKRIT ALPHABET</text>
   </g>
 
   <!-- PPPP RIGHT: Hebrew biblical scroll PPPP -->
@@ -95,8 +100,12 @@
       <line x1="788" y1="277" x2="788" y2="281"/><line x1="738" y1="277" x2="738" y2="281"/><line x1="692" y1="277" x2="692" y2="281"/>
     </g>
 
-    <text x="725" y="345" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="13" letter-spacing="4" fill="#47545B">SEFER ASAPH</text>
-    <text x="725" y="365" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="10" letter-spacing="2.5" fill="#778187">PARCHMENT SCROLL, HEBREW</text>
+    <!-- Paleo-Hebrew sample on scroll (ketav ivri) -->
+    <text x="725" y="175" text-anchor="middle" font-family="Noto Sans Phoenician, serif" font-size="20" fill="#47545B" opacity="0.72">𐤎𐤐𐤓 𐤓𐤐𐤀𐤅𐤕</text>
+    <text x="725" y="248" text-anchor="middle" font-family="Noto Sans Phoenician, serif" font-size="14" fill="#47545B" opacity="0.55">𐤎𐤐𐤓 𐤀𐤔𐤐</text>
+
+    <text x="725" y="345" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="13" letter-spacing="4" fill="#47545B">SEFER REFUOT</text>
+    <text x="725" y="365" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="10" letter-spacing="2.5" fill="#778187">PALEO-HEBREW · ANCIENT HEBREW</text>
   </g>
 
   <!-- PPPP SHARED ROOT beneath both PPPP -->
