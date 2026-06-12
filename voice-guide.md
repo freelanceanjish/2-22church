@@ -49,6 +49,19 @@ Before drafting an article or study section:
 
 If you only know the astronomy of a leap month but not what Jews and Hindus **do** during it, you are not ready to publish that section. Keep researching until the reader leaves with real knowledge, not just labels.
 
+## Timeline when comparing cultures or texts
+
+Whenever you compare Scripture, Hebrew tradition, or apostolic faith with another culture's texts, rituals, or calendars, **anchor the comparison in time**. Do not line items up side by side as if they appeared together. Show **when** each witness belongs on the line.
+
+**Why:** The reader needs to see precedence. Truth is not a tie between equal inventors. Creation, the flood, Babel, Sinai, the prophets, and Messiah sit at the centre of history. Other traditions often preserve **echoes** of what came earlier, not parallel originals.
+
+**How to do it:**
+- State approximate dates openly (e.g. post-flood Noah tradition, Mosaic Torah ~1400 BC, Rigveda range ~1600 BC onward, classical Ayurveda compilation centuries later, Second Temple scrolls, medieval Puranic layers). Note when scholars disagree.
+- Put the **biblical or Hebrew witness first** in the timeline when it is earlier or claims an earlier origin (Noah, Shem, Sinai, Job, Exodus calendar).
+- When a later text echoes an earlier pattern, say so in plain language: "India's temple rites as practised today developed **after** the worship God gave Moses at Sinai," or "the Charaka Samhita was compiled long after the post-flood book the Hebrew prologue describes."
+- Use a short prose timeline, a dated table row, or a `timeline-note` paragraph at the start of a comparison section. Do not bury dates in a footnote alone.
+- The goal is not academic one-upmanship. It is to show that the **dominant line of revelation** runs through what God spoke to Israel and fulfilled in Christ, and that other cultures often carry surviving fragments of that older memory.
+
 ## What never to do
 
 - **No dashes** in prose (no em dash, no en dash used as punctuation). Use commas, "and," or a new sentence instead.

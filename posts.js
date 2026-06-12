@@ -36,6 +36,11 @@ const POSTS = [
 
 <p>The design of that image is deliberate. The scroll on the left is rendered in <strong>Devanagari</strong>, the Sanskrit alphabet in which the classical Ayurvedic texts were written and transmitted. When the pandits composed the <em>Charaka Samhita</em> or the <em>Sushruta Samhita</em>, Devanagari was the script that carried those teachings forward across generations. The scroll on the right uses <strong>Paleo-Hebrew</strong>, the ancient alphabet scholars call <em>ketav ivri</em>, the script that predates the square Assyrian letters most people associate with Hebrew today. Before the Babylonian exile changed Judah's writing conventions, Paleo-Hebrew was the script of the Torah, of royal inscriptions, of coins, and it would have been the script of any document Noah or Shem ever wrote or preserved. Both scripts matter here because the Babel fracture was not only a fracture of spoken language. It was a fracture of writing systems, of scripts and textual traditions diverging from one another until the people who held different pieces of the same inheritance could no longer read across the divide. Showing both scrolls rooted in a single base is the argument the image is making before a word of the article is read.</p>
 
+<div class="editorial">
+  <p class="editorial-label">Timeline (approximate)</p>
+  <p>Whenever I compare these medical traditions, I force myself to put the witnesses on a line. <strong>Creation and the flood</strong> come first: Genesis sets the world in order, and Jubilees places the Book of Remedies in Noah's hands in the immediate post-flood generation, before any nation called itself India or Greece. <strong>Babel</strong> follows: one speech splits, nations scatter, and the Asaph prologue says the sages of India copied what they could into Sanskrit while Shem's line guarded the inheritance in Hebrew. <strong>Mosaic Israel (~1400 BC)</strong> receives Torah while this medical memory is still alive in the Semitic world. <strong>Classical Ayurveda</strong> arrives much later on paper: the Charaka and Sushruta Samhitas are commonly dated from roughly the last centuries BC into the early centuries AD, long after the post-flood book the Hebrew manuscripts describe. <strong>The Sefer Asaph</strong> is compiled between the third and seventh centuries AD, explicitly claiming descent from that older chain. <strong>Qumran (Second Temple era)</strong> confirms that written Noah traditions were physically real. The line does not run India to Greece to Israel. It runs heaven to Noah to Shem, fracture at Babel, then Hebrew preservation and Sanskrit adaptation. The oldest claimed origin sits at the beginning of history, not at the centre of any one nation's pride.</p>
+</div>
+
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>The Angelic Revelation: Where the Book Came From</h2>
@@ -78,7 +83,7 @@ const POSTS = [
   <span class="scripture-ref">Prologue, Sefer Asaph ha-Rofe</span>
 </div>
 
-<p>Read within this tradition, the foundational texts of Ayurveda, the <strong>Charaka Samhita</strong> and the <strong>Sushruta Samhita</strong>, composed in Sanskrit and transmitted for centuries through the Devanagari script tradition, are not wholly independent inventions. They are regional translations and adaptations, the post-flood inheritance mapped onto the native flora of the subcontinent and built into a complete and living medical system. The sages did not start from nothing. According to the Hebrew record, they worked from something that already existed, something that reached them from the same angelic commission that reached Shem.</p>
+<p>Read within this tradition, the foundational texts of Ayurveda, the <strong>Charaka Samhita</strong> and the <strong>Sushruta Samhita</strong>, composed in Sanskrit and transmitted for centuries through the Devanagari script tradition, are not wholly independent inventions. They are regional translations and adaptations, the post-flood inheritance mapped onto the native flora of the subcontinent and built into a complete and living medical system. The timeline is decisive here: the Hebrew prologue describes a book already in Shem's keeping before the nations split at Babel, while the classical Ayurvedic samhitas are compiled a millennium or more later. The sages did not start from nothing. According to the Hebrew record, they worked from something that already existed, something that reached them from the same angelic commission that reached Shem.</p>
 
 <p>What makes this more than an interesting ancient claim is that the scholarship points the same direction from the other side. Lieber's finding that Sefer Asaph is structured on an Indian organisational model is a strange conclusion for a Hebrew text to invite unless the two traditions were already in deep conversation at a level the standard history has not accounted for. Two bodies of medicine, one preserved in Hebrew and one preserved in Sanskrit, each carrying the other's fingerprints.</p>
 
@@ -162,6 +167,11 @@ const POSTS = [
 
 <p>I wish someone had walked me through this earlier, month by month and moon by moon: how the Vedic and Jewish systems actually line up, where the leap month lands in real life, and where the pattern points once you stop reading the chart for fear and start reading it for the Maker.</p>
 
+<div class="editorial">
+  <p class="editorial-label">Timeline (approximate)</p>
+  <p>The comparison only makes sense on a line. <strong>Genesis 1:14</strong> sets the lights for signs, seasons, days, and years at creation itself. <strong>Job 38:32</strong> names the <em>Mazzaroth</em> in a book most traditions treat as very ancient, long before Israel's monarchy. <strong>Exodus and the festival calendar (~1400 BC)</strong> anchor Passover, new moons, and the agricultural feasts in covenant law at Sinai. <strong>Vedic hymns</strong> may allude to lunar reckoning in the Rigveda range (commonly placed around <strong>1600–1200 BC</strong>, scholars debate), but the fully systematised <em>Jyotish</em> manuals most families consult today were composed and revised centuries later. <strong>Israel's fixed mathematical calendar</strong> reached its mature rabbinic form in the Second Temple era and after, yet it never abandoned the twelve-sign wheel the feasts already presupposed. India did not hang the constellations first. The sky was turning before Abram left Ur, and Israel's calendar was given to guard that memory in time toward Messiah.</p>
+</div>
+
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2 class="article-part-title"><span class="article-part-label">Explanation</span>Two Calendars, One Wheel Above</h2>
@@ -179,6 +189,7 @@ const POSTS = [
     </tr>
   </thead>
   <tbody>
+    <tr><td>Earliest textual witness (approx.)</td><td>Rigveda astronomical hymns (~1600–1200 BC, debated); classical <em>Jyotish</em> manuals centuries later</td><td>Job 38:32 (<em>Mazzaroth</em>); Exodus festival calendar (~1400 BC); fixed rabbinic calendar (Second Temple era onward)</td></tr>
     <tr><td>Primary term for zodiac</td><td><strong>Rashi Chakra</strong> (<span class="sanskrit-inline">राशि चक्र</span>) · wheel of signs</td><td><strong>Mazzaroth</strong> · belt of constellations (Job 38:32)</td></tr>
     <tr><td>Individual sign</td><td><strong>Rashi</strong> · constellation / sign</td><td><strong>Mazzal</strong> · constellation / destiny</td></tr>
     <tr><td>Calendar type</td><td>Luni-solar (<em>Amanta</em> or <em>Purnimanta</em> reckoning)</td><td>Luni-solar (fixed mathematical calendar)</td></tr>
@@ -362,7 +373,7 @@ const POSTS = [
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2 class="article-part-title"><span class="article-part-label">Explanation</span>Fourteen Parallels: Mosaic Root and Vedic Echo</h2>
-<p>Each topic below pairs the Hebrew pattern first (Torah and Tabernacle, from roughly <strong>1400 BC</strong> onward as Scripture records) with the Indian form that shows up in the Vedic and temple tradition (Vedic culture from around <strong>1600 BC</strong> onward, with ongoing debate). I lay them out the way I wish someone had laid them out for me.</p>
+<p>Each topic below pairs the Hebrew pattern first (Torah and Tabernacle, from roughly <strong>1400 BC</strong> onward as Scripture records) with the Indian form that shows up in the Vedic and temple tradition (Vedic culture from around <strong>1600 BC</strong> onward, with ongoing debate). I always state the timeline because precedence matters: graded sanctity, sacrifice, veil, fire, and offering are spelled out with precision in Torah as worship <strong>God gave through Moses at Sinai</strong>, while the temple forms most Hindus practise today took centuries to develop into their present shape. The Vedic <em>śruti</em> may begin forming earlier in scholarly dating, but the lived temple grammar I am comparing echoes a pattern Israel received as divine command. I lay them out the way I wish someone had laid them out for me, Hebrew witness first, Indian echo second, dates visible throughout.</p>
 
 <div class="section-block" id="parallel-01">
 <h2 class="section-heading"><span class="section-num">01</span>Graded Sanctity: Garbhagriha &amp; Holy of Holies</h2>
@@ -1008,7 +1019,10 @@ const POSTS = [
 
 <p>What strikes me is how many of these passages, read in Sanskrit and rendered faithfully into English, bear witness to Jesus Christ by name and to His vicarious death. Below, each reference appears in three layers: <strong>Devanagari</strong> (the exact Sanskrit letters), <strong>transliteration</strong> (Roman letters), and <strong>English meaning</strong>.</p>
 
-<p>These sources are written in Sanskrit. The Vedas quoted here are commonly dated between roughly 1500 and 2000 BC; the Upanishads between the 10th century and 2nd century BC, though scholarly dates vary by text and tradition.</p>
+<div class="editorial">
+  <p class="editorial-label">Timeline of witness (approximate)</p>
+  <p>These Sanskrit sources do not all speak from the same century, and they must not be read as though they appeared beside the Gospel by accident. <strong>Moses and the Torah (~1400 BC)</strong> record the Law and the promise of a prophet like Moses before Israel enters the land. <strong>The Vedic hymns</strong> quoted below sit in the usual scholarly range of roughly <strong>1500–1200 BC</strong> (dates disputed by tradition and academy alike). <strong>The Upanishads</strong> develop later, commonly placed between about <strong>800 and 200 BC</strong>. <strong>The Puranas</strong>, including passages used in witness to Christ among Hindus, are often dated to the <strong>first millennium AD</strong> in academic study, though Hindu tradition claims older layers. <strong>Christ (~AD 30)</strong> fulfills what the Law and the Prophets spoke. Read with the timeline in view: these lines are not rivals to the Gospel. They are older or parallel echoes in cultures God did not leave without light, and they find their explanation in the One who came in the fullness of time.</p>
+</div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
