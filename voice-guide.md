@@ -60,6 +60,7 @@ Whenever you compare Scripture, Hebrew tradition, or apostolic faith with anothe
 - Put the **biblical or Hebrew witness first** in the timeline when it is earlier or claims an earlier origin (Noah, Shem, Sinai, Job, Exodus calendar).
 - When a later text echoes an earlier pattern, say so in plain language: "India's temple rites as practised today developed **after** the worship God gave Moses at Sinai," or "the Charaka Samhita was compiled long after the post-flood book the Hebrew prologue describes."
 - Use a short prose timeline, a dated table row, or a `timeline-note` paragraph at the start of a comparison section. Do not bury dates in a footnote alone.
+- **Put BC/AD dates on the diagram itself**, not only in the article text. Every box, column, or stream in a cross-cultural SVG should carry an approximate date or era label (e.g. `~1400 BC`, `AD 300–700`, `post-flood ~2400 BC`) so precedence is visible at a glance.
 - The goal is not academic one-upmanship. It is to show that the **dominant line of revelation** runs through what God spoke to Israel and fulfilled in Christ, and that other cultures often carry surviving fragments of that older memory.
 
 ## Same skeleton, different object of worship (Hindu–Hebrew articles)

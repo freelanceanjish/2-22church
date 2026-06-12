@@ -32,7 +32,7 @@ const POSTS = [
 
 <p>What the oldest Hebrew medical manuscripts actually say is far stranger and more interesting than the standard story. They claim a single master text of plant-based medicine existed in the post-flood world: a document called the <strong>Sefer Refuot</strong>, the Book of Remedies. Written by Noah himself, at the instruction of an angel. Handed to Shem. Carried into the world's languages as the nations scattered from Babel. Copied, according to the Sefer Asaph, by the sages of India into what we now call Ayurveda.</p>
 
-<img src="two_scrolls_one_root.svg" alt="A Sanskrit palm-leaf manuscript and a Hebrew parchment scroll joined by a single shared root" style="width:100%;margin:2.5rem 0;border:0.5px solid rgba(23,42,54,0.14);">
+<img src="two_scrolls_one_root.svg?v=3" alt="A Sanskrit palm-leaf manuscript and a Hebrew parchment scroll joined by a single shared root" style="width:100%;margin:2.5rem 0;border:0.5px solid rgba(23,42,54,0.14);">
 
 <p>The design of that image is deliberate. The scroll on the left is rendered in <strong>Devanagari</strong>, the Sanskrit alphabet in which the classical Ayurvedic texts were written and transmitted. When the pandits composed the <em>Charaka Samhita</em> or the <em>Sushruta Samhita</em>, Devanagari was the script that carried those teachings forward across generations. The scroll on the right uses <strong>Paleo-Hebrew</strong>, the ancient alphabet scholars call <em>ketav ivri</em>, the script that predates the square Assyrian letters most people associate with Hebrew today. Before the Babylonian exile changed Judah's writing conventions, Paleo-Hebrew was the script of the Torah, of royal inscriptions, of coins, and it would have been the script of any document Noah or Shem ever wrote or preserved. Both scripts matter here because the Babel fracture was not only a fracture of spoken language. It was a fracture of writing systems, of scripts and textual traditions diverging from one another until the people who held different pieces of the same inheritance could no longer read across the divide. Showing both scrolls rooted in a single base is the argument the image is making before a word of the article is read.</p>
 
@@ -68,7 +68,7 @@ const POSTS = [
 
 <p>The Sefer Asaph itself is the most thoroughly studied witness to this tradition in Hebrew. Scholars date its compilation to somewhere between the third and seventh centuries. Eighteen known manuscripts survive, scattered across European libraries, the longest reaching roughly 250 folios. Elinor Lieber's paper in <em>Dumbarton Oaks Papers</em> 38 (1984) examined the work as a Hebrew medical encyclopedia possibly compiled on an Indian organisational model, which is a surprising conclusion for a Hebrew text unless the two traditions share deeper roots than the standard history allows. A more recent study in <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6035742/" target="_blank" rel="noopener">Aleph: Historical Studies in Science and Judaism</a> traces Persian and Indian material woven through its pages. The more carefully scholars read it, the more they find evidence of exactly the kind of cross-tradition inheritance the prologue claims.</p>
 
-<img src="sefer_refuot_lineage.svg?v=2" alt="Diagram of the transmission of Noah's Book of Remedies into Ayurveda and the Sefer Asaph" style="width:100%;margin:2.5rem 0;border:0.5px solid rgba(23,42,54,0.14);" loading="eager" decoding="async">
+<img src="sefer_refuot_lineage.svg?v=3" alt="Diagram of the transmission of Noah's Book of Remedies into Ayurveda and the Sefer Asaph" style="width:100%;margin:2.5rem 0;border:0.5px solid rgba(23,42,54,0.14);" loading="eager" decoding="async">
 
 <p>The lineage diagram makes the script split visible. One branch carries the inheritance into Sanskrit through the Devanagari alphabet, the script of the Charaka and Sushruta traditions. The other carries it through Shem into Hebrew preservation, first in Paleo-Hebrew and later in the square letters Judah adopted after exile. Same root knowledge. Two writing systems that can no longer read each other without a translator.</p>
 
@@ -242,7 +242,7 @@ const POSTS = [
 <p>Month spellings shift by region in India. I am using the common North Indian <em>panchang</em> pairing. Even where names differ, the twelve-fold map holds.</p>
 
 <div class="minimal-design" aria-label="Moon in both calendars">
-  <img src="astro-moon-primacy.svg" alt="Janma Rashi and Rosh Chodesh: both traditions centre the Moon" loading="lazy">
+  <img src="astro-moon-primacy.svg?v=3" alt="Janma Rashi and Rosh Chodesh: both traditions centre the Moon" loading="lazy">
   <p class="minimal-cap">राशि चक्र · מַזָּרוֹת · the wheel turns above · the Moon marks the month below</p>
 </div>
 
@@ -253,7 +253,7 @@ const POSTS = [
 <p>Twelve lunar months give you about <strong>354 days</strong>. A solar year is about <strong>365</strong>. That leaves a gap of roughly eleven days every year. Ignore it and Holi drifts into winter. Passover drifts with it. So both calendars add a month, and neither adds a constellation.</p>
 
 <div class="minimal-design" aria-label="Lunar-solar drift diagram">
-  <img src="astro-lunar-solar-drift.svg" alt="Diagram: 354-day lunar year vs 365-day solar year and eleven-day drift" loading="lazy">
+  <img src="astro-lunar-solar-drift.svg?v=3" alt="Diagram: 354-day lunar year vs 365-day solar year and eleven-day drift" loading="lazy">
   <p class="minimal-cap">The drift is astronomical fact · the correction is theological memory kept in time</p>
 </div>
 
@@ -278,7 +278,7 @@ const POSTS = [
 <p>Read those two columns side by side and the pattern is stronger than the math alone. India calls the insert unclean for weddings and supreme for Krishna-bhakti in the same breath. Israel calls it a court season for calendar repair and a joy season that spills into a second Purim rehearsal. Neither culture treats the thirteenth lunar period as a throwaway. Both pour meaning into it. That is what convinced me these calendars are not independent inventions that happened to agree on leap years. They are two ways of guarding the same created order: repeat one sign, heal the year, and do something worthy with the time God gives back.</p>
 
 <div class="minimal-design" aria-label="Leap month mechanism compared">
-  <img src="astro-leap-month-mechanism.svg" alt="Adhika Masa and Adar Rishon: both double one month and sign" loading="lazy">
+  <img src="astro-leap-month-mechanism.svg?v=3" alt="Adhika Masa and Adar Rishon: both double one month and sign" loading="lazy">
   <p class="minimal-cap">अधिक मास · אדר א׳ · repeat the sign, heal the year</p>
 </div>
 
@@ -384,7 +384,7 @@ const POSTS = [
 
 <div class="structure-diagram" aria-label="Three-room top view: Tabernacle and Hindu temple compared">
   <p class="structure-diagram-label">Primary structure | top view</p>
-  <img src="temple-three-rooms-topview.svg?v=2" alt="Top view floor plan: three nested rooms in Hindu temple campus and Mosaic Tabernacle or Solomon's Temple" loading="eager" decoding="async" width="960" height="560">
+  <img src="temple-three-rooms-topview.svg?v=3" alt="Top view floor plan: three nested rooms in Hindu temple campus and Mosaic Tabernacle or Solomon's Temple" loading="eager" decoding="async" width="960" height="590">
   <p class="minimal-cap"><strong>Left:</strong> prākāra (outer), maṇḍapa (middle), garbhagṛha (inner, mūrti visible). <strong>Right:</strong> Outer Court, Holy Place, Holy of Holies (Ark, no image, God unseen). Moses received this plan for the Tabernacle (~1400 BC). Solomon's Temple enlarged the same blueprint in stone.</p>
 </div>
 
