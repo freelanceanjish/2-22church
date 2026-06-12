@@ -1,5 +1,5 @@
 <svg width="100%" viewBox="0 0 960 540" role="img" xmlns="http://www.w3.org/2000/svg">
-  <title>The Lost Medical Blueprint, Noah's Book of Remedies</title>
+  <title>The Lost Medical Blueprint, Noah's Sefer Refuot (Book of Medicines)</title>
   <desc>An open ancient scroll with a healing plant growing from its centre, flanked by botanical stems, on a light parchment background.</desc>
   <rect width="960" height="540" fill="#F7F9F8"/>
   <rect x="0" y="0" width="960" height="540" fill="url(#wash)" opacity="0.5"/>
@@ -78,5 +78,6 @@
 
   <!-- caption -->
   <text x="480" y="490" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="17" letter-spacing="6" fill="#47545B">SEFER REFUOT</text>
-  <text x="480" y="514" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="11" letter-spacing="3" fill="#778187">THE BOOK OF REMEDIES</text>
+  <text x="480" y="514" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="11" letter-spacing="3" fill="#778187">THE BOOK OF MEDICINES</text>
+  <text x="480" y="532" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="9" letter-spacing="1.5" fill="#778187">sefer (book) + refuot (medicines)</text>
 </svg>
