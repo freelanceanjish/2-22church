@@ -25,14 +25,14 @@ const POSTS = [
     excerpt: "Mainstream history treats ancient medicine as isolated regional discoveries. Greece had its humors, India had Ayurveda, the Near East had folk remedies. But the oldest surviving Hebrew medical manuscripts tell a different story: a single master text of plant medicine, written by Noah himself, that the nations copied as they scattered from Babel.",
     content: `
 <p class="opening">
-  The people who wrote the oldest Hebrew medical book we possess did not think they were inventing anything. They said, plainly and in the opening lines, that they were copying something far older. Something that came through Noah.
+  The people who wrote the oldest Hebrew medical book we possess did not think they were inventing anything. In the prologue of the Sefer Asaph ha-Rofe, the Book of Asaph the Physician, they say plainly that they were copying something far older. Something that came through Noah.
 </p>
 
 <p>Mainstream history likes its origins tidy. Greece developed the Four Humors. India discovered Ayurveda. The ancient Near East got by on tribal folk remedies. Separate peoples, separate discoveries, no connection between them. That is the standard telling, and most people never think to question it.</p>
 
 <p>But buried in the oldest surviving Hebrew medical manuscripts is a different account. It claims that a single master text of plant-based medicine existed in the post-flood world: a document known as the <strong>Sefer Refuot</strong>, the Book of Remedies. And according to the records that preserve its memory, this text was written by Noah himself, at the dictation of an angel, and it became the common root behind the world's most enduring systems of holistic medicine, including Indian Ayurveda.</p>
 
-<img src="sefer_refuot_cover.svg" alt="The Sefer Refuot, Noah's Book of Remedies, an open scroll with a healing plant" style="width:100%;margin:2.5rem 0;border:0.5px solid rgba(23,42,54,0.14);">
+<img src="two_scrolls_one_root.svg" alt="A Sanskrit palm-leaf manuscript and a Hebrew parchment scroll joined by a single shared root" style="width:100%;margin:2.5rem 0;border:0.5px solid rgba(23,42,54,0.14);">
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
