@@ -425,7 +425,7 @@ const POSTS = [
   <div class="compare-col">
     <h4>Hebrew tradition</h4>
     <p>The <strong>Outer Court</strong> received Israel and the nations’ sacrifices at the bronze altar. The <strong>Holy Place</strong> (<em>Kodesh</em>) held the Menorah, the Table of Showbread, and the Altar of Incense, accessible only to officiating priests in linen.</p>
-    <p>Behind the <strong>Parochet</strong> (veil) stood the <strong>Holy of Holies</strong> (<em>Kodesh HaKodashim</em>), containing the Ark. After the golden calf, entry was restricted to the High Priest, and after the monarchy, <strong>once a year</strong> on Yom Kippur (Leviticus 16).</p>
+    <p>Behind the <strong>Parochet</strong> (veil) stood the <strong>Holy of Holies</strong> (<em>Kodesh HaKodashim</em>), containing the Ark of the Covenant. <strong>No image</strong> stood there. God forbade graven images (Exodus 20:4). The golden calf at Sinai was Israel's sin while Moses was on the mountain (Exodus 32), not tabernacle furniture. Under the Law, only the High Priest entered the inner room, and only <strong>once a year</strong> on Yom Kippur (Leviticus 16).</p>
   </div>
 </div>
 
