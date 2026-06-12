@@ -22,7 +22,7 @@ const POSTS = [
     date: "12 June 2026",
     category: "Teaching",
     image: "sefer_refuot_cover.svg",
-    excerpt: "Mainstream history treats ancient medicine as isolated regional discoveries. Greece had its humors, India had Ayurveda, the Near East had folk remedies. But the oldest surviving Hebrew medical manuscripts tell a different story: a single master text of plant medicine, written by Noah himself, that the nations copied as they scattered from Babel.",
+    excerpt: "I went back to the oldest Hebrew medical manuscripts expecting a catalogue of remedies. What I found was a genealogy tracing every prescription to Noah, an angel, and a book that fractured at Babel into Devanagari palm leaves in India and Paleo-Hebrew scrolls in Israel.",
     content: `
 <p class="opening">
   When I first read the prologue of the Sefer Asaph ha-Rofe, the oldest surviving Hebrew medical manuscript, I almost missed what it was actually saying. It opens not with a physician introducing his methods, not with a claim of discovery, but with a genealogy. The writers trace the knowledge in their hands back through a chain of named transmitters, past Shem, all the way to Noah. They were not inventing anything, they said. They were copying something older.
@@ -64,6 +64,8 @@ const POSTS = [
 <p>The Sefer Asaph itself is the most thoroughly studied witness to this tradition in Hebrew. Scholars date its compilation to somewhere between the third and seventh centuries. Eighteen known manuscripts survive, scattered across European libraries, the longest reaching roughly 250 folios. Elinor Lieber's paper in <em>Dumbarton Oaks Papers</em> 38 (1984) examined the work as a Hebrew medical encyclopedia possibly compiled on an Indian organisational model, which is a surprising conclusion for a Hebrew text unless the two traditions share deeper roots than the standard history allows. A more recent study in <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6035742/" target="_blank" rel="noopener">Aleph: Historical Studies in Science and Judaism</a> traces Persian and Indian material woven through its pages. The more carefully scholars read it, the more they find evidence of exactly the kind of cross-tradition inheritance the prologue claims.</p>
 
 <img src="sefer_refuot_lineage.svg" alt="Diagram of the transmission of Noah's Book of Remedies into Ayurveda and the Sefer Asaph" style="width:100%;margin:2.5rem 0;border:0.5px solid rgba(23,42,54,0.14);">
+
+<p>The lineage diagram makes the script split visible. One branch carries the inheritance into Sanskrit through the Devanagari alphabet, the script of the Charaka and Sushruta traditions. The other carries it through Shem into Hebrew preservation, first in Paleo-Hebrew and later in the square letters Judah adopted after exile. Same root knowledge. Two writing systems that can no longer read each other without a translator.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -353,7 +355,7 @@ const POSTS = [
   <p>I was born into Hindu culture. After I met Jesus Christ as my personal Saviour in <strong>2009</strong>, the parallels between Tabernacle ritual and the forms I had known all my life began to haunt me in the best way. In my heart I knew my people carried <strong>shadows and echoes of something real</strong>: not inventions from nothing, but traces of worship that once pointed toward the holy. Today those forms often run under the name of religion yet <strong>miss the mark of reality</strong>: the Messiah, <strong>Yeshua</strong>, whom the veil, the fire, and the offering were always meant to reveal.</p>
 </div>
 
-<p>This article moves in three parts. An <strong>introduction</strong> on chronology. An <strong>explanation</strong> of fourteen structural and ritual parallels side by side. A <strong>conclusion</strong> on what those shadows point toward. The parallels run from the sacred veil and doorpost signs to Holika Dahan, yajna, pakwan and Seder, prayer shawls, anointing, and the Ark of the Covenant carried on acacia wood.</p>
+<p>The parallels I kept finding run from the sacred veil and doorpost signs to Holika Dahan, yajna, pakwan, prayer shawls, anointing, and the Ark of the Covenant carried on acacia poles. Fourteen of them in total. Each one a ritual form in India whose counterpart Moses received at Sinai before most of the Vedic temple tradition had taken its present shape.</p>
 
 
 
@@ -380,7 +382,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Graded sanctity: public courtyard → priestly hall → one minister in the inner chamber.</p>
 
-<p>Both traditions built sacred space as a journey inward: from what is public, to what is priestly, to what only one purified minister may enter.</p>
+<p>Both traditions built sacred space as a journey inward: from what is public, to what is priestly, to what only one purified minister may enter. What struck me when I first mapped both floor plans side by side is that neither tradition treats this narrowing as mere exclusion. Every wall built closer to the centre is a wall built in mercy, keeping worshippers from rushing into a holiness they were not prepared to receive.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -420,7 +422,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">A woven barrier stands between the people and the holiest presence.</p>
 
-<p>Not everyone gets to see everything. Both traditions hang a <strong>veil</strong>, a cloth boundary between outer worship and inner mystery.</p>
+<p>Not everyone gets to see everything. I grew up walking past curtains in mandirs without ever stopping to ask what they were doing there. When I read the Tabernacle description in Exodus and found the same cloth standing between the outer court and the inner chamber, the curtain made sense for the first time. It was not decoration. It was the fabric saying in silence: what is on the other side of this is real, and you do not wander in. Both traditions hang a <strong>veil</strong>, a cloth boundary between outer worship and inner mystery.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -460,7 +462,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Holy marks on the doorframe: threshold between home and judgment, blessing and deliverance.</p>
 
-<p>Holiness does not stay inside the temple. It marks the <strong>doorpost</strong>, the place where household meets heaven.</p>
+<p>What held me reading Exodus 12 is that Israel applied the lamb's blood to the doorpost before the Passover angel came, not after. The mark was an act of faith on the threshold, a line drawn in public between this household and the world outside it. India's kumkum handprints and mango-leaf toran at weddings and house-entering ceremonies carry exactly the same instinct. Holiness does not stay inside the temple. It marks the <strong>doorpost</strong>, the place where household meets heaven.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -956,7 +958,7 @@ const POSTS = [
 
 <h2 class="article-part-title"><span class="article-part-label">Conclusion</span>Echoes of Moses, Pointers to the Messiah</h2>
 
-<p>When I weigh the chronology honestly, the picture becomes difficult to ignore. <strong>Vedic culture took shape around 1600 BC</strong>, while the Law of the Tabernacle and the Law of Moses belong, as Scripture records them, to roughly <strong>1400 BC</strong>. Graded sanctity, sacrifice, impurity and cleansing, first-fruits, doorpost signs, sacred fire, anointing, and the rest are not vague human inventions that two civilisations happened to dream up independently. They are spelled out with precision in Torah, above all in the priestly codes and in <strong>Deuteronomy</strong>, as worship the God of Israel gave through Moses. India's temple forms carry unmistakable echoes of that grammar.</p>
+<p>When I weigh the chronology, the picture becomes difficult to ignore. <strong>Vedic culture took shape around 1600 BC</strong>, while the Law of the Tabernacle and the Law of Moses belong, as Scripture records them, to roughly <strong>1400 BC</strong>. Graded sanctity, sacrifice, impurity and cleansing, first-fruits, doorpost signs, sacred fire, anointing, and the rest are not vague human inventions that two civilisations happened to dream up independently. They are spelled out with precision in Torah, above all in the priestly codes and in <strong>Deuteronomy</strong>, as worship the God of Israel gave through Moses. India's temple forms carry unmistakable echoes of that grammar.</p>
 
 <p>To me, the resemblance is <strong>very clear</strong>. The ritual notions Moses received at Sinai were carried, in fragment and shadow, into many cultures across the ancient world. Vedic temple life preserves that pattern: veil, fire, immersion, offering, procession of presence. Yet the Vedic world did <strong>not</strong> worship the God of Abraham, Isaac, and Jacob. The forms remained. The true Object of worship was lost. What survives in the shrine is not proof that India invented temple logic. It is evidence that the Creator once placed a grammar of holiness before His people, and that grammar did not stay contained in one nation.</p>
 
@@ -1134,9 +1136,9 @@ const POSTS = [
 
 <h2>Presenting Jesus to Hindu Seekers</h2>
 
-<p>These scattered but clear references to Christ can be a real help when presenting Jesus to orthodox Hindus. From there, He can be shown as the true incarnate Son of God, meeting their expectations by starting with their own scriptures.</p>
+<p>What I have found is that for someone who honours Sanskrit as a sacred language, hearing the <em>Bhavishya Purana</em> or the <em>Maha Brahmanam</em> speak of a holy Saviour who sheds blood for sin is a different kind of encounter than being handed a Western gospel tract. The journey begins in their own house. Starting from scripture they already revere and walking toward the New Testament does not feel like abandonment. It can feel like arrival.</p>
 
-<p>I have seen seekers come to the Bible and to Christ this way. They embraced Christianity through baptism and witnessed marvelously for Him. The <em>Bhavishya Purana</em> (<em>bhavishya</em> means "future") is said to be the only Purana among the eighteen that contains the name of Jesus explicitly, including material about the virgin birth of Christ.</p>
+<p>I have seen seekers come to the Bible and to Christ this way. They embraced Christianity through baptism and witnessed remarkably for Him. The <em>Bhavishya Purana</em> (<em>bhavishya</em> means "future") is said to be the only Purana among the eighteen that contains the name of Jesus explicitly, including material about the virgin birth of Christ.</p>
 
 <p>Still, the final court of appeal for every disciple remains the apostles' testimony: one God the Father, one Lord Jesus Christ, salvation through His blood, and life by faith in the gospel proclaimed in Scripture.</p>
 
@@ -1374,11 +1376,7 @@ const POSTS = [
 
   <p>The covenant was always about the stars. An eternal King, not a temporary population. A heavenly city, not a contested parcel of ground in the Middle East. The day is coming when the Seed seated at the right hand of the Father returns and the meek inherit not one strip of land but the whole renewed earth. That is the promise. It has always been the promise.</p>
 
-  <ul class="three-truths">
-    <li>Israel-the-State is a secular political entity, it cannot be a party to a covenant whose sole named heir it rejects.</li>
-    <li>Israel-the-People are those who are in the Seed: the body of Christ, drawn from every nation, defined by faith and union with Him.</li>
-    <li>The Land is the whole earth, inherited not by military conquest but when the Seed returns to claim what has always been His.</li>
-  </ul>
+  <p>The political state established in 1948 is a secular entity. It cannot be a party to a covenant whose sole named heir it rejects. Israel the people, on the other hand, is everyone who is in the Seed: the body of Christ, drawn from every nation, defined by faith and union with Him, not by descent. And the land? The land is the whole earth, which the meek will inherit not by military campaign but when the Seed returns to claim what has always been His.</p>
 </div>
     `
   },
@@ -1463,15 +1461,15 @@ const POSTS = [
     excerpt: "Open your Bible and a paradox stares back. In one verse Jesus seems to be called God. In the next chapter the same Jesus calls the Father my God. Were the apostles confused writers, or did translators slip their theology into the text?",
     image: "apostles_vs_translators.svg",
     content: `
-<p>For centuries mainstream theology has handed us a highly complex, multi-personal view of the Godhead. Jesus is God the Son, we are told. Co-equal. Co-eternal. A member of a Trinity who came down, took on human flesh, and died for humanity.</p>
+<p>For centuries mainstream theology has handed us a highly complex, multi-personal view of the Godhead: Jesus is God the Son, co-equal and co-eternal with the Father, a member of a Trinity who came down, took on human flesh, and died for humanity.</p>
 
-<p>Then you open a Bible and read the actual text. A paradox you cannot avoid. In one verse Jesus is seemingly labelled with the Greek word for God (<em>Theos</em>). In the very next chapter the same Jesus looks up to heaven and speaks of the Father as my God (Revelation 3:12).</p>
+<p>Then you open a Bible and read the actual text, and a paradox stares back. In one verse Jesus is seemingly labelled with the Greek word for God (<em>Theos</em>). In the very next chapter the same Jesus looks up to heaven and speaks of the Father as my God (Revelation 3:12).</p>
 
 <p>So which is it? Were the apostles deeply confused, contradictory writers? Or did later translators insert their own theological biases into the text?</p>
 
-<p>Strip away the modern church filters and look at the raw scriptural evidence. The answer becomes clear. The apostles were consistent. The confusion belongs to the translations.</p>
+<p>Strip away the modern church filters and look at the raw scriptural evidence, and the answer becomes clear enough: the apostles were consistent writers. It is the translations, shaped by later theological commitments, that introduced the confusion.</p>
 
-<h2>1. The Real Paul vs. The Translated Paul</h2>
+<h2>The Real Paul vs. The Translated Paul</h2>
 
 <p>Paul gets used constantly to champion the idea of a literal incarnation. Modern English Bibles translate Titus 2:13 like this: <em>"…the appearing of the glory of our great God and Savior Jesus Christ."</em></p>
 
@@ -1485,7 +1483,7 @@ const POSTS = [
 
 <p>Paul was not a confused writer. The Greek grammar of Titus 2:13 easily allows for two separate entities: <em>"…the appearing of the glory of our great God, and [the appearing] of our Savior Jesus Christ."</em> Translators choose to merge them to fit later church formulas. That is how the artificial contradiction gets created.</p>
 
-<h2>2. The Internal Clash in the Writings of John</h2>
+<h2>The Internal Clash in John's Letters</h2>
 
 <p>A similar translation issue shows up in John's letters. Standard translations of 1 John 5:20 end with a dramatic claim about Jesus: <em>"…and we are in him who is true, in his Son Jesus Christ. He is the true God and eternal life."</em></p>
 
@@ -1495,7 +1493,7 @@ const POSTS = [
 
 <p>Jesus cannot name the Father as the only true God while John simultaneously claims Jesus is the true God. The original Greek pronoun <em>houtos</em> literally means This One. In biblical Greek it routinely points back to the main subject of the paragraph, not just the nearest word. Read correctly, 1 John 5:20 means: <em>"…we are in Him who is true [the Father], by means of His Son Jesus Christ. This One [the Father] is the true God."</em> Resolve the pronoun correctly and the contradiction vanishes.</p>
 
-<h2>3. The Unchanging Apostolic Formula</h2>
+<h2>The Unchanging Apostolic Formula</h2>
 
 <p>Read the opening greetings of the actual apostolic letters. They never merge God and Jesus into a single Trinitarian entity. The hierarchy stays clear:</p>
 
@@ -1503,11 +1501,11 @@ const POSTS = [
 
 <blockquote>"James, a servant of God and of the Lord Jesus Christ…", James 1:1</blockquote>
 
-<p>The text refuses the late, post-biblical phrases coined by 4th and 5th-century church councils. God the Son. God the Holy Spirit. You will not find them here. The ultimate apostolic summary is in 1 Corinthians 8:6:</p>
+<p>The text refuses the late, post-biblical phrases coined by 4th and 5th-century church councils. You will not find "God the Son" or "God the Holy Spirit" in any apostolic letter. The ultimate apostolic summary is in 1 Corinthians 8:6:</p>
 
 <blockquote>"…yet for us there is one God, the Father, from whom are all things… and one Lord, Jesus Christ, through whom are all things…", 1 Corinthians 8:6</blockquote>
 
-<p>One God. The Father. One Lord. Jesus Christ. Two persons, named separately, in the same breath, the way every apostolic letter consistently states it.</p>
+<p>One God: the Father. One Lord: Jesus Christ. Two persons, named separately in the same breath, the way every apostolic letter consistently states it.</p>
 
 <h2>The Victory Reclaimed</h2>
 
@@ -1517,7 +1515,7 @@ const POSTS = [
 
 <blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ.", Acts 2:36</blockquote>
 
-<p>The apostles were not confused. Stop letting biased translations make them sound like they were.</p>
+<p>The apostles were not confused. Biased translations have made them sound that way for long enough.</p>
     `
   },
   {
@@ -1559,7 +1557,7 @@ const POSTS = [
 
 <p class="ljs-lead">"Before we debate what Jesus is, let us ask Jesus what he said about himself. Then we can ask each other: do you agree with him?"</p>
 
-<p>Councils, creeds, controversies. Centuries of people speaking <em>about</em> Jesus at great length. Remarkably little time spent simply listening to what Jesus said <em>about himself</em>, in plain language, recorded by those who walked with him.</p>
+<p>Councils wrote creeds, and centuries of controversy followed. People have spoken about Jesus at extraordinary length, in cathedral committees and seminary dissertations and heated Sunday school rooms. Remarkably little of that time has been spent simply listening to what Jesus said about himself, in plain language, recorded by those who walked with him.</p>
 
 <p>Below are his own words. No commentary. No theological framing. Just the man himself, speaking about who he is, who sent him, and who is greater than him.</p>
 
@@ -1638,8 +1636,7 @@ const POSTS = [
 </div>
 
 <div class="ljs-closing">
-  <p>Jesus never once said <strong>"I am the Father."</strong> He never said <strong>"I am co-equal with God."</strong> He never said <strong>"Worship me as the Most High."</strong></p>
-  <p>He said: <strong>"The Father is greater than I."</strong> He said: <strong>"My God and your God."</strong> He said: <strong>"The only true God, whom you have sent me."</strong></p>
+  <p>Jesus never once said <strong>"I am the Father,"</strong> never claimed co-equality with God, never invited worship of himself as the Most High. What he said is on record: the Father is greater than I. My God and your God. The only true God, the one who sent me. Those words did not become less clear with centuries of commentary on top of them.</p>
   <p>The simplest act of faith is to believe the man at his word.</p>
 </div>
     `
@@ -1660,9 +1657,9 @@ const POSTS = [
 
 <p>God applied this same principle throughout the Bible. He sent authorised agents, angels and his Word, to communicate with human beings. When those agents spoke, the text records it as God speaking. Not because the agent is God. Because the agent is fully carrying God's name and authority.</p>
 
-<p>Look at Exodus 23. God tells Israel to follow a certain angel through the wilderness. Then He says: "My name is in him." That is the language of authorised representation. This angel does not just know God's name. He carries it. To obey him is to obey God. To resist him is to resist God.</p>
+<p>Read Exodus 23 and the principle is explicit. God tells Israel to follow a certain angel through the wilderness, then adds: "My name is in him." That is the language of authorised representation. This angel does not just know God's name. He carries it. To obey him is to obey God. To resist him is to resist God.</p>
 
-<p>Go back to the burning bush. Read it slowly. The angel of the Lord appears in the fire. Three verses later, God is calling Moses by name from the same bush. Then it is the Lord who speaks. The text moves between the agent and God without explanation, because in the framework of divine agency there is no contradiction. Moses is not talking to two beings. He is talking to one authorised representative of the Most High, who speaks in the full name and authority of the One who sent him.</p>
+<p>Go back to the burning bush. The angel of the Lord appears in the fire. Three verses later, God is calling Moses by name from the same bush. Then it is the Lord who speaks. The text moves between the agent and God without explanation, because in the framework of divine agency there is no contradiction. Moses is not talking to two beings. He is talking to one authorised representative of the Most High, who speaks in the full name and authority of the One who sent him.</p>
 
 <p>The same pattern shows up when Abraham receives three visitors at Mamre. The text opens by saying the Lord appeared to him. Then we see three men standing there. Two of them later go to Sodom. The third stays and speaks with Abraham, and the conversation is recorded as the Lord speaking directly. Abraham understood what he was in the presence of. He bowed to the ground and served them food.</p>
 
@@ -1676,9 +1673,9 @@ const POSTS = [
 
 <blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ.", Acts 2:36</blockquote>
 
-<p>The Father made Him Lord. The Father's declaration. The Father's gift. To the glory of the Father. This is not a Trinity. This is one God who chose to reveal Himself through many agencies across many centuries, then finally through His beloved Son, whom He has appointed Lord over all nations.</p>
+<p>The Father made Him Lord, the Father's declaration and the Father's gift. This is not a Trinity. This is one God who chose to reveal Himself through many agencies across many centuries, then finally through His beloved Son, whom He has appointed Lord over all nations.</p>
 
-<p>One God. Many agents. One appointed Son. That is the story the whole Bible is telling.</p>
+<p>One God, many agents, and one appointed Son. That is the story the whole Bible is telling, from the burning bush to the throne at the right hand of the Father.</p>
     `
   },
   {
@@ -1699,7 +1696,7 @@ const POSTS = [
 
 <h2>The small dishonesties we overlook in ourselves</h2>
 
-<p>Francis then gives a list. Read it slowly. Each line is a mirror:</p>
+<p>Francis then gives a list that has functioned as a mirror for me every time I have read it:</p>
 
 <p>We find fault with our neighbour readily for small matters while we pass over great things in ourselves. We strive to sell dear and buy cheap. We are eager to deal out strict justice to others while seeking indulgence for ourselves. We expect a good construction on all we say, but we are sensitive and critical as to our neighbour's words. We want him to give us what we want when it would be more reasonable to let him keep what is his. We are vexed with him because he will not accommodate us, while perhaps he has better reason to be vexed with us for wanting to disturb him.</p>
 
@@ -1713,7 +1710,7 @@ const POSTS = [
 
 <p>The counsel Francis gives is simple. Be just and fair in all you do. Then one practical discipline: <em>always put yourself in your neighbour's place, and put him into yours, and then you will judge fairly.</em></p>
 
-<p>Sell as you would buy. Buy as you would sell. Examine your dealings with your neighbour and ask honestly: is my heart right towards him, as I would wish his to be towards me, if positions were reversed? Francis calls this <strong>the true test of reason.</strong></p>
+<p>Sell as you would buy. Buy as you would sell. Examine your dealings with your neighbour and ask plainly: is my heart right towards him, as I would wish his to be towards me, if positions were reversed? Francis calls this <strong>the true test of reason.</strong></p>
 
 <p>He closes with the Emperor Trajan, criticised for making himself too accessible to his subjects. Trajan replied: <em>"Does it not behove me to be such an emperor towards my subjects as I should myself wish to find, were I a subject?"</em> The Emperor applied to his throne the same discipline Francis applies to every ordinary transaction. Reverse the positions and see if it still seems fair.</p>
 
@@ -1727,7 +1724,7 @@ const POSTS = [
 
 <blockquote>"Whoever claims to love God yet hates a brother or sister is a liar. For whoever does not love their brother and sister, whom they have seen, cannot love God, whom they have not seen.", 1 John 4:20</blockquote>
 
-<p>Chapter 36 is not about the dramatic sins. It is about the little foxes. The double standard. The convenient judgement. The small advantage quietly taken. The test is the same one placed before every disciple: reverse the positions, and see if it still seems fair.</p>
+<p>Chapter 36 is not about the dramatic sins. It is about the little foxes: the double standard, the convenient judgement, the small advantage quietly taken. The test Francis leaves with us is the same one placed before every disciple: reverse the positions, and see if it still seems fair.</p>
 
 <div style="margin:3rem 0;padding:1.6rem 1.8rem;background:rgba(201,168,76,0.06);border:0.5px solid rgba(201,168,76,0.2);border-left:2px solid rgba(201,168,76,0.5);">
   <p style="font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:#C9A84C;margin-bottom:0.75rem;">Editorial Note</p>
@@ -1740,34 +1737,34 @@ const POSTS = [
     title: "Was Jesus God? A Biblical Examination",
     date: "22 April 2026",
     category: "Teaching",
-    excerpt: "I do not belong to any denomination, nor am I starting a cult. What follows is my verse-by-verse look at what Scripture actually says about Jesus Christ, and why the Trinitarian position, honestly read, cannot stand.",
+    excerpt: "I do not belong to any denomination, nor am I starting a cult. I am simply reading the verses everyone quotes in their original context and asking what they actually say. When you do that with an open Bible, the Trinitarian position does not hold.",
     image: "Is_Jesus_GoD.jpg",
     content: `
 <p>Let me ask you something simple. When you open any letter Paul wrote, what does the first line say about God and Jesus?</p>
 
-<p>Romans 1:7: "Grace and peace to you from God our Father and from the Lord Jesus Christ." Two persons. God our Father. The Lord Jesus Christ. Not one person called God who is also Jesus. Two persons, named separately, in the same sentence.</p>
+<p>Romans 1:7: "Grace and peace to you from God our Father and from the Lord Jesus Christ." Two persons, named separately in the same sentence: God our Father, and the Lord Jesus Christ. Not one person called God who is also Jesus.</p>
 
-<p>Read every single apostolic letter. The pattern never breaks. God is the Father. Jesus is the Son. They are distinct. The Father sends the Son. The Son prays to the Father. The Father raises the Son. The Son sits at the right hand of the Father. No apostle ever wrote that Jesus is the Father. Not once.</p>
+<p>Read every apostolic letter and the pattern never breaks. The Father sends the Son. The Son prays to the Father. The Father raises the Son. The Son sits at the right hand of the Father. God is the Father; Jesus is the Son. No apostle ever wrote that Jesus is the Father.</p>
 
 <p>So where does the idea come from that Jesus is God in the sense of being the Eternal Father?</p>
 
-<p>A handful of verses that seem, on first reading, to say something different. Let us look at the most common ones honestly.</p>
+<p>A handful of verses seem, on first reading, to say something different. Let us look at the most common ones plainly.</p>
 
-<p>John 1:1 says the Word was God. Used for centuries to argue that Jesus is fully God in the same sense as the Father. But read the same verse carefully. "The Word was with God." With God. If the Word is God in the same sense as the Father, how can the Word be with God at the same time? The Word carries divine nature and divine authority, as the Father's chief agent, without being identical to the Father. John 1:18 then answers its own question: no one has ever seen God, but the Son has made Him known. The Son reveals the Father. He is not the Father.</p>
+<p>John 1:1 says the Word was God, and this verse has been used for centuries to argue that Jesus is fully God in the same sense as the Father. But read the same verse carefully. "The Word was with God." With God. If the Word is God in the same sense as the Father, how can the Word be with God at the same time? The Word carries divine nature and divine authority, as the Father's chief agent, without being identical to the Father. John 1:18 then answers its own question: no one has ever seen God, but the Son has made Him known. The Son reveals the Father. He is not the Father.</p>
 
-<p>Thomas called Jesus "my Lord and my God" in John 20:28. A title of honour and worship, not a statement that Jesus is the Eternal Father. The same title was used of kings and masters throughout the ancient world. Thomas was not delivering a systematic theology lecture. He was overwhelmed by what he was seeing. Jesus did not say to him: correct, I am the Eternal Father. He said: blessed are those who believe without seeing.</p>
+<p>Thomas called Jesus "my Lord and my God" in John 20:28, a title of honour and worship, not a statement that Jesus is the Eternal Father. The same title was used of kings and masters throughout the ancient world. Thomas was not delivering a systematic theology lecture. He was overwhelmed by what he was seeing. Jesus did not say to him: correct, I am the Eternal Father. He said: blessed are those who believe without seeing.</p>
 
-<p>Isaiah 9:6 calls the coming child Mighty God and Everlasting Father. Throne names and governmental titles, the way ancient kings were given names that described their authority and mission. They describe what the Messiah would carry out and represent, not a claim that he is literally the Eternal Father of creation.</p>
+<p>Isaiah 9:6 calls the coming child Mighty God and Everlasting Father, which are throne names and governmental titles, the way ancient kings were given names that described their authority and mission. They describe what the Messiah would carry out and represent, not a claim that he is literally the Eternal Father of creation.</p>
 
 <p>Now look at what Scripture says directly about who made Jesus Lord.</p>
 
 <blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ.", Acts 2:36</blockquote>
 
-<p>The Father made Him Lord. Peter at Pentecost, speaking under the full power of the Spirit. The Lordship of Jesus was conferred by the Father, not self-possessed from eternity. The Father's act of exaltation after the resurrection.</p>
+<p>That is Peter at Pentecost, speaking under the full power of the Spirit. The Lordship of Jesus was conferred by the Father, not self-possessed from eternity. It was the Father's act of exaltation after the resurrection.</p>
 
 <blockquote>"Therefore God also has highly exalted Him and given Him the name which is above every name.", Philippians 2:9</blockquote>
 
-<p>God gave Him the name. God exalted Him. The Son received what the Father gave. Not the language of two co-equal persons in a Trinity. The language of a Father honouring His Son.</p>
+<p>God gave Him the name. God exalted Him. The Son received what the Father gave. This is not the language of two co-equal persons in a Trinity. It is the language of a Father honouring His Son.</p>
 
 <p>Why does any of this matter? If Jesus is the Father, then who was He praying to in Gethsemane? Who raised Him from the dead? Who does He sit beside right now? The Trinitarian answer requires increasingly complex explanations that the apostles themselves never gave.</p>
 
@@ -1775,7 +1772,7 @@ const POSTS = [
 
 <blockquote>"For there is one God and one Mediator between God and men, the Man Christ Jesus, who gave Himself a ransom for all.", 1 Timothy 2:5-6</blockquote>
 
-<p>One God. One Mediator. The Man Christ Jesus. The apostolic testimony, stated plainly, needing no Trinity to hold it together.</p>
+<p>One God and one Mediator: the Man Christ Jesus. The apostolic testimony, stated plainly, needs no Trinity to hold it together.</p>
     `
   },
 ];
