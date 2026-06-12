@@ -91,6 +91,19 @@ Write from burden (called to speak, to gather, to pass on truth) and compassion 
 
 If you would not say it to someone over tea, rewrite it. If it sounds like a blog template, a FAQ bot, or a theology brochure, rewrite it.
 
+## When a reader reports a broken image or diagram
+
+If one article asset fails on the live site, **do not fix only that file and stop**. Treat it as a site-wide quality issue.
+
+Before closing the task:
+1. Run `./scripts/check-post-assets.sh` and fix **every** missing or invalid asset referenced in `posts.js` (cover images, inline diagrams, SVGs).
+2. Validate **all** `.svg` files in the repo as well-formed UTF-8 XML (invalid bytes break rendering even when HTTP returns 200).
+3. Bump cache on the fixed asset (`?v=2`) and bump `posts.js` version in `post.html` when article content changes.
+4. Test locally with `python3 -m http.server` and confirm each broken report returns **HTTP 200** and parses as valid SVG.
+5. Note in the PR which articles were audited, not only the one the reader named.
+
+Broken diagrams are unfinished work. Ship only after the full article asset pass.
+
 ## Do not duplicate copy
 
 Write each page with its own purpose. Do not paste the same burden paragraph, house church essay, or passion block across headers, banners, and body sections. The full personal burden lives on **Our Story** (`#house-church`). Other pages get a short, page-specific line only, or a link back to Our Story when context needs it.

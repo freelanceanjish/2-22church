@@ -23,3 +23,5 @@ Read and follow **`voice-guide.md`** in the repo root before writing or editing 
 6. **Banned:** em/en dashes as punctuation; "honestly," "Look:"; instructing the reader; stacked micro-sentences; shallow parallel bullet sections; AI brochure tone.
 
 7. **Read-aloud test:** If you would not say it to someone over tea, rewrite it.
+
+8. **Broken asset = full audit.** When a reader reports a broken image or diagram, run `./scripts/check-post-assets.sh`, fix all failing assets across every article in `posts.js`, validate all SVGs as UTF-8 XML, test locally, then deploy. Never fix one file in isolation.
