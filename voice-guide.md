@@ -62,6 +62,14 @@ Whenever you compare Scripture, Hebrew tradition, or apostolic faith with anothe
 - Use a short prose timeline, a dated table row, or a `timeline-note` paragraph at the start of a comparison section. Do not bury dates in a footnote alone.
 - The goal is not academic one-upmanship. It is to show that the **dominant line of revelation** runs through what God spoke to Israel and fulfilled in Christ, and that other cultures often carry surviving fragments of that older memory.
 
+## Same skeleton, different object of worship (Hindu–Hebrew articles)
+
+In every article comparing Hebrew and Hindu (or Vedic) tradition, name the pattern plainly:
+
+- What is **built, celebrated, and narrated** often shares the same **skeleton** (three-room sanctuary, lunar calendar, sacrifice grammar, medical frame, messianic hope, and so on).
+- The decisive difference is not the outer shape. **Israel worshipped the God who cannot be seen and who dwells in heaven.** Hindu temple and popular religious life often centres on **many visible figures**, lower gods and emblems shaped like created beings.
+- End with a **coincidence question** in a `coincidence-question` block: ask the reader what **percentage** of the parallel they are willing to call coincidence, and invite them to **rethink history in search of truth**. Do not lecture. Ask.
+
 ## What never to do
 
 - **No dashes** in prose (no em dash, no en dash used as punctuation). Use commas, "and," or a new sentence instead.
