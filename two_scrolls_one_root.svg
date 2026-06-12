@@ -1,7 +1,8 @@
-<svg width="100%" viewBox="0 0 960 560" role="img" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" viewBox="0 0 960 580" role="img" xmlns="http://www.w3.org/2000/svg">
   <title>Two manuscript streams, one root</title>
   <desc>A Sanskrit palm-leaf manuscript of the Ayurvedic tradition on the left and a Hebrew biblical scroll on the right, joined beneath by a single shared root system.</desc>
-  <rect width="960" height="560" fill="#F7F9F8"/>
+  <rect width="960" height="580" fill="#F7F9F8"/>
 
   <!-- PPPP LEFT: Sanskrit palm-leaf manuscript (Ayurveda) PPPP -->
   <g>
@@ -65,6 +66,7 @@
 
     <text x="235" y="345" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="13" letter-spacing="4" fill="#47545B">CHARAKA SAMHITA</text>
     <text x="235" y="365" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="10" letter-spacing="2.5" fill="#778187">DEVANAGARI · SANSKRIT ALPHABET</text>
+    <text x="235" y="384" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="1.2" fill="#172A36">~200 BC – AD 200 · COMPILED LATER</text>
   </g>
 
   <!-- PPPP RIGHT: Hebrew biblical scroll PPPP -->
@@ -106,6 +108,7 @@
 
     <text x="725" y="345" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="13" letter-spacing="4" fill="#47545B">SEFER REFUOT</text>
     <text x="725" y="365" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="10" letter-spacing="2.5" fill="#778187">PALEO-HEBREW · ANCIENT HEBREW</text>
+    <text x="725" y="384" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="1.2" fill="#172A36">~2400 BC · POST-FLOOD · SHEM LINE</text>
   </g>
 
   <!-- PPPP SHARED ROOT beneath both PPPP -->
@@ -125,5 +128,6 @@
   <ellipse cx="480" cy="412" rx="13" ry="17" fill="#EAF1F4" stroke="#172A36" stroke-width="2"/>
   <circle cx="480" cy="412" r="4.5" fill="#172A36"/>
 
-  <text x="480" y="546" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="12" letter-spacing="5" fill="#47545B">TWO STREAMS, ONE ROOT</text>
+  <text x="480" y="538" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="1.5" fill="#172A36">ONE ROOT · NOAH'S BOOK · POST-FLOOD ~2400 BC</text>
+  <text x="480" y="562" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="12" letter-spacing="5" fill="#47545B">TWO STREAMS, ONE ROOT</text>
 </svg>

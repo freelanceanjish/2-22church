@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="320" viewBox="0 0 680 320" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="340" viewBox="0 0 680 340" role="img">
   <title>Adhika Masa and Adar Rishon compared</title>
-  <rect width="680" height="320" fill="#EEF4F7"/>
+  <rect width="680" height="340" fill="#EEF4F7"/>
   
   <text x="340" y="24" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="0.1em" fill="#172A36">THE 13TH MONTH: REPEAT A SIGN, DO NOT INVENT ONE</text>
   <line x1="340" y1="40" x2="340" y2="300" stroke="#172A36" stroke-width="1" opacity="0.15"/>
@@ -18,6 +18,7 @@
   <rect x="70" y="206" width="200" height="28" rx="3" fill="rgba(23,42,54,0.1)" stroke="#172A36" stroke-width="0.8"/>
   <text x="170" y="224" text-anchor="middle" font-size="8" fill="#172A36">Month N+1 (named twice that year)</text>
   <text x="170" y="258" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="#47545B">Astronomy flags the extra month</text>
+  <text x="170" y="276" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" fill="#172A36">CLASSICAL JYOTISH · CENTURIES BC–AD</text>
   <rect x="390" y="95" width="240" height="180" rx="6" fill="#FFF" stroke="#172A36" stroke-width="1"/>
   <text x="510" y="118" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#172A36">Metonic cycle · 7 leap years / 19 years</text>
   <rect x="410" y="130" width="200" height="28" rx="3" fill="rgba(23,42,54,0.1)" stroke="#172A36" stroke-width="0.8"/>
@@ -27,6 +28,7 @@
   <rect x="410" y="206" width="200" height="28" rx="3" fill="rgba(23,42,54,0.1)" stroke="#172A36" stroke-width="0.8"/>
   <text x="510" y="224" text-anchor="middle" font-size="8" fill="#172A36">Passover stays in spring</text>
   <text x="510" y="258" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="#47545B">Mathematics schedules the extra month</text>
-  <text x="340" y="300" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">12 signs remain · 13th month doubles one window</text>
+  <text x="510" y="276" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" fill="#172A36">EXODUS ROOT ~1400 BC · RABBINIC ERA LATER</text>
+  <text x="340" y="318" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">12 signs remain · 13th month doubles one window</text>
 
 </svg>

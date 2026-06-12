@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="320" viewBox="0 0 680 320" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="340" viewBox="0 0 680 340" role="img">
   <title>Lunar-solar drift and leap month correction</title>
-  <rect width="680" height="320" fill="#EEF4F7"/>
+  <rect width="680" height="340" fill="#EEF4F7"/>
   
   <text x="340" y="24" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="0.1em" fill="#172A36">LUNI-SOLAR DRIFT (WHY A 13TH MONTH EXISTS)</text>
   <text x="340" y="42" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">12 lunar months ≈ 354 days · solar year ≈ 365 days · gap ≈ 11 days per year</text>
@@ -20,7 +20,9 @@
   <text x="340" y="244" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#A8C4DC">Corrected by leap month · not a 13th sign</text>
   <text x="120" y="285" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="10" fill="#172A36">अधिक मास</text>
   <text x="120" y="300" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">Adhika Masa (Vedic)</text>
+  <text x="120" y="316" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" fill="#172A36">CLASSICAL JYOTISH · CENTURIES BC–AD</text>
   <text x="480" y="285" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="10" fill="#172A36">אדר א׳</text>
   <text x="480" y="300" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">Adar I (Jewish)</text>
+  <text x="480" y="316" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" fill="#172A36">EXODUS ROOT ~1400 BC · RABBINIC MATURITY LATER</text>
 
 </svg>
