@@ -80,6 +80,13 @@ must_contain "post.html inline accent #172A36" post.html "--gold:#172A36"
 must_not_contain "post.html has no dark #060C18" post.html "#060C18"
 must_not_contain "post.html has no Cormorant font link" post.html "Cormorant+Garamond"
 
+# Critical SVG assets must be well-formed XML (broken SVGs 500 on GitHub Pages)
+if python3 -c "import xml.etree.ElementTree as ET; ET.parse('temple-three-rooms-topview.svg')" 2>/dev/null; then
+  pass "temple-three-rooms-topview.svg is valid XML"
+else
+  fail "temple-three-rooms-topview.svg is not valid XML"
+fi
+
 echo
 if [[ "$failures" -gt 0 ]]; then
   echo "${failures} check(s) failed."
