@@ -95,6 +95,21 @@ const POSTS = [
 
 <p>What makes this more than an interesting ancient claim is that the scholarship points the same direction from the other side. Lieber's finding that Sefer Asaph is structured on an Indian organisational model is a strange conclusion for a Hebrew text to invite unless the two traditions were already in deep conversation at a level the standard history has not accounted for. Two bodies of medicine, one preserved in Hebrew and one preserved in Sanskrit, each carrying the other's fingerprints.</p>
 
+<h3>Samhitas are compilations, not single revelations</h3>
+
+<p>Here is something Ayurvedic scholars themselves will tell you, and it matters if you admire the herbs but were told the whole system dropped fully formed from the Vedas. The word <em>samhita</em> means collection. Most foundational Sanskrit medical books were not written once by one hand. They were taught orally, written down by a student, revised by a later redactor, and patched by scholars centuries after that. Honorary names were attached to give a text authority: divine physicians like Dhanvantari, legendary sages like Charaka. That was humility in some cases, and politics in others. Either way, the book you hold is a layered manuscript, not a single original voice.</p>
+
+<p>The <a href="https://niimh.nic.in/ebooks/ecaraka/?con=pro&amp;mod=home" target="_blank" rel="noopener">Charaka Samhita</a> is the clearest example. The tradition remembers <strong>Punarvasu Atreya</strong> teaching medicine at Taxila. His student <strong>Agnivesha</strong> wrote the original treatise, the <em>Agnivesha Tantra</em>. Generations later, <strong>Charaka</strong> heavily revised and reorganised that material into the form most practitioners know today. Still later, when portions of the text were lost, <strong>Dridhabala</strong> reconstructed the missing chapters so the book could circulate again. Four named layers, spread across centuries, before the palm-leaf copy in your archive even exists.</p>
+
+<p>The <a href="https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/" target="_blank" rel="noopener">Sushruta Samhita</a> follows the same pattern on the surgical side: teachings attributed to <strong>Sushruta</strong>, authority lent through <strong>Dhanvantari</strong>, surviving Nepalese manuscripts that do not all agree line for line, and modern critical editions that map variant folios because the text kept growing after it was first written down.</p>
+
+<div class="editorial">
+  <p class="editorial-label">What historians see inside the layers</p>
+  <p>Modern study of these manuscripts turns up <strong>interpolations</strong>, remedies and whole sections that read like later insertions when society, botany, or ritual fashion changed. Dating a single recipe to one century is often impossible because the book kept absorbing new material. Separating the earliest oral layer from medieval edits is painstaking work. None of that diminishes the living value of Ayurveda for people who are healed by it. It does demolish the simpler story that Hindu civilisation invented plant medicine in one pure burst and never touched outside sources. The Sanskrit line itself shows collection, revision, loss, and reconstruction over time.</p>
+</div>
+
+<p>Read that alongside the Hebrew prologue. The Asaph tradition says India's sages <strong>copied from books</strong> when speech split at Babel. The Charaka and Sushruta traditions, read honestly, describe <strong>editors assembling a medical collection</strong> across generations. Different origin stories on the surface. Same structural fact underneath: what we call Ayurveda on paper is a late, layered compilation built on older material that did not begin with the name on the cover. The Hebrew witness simply pushes that older material further back, to Noah, Shem, and a book heaven gave before any nation called its medicine its own.</p>
+
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>The Overlaps You Cannot Unsee</h2>
