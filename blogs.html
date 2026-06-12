@@ -4,9 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blogs, 2:22 Church</title>
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=2">
+<link rel="icon" href="favicon.ico?v=2" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+<link rel="stylesheet" href="style.css?v=6">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -115,53 +117,29 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 /* NAV DROPDOWN */
 .nav-item.open 
-/* NAV DROPDOWNS, self-contained, does not rely on style.css version */
-.nav-item{position:relative;list-style:none;}
-.nav-item>a{display:inline-flex;align-items:center;gap:4px;cursor:pointer;}
-.nav-item .caret{font-size:0.5rem;opacity:0.55;transition:transform 0.2s;display:inline-block;}
-.nav-item.open>.caret,.nav-item.open>a .caret{transform:rotate(180deg);}
-.nav-dropdown{
-  display:none;
-  position:absolute;top:calc(100% + 8px);left:50%;
-  transform:translateX(-50%);
-  background:rgba(255,255,255,0.98);
-  border:0.5px solid rgba(23,42,54,0.16);
-  min-width:170px;z-index:500;padding:0.4rem 0;
-}
-.nav-item.open .nav-dropdown{display:block;}
-.nav-dropdown a{
-  display:block;padding:0.6rem 1.2rem;
-  font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
-  color:var(--text-secondary);text-decoration:none;white-space:nowrap;transition:all 0.15s;
-}
-.nav-dropdown a:hover{color:var(--gold);background:rgba(23,42,54,0.08);}
 </style>
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="nav-logo"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-  <ul class="nav-links">
+        <ul class="nav-links">
     <li><a href="index.html#about">Home</a></li>
-    <li class="nav-item">
-      <a href="our-story.html">About <span class="caret">&#9660;</span></a>
-      <div class="nav-dropdown">
-        <a href="our-story.html">Our Story</a>
-        <a href="gatherings.html">Gatherings</a>
-      </div>
-    </li>
     <li><a href="articles.html">Articles</a></li>
     <li><a href="blogs.html" class="active">Blogs</a></li>
     <li class="nav-item">
-      <a href="cosmology.html">Study <span class="caret">&#9660;</span></a>
+      <a href="study.html">Study</a>
       <div class="nav-dropdown">
         <a href="cosmology.html">Biblical Cosmology</a>
         <a href="project314.html">God of Pi</a>
+        <a href="noahs-ark.html">Noah's Ark</a>
+        <a href="solomons-temple.html">Solomon's Temple</a>
+        <a href="heavenly-jerusalem.html">Heavenly Jerusalem</a>
         <a href="old-maps.html">Old Maps</a>
       </div>
     </li>
     <li class="nav-item">
-      <a href="references.html">Resources <span class="caret">&#9660;</span></a>
+      <a href="references.html">Resources</a>
       <div class="nav-dropdown">
         <a href="references.html#one-god">One God</a>
         <a href="references.html#short-season">Short Season</a>
@@ -174,6 +152,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
       </div>
     </li>
     <li><a href="qa.html">Q&amp;A</a></li>
+    <li><a href="our-story.html">Our Story</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
   <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
@@ -183,22 +162,25 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 <div class="mobile-menu" id="mobile-menu">
   <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
   <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
-  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
-  <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
   <a href="articles.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Articles</a>
-  <a href="blogs.html" onclick="this.closest(.mobile-menu).classList.remove(.open.)">Blogs</a>
+  <a href="blogs.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blogs</a>
+  <a href="study.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study</a>
   <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
   <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="noahs-ark.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Noah's Ark</a>
+  <a href="solomons-temple.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Solomon's Temple</a>
+  <a href="heavenly-jerusalem.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Heavenly Jerusalem</a>
   <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
   <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
+  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
 <div class="page-header">
   <div class="eyebrow">Stories of Faith</div>
   <h1>Our <em>Blogs</em></h1>
-  <p>Real encounters with God. Personal stories of breaking, restoration, and the faithfulness of Jesus Christ, from the people of 2:22 Church.</p>
+  <p>Real encounters with God, personal stories of breaking, restoration, and the faithfulness of Jesus Christ. Testimony, not theory.</p>
 </div>
 
 <div class="post-count" id="post-count"></div>
@@ -209,12 +191,26 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   <div class="empty-state" id="empty-state" style="display:none;"><p>No blogs yet, but they are coming.</p></div>
 </div>
 
+<section class="blog-queue" id="blog-queue" aria-label="Upcoming blog topics">
+  <div class="blog-queue-inner">
+    <div class="blog-queue-head">
+      <div class="eyebrow">Waiting List</div>
+      <h2>Topics <em>Coming Soon</em></h2>
+      <p>Thirteen personal reflections queued for the blog. Testimony, discipleship, and the walk of faith.</p>
+    </div>
+    <div class="queue-grid" id="queue-grid"></div>
+  </div>
+</section>
+
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-      <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
-      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
+      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching, with no walls, no hierarchy, just people.</p>
+      <div class="footer-social">
+        <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        <a href="https://www.instagram.com/2.22church" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.012-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.668-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+      </div>
     </div>
     <div class="footer-col">
       <h4>Explore</h4>
@@ -252,15 +248,31 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     </div>
   </div>
   <div class="footer-bottom">
-    <span>2025 2:22 Church · 2-22church.com</span>
+    <span>All copyrights reserved. @2-22 Church, 2026</span>
     <span class="footer-verse">"Where two or three gather in my name, there am I with them." Matthew 18:20</span>
   </div>
 </footer>
 
-<script src="posts.js"></script>
+<script src="posts.js?v=26"></script>
 <script>
+function renderQueue() {
+  var grid = document.getElementById('queue-grid');
+  if (!grid || typeof BLOG_QUEUE === 'undefined') return;
+  grid.innerHTML = BLOG_QUEUE.map(function(item) {
+    var num = item.num < 10 ? '0' + item.num : String(item.num);
+    return '<article class="queue-card">'
+      + '<div class="queue-card-top"><span class="queue-num">' + num + '</span><span class="queue-soon">Coming Soon</span></div>'
+      + '<h3>' + item.title + '</h3>'
+      + '<p>' + item.note + '</p>'
+      + '<span class="queue-tag">' + item.category + '</span>'
+      + '</article>';
+  }).join('');
+}
+
+renderQueue();
+
 // Only show Testimony category posts
-var TESTIMONIES = POSTS.filter(function(p){ return p.category === 'Testimony'; });
+var TESTIMONIES = (typeof POSTS !== 'undefined' ? POSTS : []).filter(function(p){ return p.category === 'Testimony'; });
 
 function renderTestimonies() {
   var featuredSlot = document.getElementById('featured-slot');
@@ -338,22 +350,6 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
   });
 });
 </script>
-<script>
-document.querySelectorAll('.nav-item').forEach(function(item){
-  item.querySelector(':scope>a').addEventListener('click',function(e){
-    e.preventDefault();
-    var isOpen=item.classList.contains('open');
-    document.querySelectorAll('.nav-item.open').forEach(function(el){el.classList.remove('open');});
-    if(!isOpen)item.classList.add('open');
-  });
-  item.querySelectorAll('.nav-dropdown a').forEach(function(a){
-    a.addEventListener('click',function(){item.classList.remove('open');});
-  });
-});
-document.addEventListener('click',function(e){
-  if(!e.target.closest('.nav-item'))
-    document.querySelectorAll('.nav-item.open').forEach(function(el){el.classList.remove('open');});
-});
-</script>
+
 </body>
 </html>

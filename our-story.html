@@ -4,69 +4,99 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Story - 2:22 Church</title>
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=2">
+<link rel="icon" href="favicon.ico?v=2" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+<link rel="stylesheet" href="style.css?v=6">
 <style>
 /* OUR STORY, page specific only */
-.story-body{max-width:900px;margin:0 auto;padding:5rem 2rem 8rem;}
-.story-opening{max-width:740px;margin:0 auto 5rem;text-align:center;}
-.declaration{font-size:1.15rem;color:var(--text-primary);line-height:2;margin-bottom:1.6rem;}
-.declaration strong{color:var(--gold);}
-.journey{font-size:1rem;color:var(--text-secondary);line-height:1.95;margin-bottom:1.6rem;}
-.journey strong{color:var(--text-primary);}
-.truth-line{font-family:'Poppins',Arial,sans-serif;font-size:1.4rem;font-style:italic;color:var(--gold);line-height:1.7;margin-bottom:1.6rem;}
-.babylon{font-family:'Poppins',Arial,sans-serif;font-size:1.1rem;font-style:italic;color:var(--text-primary);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);padding:1.2rem 0;margin-top:0.5rem;}
-.babylon strong{font-style:normal;color:var(--gold);}
-.story-section{margin-bottom:5.5rem;}
-.story-section h2{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:300;line-height:1.2;margin-bottom:1.2rem;}
+.story-body{max-width:980px;margin:0 auto;padding:4.5rem 2rem 7rem;}
+
+/* Opening */
+.story-opening{max-width:760px;margin:0 auto 5.5rem;text-align:center;}
+.declaration{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.3rem,2.6vw,1.7rem);font-weight:300;color:var(--text-primary);line-height:1.65;margin-bottom:1.8rem;letter-spacing:-0.01em;}
+.declaration strong{color:var(--gold);font-weight:500;}
+.journey{font-size:1.02rem;color:var(--text-secondary);line-height:1.95;margin:0 auto 2rem;max-width:660px;}
+.journey strong{color:var(--text-primary);font-weight:500;}
+.truth-line{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.25rem,2.4vw,1.55rem);font-style:italic;color:var(--gold);line-height:1.55;margin-bottom:2.2rem;}
+.babylon{font-family:'Poppins',Arial,sans-serif;font-size:1.12rem;font-style:italic;color:var(--text-primary);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);padding:1.5rem 0;margin:0 auto;max-width:560px;line-height:1.7;}
+.babylon strong{font-style:normal;color:var(--gold);font-weight:500;}
+
+/* Sections */
+.story-section{margin-bottom:5rem;}
+.story-section .section-label{margin-bottom:0.9rem;}
+.story-section h2{font-family:'Poppins',Arial,sans-serif;font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:300;line-height:1.15;letter-spacing:-0.02em;margin-bottom:1.3rem;}
 .story-section h2 em{font-style:italic;color:var(--gold);}
-.story-section p{color:var(--text-secondary);font-size:1rem;line-height:1.9;margin-bottom:1.1rem;}
-.scripture-block{background:var(--surface);border:0.5px solid var(--border);border-left:2px solid var(--gold);padding:1.6rem 2rem;margin:2rem 0;}
+.story-section>p{color:var(--text-secondary);font-size:1.02rem;line-height:1.95;margin-bottom:1.1rem;max-width:760px;}
+
+/* Scripture */
+.scripture-block{background:var(--surface);border:0.5px solid var(--border);border-left:3px solid var(--gold);border-radius:6px;padding:1.7rem 2rem;margin:2.4rem 0;}
 .scripture-ref{font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;display:block;}
-.scripture-text{font-family:'Poppins',Arial,sans-serif;font-size:1.05rem;font-style:italic;line-height:1.75;color:var(--text-primary);}
-.conclusions{margin-top:2.5rem;}
-.conclusion-item{display:flex;gap:1.5rem;align-items:flex-start;margin-bottom:2.4rem;padding-bottom:2.4rem;border-bottom:0.5px solid var(--border-subtle);}
-.conclusion-item:last-child{border-bottom:none;}
-.c-num{font-family:'Poppins',Arial,sans-serif;font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;flex-shrink:0;min-width:2rem;opacity:0.7;}
+.scripture-text{font-family:'Poppins',Arial,sans-serif;font-size:1.08rem;font-style:italic;line-height:1.75;color:var(--text-primary);}
+
+/* Conclusions, card grid */
+.conclusions{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:0.5px solid var(--border);border-radius:8px;overflow:hidden;margin-top:2.6rem;}
+.conclusion-item{display:flex;gap:1.1rem;align-items:flex-start;background:var(--surface);padding:1.8rem 1.8rem;margin:0;border:none;transition:background 0.2s;}
+.conclusion-item:hover{background:var(--surface-light);}
+.c-num{font-family:'Poppins',Arial,sans-serif;font-size:1.55rem;font-weight:300;color:var(--gold);line-height:1;flex-shrink:0;min-width:1.6rem;opacity:0.55;}
 .c-body{flex:1;}
-.c-title{font-family:'Poppins',Arial,sans-serif;font-size:1.2rem;font-weight:400;color:var(--text-primary);margin-bottom:0.4rem;line-height:1.3;}
-.c-title a{color:var(--text-primary);text-decoration:none;border-bottom:0.5px solid rgba(201,168,76,0.4);transition:color 0.2s;}
-.c-title a:hover{color:var(--gold);}
-.c-desc{font-size:0.9rem;color:var(--text-secondary);line-height:1.8;}
-.story-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--border);margin:2rem 0;}
-.s-card{background:var(--surface);padding:1.8rem 2rem;}
-.s-card h3{font-family:'Poppins',Arial,sans-serif;font-size:1.1rem;font-weight:400;color:var(--text-primary);margin-bottom:0.5rem;}
+.c-title{font-family:'Poppins',Arial,sans-serif;font-size:1.08rem;font-weight:500;color:var(--text-primary);margin-bottom:0.5rem;line-height:1.35;}
+.c-title a{color:var(--text-primary);text-decoration:none;border-bottom:0.5px solid rgba(23,42,54,0.25);transition:color 0.2s,border-color 0.2s;}
+.c-title a:hover{color:var(--gold);border-color:var(--gold);}
+.c-desc{font-size:0.88rem;color:var(--text-secondary);line-height:1.75;}
+
+/* Why we share cards */
+.story-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:0.5px solid var(--border);border-radius:8px;overflow:hidden;margin:2.4rem 0;}
+.s-card{background:var(--surface);padding:1.9rem 2rem;transition:background 0.2s;}
+.s-card:hover{background:var(--surface-light);}
+.s-card h3{font-family:'Poppins',Arial,sans-serif;font-size:1.15rem;font-weight:400;color:var(--text-primary);margin-bottom:0.55rem;}
 .s-card h3 em{color:var(--gold);font-style:italic;}
-.s-card p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;}
-@media(max-width:640px){.story-cards{grid-template-columns:1fr;}.conclusion-item{gap:1rem;}}
+.s-card p{font-size:0.86rem;color:var(--text-muted);line-height:1.75;}
+
+.worship-anthem{margin:2.5rem 0;border:0.5px solid var(--border);border-radius:8px;overflow:hidden;background:var(--surface);}
+.worship-anthem-head{padding:1.6rem 2rem;background:var(--surface-light);border-bottom:0.5px solid var(--border);}
+.worship-anthem-head h3{font-family:'Poppins',Arial,sans-serif;font-size:1.2rem;font-weight:400;color:var(--text-primary);margin:0 0 0.5rem;}
+.worship-anthem-head p{font-size:0.88rem;color:var(--text-secondary);line-height:1.8;margin:0;}
+.worship-anthem-head a{color:var(--gold);}
+.worship-video{position:relative;padding-bottom:56.25%;height:0;background:var(--deep-mid);}
+.worship-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
+.worship-lyrics{padding:1.8rem 2rem;max-height:520px;overflow-y:auto;}
+.worship-lyrics .wl-part{margin-bottom:1.4rem;}
+.worship-lyrics .wl-label{font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.45rem;}
+.worship-lyrics p{font-family:'Poppins',Arial,sans-serif;font-size:0.92rem;font-style:italic;color:var(--text-secondary);line-height:1.85;margin:0;white-space:pre-line;}
+.worship-note{padding:1rem 2rem 1.4rem;border-top:0.5px solid var(--border-subtle);font-size:0.78rem;color:var(--text-muted);line-height:1.7;}
+.passion-prose p{color:var(--text-secondary);font-size:1.02rem;line-height:1.95;margin-bottom:1.1rem;max-width:760px;}
+.passion-prose p strong{color:var(--text-primary);font-weight:500;}
+@media(max-width:720px){
+  .conclusions{grid-template-columns:1fr;}
+  .story-cards{grid-template-columns:1fr;}
+  .conclusion-item{gap:1rem;}
+  .worship-lyrics{padding:1.4rem 1.2rem;max-height:420px;}
+}
 </style>
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="nav-logo"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-  <ul class="nav-links">
+        <ul class="nav-links">
     <li><a href="index.html#about">Home</a></li>
-    <li class="nav-item">
-      <a href="our-story.html" class="active">About <span class="caret">&#9660;</span></a>
-      <div class="nav-dropdown">
-        <a href="our-story.html">Our Story</a>
-        <a href="gatherings.html">Gatherings</a>
-      </div>
-    </li>
     <li><a href="articles.html">Articles</a></li>
     <li><a href="blogs.html">Blogs</a></li>
     <li class="nav-item">
-      <a href="cosmology.html">Study <span class="caret">&#9660;</span></a>
+      <a href="study.html">Study</a>
       <div class="nav-dropdown">
         <a href="cosmology.html">Biblical Cosmology</a>
         <a href="project314.html">God of Pi</a>
+        <a href="noahs-ark.html">Noah's Ark</a>
+        <a href="solomons-temple.html">Solomon's Temple</a>
+        <a href="heavenly-jerusalem.html">Heavenly Jerusalem</a>
         <a href="old-maps.html">Old Maps</a>
       </div>
     </li>
     <li class="nav-item">
-      <a href="references.html">Resources <span class="caret">&#9660;</span></a>
+      <a href="references.html">Resources</a>
       <div class="nav-dropdown">
         <a href="references.html#one-god">One God</a>
         <a href="references.html#short-season">Short Season</a>
@@ -79,6 +109,7 @@
       </div>
     </li>
     <li><a href="qa.html">Q&amp;A</a></li>
+    <li><a href="our-story.html" class="active">Our Story</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
   <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
@@ -88,22 +119,25 @@
 <div class="mobile-menu" id="mobile-menu">
   <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
   <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
-  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
-  <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
   <a href="articles.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Articles</a>
   <a href="blogs.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blogs</a>
+  <a href="study.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study</a>
   <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
   <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="noahs-ark.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Noah's Ark</a>
+  <a href="solomons-temple.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Solomon's Temple</a>
+  <a href="heavenly-jerusalem.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Heavenly Jerusalem</a>
   <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
   <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
+  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
 <div class="page-header">
   <div class="eyebrow">Who We Are</div>
   <h1>Our <em>Story</em></h1>
-  <p>Unpopular conclusions. Firmly grounded in Scripture.</p>
+  <p>How 2:22 Church began, what we searched for, and what Scripture led us to when tradition stopped answering honest questions.</p>
 </div>
 
 <div class="story-body">
@@ -111,124 +145,281 @@
   <!-- Opening -->
   <div class="story-opening">
     <p class="declaration">
-      We are <strong>hungry for the truth</strong>, even if that places us among the minority.
-      Even if it comes down to one.
-      If there is anything more beloved to us than the Word of God,
-      it is a speck in the eye that will not allow us to see.
+      I am <strong>hungry for the truth</strong>, even when that leaves me in the minority,
+      even when it comes down to one,
+      because if anything sits closer to my heart than the Word of God
+      it is a speck in the eye keeping me from seeing.
     </p>
     <p class="journey">
-      After <strong>fifteen years</strong> following Christ across different denominations,
-      listening to international theologians, teachers, and writers,
-      researching Scripture through <strong>historical references, creeds, and primary sources</strong>,
-      and analysing events both past and present, we arrived at a conclusion
-      <strong>we did not go looking for.</strong>
+      I spent <strong>fifteen years</strong> following Christ across different denominations,
+      listening to theologians, teachers, and writers from around the world,
+      reading Scripture alongside creeds and primary sources,
+      trying to make sense of events past and present.
+      I arrived somewhere <strong>I did not go looking for.</strong>
     </p>
     <p class="truth-line">
-      As someone once said: truth is stranger than fiction.<br>Indeed it is.
+      Someone once said truth is stranger than fiction.<br>I have found that to be true.
     </p>
     <p class="babylon">
       <strong>The time is at hand.</strong>
-      Let us turn our hearts to the truth and come out of that which Scripture calls
+      I think it is time to turn our hearts to the truth and come out of what Scripture calls
       <strong>Babylon.</strong>
     </p>
+  </div>
+
+  <div class="story-section passion-prose" id="house-church">
+    <div class="section-label">The burden on my heart</div>
+    <h2 class="section-title">House church is not a <em>hobby.</em></h2>
+    <p>The house church movement is close to my heart because it is the most passionate work I am living for. I carry a burden to create a spiritual family around apostolic faith, not to polish another institution with a better logo. Every article here has soul, written to help sincere people come out of religion, ritual, mainstream slavery, westernised truth, theological and institutional pride, and the so called ownership of the gospel that has become a western stumbling block on which many have fallen in their pursuit of truth.</p>
+    <p>These writings express something heavier than opinion. I believe they carry the anger of the LORD, Creator of all, against those who used His name to bind humanity rather than free it. Great are the sins of people who traded the compassionate way of the LORD for control, and I say that with tears for the sincere ones still trapped inside the system, not with pride over them.</p>
+  </div>
+
+  <div class="story-section passion-prose" id="western-stumbling-block">
+    <div class="section-label">What western religion did</div>
+    <h2 class="section-title">A stumbling block dressed as <em>Jesus.</em></h2>
+    <p>Over centuries western powers presented Jesus as a means of suppressing the world's cultures, colonising nations, and ruling people by romanising the ways of the LORD. Like King Saul, religion ruined the compassionate way of the LORD while keeping the vocabulary of devotion. People were banned from understanding the nature of their own home, this earth, its ecosystem, its ways of natural healing, and simple love for the animals God called good.</p>
+    <p>Forced English education, western clothing, western worship inside expensive buildings, and a financial model sold as missions while establishers bought mansions, planes, and every earthly pleasure in the name of the LORD. That is not Shachah. That is performance with a crown still on the heart.</p>
+  </div>
+
+  <div class="story-section passion-prose" id="institutional-pride">
+    <div class="section-label">Why We rebuke pride</div>
+    <h2 class="section-title">They act as if the Book is <em>closed.</em></h2>
+    <p>Institutional pride is at its peak, as if western Christianity already knows everything in Scripture and what it thinks is the only way of the LORD. Sincere researchers are mocked or silenced when they ask whether Noah's ark, Moses's tabernacle, Solomon's temple, Heavenly Jerusalem, and our own earth were designed in the contextual references of the text rather than in flannelgraph tradition.</p>
+    <p>I will not apologize for boldness here. When wrong ways are dismissed with a smile and a stage, someone has to cry out for the people still searching. That is why 2:22 Church exists, and why the <a href="study.html">Study hub</a> showcases holy geometry as motivation to research Scripture's structures again, the same call God gave Josiah when the Book was found in the house of the LORD.</p>
   </div>
 
   <!-- The Journey -->
   <div class="story-section">
     <div class="section-label">The Journey</div>
     <h2 class="section-title">Fifteen years across <em>denominations.</em></h2>
-    <p>We have sat in evangelical churches, charismatic services, reformed congregations, and independent fellowships. We have listened to sermons from well-known voices and unknown teachers in small rooms. We have read the creeds, the confessions, the systematic theologies, and the apologetics.</p>
-    <p>What we found consistently was a gap. Between what the apostles wrote and what was being taught. Between what Scripture says and what tradition had settled on. Between the questions people were actually carrying and the answers the institution was equipped to give.</p>
+    <p>I sat in evangelical churches, charismatic services, reformed congregations, and independent fellowships. I listened to sermons from well-known voices and unknown teachers in small rooms. I read the creeds, the confessions, the systematic theologies, the apologetics.</p>
+    <p>What I kept finding was a gap, between what the apostles wrote and what was being taught, between what Scripture says and what tradition had settled on, between the questions people were actually carrying and the answers the institution knew how to give.</p>
     <div class="scripture-block">
       <span class="scripture-ref">Acts 17:11</span>
       <p class="scripture-text">The Bereans received the message with great eagerness and examined the Scriptures every day to see if what Paul said was true.</p>
     </div>
-    <p>These were not comfortable questions. They led to uncomfortable places. We did not choose to arrive at the conclusions listed below. We followed the evidence where it led.</p>
+    <p>These were not comfortable questions. They took me to uncomfortable places. I did not choose the conclusions listed below; I followed the evidence where it led.</p>
   </div>
 
   <!-- Progressive conclusions -->
   <div class="story-section">
     <div class="section-label">What We Found</div>
     <h2 class="section-title">Progressive conclusions <em>from Scripture.</em></h2>
-    <p>Each one took years of research, cross-referencing primary sources, and testing against the apostolic text. We hold them not as a creed to be defended, but as conclusions to be examined. Click any heading to explore the evidence.</p>
+    <p>Each one took years of cross-referencing sources and testing against the apostolic text, and I hold them not as a creed to defend but as conclusions to examine, with a link on each heading for those who want to go deeper into the evidence.</p>
     <div class="conclusions">
       <div class="conclusion-item">
         <div class="c-num">1</div>
         <div class="c-body">
           <div class="c-title"><a href="references.html#one-god">One God, Eternal Father, Almighty, Most High.</a></div>
-          <p class="c-desc">Not a Trinity of co-equal persons, but the God of Abraham, Isaac and Jacob, the Father of our Lord Jesus Christ. Every apostolic epistle declares this from its very first line.</p>
+          <p class="c-desc">Not a Trinity of co-equal persons, but the God of Abraham, Isaac, and Jacob, the Father of our Lord Jesus Christ. Every apostolic epistle declares this in its very first line.</p>
         </div>
       </div>
       <div class="conclusion-item">
         <div class="c-num">2</div>
         <div class="c-body">
           <div class="c-title"><a href="references.html#one-god">Jesus Christ is the Son of God.</a></div>
-          <p class="c-desc">Known in the New Testament as Lord, Messiah, King, Mighty God, High Priest, and the Second Adam. Distinct from the Father who sent Him, yet fully His.</p>
+          <p class="c-desc">Lord, Messiah, King, Mighty God, High Priest, Second Adam, distinct from the Father who sent Him, and yet fully His.</p>
         </div>
       </div>
       <div class="conclusion-item">
         <div class="c-num">3</div>
         <div class="c-body">
           <div class="c-title"><a href="cosmology.html">The earth is not a spinning globe.</a></div>
-          <p class="c-desc">Scripture describes a circular earth founded upon pillars, enclosed by a firmament upon which the heavenly waters rest. This is the consistent, plain testimony of the biblical text from Genesis to Revelation.</p>
+          <p class="c-desc">Scripture describes a circular earth on pillars, enclosed by a firmament with waters above, the plain testimony from Genesis to Revelation, when I read it with a sincere heart.</p>
         </div>
       </div>
       <div class="conclusion-item">
         <div class="c-num">4</div>
         <div class="c-body">
-          <div class="c-title"><a href="project314.html">The Tabernacle is circular, not rectangular.</a></div>
-          <p class="c-desc">The design God gave Moses embeds the constant Pi (3.14). It is the shadow of the actual heavenly dwelling, not a random architectural brief.</p>
+          <div class="c-title"><a href="project314.html">The Tabernacle is a dome decagon in structure, not a rectangular box.</a></div>
+          <p class="c-desc">The design God gave Moses embeds pi in the pattern. I think it is the shadow of the actual heavenly dwelling, not a random architectural brief.</p>
         </div>
       </div>
       <div class="conclusion-item">
         <div class="c-num">5</div>
         <div class="c-body">
           <div class="c-title"><a href="references.html#short-season">We are in the Short Season, not the Church Age.</a></div>
-          <p class="c-desc">The millennial reign of Yeshua on this earth ended around 250 years ago. Colonisation and world wars were attempts to destroy what once stood in glory all over the world. What history calls the Dark Ages is the disguise of the millennial age.</p>
+          <p class="c-desc">I think the millennial reign of Yeshua on this earth ended around 250 years ago, colonisation and world wars attempts to destroy what once stood in glory. What history calls the Dark Ages, I believe, is the disguise of the millennial age.</p>
         </div>
       </div>
       <div class="conclusion-item">
         <div class="c-num">6</div>
         <div class="c-body">
           <div class="c-title"><a href="references.html">Secular Israel is not the true Israel.</a></div>
-          <p class="c-desc">Not by geography, biology, or biblical explanation. The mainstream Christian community's unconditional support for the modern secular state of Israel is, by scriptural standards, unfounded.</p>
+          <p class="c-desc">Not by geography, biology, or biblical explanation, the mainstream church's unconditional support for the modern secular state does not stand up to scriptural scrutiny, as far as I can see it.</p>
         </div>
       </div>
       <div class="conclusion-item">
         <div class="c-num">7</div>
         <div class="c-body">
           <div class="c-title"><a href="references.html#articles">Current world events follow a deliberate script.</a></div>
-          <p class="c-desc">Written through media, religion, politics, and education progressively from the 17th century onward. It has been predicted more accurately by scientists and political theorists than by the church.</p>
+          <p class="c-desc">I see a pattern written through media, religion, politics, and education from the 17th century onward, scientists and political theorists have predicted it more accurately than the church has, which troubles me.</p>
         </div>
       </div>
       <div class="conclusion-item">
         <div class="c-num">8</div>
         <div class="c-body">
           <div class="c-title"><a href="references.html#articles">The 66-book canon is incomplete.</a></div>
-          <p class="c-desc">Books referenced within Scripture itself have been systematically excluded. Their exclusion serves a purpose. Their inclusion changes the picture considerably.</p>
+          <p class="c-desc">Books referenced within Scripture itself have been systematically excluded. I think that exclusion serves a purpose. Their inclusion changes the picture considerably.</p>
         </div>
       </div>
       <div class="conclusion-item">
         <div class="c-num">9</div>
         <div class="c-body">
           <div class="c-title"><a href="references.html">Western missionary Christianity is not the apostolic faith.</a></div>
-          <p class="c-desc">Shaped by colonisation, political agendas, the prosperity economy, and institutional interests. It does not meet the biblical standard on numerous counts.</p>
+          <p class="c-desc">Shaped by colonisation, political agendas, the prosperity economy, institutional interests, it does not meet the biblical standard on numerous counts, in my judgment.</p>
         </div>
       </div>
+      <div class="conclusion-item">
+        <div class="c-num">10</div>
+        <div class="c-body">
+          <div class="c-title"><a href="noahs-ark.html">Noah's ark was not a traditional giant sailing boat.</a></div>
+          <p class="c-desc">Not the ship every child draws, a shell built for survival on the flood, ventilation, stability from every side; not a hull built to navigate.</p>
+        </div>
+      </div>
+      <div class="conclusion-item">
+        <div class="c-num">11</div>
+        <div class="c-body">
+          <div class="c-title"><a href="solomons-temple.html">Solomon's First Temple (959 BC) was circular with a dome.</a></div>
+          <p class="c-desc">Not the shoebox imposed by later Babylonian memory, a circular dwelling whose glimpses align with Ezekiel's vision as Henry Sulley drew it in 1887.</p>
+        </div>
+      </div>
+      <div class="conclusion-item">
+        <div class="c-num">12</div>
+        <div class="c-body">
+          <div class="c-title"><a href="heavenly-jerusalem.html">Heavenly Jerusalem is a dome-like structure at biblical scale.</a></div>
+          <p class="c-desc">The cube on every prophecy chart never sat right with me. John's reed measures a dome-like city, wide footprint, high apex, pi in the ground, not a cold warehouse in the sky.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="story-section" id="shachah">
+    <div class="section-label">True Worship</div>
+    <h2 class="section-title">Shachah, worship that <em>costs.</em></h2>
+    <p>We promote this anthem because its lyrics name what western religion forgot. Shachah (שָׁחָה) means to bow down, to worship. Not performance. Not emotion passing through. Face to the ground. Life poured out before the King.</p>
+    <div class="worship-anthem">
+      <div class="worship-anthem-head">
+        <h3>True Worship</h3>
+        <p>Written by <strong>Yael S. Worth</strong> / Hebrew Hahas. <a href="https://www.youtube.com/watch?v=FdJKFcVkVAQ" target="_blank" rel="noopener">Watch the original video on YouTube</a>.</p>
+      </div>
+      <div class="worship-video">
+        <iframe src="https://www.youtube.com/embed/FdJKFcVkVAQ" title="True Worship by Yael S. Worth / Hebrew Hahas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="worship-lyrics">
+        <div class="wl-part"><div class="wl-label">Verse 1</div><p>We dim the lights
+We raise the sound
+But hearts stay standing tall with crowns
+
+We sing Your Name
+Yet keep our throne
+Call it worship while we guard our own
+
+But Abraham climbed with trembling hands
+Wood and promise, mountain path
+No smoke machine, no anthem line
+Just costly trust and sacrifice</p></div>
+        <div class="wl-part"><div class="wl-label">Chorus</div><p>Shachah…
+Bow low…
+Shachah…
+Lay it down…
+Shachah
+
+Not performance
+Not emotion passing through
+Shachah
+Face to the ground
+Life poured out in front of You
+
+Let my worship cost me something
+Let obedience be my song
+Not just words inside a sanctuary
+But surrender all day long</p></div>
+        <div class="wl-part"><div class="wl-label">Verse 2</div><p>Israel danced beside the sea
+Tambourines and victory
+Then days later cursed the road
+Longing for the chains of old
+
+And I have sung with lifted hands
+While hiding idols deep within
+Mercy on this double heart
+Tear the stage performance apart</p></div>
+        <div class="wl-part"><div class="wl-label">Chorus</div><p>Shachah…
+Break pride…
+Shachah…
+Crucify…
+Shachah
+
+Not a concert
+Not a feeling manufactured
+Shachah
+Justice rolling
+Mercy walking after worship</p></div>
+        <div class="wl-part"><div class="wl-label">Bridge</div><p>Feed the hungry
+Clothe the broken
+Love the ones the world ignores
+If my songs don't move my footsteps
+Are they worship anymore?
+
+Wash the feet
+Bear the burdens
+Sit beside the grieving soul
+Open homes
+Break your bread
+Give your coat when nights are cold
+
+Change the diapers
+Do the dishes
+Serve when no one sees at all
+Hidden incense rises higher
+Than the loudest festival
+
+Cain brought leftovers
+Abel brought first
+One gave convenience
+One understood worth
+
+David cried
+"I will not bring
+What costs me nothing
+Before the King"</p></div>
+        <div class="wl-part"><div class="wl-label">Verse 3</div><p>And Yeshua bowed beneath the wood
+Perfect love and perfect good
+Every wound and every scar
+Shachah written on His heart</p></div>
+        <div class="wl-part"><div class="wl-label">Final chorus</div><p>Shachah
+Here's my life now
+Not just tears beneath a song
+Shachah
+Make me living
+Holy sacrifice alone
+
+When the music fades to silence
+And the crowds have all gone home
+May my everyday obedience
+Still bow low before Your throne
+
+Shachah…
+Bow low…
+Shachah…
+Yielded heart…
+Shachah</p></div>
+      </div>
+      <div class="worship-note">Shachah (שָׁחָה) = to bow down / worship. Credit: Yael S. Worth / Hebrew Hahas. <a href="https://www.youtube.com/watch?v=FdJKFcVkVAQ" target="_blank" rel="noopener">Original video</a>.</div>
     </div>
   </div>
 
   <!-- Why we share -->
   <div class="story-section">
     <div class="section-label">Why We Share This</div>
-    <h2 class="section-title">Not to argue. <em>To invite.</em></h2>
-    <p>We share these conclusions because we know there are many individuals who have reached similar places privately and have not found others willing to say plainly what they have come to believe. If you have arrived at any of these conclusions and are looking for people who take the question seriously, you are in the right place.</p>
-    <p>Search the Scriptures for yourself. Test everything. Hold fast to what is true.</p>
+    <h2 class="section-title">A cry to help, not a <em>debate.</em></h2>
+    <p>I share these conclusions because I know there are people who have reached similar places privately and have not found others willing to say plainly what they have come to believe. If you have arrived at any of these and are looking for people who take the question seriously, you are in the right place.</p>
+    <p>Search the Scriptures for yourself. Test everything. Hold fast to what proves true. And if your worship has been performance, let Shachah break it open.</p>
     <div class="story-cards">
-      <div class="s-card"><h3>Open <em>Tables</em></h3><p>We share food, Scripture, and questions. Meals are the oldest form of fellowship the church has ever known.</p></div>
-      <div class="s-card"><h3>No <em>Platform</em></h3><p>No pastor. No stage. No production. Everyone contributes. That is the pattern of 1 Corinthians 14:26.</p></div>
-      <div class="s-card"><h3>Honest <em>Questions</em></h3><p>No question is off limits. If the truth cannot survive examination it is not worth holding.</p></div>
-      <div class="s-card"><h3>Come as you <em>are.</em></h3><p>You do not need to have arrived at all the same conclusions. You need only be serious about finding the truth.</p></div>
+      <div class="s-card"><h3>Open <em>Tables</em></h3><p>Food, Scripture, questions, meals are the oldest fellowship the church has ever known.</p></div>
+      <div class="s-card"><h3>No <em>Platform</em></h3><p>No pastor, no stage, no production; everyone contributes, the pattern of 1 Corinthians 14:26.</p></div>
+      <div class="s-card"><h3>Honest <em>Questions</em></h3><p>No question is off limits here. If the truth cannot survive examination, it is not worth holding.</p></div>
+      <div class="s-card"><h3>Come as you <em>are.</em></h3><p>You do not need to share all my conclusions. You only need to be serious about finding the truth.</p></div>
     </div>
   </div>
 
@@ -237,7 +428,7 @@
 <div style="text-align:center;padding:4rem 2rem;background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);">
   <div class="section-label" style="justify-content:center;">Connect</div>
   <h2 style="font-family:'Poppins',Arial,sans-serif;font-size:2rem;font-weight:300;margin-bottom:1rem;">Come as you <em style="color:var(--gold);font-style:italic;">are.</em></h2>
-  <p style="color:var(--text-secondary);max-width:480px;margin:0 auto 2rem;line-height:1.8;">If this resonates, reach out. We are ordinary people who found the living Word and could not look away.</p>
+  <p style="color:var(--text-secondary);max-width:480px;margin:0 auto 2rem;line-height:1.8;">If any of this resonates, reach out. I am an ordinary man who found the living Word and could not look away.</p>
   <a href="index.html#join" class="btn-primary">Connect With Us</a>
 </div>
 
@@ -245,8 +436,11 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-      <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
-      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
+      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching, with no walls, no hierarchy, just people.</p>
+      <div class="footer-social">
+        <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        <a href="https://www.instagram.com/2.22church" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.012-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.668-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+      </div>
     </div>
     <div class="footer-col">
       <h4>Explore</h4>
@@ -285,7 +479,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>2025 2:22 Church · 2-22church.com</span>
+    <span>All copyrights reserved. @2-22 Church, 2026</span>
     <span class="footer-verse">"Where two or three gather in my name, there am I with them." Matthew 18:20</span>
   </div>
 </footer>

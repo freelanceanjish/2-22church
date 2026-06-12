@@ -4,7 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resources, 2:22 Church</title>
-<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=2">
+<link rel="icon" href="favicon.ico?v=2" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+<link rel="stylesheet" href="style.css?v=6">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -141,27 +145,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 
 /* NAV DROPDOWN */
-.nav-item.open /* FOOTER */
-footer{background:var(--deep-mid);border-top:0.5px solid var(--border-subtle);padding:4rem 2rem 2.5rem;}
-.footer-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:0.5px solid var(--border-subtle);}
-.footer-brand p{font-size:0.85rem;color:var(--text-muted);line-height:1.75;max-width:260px;margin-top:0.75rem;}
-.footer-yt{display:inline-block;margin-bottom:0.75rem;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;}
-.footer-col h4{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;}
-.footer-col ul{list-style:none;}
-.footer-col ul li{margin-bottom:0.65rem;}
-.footer-col ul li a{font-size:0.85rem;color:var(--text-muted);text-decoration:none;transition:color 0.2s;}
-.footer-col ul li a:hover{color:var(--gold);}
-.footer-bottom{max-width:1100px;margin:2rem auto 0;display:flex;align-items:center;justify-content:space-between;font-size:0.78rem;color:var(--text-muted);flex-wrap:wrap;gap:0.5rem;}
-.footer-verse{font-family:'Poppins',Arial,sans-serif;font-style:italic;font-size:0.85rem;color:var(--text-muted);}
-@media(max-width:860px){
-  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}
-  .footer-brand{grid-column:1/-1;}
-  .footer-bottom{flex-direction:column;gap:0.5rem;text-align:center;}
-}
-@media(max-width:600px){.footer-grid{grid-template-columns:1fr;}}
-
-
-/* Prevent browser default blue links */
+.nav-item.open 
 a{color:inherit;text-decoration:none;}
 .channel-card{color:var(--text-primary);}
 .channel-card *{color:inherit;}
@@ -171,53 +155,29 @@ a{color:inherit;text-decoration:none;}
 .channel-card .ch-arrow{color:var(--gold) !important;}
 
 
-/* NAV DROPDOWNS, self-contained, does not rely on style.css version */
-.nav-item{position:relative;list-style:none;}
-.nav-item>a{display:inline-flex;align-items:center;gap:4px;cursor:pointer;}
-.nav-item .caret{font-size:0.5rem;opacity:0.55;transition:transform 0.2s;display:inline-block;}
-.nav-item.open>.caret,.nav-item.open>a .caret{transform:rotate(180deg);}
-.nav-dropdown{
-  display:none;
-  position:absolute;top:calc(100% + 8px);left:50%;
-  transform:translateX(-50%);
-  background:rgba(255,255,255,0.98);
-  border:0.5px solid rgba(23,42,54,0.16);
-  min-width:170px;z-index:500;padding:0.4rem 0;
-}
-.nav-item.open .nav-dropdown{display:block;}
-.nav-dropdown a{
-  display:block;padding:0.6rem 1.2rem;
-  font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
-  color:var(--text-secondary);text-decoration:none;white-space:nowrap;transition:all 0.15s;
-}
-.nav-dropdown a:hover{color:var(--gold);background:rgba(23,42,54,0.08);}
 </style>
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="nav-logo"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-  <ul class="nav-links">
+        <ul class="nav-links">
     <li><a href="index.html#about">Home</a></li>
-    <li class="nav-item">
-      <a href="our-story.html">About <span class="caret">&#9660;</span></a>
-      <div class="nav-dropdown">
-        <a href="our-story.html">Our Story</a>
-        <a href="gatherings.html">Gatherings</a>
-      </div>
-    </li>
     <li><a href="articles.html">Articles</a></li>
     <li><a href="blogs.html">Blogs</a></li>
     <li class="nav-item">
-      <a href="cosmology.html">Study <span class="caret">&#9660;</span></a>
+      <a href="study.html">Study</a>
       <div class="nav-dropdown">
         <a href="cosmology.html">Biblical Cosmology</a>
         <a href="project314.html">God of Pi</a>
+        <a href="noahs-ark.html">Noah's Ark</a>
+        <a href="solomons-temple.html">Solomon's Temple</a>
+        <a href="heavenly-jerusalem.html">Heavenly Jerusalem</a>
         <a href="old-maps.html">Old Maps</a>
       </div>
     </li>
     <li class="nav-item">
-      <a href="references.html" class="active">Resources <span class="caret">&#9660;</span></a>
+      <a href="references.html" class="active">Resources</a>
       <div class="nav-dropdown">
         <a href="references.html#one-god">One God</a>
         <a href="references.html#short-season">Short Season</a>
@@ -230,6 +190,7 @@ a{color:inherit;text-decoration:none;}
       </div>
     </li>
     <li><a href="qa.html">Q&amp;A</a></li>
+    <li><a href="our-story.html">Our Story</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
   <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
@@ -239,22 +200,25 @@ a{color:inherit;text-decoration:none;}
 <div class="mobile-menu" id="mobile-menu">
   <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
   <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
-  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
-  <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
   <a href="articles.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Articles</a>
   <a href="blogs.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blogs</a>
+  <a href="study.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study</a>
   <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
   <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="noahs-ark.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Noah's Ark</a>
+  <a href="solomons-temple.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Solomon's Temple</a>
+  <a href="heavenly-jerusalem.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Heavenly Jerusalem</a>
   <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
   <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
+  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
 <div class="page-header">
   <div class="eyebrow">Further Study</div>
   <h1>Resources &amp; <em>References</em></h1>
-  <p>A curated collection of podcasts, channels, articles and research aligned with the apostolic, One God faith at the heart of 2:22 Church. Search the Scriptures for yourself.</p>
+  <p>Podcasts, channels, articles, and research that helped us on the road to apostolic faith. Starting points, not substitutes.</p>
 </div>
 
 <div class="ref-body">
@@ -272,19 +236,19 @@ a{color:inherit;text-decoration:none;}
         <a href="https://www.youtube.com/@billschlegel1/" target="_blank" rel="noopener" class="channel-card">
           <span class="ch-name">One God Report</span>
           <span class="ch-handle">Bill Schlegel · @billschlegel1</span>
-          <p class="ch-desc">Scriptural teaching on the One God of Israel and the true identity of Yeshua the Messiah. Deep exegesis, accessible delivery.</p>
+          <p class="ch-desc">Scriptural teaching on the One God of Israel and the true identity of Yeshua the Messiah. Deep exegesis delivered in a way you can actually follow.</p>
           <span class="ch-arrow">Watch on YouTube</span>
         </a>
         <a href="https://www.youtube.com/@21stOneGod" target="_blank" rel="noopener" class="channel-card">
           <span class="ch-name">21st Century Reformation</span>
           <span class="ch-handle">@21stOneGod</span>
-          <p class="ch-desc">Apostolic One God theology and the reformation of doctrines shaped by tradition rather than Scripture.</p>
+          <p class="ch-desc">Apostolic One God theology and a call to reform doctrines that tradition shaped instead of Scripture.</p>
           <span class="ch-arrow">Watch on YouTube</span>
         </a>
         <a href="https://www.youtube.com/@biblicalunitarian" target="_blank" rel="noopener" class="channel-card" style="grid-column:1/-1;">
           <span class="ch-name">Biblical Unitarian</span>
           <span class="ch-handle">@biblicalunitarian</span>
-          <p class="ch-desc">Careful biblical scholarship making the case that Scripture teaches One God and that the Trinitarian formulation is a later doctrinal development, not apostolic teaching.</p>
+          <p class="ch-desc">Careful biblical scholarship arguing that Scripture teaches One God and that the Trinitarian formulation is a later doctrinal development, not apostolic teaching.</p>
           <span class="ch-arrow">Watch on YouTube</span>
         </a>
       </div>
@@ -300,25 +264,25 @@ a{color:inherit;text-decoration:none;}
         <a href="https://www.youtube.com/@LeavingBabylon_" target="_blank" rel="noopener" class="channel-card">
           <span class="ch-name">Leaving Babylon</span>
           <span class="ch-handle">@LeavingBabylon_</span>
-          <p class="ch-desc">End-times discernment, coming out of religious systems, and preparing for the short season before the return of the Messiah.</p>
+          <p class="ch-desc">End-times discernment, coming out of religious systems, and preparing for the short season before the Messiah returns.</p>
           <span class="ch-arrow">Watch on YouTube</span>
         </a>
         <a href="https://www.leavingbabylon.ca" target="_blank" rel="noopener" class="channel-card">
           <span class="ch-name">Leaving Babylon</span>
           <span class="ch-handle">leavingbabylon.ca</span>
-          <p class="ch-desc">The companion website to the YouTube channel. Articles, resources and deeper study materials on coming out of Babylon and walking in the truth.</p>
+          <p class="ch-desc">The companion website to the YouTube channel. Articles, resources, and deeper study materials on coming out of Babylon and walking in the truth.</p>
           <span class="ch-arrow">Visit Website</span>
         </a>
         <a href="https://www.youtube.com/@JasonJack" target="_blank" rel="noopener" class="channel-card">
           <span class="ch-name">Jason Jack</span>
           <span class="ch-handle">@JasonJack</span>
-          <p class="ch-desc">Scripture-based prophetic teaching on the times we are living in and the end of the age.</p>
+          <p class="ch-desc">Scripture-based prophetic teaching on the times we are living in and what the end of the age actually looks like.</p>
           <span class="ch-arrow">Watch on YouTube</span>
         </a>
         <a href="https://www.youtube.com/@jtfollowsjc" target="_blank" rel="noopener" class="channel-card">
           <span class="ch-name">JT Follows JC</span>
           <span class="ch-handle">@jtfollowsjc</span>
-          <p class="ch-desc">Christ follower, content creator and podcaster exploring biblical truth, end-times discernment, hidden history and Satan's little season.</p>
+          <p class="ch-desc">A Christ follower, content creator, and podcaster exploring biblical truth, end-times discernment, hidden history, and Satan's little season.</p>
           <span class="ch-arrow">Watch on YouTube</span>
         </a>
       </div>
@@ -334,7 +298,7 @@ a{color:inherit;text-decoration:none;}
         <div>
           <div class="fr-label">2:22 Church</div>
           <div class="fr-title">Biblical Cosmology Page</div>
-          <p class="fr-desc">Our dedicated page on the firmament, the circle of the earth, the fixed creation and the sun and moon inside the dome, drawn from Rob Skiba's scripture-only research at testingtheglobe.com.</p>
+          <p class="fr-desc">Our dedicated page on the firmament, the circle of the earth, the fixed creation, and the sun and moon inside the dome. Drawn from Rob Skiba's scripture-only research at testingtheglobe.com.</p>
         </div>
         <span class="fr-arrow">→</span>
       </a>
@@ -342,13 +306,13 @@ a{color:inherit;text-decoration:none;}
         <a href="https://www.youtube.com/@HangingOnHisWords" target="_blank" rel="noopener" class="channel-card">
           <span class="ch-name">Hanging on His Words</span>
           <span class="ch-handle">@HangingOnHisWords</span>
-          <p class="ch-desc">Scripture-first research into Biblical cosmology. Detailed Hebrew word studies and honest engagement with what the text actually says about the earth and the heavens.</p>
+          <p class="ch-desc">Scripture-first research into Biblical cosmology. Detailed Hebrew word studies and an honest reckoning with what the text actually says about the earth and the heavens.</p>
           <span class="ch-arrow">Watch on YouTube</span>
         </a>
         <a href="https://www.youtube.com/@DITRH" target="_blank" rel="noopener" class="channel-card">
           <span class="ch-name">DITRH</span>
           <span class="ch-handle">@DITRH</span>
-          <p class="ch-desc">Deep investigative research into Biblical earth cosmology, history and the nature of the firmament. Documentary-style content backed by scriptural and historical sources.</p>
+          <p class="ch-desc">Deep investigative research into Biblical earth cosmology, history, and the nature of the firmament. Documentary-style content backed by scriptural and historical sources.</p>
           <span class="ch-arrow">Watch on YouTube</span>
         </a>
       </div>
@@ -365,7 +329,7 @@ a{color:inherit;text-decoration:none;}
           <div>
             <div class="pod-title">One God Report</div>
             <span class="pod-src">Apple Podcasts · William Schlegel</span>
-            <p class="pod-desc">A focused examination of Unitarian theology, apostolic teaching and the biblical case for One God.</p>
+            <p class="pod-desc">A focused examination of Unitarian theology, apostolic teaching, and the biblical case for One God.</p>
           </div>
           <span class="pod-arrow">→</span>
         </a>
@@ -373,7 +337,7 @@ a{color:inherit;text-decoration:none;}
           <div>
             <div class="pod-title">Unitarian Christian Podcast</div>
             <span class="pod-src">unitarianchristianalliance.org · Unitarian Christian Alliance</span>
-            <p class="pod-desc">Conversations on the biblical, historical and theological case for Unitarian Christianity.</p>
+            <p class="pod-desc">Conversations on the biblical, historical, and theological case for Unitarian Christianity.</p>
           </div>
           <span class="pod-arrow">→</span>
         </a>
@@ -391,7 +355,7 @@ a{color:inherit;text-decoration:none;}
           <div>
             <div class="pod-title">Is the God of the Bible the Father Alone?</div>
             <span class="pod-src">Dr. Dale Tuggy (Biblical Unitarian) vs. Dr. Michael Brown (Trinitarian)</span>
-            <p class="pod-desc">A direct debate on whether the Father alone is the one God of Scripture. Tuggy defends the biblical unitarian position against one of the leading evangelical apologists.</p>
+            <p class="pod-desc">A direct debate on whether the Father alone is the one God of Scripture. Tuggy defends the biblical unitarian position against one of the leading evangelical apologists for Trinitarianism.</p>
           </div>
           <span class="pod-arrow">→</span>
         </a>
@@ -399,7 +363,7 @@ a{color:inherit;text-decoration:none;}
           <div>
             <div class="pod-title">Trinitarianism vs. Unitarianism</div>
             <span class="pod-src">William Lane Craig vs. Dale Tuggy, Dialogue on Opposing Views</span>
-            <p class="pod-desc">Two leading scholars discuss the nature of God and the Trinity. Craig defends Trinitarian doctrine while Tuggy presents the biblical unitarian case.</p>
+            <p class="pod-desc">Two leading scholars discuss the nature of God and the Trinity. Craig defends Trinitarian doctrine. Tuggy presents the biblical unitarian case.</p>
           </div>
           <span class="pod-arrow">→</span>
         </a>
@@ -407,7 +371,7 @@ a{color:inherit;text-decoration:none;}
           <div>
             <div class="pod-title">Jesus Is Not God In the New Testament</div>
             <span class="pod-src">Dale Tuggy vs. Michael Bird, Live Debate</span>
-            <p class="pod-desc">Does the New Testament present Jesus as God? A live debate between two leading voices on the theology of God and Christ.</p>
+            <p class="pod-desc">Does the New Testament present Jesus as God? A live debate between two leading voices on the theology of God and Christ, worth watching if you want to hear both sides pressed hard.</p>
           </div>
           <span class="pod-arrow">→</span>
         </a>
@@ -415,7 +379,7 @@ a{color:inherit;text-decoration:none;}
           <div>
             <div class="pod-title">John 1 Is Not Trinitarian</div>
             <span class="pod-src">Dale Tuggy vs. James White, Full Debate</span>
-            <p class="pod-desc">Is the prologue of John's gospel Trinitarian? Tuggy and White debate what John 1 actually teaches about the nature and preexistence of Jesus Christ.</p>
+            <p class="pod-desc">Is the prologue of John's gospel Trinitarian? Tuggy and White go straight at what John 1 actually teaches about the nature and preexistence of Jesus Christ.</p>
           </div>
           <span class="pod-arrow">→</span>
         </a>
@@ -426,19 +390,18 @@ a{color:inherit;text-decoration:none;}
     <div class="ref-section" id="articles">
       <div class="ref-section-head">
         <h2><em>Articles</em></h2>
-        <span class="ref-count">Coming soon</span>
+        <span class="ref-count">1 article</span>
       </div>
-      <div class="coming-soon">
-        <h3>Articles being gathered</h3>
-        <p>A reading list of scholarly and accessible articles on apostolic theology, One God doctrine and the early church.</p>
+      <div class="pod-list">
+        <a href="https://static.wikitide.net/projectvelisewiki/3/3d/Hagiography%27s_Stories_of_SaintsRevised_with_sources_docx.pdf" target="_blank" rel="noopener" class="pod-card">
+          <div>
+            <div class="pod-title">Hagiography's Stories of Saints (Revised, with Sources)</div>
+            <span class="pod-src">PDF · Project Velise Wiki</span>
+            <p class="pod-desc">A compiled research document on literal millennial reign, glorified saints, the year without sun (536 AD), geographic shifts, northern pilgrimage routes, and Satan's release for a short season, with hagiographic accounts and cited sources throughout.</p>
+          </div>
+          <span class="pod-arrow">→</span>
+        </a>
       </div>
-    </div>
-
-    <!-- SUGGEST -->
-    <div class="suggest-box">
-      <h3>Know a good <em>resource?</em></h3>
-      <p>If you have come across a podcast, article, debate or video that you believe would benefit the 2:22 community, we would love to hear about it.</p>
-      <a href="mailto:contact@2-22church.com?subject=Resource Suggestion">Suggest a Resource</a>
     </div>
 
   </div>
@@ -454,12 +417,12 @@ a{color:inherit;text-decoration:none;}
       <a href="https://realityrevolt.com/series-eng" target="_blank" rel="noopener" class="channel-card">
         <span class="ch-name">Reality Revolt</span>
         <span class="ch-handle">Dimitri Revolt &middot; Exposing the Darkness</span>
-        <p class="ch-desc">A documentary series examining the hidden forces shaping the modern world, tracing the scriptural, historical and spiritual threads behind current events.</p>
+        <p class="ch-desc">A documentary series examining the hidden forces shaping the modern world, tracing the scriptural, historical, and spiritual threads behind current events.</p>
       </a>
       <a href="https://www.youtube.com/@seeinthedark" target="_blank" rel="noopener" class="channel-card">
         <span class="ch-name">See in the Dark</span>
         <span class="ch-handle">Dimitri Revolt &middot; @seeinthedark</span>
-        <p class="ch-desc">YouTube channel accompanying the Reality Revolt documentary series. Video teachings and investigations into the events and systems the mainstream would rather leave unexamined.</p>
+        <p class="ch-desc">The YouTube channel accompanying the Reality Revolt documentary series. Video teachings and investigations into the events and systems the mainstream would rather leave unexamined.</p>
       </a>
     </div>
   </div>
@@ -472,11 +435,11 @@ a{color:inherit;text-decoration:none;}
     </div>
     <div class="coming-soon">
       <h3>Study guides &amp; teaching documents</h3>
-      <p>A growing archive of study guides, research documents, and teaching material on One God, Biblical Earth, the Short Season, Baptism, the Tabernacle, and extra-biblical texts. Documents are added as they are prepared and offered freely for personal study.</p>
+      <p>We are building an archive of study guides, research documents, and teaching material on One God, Biblical Earth, the Short Season, Baptism, the Tabernacle, and extra-biblical texts. Documents will be added as they are prepared and offered freely for personal study.</p>
     </div>
     <div class="suggest-box" style="margin-top:2rem;">
       <h3>Have a resource to <em>share?</em></h3>
-      <p>If you have produced a study guide or research document that aligns with apostolic Scripture, reach out and we will review it.</p>
+      <p>If you have produced a study guide or research document that aligns with apostolic Scripture, reach out, we will review it.</p>
       <a href="index.html#join">Get In Touch</a>
     </div>
   </div>
@@ -486,8 +449,11 @@ a{color:inherit;text-decoration:none;}
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-      <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
-      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
+      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching, with no walls, no hierarchy, just people.</p>
+      <div class="footer-social">
+        <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        <a href="https://www.instagram.com/2.22church" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.012-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.668-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+      </div>
     </div>
     <div class="footer-col">
       <h4>Explore</h4>
@@ -525,7 +491,7 @@ a{color:inherit;text-decoration:none;}
     </div>
   </div>
   <div class="footer-bottom">
-    <span>2025 2:22 Church · 2-22church.com</span>
+    <span>All copyrights reserved. @2-22 Church, 2026</span>
     <span class="footer-verse">"Where two or three gather in my name, there am I with them." Matthew 18:20</span>
   </div>
 </footer>
@@ -536,22 +502,6 @@ a{color:inherit;text-decoration:none;}
 
 
 
-<script>
-document.querySelectorAll('.nav-item').forEach(function(item){
-  item.querySelector(':scope>a').addEventListener('click',function(e){
-    e.preventDefault();
-    var isOpen=item.classList.contains('open');
-    document.querySelectorAll('.nav-item.open').forEach(function(el){el.classList.remove('open');});
-    if(!isOpen)item.classList.add('open');
-  });
-  item.querySelectorAll('.nav-dropdown a').forEach(function(a){
-    a.addEventListener('click',function(){item.classList.remove('open');});
-  });
-});
-document.addEventListener('click',function(e){
-  if(!e.target.closest('.nav-item'))
-    document.querySelectorAll('.nav-item.open').forEach(function(el){el.classList.remove('open');});
-});
-</script>
+
 </body>
 </html>

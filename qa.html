@@ -4,19 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Questions and Answers - 2:22 Church</title>
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=2">
+<link rel="icon" href="favicon.ico?v=2" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+<link rel="stylesheet" href="style.css?v=6">
 <style>
 /* Q&A ACCORDION */
 .qa-body{max-width:820px;margin:0 auto;padding:5rem 2.5rem 8rem;background:var(--deep-mid);border-radius:0;}
 .qa-intro{text-align:center;margin-bottom:4rem;}
 .qa-intro p{font-size:1rem;color:var(--text-secondary);line-height:1.85;}
-.qa-group{margin-bottom:3rem;}
-.qa-group-title{font-family:'Poppins',Arial,sans-serif;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;padding-bottom:0.6rem;border-bottom:0.5px solid var(--border);}
-.qa-item{border-bottom:0.5px solid var(--border-subtle);}
-.qa-item:first-of-type{border-top:0.5px solid var(--border-subtle);}
-.qa-question{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:1.4rem 0;cursor:pointer;user-select:none;}
+.qa-group{margin-bottom:3rem;display:flex;flex-direction:column;gap:1rem;}
+.qa-group-title{font-family:'Poppins',Arial,sans-serif;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.25rem;padding-bottom:0.6rem;border-bottom:0.5px solid var(--border);}
+.qa-item{border-bottom:none;}
+.qa-item:first-of-type{border-top:none;}
+.qa-question{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:1.4rem clamp(1.35rem,2.4vw,2.4rem);cursor:pointer;user-select:none;}
 .qa-question-text{
   font-family:'Poppins',Arial,sans-serif;
   font-size:1.15rem;font-weight:400;
@@ -40,7 +42,7 @@
 }
 .qa-item.open .qa-answer{max-height:600px;}
 .qa-answer-inner{
-  padding:0 0 1.6rem 0;
+  padding:0 clamp(1.35rem,2.4vw,2.4rem) 1.6rem;
   color:var(--text-secondary);
   font-size:0.95rem;line-height:1.9;
 }
@@ -69,28 +71,6 @@
 .qa-cta p{color:var(--text-secondary);max-width:460px;margin:0 auto 1.8rem;line-height:1.8;}
 
 
-/* NAV DROPDOWNS, self-contained, does not rely on style.css version */
-.nav-item{position:relative;list-style:none;}
-.nav-item>a{display:inline-flex;align-items:center;gap:4px;cursor:pointer;}
-.nav-item .caret{font-size:0.5rem;opacity:0.55;transition:transform 0.2s;display:inline-block;}
-.nav-item.open>.caret,.nav-item.open>a .caret{transform:rotate(180deg);}
-.nav-dropdown{
-  display:none;
-  position:absolute;top:calc(100% + 8px);left:50%;
-  transform:translateX(-50%);
-  background:rgba(255,255,255,0.98);
-  border:0.5px solid rgba(23,42,54,0.16);
-  min-width:170px;z-index:500;padding:0.4rem 0;
-}
-.nav-item.open .nav-dropdown{display:block;}
-.nav-dropdown a{
-  display:block;padding:0.6rem 1.2rem;
-  font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
-  color:var(--text-secondary);text-decoration:none;white-space:nowrap;transition:all 0.15s;
-}
-.nav-dropdown a:hover{color:var(--gold);background:rgba(23,42,54,0.08);}
-
-
 .blog-snippet{margin-top:1.2rem;padding:1rem 1.2rem;background:var(--surface);border:0.5px solid var(--border);display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;}
 .blog-snippet-label{font-size:0.6rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.3rem;}
 .blog-snippet-title{font-family:'Poppins',Arial,sans-serif;font-size:1rem;font-weight:400;color:var(--text-primary);line-height:1.3;}
@@ -102,27 +82,23 @@
 
 <nav>
   <a href="index.html" class="nav-logo"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-  <ul class="nav-links">
+        <ul class="nav-links">
     <li><a href="index.html#about">Home</a></li>
-    <li class="nav-item">
-      <a href="our-story.html">About <span class="caret">&#9660;</span></a>
-      <div class="nav-dropdown">
-        <a href="our-story.html">Our Story</a>
-        <a href="gatherings.html">Gatherings</a>
-      </div>
-    </li>
     <li><a href="articles.html">Articles</a></li>
     <li><a href="blogs.html">Blogs</a></li>
     <li class="nav-item">
-      <a href="cosmology.html">Study <span class="caret">&#9660;</span></a>
+      <a href="study.html">Study</a>
       <div class="nav-dropdown">
         <a href="cosmology.html">Biblical Cosmology</a>
         <a href="project314.html">God of Pi</a>
+        <a href="noahs-ark.html">Noah's Ark</a>
+        <a href="solomons-temple.html">Solomon's Temple</a>
+        <a href="heavenly-jerusalem.html">Heavenly Jerusalem</a>
         <a href="old-maps.html">Old Maps</a>
       </div>
     </li>
     <li class="nav-item">
-      <a href="references.html">Resources <span class="caret">&#9660;</span></a>
+      <a href="references.html">Resources</a>
       <div class="nav-dropdown">
         <a href="references.html#one-god">One God</a>
         <a href="references.html#short-season">Short Season</a>
@@ -131,10 +107,11 @@
         <a href="references.html#debates">Debates</a>
         <a href="references.html#articles">Articles</a>
         <a href="references.html#archives">Archives</a>
-        <a href="old-maps.html">Old Maps</a>
+        <a href="references.html#documentaries">Documentaries</a>
       </div>
     </li>
     <li><a href="qa.html" class="active">Q&amp;A</a></li>
+    <li><a href="our-story.html">Our Story</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
   <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
@@ -144,28 +121,31 @@
 <div class="mobile-menu" id="mobile-menu">
   <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
   <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
-  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
-  <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
   <a href="articles.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Articles</a>
   <a href="blogs.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blogs</a>
+  <a href="study.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study</a>
   <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
   <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="noahs-ark.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Noah's Ark</a>
+  <a href="solomons-temple.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Solomon's Temple</a>
+  <a href="heavenly-jerusalem.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Heavenly Jerusalem</a>
   <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
   <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
+  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
 <div class="page-header">
   <div class="eyebrow">Common Questions</div>
   <h1>Questions &amp; <em>Answers</em></h1>
-  <p>Honest questions deserve honest answers from Scripture. Everything here can be tested against the apostolic text.</p>
+  <p>Honest questions deserve honest answers from Scripture, not the smiling dismissal institutional Christianity perfected. Everything here can be tested against the apostolic text.</p>
 </div>
 
 <div class="qa-body">
 
   <div class="qa-intro">
-    <p>These are questions we are asked most often. We have answered each one directly, with the relevant Scripture, and without softening what the text actually says. Click any question to read the answer.</p>
+    <p>Honest questions deserve honest answers from Scripture. Everything here can be tested against the apostolic text.</p>
   </div>
 
     <div class="qa-group">
@@ -176,7 +156,7 @@
           <span class="qa-toggle">+</span>
         </div>
         <div class="qa-answer">
-          <div class="qa-answer-inner"><p>There is one God: the Eternal Father, the Almighty, the Most High. Every apostolic epistle opens by distinguishing God the Father from the Lord Jesus Christ as two distinct persons. The God of Abraham, Isaac and Jacob is not a Trinity of co-equal persons. He is One.</p><blockquote>Hear, O Israel: the Lord our God, the Lord is one.<cite>Deuteronomy 6:4</cite></blockquote><div class="blog-snippet">
+          <div class="qa-answer-inner"><p>There is one God, the Eternal Father, the Almighty, the Most High, and if you open any apostolic epistle you will see God the Father distinguished from the Lord Jesus Christ as two distinct persons, because the God of Abraham, Isaac, and Jacob is not a Trinity of co-equal persons but One God the Father of our Lord Jesus Christ.</p><blockquote>Hear, O Israel: the Lord our God, the Lord is one.<cite>Deuteronomy 6:4</cite></blockquote><div class="blog-snippet">
           <div>
             <div class="blog-snippet-label">In depth study</div>
             <div class="blog-snippet-title">The Agencies of God: How the Almighty Speaks, Acts and Appears</div>
@@ -206,7 +186,7 @@
           <span class="qa-toggle">+</span>
         </div>
         <div class="qa-answer">
-          <div class="qa-answer-inner"><p>The title God (theos) is applied to Jesus in a limited number of passages and in each case carries the meaning of divine authority and office, not the assertion that He is the Eternal Father. The consistent testimony of every apostle is that God is the Father and Jesus is His Son. Titles like Mighty God in Isaiah 9:6 are governmental titles of office given by the Father to the Son.</p></div>
+          <div class="qa-answer-inner"><p>The title God (theos) is applied to Jesus in only a few passages, and in each case it carries the meaning of divine authority and office, not the claim that He is the Eternal Father. Every apostle testifies consistently that God is the Father and Jesus is His Son. Titles like Mighty God in Isaiah 9:6 are governmental titles of office given by the Father to the Son.</p></div>
         </div>
       </div>
       <div class="qa-item">
@@ -215,7 +195,7 @@
           <span class="qa-toggle">+</span>
         </div>
         <div class="qa-answer">
-          <div class="qa-answer-inner"><p>The Most High God communicated through authorised agents throughout the Old Testament: the Angel of the Lord, the glory cloud, the pillar of fire, and the Word. These were real encounters but not the Eternal Father in His unveiled essence. No man can see the Father and live (Exodus 33:20). What was seen was the agent carrying God's Name and authority.</p><div class="blog-snippet">
+          <div class="qa-answer-inner"><p>The Most High communicated through authorised agents throughout the Old Testament: the Angel of the Lord, the glory cloud, the pillar of fire, and the Word. These were real encounters, but not the Eternal Father in His unveiled essence. No man can see the Father and live (Exodus 33:20). What people saw was the agent carrying God's Name and authority.</p><div class="blog-snippet">
           <div>
             <div class="blog-snippet-label">In depth study</div>
             <div class="blog-snippet-title">The Agencies of God: How the Almighty Speaks, Acts and Appears</div>
@@ -242,7 +222,7 @@
           <span class="qa-toggle">+</span>
         </div>
         <div class="qa-answer">
-          <div class="qa-answer-inner"><p>The Lordship of Jesus is a title and authority conferred upon Him by the Father after His resurrection. It is not a statement that He is the Eternal Father. The Father exalted Him, gave Him the Name above every name, and seated Him at His right hand.</p><blockquote>Therefore God also has highly exalted Him and given Him the name which is above every name.<cite>Philippians 2:9</cite></blockquote></div>
+          <div class="qa-answer-inner"><p>The Lordship of Jesus is a title and authority the Father conferred upon Him after His resurrection. It is not a statement that He is the Eternal Father. The Father exalted Him, gave Him the Name above every name, and seated Him at His right hand.</p><blockquote>Therefore God also has highly exalted Him and given Him the name which is above every name.<cite>Philippians 2:9</cite></blockquote></div>
         </div>
       </div>
       <div class="qa-item">
@@ -251,7 +231,7 @@
           <span class="qa-toggle">+</span>
         </div>
         <div class="qa-answer">
-          <div class="qa-answer-inner"><p>Yes. He was raised from the dead, ascended to the right hand of the Father, and is presently reigning as Lord and King. He is our living High Priest, interceding before the Father. He will return.</p></div>
+          <div class="qa-answer-inner"><p>Yes. He was raised from the dead, ascended to the right hand of the Father, and is reigning now as Lord and King. He is our living High Priest, interceding before the Father. He will return.</p></div>
         </div>
       </div>
     </div>
@@ -263,7 +243,7 @@
           <span class="qa-toggle">+</span>
         </div>
         <div class="qa-answer">
-          <div class="qa-answer-inner"><p>Baptism is by full immersion in the name of Jesus Christ, for the forgiveness of sins. This is the command of Peter at Pentecost and the consistent practice recorded throughout the book of Acts. It is not a tradition. It is the documented apostolic standard.</p><blockquote>Repent and be baptised, every one of you, in the name of Jesus Christ for the forgiveness of your sins.<cite>Acts 2:38</cite></blockquote><div class="blog-snippet">
+          <div class="qa-answer-inner"><p>Baptism is by full immersion in the name of Jesus Christ, for the forgiveness of sins. That is Peter's command at Pentecost and the consistent practice recorded throughout Acts. It is not a later tradition. It is the documented apostolic standard.</p><blockquote>Repent and be baptised, every one of you, in the name of Jesus Christ for the forgiveness of your sins.<cite>Acts 2:38</cite></blockquote><div class="blog-snippet">
           <div>
             <div class="blog-snippet-label">In depth study</div>
             <div class="blog-snippet-title">Baptism in Jesus' Name: What the Apostles Actually Did</div>
@@ -278,7 +258,7 @@
           <span class="qa-toggle">+</span>
         </div>
         <div class="qa-answer">
-          <div class="qa-answer-inner"><p>Baptism is the appointed act of obedience in which forgiveness is received and the covenant is entered. It is inseparable from repentance and faith. It is not a work that earns salvation but the moment in which the death, burial, and resurrection of Christ are applied to the believer.</p><blockquote>Do you not know that all of us who have been baptised into Christ Jesus were baptised into His death?<cite>Romans 6:3</cite></blockquote></div>
+          <div class="qa-answer-inner"><p>Baptism is the appointed act of obedience in which forgiveness is received and the covenant is entered. It belongs together with repentance and faith. It does not earn salvation, but it is the moment in which the death, burial, and resurrection of Christ are applied to the believer.</p><blockquote>Do you not know that all of us who have been baptised into Christ Jesus were baptised into His death?<cite>Romans 6:3</cite></blockquote></div>
         </div>
       </div>
     </div>
@@ -290,7 +270,7 @@
           <span class="qa-toggle">+</span>
         </div>
         <div class="qa-answer">
-          <div class="qa-answer-inner"><p>We do not believe so. The consistent cosmological testimony of Scripture describes a circular earth founded upon pillars, enclosed by a firmament upon which the heavenly waters rest. This is the plain reading of the text from Genesis to Job to Isaiah to Revelation, not metaphor.</p><blockquote>He sits enthroned above the circle of the earth... He stretches out the heavens like a canopy.<cite>Isaiah 40:22</cite></blockquote></div>
+          <div class="qa-answer-inner"><p>We do not believe so. The consistent cosmological testimony of Scripture describes a circular earth on pillars, enclosed by a firmament with heavenly waters above, the plain reading from Genesis through Job and Isaiah to Revelation, not metaphor, when we read it with a sincere heart.</p><blockquote>He sits enthroned above the circle of the earth... He stretches out the heavens like a canopy.<cite>Isaiah 40:22</cite></blockquote></div>
         </div>
       </div>
       <div class="qa-item">
@@ -299,7 +279,7 @@
           <span class="qa-toggle">+</span>
         </div>
         <div class="qa-answer">
-          <div class="qa-answer-inner"><p>The firmament is the solid expanse described in Genesis 1, which divides the waters above from the waters below. It is called the raqia in Hebrew, a word that means a beaten or hammered-out expanse. Job 37:18 speaks of the skies spread out like a molten mirror. The firmament is real, structural, and part of God's designed creation.</p></div>
+          <div class="qa-answer-inner"><p>The firmament is the solid expanse described in Genesis 1, dividing the waters above from the waters below. In Hebrew it is called raqia, a beaten or hammered-out expanse. Job 37:18 speaks of the skies spread out like a molten mirror. We believe the firmament is real, structural, part of God's designed creation.</p></div>
         </div>
       </div>
     </div>
@@ -335,7 +315,7 @@
           <span class="qa-toggle">+</span>
         </div>
         <div class="qa-answer">
-          <div class="qa-answer-inner"><p>Obligatory tithing is not taught in the New Testament epistles. What the apostles modelled was voluntary, generous giving in response to genuine need, without compulsion and without institutional machinery.</p><blockquote>Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver.<cite>2 Corinthians 9:7</cite></blockquote><div class="blog-snippet">
+          <div class="qa-answer-inner"><p>Obligatory tithing is not taught in the New Testament epistles. What the apostles modelled was voluntary, generous giving in response to genuine need, without compulsion and without institutional machinery behind it.</p><blockquote>Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver.<cite>2 Corinthians 9:7</cite></blockquote><div class="blog-snippet">
           <div>
             <div class="blog-snippet-label">In depth study</div>
             <div class="blog-snippet-title">Why We Don't Take a Tithe</div>
@@ -353,7 +333,7 @@
           <span class="qa-toggle">+</span>
         </div>
         <div class="qa-answer">
-          <div class="qa-answer-inner"><p>We do not believe so. We believe the millennial reign of Yeshua with His saints occurred on this earth and ended around 250 years ago. The current age is what we call the Short Season, a period of concentrated deception and destruction before the return of the King.</p></div>
+          <div class="qa-answer-inner"><p>We do not believe so. We believe the millennial reign of Yeshua with His saints happened on this earth and ended around 250 years ago. The current age is what we call the Short Season, concentrated deception and destruction before the return of the King.</p></div>
         </div>
       </div>
       <div class="qa-item">
@@ -362,7 +342,7 @@
           <span class="qa-toggle">+</span>
         </div>
         <div class="qa-answer">
-          <div class="qa-answer-inner"><p>Current events follow a pattern that has been constructed progressively through media, religion, politics, and education from the 17th century onward. It has been predicted more accurately by historians and analysts than by the church. Scripture speaks to it plainly for those with eyes to see.</p></div>
+          <div class="qa-answer-inner"><p>We see current events following a pattern constructed through media, religion, politics, and education from the 17th century onward, historians and analysts have predicted it more accurately than the church has, which troubles us. Scripture speaks to it plainly for those with eyes to see.</p></div>
         </div>
       </div>
       <div class="qa-item">
@@ -371,7 +351,7 @@
           <span class="qa-toggle">+</span>
         </div>
         <div class="qa-answer">
-          <div class="qa-answer-inner"><p>No. Secular Israel is not the true Israel by geography, biology, or biblical explanation. The promises of God are fulfilled in the Messiah and in those who are His through faith. Unconditional political support for the modern secular state of Israel by the mainstream Christian community is not grounded in apostolic Scripture.</p></div>
+          <div class="qa-answer-inner"><p>No. Secular Israel is not the true Israel by geography, biology, or biblical explanation, the promises of God are fulfilled in the Messiah and in those who are His through faith. The mainstream church's unconditional political support for the modern secular state does not stand on apostolic Scripture, as far as we can see it.</p></div>
         </div>
       </div>
     </div>
@@ -387,9 +367,9 @@
         </div>
         <div class="qa-answer">
           <div class="qa-answer-inner">
-            <p>Spiritual dryness is not a sign that God has abandoned you. It is often the season in which He does His deepest work. The desert was where Moses met God, where Israel was humbled and taught, where Jesus was tested before His ministry began. What feels like absence is frequently preparation.</p>
+            <p>Spiritual dryness is not a sign that God has abandoned you. More often it is the season in which He does His deepest work. Moses met God in the desert. Israel was humbled and taught there. Jesus was tested there before His ministry began. What feels like absence is often preparation.</p>
             <blockquote>"O God, You have rejected us and broken our defenses; You have been angry. O, restore us."<cite>Psalm 60:1</cite></blockquote>
-            <p>The breaking of our defences, our plans, our pride and self-sufficiency, is not destruction. It is the necessary clearing that makes restoration possible. A man who has never been emptied rarely learns what he is actually holding.</p>
+            <p>When God breaks our defences, our plans, our pride and self-sufficiency, it is not destruction. It is the clearing that makes restoration possible. A man who has never been emptied rarely learns what he is actually holding.</p>
             <div class="blog-snippet">
               <div>
                 <div class="blog-snippet-label">Personal testimony</div>
@@ -408,7 +388,7 @@
         </div>
         <div class="qa-answer">
           <div class="qa-answer-inner">
-            <p>God is not afraid of your anger or your accusations. The Psalms are full of men crying out against what God has allowed, and God counted them as righteous. What matters is that you stay in the conversation rather than walking away from it entirely.</p>
+            <p>God is not afraid of your anger or your accusations. The Psalms are full of men crying out against what God has allowed, and God counted them righteous. What matters is that you stay in the conversation rather than walking away from it entirely.</p>
             <p>What is dangerous is not blaming God in the heat of pain, but settling into a permanent bitterness that refuses to be answered. The man who cries out is still turned toward God. The man who goes silent and walks away has already left.</p>
             <blockquote>"It is good for me that I have been afflicted, that I may learn Your statutes."<cite>Psalm 119:71</cite></blockquote>
             <div class="blog-snippet">
@@ -429,8 +409,8 @@
         </div>
         <div class="qa-answer">
           <div class="qa-answer-inner">
-            <p>Yes. The silence is not absence. Some of the most significant work God does in a person's life is invisible to them while it is happening. The seed does not see itself growing. The bone does not feel itself knitting together. What you experience as nothing is often the slowest and most permanent kind of change.</p>
-            <p>The apostle Paul prayed three times for his thorn to be removed, and the answer he received was not removal but grace sufficient for the carrying of it. God heard every prayer. His answer was better than what Paul asked for, and Paul only understood that in retrospect.</p>
+            <p>Yes. The silence is not absence. Some of the most significant work God does in a person's life is invisible while it is happening. The seed does not see itself growing. The bone does not feel itself knitting together. What you experience as nothing is often the slowest and most permanent kind of change.</p>
+            <p>Paul prayed three times for his thorn to be removed. The answer he received was not removal but grace sufficient for carrying it. God heard every prayer. His answer was better than what Paul asked for, and Paul only understood that looking back.</p>
             <blockquote>"My grace is sufficient for you, for my power is made perfect in weakness."<cite>2 Corinthians 12:9</cite></blockquote>
           </div>
         </div>
@@ -443,8 +423,8 @@
         </div>
         <div class="qa-answer">
           <div class="qa-answer-inner">
-            <p>Yes, and anyone who tells you otherwise has not read Paul honestly. Salvation is the beginning of the work, not its completion. We are always in the Lord's factory, always being shaped into the character of Yeshua, which means we are always being brought into contact with our own darkness so that He can deal with it.</p>
-            <p>Once saved always saved is not a scriptural position. Faith is a living thing, held in close cooperation with God. A man fifteen years into his walk with Christ may still have chambers of his heart he has never opened, pride he has never named, patterns he has carried since before his salvation that the Lord is only now ready to address. That is not a failure of salvation. It is the ongoing nature of it.</p>
+            <p>Yes, and anyone who tells you otherwise has not read Paul honestly. Salvation is the beginning of the work, not its completion. We are always in the Lord's factory, always being shaped into the character of Yeshua; that means being brought into contact with our own darkness so He can deal with it.</p>
+            <p>Once saved always saved is not a scriptural position, in my view. Faith is a living thing, held in close cooperation with God. A man fifteen years into his walk with Christ may still have chambers of his heart he has never opened, pride he has never named, patterns he carried since before his salvation that the Lord is only now ready to address. That is not failure. It is the ongoing nature of salvation.</p>
             <div class="blog-snippet">
               <div>
                 <div class="blog-snippet-label">Personal testimony</div>
@@ -463,8 +443,8 @@
         </div>
         <div class="qa-answer">
           <div class="qa-answer-inner">
-            <p>More than most Christians are comfortable admitting. Pride disguised as principle, rebellion dressed as discernment, the constant sense that those above you are wrong and you know better: these are among the most common and least examined sins in the lives of believing men and women.</p>
-            <p>David had every justification to raise his hand against Saul. He chose not to, and that choice over many years forged in him the character God needed to trust him with a kingdom. The willingness to serve under imperfect authority, without justifying yourself, without waiting to be vindicated, is one of the most searching tests of the servant's heart.</p>
+            <p>More than most Christians are comfortable admitting. Pride disguised as principle. Rebellion dressed as discernment. The constant sense that those above you are wrong and you know better. These are among the most common and least examined sins in the lives of believing men and women.</p>
+            <p>David had every justification to raise his hand against Saul. He chose not to, and that choice over many years forged in him the character God needed to trust him with a kingdom. The willingness to serve under imperfect authority, without justifying yourself, without waiting to be vindicated, is one of the most searching tests of the servant's heart we know.</p>
             <blockquote>"Whoever wants to become great among you must be your servant."<cite>Matthew 20:26</cite></blockquote>
           </div>
         </div>
@@ -475,7 +455,7 @@
 </div>
 <div class="qa-cta">
   <h2>Have a question we <em>haven't answered?</em></h2>
-  <p>Reach out through the Connect form. We reply personally and we take every question seriously.</p>
+  <p>Reach out through the Connect form. We reply personally, and we take every question seriously.</p>
   <a href="index.html#join" class="btn-primary">Ask a Question</a>
 </div>
 
@@ -483,8 +463,11 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-      <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
-      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
+      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching, with no walls, no hierarchy, just people.</p>
+      <div class="footer-social">
+        <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        <a href="https://www.instagram.com/2.22church" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.012-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.668-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+      </div>
     </div>
     <div class="footer-col">
       <h4>Explore</h4>
@@ -522,7 +505,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>2025 2:22 Church · 2-22church.com</span>
+    <span>All copyrights reserved. @2-22 Church, 2026</span>
     <span class="footer-verse">"Where two or three gather in my name, there am I with them." Matthew 18:20</span>
   </div>
 </footer>
@@ -543,22 +526,6 @@ document.querySelectorAll('.qa-question').forEach(function(btn) {
 </script>
 
 
-<script>
-document.querySelectorAll('.nav-item').forEach(function(item){
-  item.querySelector(':scope>a').addEventListener('click',function(e){
-    e.preventDefault();
-    var isOpen=item.classList.contains('open');
-    document.querySelectorAll('.nav-item.open').forEach(function(el){el.classList.remove('open');});
-    if(!isOpen)item.classList.add('open');
-  });
-  item.querySelectorAll('.nav-dropdown a').forEach(function(a){
-    a.addEventListener('click',function(){item.classList.remove('open');});
-  });
-});
-document.addEventListener('click',function(e){
-  if(!e.target.closest('.nav-item'))
-    document.querySelectorAll('.nav-item.open').forEach(function(el){el.classList.remove('open');});
-});
-</script>
+
 </body>
 </html>

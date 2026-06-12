@@ -1,0 +1,19 @@
+{
+  "license_note": "User-supplied reference photographs. Each image used once in blog-preview-temple-parallels.html.",
+  "sections": {
+    "01": {"title": "Graded Sanctity", "images": ["01-tabernacle-decagon.jpg", "01-hindu-temple.jpg", "01-stupa.webp"]},
+    "02": {"title": "Sacred Veil", "hindu": "01-sacred-veil-parda.jpg", "hebrew": "01-tabernacle-curtains.jpeg"},
+    "03": {"title": "Doorpost Holy Signs", "hindu": "03-doorpost-hindu-red-hand.webp", "hebrew": "03-doorpost-jewish-sign.jpeg"},
+    "04": {"title": "Ritual Immersion", "hindu": "02-snanam-bath-hindu.jpeg", "hebrew": "02-mikveh-bath.jpeg"},
+    "05": {"title": "Incense", "hindu": "03-incense-hindu.webp", "hebrew": "03-incense-hebrew.jpeg"},
+    "06": {"title": "Pranam vs Bowing", "hindu": "04-dandavat-pranam.jpeg", "hebrew": "04-bowing-hebrew.webp"},
+    "07": {"title": "Samai & Menorah", "hindu": "05-samai-lamp.jpg", "hebrew": "05-menorah-lampstand.jpeg"},
+    "08": {"title": "Pakwan & Seder", "hindu": "06-thali-naivedyam.webp", "hebrew": "06-seder-plate.jpeg"},
+    "09": {"title": "Prayer Shawl", "hindu": "07-hindu-prayer-shawl.jpeg", "hebrew": "07-jewish-tallit.jpg"},
+    "10": {"title": "Anointing", "hindu": "08-abhishekam-anointing.jpeg", "hebrew": "08-anointing-hebrew.webp"},
+    "11": {"title": "First Fruits", "hindu": "09-fruit-offering-hindu.png", "hebrew": "09-bikkurim-ki-tavo.jpeg"},
+    "12": {"title": "Sacred Fire", "images": ["10-holi-dahan.png", "10-yadnya-homa.jpeg", "10-bronze-altar-sacrifice.jpg"]},
+    "13": {"title": "Palkhi & Ark", "hindu": "11-palkhi.webp", "hebrew": "11-ark-covenant.jpeg"},
+    "14": {"title": "Prayer Cap", "hindu": "14-hindu-ceremony-topi.jpg", "hebrew": "14-jewish-ceremony-cap.webp"}
+  }
+}

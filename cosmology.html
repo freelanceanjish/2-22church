@@ -4,12 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Biblical Cosmology, 2:22 Church</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="study-shared.css?v=13">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=2">
+<link rel="icon" href="favicon.ico?v=2" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
 <style>
 :root{
   --gold:#172A36;--gold-light:#EAF1F4;--gold-dark:#0D171F;
@@ -30,13 +33,6 @@ body{font-family:'Poppins',Arial,sans-serif;background:var(--deep);color:var(--t
 .nav-hamburger span{display:block;width:22px;height:1px;background:var(--gold);}
 
 .mobile-menu a:hover{color:var(--gold);}
-
-/* PAGE HEADER */
-/* QUICK NAV */
-.quick-nav{background:var(--deep);border-bottom:0.5px solid var(--border-subtle);padding:1.2rem 2rem;position:sticky;top:64px;z-index:90;}
-.quick-nav-inner{max-width:1000px;margin:0 auto;display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;}
-.quick-nav a{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;transition:color 0.2s;padding:0.3rem 0;border-bottom:0.5px solid transparent;}
-.quick-nav a:hover{color:var(--gold);border-color:var(--gold);}
 
 /* BODY */
 .cosmo-body{max-width:900px;margin:0 auto;padding:5rem 2rem 8rem;}
@@ -121,53 +117,29 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 /* NAV DROPDOWN */
 .nav-item.open 
-/* NAV DROPDOWNS, self-contained, does not rely on style.css version */
-.nav-item{position:relative;list-style:none;}
-.nav-item>a{display:inline-flex;align-items:center;gap:4px;cursor:pointer;}
-.nav-item .caret{font-size:0.5rem;opacity:0.55;transition:transform 0.2s;display:inline-block;}
-.nav-item.open>.caret,.nav-item.open>a .caret{transform:rotate(180deg);}
-.nav-dropdown{
-  display:none;
-  position:absolute;top:calc(100% + 8px);left:50%;
-  transform:translateX(-50%);
-  background:rgba(255,255,255,0.98);
-  border:0.5px solid rgba(23,42,54,0.16);
-  min-width:170px;z-index:500;padding:0.4rem 0;
-}
-.nav-item.open .nav-dropdown{display:block;}
-.nav-dropdown a{
-  display:block;padding:0.6rem 1.2rem;
-  font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
-  color:var(--text-secondary);text-decoration:none;white-space:nowrap;transition:all 0.15s;
-}
-.nav-dropdown a:hover{color:var(--gold);background:rgba(23,42,54,0.08);}
 </style>
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="nav-logo"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-  <ul class="nav-links">
+        <ul class="nav-links">
     <li><a href="index.html#about">Home</a></li>
-    <li class="nav-item">
-      <a href="our-story.html">About <span class="caret">&#9660;</span></a>
-      <div class="nav-dropdown">
-        <a href="our-story.html">Our Story</a>
-        <a href="gatherings.html">Gatherings</a>
-      </div>
-    </li>
     <li><a href="articles.html">Articles</a></li>
     <li><a href="blogs.html">Blogs</a></li>
     <li class="nav-item">
-      <a href="cosmology.html" class="active">Study <span class="caret">&#9660;</span></a>
+      <a href="study.html" class="active">Study</a>
       <div class="nav-dropdown">
         <a href="cosmology.html">Biblical Cosmology</a>
         <a href="project314.html">God of Pi</a>
+        <a href="noahs-ark.html">Noah's Ark</a>
+        <a href="solomons-temple.html">Solomon's Temple</a>
+        <a href="heavenly-jerusalem.html">Heavenly Jerusalem</a>
         <a href="old-maps.html">Old Maps</a>
       </div>
     </li>
     <li class="nav-item">
-      <a href="references.html">Resources <span class="caret">&#9660;</span></a>
+      <a href="references.html">Resources</a>
       <div class="nav-dropdown">
         <a href="references.html#one-god">One God</a>
         <a href="references.html#short-season">Short Season</a>
@@ -180,6 +152,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
       </div>
     </li>
     <li><a href="qa.html">Q&amp;A</a></li>
+    <li><a href="our-story.html">Our Story</a></li>
   </ul>
   <a href="index.html#join" class="nav-cta">Connect</a>
   <button class="nav-hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
@@ -189,23 +162,36 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 <div class="mobile-menu" id="mobile-menu">
   <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
   <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
-  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
-  <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
   <a href="articles.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Articles</a>
   <a href="blogs.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blogs</a>
+  <a href="study.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study</a>
   <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
   <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="noahs-ark.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Noah's Ark</a>
+  <a href="solomons-temple.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Solomon's Temple</a>
+  <a href="heavenly-jerusalem.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Heavenly Jerusalem</a>
   <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
   <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
+  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
   <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
-<div class="page-header">
-  <div class="eyebrow">Scripture and Creation</div>
-  <h1>Biblical <em>Cosmology</em></h1>
-  <p>What does Scripture actually say about the nature of the heavens, the earth, the sun, moon and stars? Setting aside what we have been taught and allowing the text to speak for itself.</p>
-</div>
+<section class="study-hero study-hero--video">
+  <div class="study-hero-bg">
+    <video id="cosmology-hero-video" autoplay muted playsinline preload="auto" aria-hidden="true">
+      <source src="Flatearth.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="study-hero-overlay"></div>
+  <div class="study-hero-overlay2"></div>
+  <div class="study-hero-content">
+    <span class="hero-badge">Study Document · Scripture and Creation</span>
+    <div class="hero-eyebrow">Biblical Cosmology</div>
+    <h1>Biblical <em>Cosmology</em></h1>
+    <p class="hero-sub">We grew up with the globe already in our heads before we opened Genesis. This study asks what Scripture says about the heavens, the earth, the sun, moon, and stars, without those modern assumptions imported backward.</p>
+  </div>
+</section>
 
 <nav class="quick-nav" aria-label="Page sections">
   <div class="quick-nav-inner">
@@ -221,8 +207,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
 <div class="cosmo-body">
 
-  <div class="source-note">
-    <p>The material on this page draws substantially from <strong>Rob Skiba's</strong> research series <em>One Man's Quest for Truth</em>, specifically Part 4: <em>Allowing the Bible to Speak for Itself</em>, published at <a href="https://www.testingtheglobe.com/bible.html" target="_blank" rel="noopener">testingtheglobe.com</a>. All scripture quotations are from the KJV unless otherwise noted. We present this material as a serious invitation to re-examine what the inspired text actually says about creation.</p>
+  <div class="study-promo-banner">
+    <span class="promo-badge">2:22 Church · Promoted Research</span>
+    <p>This study promotes <strong>Rob Skiba</strong> and his scripture research at <a href="https://www.testingtheglobe.com/bible.html" target="_blank" rel="noopener">testingtheglobe.com</a>, especially Part 4 of <em>One Man's Quest for Truth</em>: <em>Allowing the Bible to Speak for Itself</em>. Most of what follows is a summary of his work. 2:22 Church had already questioned the globe in our hearts before we found his thorough study. Scripture quotations are from the KJV unless noted otherwise.</p>
+    <a href="https://www.testingtheglobe.com/bible.html" target="_blank" rel="noopener" class="promo-cta">Visit testingtheglobe.com</a>
   </div>
 
   <!-- FIRMAMENT -->
@@ -230,32 +218,32 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     <div class="section-label">Genesis 1 and Job</div>
     <h2 class="section-title">The <em>Firmament</em></h2>
 
-    <p>The opening chapter of Genesis does not describe a planet floating in empty space. It describes a structure. On the second day, God creates a <span class="heb-word">raqia</span>, a firmament, to divide the waters above from the waters below. The Hebrew word <span class="heb-word">raqia</span> comes from <span class="heb-word">riqqua</span>, meaning something beaten or hammered out, as a craftsman beats metal into a bowl or a mirror.</p>
+    <p>Genesis does not open with a planet floating in empty space. It opens with a structure. On the second day God creates a <span class="heb-word">raqia</span>, a firmament, to divide the waters above from the waters below. The Hebrew word <span class="heb-word">raqia</span> comes from <span class="heb-word">riqqua</span>, something beaten or hammered out, the way a craftsman beats metal into a bowl or a mirror.</p>
 
-    <p>The oldest book of the Bible, Job, confirms this explicitly:</p>
+    <p>Job, the oldest book in the Bible, says the same thing plainly:</p>
 
     <div class="scripture-block">
       <span class="scripture-ref">Job 37:18 (KJV)</span>
       <div class="scripture-text">Hast thou with him <strong>spread out the sky, which is strong, and as a molten looking glass?</strong></div>
     </div>
 
-    <p>A molten looking glass is not air. It is not the vacuum of space. It is a physical, solid structure, hard and reflective. The prophet Ezekiel, centuries later, sees this same structure in his vision:</p>
+    <p>A molten looking glass is not air. It is not the vacuum of space. It is a physical, solid structure, hard and reflective. Centuries later Ezekiel sees the same thing in his vision:</p>
 
     <div class="scripture-block">
       <span class="scripture-ref">Ezekiel 1:22, 26</span>
       <div class="scripture-text">And the likeness of the <strong>firmament</strong> upon the heads of the living creature was as the colour of the terrible crystal... And above the <strong>firmament</strong> that was over their heads <strong>was the likeness of a throne</strong>, as the appearance of a sapphire stone.</div>
     </div>
 
-    <p>The throne of God, Scripture consistently tells us, sits upon the firmament. Isaiah confirms it:</p>
+    <p>Scripture consistently places God's throne upon the firmament. Isaiah says it directly:</p>
 
     <div class="scripture-block">
       <span class="scripture-ref">Isaiah 66:1</span>
       <div class="scripture-text">Thus saith the Lord, <strong>The heaven is my throne, and the earth is my footstool.</strong></div>
     </div>
 
-    <p>The Hebrew scholar Robert J. Schadewald summarises the scriptural picture plainly: <em>"The vault of heaven is a crucial concept. The word firmament appears in the King James version of the Old Testament 17 times, and in each case it is translated from the Hebrew word raqiya, which meant the visible vault of the sky. Elihu asks Job, 'Can you beat out the vault of the skies, as he does, hard as a mirror of cast metal?' This shows that the Hebrews considered the vault of heaven a solid, physical object."</em></p>
+    <p>Robert J. Schadewald, a Hebrew scholar, put the scriptural picture plainly: <em>"The vault of heaven is a crucial concept. The word firmament appears in the King James version of the Old Testament 17 times, and in each case it is translated from the Hebrew word raqiya, which meant the visible vault of the sky. Elihu asks Job, 'Can you beat out the vault of the skies, as he does, hard as a mirror of cast metal?' This shows that the Hebrews considered the vault of heaven a solid, physical object."</em></p>
 
-    <p>Psalm 19:1 states: <em>"The heavens declare the glory of God and the firmament sheweth his handiwork."</em> The firmament is something God made with His hands. Scripture stretches it like a curtain and spreads it like a tent:</p>
+    <p>Psalm 19:1 says <em>"The heavens declare the glory of God and the firmament sheweth his handiwork."</em> The firmament is something God made with His hands. Scripture stretches it like a curtain and spreads it like a tent:</p>
 
     <div class="scripture-grid">
       <div class="sg-item">
@@ -283,7 +271,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
       <div class="img-card-cap"><strong>testingtheglobe.com</strong> by Rob Skiba. One Man's Quest for Truth series.</div>
     </div>
 
-    <p>Genesis is direct on what the firmament contains: <em>"God set them in the firmament of heaven to give light upon the earth"</em> (Genesis 1:17). The sun, moon and stars are placed <strong>inside</strong> the firmament. Not beyond it. Not in outer space on the other side of it. Inside it, as lamps hung in a tent.</p>
+    <p>Genesis is direct about what the firmament contains: <em>"God set them in the firmament of heaven to give light upon the earth"</em> (Genesis 1:17). The sun, moon and stars are placed <strong>inside</strong> the firmament. Not beyond it. Not in outer space on the other side. Inside it, like lamps hung in a tent.</p>
 
   </div>
 
@@ -294,7 +282,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     <div class="section-label">Isaiah and Proverbs</div>
     <h2 class="section-title">The <em>Circle</em> of the Earth</h2>
 
-    <p>Isaiah 40:22 is the verse most frequently cited by those who claim the Bible teaches a spherical earth: <em>"It is he that sitteth upon the circle of the earth."</em> The Hebrew word translated "circle" here is <span class="heb-word">chug</span>. But is <span class="heb-word">chug</span> the word for a sphere? Consider that Isaiah himself uses a completely different word when he wants to describe a ball:</p>
+    <p>Isaiah 40:22 is the verse people most often cite when they say the Bible teaches a spherical earth: <em>"It is he that sitteth upon the circle of the earth."</em> The Hebrew word for "circle" here is <span class="heb-word">chug</span>. But is <span class="heb-word">chug</span> the word for a sphere? Isaiah himself uses a completely different word when he means a ball:</p>
 
     <div class="scripture-block">
       <span class="scripture-ref">Isaiah 22:18</span>
@@ -302,7 +290,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
       <div class="scripture-note">The Hebrew word here is <span class="heb-word">dur</span>, meaning a spherical object you can throw. Isaiah knew the difference between a circle and a sphere, and chose different words for each.</div>
     </div>
 
-    <p><span class="heb-word">Chug</span> means circle, compass, or vault. You cannot toss a <span class="heb-word">chug</span>. You can inscribe one, as Solomon writes:</p>
+    <p><span class="heb-word">Chug</span> means circle, compass, or vault. You cannot toss a <span class="heb-word">chug</span>. You can inscribe one. Solomon writes:</p>
 
     <div class="scripture-block">
       <span class="scripture-ref">Proverbs 8:27 (ESV)</span>
@@ -314,7 +302,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
       <div class="scripture-text">He has <strong>inscribed a circle on the surface of the waters at the boundary of light and darkness.</strong></div>
     </div>
 
-    <p>A circle inscribed on the face of the deep. A boundary between light and darkness. The same word <span class="heb-word">chug</span> appears in Job 22:14, where God walks <em>"on the circle of the sky"</em> (HCSB) or <em>"in the circuit of heaven"</em> (KJV). Schadewald writes: <em>"By extension, chug can mean roundness, as in a rounded dome or vault. In both verses, the use of chug implies a physical object, on which one can sit and walk."</em></p>
+    <p>A circle inscribed on the face of the deep. A boundary between light and darkness. The same word <span class="heb-word">chug</span> shows up in Job 22:14, where God walks <em>"on the circle of the sky"</em> (HCSB) or <em>"in the circuit of heaven"</em> (KJV). Schadewald wrote: <em>"By extension, chug can mean roundness, as in a rounded dome or vault. In both verses, the use of chug implies a physical object, on which one can sit and walk."</em></p>
 
     <div class="pull-quote">
       "How do you inscribe a circle on the face of something to get a ball? The circle is something cut into something else. An ice-skating rink is a circle. We skate on it, going round and round, but never up, over and around. It is not a sphere. It is an enclosure in the shape of a circle.", Rob Skiba
@@ -344,7 +332,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     <div class="section-label">Foundations and Pillars</div>
     <h2 class="section-title">The <em>Fixed</em> Earth</h2>
 
-    <p>The earth we are told was established and does not move. This is not a marginal teaching scattered across one or two passages. It runs consistently from Job (the oldest book) through the Psalms, the prophets and into Zechariah:</p>
+    <p>Scripture tells us the earth was established and does not move. This is not a marginal idea tucked into one or two verses. It runs from Job, the oldest book, through the Psalms and the prophets and into Zechariah:</p>
 
     <div class="scripture-grid">
       <div class="sg-item">
@@ -373,16 +361,16 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
       </div>
     </div>
 
-    <p>YHWH Himself speaks directly to Job from the whirlwind and describes the earth's foundation in terms that are architectural, not orbital:</p>
+    <p>YHWH speaks to Job from the whirlwind and describes the earth's foundation in architectural terms, not orbital ones:</p>
 
     <div class="scripture-block">
       <span class="scripture-ref">Job 38:4, 6 (KJV)</span>
       <div class="scripture-text">Where wast thou when I laid the <strong>foundations of the earth?</strong>... <strong>Whereupon are the foundations thereof fastened? or who laid the corner stone thereof?</strong></div>
     </div>
 
-    <p>How does one fasten the foundations of a rotating globe spinning at 1,000 miles per hour while orbiting the sun at 67,000 miles per hour? Where do the corner stones and pillars go in that model? Rob Skiba asks the question plainly: <em>"Tossing out all preconceived ideas of a spinning globe, just reading the text by itself, no one would ever think anything different from what it says."</em></p>
+    <p>How do you fasten the foundations of a globe spinning at 1,000 miles per hour while orbiting the sun at 67,000? Where do the corner stones and pillars fit in that picture? Rob Skiba put it plainly: <em>"Tossing out all preconceived ideas of a spinning globe, just reading the text by itself, no one would ever think anything different from what it says."</em></p>
 
-    <p>These passages also resolve what would otherwise be a problem for the globe model: the sun standing still. Scripture records this miracle not once but several times, and it is the <strong>sun</strong> that stops, not the earth:</p>
+    <p>These passages also answer a problem for the globe model: the sun standing still. Scripture records this miracle more than once, and it is the <strong>sun</strong> that stops, not the earth:</p>
 
     <div class="scripture-block">
       <span class="scripture-ref">Joshua 10:13</span>
@@ -399,7 +387,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
       <div class="scripture-text">Behold, I will bring again the shadow of the degrees which is gone down in the sun dial of Ahaz <strong>ten degrees backward. So the sun returned ten degrees.</strong></div>
     </div>
 
-    <p>On a globe model, all three of these accounts require the earth itself to stop rotating and in Isaiah's case to briefly reverse rotation. In a geocentric model with a stationary earth and a moving sun inside the firmament, they require nothing more than what they say: the sun stood still, and the sun went backward.</p>
+    <p>On a globe model, all three accounts require the earth itself to stop rotating, and in Isaiah's case to briefly reverse. In a geocentric model with a stationary earth and a moving sun inside the firmament, they mean exactly what they say: the sun stood still, and the sun went backward.</p>
 
   </div>
 
@@ -410,23 +398,23 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     <div class="section-label">Genesis 1:14-17</div>
     <h2 class="section-title">Sun, Moon <em>and Stars</em></h2>
 
-    <p>Genesis is explicit about where the lights are placed. The word <em>in</em> is used four times in four verses, and each time it is referring to the firmament:</p>
+    <p>Genesis is explicit about where the lights go. The word <em>in</em> appears four times in four verses, and each time it refers to the firmament:</p>
 
     <div class="scripture-block">
       <span class="scripture-ref">Genesis 1:14, 15, 17 (KJV)</span>
       <div class="scripture-text">And God said, Let there be lights <strong>in the firmament of the heaven</strong>... And let them be for lights <strong>in the firmament of the heaven</strong> to give light upon the earth... And God set them <strong>in the firmament of the heaven</strong> to give light upon the earth.</div>
     </div>
 
-    <p>The sun, moon and stars are not outside the firmament in a vacuum of space billions of light years away. According to the plain text, they are inside it, moving within the enclosed structure above the earth. The Psalms describe the sun's movement accordingly:</p>
+    <p>The sun, moon and stars are not outside the firmament in a vacuum billions of light years away. On the plain reading, they are inside it, moving within the enclosed structure above the earth. The Psalms describe the sun's movement the same way:</p>
 
     <div class="scripture-block">
       <span class="scripture-ref">Psalm 19:4, 6</span>
       <div class="scripture-text">In them hath he set a tabernacle for the sun... <strong>His going forth is from the end of the heaven, and his circuit unto the ends of it</strong>: and there is nothing hid from the heat thereof.</div>
     </div>
 
-    <p>Ecclesiastes states it plainly: <em>"The sun also ariseth, and the sun goeth down, and hasteth to his place where he arose"</em> (Ecclesiastes 1:5). The sun moves. It has a circuit. It has a place it returns to.</p>
+    <p>Ecclesiastes says it plainly: <em>"The sun also ariseth, and the sun goeth down, and hasteth to his place where he arose"</em> (Ecclesiastes 1:5). The sun moves. It has a circuit. It has a place it returns to.</p>
 
-    <p>At the end of all things, according to both the prophets and Yeshua himself, the stars will fall to earth and the heavens will be rolled up like a scroll:</p>
+    <p>At the end of all things, both the prophets and Yeshua Himself say the stars will fall to earth and the heavens will be rolled up like a scroll:</p>
 
     <div class="scripture-grid">
       <div class="sg-item">
@@ -447,9 +435,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
       </div>
     </div>
 
-    <p>If the stars are suns trillions of miles away, each with solar systems going around them, how do they fall to earth like figs from a fig tree? Only in a model where the stars are close, small, and inside the firmament does this language become literally possible rather than purely symbolic.</p>
+    <p>If the stars are suns trillions of miles away, each with solar systems orbiting them, how do they fall to earth like figs from a fig tree? Only in a model where the stars are close, small, and inside the firmament does that language become literally possible instead of purely symbolic.</p>
 
-    <p>Scripture also associates stars with the angels directly. Job 38:7 describes the morning stars singing together at creation, and the sons of God shouting for joy. Revelation 9:1 describes a star falling from heaven <em>"and to him was given the key of the bottomless pit."</em> Stars, in Scripture, are frequently personal, sentient beings.</p>
+    <p>Scripture also ties stars to angels directly. Job 38:7 describes the morning stars singing together at creation, and the sons of God shouting for joy. Revelation 9:1 describes a star falling from heaven <em>"and to him was given the key of the bottomless pit."</em> In Scripture, stars are often personal, sentient beings.</p>
 
   </div>
 
@@ -460,21 +448,21 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     <div class="section-label">Genesis 1 and Psalm 148</div>
     <h2 class="section-title">Waters <em>Above</em> the Firmament</h2>
 
-    <p>Genesis 1:7 states that God divided the waters under the firmament from the waters above the firmament. Those waters above are still there. They did not simply evaporate at the Flood or cease to be mentioned. Psalm 148 calls them to praise:</p>
+    <p>Genesis 1:7 says God divided the waters under the firmament from the waters above it. Those waters above are still there. They did not simply evaporate at the Flood or drop out of the text. Psalm 148 calls them to praise:</p>
 
     <div class="scripture-block">
       <span class="scripture-ref">Psalm 148:4</span>
       <div class="scripture-text">Praise him, ye heavens of heavens, and <strong>ye waters that be above the heavens.</strong></div>
     </div>
 
-    <p>Psalm 104 describes God laying the beams of his chambers in those very waters: <em>"Who layeth the beams of his chambers in the waters"</em> (Psalm 104:3). And at the Flood, it is not merely rain that falls. It is the windows of heaven being opened:</p>
+    <p>Psalm 104 describes God laying the beams of His chambers in those waters: <em>"Who layeth the beams of his chambers in the waters"</em> (Psalm 104:3). At the Flood, it is not merely rain that falls. The windows of heaven are opened:</p>
 
     <div class="scripture-block">
       <span class="scripture-ref">Genesis 7:11</span>
       <div class="scripture-text">...the same day were all <strong>the fountains of the great deep broken up, and the windows of heaven were opened.</strong></div>
     </div>
 
-    <p>Windows. Not clouds. The deep both below and above is broken open simultaneously. This is consistent with a sealed structure containing vast bodies of water on both sides of the firmament, not with a planet surrounded by the vacuum of space.</p>
+    <p>Windows. Not clouds. The deep below and the deep above break open at the same time. That fits a sealed structure with vast bodies of water on both sides of the firmament. It does not fit a planet surrounded by the vacuum of space.</p>
 
   </div>
 
@@ -485,7 +473,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     <div class="section-label">Ends and Corners</div>
     <h2 class="section-title">Four Corners, <em>Four Winds</em></h2>
 
-    <p>From Job to Revelation, Scripture repeatedly refers to the ends and corners of the earth. These phrases appear with remarkable consistency and cannot simply be dismissed as poetic:</p>
+    <p>From Job to Revelation, Scripture keeps referring to the ends and corners of the earth. These phrases show up again and again. They are hard to dismiss as mere poetry:</p>
 
     <div class="scripture-grid">
       <div class="sg-item">
@@ -508,7 +496,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 
     <p>Rob Skiba observes: <em>"If we accept that the authors of Scripture were directly inspired by the Holy Spirit of the Creator Himself, don't you think they would have used better terms to describe a spinning globe orbiting the sun if that were indeed the case? A simple reading of the Scriptures absolutely does not paint a picture of a globe. No child, unhindered by the interpretation and indoctrination of a scientist or theologian, would ever get a spinning globe out of any of the above."</em></p>
 
-    <p>What Scripture does paint consistently is an enclosed, circular, stationary earth under a solid dome, with waters above and below, the sun and moon moving inside the firmament, foundations and pillars holding the whole structure in place, and the throne of the Almighty seated atop it all.</p>
+    <p>What Scripture paints consistently, when you read it on its own terms, is an enclosed, circular, stationary earth under a solid dome. Waters above and below. The sun and moon moving inside the firmament. Foundations and pillars holding the structure in place. And the throne of the Almighty seated above it all.</p>
 
   </div>
 
@@ -519,7 +507,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     <div class="section-label">Further Study</div>
     <h2 class="section-title">Go <em>Deeper</em></h2>
 
-    <p>The material on this page is a summary of Part 4 of Rob Skiba's series. His full research covers the Book of Enoch, angels and stars, the pillars of the earth, and the broader implications of a Biblical cosmology. We recommend reading the full series and testing everything against the text yourself.</p>
+    <p>What you have read here is a summary of Part 4 of Rob Skiba's series. 2:22 Church built this page to promote his work at <a href="https://www.testingtheglobe.com/bible.html" target="_blank" rel="noopener">testingtheglobe.com</a>. His full research covers the Book of Enoch, angels and stars, the pillars of the earth, and the broader implications of a Biblical cosmology.</p>
 
     <div class="scripture-grid">
       <div class="sg-item">
@@ -543,7 +531,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   </div>
 
   <div class="disclaimer">
-    <p><strong>Note from 2:22 Church:</strong> We present this material as an open invitation to study the Scripture text without preconceived assumptions. We do not require any particular cosmological position as a condition of fellowship. We do require that every believer test all things by the word of God alone. Rob Skiba's research is cited here because it is serious, scripture-grounded and deserving of honest engagement. Read the Bible. Check the Hebrew. Come to your own conclusions before the Lord.</p>
+    <p><strong>Note from 2:22 Church:</strong> We promote Rob Skiba and testingtheglobe.com because his work is serious, scripture grounded, and worth honest engagement. We had come to much of the same understanding before we found his research, but he did the thorough study. We do not require any particular cosmological position for fellowship. We do require that every believer test all things by the word of God alone.</p>
   </div>
 
 </div>
@@ -552,8 +540,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-      <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
-      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
+      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching, with no walls, no hierarchy, just people.</p>
+      <div class="footer-social">
+        <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        <a href="https://www.instagram.com/2.22church" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.012-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.668-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+      </div>
     </div>
     <div class="footer-col">
       <h4>Explore</h4>
@@ -591,12 +582,25 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
     </div>
   </div>
   <div class="footer-bottom">
-    <span>2025 2:22 Church · 2-22church.com</span>
+    <span>All copyrights reserved. @2-22 Church, 2026</span>
     <span class="footer-verse">"Where two or three gather in my name, there am I with them." Matthew 18:20</span>
   </div>
 </footer>
 
 <script>
+(function () {
+  var video = document.getElementById('cosmology-hero-video');
+  if (!video) return;
+  var endAt = 5;
+  function loopClip() {
+    if (video.currentTime >= endAt) video.currentTime = 0;
+  }
+  video.addEventListener('loadedmetadata', function () {
+    video.currentTime = 0;
+    video.play().catch(function () {});
+  });
+  video.addEventListener('timeupdate', loopClip);
+})();
 document.addEventListener('click', function(e) {
   var menu = document.getElementById('mobile-menu');
   var hamburger = document.querySelector('.nav-hamburger');
@@ -617,22 +621,6 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
 
 
 
-<script>
-document.querySelectorAll('.nav-item').forEach(function(item){
-  item.querySelector(':scope>a').addEventListener('click',function(e){
-    e.preventDefault();
-    var isOpen=item.classList.contains('open');
-    document.querySelectorAll('.nav-item.open').forEach(function(el){el.classList.remove('open');});
-    if(!isOpen)item.classList.add('open');
-  });
-  item.querySelectorAll('.nav-dropdown a').forEach(function(a){
-    a.addEventListener('click',function(){item.classList.remove('open');});
-  });
-});
-document.addEventListener('click',function(e){
-  if(!e.target.closest('.nav-item'))
-    document.querySelectorAll('.nav-item.open').forEach(function(el){el.classList.remove('open');});
-});
-</script>
+
 </body>
 </html>

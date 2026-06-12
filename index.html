@@ -4,7 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>2:22 Church, Built on the Living Word</title>
-<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=2">
+<link rel="icon" href="favicon.ico?v=2" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+<link rel="stylesheet" href="style.css?v=7">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -91,27 +95,6 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 
 
 
-/* NAV DROPDOWNS, self-contained, does not rely on style.css version */
-.nav-item{position:relative;list-style:none;}
-.nav-item>a{display:inline-flex;align-items:center;gap:4px;cursor:pointer;}
-.nav-item .caret{font-size:0.5rem;opacity:0.55;transition:transform 0.2s;display:inline-block;}
-.nav-item.open>.caret,.nav-item.open>a .caret{transform:rotate(180deg);}
-.nav-dropdown{
-  display:none;
-  position:absolute;top:calc(100% + 8px);left:50%;
-  transform:translateX(-50%);
-  background:rgba(255,255,255,0.98);
-  border:0.5px solid rgba(23,42,54,0.16);
-  min-width:170px;z-index:500;padding:0.4rem 0;
-}
-.nav-item.open .nav-dropdown{display:block;}
-.nav-dropdown a{
-  display:block;padding:0.6rem 1.2rem;
-  font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
-  color:var(--text-secondary);text-decoration:none;white-space:nowrap;transition:all 0.15s;
-}
-.nav-dropdown a:hover{color:var(--gold);background:rgba(23,42,54,0.08);}
-
 /* ════════════ HERO ════════════ */
 /* centre shaft */
 /* ── 3-column layout: [verse | centre | verse] ── */
@@ -170,6 +153,8 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
 .bs-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
 .bs-ref{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.25rem;}
 .bs-item p{font-size:0.82rem;color:var(--text-secondary);line-height:1.65;font-style:italic;}
+.bs-item p strong{font-weight:600;color:var(--text-primary);font-style:inherit;}
+#conviction-one-god{scroll-margin-top:6rem;}
 
 /* COMMUNITY CARDS */
 .community-statement{max-width:800px;margin:0 auto 3rem;}
@@ -406,7 +391,7 @@ h1 .church-word{font-style:italic;color:var(--text-secondary);font-size:clamp(2.
   line-height:1.65;
 }
 .about-grid,.proclaim-grid{gap:clamp(2rem,5vw,4rem) !important;}
-section.about{padding-top:7.5rem;}
+#about{padding-top:7.5rem;}
 @media(max-width:900px){
   .home-hero{min-height:auto;padding:5.5rem clamp(1.2rem,5vw,5rem) 2.5rem;}
   .hero-inner{grid-template-columns:1fr;align-items:start;gap:1.6rem;}
@@ -453,9 +438,12 @@ section.about{padding-top:7.5rem;}
   margin:0 auto;
   border-radius:12px;
 }
-.home-figure.home-figure-foundation img{max-width:440px;}
-.home-figure.home-figure-visions img{max-width:300px;border-radius:14px;}
-.home-figure.home-figure-distinction{padding:1.6rem;}
+.home-figure.home-figure-foundation{padding:0.85rem 1rem;}
+.home-figure.home-figure-foundation img{max-width:100%;width:100%;}
+.home-figure.home-figure-visions{padding:1.2rem 1.4rem;}
+.home-figure.home-figure-visions img{max-width:100%;width:100%;border-radius:12px;}
+.home-figure.home-figure-distinction{padding:0.85rem 1rem;}
+.home-figure.home-figure-distinction img{max-width:100%;width:100%;}
 
 
 /* FOUNDATION SUMMARY BOX (moved out of hero, under the Foundation title) */
@@ -483,8 +471,49 @@ section.about{padding-top:7.5rem;}
   color:var(--text-primary);
 }
 .foundation-box p{margin:0;color:var(--text-secondary);font-size:0.95rem;line-height:1.7;}
+.home-section{padding:5rem 0;border-top:0.5px solid var(--border-subtle);}
+.home-section-alt{background:var(--surface-light);}
+.home-split-media{display:flex;align-items:flex-start;justify-content:center;width:100%;}
+.home-split-media .home-figure{width:100%;max-width:none;}
+.home-split-sticky{position:sticky;top:6rem;}
+.foundation-verse .verse-block blockquote{font-size:0.92rem;line-height:1.65;}
+.proclaim-verse{margin-top:1.2rem;}
+.proclaim-verse .verse-block blockquote{font-size:0.92rem;line-height:1.65;}
+.proclaim-verse blockquote strong{font-weight:600;color:var(--text-primary);font-style:inherit;}
+.proclaim-more{margin-top:1rem;font-size:0.87rem;color:var(--text-secondary);line-height:1.75;}
+.proclaim-more a{color:var(--gold);font-weight:500;text-decoration:underline;text-underline-offset:0.2em;}
+@media(max-width:860px){
+  .home-split-sticky{position:static;}
+  .home-split-media{margin-top:2rem;}
+}
 /* Hero now showcases two scriptures only */
 .home-hero .hero-info-grid{align-content:center;}
+
+/* STANDALONE CALL SECTION (moved out of We Proclaim) */
+.proclaim-call{
+  background:var(--deep-mid);
+  border-top:0.5px solid var(--border-subtle);
+  border-bottom:0.5px solid var(--border-subtle);
+}
+.proclaim-call-inner{max-width:780px;margin:0 auto;text-align:center;}
+.proclaim-call .pc-eyebrow{
+  display:inline-block;font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;
+  color:var(--gold);font-weight:500;margin-bottom:1.4rem;
+}
+.proclaim-call .pc-statement{
+  font-family:'Poppins',Arial,sans-serif;
+  font-size:clamp(1.5rem,3.2vw,2.2rem);font-weight:300;font-style:italic;
+  line-height:1.45;color:var(--text-primary);margin:0 auto 1.4rem;max-width:680px;
+}
+.proclaim-call .pc-statement strong{font-style:normal;font-weight:600;color:var(--gold);}
+.proclaim-call .pc-sub{
+  font-size:1rem;color:var(--text-secondary);line-height:1.85;
+  max-width:560px;margin:0 auto 1.5rem;
+}
+.proclaim-call .pc-sub strong{color:var(--text-primary);font-weight:500;}
+.proclaim-call .pc-refs{
+  display:inline-block;font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);
+}
 
 </style>
 </head>
@@ -492,27 +521,23 @@ section.about{padding-top:7.5rem;}
 
 <nav>
   <a href="index.html" class="nav-logo"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-  <ul class="nav-links">
+        <ul class="nav-links">
     <li><a href="index.html#about" class="active">Home</a></li>
-    <li class="nav-item">
-      <a href="our-story.html">About <span class="caret">&#9660;</span></a>
-      <div class="nav-dropdown">
-        <a href="our-story.html">Our Story</a>
-        <a href="gatherings.html">Gatherings</a>
-      </div>
-    </li>
     <li><a href="articles.html">Articles</a></li>
     <li><a href="blogs.html">Blogs</a></li>
     <li class="nav-item">
-      <a href="cosmology.html">Study <span class="caret">&#9660;</span></a>
+      <a href="study.html">Study</a>
       <div class="nav-dropdown">
         <a href="cosmology.html">Biblical Cosmology</a>
         <a href="project314.html">God of Pi</a>
+        <a href="noahs-ark.html">Noah's Ark</a>
+        <a href="solomons-temple.html">Solomon's Temple</a>
+        <a href="heavenly-jerusalem.html">Heavenly Jerusalem</a>
         <a href="old-maps.html">Old Maps</a>
       </div>
     </li>
     <li class="nav-item">
-      <a href="references.html">Resources <span class="caret">&#9660;</span></a>
+      <a href="references.html">Resources</a>
       <div class="nav-dropdown">
         <a href="references.html#one-god">One God</a>
         <a href="references.html#short-season">Short Season</a>
@@ -525,6 +550,7 @@ section.about{padding-top:7.5rem;}
       </div>
     </li>
     <li><a href="qa.html">Q&amp;A</a></li>
+    <li><a href="our-story.html">Our Story</a></li>
   </ul>
   <a href="#join" class="nav-cta">Connect</a>
   <button class="nav-hamburger" aria-label="Menu">
@@ -534,193 +560,184 @@ section.about{padding-top:7.5rem;}
 <div class="mobile-menu" id="mobile-menu">
   <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
   <a href="index.html#about" onclick="this.closest('.mobile-menu').classList.remove('open')">Home</a>
-  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
-  <a href="gatherings.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Gatherings</a>
   <a href="articles.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Articles</a>
   <a href="blogs.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Blogs</a>
+  <a href="study.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Study</a>
   <a href="cosmology.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Biblical Cosmology</a>
   <a href="project314.html" onclick="this.closest('.mobile-menu').classList.remove('open')">God of Pi</a>
+  <a href="noahs-ark.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Noah's Ark</a>
+  <a href="solomons-temple.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Solomon's Temple</a>
+  <a href="heavenly-jerusalem.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Heavenly Jerusalem</a>
   <a href="old-maps.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Old Maps</a>
   <a href="references.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Resources</a>
   <a href="qa.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Q&amp;A</a>
-  <a href="index.html#join" style="color:var(--text-primary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
+  <a href="our-story.html" onclick="this.closest('.mobile-menu').classList.remove('open')">Our Story</a>
+  <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
+
 <section class="hero home-hero" id="hero-section">
   <div class="hero-media" aria-hidden="true"></div>
   <div class="hero-inner">
     <div class="hero-copy">
       <p class="hero-kicker">Built on the Living Word</p>
       <h1 class="hero-title">A house church movement</h1>
-      <p class="hero-subtitle">A spiritual family returning to apostolic teaching, fellowship, breaking of bread, and prayer in homes, gardens, beaches, and everyday places.</p>
+      <p class="hero-subtitle">We are a community built upon the apostolic foundation of teaching, fellowship, breaking bread, and prayer in homes, backyards, and parks.</p>
       <div class="hero-actions">
-        <a href="#about" class="hero-btn">Our Foundation</a>
-        <a href="gatherings.html" class="hero-btn hero-btn-light">Find a Gathering</a>
+        <a href="#our-call" class="hero-btn">Our Call</a>
+        <a href="#about" class="hero-btn hero-btn-light">Our Foundation</a>
       </div>
     </div>
 
     <div class="hero-info-grid" aria-label="Guiding scriptures">
       <article class="hero-info-card">
         <span>2 Timothy 2:2</span>
-        <p>Entrust true teaching to reliable people who will teach others.</p>
+        <p>Hand on what is true to people you can trust. They will teach others after you.</p>
       </article>
       <article class="hero-info-card">
         <span>2 Timothy 2:22</span>
-        <p>Pursue righteousness, faith, love, and peace together.</p>
+        <p>Pursue righteousness, faith, love, and peace with others who are doing the same.</p>
       </article>
     </div>
   </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="about" id="about">
+<section class="proclaim-call" id="our-call">
   <div class="container">
+    <div class="proclaim-call-inner">
+      <span class="pc-eyebrow">Our Call</span>
+      <p class="pc-statement">We carry a burden to be <strong>a voice in days of delusion</strong>, calling people back to truth and asking them to come out of what Scripture calls the world, because we have watched sincere souls grow thin inside religion that performed well but never fed them.</p>
+      <p class="pc-sub">That burden includes bringing fruitless deeds into the light, the kind Ephesians 5:11 names, and we did not ask for it but we carry it because we care for the people still trapped in the show.</p>
+      <span class="pc-refs">Revelation 18:4 &nbsp;&#183;&nbsp; Ephesians 5:11</span>
+    </div>
+  </div>
+</section>
 
-    <!-- ── ROW 1: Foundation heading + 2 Visions name card ── -->
+<section class="about home-section" id="about">
+  <div class="container">
     <div class="about-grid">
-
       <div class="about-text">
         <div class="section-label">Our Foundation</div>
         <h2 class="section-title">Built on the Foundation of the <em>Apostles and Prophets</em></h2>
-        <p>We are a &#8216;House Church Movement&#8217; that is returning to the &#8216;original model of faith&#8217; by gathering in small groups at homes, gardens, beaches, and backyards, continuing steadfastly in the apostles&#8217; doctrine and fellowship, and in the breaking of bread, and in prayers, as mentioned in <em>Acts 2:42</em>. We believe in the God the Hebrews believed in, <em>Deuteronomy 6:4</em>. We agree with the testimony Jesus gave about Himself and God in <em>John 17:3</em>, and with that we follow the footsteps of the Apostles as declared in <em>Acts 2:36, Ephesians 1:3,</em> and <em>1 Corinthians 8:6</em>.</p>
-        <div class="home-figure home-figure-foundation" style="margin-top:2rem;">
-          <img src="foundations-pillars.svg"
-               alt="A house on four pillars: Teaching, Fellowship, Breaking Bread, Prayer (Acts 2:42)">
-        </div>
-      </div>
-
-      <!-- RIGHT: 2 Visions image + name explanation -->
-      <div>
-        <div class="dual-verse">
-          <h3>Why the name 2-22?</h3>
-
-          <div class="home-figure home-figure-visions" style="margin-bottom:1.5rem;">
-            <img src="why-the-name.svg" alt="Two overlapping circles forming a flame: Apostolic Teaching and Inward Purity">
-          </div>
-
-          <div class="verse-block">
-            <cite style="font-family:'Poppins',Arial,sans-serif;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.5rem;">2:2, First Vision</cite>
-            <blockquote>Passing True Apostolic Teaching</blockquote>
-            <p style="font-size:0.82rem;color:var(--text-muted);margin-top:0.5rem;line-height:1.6;">2 Timothy 2:2, a charge to entrust faithful teaching to reliable people who will also be qualified to teach others. The apostolic flame must be passed, unaltered, from hand to hand.</p>
-          </div>
-          <div class="verse-block">
-            <cite style="font-family:'Poppins',Arial,sans-serif;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.5rem;">2:22, Second Vision</cite>
-            <blockquote>Create a Community Passionate to Live a Life of Inward Purity</blockquote>
-            <p style="font-size:0.82rem;color:var(--text-muted);margin-top:0.5rem;line-height:1.6;">2 Timothy 2:22, a call to pursue righteousness, faith, love and peace together. Purity that begins within, lived out in holy community. The two callings are inseparable, one digit shared between them.</p>
+        <p>We started a movement to find the faith the apostles lived, the way <em>Acts 2:42</em> describes it: teaching, fellowship, breaking bread, and prayer in homes where people actually gather.</p>
+        <div class="foundation-verse" style="margin-top:1.4rem;">
+          <div class="verse-block" style="margin-bottom:0;padding-bottom:0;border-bottom:none;">
+            <cite>Acts 2:42 (NKJV)</cite>
+            <blockquote>And they continued steadfastly in the apostles&#8217; doctrine and fellowship, in the breaking of bread, and in prayers.</blockquote>
           </div>
         </div>
       </div>
+      <div class="home-split-media home-split-sticky">
+        <div class="home-figure home-figure-foundation">
+          <img src="foundations-pillars.svg" alt="A house on four pillars: Teaching, Fellowship, Breaking Bread, Prayer (Acts 2:42)">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    </div><!-- /about-grid row 1 -->
+<section class="about home-section home-section-alt" id="why-name">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-label">The Name</div>
+        <h2 class="section-title">Why the name <em>2-22</em>?</h2>
+        <div class="verse-block" style="margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:0.5px solid var(--border-subtle);">
+          <cite style="font-family:'Poppins',Arial,sans-serif;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.5rem;">2:2, First Vision</cite>
+          <blockquote>Passing True Apostolic Teaching</blockquote>
+          <p style="font-size:0.88rem;color:var(--text-secondary);margin-top:0.6rem;line-height:1.75;">2 Timothy 2:2 is about putting faithful teaching into reliable hands, people qualified to pass it on, so the flame moves from hand to hand without being altered. That burden is the first half of why this exists.</p>
+        </div>
+        <div class="verse-block">
+          <cite style="font-family:'Poppins',Arial,sans-serif;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.5rem;">2:22, Second Vision</cite>
+          <blockquote>Create a Community Passionate to Live a Life of Inward Purity</blockquote>
+          <p style="font-size:0.88rem;color:var(--text-secondary);margin-top:0.6rem;line-height:1.75;">2 Timothy 2:22 calls us to pursue righteousness, faith, love, and peace together, purity starting inside and lived out in holy community. The two callings belong together, and they even share a digit, which still makes us smile when we think about it.</p>
+        </div>
+      </div>
+      <div class="home-split-media home-split-sticky">
+        <div class="home-figure home-figure-visions">
+          <img src="why-the-name.svg" alt="Two overlapping circles forming a flame: Apostolic Teaching and Inward Purity">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- ── ROW 2: Proclaim section ── -->
-    <div style="margin-top:3rem;border-top:0.5px solid var(--border);padding-top:3rem;">
-
-      <!-- Proclaim label -->
-      <p style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:2.5rem;border-left:2px solid var(--gold);padding-left:0.75rem;">To Proclaim</p>
-
-      <!-- Two-column: rich text left, diagram right -->
-      <div class="proclaim-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
-
-        <!-- LEFT: proclamation text with full typographic treatment -->
+<section class="about home-section" id="we-proclaim">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-label">We Proclaim</div>
+        <h2 class="section-title">What We <em>Hold To</em></h2>
+        <div style="margin-bottom:2rem;padding-bottom:2rem;border-bottom:0.5px solid var(--border-subtle);">
+          <div style="font-family:'Poppins',Arial,sans-serif;font-size:1.65rem;font-weight:300;line-height:1.2;margin-bottom:0.6rem;">
+            <em style="color:var(--gold);font-style:italic;font-weight:700;">One True God</em>
+          </div>
+          <p style="font-size:0.87rem;color:var(--text-secondary);line-height:1.85;">
+            The God we believe in is the God the Hebrews believed in. There is one God and none other. The testimony we hold to is the one Jesus gave about Himself and the Father, and Jesus said it plainly after the resurrection:
+          </p>
+          <div class="proclaim-verse">
+            <div class="verse-block" style="margin-bottom:1rem;padding-bottom:1rem;border-bottom:0.5px solid var(--border-subtle);">
+              <cite>John 20:17 (NKJV)</cite>
+              <blockquote>Jesus said to her, &#8220;Do not cling to Me, for I have not yet ascended to My Father; but go to My brethren and say to them, &#8216;I am ascending to <strong>My Father and your Father, and to My God and your God.</strong>&#8217;&#8221;</blockquote>
+            </div>
+            <div class="verse-block" style="margin-bottom:1rem;padding-bottom:1rem;border-bottom:0.5px solid var(--border-subtle);">
+              <cite>Deuteronomy 6:4 (NKJV)</cite>
+              <blockquote>Hear, O Israel: <strong>The Lord our God, the Lord is one!</strong></blockquote>
+            </div>
+            <div class="verse-block" style="margin-bottom:0;padding-bottom:0;border-bottom:none;">
+              <cite>John 17:3 (NKJV)</cite>
+              <blockquote>And this is eternal life, that they may know <strong>You, the only true God, and Jesus Christ</strong> whom You have sent.</blockquote>
+            </div>
+          </div>
+          <p class="proclaim-more">The apostles named God the Father and the Lord Jesus Christ as two throughout their epistles, not a Trinity of co-equal persons. For the full witness from Romans through Revelation, see our <a href="#conviction-one-god">Core Convictions on One God</a>.</p>
+        </div>
+        <div style="margin-bottom:2rem;padding-bottom:2rem;border-bottom:0.5px solid var(--border-subtle);">
+          <div style="font-family:'Poppins',Arial,sans-serif;font-size:1.65rem;font-weight:300;line-height:1.2;margin-bottom:0.6rem;">
+            <em style="color:var(--gold);font-style:italic;font-weight:700;">Jesus Christ, God&#8217;s Son</em>
+          </div>
+          <p style="font-size:0.87rem;color:var(--text-secondary);line-height:1.85;">
+            The Father made Him <strong style="color:var(--text-primary);font-weight:500;">Lord and Saviour</strong> over us all, appointed and exalted, not co-equal with the Father in the way councils later insisted, and that distinction matters because it is what the apostles actually preached.
+          </p>
+          <div class="proclaim-verse">
+            <div class="verse-block" style="margin-bottom:1rem;padding-bottom:1rem;border-bottom:0.5px solid var(--border-subtle);">
+              <cite>Hebrews 1:1&#8211;4 (NKJV)</cite>
+              <blockquote>God, who at various times and in various ways spoke in time past to the fathers by the prophets, has in these last days <strong>spoken to us by His Son</strong>, whom He has appointed heir of all things, through whom also He made the worlds; who being the brightness of His glory and the express image of His person, and upholding all things by the word of His power, when He had by Himself purged our sins, sat down at the right hand of the Majesty on high, having become so much better than the angels, as He has by inheritance obtained a more excellent name than they.</blockquote>
+            </div>
+            <div class="verse-block" style="margin-bottom:0;padding-bottom:0;border-bottom:none;">
+              <cite>Acts 2:36 (NKJV)</cite>
+              <blockquote>Therefore let all the house of Israel know assuredly that <strong>God has made this Jesus, whom you crucified, both Lord and Christ.</strong></blockquote>
+            </div>
+          </div>
+        </div>
         <div>
-
-          <!-- Belief 1: One God -->
-          <div style="margin-bottom:2rem;padding-bottom:2rem;border-bottom:0.5px solid var(--border-subtle);">
-            <div style="font-family:'Poppins',Arial,sans-serif;font-size:1.65rem;font-weight:300;line-height:1.2;margin-bottom:0.6rem;">
-              We believe in <em style="color:var(--gold);font-style:italic;">One True God</em>
+          <div style="font-family:'Poppins',Arial,sans-serif;font-size:1.65rem;font-weight:300;line-height:1.2;margin-bottom:0.6rem;">
+            The Holy Spirit is <em style="color:var(--gold);font-style:italic;font-weight:700;">the Spirit of God Himself</em>
+          </div>
+          <p style="font-size:0.87rem;color:var(--text-secondary);line-height:1.85;margin-bottom:0.6rem;">
+            Not a third person sitting beside the Father, but the breath, power, and presence of God Himself, indivisible and inseparable, one with the Father in a way that resists the neat categories we were handed in Sunday school.
+          </p>
+          <div class="proclaim-verse">
+            <div class="verse-block" style="margin-bottom:1rem;padding-bottom:1rem;border-bottom:0.5px solid var(--border-subtle);">
+              <cite>1 Corinthians 2:11 (NKJV)</cite>
+              <blockquote>For what man knows the things of a man except the spirit of the man which is in him? Even so <strong>no one knows the things of God except the Spirit of God.</strong></blockquote>
             </div>
-            <p style="font-size:0.87rem;color:var(--text-secondary);line-height:1.85;">
-              One and none other, to whom Jesus himself declared:
-            </p>
-            <blockquote style="font-family:'Poppins',Arial,sans-serif;font-style:italic;font-size:1.05rem;color:var(--text-primary);border-left:2px solid rgba(23,42,54,0.24);padding:0.6rem 1rem;margin:0.75rem 0;line-height:1.7;">
-              &#8220;My Father and your Father, my God and your God.&#8221;
-            </blockquote>
-            <span style="font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);">John 20:17 &nbsp;·&nbsp; Deuteronomy 6:4 &nbsp;·&nbsp; John 17:3</span>
-          </div>
-
-          <!-- Belief 2: Jesus -->
-          <div style="margin-bottom:2rem;padding-bottom:2rem;border-bottom:0.5px solid var(--border-subtle);">
-            <div style="font-family:'Poppins',Arial,sans-serif;font-size:1.65rem;font-weight:300;line-height:1.2;margin-bottom:0.6rem;">
-              We believe in <em style="color:var(--gold);font-style:italic;">Jesus Christ, God&#8217;s Son</em>
+            <div class="verse-block" style="margin-bottom:1rem;padding-bottom:1rem;border-bottom:0.5px solid var(--border-subtle);">
+              <cite>Zechariah 4:6 (NKJV)</cite>
+              <blockquote>So he answered and said to me: &#8220;This is the word of the Lord to Zerubbabel: &#8216;<strong>Not by might nor by power, but by My Spirit,</strong>&#8217; Says the Lord of hosts.&#8221;</blockquote>
             </div>
-            <p style="font-size:0.87rem;color:var(--text-secondary);line-height:1.85;">
-              Whom the Father made <strong style="color:var(--text-primary);font-weight:500;">Lord and Saviour</strong> over and of us all —
-              not co-equal, but appointed and exalted.
-            </p>
-            <span style="font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.6rem;">Hebrews 1:1&#8211;4 &nbsp;·&nbsp; Acts 2:36</span>
-          </div>
-
-          <!-- Belief 3: Holy Spirit -->
-          <div style="margin-bottom:2rem;padding-bottom:2rem;border-bottom:0.5px solid var(--border-subtle);">
-            <div style="font-family:'Poppins',Arial,sans-serif;font-size:1.65rem;font-weight:300;line-height:1.2;margin-bottom:0.6rem;">
-              The Holy Spirit is <em style="color:var(--gold);font-style:italic;">the Spirit of God Himself</em>
+            <div class="verse-block" style="margin-bottom:0;padding-bottom:0;border-bottom:none;">
+              <cite>2 Corinthians 3:17 (NKJV)</cite>
+              <blockquote><strong>Now the Lord is the Spirit; and where the Spirit of the Lord is,</strong> there is liberty.</blockquote>
             </div>
-            <p style="font-size:0.87rem;color:var(--text-secondary);line-height:1.85;margin-bottom:0.6rem;">
-              Not a third person, but the very breath, power, and presence of God:
-            </p>
-            <p style="font-family:'Poppins',Arial,sans-serif;font-size:1.1rem;color:var(--text-primary);letter-spacing:0.04em;line-height:1.6;">
-              <em>Indivisible.&nbsp; Inseparable.&nbsp; Unpartable.</em>
-            </p>
-            <span style="font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.6rem;">1 Cor 2:11 &nbsp;·&nbsp; Zech 4:6 &nbsp;·&nbsp; 2 Cor 3:17</span>
-          </div>
-
-          <!-- Worship -->
-          <div style="margin-bottom:2rem;padding-bottom:2rem;border-bottom:0.5px solid var(--border-subtle);">
-            <div style="font-family:'Poppins',Arial,sans-serif;font-size:1.65rem;font-weight:300;line-height:1.2;margin-bottom:0.6rem;">
-              True <em style="color:var(--gold);font-style:italic;">Worship</em> begins within
-            </div>
-            <p style="font-size:0.87rem;color:var(--text-secondary);line-height:1.85;">
-              Not expensive instruments. Not high production. Not a skilled choir.<br>
-              What God requires is a <strong style="color:var(--text-primary);font-weight:500;">devoted, broken, and poor heart</strong> —
-              tamed for eternity, not performance.
-            </p>
-            <span style="font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.6rem;">Matthew 15:8&#8211;9 &nbsp;·&nbsp; 2 Timothy 3:5</span>
-          </div>
-
-          <!-- Closing call, pull quote -->
-          <div style="background:rgba(91,141,184,0.06);border-left:2px solid var(--gold);padding:1.2rem 1.5rem;">
-            <p style="font-family:'Poppins',Arial,sans-serif;font-size:1.15rem;font-style:italic;color:var(--text-primary);line-height:1.8;margin-bottom:0.75rem;">
-              We are <strong style="font-style:normal;font-weight:400;color:var(--gold);">the voice in the days of delusion</strong> —
-              calling everyone back to Truth, asking them to separate themselves from the world.
-            </p>
-            <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.75;">
-              Burdened to <strong style="color:var(--text-primary);font-weight:500;">expose the darkness</strong> and call
-              for fruitless deeds to be brought to light.
-            </p>
-            <span style="font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.75rem;">Revelation 18:4 &nbsp;·&nbsp; Ephesians 5:11</span>
-          </div>
-
-        </div><!-- /left proclamation -->
-
-        <!-- RIGHT: YHWH diagram (sticky) -->
-        <div class="proclaim-diagram" style="position:sticky;top:6rem;">
-          <div class="home-figure home-figure-distinction">
-            <span class="home-figure-label">The Distinction</span>
-            <img src="yhwh_is_not_jesus_diagram.svg"
-                 alt="YHWH is not Jesus, theological distinction diagram"
-                 loading="lazy">
           </div>
         </div>
-
-      </div><!-- /proclaim-grid -->
-
-    </div><!-- /proclaim row -->
-
+      </div>
+      <div class="home-split-media home-split-sticky">
+        <div class="home-figure home-figure-distinction">
+          <span class="home-figure-label">The Distinction</span>
+          <img src="yhwh_is_not_jesus_diagram.svg" alt="YHWH is not Jesus, theological distinction diagram" loading="lazy">
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -730,10 +747,12 @@ section.about{padding-top:7.5rem;}
     <h2 class="section-title">Core <em>Convictions</em></h2>
     <div class="beliefs-grid">
 
-      <div class="belief-card" data-num="01">
+      <div class="belief-card" data-num="01" id="conviction-one-god">
         <h3>One God</h3>
-        <p>Read the opening paragraph of any apostolic epistle. The pattern never changes. Every apostle, in the very first lines of every letter they wrote, identifies God and Jesus Christ as two distinct persons: God the Father, and the Lord Jesus Christ His Son. This is not buried in a theological argument deep inside the letter. It is how they introduce themselves. It is the declared faith of those who walked with Jesus, received the Holy Spirit at Pentecost, and built the church. Count the epistles yourself.</p>
+        <p>There is one God, the Eternal Father, the Almighty, the Most High, the God of Abraham, Isaac, and Jacob. The apostles who walked with Jesus, received the Spirit at Pentecost, and built the church did not teach a Trinity of co-equal persons. They named God the Father and the Lord Jesus Christ as two throughout their epistles, and the citations below show how consistently that witness runs from Romans through Revelation.</p>
         <div class="belief-scriptures">
+          <div class="bs-item"><span class="bs-ref">Ephesians 1:3 (NKJV)</span><p>"Blessed be the <strong>God and Father of our Lord Jesus Christ</strong>, who has blessed us with every spiritual blessing in the heavenly places in Christ."</p></div>
+          <div class="bs-item"><span class="bs-ref">1 Corinthians 8:6 (NKJV)</span><p>"But to us there is one God, the Father, of whom are all things, and we for Him; and one Lord Jesus Christ, through whom are all things, and through whom we live."</p></div>
           <div class="bs-item"><span class="bs-ref">Romans 1:7, Paul</span><p>"Grace and peace to you from God our Father and from the Lord Jesus Christ."</p></div>
           <div class="bs-item"><span class="bs-ref">1 Corinthians 1:3, Paul</span><p>"Grace and peace to you from God our Father and the Lord Jesus Christ."</p></div>
           <div class="bs-item"><span class="bs-ref">Galatians 1:3, Paul</span><p>"Grace and peace to you from God our Father and the Lord Jesus Christ."</p></div>
@@ -747,12 +766,11 @@ section.about{padding-top:7.5rem;}
           <div class="bs-item"><span class="bs-ref">2 John 1:3, John</span><p>"Grace, mercy and peace from God the Father and from Jesus Christ, the Father's Son."</p></div>
           <div class="bs-item"><span class="bs-ref">Revelation 1:1, John</span><p>"The revelation from Jesus Christ, which God gave him to show his servants what must soon take place."</p></div>
         </div>
-        <p style="font-size:0.82rem;color:var(--text-muted);margin-top:1rem;font-style:italic;">Not one apostle, in the opening of any epistle, writes of a triune God. Every single one writes of God the Father and Lord Jesus Christ the as two. This is the consistent, unbroken, unrehearsed theology of the entire apostolic witness.</p>
       </div>
 
       <div class="belief-card" data-num="02">
         <h3>Baptism in Jesus Name</h3>
-        <p>When Philip met the Ethiopian eunuch on the desert road, the man read Isaiah and asked what it meant. Philip opened the Scriptures, preached Jesus, and at the first pool of water the eunuch said, "Look, here is water. What can stand in the way of my being baptized?" Philip baptized him in the name of Jesus Christ. That is the pattern we follow. Peter commanded it at Pentecost. Paul re-baptised those who had only received John's baptism. The book of Acts gives us witness after witness: Peter, Philip, Paul, and the household of Cornelius, all baptised in the name of Jesus Christ.</p>
+        <p>Philip met the Ethiopian eunuch on a desert road, the man reading Isaiah and asking what it meant, and at the first pool of water he said, "Look, here is water. What can stand in the way of my being baptized?" Philip baptized him in the name of Jesus Christ, and that is the pattern we follow because Peter commanded it at Pentecost and Paul re-baptised those who had only received John's baptism, with Acts giving witness after witness through Peter, Philip, Paul, and the household of Cornelius, all in the name of Jesus Christ.</p>
         <div class="belief-scriptures">
           <div class="bs-item"><span class="bs-ref">Acts 8:36-38, Philip and the Ethiopian</span><p>"Why shouldn't I be baptized?" As they traveled along the road, they came to some water and the eunuch said, "Look, here is water." Philip baptized him in the name of Jesus Christ.</p></div>
           <div class="bs-item"><span class="bs-ref">Acts 2:38, Peter</span><p>"Repent and be baptised, every one of you, in the name of Jesus Christ for the forgiveness of your sins."</p></div>
@@ -763,19 +781,23 @@ section.about{padding-top:7.5rem;}
       </div>
 
       <div class="belief-card" data-num="03">
-        <h3>The Living Church</h3>
-        <p>Community halls, expensive buildings, theatres and auditoriums were never at the heart of God. People were. The apostles met in homes, in the temple courts, by riversides, in upper rooms, in marketplaces, in prisons. What made it the church was never the address. It was the people gathered, the Spirit present, and the name of Jesus honoured among them.</p>
+        <h3>Living Church &amp; Worship</h3>
+        <p>Community halls, expensive buildings, theatres, and auditoriums were never at the heart of what God wanted, because people were, and the apostles met in homes, temple courts, riversides, upper rooms, marketplaces, and prisons, where what made it the church was never the address but the people gathered, the Spirit present, and the name of Jesus honoured among them.</p>
+        <p>True worship begins inside you rather than in expensive instruments, production gear, or a skilled choir performing at the front, because what God asks for is a <strong style="color:var(--text-primary);font-weight:500;">devoted, broken, poor heart</strong> tamed for eternity and not built for performance.</p>
         <div class="belief-scriptures">
           <div class="bs-item"><span class="bs-ref">Acts 2:46</span><p>"Every day they continued to meet together in the temple courts. They broke bread in their homes and ate together with glad and sincere hearts."</p></div>
           <div class="bs-item"><span class="bs-ref">Romans 16:5, Paul</span><p>"Greet also the church that meets at their house."</p></div>
           <div class="bs-item"><span class="bs-ref">Colossians 4:15</span><p>"Give my greetings to the brothers and sisters at Laodicea, and to Nympha and the church in her house."</p></div>
           <div class="bs-item"><span class="bs-ref">Matthew 18:20</span><p>"For where two or three gather in my name, there am I with them."</p></div>
+          <div class="bs-item"><span class="bs-ref">2 Samuel 24:24, David</span><p>"I will not offer burnt offerings to the LORD my God that cost me nothing."</p></div>
+          <div class="bs-item"><span class="bs-ref">Matthew 15:8-9</span><p>"These people honour me with their lips, but their hearts are far from me. They worship me in vain."</p></div>
+          <div class="bs-item"><span class="bs-ref">2 Timothy 3:5</span><p>"Having a form of godliness but denying its power. Have nothing to do with such people."</p></div>
         </div>
       </div>
 
       <div class="belief-card" data-num="04">
         <h3>A Life of Service</h3>
-        <p>People are not called to preach and build platforms. They are called to serve. God is not at the service of man, man is at the service of God. We are not called to ask God to bless our plans. We are called to adopt God's perspective, lay down our own, and go where He sends us. Greatness in the kingdom is measured in service given, not position held.</p>
+        <p>We are not called to preach and build platforms but to serve, because God is not at the service of man and man is at the service of God, and we spent years asking God to bless our plans until the stripping taught us to lay those down and go where He sends, which is why greatness in the kingdom is measured by service given rather than position held.</p>
         <div class="belief-scriptures">
           <div class="bs-item"><span class="bs-ref">Mark 10:43-45</span><p>"Whoever wants to become great among you must be your servant, and whoever wants to be first must be slave of all. For even the Son of Man did not come to be served, but to serve, and to give his life as a ransom for many."</p></div>
           <div class="bs-item"><span class="bs-ref">Romans 12:1</span><p>"Offer your bodies as a living sacrifice, holy and pleasing to God, this is your true and proper worship."</p></div>
@@ -786,7 +808,7 @@ section.about{padding-top:7.5rem;}
 
       <div class="belief-card" data-num="05">
         <h3>Apostolic Teaching</h3>
-        <p>The apostles are the foundation of the church. Jesus Christ is the cornerstone. Every doctrine that was later agreed upon by councils, established by creeds, enforced by empires, or passed down through institutional Christianity must be tested against what the apostles themselves actually taught and wrote. Where it does not align with apostolic Scripture, it is not the faith once delivered to the saints. It is tradition built on tradition. We hold to the apostles' teaching. Everything else must justify itself before that bar.</p>
+        <p>The apostles are the foundation and Jesus Christ is the cornerstone, so every doctrine later agreed upon by councils, fixed in creeds, and enforced by empires we test against what the apostles actually taught and wrote, and where it does not line up with apostolic Scripture it is not the faith once delivered to the saints but tradition piled on tradition, which is why we hold to the apostles' teaching and let everything else justify itself before that bar.</p>
         <div class="belief-scriptures">
           <div class="bs-item"><span class="bs-ref">Ephesians 2:20</span><p>"Built on the foundation of the apostles and prophets, with Christ Jesus himself as the chief cornerstone."</p></div>
           <div class="bs-item"><span class="bs-ref">Acts 2:42</span><p>"They devoted themselves to the apostles' teaching and to fellowship, to the breaking of bread and to prayer."</p></div>
@@ -797,25 +819,13 @@ section.about{padding-top:7.5rem;}
 
       <div class="belief-card" data-num="06">
         <h3>Giving from the Heart</h3>
-        <p>The ten percent tithe is not observed in the book of Acts. It is not taught in the epistles. What is observed is people giving as there was need, giving to support the ministry where necessary, giving to relieve the poor among them. The early church in Jerusalem sold land and possessions and laid the proceeds at the apostles' feet, not to fund a building project, but to ensure no one among them was in want. We cancel the mandate of obligatory giving and return to what the apostles modelled and taught.</p>
+        <p>The ten percent tithe does not appear in Acts and it is not taught in the epistles, so what we see instead is people giving as need arose, supporting ministry where necessary and relieving the poor among them, with the early church in Jerusalem selling land and possessions and laying the proceeds at the apostles' feet not to fund a building project but to make sure no one among them was in want, which is why we have set aside obligatory giving and returned to what the apostles modelled.</p>
         <div class="belief-scriptures">
           <div class="bs-item"><span class="bs-ref">Acts 4:34-35</span><p>"There were no needy persons among them. For from time to time those who owned land or houses sold them, brought the money and put it at the apostles' feet, and it was distributed to anyone who had need."</p></div>
           <div class="bs-item"><span class="bs-ref">2 Corinthians 9:7</span><p>"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."</p></div>
           <div class="bs-item"><span class="bs-ref">1 John 3:17</span><p>"If anyone has material possessions and sees a brother or sister in need but has no pity on them, how can the love of God be in that person?"</p></div>
           <div class="bs-item"><span class="bs-ref">Romans 15:26</span><p>"For Macedonia and Achaia were pleased to make a contribution for the poor among the Lord's people in Jerusalem."</p></div>
         </div>
-      </div>
-
-    
-      <div class="belief-card" data-num="07">
-        <h3>Biblical Earth</h3>
-        <p>We believe the consistent cosmological testimony of Scripture, from Genesis to Job to Isaiah to Revelation, describes a circular earth founded upon pillars, enclosed by a firmament upon which the heavenly waters rest. This is not interpreted symbolically. It is the plain reading of the text as the biblical authors wrote it.</p>
-        <blockquote>"He sits enthroned above the circle of the earth... He stretches out the heavens like a canopy.", Isaiah 40:22</blockquote>
-      </div>
-
-      <div class="belief-card" data-num="08">
-        <h3>The Short Season</h3>
-        <p>We believe we are not in the Church Age of popular eschatology. The millennial reign of Yeshua with His saints occurred on this earth. What began approximately 250 years ago through colonisation, revolution, and world war marked a turning point in the prophetic calendar. The buried and ruined architectures visible around the world are witnesses to this history.</p>
       </div>
     </div>
   </div>
@@ -826,42 +836,43 @@ section.about{padding-top:7.5rem;}
   <div class="container">
     <div class="section-label">Life Together</div>
     <h2 class="section-title">Where <em>People</em> Gather</h2>
+    <p style="margin:-0.5rem 0 1.8rem;"><a href="gatherings.html" style="font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:0.5px solid rgba(23,42,54,0.25);">Find a gathering near you →</a></p>
 
     <div class="community-statement">
-      <p>The word "church" has been abused in our generation. Buildings are mortgaged. Costly equipment, instruments, lights and production gear are purchased in the name of God. Congregations are financially drained to fund institutions that, on paper, are owned by a ministry, a company, or a pastoral family, not the people of God. This is not the church of the New Testament. It never was.</p>
-      <p>God loves gatherings of His people. He always has. What He loves is not the address or the acoustics. It is the people: sharing, caring, edifying, uplifting, showing compassion. A lunch table qualifies. A garden qualifies. A seashore, a forest, a park, a backyard, a living room, wherever people are comfortable gathering with their families, in short groups and in large ones, that is where the church is.</p>
+      <p>The word "church" has been abused in our generation through buildings mortgaged, costly equipment and production gear bought in the name of God, and congregations drained to fund institutions that on paper belong to a ministry, a company, or a pastoral family rather than the people of God. Western missions turned worship into performance while establishers bought mansions and planes in the name of the LORD. That is not the church of the New Testament and never was.</p>
+      <p>God loves gatherings of His people and always has. What He loves is not the address or the acoustics but people sharing, caring, edifying, and showing compassion at a lunch table, in a garden, on a seashore, in a forest, a park, a backyard, or a living room.</p>
     </div>
 
     <div class="community-grid">
       <div class="community-card">
         <div class="cc-label">Acts 2:46</div>
         <p class="cc-text">"Every day they continued to meet together in the temple courts. They broke bread in their homes and ate together with glad and sincere hearts, praising God and enjoying the favour of all the people."</p>
-        <p class="cc-note">Daily. In homes. Around food. No building required.</p>
+        <p class="cc-note">Every day in homes around food, with no building needed.</p>
       </div>
       <div class="community-card">
         <div class="cc-label">Acts 16:13, Paul at Philippi</div>
         <p class="cc-text">"On the Sabbath we went outside the city gate to the river, where we expected to find a place of prayer. We sat down and began to speak to the women who had gathered there."</p>
-        <p class="cc-note">A riverside. No venue booking. No sound system.</p>
+        <p class="cc-note">A riverside with no venue to book and no sound system.</p>
       </div>
       <div class="community-card">
         <div class="cc-label">Acts 20:20, Paul to the Ephesian elders</div>
         <p class="cc-text">"You know that I have not hesitated to preach anything that would be helpful to you but have taught you publicly and from house to house."</p>
-        <p class="cc-note">House to house. The apostolic method was personal, not institutional.</p>
+        <p class="cc-note">House to house, personal rather than institutional, which was the apostolic way.</p>
       </div>
       <div class="community-card">
         <div class="cc-label">Acts 28:30-31, Paul in Rome</div>
         <p class="cc-text">"For two whole years Paul stayed there in his own rented house and welcomed all who came to see him. He proclaimed the kingdom of God and taught about the Lord Jesus Christ."</p>
-        <p class="cc-note">A rented house. The gospel went out from there to the capital of the world.</p>
+        <p class="cc-note">A rented house from which the gospel went out to the capital of the world.</p>
       </div>
       <div class="community-card">
         <div class="cc-label">Hebrews 10:24-25</div>
         <p class="cc-text">"And let us consider how we may spur one another on toward love and good deeds, not giving up meeting together, as some are in the habit of doing, but encouraging one another."</p>
-        <p class="cc-note">The command is to gather. The form is not specified. The purpose is clear.</p>
+        <p class="cc-note">The command is to gather. Scripture does not specify the form. The purpose is clear.</p>
       </div>
       <div class="community-card">
         <div class="cc-label">1 Corinthians 14:26</div>
         <p class="cc-text">"When you come together, each of you has a hymn, or a word of instruction, a revelation, a tongue or an interpretation. Everything must be done so that the church may be built up."</p>
-        <p class="cc-note">Everyone contributes. Not a performance. Not a production. A gathering of equals.</p>
+        <p class="cc-note">Everyone contributes without performance or production, a gathering of equals.</p>
       </div>
     </div>
 
@@ -893,7 +904,7 @@ section.about{padding-top:7.5rem;}
   <div class="join-inner">
     <div class="section-label">Join the Community</div>
     <h2 class="join-title">You are the <em>Church</em>.<br>Come as you are.</h2>
-    <p>Whether you are new to faith, returning after time away, or simply seeking genuine community built on the teaching of Jesus, you belong here. Enter your email and we will be in touch about gatherings near you.</p>
+    <p>Whether you are new to faith, returning after time away, or looking for genuine community built on the teaching of Jesus, you belong here, and if you leave your email we will be in touch about gatherings near you.</p>
     <form class="join-form" onsubmit="handleJoin(event)">
       <input type="email" placeholder="Your email address" id="joinEmail" required>
       <button type="submit">Connect</button>
@@ -907,8 +918,11 @@ section.about{padding-top:7.5rem;}
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>
-      <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" class="footer-yt">Watch on YouTube</a>
-      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching. No walls. No hierarchy. Just people.</p>
+      <p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching, with no walls, no hierarchy, just people.</p>
+      <div class="footer-social">
+        <a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        <a href="https://www.instagram.com/2.22church" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.012-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.668-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+      </div>
     </div>
     <div class="footer-col">
       <h4>Explore</h4>
@@ -946,12 +960,12 @@ section.about{padding-top:7.5rem;}
     </div>
   </div>
   <div class="footer-bottom">
-    <span>2025 2:22 Church · 2-22church.com</span>
+    <span>All copyrights reserved. @2-22 Church, 2026</span>
     <span class="footer-verse">"Where two or three gather in my name, there am I with them." Matthew 18:20</span>
   </div>
 </footer>
 
-<script src="posts.js"></script>
+<script src="posts.js?v=26"></script>
 <script>
 function handleJoin(e) {
   e.preventDefault();
@@ -984,8 +998,8 @@ function exportSubscribers(){
 // Render latest 5 posts into homepage blog grid
 function renderHomepagePosts() {
   var grid = document.getElementById('blog-grid');
-  if (!grid || !window.POSTS) return;
-  var recent = POSTS.slice(0, 5);
+  if (!grid || typeof POSTS === 'undefined') return;
+  var recent = POSTS.filter(function(p){ return p.category !== 'Testimony'; }).slice(0, 5);
   grid.innerHTML = recent.map(function(post, i) {
     var href = post.link ? post.link : 'post.html?id=' + post.id;
     var imgHtml = post.image
@@ -1094,22 +1108,6 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
 
 
 
-<script>
-document.querySelectorAll('.nav-item').forEach(function(item){
-  item.querySelector(':scope>a').addEventListener('click',function(e){
-    e.preventDefault();
-    var isOpen=item.classList.contains('open');
-    document.querySelectorAll('.nav-item.open').forEach(function(el){el.classList.remove('open');});
-    if(!isOpen)item.classList.add('open');
-  });
-  item.querySelectorAll('.nav-dropdown a').forEach(function(a){
-    a.addEventListener('click',function(){item.classList.remove('open');});
-  });
-});
-document.addEventListener('click',function(e){
-  if(!e.target.closest('.nav-item'))
-    document.querySelectorAll('.nav-item.open').forEach(function(el){el.classList.remove('open');});
-});
-</script>
+
 </body>
 </html>
