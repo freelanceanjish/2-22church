@@ -1,0 +1,82 @@
+<svg width="100%" viewBox="0 0 960 540" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>The Lost Medical Blueprint, Noah's Book of Remedies</title>
+  <desc>An open ancient scroll with a healing plant growing from its centre, flanked by botanical stems, on a light parchment background.</desc>
+  <rect width="960" height="540" fill="#F7F9F8"/>
+  <rect x="0" y="0" width="960" height="540" fill="url(#wash)" opacity="0.5"/>
+  <defs>
+    <radialGradient id="wash" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#EAF1F4"/>
+      <stop offset="100%" stop-color="#F7F9F8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- scroll body -->
+  <rect x="250" y="150" width="460" height="280" rx="6" fill="#FFFFFF" stroke="#172A36" stroke-width="1.4" opacity="0.96"/>
+  <!-- scroll rollers -->
+  <rect x="226" y="138" width="28" height="304" rx="14" fill="#EAF1F4" stroke="#172A36" stroke-width="1.4"/>
+  <rect x="706" y="138" width="28" height="304" rx="14" fill="#EAF1F4" stroke="#172A36" stroke-width="1.4"/>
+  <circle cx="240" cy="138" r="9" fill="#172A36"/>
+  <circle cx="240" cy="442" r="9" fill="#172A36"/>
+  <circle cx="720" cy="138" r="9" fill="#172A36"/>
+  <circle cx="720" cy="442" r="9" fill="#172A36"/>
+
+  <!-- text lines on scroll, left column -->
+  <g stroke="#47545B" stroke-width="2" opacity="0.35" stroke-linecap="round">
+    <line x1="285" y1="195" x2="420" y2="195"/>
+    <line x1="285" y1="218" x2="430" y2="218"/>
+    <line x1="285" y1="241" x2="405" y2="241"/>
+    <line x1="285" y1="264" x2="425" y2="264"/>
+    <line x1="285" y1="287" x2="412" y2="287"/>
+    <line x1="285" y1="310" x2="428" y2="310"/>
+    <line x1="285" y1="333" x2="400" y2="333"/>
+    <line x1="285" y1="356" x2="430" y2="356"/>
+    <line x1="285" y1="379" x2="415" y2="379"/>
+  </g>
+  <!-- text lines on scroll, right column -->
+  <g stroke="#47545B" stroke-width="2" opacity="0.35" stroke-linecap="round">
+    <line x1="540" y1="195" x2="672" y2="195"/>
+    <line x1="540" y1="218" x2="660" y2="218"/>
+    <line x1="540" y1="241" x2="676" y2="241"/>
+    <line x1="540" y1="264" x2="650" y2="264"/>
+    <line x1="540" y1="287" x2="670" y2="287"/>
+    <line x1="540" y1="310" x2="655" y2="310"/>
+    <line x1="540" y1="333" x2="674" y2="333"/>
+    <line x1="540" y1="356" x2="648" y2="356"/>
+    <line x1="540" y1="379" x2="668" y2="379"/>
+  </g>
+
+  <!-- central healing plant rising from the scroll -->
+  <g stroke="#172A36" stroke-width="2.4" fill="none" stroke-linecap="round">
+    <path d="M480 400 C480 330 480 260 480 190"/>
+    <path d="M480 340 C450 325 432 300 428 270"/>
+    <path d="M480 340 C510 325 528 300 532 270"/>
+    <path d="M480 285 C455 272 442 252 440 228"/>
+    <path d="M480 285 C505 272 518 252 520 228"/>
+  </g>
+  <g fill="#172A36">
+    <ellipse cx="428" cy="263" rx="9" ry="17" transform="rotate(-38 428 263)"/>
+    <ellipse cx="532" cy="263" rx="9" ry="17" transform="rotate(38 532 263)"/>
+    <ellipse cx="440" cy="222" rx="8" ry="15" transform="rotate(-32 440 222)"/>
+    <ellipse cx="520" cy="222" rx="8" ry="15" transform="rotate(32 520 222)"/>
+  </g>
+  <circle cx="480" cy="178" r="14" fill="#EAF1F4" stroke="#172A36" stroke-width="2.4"/>
+  <circle cx="480" cy="178" r="5" fill="#172A36"/>
+
+  <!-- side botanical stems -->
+  <g stroke="#778187" stroke-width="1.6" fill="none" opacity="0.55" stroke-linecap="round">
+    <path d="M110 470 C120 400 112 340 132 280"/>
+    <path d="M132 280 C118 300 104 306 92 304"/>
+    <path d="M132 280 C146 296 160 300 172 296"/>
+    <path d="M124 360 C110 374 96 378 84 376"/>
+    <path d="M124 360 C140 372 154 376 166 372"/>
+    <path d="M850 470 C840 400 848 340 828 280"/>
+    <path d="M828 280 C842 300 856 306 868 304"/>
+    <path d="M828 280 C814 296 800 300 788 296"/>
+    <path d="M836 360 C850 374 864 378 876 376"/>
+    <path d="M836 360 C820 372 806 376 794 372"/>
+  </g>
+
+  <!-- caption -->
+  <text x="480" y="490" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="17" letter-spacing="6" fill="#47545B">SEFER REFUOT</text>
+  <text x="480" y="514" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="11" letter-spacing="3" fill="#778187">THE BOOK OF REMEDIES</text>
+</svg>
