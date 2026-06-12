@@ -76,6 +76,7 @@ In every article comparing Hebrew and Hindu (or Vedic) tradition, name the patte
 - **No dashes** in prose (no em dash, no en dash used as punctuation). Use commas, "and," or a new sentence instead.
 - **No instructing the reader** ("Read this first," "Pick a study," "Click any," "Look," "Take your time," "Argue with me if you need to").
 - **No one-word or micro-sentences** stacked in a row ("Wide. Low. Stable." / "That is all." / "He is One." as a punch line after a list).
+- **No teaser punch-lines** that sound like ad copy or AI emphasis ("The herbs work." / "The plants work." / "The body responds." / "Same skeleton. Different story."). If the point matters, fold it into a full sentence that a person would actually say aloud.
 - **No AI tics**: "honestly," "Look:", numbered gallery captions, section numbering, "Traditional — fails," corporate "We believe," hedged "in our view."
 - **No pride or debate posture** ("unpopular conclusions," "argue with me," "as far as I can see it" as a repeated crutch).
 - **No shallow compare-and-label articles** that read like generated glossaries instead of a human who did the homework.
