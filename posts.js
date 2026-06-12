@@ -114,6 +114,12 @@ const POSTS = [
 
 <p>The memory of the book did not end at Qumran either. The Talmud records that King Hezekiah suppressed a Book of Remedies, a <em>sefer refuot</em>, and the sages approved of his decision (Berakhot 10b, Pesachim 56a), apparently because people had begun trusting the book rather than the God who sent it. That stops me every time I read it. You do not suppress a legend. You suppress a document that people are actually using. Even in the act of removal, the tradition testifies that this book was real enough to need putting away.</p>
 
+<div class="coincidence-question">
+  <p class="coincidence-label">The same skeleton</p>
+  <p>Elemental humours, thermal plant logic, the same obscure fruit, the same physician's oath: everything taught, celebrated, and handed down in both medical traditions follows the same underlying frame. The Hebrew line traces that frame to an angelic book through Noah and Shem. The Sanskrit line carries it through Ayurveda centuries later. <strong>One remembers heaven as the source of healing.</strong> The other often treats the system as India's own discovery. Same skeleton. Different story about where it came from.</p>
+  <p class="coincidence-prompt"><strong>What percentage of that parallel are you willing to call coincidence?</strong> If the match runs from diagnosis to fruit to oath, is it still honest to call the traditions unrelated? Rethink the history. Search for the truth behind the echo.</p>
+</div>
+
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <div class="conclusion">
@@ -302,6 +308,12 @@ const POSTS = [
 
 <p>That does not mean India wrote the heavens. It means the wheel above was always asking something of the human heart, not just the harvest schedule.</p>
 
+<div class="coincidence-question">
+  <p class="coincidence-label">The same skeleton</p>
+  <p>Twelve signs, lunar months, leap-year repair, moon-first reckoning: everything built, celebrated, and narrated around the calendar in both cultures follows the same astronomical skeleton. <strong>Israel's feasts were ordered toward the unseen God who set the lights</strong> (Genesis 1:14; Job 38:32). Popular Hindu astrology often reads the same wheel as fate tied to <em>grahas</em> and visible powers that behave like lesser lords over a life. Same wheel above. Different answer to who rules it.</p>
+  <p class="coincidence-prompt"><strong>What percentage of this alignment are you willing to call coincidence?</strong> If the months, signs, and leap fix all match, who hung the wheel first, and why? Rethink the history. Search for the truth behind the pattern.</p>
+</div>
+
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2 class="article-part-title"><span class="article-part-label">Conclusion</span>Where the Wheel Points</h2>
@@ -368,6 +380,8 @@ const POSTS = [
 
 <p>The parallels I kept finding run from the sacred veil and doorpost signs to Holika Dahan, yajna, pakwan, prayer shawls, anointing, and the Ark of the Covenant carried on acacia poles. Fourteen of them in total. Each one a ritual form in India whose counterpart Moses received at Sinai before most of the Vedic temple tradition had taken its present shape.</p>
 
+<p>And beneath all fourteen, I keep seeing the same primary structure. Not a vague mood of holiness, but a <strong>three-room skeleton</strong> repeated in what is built, what is celebrated, and what is narrated: public outer ground, priestly middle hall, one minister at the inner sanctum. Israel filled that shape with worship toward the God who forbade images and who dwells in heaven (Exodus 20:4; 1 Kings 8:27). India's temple life often fills the same shape with <strong>many visible figures</strong>, mūrtis and lower gods shaped like created beings. Same bones. A different object of worship.</p>
+
 
 
 <div class="divider"><span class="divider-mark">✦</span></div>
@@ -391,6 +405,14 @@ const POSTS = [
 [ Holy of Holies / Garbhagriha ]    →  ultimate centre; one priest</div>
   <p class="minimal-cap">गर्भगृह · मण्डप · प्राकार  · קֹדֶשׁ · הֵיכָל · קֹדֶשׁ הַקֳּדָשִׁים</p>
 </div>
+
+<div class="minimal-design" aria-label="Three-room top view: Tabernacle and Hindu temple compared">
+  <img src="temple-three-rooms-topview.svg" alt="Top view floor plan: three nested rooms in Hindu temple campus and Mosaic Tabernacle or Solomon's Temple" loading="lazy">
+  <p class="minimal-cap">प्राकार · חצר · היכל · קדש הקדשים · outer → middle → inner · same skeleton from above</p>
+</div>
+
+<p>When I asked people to sketch the main building from above, both traditions drew the same thing without meaning to: <strong>three rooms nesting inward</strong>. Moses received that plan for the Tabernacle (~1400 BC). Solomon's Temple enlarged the same blueprint in stone. Hindu temple campuses map the same journey through prākāra, maṇḍapa, and garbhagṛha. The diagram sits beside the photographs on purpose. The photos show beauty and regional style. The top view shows the skeleton both keep returning to.</p>
+
 <p class="visual-summary">Graded sanctity: public courtyard → priestly hall → one minister in the inner chamber.</p>
 
 <p>Both traditions built sacred space as a journey inward: from what is public, to what is priestly, to what only one purified minister may enter. What struck me when I first mapped both floor plans side by side is that neither tradition treats this narrowing as mere exclusion. Every wall built closer to the centre is a wall built in mercy, keeping worshippers from rushing into a holiness they were not prepared to receive.</p>
@@ -965,6 +987,12 @@ const POSTS = [
   </tbody>
 </table>
 
+<div class="coincidence-question">
+  <p class="coincidence-label">The same skeleton</p>
+  <p>Fourteen ritual parallels, one three-room floor plan, graded holiness from public ground to a single minister at the centre: everything built, celebrated, and narrated around these sanctuaries follows the same structural grammar. That is not a loose family resemblance. <strong>Israel worshipped the God who cannot be seen and who dwells in heaven.</strong> Hindu temple life, as most people encounter it, centres on <strong>many visible figures</strong>, lower gods and emblems that look like created beings. The skeleton matches. The Object of worship does not.</p>
+  <p class="coincidence-prompt"><strong>What percentage of this are you willing to call coincidence?</strong> At what point should a sincere reader stop treating history as two independent inventions and start searching for the truth behind the echo?</p>
+</div>
+
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2 class="article-part-title"><span class="article-part-label">Conclusion</span>Echoes of Moses, Pointers to the Messiah</h2>
@@ -1157,6 +1185,12 @@ const POSTS = [
 <p>Still, the final court of appeal for every disciple remains the apostles' testimony: one God the Father, one Lord Jesus Christ, salvation through His blood, and life by faith in the gospel proclaimed in Scripture.</p>
 
 <blockquote>"Neither is there salvation in any other: for there is none other name under heaven given among men, whereby we must be saved.", <em>Acts 4:12</em></blockquote>
+
+<div class="coincidence-question">
+  <p class="coincidence-label">The same skeleton</p>
+  <p>Virgin birth, suffering servant, shed blood for sin, a named holy Saviour: everything written, celebrated, and handed down in these Sanskrit passages follows the same messianic skeleton the Gospels narrate in flesh and history. <strong>Scripture centres that story on the unseen God who sent His Son from heaven.</strong> Popular Hindu reading often spreads the hope across many figures, avatars, and visible gods who resemble created beings. Same outline in the text. A different Lord at the centre.</p>
+  <p class="coincidence-prompt"><strong>What percentage of these parallels are you willing to call coincidence?</strong> If Sanskrit and the New Testament keep telling the same story with the same bones, is it still enough to call them unrelated traditions? Rethink the history. Search for the truth behind the witness.</p>
+</div>
 
 <div style="margin:3rem 0;padding:1.6rem 1.8rem;background:rgba(201,168,76,0.06);border:0.5px solid rgba(201,168,76,0.2);border-left:2px solid rgba(201,168,76,0.5);">
   <p style="font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:#C9A84C;margin-bottom:0.75rem;">Editorial Note</p>
