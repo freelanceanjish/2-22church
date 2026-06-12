@@ -110,6 +110,17 @@ const POSTS = [
 
 <p>Read that alongside the Hebrew prologue. The Asaph tradition says India's sages <strong>copied from books</strong> when speech split at Babel. The Charaka and Sushruta traditions, read honestly, describe <strong>editors assembling a medical collection</strong> across generations. Different origin stories on the surface. Same structural fact underneath: what we call Ayurveda on paper is a late, layered compilation built on older material that did not begin with the name on the cover. The Hebrew witness simply pushes that older material further back, to Noah, Shem, and a book heaven gave before any nation called its medicine its own.</p>
 
+<h3>Written genealogy before oral collection</h3>
+
+<p>When I compare how each tradition remembers its past, the difference is not only which story is older. It is the <strong>form</strong> of the memory. Scripture and the Hebrew medical prologue read like a ledger. Names run in order. Fathers and sons are named. Years at birth and years lived are counted. Flood and covenant sit on a line you can trace. <strong>Genesis 5</strong> walks from Adam to Noah with ages attached. <strong>Genesis 11</strong> continues Shem's line after the flood the same way. <strong>Jubilees</strong> counts jubilees and ties Noah's book to a dated world. The <em>Sefer Asaph</em> prologue names transmitters in sequence from Shem back to Noah. Whether a modern reader accepts every number, the shape is clear: this is <strong>written genealogy</strong>, copied on scrolls, meant to be checked and preserved before speech split at Babel.</p>
+
+<p>The classical Ayurvedic samhitas remember their teachers differently. Atreya <strong>taught orally</strong> at Taxila. Agnivesha wrote only later. Charaka revised centuries after that. Dridhabala reconstructed what had been lost. Divine figures like Dhanvantari lend authority and honour, not birth years beside a father's name. Scholars speak of oral layers, interpolations, and medieval edits because there is no continuous dated chain tying Agnivesha to a specific year, a verified father, and a contemporary witness the way Shem ties to Noah in Genesis.</p>
+
+<div class="editorial">
+  <p class="editorial-label">Written tradition vs oral tradition</p>
+  <p>Oral memory drifts. It compresses, glorifies, and reassigns credit. Written genealogy with years does not end all debate, but it gives the reader something firmer than honorary attribution to a legendary sage. That is why I take the <strong>direction</strong> of the biblical timeline seriously when both medical streams preserve the same skeleton. The Hebrew line claims <strong>writing at the flood</strong>, named persons, counted years, a book handed to Shem, then copying at Babel (~2200 BC in traditional chronology). The Sanskrit line admits <strong>oral teaching first</strong>, compilation on paper a millennium or more later (~200 BC–AD 200 for the samhitas we have), reconstruction when folios went missing. The written witness precedes the oral collection. On precedence and on form, the medical inheritance fits the book Noah wrote before India's sages translated what they could carry.</p>
+</div>
+
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>The Overlaps You Cannot Unsee</h2>
