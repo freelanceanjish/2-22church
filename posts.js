@@ -382,7 +382,11 @@ const POSTS = [
 
 <p>And beneath all fourteen, I keep seeing the same primary structure. Not a vague mood of holiness, but a <strong>three-room skeleton</strong> repeated in what is built, what is celebrated, and what is narrated: public outer ground, priestly middle hall, one minister at the inner sanctum. Israel filled that shape with worship toward the God who forbade images and who dwells in heaven (Exodus 20:4; 1 Kings 8:27). India's temple life often fills the same shape with <strong>many visible figures</strong>, mūrtis and lower gods shaped like created beings. Same bones. A different object of worship.</p>
 
-
+<div class="structure-diagram" aria-label="Three-room top view: Tabernacle and Hindu temple compared">
+  <p class="structure-diagram-label">Primary structure | top view</p>
+  <img src="temple-three-rooms-topview.svg?v=2" alt="Top view floor plan: three nested rooms in Hindu temple campus and Mosaic Tabernacle or Solomon's Temple" loading="eager" decoding="async" width="960" height="560">
+  <p class="minimal-cap"><strong>Left:</strong> prākāra (outer), maṇḍapa (middle), garbhagṛha (inner, mūrti visible). <strong>Right:</strong> Outer Court, Holy Place, Holy of Holies (Ark, no image, God unseen). Moses received this plan for the Tabernacle (~1400 BC). Solomon's Temple enlarged the same blueprint in stone.</p>
+</div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -406,12 +410,7 @@ const POSTS = [
   <p class="minimal-cap">गर्भगृह · मण्डप · प्राकार  · קֹדֶשׁ · הֵיכָל · קֹדֶשׁ הַקֳּדָשִׁים</p>
 </div>
 
-<div class="minimal-design" aria-label="Three-room top view: Tabernacle and Hindu temple compared">
-  <img src="temple-three-rooms-topview.svg" alt="Top view floor plan: three nested rooms in Hindu temple campus and Mosaic Tabernacle or Solomon's Temple" loading="lazy">
-  <p class="minimal-cap">प्राकार · חצר · היכל · קדש הקדשים · outer → middle → inner · same skeleton from above</p>
-</div>
-
-<p>When I asked people to sketch the main building from above, both traditions drew the same thing without meaning to: <strong>three rooms nesting inward</strong>. Moses received that plan for the Tabernacle (~1400 BC). Solomon's Temple enlarged the same blueprint in stone. Hindu temple campuses map the same journey through prākāra, maṇḍapa, and garbhagṛha. The diagram sits beside the photographs on purpose. The photos show beauty and regional style. The top view shows the skeleton both keep returning to.</p>
+<p>Look at the top-view diagram in the introduction, then at these photographs. The photos show regional beauty. The floor plan shows the skeleton both traditions keep returning to: <strong>three rooms nesting inward</strong>, outer court to priestly hall to one minister at the inner sanctum. Hindu campuses map it through prākāra, maṇḍapa, and garbhagṛha. Moses and Solomon mapped it through the Outer Court, the Holy Place, and the Holy of Holies.</p>
 
 <p class="visual-summary">Graded sanctity: public courtyard → priestly hall → one minister in the inner chamber.</p>
 
