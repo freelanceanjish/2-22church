@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <title>Birth Preparation Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --gold: #172A36;
+      --deep-mid: #F4F7F5;
+      --surface-light: #EEF4F7;
+      --text-primary: #0E0E0E;
+      --text-secondary: #47545B;
+      --text-muted: #778187;
+      --border: rgba(23, 42, 54, 0.14);
+      --ok: #5f8f63;
+      --ok-bg: #eef7ec;
+      --warm-bg: #fff8f1;
+      --radius-lg: 18px;
+      --radius-md: 12px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: var(--deep-mid);
+      color: var(--text-primary);
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    .gate {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(234, 241, 244, 0.9), transparent 26rem),
+        linear-gradient(180deg, #fff 0%, #f8faf8 46%, #fff 100%);
+    }
+
+    .gate-card {
+      width: min(420px, 100%);
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: 0 24px 70px rgba(23, 42, 54, 0.12);
+      text-align: center;
+    }
+
+    .gate-card h1 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .gate-card p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 18px; }
+
+    input[type="password"], input[type="text"] {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      font: inherit;
+      margin-bottom: 12px;
+    }
+
+    button {
+      border: 0;
+      border-radius: var(--radius-md);
+      padding: 12px 18px;
+      background: var(--gold);
+      color: #fff;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    button.secondary {
+      background: var(--surface-light);
+      color: var(--gold);
+      border: 1px solid var(--border);
+    }
+
+    .hidden { display: none !important; }
+
+    header {
+      background: var(--gold);
+      color: #fff;
+      padding: 28px 20px;
+      text-align: center;
+    }
+
+    header h1 { font-size: 1.6rem; font-weight: 600; }
+    header p { opacity: 0.9; margin-top: 6px; }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 18px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      margin: 14px 0;
+      box-shadow: 0 8px 28px rgba(23, 42, 54, 0.06);
+    }
+
+    .card h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 10px;
+    }
+
+    .pill {
+      background: var(--surface-light);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 0.92rem;
+    }
+
+    .pill b { font-weight: 600; }
+
+    label {
+      display: block;
+      margin: 10px 0;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    input[type="checkbox"] {
+      transform: scale(1.15);
+      margin-right: 8px;
+      accent-color: var(--gold);
+    }
+
+    .result {
+      padding: 14px;
+      border-radius: var(--radius-md);
+      background: var(--ok-bg);
+      border-left: 4px solid var(--ok);
+      color: var(--text-primary);
+      margin-top: 12px;
+    }
+
+    .result.soft {
+      background: #fff4dc;
+      border-left-color: #d9a441;
+    }
+
+    .note { color: var(--text-muted); font-size: 0.92rem; }
+
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    td, th {
+      border-bottom: 1px solid var(--border);
+      padding: 9px;
+      text-align: left;
+      font-size: 0.92rem;
+    }
+
+    ul { padding-left: 1.2rem; }
+    li { margin: 8px 0; color: var(--text-secondary); }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+
+    .images img {
+      width: 100%;
+      max-height: 260px;
+      object-fit: contain;
+      background: var(--surface-light);
+      border-radius: var(--radius-md);
+      margin-top: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .phase-tag {
+      display: inline-block;
+      background: var(--warm-bg);
+      color: var(--gold);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      padding: 24px 16px 40px;
+    }
+  </style>
+</head>
+<body>
+  <div id="gate" class="gate">
+    <div class="gate-card">
+      <h1>Private Guide</h1>
+      <p>This page is only for family use. Enter the access phrase to continue.</p>
+      <input id="passInput" type="password" placeholder="Access phrase" autocomplete="off" />
+      <button onclick="unlock()">Open Guide</button>
+      <p id="gateError" class="note hidden" style="color:#b44;margin-top:10px;">Incorrect phrase. Try again.</p>
+    </div>
+  </div>
+
+  <div id="app" class="hidden">
+    <header>
+      <h1>Birth Preparation Guide</h1>
+      <p>38 weeks · Head-down baby · Calm signs tracker</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <span class="phase-tag">Current phase: pre-labor preparation</span>
+        <h2>Your Report Summary</h2>
+        <div class="grid">
+          <div class="pill">Baby position: <b>Head down / cephalic</b></div>
+          <div class="pill">Baby weight: <b>~2650 g ± 200 g</b></div>
+          <div class="pill">Water level / AFI: <b>9.5 cm, adequate</b></div>
+          <div class="pill">Scar thickness: <b>3.5 mm, reassuring</b></div>
+          <div class="pill">Placenta: <b>Anterior, safely away</b></div>
+          <div class="pill">Heartbeat: <b>Within normal limits</b></div>
+          <div class="pill">Cervix: <b>Closed, length adequate</b></div>
+          <div class="pill">Cord: <b>Single loop around neck</b></div>
+        </div>
+        <p class="note" style="margin-top:12px;">This page helps you understand signs and plan calmly. It supports, but does not replace, your doctor or midwife.</p>
+      </section>
+
+      <section class="card">
+        <h2>Add Report Images</h2>
+        <p class="note">Images stay on this device only. Nothing is uploaded anywhere.</p>
+        <input type="file" accept="image/*" multiple onchange="showImages(event)" />
+        <div id="preview" class="images grid"></div>
+      </section>
+
+      <section class="card">
+        <h2>Signs Present Now</h2>
+        <label><input type="checkbox" checked> White or clear mucus discharge</label>
+        <label><input type="checkbox" checked> Pelvic heaviness / baby pressing down</label>
+        <label><input type="checkbox" checked> Frequent urination</label>
+        <label><input type="checkbox" checked> Mild lower back ache or period-like cramps</label>
+        <label><input type="checkbox" checked> Rectal pressure / feeling like passing stool</label>
+        <label><input type="checkbox" checked> Loose motions or more bowel activity</label>
+        <label><input type="checkbox" checked> Sleep disturbance or tiredness</label>
+        <label><input type="checkbox" checked> Baby movements feel lower or different</label>
+        <label><input type="checkbox" checked> Irregular belly tightening, especially evening/night</label>
+        <div class="actions">
+          <button onclick="analyzeSigns()">Understand These Signs</button>
+        </div>
+        <div id="signResult" class="result hidden"></div>
+      </section>
+
+      <section class="card">
+        <h2>Contraction Pattern Helper</h2>
+        <p class="note">Use this when tightenings become noticeable. True labor usually becomes rhythmic, stronger, and closer together.</p>
+        <div class="actions">
+          <button onclick="markContraction()">Mark Contraction Start</button>
+          <button class="secondary" onclick="resetContractions()">Reset</button>
+        </div>
+        <table>
+          <thead><tr><th>#</th><th>Time</th><th>Gap From Previous</th></tr></thead>
+          <tbody id="contractionList"></tbody>
+        </table>
+        <div id="contractionAdvice" class="result soft hidden"></div>
+      </section>
+
+      <section class="card">
+        <h2>What To Do Now</h2>
+        <div class="result">
+          <b>Most likely phase:</b> pre-labor / cervical preparation.<br><br>
+          These signs can continue for hours or days. Because the first labor dilated quickly, stay observant once contractions become regular.
+        </div>
+        <ul>
+          <li>Rest between activity. Save energy for labor.</li>
+          <li>Eat light, nourishing meals and drink fluids.</li>
+          <li>Gentle walking, breathing, side-lying rest, and warm bath can help comfort.</li>
+          <li>Time contractions if they become regular.</li>
+          <li>Keep birth documents, reports, clothes, and transport plan ready.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Scar Thickness — What It Means</h2>
+        <div class="grid">
+          <div class="pill"><b>3.5–4 mm:</b> reassuring</div>
+          <div class="pill"><b>Around 3 mm:</b> often still acceptable</div>
+          <div class="pill"><b>2–3 mm:</b> more individualized</div>
+        </div>
+        <p class="note" style="margin-top:12px;">Your scar went from 4 mm at 35 weeks to 3.5 mm at 38 weeks. That small change is normal as the uterus stretches near term.</p>
+      </section>
+
+      <section class="card">
+        <h2>When To Contact Birth Team</h2>
+        <ul>
+          <li>Contractions become regular and stronger</li>
+          <li>Waters break or leak</li>
+          <li>Baby movements reduce</li>
+          <li>Bleeding is more than light spotting</li>
+          <li>Pain becomes constant rather than wave-like</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>Private family page · not linked from the main site</footer>
+  </div>
+
+  <script>
+    const ACCESS_PHRASE = 'birth222';
+    const contractions = [];
+
+    function unlock() {
+      const input = document.getElementById('passInput').value.trim().toLowerCase();
+      const error = document.getElementById('gateError');
+      if (input === ACCESS_PHRASE) {
+        sessionStorage.setItem('birthGuideUnlocked', '1');
+        document.getElementById('gate').classList.add('hidden');
+        document.getElementById('app').classList.remove('hidden');
+        error.classList.add('hidden');
+      } else {
+        error.classList.remove('hidden');
+      }
+    }
+
+    if (sessionStorage.getItem('birthGuideUnlocked') === '1') {
+      document.getElementById('gate').classList.add('hidden');
+      document.getElementById('app').classList.remove('hidden');
+    }
+
+    document.getElementById('passInput').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') unlock();
+    });
+
+    function showImages(event) {
+      const preview = document.getElementById('preview');
+      preview.innerHTML = '';
+      [...event.target.files].forEach((file) => {
+        const img = document.createElement('img');
+        img.src = URL.createObjectURL(file);
+        img.alt = 'Ultrasound report image';
+        preview.appendChild(img);
+      });
+    }
+
+    function analyzeSigns() {
+      const result = document.getElementById('signResult');
+      result.classList.remove('hidden');
+      result.innerHTML = `
+        <b>Interpretation:</b> These signs fit normal late-pregnancy preparation.
+        <br><br>
+        The baby is likely lower, putting pressure on the bladder, pelvis, and rectum.
+        Mucus and irregular tightening can mean the cervix is preparing, but it does not prove active labor yet.
+        <br><br>
+        <b>Prediction:</b> she may stay like this for a while, then shift into active labor more quickly once contractions become regular.
+      `;
+    }
+
+    function markContraction() {
+      contractions.push(new Date());
+      renderContractions();
+    }
+
+    function resetContractions() {
+      contractions.length = 0;
+      renderContractions();
+    }
+
+    function renderContractions() {
+      const tbody = document.getElementById('contractionList');
+      const advice = document.getElementById('contractionAdvice');
+      tbody.innerHTML = '';
+
+      contractions.forEach((time, i) => {
+        let gap = '-';
+        if (i > 0) {
+          const mins = Math.round((time - contractions[i - 1]) / 60000);
+          gap = mins + ' min';
+        }
+        tbody.innerHTML += `<tr><td>${i + 1}</td><td>${time.toLocaleTimeString()}</td><td>${gap}</td></tr>`;
+      });
+
+      if (contractions.length >= 3) {
+        const gaps = [];
+        for (let i = 1; i < contractions.length; i++) {
+          gaps.push(Math.round((contractions[i] - contractions[i - 1]) / 60000));
+        }
+        const recent = gaps.slice(-3);
+        advice.classList.remove('hidden');
+
+        if (recent.every((g) => g <= 10)) {
+          advice.innerHTML = '<b>Pattern forming:</b> contractions are coming closer. Keep observing strength and rhythm, and contact the birth team if they continue.';
+        } else {
+          advice.innerHTML = '<b>Still irregular:</b> this may be preparation or early labor. Rest, hydrate, and keep timing if they continue.';
+        }
+      } else {
+        advice.classList.add('hidden');
+      }
+    }
+  </script>
+</body>
+</html>
