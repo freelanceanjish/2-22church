@@ -554,11 +554,26 @@
       transition: width 0.4s ease;
     }
 
-    .drop-labels {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.68rem;
-      color: var(--text-muted);
+    .scan-line {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      background: var(--surface-light);
+      padding: 10px 12px;
+      border-radius: var(--radius-md);
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .tool-block {
+      padding-top: 1rem;
+      margin-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .tool-block:first-of-type {
+      padding-top: 0;
+      margin-top: 0;
+      border-top: 0;
     }
   </style>
 </head>
@@ -581,235 +596,113 @@
 
     <div class="status-bar">
       <div class="status-grid">
-        <div class="status-item"><span class="label">Phase</span><span class="value" id="livePhase">Preparing</span></div>
-        <div class="status-item"><span class="label">Gestational week</span><span class="value" id="liveWeek">38</span></div>
-        <div class="status-item"><span class="label">Days to due</span><span class="value" id="liveDue">—</span></div>
-        <div class="status-item"><span class="label">Bag packed</span><span class="value" id="liveBag">0%</span></div>
+        <div class="status-item"><span class="label">Now</span><span class="value" id="livePhase">Preparing</span></div>
+        <div class="status-item"><span class="label">Week</span><span class="value" id="liveWeek">38</span></div>
+        <div class="status-item"><span class="label">Due in</span><span class="value" id="liveDue">—</span></div>
       </div>
       <nav class="quick-nav" aria-label="Jump to section">
-        <a href="#summary">Summary</a>
-        <a href="#babyMap">Baby map</a>
-        <a href="#signs">Signs</a>
-        <a href="#timer">Timer</a>
-        <a href="#movement">Movement</a>
-        <a href="#goNow">Go now?</a>
-        <a href="#bag">Bag</a>
-        <a href="#contacts">Contacts</a>
+        <a href="#today">Today</a>
+        <a href="#tools">Timer & comfort</a>
+        <a href="#ready">Bag & calls</a>
       </nav>
     </div>
 
     <main>
-      <section class="card" id="summary">
-        <span class="phase-tag" id="phaseTag">Current phase: pre-labor preparation</span>
-        <div class="phase-steps" id="phaseSteps">
-          <div class="phase-step active" data-phase="prep">Preparing</div>
-          <div class="phase-step" data-phase="early">Early labor</div>
-          <div class="phase-step" data-phase="active">Active labor</div>
-          <div class="phase-step" data-phase="go">Time to go</div>
-        </div>
-        <h2>Your Report Summary</h2>
-        <div class="grid">
-          <div class="pill">Baby position: <b>Head down / cephalic</b></div>
-          <div class="pill">Baby weight: <b>~2650 g ± 200 g</b></div>
-          <div class="pill">Water level / AFI: <b>9.5 cm, adequate</b></div>
-          <div class="pill">Scar thickness: <b>3.5 mm, reassuring</b></div>
-          <div class="pill">Placenta: <b>Anterior, safely away</b></div>
-          <div class="pill">Heartbeat: <b>Within normal limits</b></div>
-          <div class="pill">Cervix: <b>Closed, length adequate</b></div>
-          <div class="pill">Cord: <b>Single loop around neck</b></div>
-        </div>
-        <h3>Your dates</h3>
-        <div class="grid">
-          <label>Due date
-            <input type="date" id="dueDate" onchange="saveAndRefresh()" />
-          </label>
-          <label>Current gestational week
-            <input type="number" id="gestWeek" min="28" max="43" value="38" onchange="saveAndRefresh()" />
+      <section class="card" id="today">
+        <h2>Today</h2>
+        <p class="scan-line" id="scanLine">From your scan: head down, ~2650 g, placenta front, scar 3.5 mm reassuring, waters adequate.</p>
+
+        <div id="guideVerdict" class="result">Tick what feels true below. This box tells you what it likely means and what to do next.</div>
+
+        <div class="baby-diagram-wrap" style="margin-top:1rem;">
+          <div class="baby-3d-view" id="baby3dCanvas" style="height:min(300px,48vw);min-height:220px;display:grid;place-items:center;">
+            <img id="babyRealImg" alt="Baby in womb illustration" draggable="false" style="max-width:100%;max-height:100%;object-fit:contain;border-radius:10px;" />
+          </div>
+          <label style="margin-top:10px;display:block;font-size:0.88rem;color:var(--text-secondary);">
+            Picture view
+            <select id="babyView" onchange="setBabyView(this.value)" style="margin-top:6px;">
+              <option value="auto">Follows your signs</option>
+              <option value="side">Side</option>
+              <option value="front">Front angle</option>
+              <option value="low">Low in pelvis</option>
+            </select>
           </label>
         </div>
-        <p class="note" style="margin-top:8px;">This page helps you understand signs and plan calmly. It supports, but does not replace, your doctor or midwife.</p>
-      </section>
 
-      <section class="card" id="babyMap">
-        <h2>Where Is Baby Now?</h2>
-        <p class="note">Set what the scan reported, then watch the <b>realistic 3D illustration</b> update. Drag left or right to turn the view. This is a guide, not an ultrasound.</p>
-        <div class="baby-layout">
-          <div>
-            <h3>From your report</h3>
-            <label>Baby presentation
-              <select id="babyPresentation" onchange="saveBabyInputs()">
-                <option value="cephalic">Head down (cephalic)</option>
-                <option value="breech">Breech (bottom or feet down)</option>
-                <option value="transverse">Transverse (lying across)</option>
-              </select>
-            </label>
-            <label>Placenta position
-              <select id="babyPlacenta" onchange="saveBabyInputs()">
-                <option value="anterior">Anterior (front wall)</option>
-                <option value="posterior">Posterior (back wall)</option>
-              </select>
-            </label>
-            <label>How low baby feels today
-              <select id="babyDropManual" onchange="saveBabyInputs()">
-                <option value="auto">Let signs decide automatically</option>
-                <option value="0">High in the uterus</option>
-                <option value="1">Starting to drop</option>
-                <option value="2">Low in the pelvis</option>
-                <option value="3">Very low / pressing down</option>
-              </select>
-            </label>
-            <div class="drop-meter">
-              <div class="drop-labels"><span>High</span><span>Engaged</span></div>
-              <div class="track"><div class="fill" id="dropMeterFill"></div></div>
-              <p class="note" id="dropMeterText">Drop level updates from your inputs and signs.</p>
-            </div>
-          </div>
-          <div class="baby-diagram-wrap">
-            <div class="baby-3d-view" id="baby3dCanvas">
-              <div class="baby-3d-fallback" id="baby3dFallback">Loading illustration…</div>
-            </div>
-            <p class="baby-3d-hint">Drag left/right to rotate the view · changes with your inputs</p>
-            <div class="baby-legend" id="babyLegend"></div>
-            <div class="baby-caption" id="babyCaption"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="card" id="signs">
-        <h2>Signs Present Now</h2>
-        <p class="note">Tick what is happening today. The guide updates as you go.</p>
+        <h3 style="margin-top:1.25rem;">What feels true right now?</h3>
         <div id="signChecks"></div>
-        <div id="signResult" class="result hidden"></div>
-        <h3>Waters broken or leaking?</h3>
-        <div class="actions">
-          <button onclick="logWaters()">Log waters now</button>
-          <button class="secondary" onclick="clearWaters()">Clear</button>
+
+        <div class="actions" style="margin-top:12px;">
+          <button onclick="logWaters()">Waters broke or leaking</button>
+          <button class="secondary" onclick="clearWaters()">Undo</button>
         </div>
-        <div id="watersResult" class="result soft hidden"></div>
+
+        <div class="grid" style="margin-top:1rem;">
+          <label>Due date <input type="date" id="dueDate" onchange="saveState()" /></label>
+          <label>Week <input type="number" id="gestWeek" min="28" max="43" value="38" onchange="saveState()" /></label>
+        </div>
+        <p class="note" style="margin-top:8px;">Guide only, not medical advice. Call your doctor or hospital when unsure.</p>
       </section>
 
-      <section class="card" id="timer">
-        <h2>Contraction Timer</h2>
-        <p class="note">Tap when a contraction starts. Tap again when it eases. The guide tracks length, gap, and rhythm.</p>
-        <div class="timer-display" id="timerClock">00:00</div>
-        <div class="timer-state" id="timerState">Ready. Press start when tightening begins.</div>
-        <div class="actions">
-          <button class="big" id="timerBtn" onclick="toggleContraction()">Start contraction</button>
-          <button class="secondary" onclick="resetContractions()">Reset all</button>
-        </div>
-        <div class="stat-row">
-          <div class="stat-box"><div class="num" id="statAvgDur">—</div><div class="lbl">Avg length</div></div>
-          <div class="stat-box"><div class="num" id="statAvgGap">—</div><div class="lbl">Avg gap</div></div>
-          <div class="stat-box"><div class="num" id="statCount">0</div><div class="lbl">Logged</div></div>
-        </div>
-        <table>
-          <thead><tr><th>#</th><th>Start</th><th>Length</th><th>Gap</th></tr></thead>
-          <tbody id="contractionList"></tbody>
-        </table>
-        <div id="contractionAdvice" class="result soft hidden"></div>
-        <p class="note" style="margin-top:12px;"><b>5-1-1 reminder:</b> many teams say call when contractions are about 5 minutes apart, lasting around 1 minute, for about 1 hour. Your own doctor's rule may differ.</p>
-      </section>
+      <section class="card" id="tools">
+        <h2>Timer & comfort</h2>
 
-      <section class="card" id="movement">
-        <h2>Baby Movement Counter</h2>
-        <p class="note">Count movements in a 2-hour window. Aim for at least 10. If movements feel much less, contact your birth team.</p>
-        <div class="kick-ring" id="kickCount">0</div>
-        <div class="actions" style="justify-content:center;">
-          <button class="big" style="width:auto;min-width:180px;" onclick="addKick()">+ Movement</button>
-          <button class="secondary" onclick="resetKicks()">New session</button>
+        <div class="tool-block" id="timer">
+          <h3>Contractions</h3>
+          <p class="note">Tap start when tightening begins, again when it eases.</p>
+          <div class="timer-display" id="timerClock">00:00</div>
+          <div class="timer-state" id="timerState">Ready.</div>
+          <div class="actions">
+            <button class="big" id="timerBtn" onclick="toggleContraction()">Start contraction</button>
+            <button class="secondary" onclick="resetContractions()">Reset</button>
+          </div>
+          <div class="stat-row">
+            <div class="stat-box"><div class="num" id="statAvgDur">—</div><div class="lbl">Avg length</div></div>
+            <div class="stat-box"><div class="num" id="statAvgGap">—</div><div class="lbl">Avg gap</div></div>
+            <div class="stat-box"><div class="num" id="statCount">0</div><div class="lbl">Logged</div></div>
+          </div>
         </div>
-        <div id="kickAdvice" class="result hidden"></div>
-        <p class="note" id="kickTimerNote" style="margin-top:10px;text-align:center;"></p>
-      </section>
 
-      <section class="card" id="breathing">
-        <h2>Calm Breathing Pacer</h2>
-        <p class="note">Slow breathing can help between tightenings. Follow the circle: inhale 4 seconds, hold 2, exhale 6.</p>
-        <div class="breath-circle" id="breathCircle">Breathe</div>
-        <div class="actions" style="justify-content:center;">
-          <button id="breathBtn" onclick="toggleBreathing()">Start breathing</button>
+        <div class="tool-block" id="movement">
+          <h3>Baby movements</h3>
+          <p class="note">Tap each movement. Aim for 10 within 2 hours.</p>
+          <div class="kick-ring" id="kickCount">0</div>
+          <div class="actions" style="justify-content:center;">
+            <button class="big" style="width:auto;min-width:160px;" onclick="addKick()">+ Movement</button>
+            <button class="secondary" onclick="resetKicks()">New count</button>
+          </div>
+          <p class="note" id="kickTimerNote" style="margin-top:8px;text-align:center;"></p>
+        </div>
+
+        <div class="tool-block" id="breathing">
+          <h3>Calm breathing</h3>
+          <p class="note">Inhale 4 sec, hold 2, exhale 6.</p>
+          <div class="breath-circle" id="breathCircle">Breathe</div>
+          <div class="actions" style="justify-content:center;">
+            <button id="breathBtn" onclick="toggleBreathing()">Start</button>
+          </div>
         </div>
       </section>
 
-      <section class="card" id="goNow">
-        <h2>Should We Go Now?</h2>
-        <p class="note">Check anything that is true right now. The guide will suggest your next step.</p>
-        <div id="goChecks"></div>
-        <div id="goResult" class="result hidden"></div>
-      </section>
-
-      <section class="card" id="bag">
-        <h2>Hospital Bag Checklist</h2>
+      <section class="card" id="ready">
+        <h2>Bag & calls</h2>
         <div class="progress-wrap"><div class="progress-fill" id="bagProgress"></div></div>
         <p class="note" id="bagProgressLabel">0 of 0 packed</p>
         <div id="bagChecks"></div>
-      </section>
 
-      <section class="card">
-        <h2>Add Report Images</h2>
-        <p class="note">Images stay on this device only. Nothing is uploaded anywhere.</p>
-        <input type="file" accept="image/*" multiple onchange="showImages(event)" />
-        <div id="preview" class="images grid"></div>
-      </section>
-
-      <section class="card">
-        <h2>What To Do Now</h2>
-        <div class="result" id="actionPlan">
-          <b>Most likely phase:</b> pre-labor / cervical preparation.<br><br>
-          These signs can continue for hours or days. Because the first labor dilated quickly, stay observant once contractions become regular.
+        <div class="tool-block" id="contacts">
+          <h3>Who to call</h3>
+          <div class="contact-card">
+            <input type="text" id="contactDoctorName" placeholder="Doctor / hospital" onchange="saveState()" />
+            <input type="tel" id="contactDoctorPhone" placeholder="Phone" onchange="saveState()" />
+            <a id="callDoctor" href="#">Call</a>
+          </div>
+          <div class="contact-card">
+            <input type="text" id="contactRideName" placeholder="Driver / family" onchange="saveState()" />
+            <input type="tel" id="contactRidePhone" placeholder="Phone" onchange="saveState()" />
+            <a id="callRide" href="#">Call</a>
+          </div>
         </div>
-        <ul id="actionList">
-          <li>Rest between activity. Save energy for labor.</li>
-          <li>Eat light, nourishing meals and drink fluids.</li>
-          <li>Gentle walking, breathing, side-lying rest, and warm bath can help comfort.</li>
-          <li>Time contractions if they become regular.</li>
-          <li>Keep birth documents, reports, clothes, and transport plan ready.</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>Scar Thickness — What It Means</h2>
-        <div class="grid">
-          <div class="pill"><b>3.5–4 mm:</b> reassuring</div>
-          <div class="pill"><b>Around 3 mm:</b> often still acceptable</div>
-          <div class="pill"><b>2–3 mm:</b> more individualized</div>
-        </div>
-        <p class="note" style="margin-top:12px;">Your scar went from 4 mm at 35 weeks to 3.5 mm at 38 weeks. That small change is normal as the uterus stretches near term.</p>
-      </section>
-
-      <section class="card" id="contacts">
-        <h2>Emergency Contacts</h2>
-        <p class="note">Tap call when ready. Numbers save on this device only.</p>
-        <div class="contact-card">
-          <input type="text" id="contactDoctorName" placeholder="Doctor / hospital" onchange="saveState()" />
-          <input type="tel" id="contactDoctorPhone" placeholder="Phone" onchange="saveState()" />
-          <a id="callDoctor" href="#">Call</a>
-        </div>
-        <div class="contact-card">
-          <input type="text" id="contactRideName" placeholder="Driver / family" onchange="saveState()" />
-          <input type="tel" id="contactRidePhone" placeholder="Phone" onchange="saveState()" />
-          <a id="callRide" href="#">Call</a>
-        </div>
-      </section>
-
-      <section class="card" id="journal">
-        <h2>Quick Notes</h2>
-        <textarea id="journalInput" placeholder="How is she feeling right now? Any new sign?"></textarea>
-        <div class="actions">
-          <button onclick="addJournal()">Save note</button>
-        </div>
-        <div id="journalList"></div>
-      </section>
-
-      <section class="card">
-        <h2>When To Contact Birth Team</h2>
-        <ul>
-          <li>Contractions become regular and stronger</li>
-          <li>Waters break or leak</li>
-          <li>Baby movements reduce</li>
-          <li>Bleeding is more than light spotting</li>
-          <li>Pain becomes constant rather than wave-like</li>
-        </ul>
       </section>
     </main>
 
@@ -818,37 +711,26 @@
 
   <script>
     const ACCESS_PHRASE = 'birth222';
-    const STORAGE_KEY = 'birthGuideState_v3';
+    const STORAGE_KEY = 'birthGuideState_v4';
 
     const BABY_IMAGES = {
-      cephalic: {
-        frames: ['birth-assets/fetus-cephalic-side.png', 'birth-assets/fetus-cephalic-front.png'],
-        low: 'birth-assets/fetus-cephalic-low.png'
-      },
-      breech: 'birth-assets/fetus-breech-side.png',
-      transverse: 'birth-assets/fetus-transverse-side.png'
+      side: 'birth-assets/fetus-cephalic-side.png',
+      front: 'birth-assets/fetus-cephalic-front.png',
+      low: 'birth-assets/fetus-cephalic-low.png'
     };
 
     const SIGNS = [
-      { id: 'mucus', label: 'White or clear mucus discharge', tip: 'Can mean the cervix is softening. Normal near term.' },
-      { id: 'pelvic', label: 'Pelvic heaviness / baby pressing down', tip: 'Baby may be lower. Bladder and pelvis feel the pressure.' },
-      { id: 'urination', label: 'Frequent urination', tip: 'Common when the head is low.' },
-      { id: 'back', label: 'Mild lower back ache or period-like cramps', tip: 'Can be pre-labor. Watch if it becomes rhythmic.' },
-      { id: 'rectal', label: 'Rectal pressure / feeling like passing stool', tip: 'Often means the baby is very low.' },
-      { id: 'bowel', label: 'Loose motions or more bowel activity', tip: 'Body sometimes clears before labor.' },
-      { id: 'sleep', label: 'Sleep disturbance or tiredness', tip: 'Rest when you can. Energy matters for labor.' },
-      { id: 'movements', label: 'Baby movements feel lower or different', tip: 'Pattern may change as baby drops. Still count movements.' },
-      { id: 'tighten', label: 'Irregular belly tightening, especially evening/night', tip: 'Practice tightenings are common. Time them if they strengthen.' }
-    ];
-
-    const GO_TRIGGERS = [
-      { id: 'regular', label: 'Contractions are regular and getting stronger', urgent: true },
-      { id: 'waters', label: 'Waters broke or are leaking', urgent: true },
+      { id: 'mucus', label: 'White or clear mucus discharge' },
+      { id: 'pelvic', label: 'Pelvic heaviness / baby pressing down' },
+      { id: 'urination', label: 'Frequent urination' },
+      { id: 'back', label: 'Mild back ache or period-like cramps' },
+      { id: 'rectal', label: 'Rectal pressure / feels like passing stool' },
+      { id: 'bowel', label: 'Loose motions or more bowel activity' },
+      { id: 'tighten', label: 'Irregular belly tightening' },
+      { id: 'movements', label: 'Baby movements feel lower or different' },
       { id: 'bleeding', label: 'Bleeding more than light spotting', urgent: true },
-      { id: 'lessMove', label: 'Baby movements clearly reduced', urgent: true },
-      { id: 'constant', label: 'Pain is constant, not wave-like', urgent: true },
-      { id: 'fiveOneOne', label: '5-1-1 pattern for about an hour (ask your doctor)', urgent: false },
-      { id: 'scarPain', label: 'Sharp scar pain with tightening', urgent: true }
+      { id: 'scarPain', label: 'Sharp scar pain with tightening', urgent: true },
+      { id: 'constant', label: 'Pain is constant, not wave-like', urgent: true }
     ];
 
     const BAG_ITEMS = [
@@ -869,35 +751,25 @@
     let timerInterval = null;
     let breathInterval = null;
     let breathRunning = false;
-    let babyViewer = { ready: false, frame: 0, rotY: 0, dragging: false, lastX: 0, dragAccum: 0 };
 
     function defaultState() {
       return {
-        signs: Object.fromEntries(SIGNS.map((s) => [s.id, true])),
-        goChecks: {},
+        signs: Object.fromEntries(SIGNS.map((s) => [s.id, false])),
         bag: {},
         contractions: [],
         activeContractionStart: null,
         kicks: { count: 0, startedAt: null },
         watersAt: null,
-        journal: [],
         dueDate: '',
         gestWeek: 38,
         contacts: { doctorName: '', doctorPhone: '', rideName: '', ridePhone: '' },
-        baby: {
-          presentation: 'cephalic',
-          placenta: 'anterior',
-          dropManual: 'auto'
-        }
+        babyView: 'auto'
       };
     }
 
     function migrateState(parsed) {
-      if (parsed.baby) return parsed;
-      return {
-        ...parsed,
-        baby: { presentation: 'cephalic', placenta: 'anterior', dropManual: 'auto' }
-      };
+      if (parsed.babyView) return parsed;
+      return { ...parsed, babyView: 'auto' };
     }
 
     function loadState() {
@@ -912,12 +784,8 @@
     }
 
     function saveState() {
-      if (document.getElementById('babyPresentation')) {
-        state.baby = {
-          presentation: document.getElementById('babyPresentation').value,
-          placenta: document.getElementById('babyPlacenta').value,
-          dropManual: document.getElementById('babyDropManual').value
-        };
+      if (document.getElementById('babyView')) {
+        state.babyView = document.getElementById('babyView').value;
       }
       state.contacts = {
         doctorName: document.getElementById('contactDoctorName').value,
@@ -928,10 +796,12 @@
       state.dueDate = document.getElementById('dueDate').value;
       state.gestWeek = Number(document.getElementById('gestWeek').value) || 38;
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-      refreshAll();
+      syncGuide();
+      renderContractions();
+      renderKicks();
+      updateBagProgress();
+      updateCallLinks();
     }
-
-    function saveAndRefresh() { saveState(); }
 
     function unlock() {
       const input = document.getElementById('passInput').value.trim().toLowerCase();
@@ -949,21 +819,18 @@
 
     function initApp() {
       renderSignChecks();
-      renderGoChecks();
       renderBagChecks();
       document.getElementById('dueDate').value = state.dueDate || '';
       document.getElementById('gestWeek').value = state.gestWeek || 38;
-      document.getElementById('babyPresentation').value = state.baby.presentation || 'cephalic';
-      document.getElementById('babyPlacenta').value = state.baby.placenta || 'anterior';
-      document.getElementById('babyDropManual').value = state.baby.dropManual || 'auto';
+      document.getElementById('babyView').value = state.babyView || 'auto';
       document.getElementById('contactDoctorName').value = state.contacts.doctorName || '';
       document.getElementById('contactDoctorPhone').value = state.contacts.doctorPhone || '';
       document.getElementById('contactRideName').value = state.contacts.rideName || '';
       document.getElementById('contactRidePhone').value = state.contacts.ridePhone || '';
       updateCallLinks();
-      renderJournal();
-      initBabyViewer();
-      refreshAll();
+      syncGuide();
+      renderContractions();
+      renderKicks();
       if (state.activeContractionStart) startTimerTick();
     }
 
@@ -977,15 +844,6 @@
       `).join('');
     }
 
-    function renderGoChecks() {
-      document.getElementById('goChecks').innerHTML = GO_TRIGGERS.map((g) => `
-        <label class="check">
-          <input type="checkbox" data-go="${g.id}" ${state.goChecks[g.id] ? 'checked' : ''} onchange="toggleGo('${g.id}', this.checked)">
-          ${g.label}
-        </label>
-      `).join('');
-    }
-
     function renderBagChecks() {
       document.getElementById('bagChecks').innerHTML = BAG_ITEMS.map((item, i) => {
         const id = 'bag' + i;
@@ -993,22 +851,7 @@
       }).join('');
     }
 
-    function saveBabyInputs() {
-      state.baby = {
-        presentation: document.getElementById('babyPresentation').value,
-        placenta: document.getElementById('babyPlacenta').value,
-        dropManual: document.getElementById('babyDropManual').value
-      };
-      babyViewer.frame = 0;
-      babyViewer.rotY = 0;
-      babyViewer.dragAccum = 0;
-      saveState();
-    }
-
     function computeDropLevel() {
-      if (state.baby.dropManual !== 'auto') {
-        return Number(state.baby.dropManual);
-      }
       const dropSigns = ['pelvic', 'rectal', 'urination', 'movements'];
       const score = dropSigns.filter((id) => state.signs[id]).length;
       if (score >= 4) return 3;
@@ -1021,210 +864,150 @@
       return ['High in uterus', 'Starting to drop', 'Low in pelvis', 'Very low / pressing down'][level] || 'Unknown';
     }
 
-    function initBabyViewer() {
-      const container = document.getElementById('baby3dCanvas');
-      const fallback = document.getElementById('baby3dFallback');
-      if (!container || babyViewer.ready) return;
-
-      if (fallback) fallback.remove();
-      container.innerHTML = `
-        <span class="baby-view-label" id="babyViewLabel">Side view</span>
-        <div class="baby-real-stage" id="babyRealStage">
-          <img id="babyRealImg" alt="Realistic illustration of baby in womb" draggable="false" />
-        </div>
-      `;
-
-      container.addEventListener('pointerdown', (e) => {
-        babyViewer.dragging = true;
-        babyViewer.lastX = e.clientX;
-        container.setPointerCapture(e.pointerId);
-      });
-
-      container.addEventListener('pointermove', (e) => {
-        if (!babyViewer.dragging) return;
-        const dx = e.clientX - babyViewer.lastX;
-        babyViewer.lastX = e.clientX;
-        babyViewer.rotY = Math.max(-32, Math.min(32, babyViewer.rotY + dx * 0.4));
-        babyViewer.dragAccum += dx;
-
-        const presentation = state.baby.presentation || 'cephalic';
-        const drop = computeDropLevel();
-        if (presentation === 'cephalic' && drop < 2) {
-          if (babyViewer.dragAccum > 90) {
-            babyViewer.frame = 1;
-            babyViewer.dragAccum = 0;
-          } else if (babyViewer.dragAccum < -90) {
-            babyViewer.frame = 0;
-            babyViewer.dragAccum = 0;
-          }
-        }
-        updateBabyViewer();
-      });
-
-      container.addEventListener('pointerup', () => {
-        babyViewer.dragging = false;
-      });
-
-      container.addEventListener('pointercancel', () => {
-        babyViewer.dragging = false;
-      });
-
-      babyViewer.ready = true;
-      updateBabyViewer();
+    function setBabyView(value) {
+      state.babyView = value;
+      document.getElementById('babyView').value = value;
+      saveState();
     }
 
-    function pickBabyImage() {
-      const presentation = state.baby.presentation || 'cephalic';
+    function pickBabyImageKey() {
+      if (state.babyView && state.babyView !== 'auto') return state.babyView;
       const drop = computeDropLevel();
-
-      if (presentation === 'cephalic') {
-        if (drop >= 2) {
-          return { src: BABY_IMAGES.cephalic.low, label: 'Low / engaged view' };
-        }
-        const frames = BABY_IMAGES.cephalic.frames;
-        const idx = babyViewer.frame % frames.length;
-        return {
-          src: frames[idx],
-          label: idx === 0 ? 'Side view' : 'Front angle'
-        };
-      }
-      if (presentation === 'breech') {
-        return { src: BABY_IMAGES.breech, label: 'Breech view' };
-      }
-      return { src: BABY_IMAGES.transverse, label: 'Transverse view' };
+      if (drop >= 2) return 'low';
+      if (state.signs.tighten && SIGNS.filter((s) => !s.urgent && state.signs[s.id]).length >= 4) return 'front';
+      return 'side';
     }
 
-    function updateBabyViewer() {
-      if (!babyViewer.ready) return;
+    function updateBabyImage() {
       const img = document.getElementById('babyRealImg');
-      const label = document.getElementById('babyViewLabel');
       if (!img) return;
-
-      const { src, label: viewLabel } = pickBabyImage();
-      const placenta = state.baby.placenta || 'anterior';
-      const mirror = placenta === 'posterior' ? 'scaleX(-1)' : '';
-      const tilt = `rotateY(${babyViewer.rotY}deg)`;
-
+      const src = BABY_IMAGES[pickBabyImageKey()] || BABY_IMAGES.side;
       if (img.getAttribute('data-src') !== src) {
-        img.style.opacity = '0.15';
-        img.onload = () => {
-          img.style.opacity = '1';
-        };
+        img.style.opacity = '0.35';
+        img.onload = () => { img.style.opacity = '1'; };
         img.src = src;
         img.setAttribute('data-src', src);
       }
-
-      img.style.transform = `${mirror} ${tilt}`.trim();
-      if (label) label.textContent = viewLabel;
     }
 
-    function renderBabyDiagram() {
-      const presentation = state.baby.presentation || 'cephalic';
-      const placenta = state.baby.placenta || 'anterior';
+    function contractionPattern() {
+      const rows = state.contractions;
+      if (rows.length < 2) return null;
+      const gaps = [];
+      for (let i = 1; i < rows.length; i++) {
+        gaps.push(Math.round((new Date(rows[i].start) - new Date(rows[i - 1].start)) / 60000));
+      }
+      const durations = rows.map((c) => c.durationSec);
+      const recentGaps = gaps.slice(-3);
+      const recentDur = durations.slice(-3);
+      return {
+        close: recentGaps.length >= 3 && recentGaps.every((g) => g <= 6),
+        longEnough: recentDur.every((d) => d >= 45),
+        somewhatRegular: recentGaps.some((g) => g <= 10)
+      };
+    }
+
+    function kickStatus() {
+      if (!state.kicks.startedAt) return null;
+      const elapsedMin = Math.floor((Date.now() - new Date(state.kicks.startedAt).getTime()) / 60000);
+      if (state.kicks.count >= 10) return { ok: true, elapsedMin };
+      if (elapsedMin >= 120 && state.kicks.count < 10) return { low: true, elapsedMin };
+      return { counting: true, elapsedMin, remaining: 10 - state.kicks.count };
+    }
+
+    function syncGuide() {
+      const urgentSigns = SIGNS.filter((s) => s.urgent && state.signs[s.id]);
+      const normalSigns = SIGNS.filter((s) => !s.urgent && state.signs[s.id]);
       const drop = computeDropLevel();
-      const caption = document.getElementById('babyCaption');
-      const legend = document.getElementById('babyLegend');
-      const meter = document.getElementById('dropMeterFill');
-      const meterText = document.getElementById('dropMeterText');
+      const pattern = contractionPattern();
+      const kicks = kickStatus();
+      const verdict = document.getElementById('guideVerdict');
+      const week = Number(state.gestWeek) || 38;
 
-      meter.style.width = ((drop + 1) / 4 * 100) + '%';
-      const autoNote = state.baby.dropManual === 'auto' ? ' (estimated from your signs)' : '';
-      meterText.textContent = `Drop level: ${dropLevelLabel(drop)}${autoNote}`;
+      let phase = 'Preparing';
+      let verdictClass = 'result';
+      let html = '';
 
-      let presentationText = 'Head down toward the cervix';
-      if (presentation === 'breech') presentationText = 'Bottom or feet toward the cervix';
-      if (presentation === 'transverse') presentationText = 'Baby lying across the uterus';
-
-      const placentaText = placenta === 'anterior' ? 'front wall (toward belly)' : 'back wall (toward spine)';
-      let pressure = '';
-      if (drop >= 2 && presentation === 'cephalic') {
-        pressure = ' Pressure on bladder, pelvis, and rectum fits a head-down baby sitting lower.';
-      } else if (drop >= 1 && presentation === 'cephalic') {
-        pressure = ' Baby may be moving into the pelvis. Pelvic heaviness can increase.';
-      } else if (presentation === 'cephalic') {
-        pressure = ' Baby still has room to move higher before engaging.';
+      if (urgentSigns.length) {
+        phase = 'Call now';
+        verdictClass = 'result alert';
+        html = `<b>Contact your birth team now.</b><ul>${urgentSigns.map((s) => `<li>${s.label}</li>`).join('')}</ul><p>Do not wait if something feels wrong, especially with a prior cesarean scar.</p>`;
+      } else if (state.watersAt) {
+        const at = new Date(state.watersAt);
+        const mins = Math.floor((Date.now() - at.getTime()) / 60000);
+        const hours = Math.floor(mins / 60);
+        const rem = mins % 60;
+        phase = 'Waters logged';
+        verdictClass = 'result alert';
+        html = `<b>Waters logged at ${at.toLocaleTimeString()}</b> (${hours ? hours + ' hr ' : ''}${rem} min ago).<br><br>Contact your doctor with the time and fluid color.`;
+      } else if (pattern && pattern.close && pattern.longEnough) {
+        phase = 'Active pattern';
+        verdictClass = 'result alert';
+        html = '<b>Contractions look like active labor.</b> They are close and lasting close to a minute. Contact your birth team and prepare to leave.';
+      } else if (pattern && pattern.somewhatRegular) {
+        phase = 'Early labor';
+        verdictClass = 'result soft';
+        html = '<b>Contractions are becoming regular.</b> Keep timing each one, rest between them, and have your bag ready.';
+      } else if (kicks && kicks.low) {
+        phase = 'Low movement';
+        verdictClass = 'result alert';
+        html = '<b>Movements are low for two hours.</b> Try a cold drink or lying on your side. If movement stays reduced, contact your birth team.';
+      } else if (normalSigns.length >= 7 && state.signs.tighten) {
+        phase = 'Getting ready';
+        verdictClass = 'result soft';
+        html = `<b>${normalSigns.length} signs active — body is preparing.</b> This can last hours or days. Rest, eat lightly, and time contractions if tightenings strengthen.`;
+      } else if (normalSigns.length >= 4) {
+        phase = 'Preparing';
+        verdictClass = 'result soft';
+        html = `<b>${normalSigns.length} signs checked.</b> Normal late-pregnancy preparation. Stay rested and observant.`;
+      } else if (normalSigns.length) {
+        phase = 'Preparing';
+        verdictClass = 'result';
+        html = `<b>${normalSigns.length} sign${normalSigns.length > 1 ? 's' : ''} noted.</b> Keep resting, counting movements, and finishing the bag.`;
+      } else {
+        html = 'Tick what feels true below. Nothing urgent checked right now — rest, hydrate, and finish the bag.';
       }
 
-      caption.innerHTML = `
-        <b>${presentationText}</b><br>
-        Placenta on the <b>${placentaText}</b>.<br>
-        ${dropLevelLabel(drop)}.${pressure}
-        <br><br><span class="note">Realistic medical illustration for family guidance only. Your scan: head down, placenta anterior, cord loop noted.</span>
-      `;
+      if (kicks && kicks.counting && !urgentSigns.length && !(pattern && pattern.close)) {
+        html += `<p style="margin-top:10px;"><b>Movements:</b> ${kicks.remaining} more to reach 10 (${kicks.elapsedMin} min into this count).</p>`;
+      } else if (kicks && kicks.ok) {
+        html += `<p style="margin-top:10px;"><b>Movements:</b> 10 reached — reassuring for this session.</p>`;
+      }
 
-      legend.innerHTML = [
-        ['Head down', presentation === 'cephalic'],
-        ['Breech', presentation === 'breech'],
-        ['Transverse', presentation === 'transverse'],
-        ['Placenta front', placenta === 'anterior'],
-        ['Placenta back', placenta === 'posterior'],
-        [dropLevelLabel(drop), true]
-      ].map(([text, on]) => `<span class="${on ? 'on' : ''}">${text}</span>`).join('');
+      if (drop >= 2 && !urgentSigns.length) {
+        html += `<p style="margin-top:10px;">Baby feels <b>low in the pelvis</b> based on your signs.</p>`;
+      }
 
-      const subtitle = presentation === 'cephalic'
-        ? `${state.gestWeek || 38} weeks · Head-down baby · ${dropLevelLabel(drop).toLowerCase()}`
-        : `${state.gestWeek || 38} weeks · ${presentation} · Calm signs tracker`;
-      document.getElementById('headerSubtitle').textContent = subtitle;
+      verdict.className = verdictClass;
+      verdict.innerHTML = html;
+      document.getElementById('livePhase').textContent = phase;
+      document.getElementById('liveWeek').textContent = week;
+      document.getElementById('headerSubtitle').textContent = `${week} weeks · Head-down · ${dropLevelLabel(drop).toLowerCase()}`;
 
-      updateBabyViewer();
+      const dueEl = document.getElementById('liveDue');
+      if (!state.dueDate) {
+        dueEl.textContent = '—';
+      } else {
+        const due = new Date(state.dueDate + 'T00:00:00');
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const diff = Math.round((due - today) / 86400000);
+        if (diff > 0) dueEl.textContent = diff + 'd';
+        else if (diff === 0) dueEl.textContent = 'Today';
+        else dueEl.textContent = Math.abs(diff) + 'd over';
+      }
+
+      updateBabyImage();
     }
 
     function toggleSign(id, checked) {
       state.signs[id] = checked;
       saveState();
-      analyzeSigns();
-      renderBabyDiagram();
-    }
-
-    function toggleGo(id, checked) {
-      state.goChecks[id] = checked;
-      saveState();
-      analyzeGoNow();
     }
 
     function toggleBag(id, checked) {
       state.bag[id] = checked;
       saveState();
-    }
-
-    function analyzeSigns() {
-      const active = SIGNS.filter((s) => state.signs[s.id]);
-      const result = document.getElementById('signResult');
-      if (!active.length) {
-        result.classList.add('hidden');
-        return;
-      }
-      result.classList.remove('hidden');
-      const tips = active.map((s) => `<li><b>${s.label.split(' / ')[0]}:</b> ${s.tip}</li>`).join('');
-      const count = active.length;
-      let phase = 'pre-labor preparation';
-      if (count >= 7 && state.signs.tighten) phase = 'late pre-labor / early preparation';
-      result.innerHTML = `
-        <b>${count} sign${count > 1 ? 's' : ''} active.</b> Together these fit normal late-pregnancy preparation.
-        <ul style="margin-top:10px;">${tips}</ul>
-        <p style="margin-top:10px;"><b>Likely meaning:</b> the body is getting ready. This can last hours or days. It does not by itself mean active labor has started.</p>
-      `;
-      updateActionPlan();
-      renderBabyDiagram();
-    }
-
-    function analyzeGoNow() {
-      const urgent = GO_TRIGGERS.filter((g) => g.urgent && state.goChecks[g.id]);
-      const soft = GO_TRIGGERS.filter((g) => !g.urgent && state.goChecks[g.id]);
-      const box = document.getElementById('goResult');
-      if (!urgent.length && !soft.length) {
-        box.classList.add('hidden');
-        return;
-      }
-      box.classList.remove('hidden');
-      if (urgent.length) {
-        box.className = 'result alert';
-        box.innerHTML = `<b>Contact your birth team now.</b><ul>${urgent.map((g) => `<li>${g.label}</li>`).join('')}</ul><p>Do not wait for a perfect pattern if something feels wrong.</p>`;
-      } else {
-        box.className = 'result soft';
-        box.innerHTML = `<b>Getting close.</b><ul>${soft.map((g) => `<li>${g.label}</li>`).join('')}</ul><p>Keep timing contractions, stay hydrated, and have transport ready.</p>`;
-      }
-      updatePhase();
     }
 
     function logWaters() {
@@ -1234,23 +1017,6 @@
 
     function clearWaters() {
       state.watersAt = null;
-      saveState();
-    }
-
-    function renderWaters() {
-      const box = document.getElementById('watersResult');
-      if (!state.watersAt) {
-        box.classList.add('hidden');
-        return;
-      }
-      const at = new Date(state.watersAt);
-      const mins = Math.floor((Date.now() - at.getTime()) / 60000);
-      const hours = Math.floor(mins / 60);
-      const rem = mins % 60;
-      box.classList.remove('hidden');
-      box.className = 'result alert';
-      box.innerHTML = `<b>Waters logged at ${at.toLocaleTimeString()}.</b> That was ${hours ? hours + ' hr ' : ''}${rem} min ago.<br><br>Many teams want to know when waters break, especially with a prior cesarean scar. Contact your doctor with the time and fluid color.`;
-      state.goChecks.waters = true;
       saveState();
     }
 
@@ -1301,63 +1067,29 @@
     }
 
     function renderContractions() {
-      const tbody = document.getElementById('contractionList');
-      const advice = document.getElementById('contractionAdvice');
       const rows = state.contractions;
-      tbody.innerHTML = rows.map((c, i) => {
-        const start = new Date(c.start);
-        let gap = '—';
-        if (i > 0) {
-          const prev = new Date(rows[i - 1].start);
-          gap = formatMinutes(Math.round((start - prev) / 60000));
-        }
-        return `<tr><td>${i + 1}</td><td>${start.toLocaleTimeString()}</td><td>${formatDuration(c.durationSec)}</td><td>${gap}</td></tr>`;
-      }).join('');
-
       document.getElementById('statCount').textContent = rows.length;
 
-      if (rows.length) {
-        const durations = rows.map((c) => c.durationSec);
-        const avgDur = Math.round(durations.reduce((a, b) => a + b, 0) / durations.length);
-        document.getElementById('statAvgDur').textContent = formatDuration(avgDur);
-
-        if (rows.length > 1) {
-          const gaps = [];
-          for (let i = 1; i < rows.length; i++) {
-            gaps.push(Math.round((new Date(rows[i].start) - new Date(rows[i - 1].start)) / 60000));
-          }
-          const avgGap = Math.round(gaps.reduce((a, b) => a + b, 0) / gaps.length);
-          document.getElementById('statAvgGap').textContent = formatMinutes(avgGap);
-
-          const recent = gaps.slice(-3);
-          const recentDur = durations.slice(-3);
-          advice.classList.remove('hidden');
-
-          const close = recent.length >= 3 && recent.every((g) => g <= 6);
-          const longEnough = recentDur.every((d) => d >= 45);
-
-          if (close && longEnough) {
-            advice.className = 'result alert';
-            advice.innerHTML = '<b>Strong pattern forming.</b> Contractions are close and lasting close to a minute. Contact your birth team and prepare to leave.';
-            state.goChecks.fiveOneOne = true;
-          } else if (recent.some((g) => g <= 10)) {
-            advice.className = 'result soft';
-            advice.innerHTML = '<b>Early pattern.</b> Contractions are becoming more regular. Keep timing, rest between them, and eat lightly.';
-          } else {
-            advice.className = 'result';
-            advice.innerHTML = '<b>Still irregular.</b> This may be practice labor. Hydrate, change position, and keep timing if they strengthen.';
-          }
-        } else {
-          document.getElementById('statAvgGap').textContent = '—';
-          advice.classList.add('hidden');
-        }
-      } else {
+      if (!rows.length) {
         document.getElementById('statAvgDur').textContent = '—';
         document.getElementById('statAvgGap').textContent = '—';
-        advice.classList.add('hidden');
+        return;
       }
-      updatePhase();
-      analyzeGoNow();
+
+      const durations = rows.map((c) => c.durationSec);
+      const avgDur = Math.round(durations.reduce((a, b) => a + b, 0) / durations.length);
+      document.getElementById('statAvgDur').textContent = formatDuration(avgDur);
+
+      if (rows.length > 1) {
+        const gaps = [];
+        for (let i = 1; i < rows.length; i++) {
+          gaps.push(Math.round((new Date(rows[i].start) - new Date(rows[i - 1].start)) / 60000));
+        }
+        const avgGap = Math.round(gaps.reduce((a, b) => a + b, 0) / gaps.length);
+        document.getElementById('statAvgGap').textContent = formatMinutes(avgGap);
+      } else {
+        document.getElementById('statAvgGap').textContent = '—';
+      }
     }
 
     function formatDuration(sec) {
@@ -1386,26 +1118,12 @@
     function renderKicks() {
       document.getElementById('kickCount').textContent = state.kicks.count;
       const note = document.getElementById('kickTimerNote');
-      const advice = document.getElementById('kickAdvice');
       if (!state.kicks.startedAt) {
         note.textContent = '';
-        advice.classList.add('hidden');
         return;
       }
       const elapsedMin = Math.floor((Date.now() - new Date(state.kicks.startedAt).getTime()) / 60000);
-      note.textContent = `Session time: ${elapsedMin} min`;
-      advice.classList.remove('hidden');
-      if (state.kicks.count >= 10) {
-        advice.className = 'result';
-        advice.innerHTML = '<b>Good movement session.</b> Ten or more movements in two hours is reassuring. You can start a fresh count later if you want.';
-      } else if (elapsedMin >= 120 && state.kicks.count < 10) {
-        advice.className = 'result alert';
-        advice.innerHTML = '<b>Movements are low for this window.</b> Try a cold drink, lying on your side, or gentle rocking. If movement stays reduced, contact your birth team.';
-        state.goChecks.lessMove = true;
-      } else {
-        advice.className = 'result soft';
-        advice.innerHTML = `<b>Keep counting.</b> ${10 - state.kicks.count} more movement${10 - state.kicks.count === 1 ? '' : 's'} to reach 10 in this session.`;
-      }
+      note.textContent = `Session: ${elapsedMin} min`;
     }
 
     function toggleBreathing() {
@@ -1444,83 +1162,6 @@
       const pct = Math.round((done / total) * 100);
       document.getElementById('bagProgress').style.width = pct + '%';
       document.getElementById('bagProgressLabel').textContent = `${done} of ${total} packed`;
-      document.getElementById('liveBag').textContent = pct + '%';
-    }
-
-    function updateDueDisplay() {
-      const week = Number(state.gestWeek) || 38;
-      document.getElementById('liveWeek').textContent = week;
-      if (state.baby) renderBabyDiagram();
-      else document.getElementById('headerSubtitle').textContent = `${week} weeks · Head-down baby · Calm signs tracker`;
-      const dueEl = document.getElementById('liveDue');
-      if (!state.dueDate) {
-        dueEl.textContent = '—';
-        return;
-      }
-      const due = new Date(state.dueDate + 'T00:00:00');
-      const today = new Date();
-      today.setHours(0, 0, 0, 0);
-      const diff = Math.round((due - today) / 86400000);
-      if (diff > 0) dueEl.textContent = diff + 'd';
-      else if (diff === 0) dueEl.textContent = 'Today';
-      else dueEl.textContent = Math.abs(diff) + 'd over';
-    }
-
-    function updatePhase() {
-      const urgent = GO_TRIGGERS.some((g) => g.urgent && state.goChecks[g.id]);
-      const rows = state.contractions;
-      let phase = 'prep';
-      let label = 'Preparing';
-      let tag = 'Current phase: pre-labor preparation';
-
-      if (urgent) {
-        phase = 'go';
-        label = 'Go now';
-        tag = 'Current phase: contact birth team';
-      } else if (rows.length >= 3) {
-        const gaps = [];
-        for (let i = 1; i < rows.length; i++) {
-          gaps.push(Math.round((new Date(rows[i].start) - new Date(rows[i - 1].start)) / 60000));
-        }
-        const recent = gaps.slice(-3);
-        if (recent.length >= 3 && recent.every((g) => g <= 6)) {
-          phase = 'active';
-          label = 'Active labor';
-          tag = 'Current phase: active labor pattern';
-        } else if (recent.some((g) => g <= 12)) {
-          phase = 'early';
-          label = 'Early labor';
-          tag = 'Current phase: early labor';
-        }
-      } else if (Object.values(state.signs).filter(Boolean).length >= 5) {
-        phase = 'prep';
-        label = 'Preparing';
-        tag = 'Current phase: late pre-labor';
-      }
-
-      document.getElementById('livePhase').textContent = label;
-      document.getElementById('phaseTag').textContent = tag;
-
-      const order = ['prep', 'early', 'active', 'go'];
-      const idx = order.indexOf(phase);
-      document.querySelectorAll('.phase-step').forEach((el) => {
-        const p = el.dataset.phase;
-        const pi = order.indexOf(p);
-        el.classList.toggle('active', p === phase);
-        el.classList.toggle('done', pi < idx);
-      });
-    }
-
-    function updateActionPlan() {
-      const active = SIGNS.filter((s) => state.signs[s.id]).length;
-      const plan = document.getElementById('actionPlan');
-      if (active >= 7) {
-        plan.innerHTML = '<b>Most likely phase:</b> late pre-labor.<br><br>Her body is doing real preparation work. Rest, eat lightly, and keep the bag and transport plan ready. Time contractions if tightenings strengthen.';
-      } else if (active >= 4) {
-        plan.innerHTML = '<b>Most likely phase:</b> pre-labor / cervical preparation.<br><br>These signs can continue for hours or days. Because the first labor dilated quickly, stay observant once contractions become regular.';
-      } else {
-        plan.innerHTML = '<b>Most likely phase:</b> still preparing.<br><br>Fewer signs checked right now. Keep resting, counting movements, and finishing the hospital bag.';
-      }
     }
 
     function updateCallLinks() {
@@ -1528,53 +1169,6 @@
       const r = document.getElementById('contactRidePhone').value.replace(/\s+/g, '');
       document.getElementById('callDoctor').href = d ? 'tel:' + d : '#';
       document.getElementById('callRide').href = r ? 'tel:' + r : '#';
-    }
-
-    function addJournal() {
-      const text = document.getElementById('journalInput').value.trim();
-      if (!text) return;
-      state.journal.unshift({ at: new Date().toISOString(), text });
-      state.journal = state.journal.slice(0, 30);
-      document.getElementById('journalInput').value = '';
-      saveState();
-    }
-
-    function renderJournal() {
-      document.getElementById('journalList').innerHTML = state.journal.map((j) => `
-        <div class="journal-entry">
-          <time>${new Date(j.at).toLocaleString()}</time>
-          <div>${escapeHtml(j.text)}</div>
-        </div>
-      `).join('');
-    }
-
-    function escapeHtml(str) {
-      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    }
-
-    function showImages(event) {
-      const preview = document.getElementById('preview');
-      preview.innerHTML = '';
-      [...event.target.files].forEach((file) => {
-        const img = document.createElement('img');
-        img.src = URL.createObjectURL(file);
-        img.alt = 'Ultrasound report image';
-        preview.appendChild(img);
-      });
-    }
-
-    function refreshAll() {
-      analyzeSigns();
-      analyzeGoNow();
-      renderContractions();
-      renderKicks();
-      renderWaters();
-      updateBagProgress();
-      updateDueDisplay();
-      updatePhase();
-      renderJournal();
-      updateCallLinks();
-      renderBabyDiagram();
     }
 
     document.getElementById('passInput').addEventListener('keydown', (e) => {
@@ -1594,8 +1188,7 @@
     setInterval(() => {
       if (document.getElementById('app').classList.contains('hidden')) return;
       renderKicks();
-      renderWaters();
-      updateDueDisplay();
+      syncGuide();
     }, 30000);
   </script>
 </body>
