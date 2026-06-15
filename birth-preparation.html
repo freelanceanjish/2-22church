@@ -193,6 +193,76 @@
       transition: box-shadow 0.4s ease;
     }
 
+    .carousel-scene {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      perspective: 1600px;
+      touch-action: none;
+      cursor: grab;
+      transform: scale(var(--week-scale, 1));
+      transform-origin: center center;
+      transition: transform 0.65s cubic-bezier(0.34, 1.2, 0.64, 1);
+    }
+
+    .carousel-scene.dragging { cursor: grabbing; }
+
+    .carousel {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+      transform-style: preserve-3d;
+      transition: transform 0.06s linear;
+    }
+
+    .carousel.snapping {
+      transition: transform 0.55s cubic-bezier(0.34, 1.1, 0.64, 1);
+    }
+
+    .carousel-face {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+      transform-style: preserve-3d;
+    }
+
+    .carousel-face img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 8px;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .scar-overlay {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      pointer-events: none;
+      transition: opacity 0.35s ease;
+    }
+
+    .scar-overlay.dim { opacity: 0.2; }
+
+    .rotate-hint {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      left: 8px;
+      z-index: 5;
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.92);
+      padding: 5px 10px;
+      border-radius: 999px;
+      pointer-events: none;
+      text-align: center;
+    }
+
     .baby-stage.has-signs {
       box-shadow: 0 0 0 2px rgba(23, 42, 54, 0.08), 0 12px 40px rgba(23, 42, 54, 0.1);
     }
@@ -207,25 +277,8 @@
       50% { box-shadow: 0 0 0 3px rgba(196, 92, 92, 0.45), 0 12px 40px rgba(196, 92, 92, 0.18); }
     }
 
-    #babyRealImg {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 8px;
-      transition: opacity 0.35s ease;
-    }
-
-    .baby-img-wrap {
-      transform: scale(var(--week-scale, 1));
-      transform-origin: center center;
-      transition: transform 0.65s cubic-bezier(0.34, 1.2, 0.64, 1);
-      animation: gentleBreathe 5s ease-in-out infinite;
-    }
-
-    @keyframes gentleBreathe {
-      0%, 100% { transform: scale(var(--week-scale, 1)); }
-      50% { transform: scale(calc(var(--week-scale, 1) * 1.012)); }
-    }
+    #babyRealImg,
+    .baby-img-wrap { display: none; }
 
     .view-badge {
       position: absolute;
@@ -366,16 +419,20 @@
       width: 100%;
       height: 100%;
       pointer-events: none;
-      z-index: 1;
+      z-index: 4;
+      transition: opacity 0.35s ease;
     }
+
+    .sign-overlays.dim { opacity: 0.12; }
 
     .sign-hotspots {
       position: absolute;
       inset: 0;
       width: 100%;
       height: 100%;
-      z-index: 2;
+      z-index: 5;
       cursor: pointer;
+      touch-action: manipulation;
     }
 
     .hotspot {
@@ -663,6 +720,7 @@
         <div class="status-item"><span class="label">Week</span><span class="value" id="liveWeek">38</span></div>
         <div class="status-item"><span class="label">Baby now</span><span class="value" id="liveWeightNow">—</span></div>
         <div class="status-item"><span class="label">At delivery</span><span class="value" id="liveWeightBirth">—</span></div>
+        <div class="status-item"><span class="label">Scar</span><span class="value" id="liveScar">3.5 mm</span></div>
         <div class="status-item"><span class="label">Due in</span><span class="value" id="liveDue">—</span></div>
       </div>
     </div>
@@ -675,14 +733,20 @@
         <div class="guide-layout">
           <div>
             <h2>What is happening inside</h2>
-            <p class="note" style="margin-bottom:10px;">Tap the picture <b>or</b> tick the list. Slide the week control to see baby progress toward birth.</p>
+            <p class="note" style="margin-bottom:10px;">Drag the picture <b>left/right to rotate 360°</b>. Tap zones or tick the list. Slide week to see progress.</p>
             <div class="live-badge" id="liveBadge"><span class="dot"></span><span id="liveBadgeText">Watching — tick a sign</span></div>
             <div class="baby-diagram-wrap">
               <div class="baby-stage interactive" id="babyStage">
                 <div class="view-badge" id="viewBadge">Week 38</div>
-                <div class="baby-img-wrap" id="babyImgWrap">
-                  <img id="babyRealImg" alt="Baby in womb" draggable="false" width="1536" height="1024" />
+                <div class="rotate-hint" id="rotateHint">Drag ↔ to rotate 360°</div>
+                <div class="carousel-scene" id="carouselScene">
+                  <div class="carousel" id="babyCarousel">
+                    <div class="carousel-face" data-view="side"><img alt="Side view" draggable="false" width="1536" height="1024" /></div>
+                    <div class="carousel-face" data-view="front"><img alt="Front view" draggable="false" width="1536" height="1024" /></div>
+                    <div class="carousel-face" data-view="low"><img alt="Low view" draggable="false" width="1536" height="1024" /></div>
+                  </div>
                 </div>
+                <svg class="scar-overlay" id="scarOverlay" viewBox="0 0 100 66.67" preserveAspectRatio="xMidYMid meet" aria-label="Cesarean scar thickness"></svg>
                 <svg class="sign-overlays" id="signOverlays" viewBox="0 0 100 66.67" preserveAspectRatio="xMidYMid meet" aria-hidden="true"></svg>
                 <svg class="sign-hotspots" id="signHotspots" viewBox="0 0 100 66.67" preserveAspectRatio="xMidYMid meet" aria-label="Tap body areas"></svg>
                 <div id="mapTip" class="map-tip hidden"></div>
@@ -881,7 +945,15 @@
     const SCAN_WEIGHT_G = 2650;
     const DELIVERY_WEEK = 40;
     const WEEKLY_GAIN_G = 200;
+    const SCAR_AT_SCAN_MM = 3.5;
     const IMAGE_ORDER = ['side', 'front', 'low'];
+    const VIEW_ANGLES = { side: 0, front: 120, low: 240 };
+    const CAROUSEL_KEYS = ['side', 'front', 'low'];
+
+    let carouselY = 0;
+    let carouselDragging = false;
+    let carouselLastX = 0;
+    let carouselReady = false;
     const WEEK_STAGES = [
       { week: 37, key: 'side', label: 'Scan week', caption: 'Baby high in uterus' },
       { week: 38, key: 'side', label: 'Now', caption: 'Growing, head down' },
@@ -958,16 +1030,16 @@
     }
 
     function initApp() {
+      initCarousel();
       initMapEvents();
       renderSignChecks();
       document.getElementById('dueDate').value = state.dueDate || '';
       document.getElementById('gestWeek').value = state.gestWeek || 38;
       document.getElementById('gestWeekSlider').value = Math.min(42, state.gestWeek || 38);
       document.getElementById('weekSliderLabel').textContent = state.gestWeek || 38;
-      const img = document.getElementById('babyRealImg');
-      img.src = BABY_IMAGES.side;
-      img.setAttribute('data-src', BABY_IMAGES.side);
       lastWeightNow = estimateWeightG(state.gestWeek || 38);
+      carouselY = VIEW_ANGLES[pickBabyImageKey()] || 0;
+      applyCarouselRotation();
       syncGuide();
       renderContractions();
       if (state.activeContractionStart) startTimerTick();
@@ -1055,11 +1127,118 @@
       }).join('');
     }
 
+    function scarThicknessMm(week) {
+      if (week >= 38) return 3.5;
+      if (week >= 37) return 3.7;
+      return 4.0;
+    }
+
+    function renderScarOverlay(week) {
+      const mm = scarThicknessMm(week);
+      const ok = mm >= 3.5;
+      const barW = Math.max(0.25, mm * 0.32);
+      document.getElementById('scarOverlay').innerHTML = `
+        <g class="scar-info">
+          <text x="7" y="48" font-size="1.75" fill="#778187" font-weight="500">low transverse scar</text>
+          <line x1="13" y1="51.5" x2="37" y2="51.5" stroke="#172A36" stroke-width="0.95" stroke-linecap="round"/>
+          <line x1="13" y1="51.5" x2="37" y2="51.5" stroke="#c45c5c" stroke-width="0.3" opacity="0.75"/>
+          <line x1="39" y1="49.2" x2="45" y2="49.2" stroke="#778187" stroke-width="0.22"/>
+          <line x1="39" y1="53.8" x2="45" y2="53.8" stroke="#778187" stroke-width="0.22"/>
+          <rect x="41.2" y="49.2" width="${barW}" height="4.6" fill="${ok ? '#5f8f63' : '#d9a441'}" rx="0.12"/>
+          <text x="46.5" y="51.3" font-size="2.35" fill="#172A36" font-weight="700">${mm} mm</text>
+          <text x="46.5" y="54.2" font-size="1.75" fill="${ok ? '#5f8f63' : '#d9a441'}">${ok ? 'reassuring' : 'watch'}</text>
+        </g>`;
+    }
+
+    function setCarouselDepth() {
+      const w = document.getElementById('carouselScene')?.clientWidth || 400;
+      const z = Math.round(w * 0.31);
+      document.querySelectorAll('.carousel-face').forEach((face, i) => {
+        face.style.transform = `rotateY(${i * 120}deg) translateZ(${z}px)`;
+      });
+    }
+
+    function normalizedCarouselAngle() {
+      return ((carouselY % 360) + 360) % 360;
+    }
+
+    function isSideViewAngle() {
+      const a = normalizedCarouselAngle();
+      return a < 55 || a > 305;
+    }
+
+    function applyCarouselRotation() {
+      document.getElementById('babyCarousel').style.transform = `rotateY(${carouselY}deg)`;
+      updateCarouselOverlayMode();
+    }
+
+    function updateCarouselOverlayMode() {
+      const nearSide = isSideViewAngle();
+      document.getElementById('scarOverlay').classList.toggle('dim', !nearSide);
+      document.getElementById('signOverlays').classList.toggle('dim', !nearSide);
+      const hotspots = document.getElementById('signHotspots');
+      hotspots.style.pointerEvents = nearSide ? 'auto' : 'none';
+      hotspots.style.opacity = nearSide ? 1 : 0.2;
+      const a = Math.round(normalizedCarouselAngle());
+      document.getElementById('rotateHint').textContent = nearSide
+        ? 'Drag ↔ to rotate 360° · Side view — tap body zones'
+        : `Drag ↔ to rotate 360° · ${a}°`;
+    }
+
+    function snapCarouselToView(key, animate) {
+      const target = VIEW_ANGLES[key] ?? 0;
+      const current = normalizedCarouselAngle();
+      let delta = target - current;
+      if (delta > 180) delta -= 360;
+      if (delta < -180) delta += 360;
+      carouselY += delta;
+      const carousel = document.getElementById('babyCarousel');
+      if (animate) carousel.classList.add('snapping');
+      applyCarouselRotation();
+      if (animate) setTimeout(() => carousel.classList.remove('snapping'), 560);
+    }
+
+    function initCarousel() {
+      if (carouselReady) return;
+      carouselReady = true;
+      const scene = document.getElementById('carouselScene');
+      const carousel = document.getElementById('babyCarousel');
+      CAROUSEL_KEYS.forEach((key, i) => {
+        carousel.querySelectorAll('.carousel-face')[i].querySelector('img').src = BABY_IMAGES[key];
+      });
+      setCarouselDepth();
+
+      scene.addEventListener('pointerdown', (e) => {
+        if (e.target.closest('.hotspot')) return;
+        carouselDragging = true;
+        carouselLastX = e.clientX;
+        carousel.classList.remove('snapping');
+        scene.classList.add('dragging');
+        scene.setPointerCapture(e.pointerId);
+      });
+
+      scene.addEventListener('pointermove', (e) => {
+        if (!carouselDragging) return;
+        carouselY += (e.clientX - carouselLastX) * 0.55;
+        carouselLastX = e.clientX;
+        applyCarouselRotation();
+      });
+
+      const endDrag = () => {
+        carouselDragging = false;
+        scene.classList.remove('dragging');
+      };
+      scene.addEventListener('pointerup', endDrag);
+      scene.addEventListener('pointercancel', endDrag);
+      window.addEventListener('resize', setCarouselDepth);
+    }
+
     function applyWeekVisuals(week, imageKey) {
       const scale = 1 + Math.max(0, week - SCAN_WEEK) * 0.018;
-      document.getElementById('babyImgWrap').style.setProperty('--week-scale', Math.min(1.1, scale).toFixed(3));
+      document.getElementById('carouselScene').style.setProperty('--week-scale', Math.min(1.1, scale).toFixed(3));
       document.getElementById('viewBadge').textContent = weekStageCaption(week, imageKey);
       renderWeekTimeline(week);
+      renderScarOverlay(week);
       document.getElementById('weekSliderLabel').textContent = week;
       const slider = document.getElementById('gestWeekSlider');
       if (slider) slider.value = Math.min(42, week);
@@ -1070,23 +1249,12 @@
     }
 
     function updateBabyImage() {
-      const img = document.getElementById('babyRealImg');
       const week = Number(state.gestWeek) || 38;
       const key = pickBabyImageKey();
-      const src = BABY_IMAGES[key] || BABY_IMAGES.side;
       applyWeekVisuals(week, key);
       document.getElementById('babyStage').dataset.view = key;
-      if (img.getAttribute('data-src') !== src) {
-        img.style.opacity = '0.35';
-        img.onload = () => {
-          img.style.opacity = '1';
-          renderBodyMap();
-        };
-        img.src = src;
-        img.setAttribute('data-src', src);
-      } else {
-        renderBodyMap();
-      }
+      if (!carouselDragging) snapCarouselToView(key, true);
+      renderBodyMap();
     }
 
     let mapEventsReady = false;
@@ -1300,7 +1468,9 @@
       const birthG = estimateWeightG(DELIVERY_WEEK);
       animateWeight(document.getElementById('liveWeightNow'), nowG);
       document.getElementById('liveWeightBirth').textContent = formatWeight(birthG);
-      document.getElementById('headerSubtitle').textContent = `${week} weeks · ${formatWeight(nowG)} · Head-down`;
+      const scarMm = scarThicknessMm(week);
+      document.getElementById('liveScar').textContent = scarMm + ' mm';
+      document.getElementById('headerSubtitle').textContent = `${week} weeks · ${formatWeight(nowG)} · Scar ${scarMm} mm`;
 
       const scanWeek = SCAN_WEEK;
       document.getElementById('scanLine').innerHTML =
