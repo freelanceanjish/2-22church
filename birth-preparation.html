@@ -191,50 +191,138 @@
       background: radial-gradient(circle at 50% 40%, #f8fbfc 0%, #e8f0f4 55%, #dce8ef 100%);
       overflow: hidden;
       transition: box-shadow 0.4s ease;
+      flex: 1;
+      min-width: 0;
     }
 
-    .carousel-scene {
+    .progress-panel {
+      display: flex;
+      gap: 12px;
+      align-items: stretch;
+    }
+
+    @media (max-width: 560px) {
+      .progress-panel { flex-direction: column; }
+      .drop-track-col { flex-direction: row !important; height: auto !important; }
+      .drop-track-line { width: 100% !important; height: 12px !important; min-height: 0 !important; }
+      .drop-marker { top: auto !important; left: var(--marker-pos, 30%) !important; transform: translate(-50%, -50%) !important; }
+    }
+
+    .drop-track-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 44px;
+      flex-shrink: 0;
+      font-size: 0.62rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .drop-track-line {
+      flex: 1;
+      width: 10px;
+      min-height: 120px;
+      margin: 6px 0;
+      background: linear-gradient(180deg, var(--surface-light) 0%, #dce8ef 55%, var(--gold) 100%);
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      position: relative;
+    }
+
+    .drop-marker {
+      position: absolute;
+      left: 50%;
+      top: var(--marker-top, 35%);
+      transform: translate(-50%, -50%);
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--warm-bg);
+      border: 2px solid var(--gold);
+      box-shadow: 0 4px 12px rgba(23, 42, 54, 0.15);
+      transition: top 0.55s cubic-bezier(0.34, 1.2, 0.64, 1), left 0.55s cubic-bezier(0.34, 1.2, 0.64, 1);
+      pointer-events: none;
+    }
+
+    .drop-marker::after {
+      content: '👶';
+      font-size: 11px;
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+    }
+
+    .baby-view-frame {
       position: relative;
       width: 100%;
       aspect-ratio: 3 / 2;
-      perspective: 1600px;
-      touch-action: none;
-      cursor: grab;
-      transform: scale(var(--week-scale, 1));
-      transform-origin: center center;
-      transition: transform 0.65s cubic-bezier(0.34, 1.2, 0.64, 1);
     }
 
-    .carousel-scene.dragging { cursor: grabbing; }
-
-    .carousel {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      inset: 0;
-      transform-style: preserve-3d;
-      transition: transform 0.06s linear;
-    }
-
-    .carousel.snapping {
-      transition: transform 0.55s cubic-bezier(0.34, 1.1, 0.64, 1);
-    }
-
-    .carousel-face {
-      position: absolute;
-      inset: 0;
-      backface-visibility: hidden;
-      transform-style: preserve-3d;
-    }
-
-    .carousel-face img {
+    #babyViewImg {
       width: 100%;
       height: 100%;
       object-fit: contain;
+      display: block;
       border-radius: 8px;
-      pointer-events: none;
-      user-select: none;
+      transition: opacity 0.45s ease;
     }
+
+    .view-caption {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      margin-top: 8px;
+      line-height: 1.5;
+      padding: 8px 10px;
+      background: var(--surface-light);
+      border-radius: var(--radius-md);
+    }
+
+    .view-caption b { color: var(--gold); }
+
+    .view-thumbs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .view-thumb {
+      border: 2px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 6px;
+      background: #fff;
+      cursor: pointer;
+      text-align: center;
+      transition: border-color 0.2s, background 0.2s;
+      font: inherit;
+    }
+
+    .view-thumb img {
+      width: 100%;
+      aspect-ratio: 3/2;
+      object-fit: cover;
+      border-radius: 6px;
+      display: block;
+      pointer-events: none;
+    }
+
+    .view-thumb span {
+      display: block;
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+      line-height: 1.3;
+    }
+
+    .view-thumb.active {
+      border-color: var(--gold);
+      background: var(--warm-bg);
+    }
+
+    .view-thumb.active span { color: var(--gold); font-weight: 600; }
 
     .scar-overlay {
       position: absolute;
@@ -243,25 +331,10 @@
       height: 100%;
       z-index: 3;
       pointer-events: none;
-      transition: opacity 0.35s ease;
     }
 
-    .scar-overlay.dim { opacity: 0.2; }
-
-    .rotate-hint {
-      position: absolute;
-      bottom: 8px;
-      right: 8px;
-      left: 8px;
-      z-index: 5;
-      font-size: 0.68rem;
-      color: var(--text-muted);
-      background: rgba(255, 255, 255, 0.92);
-      padding: 5px 10px;
-      border-radius: 999px;
-      pointer-events: none;
-      text-align: center;
-    }
+    .scar-overlay.off { opacity: 0; pointer-events: none; }
+    .scar-overlay.dim { opacity: 0.15; }
 
     .baby-stage.has-signs {
       box-shadow: 0 0 0 2px rgba(23, 42, 54, 0.08), 0 12px 40px rgba(23, 42, 54, 0.1);
@@ -277,9 +350,6 @@
       50% { box-shadow: 0 0 0 3px rgba(196, 92, 92, 0.45), 0 12px 40px rgba(196, 92, 92, 0.18); }
     }
 
-    #babyRealImg,
-    .baby-img-wrap { display: none; }
-
     .view-badge {
       position: absolute;
       top: 8px;
@@ -293,7 +363,6 @@
       font-weight: 600;
       color: var(--gold);
       pointer-events: none;
-      transition: opacity 0.3s;
     }
 
     .week-timeline {
@@ -423,7 +492,7 @@
       transition: opacity 0.35s ease;
     }
 
-    .sign-overlays.dim { opacity: 0.12; }
+    .sign-overlays.dim { opacity: 0; pointer-events: none; }
 
     .sign-hotspots {
       position: absolute;
@@ -733,27 +802,33 @@
         <div class="guide-layout">
           <div>
             <h2>What is happening inside</h2>
-            <p class="note" style="margin-bottom:10px;">Drag the picture <b>left/right to rotate 360°</b>. Tap zones or tick the list. Slide week to see progress.</p>
+            <p class="note" style="margin-bottom:10px;">Three separate medical illustrations — not a rotation or zoom. <b>Side view</b> matches the sign overlays (cervix, scar, bladder). Week and symptoms suggest which view fits best; you can switch views manually.</p>
             <div class="live-badge" id="liveBadge"><span class="dot"></span><span id="liveBadgeText">Watching — tick a sign</span></div>
             <div class="baby-diagram-wrap">
-              <div class="baby-stage interactive" id="babyStage">
-                <div class="view-badge" id="viewBadge">Week 38</div>
-                <div class="rotate-hint" id="rotateHint">Drag ↔ to rotate 360°</div>
-                <div class="carousel-scene" id="carouselScene">
-                  <div class="carousel" id="babyCarousel">
-                    <div class="carousel-face" data-view="side"><img alt="Side view" draggable="false" width="1536" height="1024" /></div>
-                    <div class="carousel-face" data-view="front"><img alt="Front view" draggable="false" width="1536" height="1024" /></div>
-                    <div class="carousel-face" data-view="low"><img alt="Low view" draggable="false" width="1536" height="1024" /></div>
+              <div class="progress-panel">
+                <div class="baby-stage interactive" id="babyStage">
+                  <div class="view-badge" id="viewBadge">Week 38</div>
+                  <div class="baby-view-frame">
+                    <img id="babyViewImg" alt="Baby in womb" draggable="false" width="1536" height="1024" />
                   </div>
+                  <svg class="scar-overlay" id="scarOverlay" viewBox="0 0 100 66.67" preserveAspectRatio="xMidYMid meet" aria-label="Cesarean scar"></svg>
+                  <svg class="sign-overlays" id="signOverlays" viewBox="0 0 100 66.67" preserveAspectRatio="xMidYMid meet" aria-hidden="true"></svg>
+                  <svg class="sign-hotspots" id="signHotspots" viewBox="0 0 100 66.67" preserveAspectRatio="xMidYMid meet" aria-label="Tap body areas"></svg>
+                  <div id="mapTip" class="map-tip hidden"></div>
                 </div>
-                <svg class="scar-overlay" id="scarOverlay" viewBox="0 0 100 66.67" preserveAspectRatio="xMidYMid meet" aria-label="Cesarean scar thickness"></svg>
-                <svg class="sign-overlays" id="signOverlays" viewBox="0 0 100 66.67" preserveAspectRatio="xMidYMid meet" aria-hidden="true"></svg>
-                <svg class="sign-hotspots" id="signHotspots" viewBox="0 0 100 66.67" preserveAspectRatio="xMidYMid meet" aria-label="Tap body areas"></svg>
-                <div id="mapTip" class="map-tip hidden"></div>
+                <div class="drop-track-col" aria-hidden="true">
+                  <span>Uterus</span>
+                  <div class="drop-track-line">
+                    <div class="drop-marker" id="dropMarker"></div>
+                  </div>
+                  <span>Pelvis</span>
+                </div>
               </div>
+              <p class="view-caption" id="viewCaption"></p>
+              <div class="view-thumbs" id="viewThumbs"></div>
               <div class="week-timeline" id="weekTimeline" aria-hidden="true"></div>
               <div class="drop-live">
-                <div class="lbl"><span>Baby position</span><span id="dropLabel">High in uterus</span></div>
+                <div class="lbl"><span>Fetal station (engagement)</span><span id="dropLabel">Not yet engaged</span></div>
                 <div class="track"><div class="fill" id="dropFill"></div></div>
               </div>
               <div class="overlay-legend" id="overlayLegend"></div>
@@ -764,7 +839,7 @@
             <h2>Tick what you feel</h2>
             <div class="sign-list" id="signChecks"></div>
             <div class="week-slider-wrap">
-              <label class="note">Week <span id="weekSliderLabel">38</span> — slide to see how baby progresses</label>
+              <label class="note">Week <span id="weekSliderLabel">38</span> — changes illustration &amp; weight (not a zoom)</label>
               <input type="range" id="gestWeekSlider" min="37" max="42" value="38" oninput="syncWeekFromSlider(this.value)" />
             </div>
             <div class="grid" style="margin-top:10px;">
@@ -856,56 +931,56 @@
         label: 'White or clear mucus discharge',
         tag: 'Mucus at cervix',
         spot: { x: 41, y: 61, r: 5 },
-        explain: 'The cervix is softening and may be releasing mucus (sometimes called a "show"). This is normal late-pregnancy preparation — it does not mean labor has started yet.'
+        explain: 'The cervix softens and can release mucus (mucus plug or "show") — clear, white, or pink-tinged. This is common in late pregnancy and may appear days before labor or during early labor; it does not reliably predict when birth will start.'
       },
       {
         id: 'pelvic',
         label: 'Pelvic heaviness / baby pressing down',
         tag: 'Baby pressing down',
         spot: { x: 39, y: 53, r: 6 },
-        explain: 'The baby\'s head may be moving lower into the pelvis. You feel heaviness or pressure between your hips. This is often a sign the body is getting ready.'
+        explain: 'Pelvic heaviness often reflects the fetal head moving lower (lightening / engagement). After a prior birth, engagement sometimes happens only when labor begins — pressure alone does not mean labor is imminent.'
       },
       {
         id: 'urination',
         label: 'Frequent urination',
         tag: 'Bladder pressure',
         spot: { x: 30, y: 51, r: 5 },
-        explain: 'As the baby drops, the head can press on the bladder. You may need the toilet more often even with little urine.'
+        explain: 'A lower fetal head compresses the bladder, so capacity is smaller. Frequent trips with little urine are common when the baby sits lower in the pelvis.'
       },
       {
         id: 'back',
         label: 'Mild back ache or period-like cramps',
         tag: 'Lower back',
         spot: { x: 76, y: 41, r: 7 },
-        explain: 'The lower back and pelvis are stretching and shifting. Mild ache or period-like cramps can be part of normal preparation.'
+        explain: 'Softening pelvic ligaments and fetal position can cause low backache or sacral pressure. Mild, intermittent ache is common near term; pain that is constant or worsening needs assessment.'
       },
       {
         id: 'rectal',
         label: 'Rectal pressure / feels like passing stool',
         tag: 'Rectal pressure',
         spot: { x: 52, y: 57, r: 5 },
-        explain: 'Pressure in the rectum often means the baby\'s head is low and pressing on nearby nerves. It can feel like you need to pass stool.'
+        explain: 'Rectal pressure — a bearing-down feeling without pushing — often means the head is low against the pelvic floor. Common when the baby is engaged; can occur before or during labor.'
       },
       {
         id: 'bowel',
         label: 'Loose motions or more bowel activity',
         tag: 'Bowel activity',
         spot: { x: 50, y: 48, r: 5 },
-        explain: 'Hormones near labor can clear the bowel. Loose motions or more frequent bowel activity are common in late pregnancy.'
+        explain: 'Prostaglandins (hormones that help soften the cervix) can stimulate the bowel. Loose stools or more bowel activity are common near labor but not definitive on their own.'
       },
       {
         id: 'tighten',
         label: 'Irregular belly tightening',
         tag: 'Belly tightening',
         spot: { x: 28, y: 35, r: 9 },
-        explain: 'The uterus may tighten on and off without a steady pattern. These are often practice tightenings (Braxton Hicks) — uncomfortable but usually irregular.'
+        explain: 'Irregular uterine tightenings (Braxton Hicks) are usually mild, do not follow a steady pattern, and often ease with rest or hydration. They do not open the cervix. Regular, stronger tightenings every few minutes may be early labor — use the timer below.'
       },
       {
         id: 'movements',
         label: 'Baby movements feel lower or different',
         tag: 'Baby sitting lower',
         spot: { x: 38, y: 54, r: 5 },
-        explain: 'Kicks and rolls may feel lower in the belly or pelvis as the baby engages. The pattern of movement may change but baby should still move.'
+        explain: 'As the baby engages, movements often feel lower in the pelvis rather than under the ribs. Pattern may change, but reduced or absent movement always needs assessment — regardless of other signs.'
       },
       {
         id: 'waters',
@@ -913,7 +988,7 @@
         tag: 'Waters leaking',
         spot: { x: 41, y: 60, r: 5 },
         urgent: true,
-        explain: 'Fluid leaking from around the baby means the waters may have broken. Note the time and colour, then contact your doctor — especially important with a prior cesarean scar.'
+        explain: 'Rupture of membranes (waters breaking): note the time, amount, and colour (clear, pink, or green/brown). With a prior low transverse cesarean scar, call your maternity team promptly — they will advise on timing and monitoring.'
       },
       {
         id: 'bleeding',
@@ -921,7 +996,7 @@
         tag: 'Bleeding',
         spot: { x: 41, y: 62, r: 5 },
         urgent: true,
-        explain: 'Bleeding heavier than light spotting is not normal. Contact your doctor or hospital now, especially with a prior cesarean scar.'
+        explain: 'Vaginal bleeding heavier than light spotting is not normal in late pregnancy. Seek urgent review — especially with uterine scar history.'
       },
       {
         id: 'scarPain',
@@ -929,7 +1004,7 @@
         tag: 'Scar pain',
         spot: { x: 24, y: 48, r: 5 },
         urgent: true,
-        explain: 'Sharp pain along your cesarean scar during tightening needs medical attention. Call your birth team now.'
+        explain: 'Pain localized to the prior cesarean scar — especially sharp pain with tightening, or tenderness between contractions — needs urgent assessment to rule out scar-related complications.'
       },
       {
         id: 'constant',
@@ -937,7 +1012,7 @@
         tag: 'Constant pain',
         spot: { x: 34, y: 38, r: 8 },
         urgent: true,
-        explain: 'Labor pain usually comes in waves. Constant pain that does not ease between waves should be checked urgently.'
+        explain: 'Labor pain is usually wave-like with relief between contractions. Continuous abdominal pain that does not ease suggests a need for urgent assessment.'
       }
     ];
 
@@ -947,19 +1022,31 @@
     const WEEKLY_GAIN_G = 200;
     const SCAR_AT_SCAN_MM = 3.5;
     const IMAGE_ORDER = ['side', 'front', 'low'];
-    const VIEW_ANGLES = { side: 0, front: 120, low: 240 };
-    const CAROUSEL_KEYS = ['side', 'front', 'low'];
+    const VIEW_INFO = {
+      side: {
+        label: 'Side',
+        caption: 'Sagittal view — uterus, cervix, bladder, and your <b>low transverse cesarean scar</b> (3.5 mm on scan, reassuring). Sign overlays align with this view only.'
+      },
+      front: {
+        label: 'Front',
+        caption: 'Anterior view — <b>placenta on the front wall</b> (from your scan). Head-down (cephalic). Engagement varies; baby may still sit higher until labor.'
+      },
+      low: {
+        label: 'Engaged',
+        caption: 'Head lower in the pelvis (engagement / lightening). Bladder and rectal pressure are common. Does not by itself mean labor is hours away — especially after a prior birth.'
+      }
+    };
+    const DROP_MARKER_TOP = [32, 48, 64, 78];
 
-    let carouselY = 0;
-    let carouselDragging = false;
-    let carouselLastX = 0;
-    let carouselReady = false;
+    let currentView = 'side';
+    let viewPickedByUser = false;
+
     const WEEK_STAGES = [
-      { week: 37, key: 'side', label: 'Scan week', caption: 'Baby high in uterus' },
-      { week: 38, key: 'side', label: 'Now', caption: 'Growing, head down' },
-      { week: 39, key: 'front', label: 'Week 39', caption: 'Dropping lower' },
-      { week: 40, key: 'low', label: 'Due week', caption: 'Low in pelvis' },
-      { week: 42, key: 'low', label: 'Week 42', caption: 'Ready for birth' }
+      { week: 37, key: 'side', label: 'Scan', caption: 'High in uterus — scan week' },
+      { week: 38, key: 'side', label: 'Now', caption: 'Term pre-labor — growing, head down' },
+      { week: 39, key: 'front', label: '39', caption: 'May begin to descend' },
+      { week: 40, key: 'low', label: 'Due', caption: 'Term — often engaged' },
+      { week: 42, key: 'low', label: '42', caption: 'Post-dates monitoring' }
     ];
 
     let state = loadState();
@@ -1030,7 +1117,7 @@
     }
 
     function initApp() {
-      initCarousel();
+      initBabyView();
       initMapEvents();
       renderSignChecks();
       document.getElementById('dueDate').value = state.dueDate || '';
@@ -1038,8 +1125,7 @@
       document.getElementById('gestWeekSlider').value = Math.min(42, state.gestWeek || 38);
       document.getElementById('weekSliderLabel').textContent = state.gestWeek || 38;
       lastWeightNow = estimateWeightG(state.gestWeek || 38);
-      carouselY = VIEW_ANGLES[pickBabyImageKey()] || 0;
-      applyCarouselRotation();
+      currentView = pickBabyImageKey();
       syncGuide();
       renderContractions();
       if (state.activeContractionStart) startTimerTick();
@@ -1067,9 +1153,9 @@
     }
 
     function weekDropLevel(week) {
-      if (week >= 40) return 3;
-      if (week >= 39) return 2;
-      if (week >= 38) return 1;
+      if (week >= 41) return 3;
+      if (week >= 40) return 2;
+      if (week >= 39) return 1;
       return 0;
     }
 
@@ -1095,10 +1181,70 @@
     }
 
     function weekStageCaption(week, imageKey) {
-      const stage = WEEK_STAGES.find((s) => s.key === imageKey) || WEEK_STAGES[1];
-      if (week >= 40) return `Week ${week} — baby low, ready for birth`;
-      if (week >= 39) return `Week ${week} — baby dropping into pelvis`;
-      return `Week ${week} — ${stage.caption}`;
+      if (week >= 42) return `Week ${week} — post-dates; closer monitoring`;
+      if (week >= 40) return `Week ${week} — term; baby often engaged`;
+      if (week >= 39) return `Week ${week} — may descend further`;
+      if (week >= 38) return `Week ${week} — late pre-term / early term preparation`;
+      return `Week ${week} — scan week (high in uterus)`;
+    }
+
+    function engagementLabel(level) {
+      return ['Not yet engaged (high)', 'Partly descended', 'Lower in pelvis', 'Engaged / pressing down'][level] || '';
+    }
+
+    function updateDropMarker(level) {
+      const top = DROP_MARKER_TOP[level] ?? DROP_MARKER_TOP[0];
+      document.getElementById('dropMarker').style.setProperty('--marker-top', top + '%');
+    }
+
+    function updateViewOverlayMode(isSide) {
+      document.getElementById('scarOverlay').classList.toggle('dim', !isSide);
+      document.getElementById('signOverlays').classList.toggle('dim', !isSide);
+      const hotspots = document.getElementById('signHotspots');
+      hotspots.style.pointerEvents = isSide ? 'auto' : 'none';
+      hotspots.style.opacity = isSide ? 1 : 0.15;
+      document.getElementById('babyStage').classList.toggle('interactive', isSide);
+    }
+
+    function renderViewThumbs() {
+      const wrap = document.getElementById('viewThumbs');
+      wrap.innerHTML = IMAGE_ORDER.map((key) => {
+        const info = VIEW_INFO[key];
+        const active = currentView === key ? ' active' : '';
+        return `<button type="button" class="view-thumb${active}" data-view="${key}" aria-pressed="${currentView === key}">
+          <img src="${BABY_IMAGES[key]}" alt="${info.label} view" loading="lazy" />
+          <span>${info.label}</span>
+        </button>`;
+      }).join('');
+      wrap.querySelectorAll('.view-thumb').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          viewPickedByUser = true;
+          setBabyView(btn.dataset.view);
+          syncGuide();
+        });
+      });
+    }
+
+    function setBabyView(key) {
+      if (!BABY_IMAGES[key]) return;
+      currentView = key;
+      const img = document.getElementById('babyViewImg');
+      img.style.opacity = '0.35';
+      img.onload = () => { img.style.opacity = '1'; };
+      img.src = BABY_IMAGES[key];
+      document.getElementById('babyStage').dataset.view = key;
+      document.getElementById('viewCaption').innerHTML = VIEW_INFO[key].caption;
+      document.getElementById('viewBadge').textContent = VIEW_INFO[key].label + ' view';
+      updateViewOverlayMode(key === 'side');
+      renderViewThumbs();
+      const week = Number(state.gestWeek) || 38;
+      renderScarOverlay(week);
+    }
+
+    function initBabyView() {
+      renderViewThumbs();
+      const key = pickBabyImageKey();
+      setBabyView(key);
     }
 
     function syncWeekFromSlider(val) {
@@ -1107,6 +1253,7 @@
       document.getElementById('gestWeekSlider').value = Math.min(42, week);
       document.getElementById('weekSliderLabel').textContent = week;
       state.gestWeek = week;
+      viewPickedByUser = false;
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
       syncGuide();
       renderContractions();
@@ -1150,92 +1297,7 @@
         </g>`;
     }
 
-    function setCarouselDepth() {
-      const w = document.getElementById('carouselScene')?.clientWidth || 400;
-      const z = Math.round(w * 0.31);
-      document.querySelectorAll('.carousel-face').forEach((face, i) => {
-        face.style.transform = `rotateY(${i * 120}deg) translateZ(${z}px)`;
-      });
-    }
-
-    function normalizedCarouselAngle() {
-      return ((carouselY % 360) + 360) % 360;
-    }
-
-    function isSideViewAngle() {
-      const a = normalizedCarouselAngle();
-      return a < 55 || a > 305;
-    }
-
-    function applyCarouselRotation() {
-      document.getElementById('babyCarousel').style.transform = `rotateY(${carouselY}deg)`;
-      updateCarouselOverlayMode();
-    }
-
-    function updateCarouselOverlayMode() {
-      const nearSide = isSideViewAngle();
-      document.getElementById('scarOverlay').classList.toggle('dim', !nearSide);
-      document.getElementById('signOverlays').classList.toggle('dim', !nearSide);
-      const hotspots = document.getElementById('signHotspots');
-      hotspots.style.pointerEvents = nearSide ? 'auto' : 'none';
-      hotspots.style.opacity = nearSide ? 1 : 0.2;
-      const a = Math.round(normalizedCarouselAngle());
-      document.getElementById('rotateHint').textContent = nearSide
-        ? 'Drag ↔ to rotate 360° · Side view — tap body zones'
-        : `Drag ↔ to rotate 360° · ${a}°`;
-    }
-
-    function snapCarouselToView(key, animate) {
-      const target = VIEW_ANGLES[key] ?? 0;
-      const current = normalizedCarouselAngle();
-      let delta = target - current;
-      if (delta > 180) delta -= 360;
-      if (delta < -180) delta += 360;
-      carouselY += delta;
-      const carousel = document.getElementById('babyCarousel');
-      if (animate) carousel.classList.add('snapping');
-      applyCarouselRotation();
-      if (animate) setTimeout(() => carousel.classList.remove('snapping'), 560);
-    }
-
-    function initCarousel() {
-      if (carouselReady) return;
-      carouselReady = true;
-      const scene = document.getElementById('carouselScene');
-      const carousel = document.getElementById('babyCarousel');
-      CAROUSEL_KEYS.forEach((key, i) => {
-        carousel.querySelectorAll('.carousel-face')[i].querySelector('img').src = BABY_IMAGES[key];
-      });
-      setCarouselDepth();
-
-      scene.addEventListener('pointerdown', (e) => {
-        if (e.target.closest('.hotspot')) return;
-        carouselDragging = true;
-        carouselLastX = e.clientX;
-        carousel.classList.remove('snapping');
-        scene.classList.add('dragging');
-        scene.setPointerCapture(e.pointerId);
-      });
-
-      scene.addEventListener('pointermove', (e) => {
-        if (!carouselDragging) return;
-        carouselY += (e.clientX - carouselLastX) * 0.55;
-        carouselLastX = e.clientX;
-        applyCarouselRotation();
-      });
-
-      const endDrag = () => {
-        carouselDragging = false;
-        scene.classList.remove('dragging');
-      };
-      scene.addEventListener('pointerup', endDrag);
-      scene.addEventListener('pointercancel', endDrag);
-      window.addEventListener('resize', setCarouselDepth);
-    }
-
     function applyWeekVisuals(week, imageKey) {
-      const scale = 1 + Math.max(0, week - SCAN_WEEK) * 0.018;
-      document.getElementById('carouselScene').style.setProperty('--week-scale', Math.min(1.1, scale).toFixed(3));
       document.getElementById('viewBadge').textContent = weekStageCaption(week, imageKey);
       renderWeekTimeline(week);
       renderScarOverlay(week);
@@ -1244,16 +1306,17 @@
       if (slider) slider.value = Math.min(42, week);
     }
 
-    function dropLevelLabel(level) {
-      return ['High in uterus', 'Starting to drop', 'Low in pelvis', 'Very low / pressing down'][level] || '';
-    }
-
     function updateBabyImage() {
       const week = Number(state.gestWeek) || 38;
-      const key = pickBabyImageKey();
-      applyWeekVisuals(week, key);
-      document.getElementById('babyStage').dataset.view = key;
-      if (!carouselDragging) snapCarouselToView(key, true);
+      const suggested = pickBabyImageKey();
+      if (!viewPickedByUser) {
+        currentView = suggested;
+        setBabyView(currentView);
+      } else {
+        renderScarOverlay(week);
+      }
+      applyWeekVisuals(week, currentView);
+      updateDropMarker(combinedDropLevel(week));
       renderBodyMap();
     }
 
@@ -1321,6 +1384,7 @@
     }
 
     function updateOverlays(flashId) {
+      const week = Number(state.gestWeek) || 38;
       renderBodyMap(flashId);
       const activeCount = SIGNS.filter((s) => state.signs[s.id]).length;
       const urgentOn = SIGNS.some((s) => s.urgent && state.signs[s.id]);
@@ -1334,20 +1398,21 @@
       if (urgentOn) {
         badgeText.textContent = `${activeCount} sign${activeCount !== 1 ? 's' : ''} — call birth team`;
       } else if (activeCount) {
-        badgeText.textContent = `${activeCount} sign${activeCount !== 1 ? 's' : ''} live on picture`;
+        badgeText.textContent = `${activeCount} sign${activeCount !== 1 ? 's' : ''} on picture (side view)`;
       } else {
-        badgeText.textContent = 'Tap the picture or tick a sign';
+        badgeText.textContent = 'Side view — tap body zones or tick signs';
       }
 
       const drop = combinedDropLevel(week);
-      document.getElementById('dropLabel').textContent = dropLevelLabel(drop);
+      document.getElementById('dropLabel').textContent = engagementLabel(drop);
       document.getElementById('dropFill').style.width = ((drop + 1) / 4 * 100) + '%';
+      updateDropMarker(drop);
 
       const legend = document.getElementById('overlayLegend');
       const active = SIGNS.filter((s) => state.signs[s.id]);
       legend.innerHTML = active.length
         ? active.map((s, i) => `<span style="animation-delay:${i * 0.06}s">${s.tag}</span>`).join('')
-        : '<span class="note" style="font-size:0.78rem;">Nothing highlighted yet — tick something</span>';
+        : '<span class="note" style="font-size:0.78rem;">Nothing highlighted — tick a sign (side view)</span>';
     }
 
     function animateWeight(el, targetG) {
@@ -1440,22 +1505,24 @@
       } else if (normalSigns.length >= 6 && state.signs.tighten) {
         phase = 'Getting ready';
         verdictClass = 'result soft';
-        html = `<b>${normalSigns.length} signs together — your body is preparing.</b> This can last hours or days. Rest, eat lightly, and watch if tightenings become regular.`;
+        html = `<b>Several preparation signs together.</b> Mucus, pressure, bowel changes, and irregular tightenings can cluster as the cervix softens — this phase can last hours or days. Rest, eat lightly, and watch for <b>regular</b> contractions (roughly every 5 minutes, lasting ~60 seconds).`;
       } else if (normalSigns.length >= 3) {
         phase = 'Preparing';
         verdictClass = 'result soft';
-        html = `<b>${normalSigns.length} signs checked.</b> These fit normal late-pregnancy preparation. The picture shows where each one is happening.`;
+        html = `<b>${normalSigns.length} signs checked.</b> These fit normal late-pregnancy cervical ripening and engagement. None alone predicts exact timing — especially after a prior cesarean.`;
       } else if (normalSigns.length) {
         phase = 'Preparing';
         verdictClass = 'result';
-        html = `<b>${normalSigns.length} sign noted.</b> Read what it means below. More signs may appear over the coming hours or days.`;
+        html = `<b>${normalSigns.length} sign noted.</b> Read what it means below. Signs often appear gradually over hours or days.`;
       } else {
-        html = 'Tick what feels true on the right. The picture will show where it is happening, and each sign is explained below.';
+        html = 'Tick what feels true. On the <b>side view</b>, each sign lights up where it happens anatomically. Illustrations are a guide — not an ultrasound.';
       }
 
       if (drop >= 2 && !urgentSigns.length) {
-        const weekNote = week >= 39 ? ' Week progression and your signs both show baby sitting lower.' : '';
-        html += `<p style="margin-top:10px;">Baby seems <b>${dropLevelLabel(drop).toLowerCase()}</b>.${weekNote}</p>`;
+        const weekNote = week >= 39
+          ? ' Week progression and your symptoms both suggest the head is sitting lower.'
+          : ' Symptoms suggest partial descent; week ' + week + ' is still early for firm engagement in many pregnancies.';
+        html += `<p style="margin-top:10px;"><b>Engagement:</b> ${engagementLabel(drop).toLowerCase()}.${weekNote}</p>`;
       }
 
       verdict.className = verdictClass;
@@ -1477,8 +1544,8 @@
         `<b>Scan about 1 week ago (${scanWeek} weeks):</b> head down, ${formatWeight(SCAN_WEIGHT_G)} on scan, placenta front, scar 3.5 mm reassuring, waters adequate. You are now at week <b>${week}</b>.`;
 
       document.getElementById('weightLine').innerHTML =
-        `<b>Current estimate (week ${week}):</b> ${formatWeight(nowG)} (${formatWeightKg(nowG)}) — about ${WEEKLY_GAIN_G} g per week since scan.<br>` +
-        `<b>Expected at delivery (week ${DELIVERY_WEEK}):</b> ${formatWeight(birthG)} (${formatWeightKg(birthG)}). Estimate only; your doctor's scan is the guide.`;
+        `<b>Current estimate (week ${week}):</b> ${formatWeight(nowG)} (${formatWeightKg(nowG)}) — about ${WEEKLY_GAIN_G} g per week since the ${SCAN_WEEK}-week scan.<br>` +
+        `<b>Expected near term (week ${DELIVERY_WEEK}):</b> ${formatWeight(birthG)} (${formatWeightKg(birthG)}). Term average is roughly 3.0–3.5 kg; your doctor's measurements matter more than this estimate.`;
 
       const dueEl = document.getElementById('liveDue');
       if (!state.dueDate) {
