@@ -436,12 +436,40 @@
       text-align: center;
     }
 
-    .baby-diagram-wrap svg {
+    .baby-3d-view {
       width: 100%;
-      max-width: 320px;
-      height: auto;
+      height: min(360px, 55vw);
+      min-height: 280px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: linear-gradient(165deg, #e8f0f4 0%, #f8fbfc 45%, #eef4f7 100%);
+      touch-action: none;
+      cursor: grab;
+      position: relative;
+    }
+
+    .baby-3d-view:active { cursor: grabbing; }
+
+    .baby-3d-view canvas {
       display: block;
-      margin: 0 auto;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    .baby-3d-hint {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .baby-3d-fallback {
+      display: grid;
+      place-items: center;
+      height: 100%;
+      padding: 20px;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
     }
 
     .baby-caption {
@@ -574,7 +602,7 @@
 
       <section class="card" id="babyMap">
         <h2>Where Is Baby Now?</h2>
-        <p class="note">Set what the scan reported, then watch the diagram shift as you tick signs below. This is a simple guide, not an ultrasound.</p>
+        <p class="note">Set what the scan reported, then watch the <b>3D model</b> shift as you tick signs below. Drag to rotate. This is a simple guide, not an ultrasound.</p>
         <div class="baby-layout">
           <div>
             <h3>From your report</h3>
@@ -607,30 +635,10 @@
             </div>
           </div>
           <div class="baby-diagram-wrap">
-            <svg id="babyDiagram" viewBox="0 0 280 360" role="img" aria-label="Baby position diagram">
-              <defs>
-                <linearGradient id="uterusGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#f7fbfb"/>
-                  <stop offset="100%" stop-color="#e8f0f4"/>
-                </linearGradient>
-              </defs>
-              <ellipse cx="140" cy="78" rx="88" ry="58" fill="url(#uterusGrad)" stroke="#172A36" stroke-width="1.5" opacity="0.35"/>
-              <path id="uterusBody" d="M52 78 C52 170, 68 290, 140 320 C212 290, 228 170, 228 78 Z" fill="url(#uterusGrad)" stroke="#172A36" stroke-width="2"/>
-              <rect x="118" y="318" width="44" height="28" rx="8" fill="#eef4f7" stroke="#172A36" stroke-width="1.5"/>
-              <text x="140" y="336" text-anchor="middle" font-size="10" fill="#778187" font-family="Poppins, Arial, sans-serif">Cervix</text>
-              <g id="placentaGroup">
-                <ellipse id="placentaShape" cx="198" cy="150" rx="34" ry="22" fill="#d4e8df" stroke="#5f8f63" stroke-width="1.5"/>
-                <text id="placentaLabel" x="198" y="154" text-anchor="middle" font-size="9" fill="#3d6b4a" font-family="Poppins, Arial, sans-serif">Placenta</text>
-              </g>
-              <g id="babyGroup" transform="translate(140, 170)">
-                <ellipse id="babyBody" cx="0" cy="0" rx="38" ry="52" fill="#f6d9c8" stroke="#172A36" stroke-width="1.5"/>
-                <circle id="babyHead" cx="0" cy="48" r="24" fill="#f3cdb8" stroke="#172A36" stroke-width="1.5"/>
-                <path id="babySpine" d="M0 -40 L0 30" stroke="#c9a995" stroke-width="2" stroke-linecap="round"/>
-                <text id="babyHeadLabel" x="0" y="54" text-anchor="middle" font-size="9" fill="#172A36" font-family="Poppins, Arial, sans-serif">Head</text>
-              </g>
-              <text x="24" y="24" font-size="10" fill="#778187" font-family="Poppins, Arial, sans-serif">Spine</text>
-              <text x="220" y="24" font-size="10" fill="#778187" font-family="Poppins, Arial, sans-serif">Belly</text>
-            </svg>
+            <div class="baby-3d-view" id="baby3dCanvas">
+              <div class="baby-3d-fallback" id="baby3dFallback">Loading 3D view…</div>
+            </div>
+            <p class="baby-3d-hint">Drag to rotate · pinch on phone</p>
             <div class="baby-legend" id="babyLegend"></div>
             <div class="baby-caption" id="babyCaption"></div>
           </div>
@@ -778,6 +786,7 @@
     <footer>Private family page · saved on this device only · not linked from the main site</footer>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script>
     const ACCESS_PHRASE = 'birth222';
     const STORAGE_KEY = 'birthGuideState_v3';
@@ -822,6 +831,7 @@
     let timerInterval = null;
     let breathInterval = null;
     let breathRunning = false;
+    let baby3d = null;
 
     function defaultState() {
       return {
@@ -914,6 +924,7 @@
       document.getElementById('contactRidePhone').value = state.contacts.ridePhone || '';
       updateCallLinks();
       renderJournal();
+      initBaby3D();
       refreshAll();
       if (state.activeContractionStart) startTimerTick();
     }
@@ -969,17 +980,211 @@
       return ['High in uterus', 'Starting to drop', 'Low in pelvis', 'Very low / pressing down'][level] || 'Unknown';
     }
 
+    function initBaby3D() {
+      const container = document.getElementById('baby3dCanvas');
+      const fallback = document.getElementById('baby3dFallback');
+      if (!container || baby3d || typeof THREE === 'undefined') {
+        if (fallback && typeof THREE === 'undefined') {
+          fallback.textContent = '3D view could not load. Try refreshing the page.';
+        }
+        return;
+      }
+
+      const width = container.clientWidth || 320;
+      const height = container.clientHeight || 340;
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(42, width / height, 0.1, 100);
+      camera.position.set(0, 0.15, 4.4);
+
+      const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+      renderer.setSize(width, height);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+      renderer.setClearColor(0x000000, 0);
+      container.appendChild(renderer.domElement);
+      if (fallback) fallback.remove();
+
+      scene.add(new THREE.AmbientLight(0xffffff, 0.72));
+      const keyLight = new THREE.DirectionalLight(0xffffff, 0.95);
+      keyLight.position.set(2.5, 4, 3);
+      scene.add(keyLight);
+      const fillLight = new THREE.DirectionalLight(0xdce8ef, 0.45);
+      fillLight.position.set(-3, 1, 2);
+      scene.add(fillLight);
+
+      const root = new THREE.Group();
+      scene.add(root);
+
+      const uterusGeo = new THREE.SphereGeometry(1.12, 48, 48);
+      uterusGeo.scale(1, 1.38, 0.92);
+      const uterus = new THREE.Mesh(
+        uterusGeo,
+        new THREE.MeshPhysicalMaterial({
+          color: 0xdce8ef,
+          transparent: true,
+          opacity: 0.32,
+          roughness: 0.35,
+          metalness: 0.05,
+          clearcoat: 0.2,
+          side: THREE.DoubleSide
+        })
+      );
+      root.add(uterus);
+
+      const fundus = new THREE.Mesh(
+        new THREE.SphereGeometry(0.72, 32, 32),
+        new THREE.MeshStandardMaterial({ color: 0xe8f0f4, transparent: true, opacity: 0.25 })
+      );
+      fundus.position.y = 1.05;
+      fundus.scale.set(1.2, 0.55, 1);
+      root.add(fundus);
+
+      const cervix = new THREE.Mesh(
+        new THREE.TorusGeometry(0.26, 0.07, 16, 40),
+        new THREE.MeshStandardMaterial({ color: 0xa8bcc6, roughness: 0.7 })
+      );
+      cervix.rotation.x = Math.PI / 2;
+      cervix.position.y = -1.42;
+      root.add(cervix);
+
+      const cervixLabel = new THREE.Mesh(
+        new THREE.CylinderGeometry(0.14, 0.18, 0.22, 24),
+        new THREE.MeshStandardMaterial({ color: 0xc5d5dc, roughness: 0.75 })
+      );
+      cervixLabel.position.y = -1.55;
+      root.add(cervixLabel);
+
+      const baby = new THREE.Group();
+      const body = new THREE.Mesh(
+        new THREE.SphereGeometry(0.4, 32, 32),
+        new THREE.MeshStandardMaterial({ color: 0xf6d9c8, roughness: 0.62 })
+      );
+      body.scale.set(0.82, 1.18, 0.78);
+      body.position.y = 0.52;
+
+      const head = new THREE.Mesh(
+        new THREE.SphereGeometry(0.31, 32, 32),
+        new THREE.MeshStandardMaterial({ color: 0xf3cdb8, roughness: 0.58 })
+      );
+      head.position.y = -0.38;
+
+      const limb = new THREE.Mesh(
+        new THREE.SphereGeometry(0.12, 16, 16),
+        new THREE.MeshStandardMaterial({ color: 0xf3cdb8, roughness: 0.65 })
+      );
+      limb.position.set(0.34, 0.15, 0.1);
+      baby.add(body, head, limb);
+      root.add(baby);
+
+      const placenta = new THREE.Mesh(
+        new THREE.CircleGeometry(0.48, 36),
+        new THREE.MeshStandardMaterial({ color: 0x7fb196, side: THREE.DoubleSide, roughness: 0.85 })
+      );
+      placenta.position.set(0, 0.15, 0.82);
+      root.add(placenta);
+
+      const cord = new THREE.Mesh(
+        new THREE.TorusGeometry(0.18, 0.025, 8, 32),
+        new THREE.MeshStandardMaterial({ color: 0xe8b4b4, roughness: 0.5 })
+      );
+      cord.position.set(0, -0.05, 0.1);
+      cord.rotation.x = Math.PI / 2.2;
+      baby.add(cord);
+
+      baby3d = {
+        scene,
+        camera,
+        renderer,
+        root,
+        baby,
+        placenta,
+        container,
+        rotX: 0.18,
+        rotY: 0.55,
+        dragging: false,
+        lastX: 0,
+        lastY: 0,
+        raf: null
+      };
+
+      function onPointerDown(e) {
+        baby3d.dragging = true;
+        baby3d.lastX = e.clientX;
+        baby3d.lastY = e.clientY;
+      }
+
+      function onPointerMove(e) {
+        if (!baby3d.dragging) return;
+        const dx = e.clientX - baby3d.lastX;
+        const dy = e.clientY - baby3d.lastY;
+        baby3d.lastX = e.clientX;
+        baby3d.lastY = e.clientY;
+        baby3d.rotY += dx * 0.008;
+        baby3d.rotX += dy * 0.008;
+        baby3d.rotX = Math.max(-0.8, Math.min(0.8, baby3d.rotX));
+      }
+
+      function onPointerUp() {
+        baby3d.dragging = false;
+      }
+
+      renderer.domElement.addEventListener('pointerdown', onPointerDown);
+      window.addEventListener('pointermove', onPointerMove);
+      window.addEventListener('pointerup', onPointerUp);
+
+      function animate() {
+        baby3d.raf = requestAnimationFrame(animate);
+        if (!baby3d.dragging) baby3d.rotY += 0.0015;
+        root.rotation.x = baby3d.rotX;
+        root.rotation.y = baby3d.rotY;
+        renderer.render(scene, camera);
+      }
+      animate();
+
+      window.addEventListener('resize', resizeBaby3D);
+      resizeBaby3D();
+      updateBaby3D();
+    }
+
+    function resizeBaby3D() {
+      if (!baby3d) return;
+      const w = baby3d.container.clientWidth || 320;
+      const h = baby3d.container.clientHeight || 340;
+      baby3d.camera.aspect = w / h;
+      baby3d.camera.updateProjectionMatrix();
+      baby3d.renderer.setSize(w, h);
+    }
+
+    function updateBaby3D() {
+      if (!baby3d) return;
+      const presentation = state.baby.presentation || 'cephalic';
+      const placenta = state.baby.placenta || 'anterior';
+      const drop = computeDropLevel();
+      const dropY = [0.5, 0.22, -0.02, -0.32][drop];
+
+      baby3d.baby.position.y = dropY;
+      baby3d.baby.rotation.set(0, 0, 0);
+
+      if (presentation === 'breech') {
+        baby3d.baby.rotation.x = Math.PI;
+      } else if (presentation === 'transverse') {
+        baby3d.baby.rotation.z = Math.PI / 2;
+        baby3d.baby.position.y = dropY + 0.1;
+      }
+
+      if (placenta === 'posterior') {
+        baby3d.placenta.position.set(0, 0.15, -0.82);
+        baby3d.placenta.rotation.y = Math.PI;
+      } else {
+        baby3d.placenta.position.set(0, 0.15, 0.82);
+        baby3d.placenta.rotation.y = 0;
+      }
+    }
+
     function renderBabyDiagram() {
       const presentation = state.baby.presentation || 'cephalic';
       const placenta = state.baby.placenta || 'anterior';
       const drop = computeDropLevel();
-      const dropY = [36, 58, 78, 96][drop];
-      const babyGroup = document.getElementById('babyGroup');
-      const babyHead = document.getElementById('babyHead');
-      const babyBody = document.getElementById('babyBody');
-      const babyHeadLabel = document.getElementById('babyHeadLabel');
-      const placentaShape = document.getElementById('placentaShape');
-      const placentaLabel = document.getElementById('placentaLabel');
       const caption = document.getElementById('babyCaption');
       const legend = document.getElementById('babyLegend');
       const meter = document.getElementById('dropMeterFill');
@@ -989,37 +1194,9 @@
       const autoNote = state.baby.dropManual === 'auto' ? ' (estimated from your signs)' : '';
       meterText.textContent = `Drop level: ${dropLevelLabel(drop)}${autoNote}`;
 
-      if (placenta === 'posterior') {
-        placentaShape.setAttribute('cx', '82');
-        placentaLabel.setAttribute('x', '82');
-      } else {
-        placentaShape.setAttribute('cx', '198');
-        placentaLabel.setAttribute('x', '198');
-      }
-
-      let rotate = 0;
-      let headY = 48;
-      let bodyRy = 52;
-      let headLabel = 'Head';
       let presentationText = 'Head down toward the cervix';
-
-      if (presentation === 'breech') {
-        rotate = 180;
-        headY = -48;
-        headLabel = 'Head';
-        presentationText = 'Bottom or feet toward the cervix';
-      } else if (presentation === 'transverse') {
-        rotate = 90;
-        headY = 0;
-        bodyRy = 38;
-        headLabel = 'Head';
-        presentationText = 'Baby lying across the uterus';
-      }
-
-      babyGroup.setAttribute('transform', `translate(140, ${130 + dropY}) rotate(${rotate})`);
-      babyHead.setAttribute('cy', String(headY));
-      babyHeadLabel.setAttribute('y', String(headY + 6));
-      babyBody.setAttribute('ry', String(bodyRy));
+      if (presentation === 'breech') presentationText = 'Bottom or feet toward the cervix';
+      if (presentation === 'transverse') presentationText = 'Baby lying across the uterus';
 
       const placentaText = placenta === 'anterior' ? 'front wall (toward belly)' : 'back wall (toward spine)';
       let pressure = '';
@@ -1035,7 +1212,7 @@
         <b>${presentationText}</b><br>
         Placenta on the <b>${placentaText}</b>.<br>
         ${dropLevelLabel(drop)}.${pressure}
-        <br><br><span class="note">Your scan: head down, placenta anterior, cord loop noted. Diagram shows general position only.</span>
+        <br><br><span class="note">Your scan: head down, placenta anterior, cord loop noted. 3D model shows general position only.</span>
       `;
 
       legend.innerHTML = [
@@ -1051,6 +1228,8 @@
         ? `${state.gestWeek || 38} weeks · Head-down baby · ${dropLevelLabel(drop).toLowerCase()}`
         : `${state.gestWeek || 38} weeks · ${presentation} · Calm signs tracker`;
       document.getElementById('headerSubtitle').textContent = subtitle;
+
+      updateBaby3D();
     }
 
     function toggleSign(id, checked) {
