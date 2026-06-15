@@ -438,11 +438,11 @@
 
     .baby-3d-view {
       width: 100%;
-      height: min(360px, 55vw);
-      min-height: 280px;
+      height: min(420px, 62vw);
+      min-height: 300px;
       border-radius: var(--radius-md);
       overflow: hidden;
-      background: linear-gradient(165deg, #e8f0f4 0%, #f8fbfc 45%, #eef4f7 100%);
+      background: radial-gradient(circle at 50% 40%, #f8fbfc 0%, #e8f0f4 55%, #dce8ef 100%);
       touch-action: none;
       cursor: grab;
       position: relative;
@@ -450,10 +450,40 @@
 
     .baby-3d-view:active { cursor: grabbing; }
 
-    .baby-3d-view canvas {
-      display: block;
-      width: 100% !important;
-      height: 100% !important;
+    .baby-real-stage {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      perspective: 1100px;
+      padding: 8px;
+    }
+
+    .baby-real-stage img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 18px 50px rgba(23, 42, 54, 0.14);
+      transition: opacity 0.35s ease, transform 0.12s ease-out;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    .baby-view-label {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 0.68rem;
+      color: var(--gold);
+      font-weight: 600;
+      letter-spacing: 0.04em;
     }
 
     .baby-3d-hint {
@@ -602,7 +632,7 @@
 
       <section class="card" id="babyMap">
         <h2>Where Is Baby Now?</h2>
-        <p class="note">Set what the scan reported, then watch the <b>3D model</b> shift as you tick signs below. Drag to rotate. This is a simple guide, not an ultrasound.</p>
+        <p class="note">Set what the scan reported, then watch the <b>realistic 3D illustration</b> update. Drag left or right to turn the view. This is a guide, not an ultrasound.</p>
         <div class="baby-layout">
           <div>
             <h3>From your report</h3>
@@ -636,9 +666,9 @@
           </div>
           <div class="baby-diagram-wrap">
             <div class="baby-3d-view" id="baby3dCanvas">
-              <div class="baby-3d-fallback" id="baby3dFallback">Loading 3D view…</div>
+              <div class="baby-3d-fallback" id="baby3dFallback">Loading illustration…</div>
             </div>
-            <p class="baby-3d-hint">Drag to rotate · pinch on phone</p>
+            <p class="baby-3d-hint">Drag left/right to rotate the view · changes with your inputs</p>
             <div class="baby-legend" id="babyLegend"></div>
             <div class="baby-caption" id="babyCaption"></div>
           </div>
@@ -786,10 +816,18 @@
     <footer>Private family page · saved on this device only · not linked from the main site</footer>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script>
     const ACCESS_PHRASE = 'birth222';
     const STORAGE_KEY = 'birthGuideState_v3';
+
+    const BABY_IMAGES = {
+      cephalic: {
+        frames: ['birth-assets/fetus-cephalic-side.png', 'birth-assets/fetus-cephalic-front.png'],
+        low: 'birth-assets/fetus-cephalic-low.png'
+      },
+      breech: 'birth-assets/fetus-breech-side.png',
+      transverse: 'birth-assets/fetus-transverse-side.png'
+    };
 
     const SIGNS = [
       { id: 'mucus', label: 'White or clear mucus discharge', tip: 'Can mean the cervix is softening. Normal near term.' },
@@ -831,7 +869,7 @@
     let timerInterval = null;
     let breathInterval = null;
     let breathRunning = false;
-    let baby3d = null;
+    let babyViewer = { ready: false, frame: 0, rotY: 0, dragging: false, lastX: 0, dragAccum: 0 };
 
     function defaultState() {
       return {
@@ -924,7 +962,7 @@
       document.getElementById('contactRidePhone').value = state.contacts.ridePhone || '';
       updateCallLinks();
       renderJournal();
-      initBaby3D();
+      initBabyViewer();
       refreshAll();
       if (state.activeContractionStart) startTimerTick();
     }
@@ -961,6 +999,9 @@
         placenta: document.getElementById('babyPlacenta').value,
         dropManual: document.getElementById('babyDropManual').value
       };
+      babyViewer.frame = 0;
+      babyViewer.rotY = 0;
+      babyViewer.dragAccum = 0;
       saveState();
     }
 
@@ -980,205 +1021,101 @@
       return ['High in uterus', 'Starting to drop', 'Low in pelvis', 'Very low / pressing down'][level] || 'Unknown';
     }
 
-    function initBaby3D() {
+    function initBabyViewer() {
       const container = document.getElementById('baby3dCanvas');
       const fallback = document.getElementById('baby3dFallback');
-      if (!container || baby3d || typeof THREE === 'undefined') {
-        if (fallback && typeof THREE === 'undefined') {
-          fallback.textContent = '3D view could not load. Try refreshing the page.';
-        }
-        return;
-      }
+      if (!container || babyViewer.ready) return;
 
-      const width = container.clientWidth || 320;
-      const height = container.clientHeight || 340;
-
-      const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(42, width / height, 0.1, 100);
-      camera.position.set(0, 0.15, 4.4);
-
-      const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-      renderer.setSize(width, height);
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
-      renderer.setClearColor(0x000000, 0);
-      container.appendChild(renderer.domElement);
       if (fallback) fallback.remove();
+      container.innerHTML = `
+        <span class="baby-view-label" id="babyViewLabel">Side view</span>
+        <div class="baby-real-stage" id="babyRealStage">
+          <img id="babyRealImg" alt="Realistic illustration of baby in womb" draggable="false" />
+        </div>
+      `;
 
-      scene.add(new THREE.AmbientLight(0xffffff, 0.72));
-      const keyLight = new THREE.DirectionalLight(0xffffff, 0.95);
-      keyLight.position.set(2.5, 4, 3);
-      scene.add(keyLight);
-      const fillLight = new THREE.DirectionalLight(0xdce8ef, 0.45);
-      fillLight.position.set(-3, 1, 2);
-      scene.add(fillLight);
+      container.addEventListener('pointerdown', (e) => {
+        babyViewer.dragging = true;
+        babyViewer.lastX = e.clientX;
+        container.setPointerCapture(e.pointerId);
+      });
 
-      const root = new THREE.Group();
-      scene.add(root);
+      container.addEventListener('pointermove', (e) => {
+        if (!babyViewer.dragging) return;
+        const dx = e.clientX - babyViewer.lastX;
+        babyViewer.lastX = e.clientX;
+        babyViewer.rotY = Math.max(-32, Math.min(32, babyViewer.rotY + dx * 0.4));
+        babyViewer.dragAccum += dx;
 
-      const uterusGeo = new THREE.SphereGeometry(1.12, 48, 48);
-      uterusGeo.scale(1, 1.38, 0.92);
-      const uterus = new THREE.Mesh(
-        uterusGeo,
-        new THREE.MeshPhysicalMaterial({
-          color: 0xdce8ef,
-          transparent: true,
-          opacity: 0.32,
-          roughness: 0.35,
-          metalness: 0.05,
-          clearcoat: 0.2,
-          side: THREE.DoubleSide
-        })
-      );
-      root.add(uterus);
+        const presentation = state.baby.presentation || 'cephalic';
+        const drop = computeDropLevel();
+        if (presentation === 'cephalic' && drop < 2) {
+          if (babyViewer.dragAccum > 90) {
+            babyViewer.frame = 1;
+            babyViewer.dragAccum = 0;
+          } else if (babyViewer.dragAccum < -90) {
+            babyViewer.frame = 0;
+            babyViewer.dragAccum = 0;
+          }
+        }
+        updateBabyViewer();
+      });
 
-      const fundus = new THREE.Mesh(
-        new THREE.SphereGeometry(0.72, 32, 32),
-        new THREE.MeshStandardMaterial({ color: 0xe8f0f4, transparent: true, opacity: 0.25 })
-      );
-      fundus.position.y = 1.05;
-      fundus.scale.set(1.2, 0.55, 1);
-      root.add(fundus);
+      container.addEventListener('pointerup', () => {
+        babyViewer.dragging = false;
+      });
 
-      const cervix = new THREE.Mesh(
-        new THREE.TorusGeometry(0.26, 0.07, 16, 40),
-        new THREE.MeshStandardMaterial({ color: 0xa8bcc6, roughness: 0.7 })
-      );
-      cervix.rotation.x = Math.PI / 2;
-      cervix.position.y = -1.42;
-      root.add(cervix);
+      container.addEventListener('pointercancel', () => {
+        babyViewer.dragging = false;
+      });
 
-      const cervixLabel = new THREE.Mesh(
-        new THREE.CylinderGeometry(0.14, 0.18, 0.22, 24),
-        new THREE.MeshStandardMaterial({ color: 0xc5d5dc, roughness: 0.75 })
-      );
-      cervixLabel.position.y = -1.55;
-      root.add(cervixLabel);
-
-      const baby = new THREE.Group();
-      const body = new THREE.Mesh(
-        new THREE.SphereGeometry(0.4, 32, 32),
-        new THREE.MeshStandardMaterial({ color: 0xf6d9c8, roughness: 0.62 })
-      );
-      body.scale.set(0.82, 1.18, 0.78);
-      body.position.y = 0.52;
-
-      const head = new THREE.Mesh(
-        new THREE.SphereGeometry(0.31, 32, 32),
-        new THREE.MeshStandardMaterial({ color: 0xf3cdb8, roughness: 0.58 })
-      );
-      head.position.y = -0.38;
-
-      const limb = new THREE.Mesh(
-        new THREE.SphereGeometry(0.12, 16, 16),
-        new THREE.MeshStandardMaterial({ color: 0xf3cdb8, roughness: 0.65 })
-      );
-      limb.position.set(0.34, 0.15, 0.1);
-      baby.add(body, head, limb);
-      root.add(baby);
-
-      const placenta = new THREE.Mesh(
-        new THREE.CircleGeometry(0.48, 36),
-        new THREE.MeshStandardMaterial({ color: 0x7fb196, side: THREE.DoubleSide, roughness: 0.85 })
-      );
-      placenta.position.set(0, 0.15, 0.82);
-      root.add(placenta);
-
-      const cord = new THREE.Mesh(
-        new THREE.TorusGeometry(0.18, 0.025, 8, 32),
-        new THREE.MeshStandardMaterial({ color: 0xe8b4b4, roughness: 0.5 })
-      );
-      cord.position.set(0, -0.05, 0.1);
-      cord.rotation.x = Math.PI / 2.2;
-      baby.add(cord);
-
-      baby3d = {
-        scene,
-        camera,
-        renderer,
-        root,
-        baby,
-        placenta,
-        container,
-        rotX: 0.18,
-        rotY: 0.55,
-        dragging: false,
-        lastX: 0,
-        lastY: 0,
-        raf: null
-      };
-
-      function onPointerDown(e) {
-        baby3d.dragging = true;
-        baby3d.lastX = e.clientX;
-        baby3d.lastY = e.clientY;
-      }
-
-      function onPointerMove(e) {
-        if (!baby3d.dragging) return;
-        const dx = e.clientX - baby3d.lastX;
-        const dy = e.clientY - baby3d.lastY;
-        baby3d.lastX = e.clientX;
-        baby3d.lastY = e.clientY;
-        baby3d.rotY += dx * 0.008;
-        baby3d.rotX += dy * 0.008;
-        baby3d.rotX = Math.max(-0.8, Math.min(0.8, baby3d.rotX));
-      }
-
-      function onPointerUp() {
-        baby3d.dragging = false;
-      }
-
-      renderer.domElement.addEventListener('pointerdown', onPointerDown);
-      window.addEventListener('pointermove', onPointerMove);
-      window.addEventListener('pointerup', onPointerUp);
-
-      function animate() {
-        baby3d.raf = requestAnimationFrame(animate);
-        if (!baby3d.dragging) baby3d.rotY += 0.0015;
-        root.rotation.x = baby3d.rotX;
-        root.rotation.y = baby3d.rotY;
-        renderer.render(scene, camera);
-      }
-      animate();
-
-      window.addEventListener('resize', resizeBaby3D);
-      resizeBaby3D();
-      updateBaby3D();
+      babyViewer.ready = true;
+      updateBabyViewer();
     }
 
-    function resizeBaby3D() {
-      if (!baby3d) return;
-      const w = baby3d.container.clientWidth || 320;
-      const h = baby3d.container.clientHeight || 340;
-      baby3d.camera.aspect = w / h;
-      baby3d.camera.updateProjectionMatrix();
-      baby3d.renderer.setSize(w, h);
-    }
-
-    function updateBaby3D() {
-      if (!baby3d) return;
+    function pickBabyImage() {
       const presentation = state.baby.presentation || 'cephalic';
-      const placenta = state.baby.placenta || 'anterior';
       const drop = computeDropLevel();
-      const dropY = [0.5, 0.22, -0.02, -0.32][drop];
 
-      baby3d.baby.position.y = dropY;
-      baby3d.baby.rotation.set(0, 0, 0);
-
+      if (presentation === 'cephalic') {
+        if (drop >= 2) {
+          return { src: BABY_IMAGES.cephalic.low, label: 'Low / engaged view' };
+        }
+        const frames = BABY_IMAGES.cephalic.frames;
+        const idx = babyViewer.frame % frames.length;
+        return {
+          src: frames[idx],
+          label: idx === 0 ? 'Side view' : 'Front angle'
+        };
+      }
       if (presentation === 'breech') {
-        baby3d.baby.rotation.x = Math.PI;
-      } else if (presentation === 'transverse') {
-        baby3d.baby.rotation.z = Math.PI / 2;
-        baby3d.baby.position.y = dropY + 0.1;
+        return { src: BABY_IMAGES.breech, label: 'Breech view' };
+      }
+      return { src: BABY_IMAGES.transverse, label: 'Transverse view' };
+    }
+
+    function updateBabyViewer() {
+      if (!babyViewer.ready) return;
+      const img = document.getElementById('babyRealImg');
+      const label = document.getElementById('babyViewLabel');
+      if (!img) return;
+
+      const { src, label: viewLabel } = pickBabyImage();
+      const placenta = state.baby.placenta || 'anterior';
+      const mirror = placenta === 'posterior' ? 'scaleX(-1)' : '';
+      const tilt = `rotateY(${babyViewer.rotY}deg)`;
+
+      if (img.getAttribute('data-src') !== src) {
+        img.style.opacity = '0.15';
+        img.onload = () => {
+          img.style.opacity = '1';
+        };
+        img.src = src;
+        img.setAttribute('data-src', src);
       }
 
-      if (placenta === 'posterior') {
-        baby3d.placenta.position.set(0, 0.15, -0.82);
-        baby3d.placenta.rotation.y = Math.PI;
-      } else {
-        baby3d.placenta.position.set(0, 0.15, 0.82);
-        baby3d.placenta.rotation.y = 0;
-      }
+      img.style.transform = `${mirror} ${tilt}`.trim();
+      if (label) label.textContent = viewLabel;
     }
 
     function renderBabyDiagram() {
@@ -1212,7 +1149,7 @@
         <b>${presentationText}</b><br>
         Placenta on the <b>${placentaText}</b>.<br>
         ${dropLevelLabel(drop)}.${pressure}
-        <br><br><span class="note">Your scan: head down, placenta anterior, cord loop noted. 3D model shows general position only.</span>
+        <br><br><span class="note">Realistic medical illustration for family guidance only. Your scan: head down, placenta anterior, cord loop noted.</span>
       `;
 
       legend.innerHTML = [
@@ -1229,7 +1166,7 @@
         : `${state.gestWeek || 38} weeks · ${presentation} · Calm signs tracker`;
       document.getElementById('headerSubtitle').textContent = subtitle;
 
-      updateBaby3D();
+      updateBabyViewer();
     }
 
     function toggleSign(id, checked) {
