@@ -417,6 +417,90 @@
     @media (max-width: 600px) {
       .phase-steps { grid-template-columns: repeat(2, 1fr); }
       .stat-row { grid-template-columns: 1fr; }
+      .baby-layout { grid-template-columns: 1fr !important; }
+    }
+
+    .baby-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 18px;
+      align-items: start;
+      margin-top: 12px;
+    }
+
+    .baby-diagram-wrap {
+      background: var(--surface-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 14px;
+      text-align: center;
+    }
+
+    .baby-diagram-wrap svg {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .baby-caption {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      text-align: left;
+    }
+
+    .baby-caption b { color: var(--gold); font-weight: 600; }
+
+    .baby-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .baby-legend span {
+      font-size: 0.72rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    .baby-legend span.on {
+      background: var(--warm-bg);
+      color: var(--gold);
+      border-color: rgba(23, 42, 54, 0.2);
+      font-weight: 600;
+    }
+
+    .drop-meter {
+      margin-top: 12px;
+    }
+
+    .drop-meter .track {
+      height: 10px;
+      background: #fff;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      margin: 8px 0;
+    }
+
+    .drop-meter .fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--surface-light), var(--gold));
+      transition: width 0.4s ease;
+    }
+
+    .drop-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.68rem;
+      color: var(--text-muted);
     }
   </style>
 </head>
@@ -446,6 +530,7 @@
       </div>
       <nav class="quick-nav" aria-label="Jump to section">
         <a href="#summary">Summary</a>
+        <a href="#babyMap">Baby map</a>
         <a href="#signs">Signs</a>
         <a href="#timer">Timer</a>
         <a href="#movement">Movement</a>
@@ -485,6 +570,71 @@
           </label>
         </div>
         <p class="note" style="margin-top:8px;">This page helps you understand signs and plan calmly. It supports, but does not replace, your doctor or midwife.</p>
+      </section>
+
+      <section class="card" id="babyMap">
+        <h2>Where Is Baby Now?</h2>
+        <p class="note">Set what the scan reported, then watch the diagram shift as you tick signs below. This is a simple guide, not an ultrasound.</p>
+        <div class="baby-layout">
+          <div>
+            <h3>From your report</h3>
+            <label>Baby presentation
+              <select id="babyPresentation" onchange="saveBabyInputs()">
+                <option value="cephalic">Head down (cephalic)</option>
+                <option value="breech">Breech (bottom or feet down)</option>
+                <option value="transverse">Transverse (lying across)</option>
+              </select>
+            </label>
+            <label>Placenta position
+              <select id="babyPlacenta" onchange="saveBabyInputs()">
+                <option value="anterior">Anterior (front wall)</option>
+                <option value="posterior">Posterior (back wall)</option>
+              </select>
+            </label>
+            <label>How low baby feels today
+              <select id="babyDropManual" onchange="saveBabyInputs()">
+                <option value="auto">Let signs decide automatically</option>
+                <option value="0">High in the uterus</option>
+                <option value="1">Starting to drop</option>
+                <option value="2">Low in the pelvis</option>
+                <option value="3">Very low / pressing down</option>
+              </select>
+            </label>
+            <div class="drop-meter">
+              <div class="drop-labels"><span>High</span><span>Engaged</span></div>
+              <div class="track"><div class="fill" id="dropMeterFill"></div></div>
+              <p class="note" id="dropMeterText">Drop level updates from your inputs and signs.</p>
+            </div>
+          </div>
+          <div class="baby-diagram-wrap">
+            <svg id="babyDiagram" viewBox="0 0 280 360" role="img" aria-label="Baby position diagram">
+              <defs>
+                <linearGradient id="uterusGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#f7fbfb"/>
+                  <stop offset="100%" stop-color="#e8f0f4"/>
+                </linearGradient>
+              </defs>
+              <ellipse cx="140" cy="78" rx="88" ry="58" fill="url(#uterusGrad)" stroke="#172A36" stroke-width="1.5" opacity="0.35"/>
+              <path id="uterusBody" d="M52 78 C52 170, 68 290, 140 320 C212 290, 228 170, 228 78 Z" fill="url(#uterusGrad)" stroke="#172A36" stroke-width="2"/>
+              <rect x="118" y="318" width="44" height="28" rx="8" fill="#eef4f7" stroke="#172A36" stroke-width="1.5"/>
+              <text x="140" y="336" text-anchor="middle" font-size="10" fill="#778187" font-family="Poppins, Arial, sans-serif">Cervix</text>
+              <g id="placentaGroup">
+                <ellipse id="placentaShape" cx="198" cy="150" rx="34" ry="22" fill="#d4e8df" stroke="#5f8f63" stroke-width="1.5"/>
+                <text id="placentaLabel" x="198" y="154" text-anchor="middle" font-size="9" fill="#3d6b4a" font-family="Poppins, Arial, sans-serif">Placenta</text>
+              </g>
+              <g id="babyGroup" transform="translate(140, 170)">
+                <ellipse id="babyBody" cx="0" cy="0" rx="38" ry="52" fill="#f6d9c8" stroke="#172A36" stroke-width="1.5"/>
+                <circle id="babyHead" cx="0" cy="48" r="24" fill="#f3cdb8" stroke="#172A36" stroke-width="1.5"/>
+                <path id="babySpine" d="M0 -40 L0 30" stroke="#c9a995" stroke-width="2" stroke-linecap="round"/>
+                <text id="babyHeadLabel" x="0" y="54" text-anchor="middle" font-size="9" fill="#172A36" font-family="Poppins, Arial, sans-serif">Head</text>
+              </g>
+              <text x="24" y="24" font-size="10" fill="#778187" font-family="Poppins, Arial, sans-serif">Spine</text>
+              <text x="220" y="24" font-size="10" fill="#778187" font-family="Poppins, Arial, sans-serif">Belly</text>
+            </svg>
+            <div class="baby-legend" id="babyLegend"></div>
+            <div class="baby-caption" id="babyCaption"></div>
+          </div>
+        </div>
       </section>
 
       <section class="card" id="signs">
@@ -630,7 +780,7 @@
 
   <script>
     const ACCESS_PHRASE = 'birth222';
-    const STORAGE_KEY = 'birthGuideState_v2';
+    const STORAGE_KEY = 'birthGuideState_v3';
 
     const SIGNS = [
       { id: 'mucus', label: 'White or clear mucus discharge', tip: 'Can mean the cervix is softening. Normal near term.' },
@@ -685,21 +835,42 @@
         journal: [],
         dueDate: '',
         gestWeek: 38,
-        contacts: { doctorName: '', doctorPhone: '', rideName: '', ridePhone: '' }
+        contacts: { doctorName: '', doctorPhone: '', rideName: '', ridePhone: '' },
+        baby: {
+          presentation: 'cephalic',
+          placenta: 'anterior',
+          dropManual: 'auto'
+        }
+      };
+    }
+
+    function migrateState(parsed) {
+      if (parsed.baby) return parsed;
+      return {
+        ...parsed,
+        baby: { presentation: 'cephalic', placenta: 'anterior', dropManual: 'auto' }
       };
     }
 
     function loadState() {
       try {
-        const raw = localStorage.getItem(STORAGE_KEY);
+        let raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) raw = localStorage.getItem('birthGuideState_v2');
         if (!raw) return defaultState();
-        return { ...defaultState(), ...JSON.parse(raw) };
+        return { ...defaultState(), ...migrateState(JSON.parse(raw)) };
       } catch {
         return defaultState();
       }
     }
 
     function saveState() {
+      if (document.getElementById('babyPresentation')) {
+        state.baby = {
+          presentation: document.getElementById('babyPresentation').value,
+          placenta: document.getElementById('babyPlacenta').value,
+          dropManual: document.getElementById('babyDropManual').value
+        };
+      }
       state.contacts = {
         doctorName: document.getElementById('contactDoctorName').value,
         doctorPhone: document.getElementById('contactDoctorPhone').value,
@@ -734,6 +905,9 @@
       renderBagChecks();
       document.getElementById('dueDate').value = state.dueDate || '';
       document.getElementById('gestWeek').value = state.gestWeek || 38;
+      document.getElementById('babyPresentation').value = state.baby.presentation || 'cephalic';
+      document.getElementById('babyPlacenta').value = state.baby.placenta || 'anterior';
+      document.getElementById('babyDropManual').value = state.baby.dropManual || 'auto';
       document.getElementById('contactDoctorName').value = state.contacts.doctorName || '';
       document.getElementById('contactDoctorPhone').value = state.contacts.doctorPhone || '';
       document.getElementById('contactRideName').value = state.contacts.rideName || '';
@@ -770,10 +944,120 @@
       }).join('');
     }
 
+    function saveBabyInputs() {
+      state.baby = {
+        presentation: document.getElementById('babyPresentation').value,
+        placenta: document.getElementById('babyPlacenta').value,
+        dropManual: document.getElementById('babyDropManual').value
+      };
+      saveState();
+    }
+
+    function computeDropLevel() {
+      if (state.baby.dropManual !== 'auto') {
+        return Number(state.baby.dropManual);
+      }
+      const dropSigns = ['pelvic', 'rectal', 'urination', 'movements'];
+      const score = dropSigns.filter((id) => state.signs[id]).length;
+      if (score >= 4) return 3;
+      if (score >= 3) return 2;
+      if (score >= 1) return 1;
+      return 0;
+    }
+
+    function dropLevelLabel(level) {
+      return ['High in uterus', 'Starting to drop', 'Low in pelvis', 'Very low / pressing down'][level] || 'Unknown';
+    }
+
+    function renderBabyDiagram() {
+      const presentation = state.baby.presentation || 'cephalic';
+      const placenta = state.baby.placenta || 'anterior';
+      const drop = computeDropLevel();
+      const dropY = [36, 58, 78, 96][drop];
+      const babyGroup = document.getElementById('babyGroup');
+      const babyHead = document.getElementById('babyHead');
+      const babyBody = document.getElementById('babyBody');
+      const babyHeadLabel = document.getElementById('babyHeadLabel');
+      const placentaShape = document.getElementById('placentaShape');
+      const placentaLabel = document.getElementById('placentaLabel');
+      const caption = document.getElementById('babyCaption');
+      const legend = document.getElementById('babyLegend');
+      const meter = document.getElementById('dropMeterFill');
+      const meterText = document.getElementById('dropMeterText');
+
+      meter.style.width = ((drop + 1) / 4 * 100) + '%';
+      const autoNote = state.baby.dropManual === 'auto' ? ' (estimated from your signs)' : '';
+      meterText.textContent = `Drop level: ${dropLevelLabel(drop)}${autoNote}`;
+
+      if (placenta === 'posterior') {
+        placentaShape.setAttribute('cx', '82');
+        placentaLabel.setAttribute('x', '82');
+      } else {
+        placentaShape.setAttribute('cx', '198');
+        placentaLabel.setAttribute('x', '198');
+      }
+
+      let rotate = 0;
+      let headY = 48;
+      let bodyRy = 52;
+      let headLabel = 'Head';
+      let presentationText = 'Head down toward the cervix';
+
+      if (presentation === 'breech') {
+        rotate = 180;
+        headY = -48;
+        headLabel = 'Head';
+        presentationText = 'Bottom or feet toward the cervix';
+      } else if (presentation === 'transverse') {
+        rotate = 90;
+        headY = 0;
+        bodyRy = 38;
+        headLabel = 'Head';
+        presentationText = 'Baby lying across the uterus';
+      }
+
+      babyGroup.setAttribute('transform', `translate(140, ${130 + dropY}) rotate(${rotate})`);
+      babyHead.setAttribute('cy', String(headY));
+      babyHeadLabel.setAttribute('y', String(headY + 6));
+      babyBody.setAttribute('ry', String(bodyRy));
+
+      const placentaText = placenta === 'anterior' ? 'front wall (toward belly)' : 'back wall (toward spine)';
+      let pressure = '';
+      if (drop >= 2 && presentation === 'cephalic') {
+        pressure = ' Pressure on bladder, pelvis, and rectum fits a head-down baby sitting lower.';
+      } else if (drop >= 1 && presentation === 'cephalic') {
+        pressure = ' Baby may be moving into the pelvis. Pelvic heaviness can increase.';
+      } else if (presentation === 'cephalic') {
+        pressure = ' Baby still has room to move higher before engaging.';
+      }
+
+      caption.innerHTML = `
+        <b>${presentationText}</b><br>
+        Placenta on the <b>${placentaText}</b>.<br>
+        ${dropLevelLabel(drop)}.${pressure}
+        <br><br><span class="note">Your scan: head down, placenta anterior, cord loop noted. Diagram shows general position only.</span>
+      `;
+
+      legend.innerHTML = [
+        ['Head down', presentation === 'cephalic'],
+        ['Breech', presentation === 'breech'],
+        ['Transverse', presentation === 'transverse'],
+        ['Placenta front', placenta === 'anterior'],
+        ['Placenta back', placenta === 'posterior'],
+        [dropLevelLabel(drop), true]
+      ].map(([text, on]) => `<span class="${on ? 'on' : ''}">${text}</span>`).join('');
+
+      const subtitle = presentation === 'cephalic'
+        ? `${state.gestWeek || 38} weeks · Head-down baby · ${dropLevelLabel(drop).toLowerCase()}`
+        : `${state.gestWeek || 38} weeks · ${presentation} · Calm signs tracker`;
+      document.getElementById('headerSubtitle').textContent = subtitle;
+    }
+
     function toggleSign(id, checked) {
       state.signs[id] = checked;
       saveState();
       analyzeSigns();
+      renderBabyDiagram();
     }
 
     function toggleGo(id, checked) {
@@ -805,6 +1089,7 @@
         <p style="margin-top:10px;"><b>Likely meaning:</b> the body is getting ready. This can last hours or days. It does not by itself mean active labor has started.</p>
       `;
       updateActionPlan();
+      renderBabyDiagram();
     }
 
     function analyzeGoNow() {
@@ -1049,7 +1334,8 @@
     function updateDueDisplay() {
       const week = Number(state.gestWeek) || 38;
       document.getElementById('liveWeek').textContent = week;
-      document.getElementById('headerSubtitle').textContent = `${week} weeks · Head-down baby · Calm signs tracker`;
+      if (state.baby) renderBabyDiagram();
+      else document.getElementById('headerSubtitle').textContent = `${week} weeks · Head-down baby · Calm signs tracker`;
       const dueEl = document.getElementById('liveDue');
       if (!state.dueDate) {
         dueEl.textContent = '—';
@@ -1172,6 +1458,7 @@
       updatePhase();
       renderJournal();
       updateCallLinks();
+      renderBabyDiagram();
     }
 
     document.getElementById('passInput').addEventListener('keydown', (e) => {
