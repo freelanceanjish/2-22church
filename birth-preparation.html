@@ -106,7 +106,7 @@
       max-width: 920px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
       gap: 10px;
     }
 
@@ -148,9 +148,22 @@
       background: var(--surface-light);
       padding: 10px 12px;
       border-radius: var(--radius-md);
-      margin-bottom: 14px;
+      margin-bottom: 10px;
       line-height: 1.6;
     }
+
+    .weight-line {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      background: var(--warm-bg);
+      padding: 10px 12px;
+      border-radius: var(--radius-md);
+      margin-bottom: 12px;
+      line-height: 1.6;
+      border: 1px solid var(--border);
+    }
+
+    .weight-line b { color: var(--gold); font-weight: 600; }
 
     .guide-layout {
       display: grid;
@@ -177,6 +190,21 @@
       border-radius: var(--radius-md);
       background: radial-gradient(circle at 50% 40%, #f8fbfc 0%, #e8f0f4 55%, #dce8ef 100%);
       overflow: hidden;
+      transition: box-shadow 0.4s ease;
+    }
+
+    .baby-stage.has-signs {
+      box-shadow: 0 0 0 2px rgba(23, 42, 54, 0.08), 0 12px 40px rgba(23, 42, 54, 0.1);
+    }
+
+    .baby-stage.urgent-live {
+      box-shadow: 0 0 0 2px rgba(196, 92, 92, 0.35), 0 12px 40px rgba(196, 92, 92, 0.12);
+      animation: urgentGlow 2s ease-in-out infinite;
+    }
+
+    @keyframes urgentGlow {
+      0%, 100% { box-shadow: 0 0 0 2px rgba(196, 92, 92, 0.25), 0 12px 40px rgba(196, 92, 92, 0.1); }
+      50% { box-shadow: 0 0 0 3px rgba(196, 92, 92, 0.45), 0 12px 40px rgba(196, 92, 92, 0.18); }
     }
 
     #babyRealImg {
@@ -184,7 +212,68 @@
       height: auto;
       display: block;
       border-radius: 8px;
-      transition: opacity 0.3s ease;
+      transition: opacity 0.35s ease, transform 0.5s ease;
+      animation: gentleBreathe 5s ease-in-out infinite;
+      transform-origin: center center;
+    }
+
+    @keyframes gentleBreathe {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.012); }
+    }
+
+    .drop-live {
+      margin-top: 10px;
+    }
+
+    .drop-live .lbl {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .drop-live .track {
+      height: 8px;
+      background: #fff;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    .drop-live .fill {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, #a8c4d4, var(--gold));
+      border-radius: 999px;
+      transition: width 0.6s cubic-bezier(0.34, 1.2, 0.64, 1);
+    }
+
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      color: var(--ok);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .live-badge .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--ok);
+      animation: livePulse 1.4s ease-in-out infinite;
+    }
+
+    .live-badge.urgent { color: var(--alert); }
+    .live-badge.urgent .dot { background: var(--alert); }
+
+    @keyframes livePulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(0.85); }
     }
 
     .sign-overlays {
@@ -197,10 +286,24 @@
 
     .sign-overlay {
       opacity: 0;
-      transition: opacity 0.35s ease;
+      transform: scale(0.92);
+      transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.34, 1.3, 0.64, 1);
     }
 
-    .sign-overlay.on { opacity: 1; }
+    .sign-overlay.on {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .sign-overlay.flash-on {
+      animation: overlayFlash 0.55s ease;
+    }
+
+    @keyframes overlayFlash {
+      0% { opacity: 0; transform: scale(0.7); }
+      60% { opacity: 1; transform: scale(1.06); }
+      100% { opacity: 1; transform: scale(1); }
+    }
 
     .sign-overlay .pulse {
       animation: pulse 1.6s ease-in-out infinite;
@@ -246,6 +349,12 @@
       color: var(--gold);
       border: 1px solid var(--border);
       font-weight: 500;
+      animation: tagPop 0.35s ease backwards;
+    }
+
+    @keyframes tagPop {
+      from { opacity: 0; transform: translateY(6px) scale(0.9); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
     }
 
     .sign-list { margin-top: 4px; }
@@ -259,15 +368,25 @@
       color: var(--text-secondary);
       font-size: 0.92rem;
       cursor: pointer;
-      transition: background 0.15s, border-color 0.15s;
+      transition: background 0.2s, border-color 0.2s, transform 0.2s;
     }
 
-    label.check:hover { background: var(--surface-light); }
+    label.check:hover { background: var(--surface-light); transform: translateX(2px); }
 
     label.check.checked {
       background: var(--warm-bg);
       border-color: var(--border);
       color: var(--text-primary);
+    }
+
+    label.check.just-picked {
+      animation: checkPop 0.45s ease;
+    }
+
+    @keyframes checkPop {
+      0% { transform: scale(1); }
+      40% { transform: scale(1.02); background: var(--warm-bg); }
+      100% { transform: scale(1); }
     }
 
     label.check.urgent.checked {
@@ -287,6 +406,17 @@
       background: var(--ok-bg);
       border-left: 4px solid var(--ok);
       margin-top: 12px;
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .result.updated {
+      animation: verdictPulse 0.5s ease;
+    }
+
+    @keyframes verdictPulse {
+      0% { transform: scale(1); }
+      30% { transform: scale(1.01); }
+      100% { transform: scale(1); }
     }
 
     .result.soft { background: var(--warn-bg); border-left-color: var(--warn); }
@@ -298,6 +428,22 @@
       background: var(--surface-light);
       margin-top: 10px;
       border-left: 3px solid var(--ok);
+      animation: slideIn 0.4s ease backwards;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-10px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .status-item .value.bump {
+      animation: valueBump 0.4s ease;
+    }
+
+    @keyframes valueBump {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.08); color: var(--warn); }
+      100% { transform: scale(1); }
     }
 
     .sign-result-item.urgent {
@@ -378,18 +524,22 @@
       <div class="status-grid">
         <div class="status-item"><span class="label">Now</span><span class="value" id="livePhase">Preparing</span></div>
         <div class="status-item"><span class="label">Week</span><span class="value" id="liveWeek">38</span></div>
+        <div class="status-item"><span class="label">Baby now</span><span class="value" id="liveWeightNow">—</span></div>
+        <div class="status-item"><span class="label">At delivery</span><span class="value" id="liveWeightBirth">—</span></div>
         <div class="status-item"><span class="label">Due in</span><span class="value" id="liveDue">—</span></div>
       </div>
     </div>
 
     <main>
       <section class="card">
-        <p class="scan-line" id="scanLine">Scan about 1 week ago (37 weeks): head down, ~2650 g, placenta front, scar 3.5 mm reassuring, waters adequate. You are now at week 38.</p>
+        <p class="scan-line" id="scanLine">Scan about 1 week ago (37 weeks): head down, placenta front, scar 3.5 mm reassuring, waters adequate.</p>
+        <p class="weight-line" id="weightLine"></p>
 
         <div class="guide-layout">
           <div>
             <h2>What is happening inside</h2>
             <p class="note" style="margin-bottom:10px;">Tick a sign on the right — the picture highlights where it is happening.</p>
+            <div class="live-badge" id="liveBadge"><span class="dot"></span><span id="liveBadgeText">Watching — tick a sign</span></div>
             <div class="baby-diagram-wrap">
               <div class="baby-stage" id="babyStage">
                 <img id="babyRealImg" alt="Baby in womb" draggable="false" width="1536" height="1024" />
@@ -470,6 +620,10 @@
                   </defs>
                 </svg>
               </div>
+              <div class="drop-live">
+                <div class="lbl"><span>Baby position</span><span id="dropLabel">High in uterus</span></div>
+                <div class="track"><div class="fill" id="dropFill"></div></div>
+              </div>
               <div class="overlay-legend" id="overlayLegend"></div>
             </div>
           </div>
@@ -477,10 +631,6 @@
           <div>
             <h2>Tick what you feel</h2>
             <div class="sign-list" id="signChecks"></div>
-            <div class="actions">
-              <button onclick="logWaters()">Waters broke or leaking</button>
-              <button class="secondary" onclick="clearWaters()">Undo waters</button>
-            </div>
             <div class="grid" style="margin-top:14px;">
               <label class="note">Due date <input type="date" id="dueDate" onchange="saveState()" /></label>
               <label class="note">Week <input type="number" id="gestWeek" min="28" max="43" value="38" onchange="saveState()" /></label>
@@ -524,6 +674,8 @@
       front: 'birth-assets/fetus-cephalic-front.png',
       low: 'birth-assets/fetus-cephalic-low.png'
     };
+
+    let lastWeightNow = 0;
 
     const SIGNS = [
       {
@@ -575,6 +727,13 @@
         explain: 'Kicks and rolls may feel lower in the belly or pelvis as the baby engages. The pattern of movement may change but baby should still move.'
       },
       {
+        id: 'waters',
+        label: 'Waters broke or leaking',
+        tag: 'Waters leaking',
+        urgent: true,
+        explain: 'Fluid leaking from around the baby means the waters may have broken. Note the time and colour, then contact your doctor — especially important with a prior cesarean scar.'
+      },
+      {
         id: 'bleeding',
         label: 'Bleeding more than light spotting',
         tag: 'Bleeding',
@@ -597,6 +756,11 @@
       }
     ];
 
+    const SCAN_WEEK = 37;
+    const SCAN_WEIGHT_G = 2650;
+    const DELIVERY_WEEK = 40;
+    const WEEKLY_GAIN_G = 200;
+
     let state = loadState();
     let timerInterval = null;
 
@@ -605,10 +769,22 @@
         signs: Object.fromEntries(SIGNS.map((s) => [s.id, false])),
         contractions: [],
         activeContractionStart: null,
-        watersAt: null,
         dueDate: '',
         gestWeek: 38
       };
+    }
+
+    function estimateWeightG(week) {
+      const gain = Math.max(0, week - SCAN_WEEK) * WEEKLY_GAIN_G;
+      return Math.round((SCAN_WEIGHT_G + gain) / 50) * 50;
+    }
+
+    function formatWeight(g) {
+      return `~${g.toLocaleString()} g`;
+    }
+
+    function formatWeightKg(g) {
+      return `${(g / 1000).toFixed(2)} kg`;
     }
 
     function loadState() {
@@ -618,7 +794,9 @@
           raw = localStorage.getItem('birthGuideState_v4');
           if (raw) {
             const old = JSON.parse(raw);
-            return { ...defaultState(), signs: old.signs || defaultState().signs, watersAt: old.watersAt, dueDate: old.dueDate, gestWeek: old.gestWeek || 38, contractions: old.contractions || [] };
+            const signs = { ...defaultState().signs, ...(old.signs || {}) };
+            if (old.watersAt && !signs.waters) signs.waters = true;
+            return { ...defaultState(), signs, dueDate: old.dueDate, gestWeek: old.gestWeek || 38, contractions: old.contractions || [] };
           }
         }
         if (!raw) return defaultState();
@@ -654,9 +832,10 @@
       renderSignChecks();
       document.getElementById('dueDate').value = state.dueDate || '';
       document.getElementById('gestWeek').value = state.gestWeek || 38;
-      if (!document.getElementById('babyRealImg').src) {
-        document.getElementById('babyRealImg').src = BABY_IMAGES.side;
-      }
+      const img = document.getElementById('babyRealImg');
+      img.src = BABY_IMAGES.side;
+      img.setAttribute('data-src', BABY_IMAGES.side);
+      lastWeightNow = estimateWeightG(state.gestWeek || 38);
       syncGuide();
       renderContractions();
       if (state.activeContractionStart) startTimerTick();
@@ -705,43 +884,87 @@
       }
     }
 
-    function updateOverlays() {
+    function updateOverlays(flashId) {
+      const activeCount = SIGNS.filter((s) => state.signs[s.id]).length;
+      const urgentOn = SIGNS.some((s) => s.urgent && state.signs[s.id]);
+      const stage = document.getElementById('babyStage');
+      stage.classList.toggle('has-signs', activeCount > 0);
+      stage.classList.toggle('urgent-live', urgentOn);
+
       document.querySelectorAll('.sign-overlay').forEach((el) => {
         const id = el.dataset.sign;
-        const on = id === 'waters' ? !!state.watersAt : !!state.signs[id];
+        const on = !!state.signs[id];
+        const wasOn = el.classList.contains('on');
         el.classList.toggle('on', on);
+        if (on && flashId === id && !wasOn) {
+          el.classList.remove('flash-on');
+          void el.offsetWidth;
+          el.classList.add('flash-on');
+        }
       });
 
+      const badge = document.getElementById('liveBadge');
+      const badgeText = document.getElementById('liveBadgeText');
+      badge.classList.toggle('urgent', urgentOn);
+      if (urgentOn) {
+        badgeText.textContent = `${activeCount} sign${activeCount !== 1 ? 's' : ''} — call birth team`;
+      } else if (activeCount) {
+        badgeText.textContent = `${activeCount} sign${activeCount !== 1 ? 's' : ''} live on picture`;
+      } else {
+        badgeText.textContent = 'Watching — tick a sign';
+      }
+
+      const drop = computeDropLevel();
+      document.getElementById('dropLabel').textContent = dropLevelLabel(drop);
+      document.getElementById('dropFill').style.width = ((drop + 1) / 4 * 100) + '%';
+
       const legend = document.getElementById('overlayLegend');
-      const active = [];
-      SIGNS.filter((s) => state.signs[s.id]).forEach((s) => active.push(s.tag));
-      if (state.watersAt) active.push('Waters leaking');
+      const active = SIGNS.filter((s) => state.signs[s.id]);
       legend.innerHTML = active.length
-        ? active.map((t) => `<span>${t}</span>`).join('')
-        : '<span class="note" style="font-size:0.78rem;">Nothing highlighted yet</span>';
+        ? active.map((s, i) => `<span style="animation-delay:${i * 0.06}s">${s.tag}</span>`).join('')
+        : '<span class="note" style="font-size:0.78rem;">Nothing highlighted yet — tick something</span>';
+    }
+
+    function animateWeight(el, targetG) {
+      const start = lastWeightNow || targetG;
+      lastWeightNow = targetG;
+      if (start === targetG) {
+        el.textContent = formatWeight(targetG);
+        return;
+      }
+      const t0 = performance.now();
+      const dur = 500;
+      function step(t) {
+        const p = Math.min(1, (t - t0) / dur);
+        const eased = 1 - Math.pow(1 - p, 3);
+        const val = Math.round(start + (targetG - start) * eased);
+        el.textContent = formatWeight(val);
+        if (p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+      el.classList.remove('bump');
+      void el.offsetWidth;
+      el.classList.add('bump');
+    }
+
+    function pulseVerdict() {
+      const v = document.getElementById('guideVerdict');
+      v.classList.remove('updated');
+      void v.offsetWidth;
+      v.classList.add('updated');
     }
 
     function renderSignResults() {
       const wrap = document.getElementById('signResults');
       const active = SIGNS.filter((s) => state.signs[s.id]);
 
-      if (state.watersAt) {
-        const at = new Date(state.watersAt);
-        active.unshift({
-          id: 'waters',
-          tag: 'Waters broke or leaking',
-          urgent: true,
-          explain: `Logged at ${at.toLocaleTimeString()}. Fluid leaking from around the baby. Contact your doctor with the time and colour of the fluid — especially important with a prior cesarean scar.`
-        });
-      }
-
       if (!active.length) {
         wrap.innerHTML = '';
         return;
       }
 
-      wrap.innerHTML = active.map((s) => `
-        <div class="sign-result-item ${s.urgent ? 'urgent' : ''}">
+      wrap.innerHTML = active.map((s, i) => `
+        <div class="sign-result-item ${s.urgent ? 'urgent' : ''}" style="animation-delay:${i * 0.07}s">
           <b>${s.tag}</b>
           <p>${s.explain}</p>
         </div>
@@ -777,7 +1000,7 @@
       let verdictClass = 'result';
       let html = '';
 
-      if (urgentSigns.length || state.watersAt) {
+      if (urgentSigns.length) {
         phase = 'Call now';
         verdictClass = 'result alert';
         html = '<b>Contact your birth team.</b> You have checked something that needs medical attention. See each explanation below.';
@@ -805,19 +1028,29 @@
         html = 'Tick what feels true on the right. The picture will show where it is happening, and each sign is explained below.';
       }
 
-      if (drop >= 2 && !urgentSigns.length && !state.watersAt) {
+      if (drop >= 2 && !urgentSigns.length) {
         html += `<p style="margin-top:10px;">Based on your signs, baby seems <b>${dropLevelLabel(drop).toLowerCase()}</b>.</p>`;
       }
 
       verdict.className = verdictClass;
       verdict.innerHTML = html;
+      pulseVerdict();
       document.getElementById('livePhase').textContent = phase;
       document.getElementById('liveWeek').textContent = week;
-      document.getElementById('headerSubtitle').textContent = `${week} weeks · Head-down · ${dropLevelLabel(drop).toLowerCase() || 'watching signs'}`;
 
-      const scanWeek = Math.max(28, week - 1);
+      const nowG = estimateWeightG(week);
+      const birthG = estimateWeightG(DELIVERY_WEEK);
+      animateWeight(document.getElementById('liveWeightNow'), nowG);
+      document.getElementById('liveWeightBirth').textContent = formatWeight(birthG);
+      document.getElementById('headerSubtitle').textContent = `${week} weeks · ${formatWeight(nowG)} · Head-down`;
+
+      const scanWeek = SCAN_WEEK;
       document.getElementById('scanLine').innerHTML =
-        `<b>Scan about 1 week ago (${scanWeek} weeks):</b> head down, ~2650 g, placenta front, scar 3.5 mm reassuring, waters adequate. You are now at week <b>${week}</b>.`;
+        `<b>Scan about 1 week ago (${scanWeek} weeks):</b> head down, ${formatWeight(SCAN_WEIGHT_G)} on scan, placenta front, scar 3.5 mm reassuring, waters adequate. You are now at week <b>${week}</b>.`;
+
+      document.getElementById('weightLine').innerHTML =
+        `<b>Current estimate (week ${week}):</b> ${formatWeight(nowG)} (${formatWeightKg(nowG)}) — about ${WEEKLY_GAIN_G} g per week since scan.<br>` +
+        `<b>Expected at delivery (week ${DELIVERY_WEEK}):</b> ${formatWeight(birthG)} (${formatWeightKg(birthG)}). Estimate only; your doctor's scan is the guide.`;
 
       const dueEl = document.getElementById('liveDue');
       if (!state.dueDate) {
@@ -840,16 +1073,12 @@
 
     function toggleSign(id, checked) {
       state.signs[id] = checked;
-      saveState();
-    }
-
-    function logWaters() {
-      state.watersAt = new Date().toISOString();
-      saveState();
-    }
-
-    function clearWaters() {
-      state.watersAt = null;
+      const label = document.querySelector(`[data-sign-label="${id}"]`);
+      if (label && checked) {
+        label.classList.add('just-picked');
+        setTimeout(() => label.classList.remove('just-picked'), 450);
+      }
+      updateOverlays(checked ? id : null);
       saveState();
     }
 
@@ -940,7 +1169,15 @@
 
     setInterval(() => {
       if (document.getElementById('app').classList.contains('hidden')) return;
-      if (state.watersAt) syncGuide();
+      if (state.dueDate) {
+        const due = new Date(state.dueDate + 'T00:00:00');
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const diff = Math.round((due - today) / 86400000);
+        const dueEl = document.getElementById('liveDue');
+        const txt = diff > 0 ? diff + 'd' : diff === 0 ? 'Today' : Math.abs(diff) + 'd over';
+        if (dueEl.textContent !== txt) dueEl.textContent = txt;
+      }
     }, 60000);
   </script>
 </body>
