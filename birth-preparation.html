@@ -212,14 +212,98 @@
       height: auto;
       display: block;
       border-radius: 8px;
-      transition: opacity 0.35s ease, transform 0.5s ease;
-      animation: gentleBreathe 5s ease-in-out infinite;
+      transition: opacity 0.35s ease;
+    }
+
+    .baby-img-wrap {
+      transform: scale(var(--week-scale, 1));
       transform-origin: center center;
+      transition: transform 0.65s cubic-bezier(0.34, 1.2, 0.64, 1);
+      animation: gentleBreathe 5s ease-in-out infinite;
     }
 
     @keyframes gentleBreathe {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.012); }
+      0%, 100% { transform: scale(var(--week-scale, 1)); }
+      50% { transform: scale(calc(var(--week-scale, 1) * 1.012)); }
+    }
+
+    .view-badge {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      z-index: 4;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--gold);
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+
+    .week-timeline {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin: 10px 0 4px;
+      font-size: 0.68rem;
+      color: var(--text-muted);
+    }
+
+    .week-timeline .step {
+      flex: 1;
+      text-align: center;
+      position: relative;
+      padding-top: 14px;
+    }
+
+    .week-timeline .step::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--border);
+    }
+
+    .week-timeline .step:first-child::before { left: 50%; }
+    .week-timeline .step:last-child::before { right: 50%; }
+
+    .week-timeline .dot {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid var(--border);
+      z-index: 1;
+      transition: background 0.3s, border-color 0.3s, transform 0.3s;
+    }
+
+    .week-timeline .step.done .dot { background: var(--gold); border-color: var(--gold); }
+    .week-timeline .step.now .dot {
+      background: var(--warm-bg);
+      border-color: var(--gold);
+      transform: translateX(-50%) scale(1.25);
+      box-shadow: 0 0 0 3px rgba(23, 42, 54, 0.08);
+    }
+
+    .week-timeline .step.now { color: var(--gold); font-weight: 600; }
+
+    .week-slider-wrap {
+      margin-top: 10px;
+    }
+
+    .week-slider-wrap input[type="range"] {
+      width: 100%;
+      accent-color: var(--gold);
+      margin: 8px 0 4px;
     }
 
     .drop-live {
@@ -591,15 +675,19 @@
         <div class="guide-layout">
           <div>
             <h2>What is happening inside</h2>
-            <p class="note" style="margin-bottom:10px;">Tap a spot on the picture <b>or</b> tick the list — both stay in sync.</p>
+            <p class="note" style="margin-bottom:10px;">Tap the picture <b>or</b> tick the list. Slide the week control to see baby progress toward birth.</p>
             <div class="live-badge" id="liveBadge"><span class="dot"></span><span id="liveBadgeText">Watching — tick a sign</span></div>
             <div class="baby-diagram-wrap">
               <div class="baby-stage interactive" id="babyStage">
-                <img id="babyRealImg" alt="Baby in womb" draggable="false" width="1536" height="1024" />
+                <div class="view-badge" id="viewBadge">Week 38</div>
+                <div class="baby-img-wrap" id="babyImgWrap">
+                  <img id="babyRealImg" alt="Baby in womb" draggable="false" width="1536" height="1024" />
+                </div>
                 <svg class="sign-overlays" id="signOverlays" viewBox="0 0 100 66.67" preserveAspectRatio="xMidYMid meet" aria-hidden="true"></svg>
                 <svg class="sign-hotspots" id="signHotspots" viewBox="0 0 100 66.67" preserveAspectRatio="xMidYMid meet" aria-label="Tap body areas"></svg>
                 <div id="mapTip" class="map-tip hidden"></div>
               </div>
+              <div class="week-timeline" id="weekTimeline" aria-hidden="true"></div>
               <div class="drop-live">
                 <div class="lbl"><span>Baby position</span><span id="dropLabel">High in uterus</span></div>
                 <div class="track"><div class="fill" id="dropFill"></div></div>
@@ -611,9 +699,13 @@
           <div>
             <h2>Tick what you feel</h2>
             <div class="sign-list" id="signChecks"></div>
-            <div class="grid" style="margin-top:14px;">
+            <div class="week-slider-wrap">
+              <label class="note">Week <span id="weekSliderLabel">38</span> — slide to see how baby progresses</label>
+              <input type="range" id="gestWeekSlider" min="37" max="42" value="38" oninput="syncWeekFromSlider(this.value)" />
+            </div>
+            <div class="grid" style="margin-top:10px;">
               <label class="note">Due date <input type="date" id="dueDate" onchange="saveState()" /></label>
-              <label class="note">Week <input type="number" id="gestWeek" min="28" max="43" value="38" onchange="saveState()" /></label>
+              <label class="note">Week <input type="number" id="gestWeek" min="37" max="43" value="38" oninput="syncWeekFromInput(this.value)" /></label>
             </div>
           </div>
         </div>
@@ -789,6 +881,14 @@
     const SCAN_WEIGHT_G = 2650;
     const DELIVERY_WEEK = 40;
     const WEEKLY_GAIN_G = 200;
+    const IMAGE_ORDER = ['side', 'front', 'low'];
+    const WEEK_STAGES = [
+      { week: 37, key: 'side', label: 'Scan week', caption: 'Baby high in uterus' },
+      { week: 38, key: 'side', label: 'Now', caption: 'Growing, head down' },
+      { week: 39, key: 'front', label: 'Week 39', caption: 'Dropping lower' },
+      { week: 40, key: 'low', label: 'Due week', caption: 'Low in pelvis' },
+      { week: 42, key: 'low', label: 'Week 42', caption: 'Ready for birth' }
+    ];
 
     let state = loadState();
     let timerInterval = null;
@@ -862,6 +962,8 @@
       renderSignChecks();
       document.getElementById('dueDate').value = state.dueDate || '';
       document.getElementById('gestWeek').value = state.gestWeek || 38;
+      document.getElementById('gestWeekSlider').value = Math.min(42, state.gestWeek || 38);
+      document.getElementById('weekSliderLabel').textContent = state.gestWeek || 38;
       const img = document.getElementById('babyRealImg');
       img.src = BABY_IMAGES.side;
       img.setAttribute('data-src', BABY_IMAGES.side);
@@ -892,22 +994,90 @@
       return 0;
     }
 
+    function weekDropLevel(week) {
+      if (week >= 40) return 3;
+      if (week >= 39) return 2;
+      if (week >= 38) return 1;
+      return 0;
+    }
+
+    function combinedDropLevel(week) {
+      return Math.max(computeDropLevel(), weekDropLevel(week));
+    }
+
+    function weekImageKey(week) {
+      const drop = weekDropLevel(week);
+      if (drop >= 3) return 'low';
+      if (drop >= 2) return 'front';
+      return 'side';
+    }
+
+    function pickBabyImageKey() {
+      const week = Number(state.gestWeek) || 38;
+      const fromWeek = weekImageKey(week);
+      const signDrop = computeDropLevel();
+      const fromSigns = signDrop >= 3 ? 'low' : signDrop >= 2 ? 'front' : signDrop >= 1 ? 'front' : 'side';
+      const wi = IMAGE_ORDER.indexOf(fromWeek);
+      const si = IMAGE_ORDER.indexOf(fromSigns);
+      return IMAGE_ORDER[Math.max(wi, si)];
+    }
+
+    function weekStageCaption(week, imageKey) {
+      const stage = WEEK_STAGES.find((s) => s.key === imageKey) || WEEK_STAGES[1];
+      if (week >= 40) return `Week ${week} — baby low, ready for birth`;
+      if (week >= 39) return `Week ${week} — baby dropping into pelvis`;
+      return `Week ${week} — ${stage.caption}`;
+    }
+
+    function syncWeekFromSlider(val) {
+      const week = Math.min(43, Math.max(37, Number(val) || 38));
+      document.getElementById('gestWeek').value = week;
+      document.getElementById('gestWeekSlider').value = Math.min(42, week);
+      document.getElementById('weekSliderLabel').textContent = week;
+      state.gestWeek = week;
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      syncGuide();
+      renderContractions();
+    }
+
+    function syncWeekFromInput(val) {
+      const week = Math.min(43, Math.max(37, Number(val) || 38));
+      document.getElementById('gestWeekSlider').value = Math.min(42, week);
+      document.getElementById('weekSliderLabel').textContent = week;
+      syncWeekFromSlider(week);
+    }
+
+    function renderWeekTimeline(week) {
+      const el = document.getElementById('weekTimeline');
+      el.innerHTML = WEEK_STAGES.map((s) => {
+        const cls = week > s.week ? 'done' : week === s.week ? 'now' : '';
+        return `<div class="step ${cls}"><span class="dot"></span>${s.week}<br>${s.label}</div>`;
+      }).join('');
+    }
+
+    function applyWeekVisuals(week, imageKey) {
+      const scale = 1 + Math.max(0, week - SCAN_WEEK) * 0.018;
+      document.getElementById('babyImgWrap').style.setProperty('--week-scale', Math.min(1.1, scale).toFixed(3));
+      document.getElementById('viewBadge').textContent = weekStageCaption(week, imageKey);
+      renderWeekTimeline(week);
+      document.getElementById('weekSliderLabel').textContent = week;
+      const slider = document.getElementById('gestWeekSlider');
+      if (slider) slider.value = Math.min(42, week);
+    }
+
     function dropLevelLabel(level) {
       return ['High in uterus', 'Starting to drop', 'Low in pelvis', 'Very low / pressing down'][level] || '';
     }
 
-    function pickBabyImageKey() {
-      const drop = computeDropLevel();
-      if (drop >= 2) return 'low';
-      if (state.signs.tighten && SIGNS.filter((s) => !s.urgent && state.signs[s.id]).length >= 4) return 'front';
-      return 'side';
-    }
-
     function updateBabyImage() {
       const img = document.getElementById('babyRealImg');
-      const src = BABY_IMAGES[pickBabyImageKey()] || BABY_IMAGES.side;
+      const week = Number(state.gestWeek) || 38;
+      const key = pickBabyImageKey();
+      const src = BABY_IMAGES[key] || BABY_IMAGES.side;
+      applyWeekVisuals(week, key);
+      document.getElementById('babyStage').dataset.view = key;
       if (img.getAttribute('data-src') !== src) {
-        img.style.opacity = '0.4';
+        img.style.opacity = '0.35';
         img.onload = () => {
           img.style.opacity = '1';
           renderBodyMap();
@@ -926,6 +1096,12 @@
       mapEventsReady = true;
       const layer = document.getElementById('signHotspots');
       layer.addEventListener('click', (e) => {
+        const el = e.target.closest('.hotspot');
+        if (!el) return;
+        e.preventDefault();
+        toggleSign(el.dataset.sign, !state.signs[el.dataset.sign]);
+      });
+      layer.addEventListener('touchend', (e) => {
         const el = e.target.closest('.hotspot');
         if (!el) return;
         e.preventDefault();
@@ -956,18 +1132,9 @@
     }
 
     function renderBodyMap(flashId) {
-      const interactive = pickBabyImageKey() === 'side';
       const overlays = document.getElementById('signOverlays');
       const hotspots = document.getElementById('signHotspots');
       const stage = document.getElementById('babyStage');
-
-      if (!interactive) {
-        overlays.innerHTML = '';
-        hotspots.innerHTML = '';
-        stage.classList.remove('interactive');
-        hideMapTip();
-        return;
-      }
 
       stage.classList.add('interactive');
       overlays.innerHTML =
@@ -1004,7 +1171,7 @@
         badgeText.textContent = 'Tap the picture or tick a sign';
       }
 
-      const drop = computeDropLevel();
+      const drop = combinedDropLevel(week);
       document.getElementById('dropLabel').textContent = dropLevelLabel(drop);
       document.getElementById('dropFill').style.width = ((drop + 1) / 4 * 100) + '%';
 
@@ -1081,10 +1248,10 @@
     function syncGuide() {
       const urgentSigns = SIGNS.filter((s) => s.urgent && state.signs[s.id]);
       const normalSigns = SIGNS.filter((s) => !s.urgent && state.signs[s.id]);
-      const drop = computeDropLevel();
+      const week = Number(state.gestWeek) || 38;
+      const drop = combinedDropLevel(week);
       const pattern = contractionPattern();
       const verdict = document.getElementById('guideVerdict');
-      const week = Number(state.gestWeek) || 38;
 
       let phase = 'Preparing';
       let verdictClass = 'result';
@@ -1119,7 +1286,8 @@
       }
 
       if (drop >= 2 && !urgentSigns.length) {
-        html += `<p style="margin-top:10px;">Based on your signs, baby seems <b>${dropLevelLabel(drop).toLowerCase()}</b>.</p>`;
+        const weekNote = week >= 39 ? ' Week progression and your signs both show baby sitting lower.' : '';
+        html += `<p style="margin-top:10px;">Baby seems <b>${dropLevelLabel(drop).toLowerCase()}</b>.${weekNote}</p>`;
       }
 
       verdict.className = verdictClass;
