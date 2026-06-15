@@ -34,7 +34,7 @@
       color: var(--text-primary);
       line-height: 1.7;
       font-weight: 300;
-      padding-bottom: 5rem;
+      padding-bottom: 3rem;
     }
 
     .gate {
@@ -42,9 +42,7 @@
       display: grid;
       place-items: center;
       padding: 24px;
-      background:
-        radial-gradient(circle at 12% 8%, rgba(234, 241, 244, 0.9), transparent 26rem),
-        linear-gradient(180deg, #fff 0%, #f8faf8 46%, #fff 100%);
+      background: linear-gradient(180deg, #fff 0%, #f8faf8 46%, #fff 100%);
     }
 
     .gate-card {
@@ -60,7 +58,7 @@
     .gate-card h1 { font-size: 1.35rem; font-weight: 600; color: var(--gold); margin-bottom: 8px; }
     .gate-card p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 18px; }
 
-    input[type="password"], input[type="text"], input[type="tel"], input[type="datetime-local"], textarea, select {
+    input[type="password"], input[type="date"], input[type="number"], select {
       width: 100%;
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
@@ -69,8 +67,6 @@
       margin-bottom: 12px;
       background: #fff;
     }
-
-    textarea { min-height: 88px; resize: vertical; }
 
     button {
       border: 0;
@@ -81,30 +77,25 @@
       font: inherit;
       font-weight: 600;
       cursor: pointer;
-      transition: opacity 0.15s;
     }
 
-    button:hover { opacity: 0.92; }
     button.secondary { background: var(--surface-light); color: var(--gold); border: 1px solid var(--border); }
-    button.danger { background: var(--alert); }
-    button.big { padding: 16px 22px; font-size: 1rem; width: 100%; }
-
     .hidden { display: none !important; }
 
     header {
       background: var(--gold);
       color: #fff;
-      padding: 28px 20px 20px;
+      padding: 24px 20px 18px;
       text-align: center;
     }
 
-    header h1 { font-size: 1.6rem; font-weight: 600; }
-    header p { opacity: 0.9; margin-top: 6px; }
+    header h1 { font-size: 1.5rem; font-weight: 600; }
+    header p { opacity: 0.9; margin-top: 6px; font-size: 0.95rem; }
 
     .status-bar {
       background: #fff;
       border-bottom: 1px solid var(--border);
-      padding: 14px 18px;
+      padding: 12px 18px;
       position: sticky;
       top: 0;
       z-index: 20;
@@ -115,7 +106,7 @@
       max-width: 920px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 10px;
     }
 
@@ -135,30 +126,7 @@
       margin-bottom: 4px;
     }
 
-    .status-item .value {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--gold);
-    }
-
-    .quick-nav {
-      max-width: 920px;
-      margin: 12px auto 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-    }
-
-    .quick-nav a {
-      text-decoration: none;
-      font-size: 0.78rem;
-      color: var(--gold);
-      background: var(--surface-light);
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 6px 12px;
-    }
+    .status-item .value { font-size: 0.95rem; font-weight: 600; color: var(--gold); }
 
     main { max-width: 920px; margin: 0 auto; padding: 18px; }
 
@@ -169,44 +137,142 @@
       padding: 20px;
       margin: 14px 0;
       box-shadow: 0 8px 28px rgba(23, 42, 54, 0.06);
-      scroll-margin-top: 7rem;
     }
 
-    .card h2 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: var(--gold);
-      margin-bottom: 12px;
-    }
+    .card h2 { font-size: 1.15rem; font-weight: 600; color: var(--gold); margin-bottom: 12px; }
+    .card h3 { font-size: 0.95rem; font-weight: 600; margin: 16px 0 8px; }
 
-    .card h3 {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin: 16px 0 8px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 10px;
-    }
-
-    .pill {
+    .scan-line {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
       background: var(--surface-light);
-      border-radius: 999px;
-      padding: 10px 14px;
-      font-size: 0.92rem;
+      padding: 10px 12px;
+      border-radius: var(--radius-md);
+      margin-bottom: 14px;
+      line-height: 1.6;
     }
 
-    .pill b { font-weight: 600; }
+    .guide-layout {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    @media (max-width: 720px) {
+      .guide-layout { grid-template-columns: 1fr; }
+      .status-grid { grid-template-columns: 1fr; }
+    }
+
+    .baby-diagram-wrap {
+      background: var(--surface-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 12px;
+    }
+
+    .baby-stage {
+      position: relative;
+      width: 100%;
+      border-radius: var(--radius-md);
+      background: radial-gradient(circle at 50% 40%, #f8fbfc 0%, #e8f0f4 55%, #dce8ef 100%);
+      overflow: hidden;
+    }
+
+    #babyRealImg {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      transition: opacity 0.3s ease;
+    }
+
+    .sign-overlays {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .sign-overlay {
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    .sign-overlay.on { opacity: 1; }
+
+    .sign-overlay .pulse {
+      animation: pulse 1.6s ease-in-out infinite;
+    }
+
+    .sign-overlay .drip {
+      animation: drip 1.8s ease-in-out infinite;
+    }
+
+    .sign-overlay .ripple {
+      animation: ripple 2s ease-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.5; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.08); }
+    }
+
+    @keyframes drip {
+      0% { transform: translateY(0); opacity: 0.9; }
+      70% { opacity: 0.6; }
+      100% { transform: translateY(6px); opacity: 0; }
+    }
+
+    @keyframes ripple {
+      0% { transform: scale(1); opacity: 0.8; }
+      100% { transform: scale(2.8); opacity: 0; }
+    }
+
+    .overlay-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+      min-height: 28px;
+    }
+
+    .overlay-legend span {
+      font-size: 0.72rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--warm-bg);
+      color: var(--gold);
+      border: 1px solid var(--border);
+      font-weight: 500;
+    }
+
+    .sign-list { margin-top: 4px; }
 
     label.check {
       display: block;
-      margin: 10px 0;
+      margin: 8px 0;
+      padding: 10px 12px;
+      border-radius: var(--radius-md);
+      border: 1px solid transparent;
       color: var(--text-secondary);
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    label.check:hover { background: var(--surface-light); }
+
+    label.check.checked {
+      background: var(--warm-bg);
+      border-color: var(--border);
+      color: var(--text-primary);
+    }
+
+    label.check.urgent.checked {
+      background: var(--alert-bg);
+      border-color: rgba(196, 92, 92, 0.35);
     }
 
     label.check input[type="checkbox"] {
@@ -220,346 +286,74 @@
       border-radius: var(--radius-md);
       background: var(--ok-bg);
       border-left: 4px solid var(--ok);
-      color: var(--text-primary);
       margin-top: 12px;
     }
 
     .result.soft { background: var(--warn-bg); border-left-color: var(--warn); }
     .result.alert { background: var(--alert-bg); border-left-color: var(--alert); }
 
-    .note { color: var(--text-muted); font-size: 0.92rem; }
+    .sign-result-item {
+      padding: 12px 14px;
+      border-radius: var(--radius-md);
+      background: var(--surface-light);
+      margin-top: 10px;
+      border-left: 3px solid var(--ok);
+    }
 
-    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-    td, th {
-      border-bottom: 1px solid var(--border);
-      padding: 9px;
-      text-align: left;
+    .sign-result-item.urgent {
+      background: var(--alert-bg);
+      border-left-color: var(--alert);
+    }
+
+    .sign-result-item b {
+      display: block;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 4px;
       font-size: 0.92rem;
     }
 
-    ul { padding-left: 1.2rem; }
-    li { margin: 8px 0; color: var(--text-secondary); }
-
-    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
-
-    .images img {
-      width: 100%;
-      max-height: 260px;
-      object-fit: contain;
-      background: var(--surface-light);
-      border-radius: var(--radius-md);
-      margin-top: 10px;
-      border: 1px solid var(--border);
+    .sign-result-item p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin: 0;
     }
 
-    .phase-tag {
-      display: inline-block;
-      background: var(--warm-bg);
-      color: var(--gold);
-      border-radius: 999px;
-      padding: 6px 12px;
-      font-size: 0.85rem;
-      font-weight: 500;
-      margin-bottom: 10px;
-    }
-
-    .phase-steps {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 8px;
-      margin: 14px 0;
-    }
-
-    .phase-step {
-      text-align: center;
-      padding: 10px 6px;
-      border-radius: var(--radius-md);
-      background: var(--surface-light);
-      font-size: 0.72rem;
-      color: var(--text-muted);
-      border: 1px solid transparent;
-    }
-
-    .phase-step.active {
-      background: var(--warm-bg);
-      color: var(--gold);
-      border-color: var(--border);
-      font-weight: 600;
-    }
-
-    .phase-step.done { color: var(--ok); }
-
-    .progress-wrap {
-      background: var(--surface-light);
-      border-radius: 999px;
-      height: 10px;
-      overflow: hidden;
-      margin: 10px 0 6px;
-    }
-
-    .progress-fill {
-      height: 100%;
-      background: var(--gold);
-      width: 0;
-      transition: width 0.3s;
-    }
+    .note { color: var(--text-muted); font-size: 0.9rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 
     .timer-display {
-      font-size: 2.4rem;
+      font-size: 2rem;
       font-weight: 600;
       color: var(--gold);
       text-align: center;
-      margin: 12px 0;
+      margin: 10px 0;
       font-variant-numeric: tabular-nums;
-    }
-
-    .timer-state {
-      text-align: center;
-      color: var(--text-secondary);
-      margin-bottom: 12px;
-      font-size: 0.95rem;
     }
 
     .stat-row {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin-top: 12px;
+      gap: 8px;
+      margin-top: 10px;
     }
 
     .stat-box {
       background: var(--surface-light);
       border-radius: var(--radius-md);
-      padding: 12px;
+      padding: 10px;
       text-align: center;
     }
 
-    .stat-box .num { font-size: 1.3rem; font-weight: 600; color: var(--gold); }
-    .stat-box .lbl { font-size: 0.75rem; color: var(--text-muted); }
-
-    .kick-ring {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      border: 8px solid var(--surface-light);
-      border-top-color: var(--gold);
-      display: grid;
-      place-items: center;
-      margin: 0 auto 14px;
-      font-size: 2rem;
-      font-weight: 600;
-      color: var(--gold);
-    }
-
-    .breath-circle {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      background: var(--surface-light);
-      border: 2px solid var(--border);
-      margin: 16px auto;
-      display: grid;
-      place-items: center;
-      font-size: 0.9rem;
-      color: var(--gold);
-      transition: transform 4s ease-in-out, background 4s ease-in-out;
-    }
-
-    .breath-circle.inhale { transform: scale(1.18); background: var(--warm-bg); }
-    .breath-circle.exhale { transform: scale(0.88); }
-
-    .contact-card {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 12px;
-      background: var(--surface-light);
-      border-radius: var(--radius-md);
-      margin-bottom: 10px;
-    }
-
-    .contact-card input { margin-bottom: 0; flex: 1; min-width: 120px; }
-
-    .contact-card a {
-      text-decoration: none;
-      color: #fff;
-      background: var(--gold);
-      padding: 10px 14px;
-      border-radius: var(--radius-md);
-      font-size: 0.85rem;
-      font-weight: 600;
-      white-space: nowrap;
-    }
-
-    .journal-entry {
-      border-left: 3px solid var(--gold);
-      padding: 10px 12px;
-      margin: 10px 0;
-      background: var(--surface-light);
-      border-radius: 0 var(--radius-md) var(--radius-md) 0;
-    }
-
-    .journal-entry time {
-      display: block;
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      margin-bottom: 4px;
-    }
+    .stat-box .num { font-size: 1.1rem; font-weight: 600; color: var(--gold); }
+    .stat-box .lbl { font-size: 0.72rem; color: var(--text-muted); }
 
     footer {
       text-align: center;
       color: var(--text-muted);
       font-size: 0.85rem;
-      padding: 24px 16px 40px;
-    }
-
-    @media (max-width: 600px) {
-      .phase-steps { grid-template-columns: repeat(2, 1fr); }
-      .stat-row { grid-template-columns: 1fr; }
-      .baby-layout { grid-template-columns: 1fr !important; }
-    }
-
-    .baby-layout {
-      display: grid;
-      grid-template-columns: 1fr 1.1fr;
-      gap: 18px;
-      align-items: start;
-      margin-top: 12px;
-    }
-
-    .baby-diagram-wrap {
-      background: var(--surface-light);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 14px;
-      text-align: center;
-      overflow: visible;
-    }
-
-    .baby-3d-view {
-      width: 100%;
-      border-radius: var(--radius-md);
-      background: radial-gradient(circle at 50% 40%, #f8fbfc 0%, #e8f0f4 55%, #dce8ef 100%);
-      padding: 8px;
-      box-sizing: border-box;
-      line-height: 0;
-    }
-
-    #babyRealImg {
-      width: 100%;
-      height: auto;
-      max-width: 100%;
-      display: block;
-      margin: 0 auto;
-      border-radius: 8px;
-      transition: opacity 0.35s ease;
-      user-select: none;
-      -webkit-user-drag: none;
-    }
-
-    .baby-view-label {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: rgba(255, 255, 255, 0.92);
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 5px 10px;
-      font-size: 0.68rem;
-      color: var(--gold);
-      font-weight: 600;
-      letter-spacing: 0.04em;
-    }
-
-    .baby-3d-hint {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      text-align: center;
-      margin-top: 8px;
-    }
-
-    .baby-3d-fallback {
-      display: grid;
-      place-items: center;
-      height: 100%;
-      padding: 20px;
-      color: var(--text-secondary);
-      font-size: 0.9rem;
-    }
-
-    .baby-caption {
-      margin-top: 10px;
-      font-size: 0.9rem;
-      color: var(--text-secondary);
-      text-align: left;
-    }
-
-    .baby-caption b { color: var(--gold); font-weight: 600; }
-
-    .baby-legend {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-      margin-top: 10px;
-    }
-
-    .baby-legend span {
-      font-size: 0.72rem;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: #fff;
-      border: 1px solid var(--border);
-      color: var(--text-muted);
-    }
-
-    .baby-legend span.on {
-      background: var(--warm-bg);
-      color: var(--gold);
-      border-color: rgba(23, 42, 54, 0.2);
-      font-weight: 600;
-    }
-
-    .drop-meter {
-      margin-top: 12px;
-    }
-
-    .drop-meter .track {
-      height: 10px;
-      background: #fff;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      overflow: hidden;
-      margin: 8px 0;
-    }
-
-    .drop-meter .fill {
-      height: 100%;
-      background: linear-gradient(90deg, var(--surface-light), var(--gold));
-      transition: width 0.4s ease;
-    }
-
-    .scan-line {
-      font-size: 0.88rem;
-      color: var(--text-secondary);
-      background: var(--surface-light);
-      padding: 10px 12px;
-      border-radius: var(--radius-md);
-      margin-bottom: 12px;
-      line-height: 1.6;
-    }
-
-    .tool-block {
-      padding-top: 1rem;
-      margin-top: 1rem;
-      border-top: 1px solid var(--border);
-    }
-
-    .tool-block:first-of-type {
-      padding-top: 0;
-      margin-top: 0;
-      border-top: 0;
+      padding: 20px 16px 32px;
     }
   </style>
 </head>
@@ -577,7 +371,7 @@
   <div id="app" class="hidden">
     <header>
       <h1>Birth Preparation Guide</h1>
-      <p id="headerSubtitle">38 weeks · Head-down baby · Calm signs tracker</p>
+      <p id="headerSubtitle">38 weeks · Head-down baby</p>
     </header>
 
     <div class="status-bar">
@@ -586,118 +380,144 @@
         <div class="status-item"><span class="label">Week</span><span class="value" id="liveWeek">38</span></div>
         <div class="status-item"><span class="label">Due in</span><span class="value" id="liveDue">—</span></div>
       </div>
-      <nav class="quick-nav" aria-label="Jump to section">
-        <a href="#today">Today</a>
-        <a href="#tools">Timer & comfort</a>
-        <a href="#ready">Bag & calls</a>
-      </nav>
     </div>
 
     <main>
-      <section class="card" id="today">
-        <h2>Today</h2>
+      <section class="card">
         <p class="scan-line" id="scanLine">Scan about 1 week ago (37 weeks): head down, ~2650 g, placenta front, scar 3.5 mm reassuring, waters adequate. You are now at week 38.</p>
 
-        <div id="guideVerdict" class="result">Tick what feels true below. This box tells you what it likely means and what to do next.</div>
-
-        <div class="baby-diagram-wrap" style="margin-top:1rem;">
-          <div class="baby-3d-view" id="baby3dCanvas">
-            <img id="babyRealImg" alt="Baby in womb illustration" draggable="false" width="1536" height="1024" />
+        <div class="guide-layout">
+          <div>
+            <h2>What is happening inside</h2>
+            <p class="note" style="margin-bottom:10px;">Tick a sign on the right — the picture highlights where it is happening.</p>
+            <div class="baby-diagram-wrap">
+              <div class="baby-stage" id="babyStage">
+                <img id="babyRealImg" alt="Baby in womb" draggable="false" width="1536" height="1024" />
+                <svg class="sign-overlays" viewBox="0 0 100 66.67" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                  <!-- mucus: cervix -->
+                  <g class="sign-overlay" data-sign="mucus">
+                    <ellipse cx="54" cy="58" rx="3.5" ry="2" fill="rgba(255,255,255,0.9)" stroke="rgba(180,210,240,0.8)" stroke-width="0.3"/>
+                    <path class="drip" d="M52 60 Q51 63 50 65" stroke="rgba(220,235,255,0.95)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                    <circle class="drip" cx="50" cy="65.5" r="1.2" fill="rgba(220,235,255,0.95)" style="animation-delay:0.4s"/>
+                    <text x="58" y="57" font-size="2.8" fill="#172A36" font-weight="600">mucus</text>
+                  </g>
+                  <!-- pelvic: baby pressing down -->
+                  <g class="sign-overlay" data-sign="pelvic">
+                    <path d="M48 48 L48 56" stroke="#d9a441" stroke-width="1.2" marker-end="url(#arrow)" class="pulse"/>
+                    <circle cx="48" cy="46" r="3" fill="none" stroke="#d9a441" stroke-width="0.6" class="pulse"/>
+                    <text x="51" y="50" font-size="2.6" fill="#172A36" font-weight="600">pressing down</text>
+                  </g>
+                  <!-- urination: bladder -->
+                  <g class="sign-overlay" data-sign="urination">
+                    <ellipse cx="62" cy="42" rx="4" ry="3" fill="rgba(100,160,220,0.35)" stroke="#5a9fd4" stroke-width="0.5" class="pulse"/>
+                    <text x="66" y="43" font-size="2.6" fill="#172A36" font-weight="600">bladder</text>
+                  </g>
+                  <!-- back ache -->
+                  <g class="sign-overlay" data-sign="back">
+                    <ellipse cx="22" cy="38" rx="5" ry="4" fill="rgba(217,164,65,0.35)" stroke="#d9a441" stroke-width="0.5" class="pulse"/>
+                    <text x="28" y="39" font-size="2.6" fill="#172A36" font-weight="600">back</text>
+                  </g>
+                  <!-- rectal pressure -->
+                  <g class="sign-overlay" data-sign="rectal">
+                    <ellipse cx="40" cy="56" rx="3.5" ry="2.5" fill="rgba(217,164,65,0.4)" stroke="#d9a441" stroke-width="0.5" class="pulse"/>
+                    <text x="44" y="57" font-size="2.6" fill="#172A36" font-weight="600">rectum</text>
+                  </g>
+                  <!-- bowel -->
+                  <g class="sign-overlay" data-sign="bowel">
+                    <ellipse cx="35" cy="48" rx="4" ry="3" fill="rgba(95,143,99,0.3)" stroke="#5f8f63" stroke-width="0.5" class="pulse"/>
+                    <text x="39" y="49" font-size="2.6" fill="#172A36" font-weight="600">bowel</text>
+                  </g>
+                  <!-- belly tightening -->
+                  <g class="sign-overlay" data-sign="tighten">
+                    <circle cx="55" cy="30" r="3" fill="none" stroke="#c45c5c" stroke-width="0.6" class="ripple" style="transform-origin:55px 30px"/>
+                    <circle cx="55" cy="30" r="6" fill="none" stroke="#c45c5c" stroke-width="0.4" class="ripple" style="animation-delay:0.6s;transform-origin:55px 30px"/>
+                    <ellipse cx="55" cy="30" rx="12" ry="9" fill="rgba(196,92,92,0.15)" stroke="#c45c5c" stroke-width="0.5" class="pulse"/>
+                    <text x="58" y="31" font-size="2.6" fill="#172A36" font-weight="600">tightening</text>
+                  </g>
+                  <!-- baby lower -->
+                  <g class="sign-overlay" data-sign="movements">
+                    <path d="M46 52 L46 58" stroke="#5f8f63" stroke-width="1" class="pulse"/>
+                    <circle cx="46" cy="51" r="2.5" fill="rgba(95,143,99,0.4)" class="pulse"/>
+                    <text x="48" y="55" font-size="2.5" fill="#172A36" font-weight="600">baby lower</text>
+                  </g>
+                  <!-- bleeding -->
+                  <g class="sign-overlay" data-sign="bleeding">
+                    <ellipse cx="54" cy="60" rx="4" ry="2.5" fill="rgba(196,92,92,0.55)" stroke="#c45c5c" stroke-width="0.6" class="pulse"/>
+                    <text x="58" y="61" font-size="2.6" fill="#c45c5c" font-weight="700">bleeding</text>
+                  </g>
+                  <!-- scar pain -->
+                  <g class="sign-overlay" data-sign="scarPain">
+                    <line x1="68" y1="44" x2="74" y2="48" stroke="#c45c5c" stroke-width="1.2" class="pulse"/>
+                    <line x1="68" y1="48" x2="74" y2="44" stroke="#c45c5c" stroke-width="1.2" class="pulse"/>
+                    <text x="75" y="47" font-size="2.6" fill="#c45c5c" font-weight="700">scar</text>
+                  </g>
+                  <!-- constant pain -->
+                  <g class="sign-overlay" data-sign="constant">
+                    <rect x="30" y="28" width="40" height="30" rx="4" fill="rgba(196,92,92,0.12)" stroke="#c45c5c" stroke-width="0.6" stroke-dasharray="2 1" class="pulse"/>
+                    <text x="38" y="45" font-size="2.8" fill="#c45c5c" font-weight="700">constant pain</text>
+                  </g>
+                  <!-- waters -->
+                  <g class="sign-overlay" data-sign="waters">
+                    <ellipse cx="54" cy="59" rx="5" ry="3" fill="rgba(100,180,230,0.45)" stroke="#5a9fd4" stroke-width="0.6" class="pulse"/>
+                    <path class="drip" d="M50 61 Q48 64 46 66" stroke="rgba(100,180,230,0.9)" stroke-width="1.3" fill="none"/>
+                    <path class="drip" d="M56 61 Q58 64 60 66" stroke="rgba(100,180,230,0.9)" stroke-width="1.3" fill="none" style="animation-delay:0.5s"/>
+                    <text x="58" y="58" font-size="2.6" fill="#172A36" font-weight="600">waters</text>
+                  </g>
+                  <defs>
+                    <marker id="arrow" markerWidth="4" markerHeight="4" refX="2" refY="2" orient="auto">
+                      <path d="M0,0 L4,2 L0,4 Z" fill="#d9a441"/>
+                    </marker>
+                  </defs>
+                </svg>
+              </div>
+              <div class="overlay-legend" id="overlayLegend"></div>
+            </div>
           </div>
-          <label style="margin-top:10px;display:block;font-size:0.88rem;color:var(--text-secondary);">
-            Picture view
-            <select id="babyView" onchange="setBabyView(this.value)" style="margin-top:6px;">
-              <option value="auto">Follows your signs</option>
-              <option value="side">Side</option>
-              <option value="front">Front angle</option>
-              <option value="low">Low in pelvis</option>
-            </select>
-          </label>
-        </div>
 
-        <h3 style="margin-top:1.25rem;">What feels true right now?</h3>
-        <div id="signChecks"></div>
-
-        <div class="actions" style="margin-top:12px;">
-          <button onclick="logWaters()">Waters broke or leaking</button>
-          <button class="secondary" onclick="clearWaters()">Undo</button>
+          <div>
+            <h2>Tick what you feel</h2>
+            <div class="sign-list" id="signChecks"></div>
+            <div class="actions">
+              <button onclick="logWaters()">Waters broke or leaking</button>
+              <button class="secondary" onclick="clearWaters()">Undo waters</button>
+            </div>
+            <div class="grid" style="margin-top:14px;">
+              <label class="note">Due date <input type="date" id="dueDate" onchange="saveState()" /></label>
+              <label class="note">Week <input type="number" id="gestWeek" min="28" max="43" value="38" onchange="saveState()" /></label>
+            </div>
+          </div>
         </div>
-
-        <div class="grid" style="margin-top:1rem;">
-          <label>Due date <input type="date" id="dueDate" onchange="saveState()" /></label>
-          <label>Week <input type="number" id="gestWeek" min="28" max="43" value="38" onchange="saveState()" /></label>
-        </div>
-        <p class="note" style="margin-top:8px;">Guide only, not medical advice. Call your doctor or hospital when unsure.</p>
       </section>
 
-      <section class="card" id="tools">
-        <h2>Timer & comfort</h2>
-
-        <div class="tool-block" id="timer">
-          <h3>Contractions</h3>
-          <p class="note">Tap start when tightening begins, again when it eases.</p>
-          <div class="timer-display" id="timerClock">00:00</div>
-          <div class="timer-state" id="timerState">Ready.</div>
-          <div class="actions">
-            <button class="big" id="timerBtn" onclick="toggleContraction()">Start contraction</button>
-            <button class="secondary" onclick="resetContractions()">Reset</button>
-          </div>
-          <div class="stat-row">
-            <div class="stat-box"><div class="num" id="statAvgDur">—</div><div class="lbl">Avg length</div></div>
-            <div class="stat-box"><div class="num" id="statAvgGap">—</div><div class="lbl">Avg gap</div></div>
-            <div class="stat-box"><div class="num" id="statCount">0</div><div class="lbl">Logged</div></div>
-          </div>
-        </div>
-
-        <div class="tool-block" id="movement">
-          <h3>Baby movements</h3>
-          <p class="note">Tap each movement. Aim for 10 within 2 hours.</p>
-          <div class="kick-ring" id="kickCount">0</div>
-          <div class="actions" style="justify-content:center;">
-            <button class="big" style="width:auto;min-width:160px;" onclick="addKick()">+ Movement</button>
-            <button class="secondary" onclick="resetKicks()">New count</button>
-          </div>
-          <p class="note" id="kickTimerNote" style="margin-top:8px;text-align:center;"></p>
-        </div>
-
-        <div class="tool-block" id="breathing">
-          <h3>Calm breathing</h3>
-          <p class="note">Inhale 4 sec, hold 2, exhale 6.</p>
-          <div class="breath-circle" id="breathCircle">Breathe</div>
-          <div class="actions" style="justify-content:center;">
-            <button id="breathBtn" onclick="toggleBreathing()">Start</button>
-          </div>
-        </div>
+      <section class="card" id="results">
+        <h2>What this means</h2>
+        <div id="guideVerdict" class="result">Tick what feels true — each sign lights up on the picture and is explained below.</div>
+        <div id="signResults"></div>
       </section>
 
-      <section class="card" id="ready">
-        <h2>Bag & calls</h2>
-        <div class="progress-wrap"><div class="progress-fill" id="bagProgress"></div></div>
-        <p class="note" id="bagProgressLabel">0 of 0 packed</p>
-        <div id="bagChecks"></div>
-
-        <div class="tool-block" id="contacts">
-          <h3>Who to call</h3>
-          <div class="contact-card">
-            <input type="text" id="contactDoctorName" placeholder="Doctor / hospital" onchange="saveState()" />
-            <input type="tel" id="contactDoctorPhone" placeholder="Phone" onchange="saveState()" />
-            <a id="callDoctor" href="#">Call</a>
-          </div>
-          <div class="contact-card">
-            <input type="text" id="contactRideName" placeholder="Driver / family" onchange="saveState()" />
-            <input type="tel" id="contactRidePhone" placeholder="Phone" onchange="saveState()" />
-            <a id="callRide" href="#">Call</a>
-          </div>
+      <section class="card" id="timer">
+        <h2>Contractions</h2>
+        <p class="note">Optional — tap start when tightening begins, again when it eases.</p>
+        <div class="timer-display" id="timerClock">00:00</div>
+        <p class="note" id="timerState" style="text-align:center;">Ready.</p>
+        <div class="actions">
+          <button id="timerBtn" onclick="toggleContraction()">Start contraction</button>
+          <button class="secondary" onclick="resetContractions()">Reset</button>
+        </div>
+        <div class="stat-row">
+          <div class="stat-box"><div class="num" id="statAvgDur">—</div><div class="lbl">Avg length</div></div>
+          <div class="stat-box"><div class="num" id="statAvgGap">—</div><div class="lbl">Avg gap</div></div>
+          <div class="stat-box"><div class="num" id="statCount">0</div><div class="lbl">Logged</div></div>
         </div>
       </section>
     </main>
 
-    <footer>Private family page · saved on this device only · not linked from the main site</footer>
+    <footer>Private family page · saved on this device only</footer>
   </div>
 
   <script>
     const ACCESS_PHRASE = 'birth222';
-    const STORAGE_KEY = 'birthGuideState_v4';
+    const STORAGE_KEY = 'birthGuideState_v5';
 
     const BABY_IMAGES = {
       side: 'birth-assets/fetus-cephalic-side.png',
@@ -706,87 +526,114 @@
     };
 
     const SIGNS = [
-      { id: 'mucus', label: 'White or clear mucus discharge' },
-      { id: 'pelvic', label: 'Pelvic heaviness / baby pressing down' },
-      { id: 'urination', label: 'Frequent urination' },
-      { id: 'back', label: 'Mild back ache or period-like cramps' },
-      { id: 'rectal', label: 'Rectal pressure / feels like passing stool' },
-      { id: 'bowel', label: 'Loose motions or more bowel activity' },
-      { id: 'tighten', label: 'Irregular belly tightening' },
-      { id: 'movements', label: 'Baby movements feel lower or different' },
-      { id: 'bleeding', label: 'Bleeding more than light spotting', urgent: true },
-      { id: 'scarPain', label: 'Sharp scar pain with tightening', urgent: true },
-      { id: 'constant', label: 'Pain is constant, not wave-like', urgent: true }
-    ];
-
-    const BAG_ITEMS = [
-      'ID and insurance papers',
-      'Latest ultrasound and blood reports',
-      'Hospital registration file',
-      'Comfortable night clothes',
-      'Toiletries and hair ties',
-      'Phone charger and power bank',
-      'Snacks and water bottle',
-      'Newborn clothes and blanket',
-      'Maternity pads',
-      'Cash for incidentals',
-      'Transport plan confirmed'
+      {
+        id: 'mucus',
+        label: 'White or clear mucus discharge',
+        tag: 'Mucus at cervix',
+        explain: 'The cervix is softening and may be releasing mucus (sometimes called a "show"). This is normal late-pregnancy preparation — it does not mean labor has started yet.'
+      },
+      {
+        id: 'pelvic',
+        label: 'Pelvic heaviness / baby pressing down',
+        tag: 'Baby pressing down',
+        explain: 'The baby\'s head may be moving lower into the pelvis. You feel heaviness or pressure between your hips. This is often a sign the body is getting ready.'
+      },
+      {
+        id: 'urination',
+        label: 'Frequent urination',
+        tag: 'Bladder pressure',
+        explain: 'As the baby drops, the head can press on the bladder. You may need the toilet more often even with little urine.'
+      },
+      {
+        id: 'back',
+        label: 'Mild back ache or period-like cramps',
+        tag: 'Lower back',
+        explain: 'The lower back and pelvis are stretching and shifting. Mild ache or period-like cramps can be part of normal preparation.'
+      },
+      {
+        id: 'rectal',
+        label: 'Rectal pressure / feels like passing stool',
+        tag: 'Rectal pressure',
+        explain: 'Pressure in the rectum often means the baby\'s head is low and pressing on nearby nerves. It can feel like you need to pass stool.'
+      },
+      {
+        id: 'bowel',
+        label: 'Loose motions or more bowel activity',
+        tag: 'Bowel activity',
+        explain: 'Hormones near labor can clear the bowel. Loose motions or more frequent bowel activity are common in late pregnancy.'
+      },
+      {
+        id: 'tighten',
+        label: 'Irregular belly tightening',
+        tag: 'Belly tightening',
+        explain: 'The uterus may tighten on and off without a steady pattern. These are often practice tightenings (Braxton Hicks) — uncomfortable but usually irregular.'
+      },
+      {
+        id: 'movements',
+        label: 'Baby movements feel lower or different',
+        tag: 'Baby sitting lower',
+        explain: 'Kicks and rolls may feel lower in the belly or pelvis as the baby engages. The pattern of movement may change but baby should still move.'
+      },
+      {
+        id: 'bleeding',
+        label: 'Bleeding more than light spotting',
+        tag: 'Bleeding',
+        urgent: true,
+        explain: 'Bleeding heavier than light spotting is not normal. Contact your doctor or hospital now, especially with a prior cesarean scar.'
+      },
+      {
+        id: 'scarPain',
+        label: 'Sharp scar pain with tightening',
+        tag: 'Scar pain',
+        urgent: true,
+        explain: 'Sharp pain along your cesarean scar during tightening needs medical attention. Call your birth team now.'
+      },
+      {
+        id: 'constant',
+        label: 'Pain is constant, not wave-like',
+        tag: 'Constant pain',
+        urgent: true,
+        explain: 'Labor pain usually comes in waves. Constant pain that does not ease between waves should be checked urgently.'
+      }
     ];
 
     let state = loadState();
     let timerInterval = null;
-    let breathInterval = null;
-    let breathRunning = false;
 
     function defaultState() {
       return {
         signs: Object.fromEntries(SIGNS.map((s) => [s.id, false])),
-        bag: {},
         contractions: [],
         activeContractionStart: null,
-        kicks: { count: 0, startedAt: null },
         watersAt: null,
         dueDate: '',
-        gestWeek: 38,
-        contacts: { doctorName: '', doctorPhone: '', rideName: '', ridePhone: '' },
-        babyView: 'auto'
+        gestWeek: 38
       };
-    }
-
-    function migrateState(parsed) {
-      if (parsed.babyView) return parsed;
-      return { ...parsed, babyView: 'auto' };
     }
 
     function loadState() {
       try {
         let raw = localStorage.getItem(STORAGE_KEY);
-        if (!raw) raw = localStorage.getItem('birthGuideState_v2');
+        if (!raw) {
+          raw = localStorage.getItem('birthGuideState_v4');
+          if (raw) {
+            const old = JSON.parse(raw);
+            return { ...defaultState(), signs: old.signs || defaultState().signs, watersAt: old.watersAt, dueDate: old.dueDate, gestWeek: old.gestWeek || 38, contractions: old.contractions || [] };
+          }
+        }
         if (!raw) return defaultState();
-        return { ...defaultState(), ...migrateState(JSON.parse(raw)) };
+        return { ...defaultState(), ...JSON.parse(raw) };
       } catch {
         return defaultState();
       }
     }
 
     function saveState() {
-      if (document.getElementById('babyView')) {
-        state.babyView = document.getElementById('babyView').value;
-      }
-      state.contacts = {
-        doctorName: document.getElementById('contactDoctorName').value,
-        doctorPhone: document.getElementById('contactDoctorPhone').value,
-        rideName: document.getElementById('contactRideName').value,
-        ridePhone: document.getElementById('contactRidePhone').value
-      };
       state.dueDate = document.getElementById('dueDate').value;
       state.gestWeek = Number(document.getElementById('gestWeek').value) || 38;
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
       syncGuide();
       renderContractions();
-      renderKicks();
-      updateBagProgress();
-      updateCallLinks();
     }
 
     function unlock() {
@@ -805,59 +652,42 @@
 
     function initApp() {
       renderSignChecks();
-      renderBagChecks();
       document.getElementById('dueDate').value = state.dueDate || '';
       document.getElementById('gestWeek').value = state.gestWeek || 38;
-      document.getElementById('babyView').value = state.babyView || 'auto';
-      document.getElementById('contactDoctorName').value = state.contacts.doctorName || '';
-      document.getElementById('contactDoctorPhone').value = state.contacts.doctorPhone || '';
-      document.getElementById('contactRideName').value = state.contacts.rideName || '';
-      document.getElementById('contactRidePhone').value = state.contacts.ridePhone || '';
-      updateCallLinks();
+      if (!document.getElementById('babyRealImg').src) {
+        document.getElementById('babyRealImg').src = BABY_IMAGES.side;
+      }
       syncGuide();
       renderContractions();
-      renderKicks();
       if (state.activeContractionStart) startTimerTick();
     }
 
     function renderSignChecks() {
       const wrap = document.getElementById('signChecks');
-      wrap.innerHTML = SIGNS.map((s) => `
-        <label class="check">
-          <input type="checkbox" data-sign="${s.id}" ${state.signs[s.id] ? 'checked' : ''} onchange="toggleSign('${s.id}', this.checked)">
+      wrap.innerHTML = SIGNS.map((s) => {
+        const on = state.signs[s.id];
+        const cls = ['check', on ? 'checked' : '', s.urgent ? 'urgent' : ''].filter(Boolean).join(' ');
+        return `<label class="${cls}" data-sign-label="${s.id}">
+          <input type="checkbox" ${on ? 'checked' : ''} onchange="toggleSign('${s.id}', this.checked)">
           ${s.label}
-        </label>
-      `).join('');
-    }
-
-    function renderBagChecks() {
-      document.getElementById('bagChecks').innerHTML = BAG_ITEMS.map((item, i) => {
-        const id = 'bag' + i;
-        return `<label class="check"><input type="checkbox" data-bag="${id}" ${state.bag[id] ? 'checked' : ''} onchange="toggleBag('${id}', this.checked)"> ${item}</label>`;
+        </label>`;
       }).join('');
     }
 
     function computeDropLevel() {
       const dropSigns = ['pelvic', 'rectal', 'urination', 'movements'];
       const score = dropSigns.filter((id) => state.signs[id]).length;
-      if (score >= 4) return 3;
-      if (score >= 3) return 2;
+      if (score >= 3) return 3;
+      if (score >= 2) return 2;
       if (score >= 1) return 1;
       return 0;
     }
 
     function dropLevelLabel(level) {
-      return ['High in uterus', 'Starting to drop', 'Low in pelvis', 'Very low / pressing down'][level] || 'Unknown';
-    }
-
-    function setBabyView(value) {
-      state.babyView = value;
-      document.getElementById('babyView').value = value;
-      saveState();
+      return ['High in uterus', 'Starting to drop', 'Low in pelvis', 'Very low / pressing down'][level] || '';
     }
 
     function pickBabyImageKey() {
-      if (state.babyView && state.babyView !== 'auto') return state.babyView;
       const drop = computeDropLevel();
       if (drop >= 2) return 'low';
       if (state.signs.tighten && SIGNS.filter((s) => !s.urgent && state.signs[s.id]).length >= 4) return 'front';
@@ -866,14 +696,56 @@
 
     function updateBabyImage() {
       const img = document.getElementById('babyRealImg');
-      if (!img) return;
       const src = BABY_IMAGES[pickBabyImageKey()] || BABY_IMAGES.side;
       if (img.getAttribute('data-src') !== src) {
-        img.style.opacity = '0.35';
+        img.style.opacity = '0.4';
         img.onload = () => { img.style.opacity = '1'; };
         img.src = src;
         img.setAttribute('data-src', src);
       }
+    }
+
+    function updateOverlays() {
+      document.querySelectorAll('.sign-overlay').forEach((el) => {
+        const id = el.dataset.sign;
+        const on = id === 'waters' ? !!state.watersAt : !!state.signs[id];
+        el.classList.toggle('on', on);
+      });
+
+      const legend = document.getElementById('overlayLegend');
+      const active = [];
+      SIGNS.filter((s) => state.signs[s.id]).forEach((s) => active.push(s.tag));
+      if (state.watersAt) active.push('Waters leaking');
+      legend.innerHTML = active.length
+        ? active.map((t) => `<span>${t}</span>`).join('')
+        : '<span class="note" style="font-size:0.78rem;">Nothing highlighted yet</span>';
+    }
+
+    function renderSignResults() {
+      const wrap = document.getElementById('signResults');
+      const active = SIGNS.filter((s) => state.signs[s.id]);
+
+      if (state.watersAt) {
+        const at = new Date(state.watersAt);
+        active.unshift({
+          id: 'waters',
+          tag: 'Waters broke or leaking',
+          urgent: true,
+          explain: `Logged at ${at.toLocaleTimeString()}. Fluid leaking from around the baby. Contact your doctor with the time and colour of the fluid — especially important with a prior cesarean scar.`
+        });
+      }
+
+      if (!active.length) {
+        wrap.innerHTML = '';
+        return;
+      }
+
+      wrap.innerHTML = active.map((s) => `
+        <div class="sign-result-item ${s.urgent ? 'urgent' : ''}">
+          <b>${s.tag}</b>
+          <p>${s.explain}</p>
+        </div>
+      `).join('');
     }
 
     function contractionPattern() {
@@ -893,20 +765,11 @@
       };
     }
 
-    function kickStatus() {
-      if (!state.kicks.startedAt) return null;
-      const elapsedMin = Math.floor((Date.now() - new Date(state.kicks.startedAt).getTime()) / 60000);
-      if (state.kicks.count >= 10) return { ok: true, elapsedMin };
-      if (elapsedMin >= 120 && state.kicks.count < 10) return { low: true, elapsedMin };
-      return { counting: true, elapsedMin, remaining: 10 - state.kicks.count };
-    }
-
     function syncGuide() {
       const urgentSigns = SIGNS.filter((s) => s.urgent && state.signs[s.id]);
       const normalSigns = SIGNS.filter((s) => !s.urgent && state.signs[s.id]);
       const drop = computeDropLevel();
       const pattern = contractionPattern();
-      const kicks = kickStatus();
       const verdict = document.getElementById('guideVerdict');
       const week = Number(state.gestWeek) || 38;
 
@@ -914,61 +777,43 @@
       let verdictClass = 'result';
       let html = '';
 
-      if (urgentSigns.length) {
+      if (urgentSigns.length || state.watersAt) {
         phase = 'Call now';
         verdictClass = 'result alert';
-        html = `<b>Contact your birth team now.</b><ul>${urgentSigns.map((s) => `<li>${s.label}</li>`).join('')}</ul><p>Do not wait if something feels wrong, especially with a prior cesarean scar.</p>`;
-      } else if (state.watersAt) {
-        const at = new Date(state.watersAt);
-        const mins = Math.floor((Date.now() - at.getTime()) / 60000);
-        const hours = Math.floor(mins / 60);
-        const rem = mins % 60;
-        phase = 'Waters logged';
-        verdictClass = 'result alert';
-        html = `<b>Waters logged at ${at.toLocaleTimeString()}</b> (${hours ? hours + ' hr ' : ''}${rem} min ago).<br><br>Contact your doctor with the time and fluid color.`;
+        html = '<b>Contact your birth team.</b> You have checked something that needs medical attention. See each explanation below.';
       } else if (pattern && pattern.close && pattern.longEnough) {
         phase = 'Active pattern';
         verdictClass = 'result alert';
-        html = '<b>Contractions look like active labor.</b> They are close and lasting close to a minute. Contact your birth team and prepare to leave.';
+        html = '<b>Contractions look like active labor.</b> They are close together and lasting close to a minute. Contact your birth team.';
       } else if (pattern && pattern.somewhatRegular) {
         phase = 'Early labor';
         verdictClass = 'result soft';
-        html = '<b>Contractions are becoming regular.</b> Keep timing each one, rest between them, and have your bag ready.';
-      } else if (kicks && kicks.low) {
-        phase = 'Low movement';
-        verdictClass = 'result alert';
-        html = '<b>Movements are low for two hours.</b> Try a cold drink or lying on your side. If movement stays reduced, contact your birth team.';
-      } else if (normalSigns.length >= 7 && state.signs.tighten) {
+        html = '<b>Contractions are becoming regular.</b> Keep timing them and rest between each one.';
+      } else if (normalSigns.length >= 6 && state.signs.tighten) {
         phase = 'Getting ready';
         verdictClass = 'result soft';
-        html = `<b>${normalSigns.length} signs active — body is preparing.</b> This can last hours or days. Rest, eat lightly, and time contractions if tightenings strengthen.`;
-      } else if (normalSigns.length >= 4) {
+        html = `<b>${normalSigns.length} signs together — your body is preparing.</b> This can last hours or days. Rest, eat lightly, and watch if tightenings become regular.`;
+      } else if (normalSigns.length >= 3) {
         phase = 'Preparing';
         verdictClass = 'result soft';
-        html = `<b>${normalSigns.length} signs checked.</b> Normal late-pregnancy preparation. Stay rested and observant.`;
+        html = `<b>${normalSigns.length} signs checked.</b> These fit normal late-pregnancy preparation. The picture shows where each one is happening.`;
       } else if (normalSigns.length) {
         phase = 'Preparing';
         verdictClass = 'result';
-        html = `<b>${normalSigns.length} sign${normalSigns.length > 1 ? 's' : ''} noted.</b> Keep resting, counting movements, and finishing the bag.`;
+        html = `<b>${normalSigns.length} sign noted.</b> Read what it means below. More signs may appear over the coming hours or days.`;
       } else {
-        html = 'Tick what feels true below. Nothing urgent checked right now — rest, hydrate, and finish the bag.';
+        html = 'Tick what feels true on the right. The picture will show where it is happening, and each sign is explained below.';
       }
 
-      if (kicks && kicks.counting && !urgentSigns.length && !(pattern && pattern.close)) {
-        html += `<p style="margin-top:10px;"><b>Movements:</b> ${kicks.remaining} more to reach 10 (${kicks.elapsedMin} min into this count).</p>`;
-      } else if (kicks && kicks.ok) {
-        html += `<p style="margin-top:10px;"><b>Movements:</b> 10 reached — reassuring for this session.</p>`;
-      }
-
-      if (drop >= 2 && !urgentSigns.length) {
-        html += `<p style="margin-top:10px;">Baby feels <b>low in the pelvis</b> based on your signs.</p>`;
+      if (drop >= 2 && !urgentSigns.length && !state.watersAt) {
+        html += `<p style="margin-top:10px;">Based on your signs, baby seems <b>${dropLevelLabel(drop).toLowerCase()}</b>.</p>`;
       }
 
       verdict.className = verdictClass;
       verdict.innerHTML = html;
       document.getElementById('livePhase').textContent = phase;
       document.getElementById('liveWeek').textContent = week;
-      document.getElementById('headerSubtitle').textContent = `${week} weeks · Head-down · ${dropLevelLabel(drop).toLowerCase()}`;
+      document.getElementById('headerSubtitle').textContent = `${week} weeks · Head-down · ${dropLevelLabel(drop).toLowerCase() || 'watching signs'}`;
 
       const scanWeek = Math.max(28, week - 1);
       document.getElementById('scanLine').innerHTML =
@@ -988,15 +833,13 @@
       }
 
       updateBabyImage();
+      updateOverlays();
+      renderSignResults();
+      renderSignChecks();
     }
 
     function toggleSign(id, checked) {
       state.signs[id] = checked;
-      saveState();
-    }
-
-    function toggleBag(id, checked) {
-      state.bag[id] = checked;
       saveState();
     }
 
@@ -1014,13 +857,12 @@
       if (!state.activeContractionStart) {
         state.activeContractionStart = new Date().toISOString();
         document.getElementById('timerBtn').textContent = 'End contraction';
-        document.getElementById('timerState').textContent = 'Contraction in progress… press end when it eases.';
+        document.getElementById('timerState').textContent = 'Contraction in progress…';
         startTimerTick();
       } else {
         const start = new Date(state.activeContractionStart);
         const end = new Date();
-        const durationSec = Math.round((end - start) / 1000);
-        state.contractions.push({ start: start.toISOString(), durationSec });
+        state.contractions.push({ start: start.toISOString(), durationSec: Math.round((end - start) / 1000) });
         state.activeContractionStart = null;
         document.getElementById('timerBtn').textContent = 'Start contraction';
         document.getElementById('timerState').textContent = 'Logged. Press start when the next one begins.';
@@ -1035,9 +877,8 @@
       timerInterval = setInterval(() => {
         if (!state.activeContractionStart) return;
         const sec = Math.floor((Date.now() - new Date(state.activeContractionStart).getTime()) / 1000);
-        const m = String(Math.floor(sec / 60)).padStart(2, '0');
-        const s = String(sec % 60).padStart(2, '0');
-        document.getElementById('timerClock').textContent = `${m}:${s}`;
+        document.getElementById('timerClock').textContent =
+          `${String(Math.floor(sec / 60)).padStart(2, '0')}:${String(sec % 60).padStart(2, '0')}`;
       }, 250);
     }
 
@@ -1059,24 +900,19 @@
     function renderContractions() {
       const rows = state.contractions;
       document.getElementById('statCount').textContent = rows.length;
-
       if (!rows.length) {
         document.getElementById('statAvgDur').textContent = '—';
         document.getElementById('statAvgGap').textContent = '—';
         return;
       }
-
       const durations = rows.map((c) => c.durationSec);
-      const avgDur = Math.round(durations.reduce((a, b) => a + b, 0) / durations.length);
-      document.getElementById('statAvgDur').textContent = formatDuration(avgDur);
-
+      document.getElementById('statAvgDur').textContent = formatDuration(Math.round(durations.reduce((a, b) => a + b, 0) / durations.length));
       if (rows.length > 1) {
         const gaps = [];
         for (let i = 1; i < rows.length; i++) {
           gaps.push(Math.round((new Date(rows[i].start) - new Date(rows[i - 1].start)) / 60000));
         }
-        const avgGap = Math.round(gaps.reduce((a, b) => a + b, 0) / gaps.length);
-        document.getElementById('statAvgGap').textContent = formatMinutes(avgGap);
+        document.getElementById('statAvgGap').textContent = formatMinutes(Math.round(gaps.reduce((a, b) => a + b, 0) / gaps.length));
       } else {
         document.getElementById('statAvgGap').textContent = '—';
       }
@@ -1085,88 +921,15 @@
     function formatDuration(sec) {
       const m = Math.floor(sec / 60);
       const s = sec % 60;
-      if (m) return `${m}m ${s}s`;
-      return `${s}s`;
+      return m ? `${m}m ${s}s` : `${s}s`;
     }
 
     function formatMinutes(mins) {
-      if (mins < 1) return '<1 min';
-      return `${mins} min`;
-    }
-
-    function addKick() {
-      if (!state.kicks.startedAt) state.kicks.startedAt = new Date().toISOString();
-      state.kicks.count += 1;
-      saveState();
-    }
-
-    function resetKicks() {
-      state.kicks = { count: 0, startedAt: new Date().toISOString() };
-      saveState();
-    }
-
-    function renderKicks() {
-      document.getElementById('kickCount').textContent = state.kicks.count;
-      const note = document.getElementById('kickTimerNote');
-      if (!state.kicks.startedAt) {
-        note.textContent = '';
-        return;
-      }
-      const elapsedMin = Math.floor((Date.now() - new Date(state.kicks.startedAt).getTime()) / 60000);
-      note.textContent = `Session: ${elapsedMin} min`;
-    }
-
-    function toggleBreathing() {
-      const circle = document.getElementById('breathCircle');
-      const btn = document.getElementById('breathBtn');
-      if (breathRunning) {
-        breathRunning = false;
-        btn.textContent = 'Start breathing';
-        circle.className = 'breath-circle';
-        circle.textContent = 'Breathe';
-        if (breathInterval) clearInterval(breathInterval);
-        return;
-      }
-      breathRunning = true;
-      btn.textContent = 'Stop';
-      let step = 0;
-      const phases = [
-        { text: 'Inhale…', cls: 'inhale', ms: 4000 },
-        { text: 'Hold…', cls: 'inhale', ms: 2000 },
-        { text: 'Exhale…', cls: 'exhale', ms: 6000 }
-      ];
-      function runPhase() {
-        if (!breathRunning) return;
-        const p = phases[step % phases.length];
-        circle.className = 'breath-circle ' + p.cls;
-        circle.textContent = p.text;
-        step += 1;
-        breathInterval = setTimeout(runPhase, p.ms);
-      }
-      runPhase();
-    }
-
-    function updateBagProgress() {
-      const total = BAG_ITEMS.length;
-      const done = Object.values(state.bag).filter(Boolean).length;
-      const pct = Math.round((done / total) * 100);
-      document.getElementById('bagProgress').style.width = pct + '%';
-      document.getElementById('bagProgressLabel').textContent = `${done} of ${total} packed`;
-    }
-
-    function updateCallLinks() {
-      const d = document.getElementById('contactDoctorPhone').value.replace(/\s+/g, '');
-      const r = document.getElementById('contactRidePhone').value.replace(/\s+/g, '');
-      document.getElementById('callDoctor').href = d ? 'tel:' + d : '#';
-      document.getElementById('callRide').href = r ? 'tel:' + r : '#';
+      return mins < 1 ? '<1 min' : `${mins} min`;
     }
 
     document.getElementById('passInput').addEventListener('keydown', (e) => {
       if (e.key === 'Enter') unlock();
-    });
-
-    ['contactDoctorPhone', 'contactRidePhone'].forEach((id) => {
-      document.getElementById(id).addEventListener('input', updateCallLinks);
     });
 
     if (sessionStorage.getItem('birthGuideUnlocked') === '1') {
@@ -1177,9 +940,8 @@
 
     setInterval(() => {
       if (document.getElementById('app').classList.contains('hidden')) return;
-      renderKicks();
-      syncGuide();
-    }, 30000);
+      if (state.watersAt) syncGuide();
+    }, 60000);
   </script>
 </body>
 </html>
