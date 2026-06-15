@@ -282,6 +282,59 @@
       width: 100%;
       height: 100%;
       pointer-events: none;
+      z-index: 1;
+    }
+
+    .sign-hotspots {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .hotspot {
+      fill: rgba(23, 42, 54, 0);
+      stroke: rgba(23, 42, 54, 0);
+      stroke-width: 0.4;
+      transition: fill 0.2s, stroke 0.2s;
+      cursor: pointer;
+    }
+
+    .hotspot:hover {
+      fill: rgba(23, 42, 54, 0.1);
+      stroke: rgba(23, 42, 54, 0.35);
+    }
+
+    .hotspot.active {
+      fill: rgba(217, 164, 65, 0.22);
+      stroke: rgba(23, 42, 54, 0.5);
+    }
+
+    .hotspot.urgent:hover { fill: rgba(196, 92, 92, 0.15); stroke: rgba(196, 92, 92, 0.5); }
+    .hotspot.urgent.active { fill: rgba(196, 92, 92, 0.25); stroke: var(--alert); }
+
+    .map-tip {
+      position: absolute;
+      z-index: 3;
+      pointer-events: none;
+      background: rgba(23, 42, 54, 0.92);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 6px 10px;
+      border-radius: 8px;
+      max-width: 160px;
+      line-height: 1.35;
+      transform: translate(-50%, -110%);
+      white-space: nowrap;
+    }
+
+    .baby-stage.interactive { cursor: crosshair; }
+
+    @media (hover: none) {
+      .hotspot { fill: rgba(23, 42, 54, 0.05); stroke: rgba(23, 42, 54, 0.2); }
     }
 
     .sign-overlay {
@@ -538,87 +591,14 @@
         <div class="guide-layout">
           <div>
             <h2>What is happening inside</h2>
-            <p class="note" style="margin-bottom:10px;">Tick a sign on the right — the picture highlights where it is happening.</p>
+            <p class="note" style="margin-bottom:10px;">Tap a spot on the picture <b>or</b> tick the list — both stay in sync.</p>
             <div class="live-badge" id="liveBadge"><span class="dot"></span><span id="liveBadgeText">Watching — tick a sign</span></div>
             <div class="baby-diagram-wrap">
-              <div class="baby-stage" id="babyStage">
+              <div class="baby-stage interactive" id="babyStage">
                 <img id="babyRealImg" alt="Baby in womb" draggable="false" width="1536" height="1024" />
-                <svg class="sign-overlays" viewBox="0 0 100 66.67" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-                  <!-- mucus: cervix -->
-                  <g class="sign-overlay" data-sign="mucus">
-                    <ellipse cx="54" cy="58" rx="3.5" ry="2" fill="rgba(255,255,255,0.9)" stroke="rgba(180,210,240,0.8)" stroke-width="0.3"/>
-                    <path class="drip" d="M52 60 Q51 63 50 65" stroke="rgba(220,235,255,0.95)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-                    <circle class="drip" cx="50" cy="65.5" r="1.2" fill="rgba(220,235,255,0.95)" style="animation-delay:0.4s"/>
-                    <text x="58" y="57" font-size="2.8" fill="#172A36" font-weight="600">mucus</text>
-                  </g>
-                  <!-- pelvic: baby pressing down -->
-                  <g class="sign-overlay" data-sign="pelvic">
-                    <path d="M48 48 L48 56" stroke="#d9a441" stroke-width="1.2" marker-end="url(#arrow)" class="pulse"/>
-                    <circle cx="48" cy="46" r="3" fill="none" stroke="#d9a441" stroke-width="0.6" class="pulse"/>
-                    <text x="51" y="50" font-size="2.6" fill="#172A36" font-weight="600">pressing down</text>
-                  </g>
-                  <!-- urination: bladder -->
-                  <g class="sign-overlay" data-sign="urination">
-                    <ellipse cx="62" cy="42" rx="4" ry="3" fill="rgba(100,160,220,0.35)" stroke="#5a9fd4" stroke-width="0.5" class="pulse"/>
-                    <text x="66" y="43" font-size="2.6" fill="#172A36" font-weight="600">bladder</text>
-                  </g>
-                  <!-- back ache -->
-                  <g class="sign-overlay" data-sign="back">
-                    <ellipse cx="22" cy="38" rx="5" ry="4" fill="rgba(217,164,65,0.35)" stroke="#d9a441" stroke-width="0.5" class="pulse"/>
-                    <text x="28" y="39" font-size="2.6" fill="#172A36" font-weight="600">back</text>
-                  </g>
-                  <!-- rectal pressure -->
-                  <g class="sign-overlay" data-sign="rectal">
-                    <ellipse cx="40" cy="56" rx="3.5" ry="2.5" fill="rgba(217,164,65,0.4)" stroke="#d9a441" stroke-width="0.5" class="pulse"/>
-                    <text x="44" y="57" font-size="2.6" fill="#172A36" font-weight="600">rectum</text>
-                  </g>
-                  <!-- bowel -->
-                  <g class="sign-overlay" data-sign="bowel">
-                    <ellipse cx="35" cy="48" rx="4" ry="3" fill="rgba(95,143,99,0.3)" stroke="#5f8f63" stroke-width="0.5" class="pulse"/>
-                    <text x="39" y="49" font-size="2.6" fill="#172A36" font-weight="600">bowel</text>
-                  </g>
-                  <!-- belly tightening -->
-                  <g class="sign-overlay" data-sign="tighten">
-                    <circle cx="55" cy="30" r="3" fill="none" stroke="#c45c5c" stroke-width="0.6" class="ripple" style="transform-origin:55px 30px"/>
-                    <circle cx="55" cy="30" r="6" fill="none" stroke="#c45c5c" stroke-width="0.4" class="ripple" style="animation-delay:0.6s;transform-origin:55px 30px"/>
-                    <ellipse cx="55" cy="30" rx="12" ry="9" fill="rgba(196,92,92,0.15)" stroke="#c45c5c" stroke-width="0.5" class="pulse"/>
-                    <text x="58" y="31" font-size="2.6" fill="#172A36" font-weight="600">tightening</text>
-                  </g>
-                  <!-- baby lower -->
-                  <g class="sign-overlay" data-sign="movements">
-                    <path d="M46 52 L46 58" stroke="#5f8f63" stroke-width="1" class="pulse"/>
-                    <circle cx="46" cy="51" r="2.5" fill="rgba(95,143,99,0.4)" class="pulse"/>
-                    <text x="48" y="55" font-size="2.5" fill="#172A36" font-weight="600">baby lower</text>
-                  </g>
-                  <!-- bleeding -->
-                  <g class="sign-overlay" data-sign="bleeding">
-                    <ellipse cx="54" cy="60" rx="4" ry="2.5" fill="rgba(196,92,92,0.55)" stroke="#c45c5c" stroke-width="0.6" class="pulse"/>
-                    <text x="58" y="61" font-size="2.6" fill="#c45c5c" font-weight="700">bleeding</text>
-                  </g>
-                  <!-- scar pain -->
-                  <g class="sign-overlay" data-sign="scarPain">
-                    <line x1="68" y1="44" x2="74" y2="48" stroke="#c45c5c" stroke-width="1.2" class="pulse"/>
-                    <line x1="68" y1="48" x2="74" y2="44" stroke="#c45c5c" stroke-width="1.2" class="pulse"/>
-                    <text x="75" y="47" font-size="2.6" fill="#c45c5c" font-weight="700">scar</text>
-                  </g>
-                  <!-- constant pain -->
-                  <g class="sign-overlay" data-sign="constant">
-                    <rect x="30" y="28" width="40" height="30" rx="4" fill="rgba(196,92,92,0.12)" stroke="#c45c5c" stroke-width="0.6" stroke-dasharray="2 1" class="pulse"/>
-                    <text x="38" y="45" font-size="2.8" fill="#c45c5c" font-weight="700">constant pain</text>
-                  </g>
-                  <!-- waters -->
-                  <g class="sign-overlay" data-sign="waters">
-                    <ellipse cx="54" cy="59" rx="5" ry="3" fill="rgba(100,180,230,0.45)" stroke="#5a9fd4" stroke-width="0.6" class="pulse"/>
-                    <path class="drip" d="M50 61 Q48 64 46 66" stroke="rgba(100,180,230,0.9)" stroke-width="1.3" fill="none"/>
-                    <path class="drip" d="M56 61 Q58 64 60 66" stroke="rgba(100,180,230,0.9)" stroke-width="1.3" fill="none" style="animation-delay:0.5s"/>
-                    <text x="58" y="58" font-size="2.6" fill="#172A36" font-weight="600">waters</text>
-                  </g>
-                  <defs>
-                    <marker id="arrow" markerWidth="4" markerHeight="4" refX="2" refY="2" orient="auto">
-                      <path d="M0,0 L4,2 L0,4 Z" fill="#d9a441"/>
-                    </marker>
-                  </defs>
-                </svg>
+                <svg class="sign-overlays" id="signOverlays" viewBox="0 0 100 66.67" preserveAspectRatio="xMidYMid meet" aria-hidden="true"></svg>
+                <svg class="sign-hotspots" id="signHotspots" viewBox="0 0 100 66.67" preserveAspectRatio="xMidYMid meet" aria-label="Tap body areas"></svg>
+                <div id="mapTip" class="map-tip hidden"></div>
               </div>
               <div class="drop-live">
                 <div class="lbl"><span>Baby position</span><span id="dropLabel">High in uterus</span></div>
@@ -677,59 +657,105 @@
 
     let lastWeightNow = 0;
 
+    /* Picture faces LEFT: belly/front = left (low x), back/spine = right (high x) */
+    const OVERLAY_ART = {
+      mucus: `<ellipse cx="41" cy="61" rx="3.5" ry="2" fill="rgba(255,255,255,0.9)" stroke="rgba(180,210,240,0.8)" stroke-width="0.3"/>
+        <path class="drip" d="M39 63 Q38 65 37 66" stroke="rgba(220,235,255,0.95)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        <circle class="drip" cx="37" cy="66" r="1.2" fill="rgba(220,235,255,0.95)"/>
+        <text x="44" y="60" font-size="2.6" fill="#172A36" font-weight="600">mucus</text>`,
+      pelvic: `<path d="M39 50 L39 58" stroke="#d9a441" stroke-width="1.2" marker-end="url(#arrow)" class="pulse"/>
+        <circle cx="39" cy="48" r="3" fill="none" stroke="#d9a441" stroke-width="0.6" class="pulse"/>
+        <text x="42" y="54" font-size="2.5" fill="#172A36" font-weight="600">pressing down</text>`,
+      urination: `<ellipse cx="30" cy="51" rx="4" ry="3" fill="rgba(100,160,220,0.35)" stroke="#5a9fd4" stroke-width="0.5" class="pulse"/>
+        <text x="34" y="52" font-size="2.5" fill="#172A36" font-weight="600">bladder</text>`,
+      back: `<ellipse cx="76" cy="41" rx="5" ry="4.5" fill="rgba(217,164,65,0.4)" stroke="#d9a441" stroke-width="0.5" class="pulse"/>
+        <text x="70" y="42" font-size="2.5" fill="#172A36" font-weight="600">back</text>`,
+      rectal: `<ellipse cx="52" cy="57" rx="3.5" ry="2.5" fill="rgba(217,164,65,0.4)" stroke="#d9a441" stroke-width="0.5" class="pulse"/>
+        <text x="55" y="58" font-size="2.5" fill="#172A36" font-weight="600">rectum</text>`,
+      bowel: `<ellipse cx="50" cy="48" rx="4" ry="3" fill="rgba(95,143,99,0.3)" stroke="#5f8f63" stroke-width="0.5" class="pulse"/>
+        <text x="54" y="49" font-size="2.5" fill="#172A36" font-weight="600">bowel</text>`,
+      tighten: `<circle cx="28" cy="35" r="3" fill="none" stroke="#c45c5c" stroke-width="0.6" class="ripple"/>
+        <circle cx="28" cy="35" r="7" fill="none" stroke="#c45c5c" stroke-width="0.4" class="ripple" style="animation-delay:0.6s"/>
+        <ellipse cx="28" cy="35" rx="11" ry="8" fill="rgba(196,92,92,0.18)" stroke="#c45c5c" stroke-width="0.5" class="pulse"/>
+        <text x="32" y="36" font-size="2.5" fill="#172A36" font-weight="600">tightening</text>`,
+      movements: `<path d="M38 52 L38 58" stroke="#5f8f63" stroke-width="1" class="pulse"/>
+        <circle cx="38" cy="51" r="2.5" fill="rgba(95,143,99,0.4)" class="pulse"/>
+        <text x="40" y="56" font-size="2.4" fill="#172A36" font-weight="600">baby lower</text>`,
+      waters: `<ellipse cx="41" cy="60" rx="5" ry="3" fill="rgba(100,180,230,0.45)" stroke="#5a9fd4" stroke-width="0.6" class="pulse"/>
+        <path class="drip" d="M38 62 Q36 64 34 66" stroke="rgba(100,180,230,0.9)" stroke-width="1.3" fill="none"/>
+        <path class="drip" d="M44 62 Q46 64 48 66" stroke="rgba(100,180,230,0.9)" stroke-width="1.3" fill="none" style="animation-delay:0.5s"/>
+        <text x="45" y="59" font-size="2.5" fill="#172A36" font-weight="600">waters</text>`,
+      bleeding: `<ellipse cx="41" cy="62" rx="4" ry="2.5" fill="rgba(196,92,92,0.55)" stroke="#c45c5c" stroke-width="0.6" class="pulse"/>
+        <text x="45" y="63" font-size="2.5" fill="#c45c5c" font-weight="700">bleeding</text>`,
+      scarPain: `<line x1="22" y1="46" x2="28" y2="50" stroke="#c45c5c" stroke-width="1.2" class="pulse"/>
+        <line x1="22" y1="50" x2="28" y2="46" stroke="#c45c5c" stroke-width="1.2" class="pulse"/>
+        <text x="18" y="49" font-size="2.4" fill="#c45c5c" font-weight="700">scar</text>`,
+      constant: `<rect x="18" y="28" width="22" height="22" rx="4" fill="rgba(196,92,92,0.12)" stroke="#c45c5c" stroke-width="0.6" stroke-dasharray="2 1" class="pulse"/>
+        <text x="20" y="40" font-size="2.4" fill="#c45c5c" font-weight="700">constant</text>`
+    };
+
     const SIGNS = [
       {
         id: 'mucus',
         label: 'White or clear mucus discharge',
         tag: 'Mucus at cervix',
+        spot: { x: 41, y: 61, r: 5 },
         explain: 'The cervix is softening and may be releasing mucus (sometimes called a "show"). This is normal late-pregnancy preparation — it does not mean labor has started yet.'
       },
       {
         id: 'pelvic',
         label: 'Pelvic heaviness / baby pressing down',
         tag: 'Baby pressing down',
+        spot: { x: 39, y: 53, r: 6 },
         explain: 'The baby\'s head may be moving lower into the pelvis. You feel heaviness or pressure between your hips. This is often a sign the body is getting ready.'
       },
       {
         id: 'urination',
         label: 'Frequent urination',
         tag: 'Bladder pressure',
+        spot: { x: 30, y: 51, r: 5 },
         explain: 'As the baby drops, the head can press on the bladder. You may need the toilet more often even with little urine.'
       },
       {
         id: 'back',
         label: 'Mild back ache or period-like cramps',
         tag: 'Lower back',
+        spot: { x: 76, y: 41, r: 7 },
         explain: 'The lower back and pelvis are stretching and shifting. Mild ache or period-like cramps can be part of normal preparation.'
       },
       {
         id: 'rectal',
         label: 'Rectal pressure / feels like passing stool',
         tag: 'Rectal pressure',
+        spot: { x: 52, y: 57, r: 5 },
         explain: 'Pressure in the rectum often means the baby\'s head is low and pressing on nearby nerves. It can feel like you need to pass stool.'
       },
       {
         id: 'bowel',
         label: 'Loose motions or more bowel activity',
         tag: 'Bowel activity',
+        spot: { x: 50, y: 48, r: 5 },
         explain: 'Hormones near labor can clear the bowel. Loose motions or more frequent bowel activity are common in late pregnancy.'
       },
       {
         id: 'tighten',
         label: 'Irregular belly tightening',
         tag: 'Belly tightening',
+        spot: { x: 28, y: 35, r: 9 },
         explain: 'The uterus may tighten on and off without a steady pattern. These are often practice tightenings (Braxton Hicks) — uncomfortable but usually irregular.'
       },
       {
         id: 'movements',
         label: 'Baby movements feel lower or different',
         tag: 'Baby sitting lower',
+        spot: { x: 38, y: 54, r: 5 },
         explain: 'Kicks and rolls may feel lower in the belly or pelvis as the baby engages. The pattern of movement may change but baby should still move.'
       },
       {
         id: 'waters',
         label: 'Waters broke or leaking',
         tag: 'Waters leaking',
+        spot: { x: 41, y: 60, r: 5 },
         urgent: true,
         explain: 'Fluid leaking from around the baby means the waters may have broken. Note the time and colour, then contact your doctor — especially important with a prior cesarean scar.'
       },
@@ -737,6 +763,7 @@
         id: 'bleeding',
         label: 'Bleeding more than light spotting',
         tag: 'Bleeding',
+        spot: { x: 41, y: 62, r: 5 },
         urgent: true,
         explain: 'Bleeding heavier than light spotting is not normal. Contact your doctor or hospital now, especially with a prior cesarean scar.'
       },
@@ -744,6 +771,7 @@
         id: 'scarPain',
         label: 'Sharp scar pain with tightening',
         tag: 'Scar pain',
+        spot: { x: 24, y: 48, r: 5 },
         urgent: true,
         explain: 'Sharp pain along your cesarean scar during tightening needs medical attention. Call your birth team now.'
       },
@@ -751,6 +779,7 @@
         id: 'constant',
         label: 'Pain is constant, not wave-like',
         tag: 'Constant pain',
+        spot: { x: 34, y: 38, r: 8 },
         urgent: true,
         explain: 'Labor pain usually comes in waves. Constant pain that does not ease between waves should be checked urgently.'
       }
@@ -829,6 +858,7 @@
     }
 
     function initApp() {
+      initMapEvents();
       renderSignChecks();
       document.getElementById('dueDate').value = state.dueDate || '';
       document.getElementById('gestWeek').value = state.gestWeek || 38;
@@ -878,30 +908,90 @@
       const src = BABY_IMAGES[pickBabyImageKey()] || BABY_IMAGES.side;
       if (img.getAttribute('data-src') !== src) {
         img.style.opacity = '0.4';
-        img.onload = () => { img.style.opacity = '1'; };
+        img.onload = () => {
+          img.style.opacity = '1';
+          renderBodyMap();
+        };
         img.src = src;
         img.setAttribute('data-src', src);
+      } else {
+        renderBodyMap();
       }
     }
 
+    let mapEventsReady = false;
+
+    function initMapEvents() {
+      if (mapEventsReady) return;
+      mapEventsReady = true;
+      const layer = document.getElementById('signHotspots');
+      layer.addEventListener('click', (e) => {
+        const el = e.target.closest('.hotspot');
+        if (!el) return;
+        e.preventDefault();
+        toggleSign(el.dataset.sign, !state.signs[el.dataset.sign]);
+      });
+      layer.addEventListener('mouseover', (e) => {
+        const el = e.target.closest('.hotspot');
+        if (!el) return;
+        const sign = SIGNS.find((s) => s.id === el.dataset.sign);
+        showMapTip(sign);
+      });
+      layer.addEventListener('mouseout', (e) => {
+        if (!e.relatedTarget || !layer.contains(e.relatedTarget)) hideMapTip();
+      });
+    }
+
+    function showMapTip(sign) {
+      if (!sign) return;
+      const tip = document.getElementById('mapTip');
+      tip.textContent = sign.tag + (state.signs[sign.id] ? ' ✓' : ' — tap here');
+      tip.style.left = ((sign.spot.x / 100) * 100) + '%';
+      tip.style.top = ((sign.spot.y / 66.67) * 100) + '%';
+      tip.classList.remove('hidden');
+    }
+
+    function hideMapTip() {
+      document.getElementById('mapTip').classList.add('hidden');
+    }
+
+    function renderBodyMap(flashId) {
+      const interactive = pickBabyImageKey() === 'side';
+      const overlays = document.getElementById('signOverlays');
+      const hotspots = document.getElementById('signHotspots');
+      const stage = document.getElementById('babyStage');
+
+      if (!interactive) {
+        overlays.innerHTML = '';
+        hotspots.innerHTML = '';
+        stage.classList.remove('interactive');
+        hideMapTip();
+        return;
+      }
+
+      stage.classList.add('interactive');
+      overlays.innerHTML =
+        '<defs><marker id="arrow" markerWidth="4" markerHeight="4" refX="2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 Z" fill="#d9a441"/></marker></defs>' +
+        SIGNS.map((s) => {
+          const on = !!state.signs[s.id];
+          const flash = flashId === s.id && on ? ' flash-on' : '';
+          return `<g class="sign-overlay${on ? ' on' : ''}${flash}" data-sign="${s.id}">${OVERLAY_ART[s.id] || ''}</g>`;
+        }).join('');
+
+      hotspots.innerHTML = SIGNS.map((s) => `
+        <circle class="hotspot ${state.signs[s.id] ? 'active' : ''} ${s.urgent ? 'urgent' : ''}"
+          data-sign="${s.id}" cx="${s.spot.x}" cy="${s.spot.y}" r="${s.spot.r}"
+          tabindex="0" role="button" aria-label="${s.label.replace(/"/g, '')}"/>
+      `).join('');
+    }
+
     function updateOverlays(flashId) {
+      renderBodyMap(flashId);
       const activeCount = SIGNS.filter((s) => state.signs[s.id]).length;
       const urgentOn = SIGNS.some((s) => s.urgent && state.signs[s.id]);
       const stage = document.getElementById('babyStage');
       stage.classList.toggle('has-signs', activeCount > 0);
       stage.classList.toggle('urgent-live', urgentOn);
-
-      document.querySelectorAll('.sign-overlay').forEach((el) => {
-        const id = el.dataset.sign;
-        const on = !!state.signs[id];
-        const wasOn = el.classList.contains('on');
-        el.classList.toggle('on', on);
-        if (on && flashId === id && !wasOn) {
-          el.classList.remove('flash-on');
-          void el.offsetWidth;
-          el.classList.add('flash-on');
-        }
-      });
 
       const badge = document.getElementById('liveBadge');
       const badgeText = document.getElementById('liveBadgeText');
@@ -911,7 +1001,7 @@
       } else if (activeCount) {
         badgeText.textContent = `${activeCount} sign${activeCount !== 1 ? 's' : ''} live on picture`;
       } else {
-        badgeText.textContent = 'Watching — tick a sign';
+        badgeText.textContent = 'Tap the picture or tick a sign';
       }
 
       const drop = computeDropLevel();
