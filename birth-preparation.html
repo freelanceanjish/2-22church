@@ -17,6 +17,10 @@
       --border: rgba(23, 42, 54, 0.14);
       --ok: #5f8f63;
       --ok-bg: #eef7ec;
+      --warn: #d9a441;
+      --warn-bg: #fff4dc;
+      --alert: #c45c5c;
+      --alert-bg: #fdeeee;
       --warm-bg: #fff8f1;
       --radius-lg: 18px;
       --radius-md: 12px;
@@ -30,6 +34,7 @@
       color: var(--text-primary);
       line-height: 1.7;
       font-weight: 300;
+      padding-bottom: 5rem;
     }
 
     .gate {
@@ -52,23 +57,20 @@
       text-align: center;
     }
 
-    .gate-card h1 {
-      font-size: 1.35rem;
-      font-weight: 600;
-      color: var(--gold);
-      margin-bottom: 8px;
-    }
-
+    .gate-card h1 { font-size: 1.35rem; font-weight: 600; color: var(--gold); margin-bottom: 8px; }
     .gate-card p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 18px; }
 
-    input[type="password"], input[type="text"] {
+    input[type="password"], input[type="text"], input[type="tel"], input[type="datetime-local"], textarea, select {
       width: 100%;
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
       padding: 12px 14px;
       font: inherit;
       margin-bottom: 12px;
+      background: #fff;
     }
+
+    textarea { min-height: 88px; resize: vertical; }
 
     button {
       border: 0;
@@ -79,31 +81,86 @@
       font: inherit;
       font-weight: 600;
       cursor: pointer;
+      transition: opacity 0.15s;
     }
 
-    button.secondary {
-      background: var(--surface-light);
-      color: var(--gold);
-      border: 1px solid var(--border);
-    }
+    button:hover { opacity: 0.92; }
+    button.secondary { background: var(--surface-light); color: var(--gold); border: 1px solid var(--border); }
+    button.danger { background: var(--alert); }
+    button.big { padding: 16px 22px; font-size: 1rem; width: 100%; }
 
     .hidden { display: none !important; }
 
     header {
       background: var(--gold);
       color: #fff;
-      padding: 28px 20px;
+      padding: 28px 20px 20px;
       text-align: center;
     }
 
     header h1 { font-size: 1.6rem; font-weight: 600; }
     header p { opacity: 0.9; margin-top: 6px; }
 
-    main {
+    .status-bar {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 14px 18px;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      box-shadow: 0 4px 18px rgba(23, 42, 54, 0.06);
+    }
+
+    .status-grid {
       max-width: 920px;
       margin: 0 auto;
-      padding: 18px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
     }
+
+    .status-item {
+      background: var(--surface-light);
+      border-radius: var(--radius-md);
+      padding: 10px 12px;
+      text-align: center;
+    }
+
+    .status-item .label {
+      display: block;
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .status-item .value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--gold);
+    }
+
+    .quick-nav {
+      max-width: 920px;
+      margin: 12px auto 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .quick-nav a {
+      text-decoration: none;
+      font-size: 0.78rem;
+      color: var(--gold);
+      background: var(--surface-light);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 12px;
+    }
+
+    main { max-width: 920px; margin: 0 auto; padding: 18px; }
 
     .card {
       background: #fff;
@@ -112,6 +169,7 @@
       padding: 20px;
       margin: 14px 0;
       box-shadow: 0 8px 28px rgba(23, 42, 54, 0.06);
+      scroll-margin-top: 7rem;
     }
 
     .card h2 {
@@ -119,6 +177,13 @@
       font-weight: 600;
       color: var(--gold);
       margin-bottom: 12px;
+    }
+
+    .card h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 16px 0 8px;
     }
 
     .grid {
@@ -136,14 +201,15 @@
 
     .pill b { font-weight: 600; }
 
-    label {
+    label.check {
       display: block;
       margin: 10px 0;
       color: var(--text-secondary);
       font-size: 0.95rem;
+      cursor: pointer;
     }
 
-    input[type="checkbox"] {
+    label.check input[type="checkbox"] {
       transform: scale(1.15);
       margin-right: 8px;
       accent-color: var(--gold);
@@ -158,10 +224,8 @@
       margin-top: 12px;
     }
 
-    .result.soft {
-      background: #fff4dc;
-      border-left-color: #d9a441;
-    }
+    .result.soft { background: var(--warn-bg); border-left-color: var(--warn); }
+    .result.alert { background: var(--alert-bg); border-left-color: var(--alert); }
 
     .note { color: var(--text-muted); font-size: 0.92rem; }
 
@@ -199,11 +263,160 @@
       margin-bottom: 10px;
     }
 
+    .phase-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin: 14px 0;
+    }
+
+    .phase-step {
+      text-align: center;
+      padding: 10px 6px;
+      border-radius: var(--radius-md);
+      background: var(--surface-light);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      border: 1px solid transparent;
+    }
+
+    .phase-step.active {
+      background: var(--warm-bg);
+      color: var(--gold);
+      border-color: var(--border);
+      font-weight: 600;
+    }
+
+    .phase-step.done { color: var(--ok); }
+
+    .progress-wrap {
+      background: var(--surface-light);
+      border-radius: 999px;
+      height: 10px;
+      overflow: hidden;
+      margin: 10px 0 6px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--gold);
+      width: 0;
+      transition: width 0.3s;
+    }
+
+    .timer-display {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: var(--gold);
+      text-align: center;
+      margin: 12px 0;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .timer-state {
+      text-align: center;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .stat-box {
+      background: var(--surface-light);
+      border-radius: var(--radius-md);
+      padding: 12px;
+      text-align: center;
+    }
+
+    .stat-box .num { font-size: 1.3rem; font-weight: 600; color: var(--gold); }
+    .stat-box .lbl { font-size: 0.75rem; color: var(--text-muted); }
+
+    .kick-ring {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 8px solid var(--surface-light);
+      border-top-color: var(--gold);
+      display: grid;
+      place-items: center;
+      margin: 0 auto 14px;
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--gold);
+    }
+
+    .breath-circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: var(--surface-light);
+      border: 2px solid var(--border);
+      margin: 16px auto;
+      display: grid;
+      place-items: center;
+      font-size: 0.9rem;
+      color: var(--gold);
+      transition: transform 4s ease-in-out, background 4s ease-in-out;
+    }
+
+    .breath-circle.inhale { transform: scale(1.18); background: var(--warm-bg); }
+    .breath-circle.exhale { transform: scale(0.88); }
+
+    .contact-card {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 12px;
+      background: var(--surface-light);
+      border-radius: var(--radius-md);
+      margin-bottom: 10px;
+    }
+
+    .contact-card input { margin-bottom: 0; flex: 1; min-width: 120px; }
+
+    .contact-card a {
+      text-decoration: none;
+      color: #fff;
+      background: var(--gold);
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .journal-entry {
+      border-left: 3px solid var(--gold);
+      padding: 10px 12px;
+      margin: 10px 0;
+      background: var(--surface-light);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+
+    .journal-entry time {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
     footer {
       text-align: center;
       color: var(--text-muted);
       font-size: 0.85rem;
       padding: 24px 16px 40px;
+    }
+
+    @media (max-width: 600px) {
+      .phase-steps { grid-template-columns: repeat(2, 1fr); }
+      .stat-row { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -221,12 +434,36 @@
   <div id="app" class="hidden">
     <header>
       <h1>Birth Preparation Guide</h1>
-      <p>38 weeks · Head-down baby · Calm signs tracker</p>
+      <p id="headerSubtitle">38 weeks · Head-down baby · Calm signs tracker</p>
     </header>
 
+    <div class="status-bar">
+      <div class="status-grid">
+        <div class="status-item"><span class="label">Phase</span><span class="value" id="livePhase">Preparing</span></div>
+        <div class="status-item"><span class="label">Gestational week</span><span class="value" id="liveWeek">38</span></div>
+        <div class="status-item"><span class="label">Days to due</span><span class="value" id="liveDue">—</span></div>
+        <div class="status-item"><span class="label">Bag packed</span><span class="value" id="liveBag">0%</span></div>
+      </div>
+      <nav class="quick-nav" aria-label="Jump to section">
+        <a href="#summary">Summary</a>
+        <a href="#signs">Signs</a>
+        <a href="#timer">Timer</a>
+        <a href="#movement">Movement</a>
+        <a href="#goNow">Go now?</a>
+        <a href="#bag">Bag</a>
+        <a href="#contacts">Contacts</a>
+      </nav>
+    </div>
+
     <main>
-      <section class="card">
-        <span class="phase-tag">Current phase: pre-labor preparation</span>
+      <section class="card" id="summary">
+        <span class="phase-tag" id="phaseTag">Current phase: pre-labor preparation</span>
+        <div class="phase-steps" id="phaseSteps">
+          <div class="phase-step active" data-phase="prep">Preparing</div>
+          <div class="phase-step" data-phase="early">Early labor</div>
+          <div class="phase-step" data-phase="active">Active labor</div>
+          <div class="phase-step" data-phase="go">Time to go</div>
+        </div>
         <h2>Your Report Summary</h2>
         <div class="grid">
           <div class="pill">Baby position: <b>Head down / cephalic</b></div>
@@ -238,7 +475,86 @@
           <div class="pill">Cervix: <b>Closed, length adequate</b></div>
           <div class="pill">Cord: <b>Single loop around neck</b></div>
         </div>
-        <p class="note" style="margin-top:12px;">This page helps you understand signs and plan calmly. It supports, but does not replace, your doctor or midwife.</p>
+        <h3>Your dates</h3>
+        <div class="grid">
+          <label>Due date
+            <input type="date" id="dueDate" onchange="saveAndRefresh()" />
+          </label>
+          <label>Current gestational week
+            <input type="number" id="gestWeek" min="28" max="43" value="38" onchange="saveAndRefresh()" />
+          </label>
+        </div>
+        <p class="note" style="margin-top:8px;">This page helps you understand signs and plan calmly. It supports, but does not replace, your doctor or midwife.</p>
+      </section>
+
+      <section class="card" id="signs">
+        <h2>Signs Present Now</h2>
+        <p class="note">Tick what is happening today. The guide updates as you go.</p>
+        <div id="signChecks"></div>
+        <div id="signResult" class="result hidden"></div>
+        <h3>Waters broken or leaking?</h3>
+        <div class="actions">
+          <button onclick="logWaters()">Log waters now</button>
+          <button class="secondary" onclick="clearWaters()">Clear</button>
+        </div>
+        <div id="watersResult" class="result soft hidden"></div>
+      </section>
+
+      <section class="card" id="timer">
+        <h2>Contraction Timer</h2>
+        <p class="note">Tap when a contraction starts. Tap again when it eases. The guide tracks length, gap, and rhythm.</p>
+        <div class="timer-display" id="timerClock">00:00</div>
+        <div class="timer-state" id="timerState">Ready. Press start when tightening begins.</div>
+        <div class="actions">
+          <button class="big" id="timerBtn" onclick="toggleContraction()">Start contraction</button>
+          <button class="secondary" onclick="resetContractions()">Reset all</button>
+        </div>
+        <div class="stat-row">
+          <div class="stat-box"><div class="num" id="statAvgDur">—</div><div class="lbl">Avg length</div></div>
+          <div class="stat-box"><div class="num" id="statAvgGap">—</div><div class="lbl">Avg gap</div></div>
+          <div class="stat-box"><div class="num" id="statCount">0</div><div class="lbl">Logged</div></div>
+        </div>
+        <table>
+          <thead><tr><th>#</th><th>Start</th><th>Length</th><th>Gap</th></tr></thead>
+          <tbody id="contractionList"></tbody>
+        </table>
+        <div id="contractionAdvice" class="result soft hidden"></div>
+        <p class="note" style="margin-top:12px;"><b>5-1-1 reminder:</b> many teams say call when contractions are about 5 minutes apart, lasting around 1 minute, for about 1 hour. Your own doctor's rule may differ.</p>
+      </section>
+
+      <section class="card" id="movement">
+        <h2>Baby Movement Counter</h2>
+        <p class="note">Count movements in a 2-hour window. Aim for at least 10. If movements feel much less, contact your birth team.</p>
+        <div class="kick-ring" id="kickCount">0</div>
+        <div class="actions" style="justify-content:center;">
+          <button class="big" style="width:auto;min-width:180px;" onclick="addKick()">+ Movement</button>
+          <button class="secondary" onclick="resetKicks()">New session</button>
+        </div>
+        <div id="kickAdvice" class="result hidden"></div>
+        <p class="note" id="kickTimerNote" style="margin-top:10px;text-align:center;"></p>
+      </section>
+
+      <section class="card" id="breathing">
+        <h2>Calm Breathing Pacer</h2>
+        <p class="note">Slow breathing can help between tightenings. Follow the circle: inhale 4 seconds, hold 2, exhale 6.</p>
+        <div class="breath-circle" id="breathCircle">Breathe</div>
+        <div class="actions" style="justify-content:center;">
+          <button id="breathBtn" onclick="toggleBreathing()">Start breathing</button>
+        </div>
+      </section>
+
+      <section class="card" id="goNow">
+        <h2>Should We Go Now?</h2>
+        <p class="note">Check anything that is true right now. The guide will suggest your next step.</p>
+        <div id="goChecks"></div>
+        <div id="goResult" class="result hidden"></div>
+      </section>
+
+      <section class="card" id="bag">
+        <h2>Hospital Bag Checklist</h2>
+        <div class="progress-wrap"><div class="progress-fill" id="bagProgress"></div></div>
+        <p class="note" id="bagProgressLabel">0 of 0 packed</p>
+        <div id="bagChecks"></div>
       </section>
 
       <section class="card">
@@ -249,43 +565,12 @@
       </section>
 
       <section class="card">
-        <h2>Signs Present Now</h2>
-        <label><input type="checkbox" checked> White or clear mucus discharge</label>
-        <label><input type="checkbox" checked> Pelvic heaviness / baby pressing down</label>
-        <label><input type="checkbox" checked> Frequent urination</label>
-        <label><input type="checkbox" checked> Mild lower back ache or period-like cramps</label>
-        <label><input type="checkbox" checked> Rectal pressure / feeling like passing stool</label>
-        <label><input type="checkbox" checked> Loose motions or more bowel activity</label>
-        <label><input type="checkbox" checked> Sleep disturbance or tiredness</label>
-        <label><input type="checkbox" checked> Baby movements feel lower or different</label>
-        <label><input type="checkbox" checked> Irregular belly tightening, especially evening/night</label>
-        <div class="actions">
-          <button onclick="analyzeSigns()">Understand These Signs</button>
-        </div>
-        <div id="signResult" class="result hidden"></div>
-      </section>
-
-      <section class="card">
-        <h2>Contraction Pattern Helper</h2>
-        <p class="note">Use this when tightenings become noticeable. True labor usually becomes rhythmic, stronger, and closer together.</p>
-        <div class="actions">
-          <button onclick="markContraction()">Mark Contraction Start</button>
-          <button class="secondary" onclick="resetContractions()">Reset</button>
-        </div>
-        <table>
-          <thead><tr><th>#</th><th>Time</th><th>Gap From Previous</th></tr></thead>
-          <tbody id="contractionList"></tbody>
-        </table>
-        <div id="contractionAdvice" class="result soft hidden"></div>
-      </section>
-
-      <section class="card">
         <h2>What To Do Now</h2>
-        <div class="result">
+        <div class="result" id="actionPlan">
           <b>Most likely phase:</b> pre-labor / cervical preparation.<br><br>
           These signs can continue for hours or days. Because the first labor dilated quickly, stay observant once contractions become regular.
         </div>
-        <ul>
+        <ul id="actionList">
           <li>Rest between activity. Save energy for labor.</li>
           <li>Eat light, nourishing meals and drink fluids.</li>
           <li>Gentle walking, breathing, side-lying rest, and warm bath can help comfort.</li>
@@ -304,6 +589,30 @@
         <p class="note" style="margin-top:12px;">Your scar went from 4 mm at 35 weeks to 3.5 mm at 38 weeks. That small change is normal as the uterus stretches near term.</p>
       </section>
 
+      <section class="card" id="contacts">
+        <h2>Emergency Contacts</h2>
+        <p class="note">Tap call when ready. Numbers save on this device only.</p>
+        <div class="contact-card">
+          <input type="text" id="contactDoctorName" placeholder="Doctor / hospital" onchange="saveState()" />
+          <input type="tel" id="contactDoctorPhone" placeholder="Phone" onchange="saveState()" />
+          <a id="callDoctor" href="#">Call</a>
+        </div>
+        <div class="contact-card">
+          <input type="text" id="contactRideName" placeholder="Driver / family" onchange="saveState()" />
+          <input type="tel" id="contactRidePhone" placeholder="Phone" onchange="saveState()" />
+          <a id="callRide" href="#">Call</a>
+        </div>
+      </section>
+
+      <section class="card" id="journal">
+        <h2>Quick Notes</h2>
+        <textarea id="journalInput" placeholder="How is she feeling right now? Any new sign?"></textarea>
+        <div class="actions">
+          <button onclick="addJournal()">Save note</button>
+        </div>
+        <div id="journalList"></div>
+      </section>
+
       <section class="card">
         <h2>When To Contact Birth Team</h2>
         <ul>
@@ -316,12 +625,94 @@
       </section>
     </main>
 
-    <footer>Private family page · not linked from the main site</footer>
+    <footer>Private family page · saved on this device only · not linked from the main site</footer>
   </div>
 
   <script>
     const ACCESS_PHRASE = 'birth222';
-    const contractions = [];
+    const STORAGE_KEY = 'birthGuideState_v2';
+
+    const SIGNS = [
+      { id: 'mucus', label: 'White or clear mucus discharge', tip: 'Can mean the cervix is softening. Normal near term.' },
+      { id: 'pelvic', label: 'Pelvic heaviness / baby pressing down', tip: 'Baby may be lower. Bladder and pelvis feel the pressure.' },
+      { id: 'urination', label: 'Frequent urination', tip: 'Common when the head is low.' },
+      { id: 'back', label: 'Mild lower back ache or period-like cramps', tip: 'Can be pre-labor. Watch if it becomes rhythmic.' },
+      { id: 'rectal', label: 'Rectal pressure / feeling like passing stool', tip: 'Often means the baby is very low.' },
+      { id: 'bowel', label: 'Loose motions or more bowel activity', tip: 'Body sometimes clears before labor.' },
+      { id: 'sleep', label: 'Sleep disturbance or tiredness', tip: 'Rest when you can. Energy matters for labor.' },
+      { id: 'movements', label: 'Baby movements feel lower or different', tip: 'Pattern may change as baby drops. Still count movements.' },
+      { id: 'tighten', label: 'Irregular belly tightening, especially evening/night', tip: 'Practice tightenings are common. Time them if they strengthen.' }
+    ];
+
+    const GO_TRIGGERS = [
+      { id: 'regular', label: 'Contractions are regular and getting stronger', urgent: true },
+      { id: 'waters', label: 'Waters broke or are leaking', urgent: true },
+      { id: 'bleeding', label: 'Bleeding more than light spotting', urgent: true },
+      { id: 'lessMove', label: 'Baby movements clearly reduced', urgent: true },
+      { id: 'constant', label: 'Pain is constant, not wave-like', urgent: true },
+      { id: 'fiveOneOne', label: '5-1-1 pattern for about an hour (ask your doctor)', urgent: false },
+      { id: 'scarPain', label: 'Sharp scar pain with tightening', urgent: true }
+    ];
+
+    const BAG_ITEMS = [
+      'ID and insurance papers',
+      'Latest ultrasound and blood reports',
+      'Hospital registration file',
+      'Comfortable night clothes',
+      'Toiletries and hair ties',
+      'Phone charger and power bank',
+      'Snacks and water bottle',
+      'Newborn clothes and blanket',
+      'Maternity pads',
+      'Cash for incidentals',
+      'Transport plan confirmed'
+    ];
+
+    let state = loadState();
+    let timerInterval = null;
+    let breathInterval = null;
+    let breathRunning = false;
+
+    function defaultState() {
+      return {
+        signs: Object.fromEntries(SIGNS.map((s) => [s.id, true])),
+        goChecks: {},
+        bag: {},
+        contractions: [],
+        activeContractionStart: null,
+        kicks: { count: 0, startedAt: null },
+        watersAt: null,
+        journal: [],
+        dueDate: '',
+        gestWeek: 38,
+        contacts: { doctorName: '', doctorPhone: '', rideName: '', ridePhone: '' }
+      };
+    }
+
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return defaultState();
+        return { ...defaultState(), ...JSON.parse(raw) };
+      } catch {
+        return defaultState();
+      }
+    }
+
+    function saveState() {
+      state.contacts = {
+        doctorName: document.getElementById('contactDoctorName').value,
+        doctorPhone: document.getElementById('contactDoctorPhone').value,
+        rideName: document.getElementById('contactRideName').value,
+        ridePhone: document.getElementById('contactRidePhone').value
+      };
+      state.dueDate = document.getElementById('dueDate').value;
+      state.gestWeek = Number(document.getElementById('gestWeek').value) || 38;
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      refreshAll();
+    }
+
+    function saveAndRefresh() { saveState(); }
 
     function unlock() {
       const input = document.getElementById('passInput').value.trim().toLowerCase();
@@ -331,19 +722,433 @@
         document.getElementById('gate').classList.add('hidden');
         document.getElementById('app').classList.remove('hidden');
         error.classList.add('hidden');
+        initApp();
       } else {
         error.classList.remove('hidden');
       }
     }
 
-    if (sessionStorage.getItem('birthGuideUnlocked') === '1') {
-      document.getElementById('gate').classList.add('hidden');
-      document.getElementById('app').classList.remove('hidden');
+    function initApp() {
+      renderSignChecks();
+      renderGoChecks();
+      renderBagChecks();
+      document.getElementById('dueDate').value = state.dueDate || '';
+      document.getElementById('gestWeek').value = state.gestWeek || 38;
+      document.getElementById('contactDoctorName').value = state.contacts.doctorName || '';
+      document.getElementById('contactDoctorPhone').value = state.contacts.doctorPhone || '';
+      document.getElementById('contactRideName').value = state.contacts.rideName || '';
+      document.getElementById('contactRidePhone').value = state.contacts.ridePhone || '';
+      updateCallLinks();
+      renderJournal();
+      refreshAll();
+      if (state.activeContractionStart) startTimerTick();
     }
 
-    document.getElementById('passInput').addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') unlock();
-    });
+    function renderSignChecks() {
+      const wrap = document.getElementById('signChecks');
+      wrap.innerHTML = SIGNS.map((s) => `
+        <label class="check">
+          <input type="checkbox" data-sign="${s.id}" ${state.signs[s.id] ? 'checked' : ''} onchange="toggleSign('${s.id}', this.checked)">
+          ${s.label}
+        </label>
+      `).join('');
+    }
+
+    function renderGoChecks() {
+      document.getElementById('goChecks').innerHTML = GO_TRIGGERS.map((g) => `
+        <label class="check">
+          <input type="checkbox" data-go="${g.id}" ${state.goChecks[g.id] ? 'checked' : ''} onchange="toggleGo('${g.id}', this.checked)">
+          ${g.label}
+        </label>
+      `).join('');
+    }
+
+    function renderBagChecks() {
+      document.getElementById('bagChecks').innerHTML = BAG_ITEMS.map((item, i) => {
+        const id = 'bag' + i;
+        return `<label class="check"><input type="checkbox" data-bag="${id}" ${state.bag[id] ? 'checked' : ''} onchange="toggleBag('${id}', this.checked)"> ${item}</label>`;
+      }).join('');
+    }
+
+    function toggleSign(id, checked) {
+      state.signs[id] = checked;
+      saveState();
+      analyzeSigns();
+    }
+
+    function toggleGo(id, checked) {
+      state.goChecks[id] = checked;
+      saveState();
+      analyzeGoNow();
+    }
+
+    function toggleBag(id, checked) {
+      state.bag[id] = checked;
+      saveState();
+    }
+
+    function analyzeSigns() {
+      const active = SIGNS.filter((s) => state.signs[s.id]);
+      const result = document.getElementById('signResult');
+      if (!active.length) {
+        result.classList.add('hidden');
+        return;
+      }
+      result.classList.remove('hidden');
+      const tips = active.map((s) => `<li><b>${s.label.split(' / ')[0]}:</b> ${s.tip}</li>`).join('');
+      const count = active.length;
+      let phase = 'pre-labor preparation';
+      if (count >= 7 && state.signs.tighten) phase = 'late pre-labor / early preparation';
+      result.innerHTML = `
+        <b>${count} sign${count > 1 ? 's' : ''} active.</b> Together these fit normal late-pregnancy preparation.
+        <ul style="margin-top:10px;">${tips}</ul>
+        <p style="margin-top:10px;"><b>Likely meaning:</b> the body is getting ready. This can last hours or days. It does not by itself mean active labor has started.</p>
+      `;
+      updateActionPlan();
+    }
+
+    function analyzeGoNow() {
+      const urgent = GO_TRIGGERS.filter((g) => g.urgent && state.goChecks[g.id]);
+      const soft = GO_TRIGGERS.filter((g) => !g.urgent && state.goChecks[g.id]);
+      const box = document.getElementById('goResult');
+      if (!urgent.length && !soft.length) {
+        box.classList.add('hidden');
+        return;
+      }
+      box.classList.remove('hidden');
+      if (urgent.length) {
+        box.className = 'result alert';
+        box.innerHTML = `<b>Contact your birth team now.</b><ul>${urgent.map((g) => `<li>${g.label}</li>`).join('')}</ul><p>Do not wait for a perfect pattern if something feels wrong.</p>`;
+      } else {
+        box.className = 'result soft';
+        box.innerHTML = `<b>Getting close.</b><ul>${soft.map((g) => `<li>${g.label}</li>`).join('')}</ul><p>Keep timing contractions, stay hydrated, and have transport ready.</p>`;
+      }
+      updatePhase();
+    }
+
+    function logWaters() {
+      state.watersAt = new Date().toISOString();
+      saveState();
+    }
+
+    function clearWaters() {
+      state.watersAt = null;
+      saveState();
+    }
+
+    function renderWaters() {
+      const box = document.getElementById('watersResult');
+      if (!state.watersAt) {
+        box.classList.add('hidden');
+        return;
+      }
+      const at = new Date(state.watersAt);
+      const mins = Math.floor((Date.now() - at.getTime()) / 60000);
+      const hours = Math.floor(mins / 60);
+      const rem = mins % 60;
+      box.classList.remove('hidden');
+      box.className = 'result alert';
+      box.innerHTML = `<b>Waters logged at ${at.toLocaleTimeString()}.</b> That was ${hours ? hours + ' hr ' : ''}${rem} min ago.<br><br>Many teams want to know when waters break, especially with a prior cesarean scar. Contact your doctor with the time and fluid color.`;
+      state.goChecks.waters = true;
+      saveState();
+    }
+
+    function toggleContraction() {
+      if (!state.activeContractionStart) {
+        state.activeContractionStart = new Date().toISOString();
+        document.getElementById('timerBtn').textContent = 'End contraction';
+        document.getElementById('timerState').textContent = 'Contraction in progress… press end when it eases.';
+        startTimerTick();
+      } else {
+        const start = new Date(state.activeContractionStart);
+        const end = new Date();
+        const durationSec = Math.round((end - start) / 1000);
+        state.contractions.push({ start: start.toISOString(), durationSec });
+        state.activeContractionStart = null;
+        document.getElementById('timerBtn').textContent = 'Start contraction';
+        document.getElementById('timerState').textContent = 'Logged. Press start when the next one begins.';
+        stopTimerTick();
+        document.getElementById('timerClock').textContent = '00:00';
+        saveState();
+      }
+    }
+
+    function startTimerTick() {
+      stopTimerTick();
+      timerInterval = setInterval(() => {
+        if (!state.activeContractionStart) return;
+        const sec = Math.floor((Date.now() - new Date(state.activeContractionStart).getTime()) / 1000);
+        const m = String(Math.floor(sec / 60)).padStart(2, '0');
+        const s = String(sec % 60).padStart(2, '0');
+        document.getElementById('timerClock').textContent = `${m}:${s}`;
+      }, 250);
+    }
+
+    function stopTimerTick() {
+      if (timerInterval) clearInterval(timerInterval);
+      timerInterval = null;
+    }
+
+    function resetContractions() {
+      if (!confirm('Clear all logged contractions?')) return;
+      state.contractions = [];
+      state.activeContractionStart = null;
+      stopTimerTick();
+      document.getElementById('timerClock').textContent = '00:00';
+      document.getElementById('timerBtn').textContent = 'Start contraction';
+      saveState();
+    }
+
+    function renderContractions() {
+      const tbody = document.getElementById('contractionList');
+      const advice = document.getElementById('contractionAdvice');
+      const rows = state.contractions;
+      tbody.innerHTML = rows.map((c, i) => {
+        const start = new Date(c.start);
+        let gap = '—';
+        if (i > 0) {
+          const prev = new Date(rows[i - 1].start);
+          gap = formatMinutes(Math.round((start - prev) / 60000));
+        }
+        return `<tr><td>${i + 1}</td><td>${start.toLocaleTimeString()}</td><td>${formatDuration(c.durationSec)}</td><td>${gap}</td></tr>`;
+      }).join('');
+
+      document.getElementById('statCount').textContent = rows.length;
+
+      if (rows.length) {
+        const durations = rows.map((c) => c.durationSec);
+        const avgDur = Math.round(durations.reduce((a, b) => a + b, 0) / durations.length);
+        document.getElementById('statAvgDur').textContent = formatDuration(avgDur);
+
+        if (rows.length > 1) {
+          const gaps = [];
+          for (let i = 1; i < rows.length; i++) {
+            gaps.push(Math.round((new Date(rows[i].start) - new Date(rows[i - 1].start)) / 60000));
+          }
+          const avgGap = Math.round(gaps.reduce((a, b) => a + b, 0) / gaps.length);
+          document.getElementById('statAvgGap').textContent = formatMinutes(avgGap);
+
+          const recent = gaps.slice(-3);
+          const recentDur = durations.slice(-3);
+          advice.classList.remove('hidden');
+
+          const close = recent.length >= 3 && recent.every((g) => g <= 6);
+          const longEnough = recentDur.every((d) => d >= 45);
+
+          if (close && longEnough) {
+            advice.className = 'result alert';
+            advice.innerHTML = '<b>Strong pattern forming.</b> Contractions are close and lasting close to a minute. Contact your birth team and prepare to leave.';
+            state.goChecks.fiveOneOne = true;
+          } else if (recent.some((g) => g <= 10)) {
+            advice.className = 'result soft';
+            advice.innerHTML = '<b>Early pattern.</b> Contractions are becoming more regular. Keep timing, rest between them, and eat lightly.';
+          } else {
+            advice.className = 'result';
+            advice.innerHTML = '<b>Still irregular.</b> This may be practice labor. Hydrate, change position, and keep timing if they strengthen.';
+          }
+        } else {
+          document.getElementById('statAvgGap').textContent = '—';
+          advice.classList.add('hidden');
+        }
+      } else {
+        document.getElementById('statAvgDur').textContent = '—';
+        document.getElementById('statAvgGap').textContent = '—';
+        advice.classList.add('hidden');
+      }
+      updatePhase();
+      analyzeGoNow();
+    }
+
+    function formatDuration(sec) {
+      const m = Math.floor(sec / 60);
+      const s = sec % 60;
+      if (m) return `${m}m ${s}s`;
+      return `${s}s`;
+    }
+
+    function formatMinutes(mins) {
+      if (mins < 1) return '<1 min';
+      return `${mins} min`;
+    }
+
+    function addKick() {
+      if (!state.kicks.startedAt) state.kicks.startedAt = new Date().toISOString();
+      state.kicks.count += 1;
+      saveState();
+    }
+
+    function resetKicks() {
+      state.kicks = { count: 0, startedAt: new Date().toISOString() };
+      saveState();
+    }
+
+    function renderKicks() {
+      document.getElementById('kickCount').textContent = state.kicks.count;
+      const note = document.getElementById('kickTimerNote');
+      const advice = document.getElementById('kickAdvice');
+      if (!state.kicks.startedAt) {
+        note.textContent = '';
+        advice.classList.add('hidden');
+        return;
+      }
+      const elapsedMin = Math.floor((Date.now() - new Date(state.kicks.startedAt).getTime()) / 60000);
+      note.textContent = `Session time: ${elapsedMin} min`;
+      advice.classList.remove('hidden');
+      if (state.kicks.count >= 10) {
+        advice.className = 'result';
+        advice.innerHTML = '<b>Good movement session.</b> Ten or more movements in two hours is reassuring. You can start a fresh count later if you want.';
+      } else if (elapsedMin >= 120 && state.kicks.count < 10) {
+        advice.className = 'result alert';
+        advice.innerHTML = '<b>Movements are low for this window.</b> Try a cold drink, lying on your side, or gentle rocking. If movement stays reduced, contact your birth team.';
+        state.goChecks.lessMove = true;
+      } else {
+        advice.className = 'result soft';
+        advice.innerHTML = `<b>Keep counting.</b> ${10 - state.kicks.count} more movement${10 - state.kicks.count === 1 ? '' : 's'} to reach 10 in this session.`;
+      }
+    }
+
+    function toggleBreathing() {
+      const circle = document.getElementById('breathCircle');
+      const btn = document.getElementById('breathBtn');
+      if (breathRunning) {
+        breathRunning = false;
+        btn.textContent = 'Start breathing';
+        circle.className = 'breath-circle';
+        circle.textContent = 'Breathe';
+        if (breathInterval) clearInterval(breathInterval);
+        return;
+      }
+      breathRunning = true;
+      btn.textContent = 'Stop';
+      let step = 0;
+      const phases = [
+        { text: 'Inhale…', cls: 'inhale', ms: 4000 },
+        { text: 'Hold…', cls: 'inhale', ms: 2000 },
+        { text: 'Exhale…', cls: 'exhale', ms: 6000 }
+      ];
+      function runPhase() {
+        if (!breathRunning) return;
+        const p = phases[step % phases.length];
+        circle.className = 'breath-circle ' + p.cls;
+        circle.textContent = p.text;
+        step += 1;
+        breathInterval = setTimeout(runPhase, p.ms);
+      }
+      runPhase();
+    }
+
+    function updateBagProgress() {
+      const total = BAG_ITEMS.length;
+      const done = Object.values(state.bag).filter(Boolean).length;
+      const pct = Math.round((done / total) * 100);
+      document.getElementById('bagProgress').style.width = pct + '%';
+      document.getElementById('bagProgressLabel').textContent = `${done} of ${total} packed`;
+      document.getElementById('liveBag').textContent = pct + '%';
+    }
+
+    function updateDueDisplay() {
+      const week = Number(state.gestWeek) || 38;
+      document.getElementById('liveWeek').textContent = week;
+      document.getElementById('headerSubtitle').textContent = `${week} weeks · Head-down baby · Calm signs tracker`;
+      const dueEl = document.getElementById('liveDue');
+      if (!state.dueDate) {
+        dueEl.textContent = '—';
+        return;
+      }
+      const due = new Date(state.dueDate + 'T00:00:00');
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const diff = Math.round((due - today) / 86400000);
+      if (diff > 0) dueEl.textContent = diff + 'd';
+      else if (diff === 0) dueEl.textContent = 'Today';
+      else dueEl.textContent = Math.abs(diff) + 'd over';
+    }
+
+    function updatePhase() {
+      const urgent = GO_TRIGGERS.some((g) => g.urgent && state.goChecks[g.id]);
+      const rows = state.contractions;
+      let phase = 'prep';
+      let label = 'Preparing';
+      let tag = 'Current phase: pre-labor preparation';
+
+      if (urgent) {
+        phase = 'go';
+        label = 'Go now';
+        tag = 'Current phase: contact birth team';
+      } else if (rows.length >= 3) {
+        const gaps = [];
+        for (let i = 1; i < rows.length; i++) {
+          gaps.push(Math.round((new Date(rows[i].start) - new Date(rows[i - 1].start)) / 60000));
+        }
+        const recent = gaps.slice(-3);
+        if (recent.length >= 3 && recent.every((g) => g <= 6)) {
+          phase = 'active';
+          label = 'Active labor';
+          tag = 'Current phase: active labor pattern';
+        } else if (recent.some((g) => g <= 12)) {
+          phase = 'early';
+          label = 'Early labor';
+          tag = 'Current phase: early labor';
+        }
+      } else if (Object.values(state.signs).filter(Boolean).length >= 5) {
+        phase = 'prep';
+        label = 'Preparing';
+        tag = 'Current phase: late pre-labor';
+      }
+
+      document.getElementById('livePhase').textContent = label;
+      document.getElementById('phaseTag').textContent = tag;
+
+      const order = ['prep', 'early', 'active', 'go'];
+      const idx = order.indexOf(phase);
+      document.querySelectorAll('.phase-step').forEach((el) => {
+        const p = el.dataset.phase;
+        const pi = order.indexOf(p);
+        el.classList.toggle('active', p === phase);
+        el.classList.toggle('done', pi < idx);
+      });
+    }
+
+    function updateActionPlan() {
+      const active = SIGNS.filter((s) => state.signs[s.id]).length;
+      const plan = document.getElementById('actionPlan');
+      if (active >= 7) {
+        plan.innerHTML = '<b>Most likely phase:</b> late pre-labor.<br><br>Her body is doing real preparation work. Rest, eat lightly, and keep the bag and transport plan ready. Time contractions if tightenings strengthen.';
+      } else if (active >= 4) {
+        plan.innerHTML = '<b>Most likely phase:</b> pre-labor / cervical preparation.<br><br>These signs can continue for hours or days. Because the first labor dilated quickly, stay observant once contractions become regular.';
+      } else {
+        plan.innerHTML = '<b>Most likely phase:</b> still preparing.<br><br>Fewer signs checked right now. Keep resting, counting movements, and finishing the hospital bag.';
+      }
+    }
+
+    function updateCallLinks() {
+      const d = document.getElementById('contactDoctorPhone').value.replace(/\s+/g, '');
+      const r = document.getElementById('contactRidePhone').value.replace(/\s+/g, '');
+      document.getElementById('callDoctor').href = d ? 'tel:' + d : '#';
+      document.getElementById('callRide').href = r ? 'tel:' + r : '#';
+    }
+
+    function addJournal() {
+      const text = document.getElementById('journalInput').value.trim();
+      if (!text) return;
+      state.journal.unshift({ at: new Date().toISOString(), text });
+      state.journal = state.journal.slice(0, 30);
+      document.getElementById('journalInput').value = '';
+      saveState();
+    }
+
+    function renderJournal() {
+      document.getElementById('journalList').innerHTML = state.journal.map((j) => `
+        <div class="journal-entry">
+          <time>${new Date(j.at).toLocaleString()}</time>
+          <div>${escapeHtml(j.text)}</div>
+        </div>
+      `).join('');
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
 
     function showImages(event) {
       const preview = document.getElementById('preview');
@@ -356,60 +1161,39 @@
       });
     }
 
-    function analyzeSigns() {
-      const result = document.getElementById('signResult');
-      result.classList.remove('hidden');
-      result.innerHTML = `
-        <b>Interpretation:</b> These signs fit normal late-pregnancy preparation.
-        <br><br>
-        The baby is likely lower, putting pressure on the bladder, pelvis, and rectum.
-        Mucus and irregular tightening can mean the cervix is preparing, but it does not prove active labor yet.
-        <br><br>
-        <b>Prediction:</b> she may stay like this for a while, then shift into active labor more quickly once contractions become regular.
-      `;
-    }
-
-    function markContraction() {
-      contractions.push(new Date());
+    function refreshAll() {
+      analyzeSigns();
+      analyzeGoNow();
       renderContractions();
+      renderKicks();
+      renderWaters();
+      updateBagProgress();
+      updateDueDisplay();
+      updatePhase();
+      renderJournal();
+      updateCallLinks();
     }
 
-    function resetContractions() {
-      contractions.length = 0;
-      renderContractions();
+    document.getElementById('passInput').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') unlock();
+    });
+
+    ['contactDoctorPhone', 'contactRidePhone'].forEach((id) => {
+      document.getElementById(id).addEventListener('input', updateCallLinks);
+    });
+
+    if (sessionStorage.getItem('birthGuideUnlocked') === '1') {
+      document.getElementById('gate').classList.add('hidden');
+      document.getElementById('app').classList.remove('hidden');
+      initApp();
     }
 
-    function renderContractions() {
-      const tbody = document.getElementById('contractionList');
-      const advice = document.getElementById('contractionAdvice');
-      tbody.innerHTML = '';
-
-      contractions.forEach((time, i) => {
-        let gap = '-';
-        if (i > 0) {
-          const mins = Math.round((time - contractions[i - 1]) / 60000);
-          gap = mins + ' min';
-        }
-        tbody.innerHTML += `<tr><td>${i + 1}</td><td>${time.toLocaleTimeString()}</td><td>${gap}</td></tr>`;
-      });
-
-      if (contractions.length >= 3) {
-        const gaps = [];
-        for (let i = 1; i < contractions.length; i++) {
-          gaps.push(Math.round((contractions[i] - contractions[i - 1]) / 60000));
-        }
-        const recent = gaps.slice(-3);
-        advice.classList.remove('hidden');
-
-        if (recent.every((g) => g <= 10)) {
-          advice.innerHTML = '<b>Pattern forming:</b> contractions are coming closer. Keep observing strength and rhythm, and contact the birth team if they continue.';
-        } else {
-          advice.innerHTML = '<b>Still irregular:</b> this may be preparation or early labor. Rest, hydrate, and keep timing if they continue.';
-        }
-      } else {
-        advice.classList.add('hidden');
-      }
-    }
+    setInterval(() => {
+      if (document.getElementById('app').classList.contains('hidden')) return;
+      renderKicks();
+      renderWaters();
+      updateDueDisplay();
+    }, 30000);
   </script>
 </body>
 </html>
