@@ -31,7 +31,7 @@ must_contain() {
   local label="$1"
   local file="$2"
   local pattern="$3"
-  if rg -F -q -- "$pattern" "$file"; then
+  if grep -F -q -- "$pattern" "$file"; then
     pass "$label"
   else
     fail "$label — expected pattern not found in $file: $pattern"
@@ -42,7 +42,7 @@ must_not_contain() {
   local label="$1"
   local file="$2"
   local pattern="$3"
-  if rg -F -q -- "$pattern" "$file"; then
+  if grep -F -q -- "$pattern" "$file"; then
     fail "$label — forbidden pattern found in $file: $pattern"
   else
     pass "$label"
