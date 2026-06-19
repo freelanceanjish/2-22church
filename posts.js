@@ -608,42 +608,24 @@ const POSTS = [
     title: "Was Jesus God? A Biblical Examination",
     date: "22 April 2026",
     category: "Teaching",
-    excerpt: "I do not belong to any denomination, nor am I introducing any cult. What follows is a thorough, verse-by-verse examination of what Scripture actually says about the nature of Jesus Christ, and why the Trinitarian position cannot stand on the plain testimony of the Bible.",
+    excerpt: "I kept finding the apostles naming God the Father and the Lord Jesus Christ as two persons in the same breath. This is how I read the verses that seem to say otherwise.",
     image: "Is_Jesus_GoD.jpg",
     content: `
-<p>I want to ask you something simple. When you open any letter Paul wrote, what does the first line say about God and Jesus?</p>
+<p>I grew up hearing that Jesus is God in the same sense as the Father. When I sat down with Paul's letters in order, something simpler kept staring back at me. The apostles never wrote that way.</p>
 
-<p>Romans 1:7: "Grace and peace to you from God our Father and from the Lord Jesus Christ." Two persons. God our Father. And the Lord Jesus Christ. Not one person called God who is also Jesus. Two persons, named separately, in the same sentence.</p>
+<p>Romans 1:7 opens with grace and peace from God our Father and from the Lord Jesus Christ. That is two persons in one sentence, not one person wearing two names. I read through Colossians, Philippians, Thessalonians, and the pattern never broke. The Father sends, the Son obeys, the Father raises, the Son sits at His right hand. I could not find an apostolic greeting that collapses them into one.</p>
 
-<p>Read every single apostolic letter. The pattern never breaks. God is the Father. Jesus is the Son. They are distinct. The Father sends the Son. The Son prays to the Father. The Father raises the Son. The Son sits at the right hand of the Father. No apostle ever wrote that Jesus is the Father. Not once.</p>
+<p>So I went to the verses people quote against that reading. John 1:1 says the Word was with God and the Word was God. The second phrase only makes sense to me if the Word is distinct from the God He is with. John 1:18 settles it: no one has seen God, but the Son has declared Him. Jesus reveals the Father. He does not replace Him.</p>
 
-<p>So where does the idea come from that Jesus is God in the sense of being the Eternal Father?</p>
+<p>Thomas cried "my Lord and my God" when he saw the risen Christ. I take that as overwhelmed worship, the way titles were spoken in that world, not as Thomas handing Jesus the office of Eternal Father. Jesus did not reply that Thomas had finally got the Trinity right. He blessed those who believe without seeing.</p>
 
-<p>It comes from a handful of verses that seem, on first reading, to say something different. Let us look at the most common ones honestly.</p>
+<p>Acts 2:36 is Peter at Pentecost, filled with the Spirit: God has made this Jesus, whom you crucified, both Lord and Christ. Someone above Jesus made Him Lord. Philippians 2:9 says the same, that God exalted Him and gave Him the name. The Son receives what the Father gives.</p>
 
-<p>John 1:1 says the Word was God. This has been used for centuries to argue that Jesus is fully God in the same sense as the Father. But read the same verse carefully. "The Word was with God." With God. If the Word is God in the same sense as the Father, how can the Word be with God at the same time? The answer is that the Word carries divine nature and divine authority, as the Father's chief agent, without being identical to the Father. John 1:18 then answers its own question: no one has ever seen God, but the Son has made Him known. The Son reveals the Father. He is not the Father.</p>
+<p>That is why this matters to me. If Jesus is the Father, who did He pray to in Gethsemane? Who raised Him? Who sits beside Him now? The apostles did not need a diagram to explain what they saw. They needed one God, the Father, and one Mediator between God and men.</p>
 
-<p>Thomas called Jesus "my Lord and my God" in John 20:28. This is a title of honour and worship, not a statement that Jesus is the Eternal Father. The same title was used of kings and masters throughout the ancient world. Thomas was not delivering a systematic theology lecture. He was overwhelmed by what he was seeing. And Jesus did not say to him: correct, I am the Eternal Father. He said: blessed are those who believe without seeing.</p>
+<blockquote>"For there is one God and one Mediator between God and men, the Man Christ Jesus.", 1 Timothy 2:5</blockquote>
 
-<p>Isaiah 9:6 calls the coming child Mighty God and Everlasting Father. These are throne names and governmental titles, the way ancient kings were given names that described their authority and mission. They describe what the Messiah would carry out and represent, not a claim that he is literally the Eternal Father of creation.</p>
-
-<p>Now look at what Scripture says directly about who made Jesus Lord.</p>
-
-<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ.", Acts 2:36</blockquote>
-
-<p>The Father made Him Lord. This is Peter at Pentecost, speaking under the full power of the Spirit. The Lordship of Jesus was conferred by the Father, not self-possessed from eternity. It was the Father's act of exaltation after the resurrection.</p>
-
-<blockquote>"Therefore God also has highly exalted Him and given Him the name which is above every name.", Philippians 2:9</blockquote>
-
-<p>God gave Him the name. God exalted Him. The Son received what the Father gave. This is not the language of two co-equal persons in a Trinity. This is the language of a Father honouring His Son.</p>
-
-<p>And why does any of this matter? Because if Jesus is the Father, then who was He praying to in Gethsemane? Who raised Him from the dead? Who does He sit beside right now? The Trinitarian answer requires increasingly complex explanations that the apostles themselves never gave.</p>
-
-<p>The simpler reading, the one every apostolic letter assumes without argument, is this: there is one God, the Father. And there is one Lord, Jesus Christ, His Son, through whom all things were made and through whom we are saved. These are not the same person. They are Father and Son. And that relationship is not a limitation. It is the very shape of the gospel.</p>
-
-<blockquote>"For there is one God and one Mediator between God and men, the Man Christ Jesus, who gave Himself a ransom for all.", 1 Timothy 2:5-6</blockquote>
-
-<p>One God. One Mediator. The Man Christ Jesus. That is the apostolic testimony, stated plainly, needing no Trinity to hold it together.</p>
+<p>I am not trying to start a fight or sell a new doctrine. I am trying to stay with what the text says when it speaks plainly. Jesus is the Son of God, exalted Lord, coming King, the one through whom we are saved. The God He called Father is the God we worship. That distinction is not a downgrade. It is the gospel Paul kept repeating until the end.</p>
     `
   },
 ];
