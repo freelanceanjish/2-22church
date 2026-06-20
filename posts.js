@@ -108,7 +108,7 @@ const POSTS = [
 
 <h2>The same journey inward</h2>
 
-<p>Hebrews 8:5 calls the earthly sanctuary a <strong>copy and shadow</strong> of heavenly things. My earlier <a href="post.html?id=sacred-architecture-vedic-hebrew-temple-parallels">temple-parallels article</a> traced the three-room skeleton outward, Outer Court, Holy Place, Holy of Holies. Here I follow that same movement <strong>inward</strong>, into biology, because Scripture already does.</p>
+<p>Hebrews 8:5 calls the earthly sanctuary a <strong>copy and shadow</strong> of heavenly things. My earlier <a href="post/sacred-architecture-vedic-hebrew-temple-parallels.html">temple-parallels article</a> traced the three-room skeleton outward, Outer Court, Holy Place, Holy of Holies. Here I follow that same movement <strong>inward</strong>, into biology, because Scripture already does.</p>
 
 <p>In the figure below, the Tabernacle moves from outer court through the holy place to the guarded centre where presence meets the tablets. The cell moves from membrane through cytoplasm to the nucleus where DNA sits. Graded sanctity on one side, graded access on the other.</p>
 
@@ -148,7 +148,7 @@ const POSTS = [
   <p>Sinai's tent was decagonal and π-scaled long before anyone modeled DNA in a laboratory. The information molecule carries ten-fold symmetry in peer-reviewed work on its axial structure. Paul did not say your body resembles a temple. He said it is the temple of the Holy Ghost. What percentage of that overlap are you willing to call coincidence? And if even part of it is pattern, not accident, what does that mean for how you treat the dwelling you carry every day?</p>
 </div>
 
-<p>This study continues the thread of our <a href="project314.html">God of Pi</a> page and the <a href="post.html?id=sacred-architecture-vedic-hebrew-temple-parallels">temple-parallels article</a>. If the pattern was shown on the mount, copied in the wilderness, written into the genome, and fulfilled in Messiah's body, then defiling the temple is not only an Old Testament concern. It is a present one.</p>
+<p>This study continues the thread of our <a href="project314.html">God of Pi</a> page and the <a href="post/sacred-architecture-vedic-hebrew-temple-parallels.html">temple-parallels article</a>. If the pattern was shown on the mount, copied in the wilderness, written into the genome, and fulfilled in Messiah's body, then defiling the temple is not only an Old Testament concern. It is a present one.</p>
     `
   },
 

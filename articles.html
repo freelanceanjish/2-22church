@@ -3,6 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social-meta:start -->
+<meta name="description" content="Reflections on Scripture, community, service, and the living faith we are still learning to walk.">
+<link rel="canonical" href="https://2-22church.com/articles.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="2:22 Church">
+<meta property="og:title" content="Articles, 2:22 Church">
+<meta property="og:description" content="Reflections on Scripture, community, service, and the living faith we are still learning to walk.">
+<meta property="og:url" content="https://2-22church.com/articles.html">
+<meta property="og:image" content="https://2-22church.com/og-image.jpg?v=1">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Articles, 2:22 Church">
+<meta name="twitter:description" content="Reflections on Scripture, community, service, and the living faith we are still learning to walk.">
+<meta name="twitter:image" content="https://2-22church.com/og-image.jpg?v=1">
+<!-- social-meta:end -->
 <title>Articles, 2:22 Church</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=2">
@@ -292,7 +308,7 @@ function renderPosts() {
 
   // Featured (first post)
   var f = filtered[0];
-  var fHref = f.link ? f.link : 'post.html?id=' + f.id;
+  var fHref = f.link ? f.link : 'post/' + f.id + '.html';
   var fImg = f.image
     ? '<div class="pf-img"><img src="' + f.image + '" alt="' + f.title + '" loading="lazy"></div>'
     : '<div class="pf-img" style="display:flex;align-items:center;justify-content:center;background:var(--surface);"><span style="font-family:Poppins,Arial,sans-serif;font-size:5rem;color:var(--text-muted);opacity:0.2;">-</span></div>';
@@ -316,7 +332,7 @@ function renderPosts() {
     grid.style.border = '';
     grid.style.background = '';
     grid.innerHTML = rest.map(function(post) {
-      var postHref = post.link ? post.link : 'post.html?id=' + post.id;
+      var postHref = post.link ? post.link : 'post/' + post.id + '.html';
       var imgHtml = post.image
         ? '<div class="pc-img"><img src="' + post.image + '" alt="' + post.title + '" loading="lazy"></div>'
         : '<div class="pc-img no-img"><span>✦</span></div>';
