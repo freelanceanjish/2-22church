@@ -13,7 +13,7 @@ POSTS_JS = ROOT / "posts.js"
 POST_DIR = ROOT / "post"
 SITE = "https://2-22church.com"
 OG_IMAGE = ROOT / "og-image.jpg"
-OG_VERSION = "1"
+OG_VERSION = "2"
 MARKER_START = "<!-- social-meta:start -->"
 MARKER_END = "<!-- social-meta:end -->"
 
@@ -177,34 +177,109 @@ def abs_image(path: str) -> str:
     return f"{SITE}/{path.lstrip('/')}"
 
 
+def cover_crop(im, target_w, target_h):
+    scale = max(target_w / im.width, target_h / im.height)
+    resized = im.resize((int(im.width * scale), int(im.height * scale)), Image.LANCZOS)
+    left = (resized.width - target_w) // 2
+    top = (resized.height - target_h) // 2
+    return resized.crop((left, top, left + target_w, top + target_h))
+
+
+def hero_gradient_overlay(w, h):
+    overlay = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    px = overlay.load()
+    for x in range(w):
+        t = x / w
+        if t <= 0.44:
+            alpha = 0.92 - (t / 0.44) * 0.14
+        else:
+            alpha = 0.78 - ((t - 0.44) / 0.56) * 0.42
+        a = int(255 * max(0.0, min(1.0, alpha)))
+        for y in range(h):
+            px[x, y] = (255, 255, 255, a)
+    return overlay
+
+
+def draw_nav_logo(draw, x, y, fonts):
+    mark_font, church_font = fonts
+    r = 34
+    cx, cy = x + r, y + r
+    draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(23, 42, 54))
+    draw.text((cx, cy - 1), "2-22", fill=(255, 255, 255), anchor="mm", font=mark_font)
+    tx = cx + r + 18
+    for i, ch in enumerate("CHURCH"):
+        draw.text((tx + i * 18, cy - 1), ch, fill=(14, 14, 14), anchor="lm", font=church_font)
+
+
+def wrap_text(draw, text, font, max_width):
+    words = text.split()
+    lines, line = [], []
+    for word in words:
+        test = " ".join(line + [word])
+        if draw.textlength(test, font=font) <= max_width:
+            line.append(word)
+        else:
+            if line:
+                lines.append(" ".join(line))
+            line = [word]
+    if line:
+        lines.append(" ".join(line))
+    return lines
+
+
 def build_og_image():
+    """Compose OG thumbnail from live homepage hero: wheat bg, nav logo, hero copy."""
     w, h = 1200, 630
-    img = Image.new("RGB", (w, h), (244, 247, 245))
-    draw = ImageDraw.Draw(img)
+    hero = Image.open(ROOT / "hero-bg.jpg").convert("RGB")
+    base = cover_crop(hero, w, h)
+    base = Image.alpha_composite(base.convert("RGBA"), hero_gradient_overlay(w, h)).convert("RGB")
+    draw = ImageDraw.Draw(base)
 
-    draw.rectangle([0, 0, w, 130], fill=(23, 42, 54))
-    draw.rectangle([0, 500, w, h], fill=(238, 244, 247))
+    # Soft circle accent (matches .home-hero::after)
+    accent = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    ad = ImageDraw.Draw(accent)
+    ad.ellipse([880, 390, 1240, 750], fill=(234, 241, 244, 230))
+    base = Image.alpha_composite(base.convert("RGBA"), accent).convert("RGB")
+    draw = ImageDraw.Draw(base)
 
-    logo = Image.open(ROOT / "logo.png").convert("RGBA")
-    logo.thumbnail((420, 120), Image.LANCZOS)
-    img.paste(logo, ((w - logo.width) // 2, 72), logo)
+    mark_font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 24)
+    church_font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 15)
+    kicker_font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 26)
+    title_font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 72)
+    sub_font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 24)
+    card_label = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 16)
+    card_body = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 15)
 
-    bold = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 42)
-    reg = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 28)
-    small = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 22)
+    draw_nav_logo(draw, 72, 52, (mark_font, church_font))
 
-    draw.text((w // 2, 250), "Built on the Living Word", fill=(23, 42, 54), anchor="mm", font=bold)
-    draw.text(
-        (w // 2, 320),
-        "Apostolic teaching · honest articles · house church community",
-        fill=(71, 84, 91),
-        anchor="mm",
-        font=reg,
+    copy_x = 72
+    draw.text((copy_x, 188), "Built on the Living Word", fill=(71, 84, 91), font=kicker_font)
+    draw.text((copy_x, 248), "A house church movement", fill=(14, 14, 14), font=title_font)
+
+    subtitle = (
+        "We are a community built upon the apostolic foundation of teaching, "
+        "fellowship, breaking bread, and prayer in homes, backyards, and parks."
     )
-    draw.text((w // 2, 560), "2-22church.com", fill=(71, 84, 91), anchor="mm", font=small)
+    y = 360
+    for line in wrap_text(draw, subtitle, sub_font, 620):
+        draw.text((copy_x, y), line, fill=(71, 84, 91), font=sub_font)
+        y += 34
+
+    # Hero info card (live site right column)
+    card = (760, 150, 1140, 430)
+    card_img = Image.new("RGBA", (card[2] - card[0], card[3] - card[1]), (255, 255, 255, 225))
+    cdraw = ImageDraw.Draw(card_img)
+    cdraw.rounded_rectangle([0, 0, card[2] - card[0] - 1, card[3] - card[1] - 1], radius=26, outline=(23, 42, 54, 30), width=1)
+    cdraw.text((28, 28), "2 Timothy 2:2", fill=(23, 42, 54), font=card_label)
+    for i, line in enumerate(wrap_text(cdraw, "Hand on what is true to people you can trust. They will teach others after you.", card_body, 320)):
+        cdraw.text((28, 62 + i * 24), line, fill=(71, 84, 91), font=card_body)
+    base.paste(card_img, (card[0], card[1]), card_img)
 
     out = ROOT / "og-image.jpg"
-    img.save(out, quality=90, optimize=True)
+    base.save(out, quality=92, optimize=True)
+    samples = ROOT / "blog-assets" / "og-samples"
+    samples.mkdir(parents=True, exist_ok=True)
+    base.save(samples / "live-home-hero.jpg", quality=92)
     print("wrote", out)
 
 
