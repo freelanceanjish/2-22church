@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img">
+  <title>Three scales of dwelling: heavenly pattern, Tabernacle, DNA decagon</title>
+  <rect width="960" height="520" fill="#FFFFFF"/>
+  <rect x="16" y="16" width="928" height="488" rx="10" fill="#EEF4F7" stroke="#172A36" stroke-width="2"/>
+  <text x="480" y="48" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="0.12em" fill="#172A36">THREE SCALES OF DWELLING</text>
+  <text x="480" y="68" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#47545B">Same grammar at heaven, tent, and genome</text>
+
+  <!-- Outer ring: heavenly pattern -->
+  <circle cx="480" cy="280" r="210" fill="none" stroke="#172A36" stroke-width="1.5" opacity="0.25" stroke-dasharray="8 6"/>
+  <text x="480" y="78" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#47545B">HEAVENLY PATTERN</text>
+  <text x="480" y="92" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">shown to Moses on the mount · before ~1400 BC</text>
+
+  <!-- Middle ring: tabernacle decagon -->
+  <polygon points="480,110 598,145 633,263 598,381 480,416 362,381 327,263 362,145" fill="rgba(139,105,20,0.08)" stroke="#8B6914" stroke-width="2"/>
+  <text x="480" y="128" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#8B6914">WILDERNESS TABERNACLE</text>
+  <text x="480" y="142" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">decagon dome · π-scaled court · ~1400 BC Sinai</text>
+
+  <!-- Inner: DNA decagon axial -->
+  <polygon points="480,175 545,195 565,260 545,325 480,345 415,325 395,260 415,195" fill="rgba(91,141,184,0.12)" stroke="#5B8DB8" stroke-width="2"/>
+  <circle cx="480" cy="260" r="28" fill="none" stroke="#5B8DB8" stroke-width="1.2" opacity="0.6"/>
+  <text x="480" y="252" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#5B8DB8">10</text>
+  <text x="480" y="272" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="#47545B">bases / turn</text>
+  <text x="480" y="368" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#5B8DB8">B-DNA AXIAL DECAGON</text>
+  <text x="480" y="382" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">36° per base · φ ratios · creation / described 1953–2021</text>
+
+  <!-- Arrows inward -->
+  <path d="M480 200 L480 218" stroke="#172A36" stroke-width="1" marker-end="url(#arr)"/>
+  <path d="M480 330 L480 348" stroke="#172A36" stroke-width="1" opacity="0.5"/>
+  <defs><marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#172A36"/></marker></defs>
+
+  <text x="480" y="455" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-style="italic" fill="#47545B">Hebrews 8:5 shadow · Exodus copy · genome as living text</text>
+  <text x="480" y="478" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">1 Corinthians 6:19 · your body is the temple of the Holy Spirit</text>
+</svg>
