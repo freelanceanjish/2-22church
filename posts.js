@@ -21,7 +21,7 @@ const POSTS = [
     title: "Decagon DNA: When the Tabernacle Pattern Lives in the Genome",
     date: "20 June 2026",
     category: "Teaching",
-    image: "dna-tabernacle-three-scales.svg",
+    image: "blog-assets/dna-tabernacle/topview-tabernacle-dna-compare.jpg",
     excerpt: "Project314 recovered a decagonal, π-scaled Tabernacle from Exodus. B-DNA carries ten-fold symmetry and measured infrared frequencies. I do not think Paul was speaking in metaphor when he called the body God's temple.",
     content: `
 <p class="opening">
@@ -30,16 +30,20 @@ const POSTS = [
 
 <p>The diagram below is how I picture the scale of it. The outer ring is the pattern shown on the mount before Sinai. Inside that sits the wilderness Tabernacle as Hoy models it, a decagon dome with a π-scaled court around ~1400 BC. At the centre of the same drawing, one turn of B-DNA: ten bases, thirty-six degrees of rotation each, the axial view Curtis and Larsen describe from 1953 through 2021.</p>
 
-<p>Abstract rings help me compare numbers. They do not help me <em>see</em> the dwelling. For that I need something closer to sand, linen, and flesh. The first image is a reconstruction of the circular court and ten-sided tent in the wilderness. The second is Timna's life-size Tabernacle model in the Negev, where you can walk the outer court Moses measured. Hold both beside the diagram and the scale stops feeling theoretical.</p>
+<p>Abstract rings help me compare numbers. They do not help me <em>see</em> the dwelling. For that I need the floor plan looking straight down, the way an engineer reads a site drawing. Andrew Hoy's Project314 sheets show Moses' court as a circle with posts on the perimeter, not the rectangular sketch commentaries handed down. When I set that top view beside B-DNA looked at from the same angle, down the axis of the helix, the same count of steps around a turn stopped feeling like a coincidence on paper.</p>
 
-<div class="photo-strip" aria-label="Wilderness Tabernacle and Timna reconstruction">
-  <img src="blog-assets/dna-tabernacle/tabernacle-wilderness-court.jpg" alt="Reconstruction of the wilderness Tabernacle with circular court and ten-sided tent in desert light" loading="eager" decoding="async">
-  <img src="blog-assets/temple-parallel-photos/01-tabernacle-timna-court.jpg" alt="Life-size Tabernacle outer court reconstruction at Timna Park, Israel" loading="eager" decoding="async">
-  <img src="blog-assets/temple-parallel-photos/01-tabernacle-decagon.jpg" alt="Decagon floor plan model showing graded sanctity toward the Holy of Holies" loading="lazy">
+<div class="structure-diagram" aria-label="Top view comparison: circular Tabernacle court and B-DNA axial turn">
+  <img src="blog-assets/dna-tabernacle/topview-tabernacle-dna-compare.jpg" alt="Side by side top view: Project314 circular Tabernacle court plan credited to Andrew Hoy, and B-DNA axial decagon with ten base pairs per turn" loading="eager" decoding="async" width="960" height="520">
+  <figcaption>Left: Andrew Hoy · Project314 · project314.org · circular court top plan (~1400 BC). Right: B-DNA axial view · ten base pairs · 36° per step · Curtis 1997 · Larsen Symmetry 2021.</figcaption>
+</div>
+
+<div class="photo-strip photo-strip--solo" aria-label="Decagon Tabernacle scale model">
+  <img src="blog-assets/temple-parallel-photos/01-tabernacle-decagon.jpg" alt="Physical decagon Tabernacle scale model with circular outer court and graded sanctity toward the Holy of Holies" loading="lazy">
+  <figcaption>Decagon dwelling model: ten-sided tent inside a circular court, the geometry Hoy recovers from Exodus curtain math.</figcaption>
 </div>
 
 <div class="structure-diagram" aria-label="Three scales of dwelling: heaven, Tabernacle, DNA">
-  <img src="dna-tabernacle-three-scales.svg?v=3" alt="Nested diagram: heavenly pattern, wilderness Tabernacle decagon (~1400 BC), and B-DNA axial decagon with ten-fold symmetry" loading="eager" decoding="async" width="960" height="520">
+  <img src="dna-tabernacle-three-scales.svg?v=4" alt="Nested diagram: heavenly pattern, wilderness Tabernacle decagon (~1400 BC), and B-DNA axial decagon with ten-fold symmetry" loading="eager" decoding="async" width="960" height="520">
 </div>
 
 <div class="editorial">
@@ -58,14 +62,15 @@ const POSTS = [
 <p>On the left of the next figure you see that cylindrical curtain assembly at 314 cubits. On the right, one helical turn of canonical B-DNA: roughly 34Å pitch, roughly 21Å width, ten bases completing 360°. Different materials, same kind of circular measure.</p>
 
 <div class="structure-diagram" aria-label="Pi and circular measure: 314 cubits and DNA helical turn">
-  <img src="dna-tabernacle-pi-314.svg?v=3" alt="Comparison: Exodus curtain cylinder 314 cubits circumference and DNA helical turn with pitch and width measures" loading="lazy" width="960" height="380">
+  <img src="dna-tabernacle-pi-314.svg?v=4" alt="Comparison: Exodus curtain cylinder 314 cubits circumference and DNA helical turn with pitch and width measures" loading="lazy" width="960" height="380">
 </div>
 
 <p>The goat-hair sheets in Exodus 26 are not abstraction on a page. They are woven panels with loops on both edges, meant to wrap a perimeter. Project314's engineering drawings show the short-edge join closing into a cylinder around the court. The fabric photo below is from a Tabernacle model: real weave, real hem, the kind of material Moses counted in cubits.</p>
 
-<div class="photo-strip photo-strip--duo" aria-label="Tabernacle curtain fabric and engineering comparison">
-  <img src="blog-assets/temple-parallel-photos/01-tabernacle-curtains.jpeg" alt="Woven Tabernacle curtain panels on a scale model" loading="lazy">
-  <img src="blog-assets/temple-parallel-photos/01-tabernacle-decagon.jpg" alt="Decagon Tabernacle layout with circular court perimeter" loading="lazy">
+<div class="photo-strip photo-strip--duo" aria-label="Project314 circular court plan and decagon dwelling model">
+  <img src="blog-assets/dna-tabernacle/project314-court-topview.jpg" alt="Andrew Hoy Project314 engineering top view of circular Tabernacle court post placement" loading="lazy">
+  <img src="blog-assets/temple-parallel-photos/01-tabernacle-decagon.jpg" alt="Decagon Tabernacle scale model with circular court perimeter" loading="lazy">
+  <figcaption>Left: Project314 court top plan (Andrew Hoy). Right: decagon dwelling model showing the ten-sided tent inside the circular court.</figcaption>
 </div>
 
 <p>From that cylinder logic the dwelling itself resolves as a <strong>decagon dome</strong>, yurt-like, roughly six stories in Hoy's scale models, with acacia and silver serving as struts rather than ground posts. The Exodus silver tally fits this geometry. The curtains wrap cleanly. The court reads as a circle with a ten-sided tent at centre. Project Arc at Renformation estimates roughly <strong>13,000 sq ft</strong> of interior space in their decagonal model, a dwelling sized for priestly service rather than a cramped diagram. The measurements in Exodus specify the pattern. Hoy and Project314 show how they close.</p>
@@ -82,12 +87,10 @@ const POSTS = [
   <img src="dna-tabernacle-tenfold.svg?v=3" alt="Side by side decagon floor plan of Tabernacle and axial decagon of B-DNA with ten-fold symmetry labels" loading="lazy" width="960" height="420">
 </div>
 
-<p>Looking down on a decagon is geometry. Looking along the helix is biology. I needed both views in my head, and I needed to know which images were real structure and which were illustration. The first photo below is a public-domain molecular model from the NIH: B-DNA in the centre panel, with visible base pairs and the sugar-phosphate backbone you can trace with your eyes. The second is an artist's render I commissioned to help me picture the spiral in space. Both serve different jobs. The NIH model shows what biochemistry actually measures. The render helps a non-lab reader imagine the turn.</p>
+<p>Looking straight down on Hoy's circular court and down the axis of B-DNA is where the match clicked for me. Side views of the molecule belong in a textbook. The ten-fold symmetry Curtis and Larsen describe lives in the axial view, the same vantage an engineer uses reading a site plan. The schematic beside the abstract decagon drawing below marks the ten vertices I am comparing.</p>
 
-<div class="photo-strip" aria-label="Real B-DNA structure and helix visualization">
-  <img src="blog-assets/dna-tabernacle/b-dna-nhgri-structure.png" alt="NIH molecular model showing A-DNA, B-DNA with visible base pairs, and Z-DNA side by side" loading="lazy">
-  <img src="blog-assets/dna-tabernacle/dna-double-helix-nhgri.jpg" alt="Public-domain NIH photograph of the DNA double helix structure" loading="lazy">
-  <img src="blog-assets/dna-tabernacle/dna-double-helix-render.jpg" alt="Illustrated render of the B-DNA double helix showing the spiral and base-pair ladder" loading="lazy">
+<div class="structure-diagram" aria-label="Ten-fold symmetry Tabernacle and DNA">
+  <img src="dna-tabernacle-tenfold.svg?v=4" alt="Side by side decagon floor plan of Tabernacle and axial decagon of B-DNA with ten-fold symmetry labels" loading="lazy" width="960" height="420">
 </div>
 
 <p>Curtis does not discard the double helix. He revises how purine and pyrimidine pentagons sit at the heart of base pairing so the geometry can replicate without topological knots Watson and Crick's diagrams struggled with. He cites Hoogsteen's 1959 crystallography and Robert Root-Bernstein's 1996 question, <em>Do we have the structure of DNA right?</em> Mainstream biochemistry still teaches the 1953 model in every textbook. Curtis and Larsen work outside that consensus. I cite them because the overlaps with Sinai are too precise to ignore, not because this site claims to overturn molecular biology in a blog post.</p>
@@ -103,15 +106,15 @@ const POSTS = [
 <p>In the figure, the Tabernacle moves from outer court through the holy place to the Ark at centre. The cell moves from membrane through cytoplasm to the nucleus where DNA sits. Graded sanctity on one side, graded access on the other.</p>
 
 <div class="structure-diagram" aria-label="Three zones Tabernacle and cell">
-  <img src="dna-tabernacle-zones.svg?v=3" alt="Nested zones: Tabernacle outer court holy place and most holy place compared to cell membrane cytoplasm and nucleus" loading="lazy" width="960" height="520">
+  <img src="dna-tabernacle-zones.svg?v=4" alt="Nested zones: Tabernacle outer court holy place and most holy place compared to cell membrane cytoplasm and nucleus" loading="lazy" width="960" height="520">
 </div>
 
 <p>Nesting circles on a diagram taught me the logic. A cross-section of a real cell taught me the weight of it. Membrane as boundary. Organelles as daily service. Nucleus as the guarded archive where chromatin sits like tablets behind a veil. Beside that, the Ark replica from Timna: gold mercy seat, no image, presence at centre. I am not saying the cell <em>is</em> a photograph of the Tabernacle. I am saying Paul had something structural in mind when he called your body a temple, and these two images help me feel why.</p>
 
-<div class="photo-strip" aria-label="Living cell cross-section and Ark at centre">
+<div class="photo-strip photo-strip--duo" aria-label="Living cell cross-section and Ark at centre">
   <img src="blog-assets/dna-tabernacle/cell-nucleus-cross-section.jpg" alt="Cross-section illustration of a cell showing membrane, cytoplasm, organelles, and nucleus with DNA" loading="lazy">
   <img src="blog-assets/temple-parallel-photos/01-ark-timna-replica.jpg" alt="Replica of the Ark of the Covenant with mercy seat at Timna Tabernacle model" loading="lazy">
-  <img src="blog-assets/temple-parallel-photos/01-tabernacle-timna-court.jpg" alt="Tabernacle outer court with altar and laver at Timna reconstruction" loading="lazy">
+  <figcaption>Cell cross-section beside the Ark replica: graded access from outer boundary to guarded centre.</figcaption>
 </div>
 
 <p>John 1:14 says the Word <strong>dwelt</strong> among us. The Greek is <em>eskēnōsen</em>, tabernacled. John 2:19–21 identifies the temple with Yeshua's body. Paul extends the language to believers: <strong>your body is the temple of the Holy Spirit</strong> (1 Corinthians 6:19). Exodus 40:34–35 describes Glory filling the completed Tabernacle. The parallel is not decorative. Outer approaches, priestly service, one guarded centre where the testimony lives.</p>

@@ -360,6 +360,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .post-body .photo-strip img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px;box-shadow:0 8px 28px rgba(23,42,54,0.12);}
 .post-body .photo-strip figcaption{grid-column:1/-1;font-size:0.72rem;color:var(--text-muted);}
 .post-body .photo-strip--duo{grid-template-columns:1fr 1fr;}
+.post-body .photo-strip--solo{grid-template-columns:1fr;}
 .post-body .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:0.5px solid var(--border);margin:2rem 0;border-radius:4px;overflow:hidden;}
 .post-body .compare-col{background:var(--surface);padding:1.3rem 1.5rem;}
 .post-body .compare-col h4{font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem;font-weight:500;}
@@ -378,6 +379,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .post-body .minimal-design > img,.post-body .structure-diagram img{width:100%;height:auto;display:block;border-radius:6px;border:0.5px solid var(--border-subtle);background:#fff;}
 .post-body .structure-diagram{margin:2.5rem 0 2rem;padding:1.6rem;background:var(--surface-light);border:1.5px solid var(--gold);border-radius:8px;box-shadow:0 8px 32px rgba(23,42,54,0.1);}
 .post-body .structure-diagram .structure-diagram-label{font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:0.9rem;text-align:center;}
+.post-body .structure-diagram figcaption{margin-top:0.75rem;font-size:0.72rem;color:var(--text-muted);text-align:center;line-height:1.5;}
 .post-body .minimal-design .minimal-cap{font-size:0.76rem;color:var(--text-muted);text-align:center;margin-top:0.4rem;font-style:italic;}
 .post-body .structure-diagram .minimal-cap{margin-top:1rem;font-size:0.82rem;color:var(--text-secondary);font-style:normal;line-height:1.65;}
 .post-body .hero-diagram{margin:0 0 2.5rem;padding:1.6rem;background:var(--surface-light);border:1.5px solid var(--gold);border-radius:8px;box-shadow:0 8px 32px rgba(23,42,54,0.1);}
@@ -391,7 +393,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .post-body .editorial-label{font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.7rem;font-weight:500;}
 .post-body .editorial p{font-size:0.88rem;color:var(--text-secondary);line-height:1.85;margin:0;}
 @media(max-width:800px){
-  .post-body .visual-compare,.post-body .compare-grid,.post-body .minimal-design .diagram-row,.post-body .photo-strip,.post-body .photo-strip--duo{grid-template-columns:1fr;}
+  .post-body .visual-compare,.post-body .compare-grid,.post-body .minimal-design .diagram-row,.post-body .photo-strip,.post-body .photo-strip--duo,.post-body .photo-strip--solo{grid-template-columns:1fr;}
   .post-body .visual-panel{min-height:240px;}
   .post-body .visual-panel img{min-height:240px;}
 }
@@ -520,7 +522,7 @@ function ljsRespond(choice) {
   }
 }
 </script>
-<script src="posts.js?v=39"></script>
+<script src="posts.js?v=40"></script>
 <script>
 var params = new URLSearchParams(window.location.search);
 var postId = params.get('id');
