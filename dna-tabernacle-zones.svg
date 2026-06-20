@@ -3,10 +3,10 @@
   <title>Three zones: Tabernacle graded sanctity and cell structure</title>
   <rect width="960" height="520" fill="#FFFFFF"/>
   <rect x="12" y="12" width="936" height="496" rx="8" fill="#EEF4F7" stroke="#172A36" stroke-width="1.5"/>
-  <text x="480" y="40" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#172A36">THREE ZONES INWARD</text>
+  <text x="480" y="40" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="600" fill="#172A36">Outer court to Holy of Holies, membrane to nucleus</text>
   <line x1="480" y1="52" x2="480" y2="480" stroke="#172A36" stroke-width="1" opacity="0.2"/>
 
-  <text x="240" y="68" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#8B6914">TABERNACLE DECAGON (~1400 BC)</text>
+  <text x="240" y="68" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#8B6914">~1400 BC · Tabernacle zones</text>
   <polygon points="240.0,80.0 337.0,111.5 396.9,194.0 396.9,296.0 337.0,378.5 240.0,410.0 143.0,378.5 83.1,296.0 83.1,194.0 143.0,111.5" fill="#FFF" stroke="#172A36" stroke-width="1" opacity="0.5"/>
   <text x="240" y="92" text-anchor="middle" font-size="7" fill="#47545B">Outer Court</text>
   <polygon points="240.0,130.0 307.6,152.0 349.4,209.5 349.4,280.5 307.6,338.0 240.0,360.0 172.4,338.0 130.6,280.5 130.6,209.5 172.4,152.0" fill="rgba(139,105,20,0.06)" stroke="#8B6914" stroke-width="1.2"/>
@@ -17,7 +17,7 @@
   <text x="240" y="249" text-anchor="middle" font-size="7" font-weight="700" fill="#172A36">Ark</text>
   <text x="240" y="430" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">decagon court → priestly hall → Ark at centre</text>
 
-  <text x="720" y="68" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#5B8DB8">LIVING CELL</text>
+  <text x="720" y="68" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#5B8DB8">Living cell</text>
   <circle cx="720" cy="245" r="150" fill="#FFF" stroke="#5B8DB8" stroke-width="1.5"/>
   <text x="720" y="108" text-anchor="middle" font-size="7" fill="#47545B">cell membrane (Outer Court)</text>
   <circle cx="720" cy="245" r="95" fill="rgba(91,141,184,0.08)" stroke="#5B8DB8" stroke-width="1.2"/>
@@ -27,6 +27,4 @@
   <text x="720" y="254" text-anchor="middle" font-size="6" fill="#47545B">DNA · chromatin</text>
   <text x="720" y="430" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">membrane → metabolism → genome at centre</text>
 
-  <text x="480" y="475" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#172A36">Paul: your body is the temple of the Holy Spirit (1 Corinthians 6:19)</text>
-  <text x="480" y="494" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-style="italic" fill="#47545B">graded access · information guarded at the centre · Spirit as indwelling Glory</text>
 </svg>

@@ -25,13 +25,13 @@ const POSTS = [
     excerpt: "Project314 recovered a decagonal, π-scaled Tabernacle from Exodus. B-DNA carries ten-fold symmetry in the molecule that stores life's text. I do not think Paul was speaking in metaphor when he called the body God's temple.",
     content: `
 <p class="opening">
-  I had read Exodus before, but I had never <strong>engineered</strong> it. When I opened <a href="https://project314.org/learn-about/tabernacle-discovery" target="_blank" rel="noopener">Project314.org</a> and followed Andrew Hoy's curtain inventory in Exodus 26, the eleven goat-hair sheets stopped being Bible craft and became a specification. Join them short-edge to short-edge, exactly as the Hebrew specifies, and the math closes at <strong>314 cubits</strong>, π scaled to a hundred. The courtyard Moses measured as 100 cubits long and 50 cubits wide resolves as a <strong>circle</strong>, diameter and radius, not a mis-drawn rectangle. <a href="https://www.renformation.com/" target="_blank" rel="noopener">Renformation.com</a> pushed the same question further through Project Arc: what if the dwellings God prescribed were built with <strong>nonlinear</strong> grammar all along, and the shoebox Tabernacle was tradition's mistake, not Moses' pattern? Then I read Mark E. Curtis on <strong>ten pentagons about a decagon</strong> as the only geometry that satisfies DNA's known ratios, and Stuart Larsen's 2021 paper in <em>Symmetry</em> showing <strong>ten-fold symmetry and φ (phi)</strong> in the axial structure of B-DNA. Ten sides on the tent. Ten bases in a turn. Thirty-six degrees per step in both systems, because thirty-six is π/5 radians, the language of pentagons. I kept returning to Paul, who did not write that your body is <em>like</em> a temple. He wrote that it <strong>is</strong> the temple of the Holy Spirit. After this reading, I do not think he was being poetic. I think he was pointing at the same pattern Moses saw on the mountain, written again in the fabric of the living.
+  I had read Exodus before, but I had never <strong>engineered</strong> it. When I opened <a href="https://project314.org/learn-about/tabernacle-discovery" target="_blank" rel="noopener">Project314.org</a> and followed Andrew Hoy's curtain inventory in Exodus 26, the eleven goat-hair sheets stopped being Bible craft and became a specification. Join them short-edge to short-edge, exactly as the Hebrew specifies, and the math closes at <strong>314 cubits</strong>, π scaled to a hundred. The courtyard Moses measured as 100 cubits long and 50 cubits wide resolves as a <strong>circle</strong>, diameter and radius, not a mis-drawn rectangle. <a href="https://www.renformation.com/" target="_blank" rel="noopener">Renformation.com</a> pushed the same question through Project Arc: what if the dwellings God prescribed were circular and decagonal all along, and the shoebox Tabernacle was tradition's mistake, not Moses' pattern? Then I read Mark E. Curtis on <strong>ten pentagons about a decagon</strong> as the only geometry that satisfies DNA's known ratios, and Stuart Larsen's 2021 paper in <em>Symmetry</em> showing <strong>ten-fold symmetry and φ (phi)</strong> in the axial structure of B-DNA. Ten sides on the tent. Ten bases in a turn. Thirty-six degrees per step in both systems, because thirty-six is π/5 radians, the angle built into pentagons. I kept returning to Paul, who did not write that your body is <em>like</em> a temple. He wrote that it <strong>is</strong> the temple of the Holy Spirit. After this reading, I do not think he was being poetic. I think he was pointing at the same pattern Moses saw on the mountain, written again in the fabric of the living.
 </p>
 
+<p>The diagram below is how I picture the scale of it. The outer ring is the pattern shown on the mount before Sinai. Inside that sits the wilderness Tabernacle as Hoy models it, a decagon dome with a π-scaled court around ~1400 BC. At the centre of the same drawing, one turn of B-DNA: ten bases, thirty-six degrees of rotation each, the axial view Curtis and Larsen describe from 1953 through 2021.</p>
+
 <div class="structure-diagram" aria-label="Three scales of dwelling: heaven, Tabernacle, DNA">
-  <p class="structure-diagram-label">Three scales · one grammar</p>
-  <img src="dna-tabernacle-three-scales.svg?v=2" alt="Nested diagram: heavenly pattern, wilderness Tabernacle decagon (~1400 BC), and B-DNA axial decagon with ten-fold symmetry" loading="eager" decoding="async" width="960" height="520">
-  <p class="minimal-cap"><strong>Outer:</strong> pattern shown on the mount (before ~1400 BC). <strong>Middle:</strong> decagon dome, π-scaled court (Exodus ~1400 BC). <strong>Inner:</strong> ten bases per turn, 36° rotation, φ structure (B-DNA, described 1953–2021).</p>
+  <img src="dna-tabernacle-three-scales.svg?v=3" alt="Nested diagram: heavenly pattern, wilderness Tabernacle decagon (~1400 BC), and B-DNA axial decagon with ten-fold symmetry" loading="eager" decoding="async" width="960" height="520">
 </div>
 
 <div class="editorial">
@@ -41,45 +41,46 @@ const POSTS = [
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<h2 class="article-part-title"><span class="article-part-label">Part 1</span>The 314 Key and the Circular Court</h2>
+<h2>When the curtain math closed at 314</h2>
 
-<p>Andrew Hoy describes his discovery as providential, not planned. He was not hunting for a round Tabernacle. He was inventorying curtain dimensions in Exodus 26:7–13 when the numbers refused to stay rectangular. Eleven sheets, each 30 cubits long, loops on <strong>both</strong> edges, the sixth doubled at the front. Join them the way commentaries usually do, long-edge to long-edge, and you get a flat panel with <strong>unconnected edges</strong>, which violates the text. Join them short-edge to short-edge and you get a strip whose circumference is:</p>
-
-<p class="visual-summary">(30 × 11) − (30 ÷ 2) − 1 = <strong>314 cubits</strong> ≈ π × 100</p>
+<p>Andrew Hoy describes his discovery as providential, not planned. He was not hunting for a round Tabernacle. He was inventorying curtain dimensions in Exodus 26:7–13 when the numbers refused to stay rectangular. Eleven sheets, each 30 cubits long, loops on <strong>both</strong> edges, the sixth doubled at the front. Join them the way commentaries usually do, long-edge to long-edge, and you get a flat panel with <strong>unconnected edges</strong>, which violates the text. Join them short-edge to short-edge and the circumference works out to (30 × 11) − (30 ÷ 2) − 1, which is <strong>314 cubits</strong>, essentially π × 100.</p>
 
 <p>Hoy calls that the <strong>Rosetta Stone</strong> of Moses' Tabernacle plans. Once the court is circular, Exodus 27 reads differently: 100 cubits "long" becomes diameter, north and south halves 50 cubits "wide" become radius. The eleven curtains wrap the perimeter like a snow fence around the dwelling. Our <a href="project314.html">God of Pi study page</a> walks through the engineering diagrams; I will not repeat every slide here, but the point that stopped me cold is simple. The most accurate ancient approximation of π known to the ancient world sits in the <strong>fabric measurements</strong> of Exodus, not in a Greek textbook centuries later.</p>
 
+<p>On the left of the next figure you see that cylindrical curtain assembly at 314 cubits. On the right, one helical turn of canonical B-DNA: roughly 34Å pitch, roughly 21Å width, ten bases completing 360°. Different materials, same kind of circular measure.</p>
+
 <div class="structure-diagram" aria-label="Pi and circular measure: 314 cubits and DNA helical turn">
-  <img src="dna-tabernacle-pi-314.svg?v=2" alt="Comparison: Exodus curtain cylinder 314 cubits circumference and DNA helical turn with pitch and width measures" loading="lazy" width="960" height="380">
-  <p class="minimal-cap"><strong>Left:</strong> cylindrical curtain assembly, 314 cubits (Project314). <strong>Right:</strong> one helical turn, ~34Å pitch, ~21Å width, ten bases per 360° (canonical B-DNA).</p>
+  <img src="dna-tabernacle-pi-314.svg?v=3" alt="Comparison: Exodus curtain cylinder 314 cubits circumference and DNA helical turn with pitch and width measures" loading="lazy" width="960" height="380">
 </div>
 
-<p>From that cylinder logic the dwelling itself resolves as a <strong>decagon dome</strong>, yurt-like, roughly six stories in Hoy's scale models, with acacia and silver serving as struts rather than ground posts. Rectangular models, Hoy argues, need more silver than Exodus allows and leave curtains bunched, unsecured, or dragging. I am not asking you to accept this because an engineer said so. I am asking you to weigh whether forcing a rectangle onto Exodus is faithful exegesis, or whether the text has been reading us through tradition's lens. Project Arc at Renformation puts the interior difference starkly: roughly <strong>750 sq ft</strong> in the rectangular tradition versus roughly <strong>13,000 sq ft</strong> in the nonlinear model on their site. Context, they say, determines geometry. The measurements never changed. Our assumptions may have.</p>
+<p>From that cylinder logic the dwelling itself resolves as a <strong>decagon dome</strong>, yurt-like, roughly six stories in Hoy's scale models, with acacia and silver serving as struts rather than ground posts. Rectangular models, Hoy argues, need more silver than Exodus allows and leave curtains bunched, unsecured, or dragging. I am not asking you to accept this because an engineer said so. I am asking you to weigh whether forcing a rectangle onto Exodus is faithful exegesis, or whether the text has been reading us through tradition's lens. Project Arc at Renformation puts the interior difference starkly: roughly <strong>750 sq ft</strong> in the rectangular tradition versus roughly <strong>13,000 sq ft</strong> in the circular decagonal model on their site. The measurements in Exodus never changed. Our assumptions may have.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<h2 class="article-part-title"><span class="article-part-label">Part 2</span>Ten, the Decagon, and the Helix</h2>
+<h2>Why ten kept showing up</h2>
 
 <p>Once I accepted the circular court, the number <strong>ten</strong> kept returning. Hoy's dwelling is a <strong>decagon</strong>, ten-sided, similar to a Mongolian yurt. Curtis, working as an artist with compass and scale drawings in 1995, found that among all polygonal helix constructions, only <strong>ten regular pentagons oriented about a decagon</strong> satisfies the dimensional ratios of the double helix: diameter ~20Å, base height ~3.4Å, extension ~34Å per turn, <strong>ten bases</strong>, <strong>36°</strong> rotation each. Larsen's peer-reviewed work confirms the axial view: canonical B-DNA completes one rotation every ten base pairs, and that decagonal symmetry relates to the golden ratio through pentagon geometry. The base angle of a golden triangle is <strong>36°</strong>. That is (π/5) radians. Ten steps of 36° close the circle.</p>
 
+<p>The drawing places Hoy's Tabernacle decagon beside the axial decagon Curtis and Larsen describe. Same count of sides on the tent floor plan and on the molecule's cross-section when you look down the helix.</p>
+
 <div class="structure-diagram" aria-label="Ten-fold symmetry Tabernacle and DNA">
-  <img src="dna-tabernacle-tenfold.svg?v=2" alt="Side by side decagon floor plan of Tabernacle and axial decagon of B-DNA with ten-fold symmetry labels" loading="lazy" width="960" height="420">
-  <p class="minimal-cap">Tabernacle decagon (~1400 BC, Project314) · B-DNA axial decagon (Curtis 1997, Larsen 2021) · same structural number: <strong>10</strong>.</p>
+  <img src="dna-tabernacle-tenfold.svg?v=3" alt="Side by side decagon floor plan of Tabernacle and axial decagon of B-DNA with ten-fold symmetry labels" loading="lazy" width="960" height="420">
 </div>
 
 <p>Curtis does not discard the double helix. He revises how purine and pyrimidine pentagons sit at the heart of base pairing so the geometry can replicate without topological knots Watson and Crick's diagrams struggled with. He cites Hoogsteen's 1959 crystallography and Robert Root-Bernstein's 1996 question, <em>Do we have the structure of DNA right?</em> Mainstream biochemistry still teaches the 1953 model in every textbook. Curtis and Larsen work outside that consensus. I cite them because the overlaps with Sinai are too precise to ignore, not because this site claims to overturn molecular biology in a blog post.</p>
 
-<p>Larsen measured three independent convergences toward φ in B-DNA: the ratio of one turn's length to width (33.750:20.978 ≈ 1.609, within 0.5% of φ), the spacing of the two helices via phosphorus atoms (within 1.4% of φ), and the axial template of <strong>ten golden diamonds</strong> overlaying the molecule. If φ appeared once, you could call it chance. Three independent measures, he argues, suggest a mechanism. What mechanism remains open. That the information molecule converges toward the same mathematical family as pentagonal/decagonal architecture is, at minimum, a reason to pause.</p>
+<p>Larsen measured three independent convergences toward φ in B-DNA: the ratio of one turn's length to width (33.750:20.978 ≈ 1.609, within 0.5% of φ), the spacing of the two helices via phosphorus atoms (within 1.4% of φ), and the axial template of <strong>ten golden diamonds</strong> overlaying the molecule. If φ appeared once, you could call it chance. Three independent measures, he argues, suggest a mechanism. What mechanism remains open. That the information molecule converges toward the same mathematical family as pentagonal and decagonal architecture is, at minimum, a reason to pause.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<h2 class="article-part-title"><span class="article-part-label">Part 3</span>Three Zones: Tent, Cell, Body</h2>
+<h2>The same journey inward</h2>
 
-<p>Hebrews 8:5 calls the earthly sanctuary a <strong>copy and shadow</strong> of heavenly things. My earlier <a href="blog.html?id=sacred-architecture-vedic-hebrew-temple-parallels">temple-parallels article</a> traced the three-room skeleton outward, Outer Court, Holy Place, Holy of Holies. This study pushes the same grammar <strong>inward</strong>, into biology, because Scripture already does.</p>
+<p>Hebrews 8:5 calls the earthly sanctuary a <strong>copy and shadow</strong> of heavenly things. My earlier <a href="blog.html?id=sacred-architecture-vedic-hebrew-temple-parallels">temple-parallels article</a> traced the three-room skeleton outward, Outer Court, Holy Place, Holy of Holies. Here I follow that same movement <strong>inward</strong>, into biology, because Scripture already does.</p>
+
+<p>In the figure, the Tabernacle moves from outer court through the holy place to the Ark at centre. The cell moves from membrane through cytoplasm to the nucleus where DNA sits. Graded sanctity on one side, graded access on the other.</p>
 
 <div class="structure-diagram" aria-label="Three zones Tabernacle and cell">
-  <img src="dna-tabernacle-zones.svg?v=2" alt="Nested zones: Tabernacle outer court holy place and most holy place compared to cell membrane cytoplasm and nucleus" loading="lazy" width="960" height="520">
-  <p class="minimal-cap"><strong>Left:</strong> graded sanctity toward the Ark. <strong>Right:</strong> membrane, organelles, nucleus with DNA at centre. Same journey inward.</p>
+  <img src="dna-tabernacle-zones.svg?v=3" alt="Nested zones: Tabernacle outer court holy place and most holy place compared to cell membrane cytoplasm and nucleus" loading="lazy" width="960" height="520">
 </div>
 
 <p>John 1:14 says the Word <strong>dwelt</strong> among us. The Greek is <em>eskēnōsen</em>, tabernacled. John 2:19–21 identifies the temple with Yeshua's body. Paul extends the language to believers: <strong>your body is the temple of the Holy Spirit</strong> (1 Corinthians 6:19). Exodus 40:34–35 describes Glory filling the completed Tabernacle. The parallel is not decorative. Outer approaches, priestly service, one guarded centre where the testimony lives.</p>
@@ -103,7 +104,7 @@ const POSTS = [
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<h2 class="article-part-title"><span class="article-part-label">Part 4</span>Word, Frequency, Receptor and Host</h2>
+<h2>Speech, frequency, and the body as host</h2>
 
 <p>Genesis 1 ties creation to <strong>speech</strong>. Form follows command. That is theological cymatics before Hans Jenny gave the visible patterns a name: frequency organizing matter into geometry. In 1988 composer Susan Alexjander asked cell biologist David Deamer whether biology is harmonically ordered. They measured the <strong>infrared absorption frequencies</strong> of adenine, cytosine, guanine, and thymine with a spectrophotometer, converted wavenumbers to audible ratios, and built microtonal scales for the album <em>Sequencia</em> (1990). These were not arbitrary pitch assignments. They were ratios taken from the molecular realm. Alexjander reported that listeners sometimes responded as if the body recognized its own patterns through resonance.</p>
 
@@ -118,23 +119,20 @@ const POSTS = [
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<h2 class="article-part-title"><span class="article-part-label">Part 5</span>What This Article Does Not Claim</h2>
+<h2>Where I land, and what I will not claim</h2>
 
-<p>I owe you honesty before the coincidence question. Curtis's decagon model is not the consensus textbook structure; it is a geometric revision with internal coherence and a cool reception from establishment biochemistry. Larsen shows approximations to φ, not proof that God used a compass in the laboratory. Hoy's circular Tabernacle has critics who read Exodus 38 as a strict rectangle. I find Hoy more faithful to the whole curtain text, but I will not pretend the debate is settled. Deamer and Alexjander measured real frequencies; mapping them to healing claims beyond their paper is my boundary. This article claims that Scripture ties dwelling, body, and Spirit together at every scale, and that the numeric and geometric echoes between Sinai and the genome deserve weight in that light.</p>
+<p>Curtis's decagon model is not the consensus textbook structure. It is a geometric revision with internal coherence and a cool reception from establishment biochemistry. Larsen shows approximations to φ, not proof that God used a compass in the laboratory. Hoy's circular Tabernacle has critics who read Exodus 38 as a strict rectangle. I find Hoy more faithful to the whole curtain text, but I will not pretend the debate is settled. Deamer and Alexjander measured real frequencies; mapping them to healing claims beyond their paper is where I stop. What I am willing to say is that Scripture ties dwelling, body, and Spirit together at every scale, and that the numeric and geometric echoes between Sinai and the genome deserve weight in that light.</p>
 
 <div class="photo-strip" aria-label="Tabernacle decagon model from Project314">
   <img src="blog-assets/temple-parallel-photos/01-tabernacle-decagon.jpg" alt="Tabernacle decagon layout: concentric graded sanctity toward the Holy of Holies" loading="lazy">
-  <figcaption>Project314 decagon model · the same study hub that led me to the genome comparison</figcaption>
 </div>
 
-<p>Project314 lists among its research scope <strong>biological and spiritual parallels</strong>. I think that scope was understated. The parallel is not a footnote. It may be the point Paul was naming when he called your body God's temple.</p>
+<p>Project314's decagon model is the same study hub that led me from curtain inventory to genome comparison. They list <strong>biological and spiritual parallels</strong> among their research scope. I think that scope was understated. The parallel is not a footnote. It may be the point Paul was naming when he called your body God's temple.</p>
 
-<h2>Sources I relied on</h2>
-
-<p><a href="https://project314.org/learn-about/tabernacle-discovery" target="_blank" rel="noopener">Project314, Tabernacle Discovery</a> · <a href="https://project314.org/learn-about/tabernacle-projects" target="_blank" rel="noopener">Project314, Tabernacle Projects</a> · <a href="https://www.renformation.com/" target="_blank" rel="noopener">Renformation, Project Arc</a> · <a href="https://curtisdna.com/markecurtis_dna_art_geometry/DNA_geometry.html" target="_blank" rel="noopener">Mark E. Curtis, DNA geometry</a> · <a href="https://doi.org/10.3390/sym13101949" target="_blank" rel="noopener">Stuart Larsen, Symmetry 2021</a> · <a href="https://oursounduniverse.com/infraredfrequencies/" target="_blank" rel="noopener">Deamer &amp; Alexjander, infrared DNA frequencies</a> · <a href="https://opentheword.org/2016/08/24/will-the-real-tabernacle-of-moses-please-stand-up/" target="_blank" rel="noopener">OpenTheWord, Hoy summary</a></p>
+<p>I drew from <a href="https://project314.org/learn-about/tabernacle-discovery" target="_blank" rel="noopener">Project314's Tabernacle Discovery</a>, their <a href="https://project314.org/learn-about/tabernacle-projects" target="_blank" rel="noopener">Tabernacle Projects</a>, <a href="https://www.renformation.com/" target="_blank" rel="noopener">Renformation's Project Arc</a>, <a href="https://curtisdna.com/markecurtis_dna_art_geometry/DNA_geometry.html" target="_blank" rel="noopener">Mark E. Curtis's DNA geometry work</a>, <a href="https://doi.org/10.3390/sym13101949" target="_blank" rel="noopener">Stuart Larsen's 2021 <em>Symmetry</em> paper</a>, <a href="https://oursounduniverse.com/infraredfrequencies/" target="_blank" rel="noopener">Deamer and Alexjander on infrared DNA frequencies</a>, and an <a href="https://opentheword.org/2016/08/24/will-the-real-tabernacle-of-moses-please-stand-up/" target="_blank" rel="noopener">OpenTheWord summary of Hoy's discovery</a>.</p>
 
 <div class="coincidence-question">
-  <p>Sinai's tent was decagonal, π-scaled, and three-zoned before anyone modeled DNA in a laboratory. B-DNA carries ten-fold symmetry and golden-ratio structure in the information molecule itself. Paul said your body is the temple of the Holy Ghost, not that it resembles one. What percentage of that overlap are you willing to call accident, and what does it mean for how you treat the dwelling you carry every day?</p>
+  <p>Sinai's tent was decagonal and π-scaled long before anyone modeled DNA in a laboratory. The information molecule carries ten-fold symmetry and golden-ratio structure in peer-reviewed work. Paul did not say your body resembles a temple. He said it is the temple of the Holy Ghost. What percentage of that overlap are you willing to call coincidence? And if even part of it is pattern, not accident, what does that mean for how you treat the dwelling you carry every day?</p>
 </div>
 
 <p>This study continues the thread of our <a href="project314.html">God of Pi</a> page and the <a href="blog.html?id=sacred-architecture-vedic-hebrew-temple-parallels">temple-parallels article</a>. If the pattern was shown on the mount, copied in the wilderness, written into the genome, and fulfilled in Messiah's body, then defiling the temple is not only an Old Testament concern. It is a present one.</p>

@@ -69,25 +69,22 @@ def three_scales():
   <title>Three scales of dwelling: heavenly pattern, Tabernacle, DNA decagon</title>
   <rect width="{w}" height="{h}" fill="#FFFFFF"/>
   <rect x="16" y="16" width="{w-32}" height="{h-32}" rx="10" fill="{BG}" stroke="{INK}" stroke-width="2"/>
-  <text x="{w//2}" y="48" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="0.12em" fill="{INK}">THREE SCALES OF DWELLING</text>
-  <text x="{w//2}" y="68" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="{MUTED}">Regular decagons · 10 sides · 36° between vertices</text>
+  <text x="{w//2}" y="48" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="600" fill="{INK}">Pattern on the mount, tent at Sinai, turn in the helix</text>
+  <text x="{w//2}" y="66" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="{MUTED}">Each ring is a regular decagon (10 sides, 36° between vertices)</text>
 
   <circle cx="480" cy="268" r="210" fill="none" stroke="{INK}" stroke-width="1.5" opacity="0.25" stroke-dasharray="8 6"/>
-  <text x="480" y="88" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="{MUTED}">HEAVENLY PATTERN · before ~1400 BC</text>
+  <text x="480" y="88" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">before ~1400 BC · heavenly pattern</text>
 
   {tab_dec}
-  <text x="480" y="118" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="{GOLD}">WILDERNESS TABERNACLE DECAGON · ~1400 BC</text>
+  <text x="480" y="118" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{GOLD}">~1400 BC · wilderness Tabernacle (Project314 model)</text>
 
   {dna_dec}
   {dna_spokes}
   <circle cx="480" cy="268" r="22" fill="none" stroke="{ACCENT}" stroke-width="1.2" opacity="0.6"/>
   <text x="480" y="262" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="{ACCENT}">10</text>
-  <text x="480" y="278" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="{MUTED}">bases / turn</text>
-  <text x="480" y="368" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="{ACCENT}">B-DNA AXIAL DECAGON</text>
-  <text x="480" y="382" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">10 vertices · 36° per base · φ ratios · 1953–2021</text>
-
-  <text x="480" y="455" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-style="italic" fill="{MUTED}">Hebrews 8:5 shadow · Exodus copy · genome as living text</text>
-  <text x="480" y="478" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">1 Corinthians 6:19 · your body is the temple of the Holy Spirit</text>
+  <text x="480" y="278" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="{MUTED}">bases per turn</text>
+  <text x="480" y="368" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{ACCENT}">B-DNA axial view · 1953–2021</text>
+  <text x="480" y="382" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">Larsen 2021 · Curtis 1997</text>
 </svg>'''
     write("dna-tabernacle-three-scales.svg", body)
 
@@ -103,11 +100,11 @@ def tenfold():
   <title>Ten-fold symmetry: Tabernacle decagon and DNA axial decagon</title>
   <rect width="{w}" height="{h}" fill="#FFFFFF"/>
   <rect x="12" y="12" width="{w-24}" height="{h-24}" rx="8" fill="{BG}" stroke="{INK}" stroke-width="1.5"/>
-  <text x="{w//2}" y="40" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="0.1em" fill="{INK}">TEN AS STRUCTURAL GRAMMAR</text>
-  <text x="{w//2}" y="56" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="{MUTED}">Each shape is a regular decagon · 10 sides · 10 vertices</text>
+  <text x="{w//2}" y="40" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="600" fill="{INK}">Ten sides on the tent, ten bases in one turn</text>
+  <text x="{w//2}" y="56" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="{MUTED}">Regular decagons, 10 vertices marked</text>
   <line x1="{w//2}" y1="64" x2="{w//2}" y2="{h-40}" stroke="{INK}" stroke-width="1" opacity="0.2"/>
 
-  <text x="240" y="82" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="{GOLD}">TABERNACLE DECAGON (~1400 BC)</text>
+  <text x="240" y="82" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{GOLD}">~1400 BC · Tabernacle decagon</text>
   {left_dec}
   {left_spokes}
   <circle cx="240" cy="195" r="16" fill="none" stroke="{INK}" stroke-width="1"/>
@@ -115,15 +112,14 @@ def tenfold():
   <text x="240" y="310" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">Andrew Hoy · Project314 · yurt dome</text>
   <text x="240" y="324" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">ten-sided dwelling · six stories (model)</text>
 
-  <text x="720" y="82" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="{ACCENT}">B-DNA AXIAL DECAGON</text>
+  <text x="720" y="82" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{ACCENT}">B-DNA axial decagon</text>
   {right_dec}
   {right_spokes}
   <text x="720" y="199" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="{ACCENT}">10</text>
   <text x="720" y="310" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">10 base pairs · 36° rotation each</text>
   <text x="720" y="324" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">Curtis 1997 · Larsen Symmetry 2021</text>
 
-  <text x="{w//2}" y="360" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="{INK}">360° ÷ 10 = 36° · π/5 radians · golden-triangle angle</text>
-  <text x="{w//2}" y="378" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-style="italic" fill="{MUTED}">Sinai precedes the laboratory by more than three millennia</text>
+  <text x="{w//2}" y="368" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="{INK}">360° ÷ 10 = 36° (π/5 radians)</text>
 </svg>'''
     write("dna-tabernacle-tenfold.svg", body)
 
@@ -137,10 +133,10 @@ def pi_314():
   <title>314 cubits and helical circle: pi in Tabernacle curtains and DNA turn</title>
   <rect width="{w}" height="{h}" fill="#FFFFFF"/>
   <rect x="12" y="12" width="{w-24}" height="{h-24}" rx="8" fill="{BG}" stroke="{INK}" stroke-width="1.5"/>
-  <text x="{w//2}" y="40" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="{INK}">π AND CIRCULAR MEASURE</text>
+  <text x="{w//2}" y="40" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="600" fill="{INK}">314 cubits in Exodus curtains, one turn in the helix</text>
   <line x1="{w//2}" y1="52" x2="{w//2}" y2="{h-36}" stroke="{INK}" stroke-width="1" opacity="0.2"/>
 
-  <text x="240" y="72" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="{GOLD}">EXODUS CURTAIN CYLINDER</text>
+  <text x="240" y="72" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{GOLD}">Exodus 26–27 · curtain cylinder</text>
   <ellipse cx="240" cy="200" rx="90" ry="28" fill="none" stroke="{GOLD}" stroke-width="2"/>
   <line x1="150" y1="200" x2="150" y2="280" stroke="{GOLD}" stroke-width="1.5"/>
   <line x1="330" y1="200" x2="330" y2="280" stroke="{GOLD}" stroke-width="1.5"/>
@@ -150,7 +146,7 @@ def pi_314():
   <text x="240" y="310" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">(30×11) − (30÷2) − 1 = 314</text>
   <text x="240" y="324" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">π × 100 · court diameter 100 cubits</text>
 
-  <text x="720" y="72" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="{ACCENT}">DNA HELICAL TURN</text>
+  <text x="720" y="72" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{ACCENT}">Canonical B-DNA · one helical turn</text>
   <path d="M640 280 Q680 120 720 200 T800 280" fill="none" stroke="{ACCENT}" stroke-width="2.5"/>
   <path d="M640 300 Q680 140 720 220 T800 300" fill="none" stroke="{ACCENT}" stroke-width="2.5" opacity="0.5"/>
   {helix_dec}
@@ -159,7 +155,6 @@ def pi_314():
   <text x="720" y="310" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">10 bases per 360° turn</text>
   <text x="720" y="324" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">φ ratio length:width (Larsen 2021)</text>
 
-  <text x="{w//2}" y="358" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-style="italic" fill="{MUTED}">Circle encoded in linen before Greece named π · circle encoded in the information molecule</text>
 </svg>'''
     write("dna-tabernacle-pi-314.svg", body)
 
@@ -175,10 +170,10 @@ def zones():
   <title>Three zones: Tabernacle graded sanctity and cell structure</title>
   <rect width="{w}" height="{h}" fill="#FFFFFF"/>
   <rect x="12" y="12" width="{w-24}" height="{h-24}" rx="8" fill="{BG}" stroke="{INK}" stroke-width="1.5"/>
-  <text x="{w//2}" y="40" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="{INK}">THREE ZONES INWARD</text>
+  <text x="{w//2}" y="40" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="600" fill="{INK}">Outer court to Holy of Holies, membrane to nucleus</text>
   <line x1="{w//2}" y1="52" x2="{w//2}" y2="{h-40}" stroke="{INK}" stroke-width="1" opacity="0.2"/>
 
-  <text x="240" y="68" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="{GOLD}">TABERNACLE DECAGON (~1400 BC)</text>
+  <text x="240" y="68" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{GOLD}">~1400 BC · Tabernacle zones</text>
   <polygon points="{outer_pts}" fill="#FFF" stroke="{INK}" stroke-width="1" opacity="0.5"/>
   <text x="240" y="92" text-anchor="middle" font-size="7" fill="{MUTED}">Outer Court</text>
   <polygon points="{holy_pts}" fill="rgba(139,105,20,0.06)" stroke="{GOLD}" stroke-width="1.2"/>
@@ -189,7 +184,7 @@ def zones():
   <text x="240" y="249" text-anchor="middle" font-size="7" font-weight="700" fill="{INK}">Ark</text>
   <text x="240" y="430" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">decagon court → priestly hall → Ark at centre</text>
 
-  <text x="720" y="68" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="{ACCENT}">LIVING CELL</text>
+  <text x="720" y="68" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{ACCENT}">Living cell</text>
   <circle cx="720" cy="245" r="150" fill="#FFF" stroke="{ACCENT}" stroke-width="1.5"/>
   <text x="720" y="108" text-anchor="middle" font-size="7" fill="{MUTED}">cell membrane (Outer Court)</text>
   <circle cx="720" cy="245" r="95" fill="rgba(91,141,184,0.08)" stroke="{ACCENT}" stroke-width="1.2"/>
@@ -199,8 +194,6 @@ def zones():
   <text x="720" y="254" text-anchor="middle" font-size="6" fill="{MUTED}">DNA · chromatin</text>
   <text x="720" y="430" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">membrane → metabolism → genome at centre</text>
 
-  <text x="{w//2}" y="475" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="{INK}">Paul: your body is the temple of the Holy Spirit (1 Corinthians 6:19)</text>
-  <text x="{w//2}" y="494" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-style="italic" fill="{MUTED}">graded access · information guarded at the centre · Spirit as indwelling Glory</text>
 </svg>'''
     write("dna-tabernacle-zones.svg", body)
 

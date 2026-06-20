@@ -3,11 +3,11 @@
   <title>Three scales of dwelling: heavenly pattern, Tabernacle, DNA decagon</title>
   <rect width="960" height="520" fill="#FFFFFF"/>
   <rect x="16" y="16" width="928" height="488" rx="10" fill="#EEF4F7" stroke="#172A36" stroke-width="2"/>
-  <text x="480" y="48" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="0.12em" fill="#172A36">THREE SCALES OF DWELLING</text>
-  <text x="480" y="68" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#47545B">Regular decagons · 10 sides · 36° between vertices</text>
+  <text x="480" y="48" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="600" fill="#172A36">Pattern on the mount, tent at Sinai, turn in the helix</text>
+  <text x="480" y="66" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Each ring is a regular decagon (10 sides, 36° between vertices)</text>
 
   <circle cx="480" cy="268" r="210" fill="none" stroke="#172A36" stroke-width="1.5" opacity="0.25" stroke-dasharray="8 6"/>
-  <text x="480" y="88" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#47545B">HEAVENLY PATTERN · before ~1400 BC</text>
+  <text x="480" y="88" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">before ~1400 BC · heavenly pattern</text>
 
   <polygon points="480.0,110.0 572.9,140.2 630.3,219.2 630.3,316.8 572.9,395.8 480.0,426.0 387.1,395.8 329.7,316.8 329.7,219.2 387.1,140.2" fill="rgba(139,105,20,0.08)" stroke="#8B6914" stroke-width="2" stroke-linejoin="round"/>
   <circle cx="480.0" cy="110.0" r="3.5" fill="#8B6914" opacity="0.85"/>
@@ -24,7 +24,7 @@
   <circle cx="329.7" cy="219.2" r="3.5" fill="#8B6914" opacity="0.85"/>
   <circle cx="387.1" cy="140.2" r="3.5" fill="#8B6914" opacity="0.85"/>
   <text x="387.1" y="132.2" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="6" fill="#47545B">10</text>
-  <text x="480" y="118" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#8B6914">WILDERNESS TABERNACLE DECAGON · ~1400 BC</text>
+  <text x="480" y="118" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#8B6914">~1400 BC · wilderness Tabernacle (Project314 model)</text>
 
   <polygon points="480.0,196.0 522.3,209.8 548.5,245.8 548.5,290.2 522.3,326.2 480.0,340.0 437.7,326.2 411.5,290.2 411.5,245.8 437.7,209.8" fill="rgba(91,141,184,0.12)" stroke="#5B8DB8" stroke-width="2" stroke-linejoin="round"/>
   <circle cx="480.0" cy="196.0" r="3.5" fill="#5B8DB8" opacity="0.85"/>
@@ -53,10 +53,7 @@
   <line x1="480.0" y1="268.0" x2="437.7" y2="209.8" stroke="#5B8DB8" stroke-width="0.8" opacity="0.35"/>
   <circle cx="480" cy="268" r="22" fill="none" stroke="#5B8DB8" stroke-width="1.2" opacity="0.6"/>
   <text x="480" y="262" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#5B8DB8">10</text>
-  <text x="480" y="278" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="#47545B">bases / turn</text>
-  <text x="480" y="368" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#5B8DB8">B-DNA AXIAL DECAGON</text>
-  <text x="480" y="382" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">10 vertices · 36° per base · φ ratios · 1953–2021</text>
-
-  <text x="480" y="455" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-style="italic" fill="#47545B">Hebrews 8:5 shadow · Exodus copy · genome as living text</text>
-  <text x="480" y="478" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">1 Corinthians 6:19 · your body is the temple of the Holy Spirit</text>
+  <text x="480" y="278" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="#47545B">bases per turn</text>
+  <text x="480" y="368" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#5B8DB8">B-DNA axial view · 1953–2021</text>
+  <text x="480" y="382" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">Larsen 2021 · Curtis 1997</text>
 </svg>

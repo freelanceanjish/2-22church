@@ -3,11 +3,11 @@
   <title>Ten-fold symmetry: Tabernacle decagon and DNA axial decagon</title>
   <rect width="960" height="420" fill="#FFFFFF"/>
   <rect x="12" y="12" width="936" height="396" rx="8" fill="#EEF4F7" stroke="#172A36" stroke-width="1.5"/>
-  <text x="480" y="40" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="0.1em" fill="#172A36">TEN AS STRUCTURAL GRAMMAR</text>
-  <text x="480" y="56" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Each shape is a regular decagon · 10 sides · 10 vertices</text>
+  <text x="480" y="40" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="600" fill="#172A36">Ten sides on the tent, ten bases in one turn</text>
+  <text x="480" y="56" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#47545B">Regular decagons, 10 vertices marked</text>
   <line x1="480" y1="64" x2="480" y2="380" stroke="#172A36" stroke-width="1" opacity="0.2"/>
 
-  <text x="240" y="82" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#8B6914">TABERNACLE DECAGON (~1400 BC)</text>
+  <text x="240" y="82" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#8B6914">~1400 BC · Tabernacle decagon</text>
   <polygon points="240.0,103.0 294.1,120.6 327.5,166.6 327.5,223.4 294.1,269.4 240.0,287.0 185.9,269.4 152.5,223.4 152.5,166.6 185.9,120.6" fill="rgba(139,105,20,0.1)" stroke="#8B6914" stroke-width="2" stroke-linejoin="round"/>
   <circle cx="240.0" cy="103.0" r="3.5" fill="#8B6914" opacity="0.85"/>
   <text x="240.0" y="95.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="6" fill="#47545B">1</text>
@@ -38,7 +38,7 @@
   <text x="240" y="310" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">Andrew Hoy · Project314 · yurt dome</text>
   <text x="240" y="324" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">ten-sided dwelling · six stories (model)</text>
 
-  <text x="720" y="82" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#5B8DB8">B-DNA AXIAL DECAGON</text>
+  <text x="720" y="82" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#5B8DB8">B-DNA axial decagon</text>
   <polygon points="720.0,103.0 774.1,120.6 807.5,166.6 807.5,223.4 774.1,269.4 720.0,287.0 665.9,269.4 632.5,223.4 632.5,166.6 665.9,120.6" fill="rgba(91,141,184,0.1)" stroke="#5B8DB8" stroke-width="2" stroke-linejoin="round"/>
   <circle cx="720.0" cy="103.0" r="3.5" fill="#5B8DB8" opacity="0.85"/>
   <text x="720.0" y="95.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="6" fill="#47545B">1</text>
@@ -68,6 +68,5 @@
   <text x="720" y="310" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">10 base pairs · 36° rotation each</text>
   <text x="720" y="324" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">Curtis 1997 · Larsen Symmetry 2021</text>
 
-  <text x="480" y="360" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#172A36">360° ÷ 10 = 36° · π/5 radians · golden-triangle angle</text>
-  <text x="480" y="378" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-style="italic" fill="#47545B">Sinai precedes the laboratory by more than three millennia</text>
+  <text x="480" y="368" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#172A36">360° ÷ 10 = 36° (π/5 radians)</text>
 </svg>
