@@ -11,18 +11,32 @@ body{background:#f4f7f5;color:#172A36;padding:2rem 1.5rem 4rem;font-family:'Popp
 .wrap{max-width:920px;margin:0 auto;}
 h1{font-size:1.8rem;font-weight:300;margin-bottom:0.4rem;}
 .lead{color:#47545B;line-height:1.7;margin-bottom:2rem;}
+.grid{display:grid;gap:1.5rem;}
 .card{background:#fff;border:1px solid rgba(23,42,54,0.14);border-radius:8px;padding:1.2rem;}
+.card h2{font-size:1.05rem;font-weight:500;margin-bottom:0.35rem;}
+.card p{color:#47545B;line-height:1.6;font-size:0.92rem;margin-bottom:0.9rem;}
 .card img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid rgba(23,42,54,0.1);}
 .link{display:inline-block;margin-top:0.85rem;font-size:0.82rem;color:#172A36;}
+@media (min-width: 760px){.grid{grid-template-columns:1fr 1fr;}}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>Live landing page thumbnail</h1>
-  <p class="lead">Built from the live homepage: hero background plus screenshot crops of the nav logo and hero tagline (kicker, title, subtitle). This is what chat and search apps should show for <strong>2-22church.com</strong>.</p>
-  <div class="card">
-    <img src="og-image.jpg?v=4" alt="2:22 Church landing page social preview thumbnail" width="1200" height="630">
-    <a class="link" href="og-image.jpg?v=4" target="_blank" rel="noopener">Open full image</a>
+  <h1>Social preview thumbnails</h1>
+  <p class="lead">Two variants from the live homepage: a full hero for web and laptop link previews, and an unstretched left crop for mobile chat apps. Both use screenshot crops of the nav logo and hero tagline.</p>
+  <div class="grid">
+    <div class="card">
+      <h2>Web / laptop</h2>
+      <p>Full 1200×630 hero with logo, tagline, and wheat field. Used as the primary <code>og:image</code> and for Twitter cards.</p>
+      <img src="og-image.jpg?v=5" alt="2:22 Church web social preview thumbnail" width="1200" height="630">
+      <a class="link" href="og-image.jpg?v=5" target="_blank" rel="noopener">Open full image</a>
+    </div>
+    <div class="card">
+      <h2>Mobile apps</h2>
+      <p>Left crop through the text at 1:1 scale, no stretch. The right side continues the natural hero background. Listed as a second <code>og:image</code> for mobile messengers.</p>
+      <img src="og-image-mobile.jpg?v=5" alt="2:22 Church mobile social preview thumbnail" width="1200" height="630">
+      <a class="link" href="og-image-mobile.jpg?v=5" target="_blank" rel="noopener">Open full image</a>
+    </div>
   </div>
 </div>
 </body>
