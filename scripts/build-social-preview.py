@@ -13,7 +13,7 @@ POSTS_JS = ROOT / "posts.js"
 POST_DIR = ROOT / "post"
 SITE = "https://2-22church.com"
 OG_IMAGE = ROOT / "og-image.jpg"
-OG_VERSION = "3"
+OG_VERSION = "4"
 CROPS_DIR = ROOT / "blog-assets" / "og-crops"
 MARKER_START = "<!-- social-meta:start -->"
 MARKER_END = "<!-- social-meta:end -->"
@@ -201,6 +201,14 @@ def hero_gradient_overlay(w, h):
     return overlay
 
 
+def crop_width_from_meta(meta, margin=64):
+    """Right edge of OG content: logo/tagline bounds plus margin."""
+    lb = meta["logo"]
+    tb = meta["tagline"]
+    right = max(lb["x"] + lb["width"], tb["x"] + tb["width"])
+    return int(min(1200, right + margin))
+
+
 def build_og_image():
     """Compose OG thumbnail from hero background plus live logo/tagline screenshots."""
     import json
@@ -209,11 +217,6 @@ def build_og_image():
     hero = Image.open(ROOT / "hero-bg.jpg").convert("RGB")
     base = cover_crop(hero, w, h)
     base = Image.alpha_composite(base.convert("RGBA"), hero_gradient_overlay(w, h)).convert("RGB")
-
-    accent = Image.new("RGBA", (w, h), (0, 0, 0, 0))
-    ad = ImageDraw.Draw(accent)
-    ad.ellipse([880, 390, 1240, 750], fill=(234, 241, 244, 230))
-    base = Image.alpha_composite(base.convert("RGBA"), accent).convert("RGB")
 
     logo_path = CROPS_DIR / "logo-crop.png"
     tagline_path = CROPS_DIR / "hero-tagline-crop.png"
@@ -228,7 +231,10 @@ def build_og_image():
         base = base.convert("RGBA")
         base.alpha_composite(logo, (int(lb["x"]), int(lb["y"])))
         base.alpha_composite(tagline, (int(tb["x"]), int(tb["y"])))
-        base = base.convert("RGB")
+
+        crop_w = crop_width_from_meta(meta)
+        cropped = base.crop((0, 0, crop_w, h))
+        base = cropped.resize((w, h), Image.LANCZOS).convert("RGB")
     else:
         raise FileNotFoundError(
             "Missing OG crops. Run: node scripts/capture-og-crops.mjs"
