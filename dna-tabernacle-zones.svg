@@ -14,8 +14,9 @@
   <polygon points="240.0,183.0 276.4,194.8 299.0,225.8 299.0,264.2 276.4,295.2 240.0,307.0 203.6,295.2 181.0,264.2 181.0,225.8 203.6,194.8" fill="rgba(139,105,20,0.14)" stroke="#8B6914" stroke-width="1.5"/>
   <text x="240" y="198" text-anchor="middle" font-size="7" fill="#47545B">Holy of Holies</text>
   <circle cx="240" cy="245" r="22" fill="#8B6914" opacity="0.3" stroke="#172A36" stroke-width="1"/>
-  <text x="240" y="249" text-anchor="middle" font-size="7" font-weight="700" fill="#172A36">Ark</text>
-  <text x="240" y="430" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">decagon court → priestly hall → Ark at centre</text>
+  <text x="240" y="242" text-anchor="middle" font-size="6" font-weight="700" fill="#172A36">presence</text>
+  <text x="240" y="254" text-anchor="middle" font-size="5" fill="#47545B">tablets · mercy seat</text>
+  <text x="240" y="430" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">decagon court → priestly hall → guarded centre</text>
 
   <text x="720" y="68" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#5B8DB8">Living cell</text>
   <circle cx="720" cy="245" r="150" fill="#FFF" stroke="#5B8DB8" stroke-width="1.5"/>

@@ -181,8 +181,9 @@ def zones():
   <polygon points="{inner_pts}" fill="rgba(139,105,20,0.14)" stroke="{GOLD}" stroke-width="1.5"/>
   <text x="240" y="198" text-anchor="middle" font-size="7" fill="{MUTED}">Holy of Holies</text>
   <circle cx="240" cy="245" r="22" fill="{GOLD}" opacity="0.3" stroke="{INK}" stroke-width="1"/>
-  <text x="240" y="249" text-anchor="middle" font-size="7" font-weight="700" fill="{INK}">Ark</text>
-  <text x="240" y="430" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">decagon court → priestly hall → Ark at centre</text>
+  <text x="240" y="242" text-anchor="middle" font-size="6" font-weight="700" fill="{INK}">presence</text>
+  <text x="240" y="254" text-anchor="middle" font-size="5" fill="{MUTED}">tablets · mercy seat</text>
+  <text x="240" y="430" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">decagon court → priestly hall → guarded centre</text>
 
   <text x="720" y="68" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{ACCENT}">Living cell</text>
   <circle cx="720" cy="245" r="150" fill="#FFF" stroke="{ACCENT}" stroke-width="1.5"/>
