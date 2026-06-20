@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build og-image.jpg, inject social meta tags, and generate post share pages."""
+"""Build og-image.jpg, og-image-mobile.jpg, inject social meta tags, and generate post share pages."""
 
 import html
 import json
@@ -13,7 +13,8 @@ POSTS_JS = ROOT / "posts.js"
 POST_DIR = ROOT / "post"
 SITE = "https://2-22church.com"
 OG_IMAGE = ROOT / "og-image.jpg"
-OG_VERSION = "4"
+OG_IMAGE_MOBILE = ROOT / "og-image-mobile.jpg"
+OG_VERSION = "5"
 CROPS_DIR = ROOT / "blog-assets" / "og-crops"
 MARKER_START = "<!-- social-meta:start -->"
 MARKER_END = "<!-- social-meta:end -->"
@@ -209,50 +210,82 @@ def crop_width_from_meta(meta, margin=64):
     return int(min(1200, right + margin))
 
 
-def build_og_image():
-    """Compose OG thumbnail from hero background plus live logo/tagline screenshots."""
-    import json
-
-    w, h = 1200, 630
+def build_hero_base(w, h):
     hero = Image.open(ROOT / "hero-bg.jpg").convert("RGB")
     base = cover_crop(hero, w, h)
-    base = Image.alpha_composite(base.convert("RGBA"), hero_gradient_overlay(w, h)).convert("RGB")
+    base = Image.alpha_composite(base.convert("RGBA"), hero_gradient_overlay(w, h))
+    accent = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    ad = ImageDraw.Draw(accent)
+    ad.ellipse([880, 390, 1240, 750], fill=(234, 241, 244, 230))
+    return Image.alpha_composite(base, accent)
 
+
+def compose_screenshot_crops(base, logo, tagline, lb, tb):
+    composed = base.copy().convert("RGBA")
+    composed.alpha_composite(logo, (int(lb["x"]), int(lb["y"])))
+    composed.alpha_composite(tagline, (int(tb["x"]), int(tb["y"])))
+    return composed
+
+
+def build_mobile_unstretched(full, crop_w, w, h):
+    """Keep left content at 1:1 scale; fill the rest with the uncropped hero."""
+    canvas = Image.new("RGBA", (w, h))
+    canvas.paste(full.crop((0, 0, crop_w, h)), (0, 0))
+    if crop_w < w:
+        canvas.paste(full.crop((crop_w, 0, w, h)), (crop_w, 0))
+    return canvas.convert("RGB")
+
+
+def build_og_image():
+    """Compose web (full hero) and mobile (unstretched left crop) OG thumbnails."""
+    w, h = 1200, 630
     logo_path = CROPS_DIR / "logo-crop.png"
     tagline_path = CROPS_DIR / "hero-tagline-crop.png"
     meta_path = CROPS_DIR / "meta.json"
 
-    if logo_path.exists() and tagline_path.exists() and meta_path.exists():
-        meta = json.loads(meta_path.read_text(encoding="utf-8"))
-        logo = Image.open(logo_path).convert("RGBA")
-        tagline = Image.open(tagline_path).convert("RGBA")
-        lb = meta["logo"]
-        tb = meta["tagline"]
-        base = base.convert("RGBA")
-        base.alpha_composite(logo, (int(lb["x"]), int(lb["y"])))
-        base.alpha_composite(tagline, (int(tb["x"]), int(tb["y"])))
-
-        crop_w = crop_width_from_meta(meta)
-        cropped = base.crop((0, 0, crop_w, h))
-        base = cropped.resize((w, h), Image.LANCZOS).convert("RGB")
-    else:
+    if not (logo_path.exists() and tagline_path.exists() and meta_path.exists()):
         raise FileNotFoundError(
             "Missing OG crops. Run: node scripts/capture-og-crops.mjs"
         )
 
-    out = ROOT / "og-image.jpg"
-    base.save(out, quality=92, optimize=True)
+    meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    logo = Image.open(logo_path).convert("RGBA")
+    tagline = Image.open(tagline_path).convert("RGBA")
+    lb = meta["logo"]
+    tb = meta["tagline"]
+
+    base = build_hero_base(w, h)
+    full = compose_screenshot_crops(base, logo, tagline, lb, tb)
+    crop_w = crop_width_from_meta(meta)
+
+    web = full.convert("RGB")
+    mobile = build_mobile_unstretched(full, crop_w, w, h)
+
+    web.save(OG_IMAGE, quality=92, optimize=True)
+    mobile.save(OG_IMAGE_MOBILE, quality=92, optimize=True)
+
     samples = ROOT / "blog-assets" / "og-samples"
     samples.mkdir(parents=True, exist_ok=True)
-    base.save(samples / "live-home-hero.jpg", quality=92)
-    print("wrote", out)
+    web.save(samples / "live-home-hero-web.jpg", quality=92)
+    mobile.save(samples / "live-home-hero-mobile.jpg", quality=92)
+    print("wrote", OG_IMAGE)
+    print("wrote", OG_IMAGE_MOBILE)
 
 
-def meta_block(title, description, url, image, page_type="website"):
+def meta_block(title, description, url, image, page_type="website", mobile_image=None):
     title_e = html.escape(title, quote=True)
     desc_e = html.escape(description, quote=True)
     url_e = html.escape(url, quote=True)
     image_e = html.escape(image, quote=True)
+    og_images = f"""<meta property="og:image" content="{image_e}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">"""
+    if mobile_image:
+        mobile_e = html.escape(mobile_image, quote=True)
+        og_images += f"""
+<meta property="og:image" content="{mobile_e}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">"""
     return f"""{MARKER_START}
 <meta name="description" content="{desc_e}">
 <link rel="canonical" href="{url_e}">
@@ -261,9 +294,7 @@ def meta_block(title, description, url, image, page_type="website"):
 <meta property="og:title" content="{title_e}">
 <meta property="og:description" content="{desc_e}">
 <meta property="og:url" content="{url_e}">
-<meta property="og:image" content="{image_e}">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+{og_images}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{title_e}">
 <meta name="twitter:description" content="{desc_e}">
@@ -273,6 +304,7 @@ def meta_block(title, description, url, image, page_type="website"):
 
 def inject_page_meta():
     default_image = f"{SITE}/og-image.jpg?v={OG_VERSION}"
+    mobile_image = f"{SITE}/og-image-mobile.jpg?v={OG_VERSION}"
     for filename, meta in PAGE_META.items():
         path = ROOT / filename
         if not path.exists():
@@ -284,6 +316,7 @@ def inject_page_meta():
             f"{SITE}{meta['path']}",
             default_image,
             meta.get("type", "website"),
+            mobile_image,
         )
         if MARKER_START in text:
             text = re.sub(
