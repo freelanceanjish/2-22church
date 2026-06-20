@@ -357,7 +357,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .post-body .visual-cap{display:block;font-size:0.76rem;line-height:1.45;opacity:0.92;font-weight:300;}
 .post-body .visual-summary{font-size:0.92rem;color:var(--text-muted);font-style:italic;margin:0 0 1.5rem;padding:0.85rem 1.1rem;background:var(--surface-light);border-left:3px solid var(--gold);border-radius:0 6px 6px 0;}
 .post-body .photo-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:0.65rem;margin:2rem 0;}
-.post-body .photo-strip img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px;box-shadow:0 8px 28px rgba(23,42,54,0.12);}
+.post-body .photo-strip img{width:100%;height:auto;max-height:520px;object-fit:contain;object-position:center;border-radius:6px;box-shadow:0 8px 28px rgba(23,42,54,0.12);background:#fff;}
 .post-body .photo-strip figcaption{grid-column:1/-1;font-size:0.72rem;color:var(--text-muted);}
 .post-body .photo-strip--duo{grid-template-columns:1fr 1fr;}
 .post-body .photo-strip--solo{grid-template-columns:1fr;}
@@ -376,10 +376,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
 .post-body .minimal-design{margin:1.5rem 0 1rem;padding:1.4rem;background:var(--surface-light);border:0.5px solid var(--border);border-radius:8px;}
 .post-body .minimal-design .diagram-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;}
 .post-body .minimal-design .diagram-row img{width:100%;height:auto;border-radius:6px;border:0.5px solid var(--border-subtle);background:#fff;}
-.post-body .minimal-design > img,.post-body .structure-diagram img{width:100%;height:auto;display:block;border-radius:6px;border:0.5px solid var(--border-subtle);background:#fff;}
-.post-body .structure-diagram{margin:2.5rem 0 2rem;padding:1.6rem;background:var(--surface-light);border:1.5px solid var(--gold);border-radius:8px;box-shadow:0 8px 32px rgba(23,42,54,0.1);}
+.post-body .minimal-design > img,.post-body .structure-diagram img{width:100%;height:auto;display:block;border-radius:6px;border:0.5px solid var(--border-subtle);background:#fff;object-fit:contain;object-position:center;}
+.post-body .structure-diagram{margin:2.5rem 0 2rem;padding:1.25rem 1.6rem 1.6rem;background:var(--surface-light);border:1.5px solid var(--gold);border-radius:8px;box-shadow:0 8px 32px rgba(23,42,54,0.1);overflow:visible;}
 .post-body .structure-diagram .structure-diagram-label{font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:0.9rem;text-align:center;}
-.post-body .structure-diagram figcaption{margin-top:0.75rem;font-size:0.72rem;color:var(--text-muted);text-align:center;line-height:1.5;}
+.post-body .structure-diagram figcaption{margin-top:0.85rem;font-size:0.72rem;color:var(--text-muted);text-align:center;line-height:1.55;}
 .post-body .minimal-design .minimal-cap{font-size:0.76rem;color:var(--text-muted);text-align:center;margin-top:0.4rem;font-style:italic;}
 .post-body .structure-diagram .minimal-cap{margin-top:1rem;font-size:0.82rem;color:var(--text-secondary);font-style:normal;line-height:1.65;}
 .post-body .hero-diagram{margin:0 0 2.5rem;padding:1.6rem;background:var(--surface-light);border:1.5px solid var(--gold);border-radius:8px;box-shadow:0 8px 32px rgba(23,42,54,0.1);}
@@ -522,7 +522,7 @@ function ljsRespond(choice) {
   }
 }
 </script>
-<script src="posts.js?v=41"></script>
+<script src="posts.js?v=42"></script>
 <script>
 var params = new URLSearchParams(window.location.search);
 var postId = params.get('id');
@@ -542,7 +542,7 @@ if (!post) {
 
   // Cover image (skip when article embeds its own hero diagram in content)
   var hasHeroDiagram = post.content && post.content.indexOf('hero-diagram') !== -1;
-  var diagramCover = post.image && /vedic-witness-christ|temple-shadow-and-original|temple-compare|\.svg$/i.test(post.image);
+  var diagramCover = post.image && /vedic-witness-christ|temple-shadow-and-original|temple-compare|dna-tabernacle|topview-tabernacle|\.svg$/i.test(post.image);
   var coverHtml = post.image && !hasHeroDiagram
     ? '<div class="post-cover' + (diagramCover ? ' post-cover-diagram' : '') + '"><img src="' + post.image + '" alt="' + post.title + '" loading="eager" decoding="async"></div>'
     : '';

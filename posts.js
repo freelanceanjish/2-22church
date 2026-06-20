@@ -22,17 +22,17 @@ const POSTS = [
     date: "20 June 2026",
     category: "Teaching",
     image: "blog-assets/dna-tabernacle/topview-tabernacle-dna-compare.jpg",
-    excerpt: "Project314 recovered a decagonal, π-scaled Tabernacle from Exodus. B-DNA carries ten-fold symmetry in its axial structure. I do not think Paul was speaking in metaphor when he called the body God's temple.",
+    excerpt: "Project314 recovered a decagonal, π-scaled Tabernacle from Exodus. B-DNA carries ten-fold symmetry in the molecule that stores life's text. I do not think Paul was speaking in metaphor when he called the body God's temple.",
     content: `
 <p class="opening">
-  I had read Exodus before, but I had never <strong>engineered</strong> it. When I opened <a href="https://project314.org/learn-about/tabernacle-discovery" target="_blank" rel="noopener">Project314.org</a> and followed Andrew Hoy's curtain inventory in Exodus 26, the eleven goat-hair sheets stopped being Bible craft and became a specification. Join them short-edge to short-edge, exactly as the Hebrew specifies, and the math closes at <strong>314 cubits</strong>, π scaled to a hundred. The courtyard Moses measured as 100 cubits long and 50 cubits wide resolves as a <strong>circle</strong>, diameter and radius. <a href="https://www.renformation.com/" target="_blank" rel="noopener">Renformation.com</a> pushed the same question through Project Arc: the dwelling God prescribed is circular and decagonal, a yurt-like decagon dome inside a π-scaled court, not the flat sketch commentaries handed down. Then I read Mark E. Curtis on <strong>ten pentagons about a decagon</strong> as the only geometry that satisfies DNA's known ratios, and Stuart Larsen's 2021 paper in <em>Symmetry</em> showing <strong>ten-fold symmetry and φ (phi)</strong> in the axial structure of B-DNA. Ten sides on the tent. Ten bases in a turn. Thirty-six degrees per step in both systems, because thirty-six is π/5 radians, the angle built into pentagons. I kept returning to Paul, who did not write that your body is <em>like</em> a temple. He wrote that it <strong>is</strong> the temple of the Holy Spirit. After this reading, I do not think he was being poetic. I think he was pointing at the same pattern Moses saw on the mountain, written again in the fabric of the living.
+  I had read Exodus before, but I had never <strong>engineered</strong> it. When I opened <a href="https://project314.org/learn-about/tabernacle-discovery" target="_blank" rel="noopener">Project314.org</a> and followed Andrew Hoy's curtain inventory in Exodus 26, the eleven goat-hair sheets stopped being Bible craft and became a specification. Join them short-edge to short-edge, exactly as the Hebrew specifies, and the math closes at <strong>314 cubits</strong>, π scaled to a hundred. The courtyard Moses measured as 100 cubits long and 50 cubits wide resolves as a <strong>circle</strong>, diameter and radius, not the flat rectangle commentaries handed down. <a href="https://www.renformation.com/" target="_blank" rel="noopener">Renformation.com</a> pushed the same question through Project Arc: a yurt-like decagon dome inside a π-scaled court, not a shoebox tent drawn from tradition. Then I read Mark E. Curtis on <strong>ten pentagons about a decagon</strong> as the only geometry that satisfies DNA's known ratios, and Stuart Larsen's 2021 paper in <em>Symmetry</em> on <strong>ten-fold symmetry and φ (phi)</strong> in the axial structure of B-DNA. I kept returning to Paul, who did not write that your body is <em>like</em> a temple. He wrote that it <strong>is</strong> the temple of the Holy Spirit. After this reading, I do not think he was being poetic. I think he was pointing at the same pattern Moses saw on the mountain, written again in the fabric of the living.
 </p>
 
-<p>The figure below is the comparison that stopped me. Andrew Hoy's Project314 sheets show Moses' court as a circle with posts on the perimeter, not the rectangular sketch commentaries handed down. When I set that top view beside B-DNA looked at from the same angle, down the axis of the helix, the same count of steps around a turn stopped feeling like a coincidence on paper.</p>
+<p>What finally made the overlap feel real was not another abstract ring on a page. It was looking straight down. Andrew Hoy's Project314 engineering sheets show Moses' court as a circle with posts on the perimeter. When I set that top view beside B-DNA looked at from the same angle, down the axis of the helix, ten steps around a full turn in both places, I had to sit with it longer than I expected.</p>
 
 <div class="structure-diagram" aria-label="Top view comparison: circular Tabernacle court and B-DNA axial turn">
-  <img src="blog-assets/dna-tabernacle/topview-tabernacle-dna-compare.jpg" alt="Side by side top view: Project314 circular Tabernacle court plan credited to Andrew Hoy, and B-DNA axial decagon with ten base pairs per turn" loading="eager" decoding="async" width="960" height="520">
-  <figcaption>Left: Andrew Hoy · Project314 · project314.org · circular court top plan (~1400 BC). Right: B-DNA axial view · ten base pairs · 36° per step · Curtis 1997 · Larsen Symmetry 2021.</figcaption>
+  <img src="blog-assets/dna-tabernacle/topview-tabernacle-dna-compare.jpg?v=2" alt="Side by side top view: Project314 circular Tabernacle engineering sheet credited to Andrew Hoy, and B-DNA axial decagon with ten base pairs per turn" loading="eager" decoding="async" width="980" height="560">
+  <figcaption>Left: Andrew Hoy · Project314 · project314.org · full engineering drawing set (~1400 BC court plan, upper left). Right: B-DNA axial view · ten base pairs · 36° per step · Curtis 1997 · Larsen Symmetry 2021.</figcaption>
 </div>
 
 <div class="photo-strip photo-strip--solo" aria-label="Decagon Tabernacle scale model">
@@ -51,15 +51,13 @@ const POSTS = [
 
 <p>Andrew Hoy describes his discovery as providential, not planned. He was not hunting for a round Tabernacle. He was inventorying curtain dimensions in Exodus 26:7–13 when the numbers refused to resolve as a flat panel. Eleven sheets, each 30 cubits long, loops on <strong>both</strong> edges, the sixth doubled at the front. Join them the way commentaries usually do, long-edge to long-edge, and you get a flat panel with <strong>unconnected edges</strong>, which violates the text. Join them short-edge to short-edge and the circumference works out to (30 × 11) − (30 ÷ 2) − 1, which is <strong>314 cubits</strong>, essentially π × 100.</p>
 
-<p>Hoy calls that the <strong>Rosetta Stone</strong> of Moses' Tabernacle plans. Once the court is circular, Exodus 27 reads differently: 100 cubits "long" becomes diameter, north and south halves 50 cubits "wide" become radius. The eleven curtains wrap the perimeter like a snow fence around the dwelling. Our <a href="project314.html">God of Pi study page</a> walks through the engineering diagrams; I will not repeat every slide here, but the point that stopped me cold is simple. The most accurate ancient approximation of π known to the ancient world sits in the <strong>fabric measurements</strong> of Exodus, not in a Greek textbook centuries later.</p>
+<p>Hoy calls that the <strong>Rosetta Stone</strong> of Moses' Tabernacle plans. Once the court is circular, Exodus 27 reads differently: 100 cubits "long" becomes diameter, north and south halves 50 cubits "wide" become radius. The eleven curtains wrap the perimeter like a snow fence around the dwelling. Our <a href="project314.html">God of Pi study page</a> walks through the engineering diagrams. I will not repeat every slide here, but the point that stopped me cold is simple. The most accurate ancient approximation of π known to the ancient world sits in the <strong>fabric measurements</strong> of Exodus, not in a Greek textbook centuries later.</p>
 
-<p>On the left of the next figure you see that cylindrical curtain assembly at 314 cubits. On the right, one helical turn of canonical B-DNA: roughly 34Å pitch, roughly 21Å width, ten bases completing 360°. Different materials, same kind of circular measure.</p>
+<p>The figure below pairs that cylindrical curtain assembly at 314 cubits with one helical turn of canonical B-DNA: roughly 34Å pitch, roughly 21Å width, ten bases completing 360°. Different materials, same kind of circular measure.</p>
 
 <div class="structure-diagram" aria-label="Pi and circular measure: 314 cubits and DNA helical turn">
-  <img src="dna-tabernacle-pi-314.svg?v=4" alt="Comparison: Exodus curtain cylinder 314 cubits circumference and DNA helical turn with pitch and width measures" loading="lazy" width="960" height="380">
+  <img src="dna-tabernacle-pi-314.svg?v=2" alt="Comparison: Exodus curtain cylinder 314 cubits circumference and DNA helical turn with pitch and width measures" loading="lazy" width="960" height="380">
 </div>
-
-<p>The goat-hair sheets in Exodus 26 are not abstraction on a page. They are woven panels with loops on both edges, meant to wrap a perimeter. Project314's engineering drawings show the short-edge join closing into a cylinder around the court, the same circular top plan you see in the opening figure.</p>
 
 <p>From that cylinder logic the dwelling itself resolves as a <strong>decagon dome</strong>, yurt-like, roughly six stories in Hoy's scale models, with acacia and silver serving as struts rather than ground posts. The Exodus silver tally fits this geometry. The curtains wrap cleanly. The court reads as a circle with a ten-sided tent at centre. Project Arc at Renformation estimates roughly <strong>13,000 sq ft</strong> of interior space in their decagonal model, a dwelling sized for priestly service rather than a cramped diagram. The measurements in Exodus specify the pattern. Hoy and Project314 show how they close.</p>
 
@@ -67,7 +65,7 @@ const POSTS = [
 
 <h2>Why ten kept showing up</h2>
 
-<p>Once I accepted the circular court, the number <strong>ten</strong> kept returning. Hoy's dwelling is a <strong>decagon</strong>, ten-sided, similar to a Mongolian yurt. Curtis, working as an artist with compass and scale drawings in 1995, found that among all polygonal helix constructions, only <strong>ten regular pentagons oriented about a decagon</strong> satisfies the dimensional ratios of the double helix: diameter ~20Å, base height ~3.4Å, extension ~34Å per turn, <strong>ten bases</strong>, <strong>36°</strong> rotation each. Larsen's peer-reviewed work confirms the axial view: canonical B-DNA completes one rotation every ten base pairs, and that decagonal symmetry relates to the golden ratio through pentagon geometry. The base angle of a golden triangle is <strong>36°</strong>. That is (π/5) radians. Ten steps of 36° close the circle. I already showed that match in the top-view figure at the opening: same count of sides on the tent floor plan and on the molecule when you look straight down the helix.</p>
+<p>Once I accepted the circular court, the number <strong>ten</strong> kept returning. Hoy's dwelling is a <strong>decagon</strong>, ten-sided, similar to a Mongolian yurt. Curtis, working as an artist with compass and scale drawings in 1995, found that among all polygonal helix constructions, only <strong>ten regular pentagons oriented about a decagon</strong> satisfies the dimensional ratios of the double helix: diameter ~20Å, base height ~3.4Å, extension ~34Å per turn, <strong>ten bases</strong>, <strong>36°</strong> rotation each. Larsen's peer-reviewed work confirms the axial view: canonical B-DNA completes one rotation every ten base pairs, and that decagonal symmetry relates to the golden ratio through pentagon geometry. The base angle of a golden triangle is <strong>36°</strong>, which is (π/5) radians. I already showed that match in the opening top-view figure. Same count on the tent floor plan and on the molecule when you look straight down the helix.</p>
 
 <p>Curtis does not discard the double helix. He revises how purine and pyrimidine pentagons sit at the heart of base pairing so the geometry can replicate without topological knots Watson and Crick's diagrams struggled with. He cites Hoogsteen's 1959 crystallography and Robert Root-Bernstein's 1996 question, <em>Do we have the structure of DNA right?</em> Mainstream biochemistry still teaches the 1953 model in every textbook. Curtis and Larsen work outside that consensus. I cite them because the overlaps with Sinai are too precise to ignore, not because this site claims to overturn molecular biology in a blog post.</p>
 
@@ -79,10 +77,10 @@ const POSTS = [
 
 <p>Hebrews 8:5 calls the earthly sanctuary a <strong>copy and shadow</strong> of heavenly things. My earlier <a href="post.html?id=sacred-architecture-vedic-hebrew-temple-parallels">temple-parallels article</a> traced the three-room skeleton outward, Outer Court, Holy Place, Holy of Holies. Here I follow that same movement <strong>inward</strong>, into biology, because Scripture already does.</p>
 
-<p>In the figure, the Tabernacle moves from outer court through the holy place to the Ark at centre. The cell moves from membrane through cytoplasm to the nucleus where DNA sits. Graded sanctity on one side, graded access on the other.</p>
+<p>In the figure below, the Tabernacle moves from outer court through the holy place to the Ark at centre. The cell moves from membrane through cytoplasm to the nucleus where DNA sits. Graded sanctity on one side, graded access on the other.</p>
 
 <div class="structure-diagram" aria-label="Three zones Tabernacle and cell">
-  <img src="dna-tabernacle-zones.svg?v=4" alt="Nested zones: Tabernacle outer court holy place and most holy place compared to cell membrane cytoplasm and nucleus" loading="lazy" width="960" height="520">
+  <img src="dna-tabernacle-zones.svg?v=2" alt="Nested zones: Tabernacle outer court holy place and most holy place compared to cell membrane cytoplasm and nucleus" loading="lazy" width="960" height="520">
 </div>
 
 <p>Nesting circles on a diagram taught me the logic. A cross-section of a real cell taught me the weight of it. Membrane as boundary. Organelles as daily service. Nucleus as the guarded archive where chromatin sits like tablets behind a veil. Beside that, the Ark replica from Timna: gold mercy seat, no image, presence at centre. I am not saying the cell <em>is</em> a photograph of the Tabernacle. I am saying Paul had something structural in mind when he called your body a temple, and these two images help me feel why.</p>
@@ -94,21 +92,6 @@ const POSTS = [
 </div>
 
 <p>John 1:14 says the Word <strong>dwelt</strong> among us. The Greek is <em>eskēnōsen</em>, tabernacled. John 2:19–21 identifies the temple with Yeshua's body. Paul extends the language to believers: <strong>your body is the temple of the Holy Spirit</strong> (1 Corinthians 6:19). Exodus 40:34–35 describes Glory filling the completed Tabernacle. The parallel is not decorative. Outer approaches, priestly service, one guarded centre where the testimony lives.</p>
-
-<div class="compare-grid">
-  <div class="compare-col">
-    <h4>Tabernacle (Exodus)</h4>
-    <p><strong>Outer Court:</strong> bronze altar, laver, sacrifices and washing open to Israel.</p>
-    <p><strong>Holy Place:</strong> menorah, showbread, altar of incense, daily priestly service.</p>
-    <p><strong>Holy of Holies:</strong> Ark behind the veil, no image, YHWH's presence meeting the high priest once a year.</p>
-  </div>
-  <div class="compare-col">
-    <h4>Living cell / body</h4>
-    <p><strong>Cell membrane:</strong> boundary of the living temple, what may enter and leave.</p>
-    <p><strong>Cytoplasm and organelles:</strong> mitochondria (light/energy), Golgi (processing), ribosomes (synthesis), the daily metabolic "service."</p>
-    <p><strong>Nucleus:</strong> chromatin and chromosomes, the genome as covenant text stored at centre, access regulated like the veil.</p>
-  </div>
-</div>
 
 <p>The seven Tabernacle furnishings map cleanly enough to make me uncomfortable with calling it coincidence. Brazen altar and laver at the outer approach. Menorah and table and incense altar in the middle hall. Ark and mercy seat at the centre where atonement meets presence. DNA sits in the nucleus like the tablets in the Ark: <strong>information</strong>, guarded, copied with fidelity, expressed under regulation. When Paul warns that defiling God's temple has consequences (1 Corinthians 3:17), he is not scolding people for missing church architecture. He is naming the body as a dwelling whose holiness has structure.</p>
 
