@@ -1,0 +1,18 @@
+{
+  "viewport": {
+    "width": 1200,
+    "height": 800
+  },
+  "logo": {
+    "x": 48,
+    "y": 21.96875,
+    "height": 38,
+    "width": 124.21875
+  },
+  "tagline": {
+    "x": 56,
+    "y": 234,
+    "width": 605,
+    "height": 317
+  }
+}

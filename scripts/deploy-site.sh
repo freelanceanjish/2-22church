@@ -8,6 +8,9 @@ cd "$ROOT"
 echo "==> Rebuild DNA comparison figure"
 python3 scripts/build-topview-compare.py
 
+echo "==> Capture live logo and hero tagline crops"
+node scripts/capture-og-crops.mjs
+
 echo "==> Rebuild social preview meta and post pages"
 python3 scripts/build-social-preview.py
 

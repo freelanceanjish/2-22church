@@ -1,0 +1,23 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "| File | What it is | |------|------------| | `index.html` | Your main homepage | | `blog.html` | Full blog listing — shows ALL posts | | `post.html` | Individual post reader page | | `posts.js` | **The only file you edit to manage blog posts** | | `style.css` | Shared styles (don't need to touch this) |",
+  "main": "posts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freelanceanjish/2-22church.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freelanceanjish/2-22church/issues"
+  },
+  "homepage": "https://github.com/freelanceanjish/2-22church#readme",
+  "dependencies": {
+    "puppeteer-core": "^25.1.0"
+  }
+}
