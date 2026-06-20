@@ -30,6 +30,14 @@ const POSTS = [
 
 <p>The diagram below is how I picture the scale of it. The outer ring is the pattern shown on the mount before Sinai. Inside that sits the wilderness Tabernacle as Hoy models it, a decagon dome with a π-scaled court around ~1400 BC. At the centre of the same drawing, one turn of B-DNA: ten bases, thirty-six degrees of rotation each, the axial view Curtis and Larsen describe from 1953 through 2021.</p>
 
+<p>Abstract rings help me compare numbers. They do not help me <em>see</em> the dwelling. For that I need something closer to sand, linen, and flesh. The first image is a reconstruction of the circular court and ten-sided tent in the wilderness. The second is Timna's life-size Tabernacle model in the Negev, where you can walk the outer court Moses measured. Hold both beside the diagram and the scale stops feeling theoretical.</p>
+
+<div class="photo-strip" aria-label="Wilderness Tabernacle and Timna reconstruction">
+  <img src="blog-assets/dna-tabernacle/tabernacle-wilderness-court.jpg" alt="Reconstruction of the wilderness Tabernacle with circular court and ten-sided tent in desert light" loading="eager" decoding="async">
+  <img src="blog-assets/temple-parallel-photos/01-tabernacle-timna-court.jpg" alt="Life-size Tabernacle outer court reconstruction at Timna Park, Israel" loading="eager" decoding="async">
+  <img src="blog-assets/temple-parallel-photos/01-tabernacle-decagon.jpg" alt="Decagon floor plan model showing graded sanctity toward the Holy of Holies" loading="lazy">
+</div>
+
 <div class="structure-diagram" aria-label="Three scales of dwelling: heaven, Tabernacle, DNA">
   <img src="dna-tabernacle-three-scales.svg?v=3" alt="Nested diagram: heavenly pattern, wilderness Tabernacle decagon (~1400 BC), and B-DNA axial decagon with ten-fold symmetry" loading="eager" decoding="async" width="960" height="520">
 </div>
@@ -53,6 +61,13 @@ const POSTS = [
   <img src="dna-tabernacle-pi-314.svg?v=3" alt="Comparison: Exodus curtain cylinder 314 cubits circumference and DNA helical turn with pitch and width measures" loading="lazy" width="960" height="380">
 </div>
 
+<p>The goat-hair sheets in Exodus 26 are not abstraction on a page. They are woven panels with loops on both edges, meant to wrap a perimeter. Project314's comparison drawings show what happens when you join them short-edge to short-edge instead of forcing a flat rectangle. The fabric photo below is from a Tabernacle model: real weave, real hem, the kind of material Moses counted in cubits.</p>
+
+<div class="photo-strip photo-strip--duo" aria-label="Tabernacle curtain fabric and engineering comparison">
+  <img src="blog-assets/temple-parallel-photos/01-tabernacle-curtains.jpeg" alt="Woven Tabernacle curtain panels on a scale model" loading="lazy">
+  <img src="blog-assets/temple-parallel-photos/01-tabernacle-decagon.jpg" alt="Decagon Tabernacle layout with circular court perimeter" loading="lazy">
+</div>
+
 <p>From that cylinder logic the dwelling itself resolves as a <strong>decagon dome</strong>, yurt-like, roughly six stories in Hoy's scale models, with acacia and silver serving as struts rather than ground posts. Rectangular models, Hoy argues, need more silver than Exodus allows and leave curtains bunched, unsecured, or dragging. I am not asking you to accept this because an engineer said so. I am asking you to weigh whether forcing a rectangle onto Exodus is faithful exegesis, or whether the text has been reading us through tradition's lens. Project Arc at Renformation puts the interior difference starkly: roughly <strong>750 sq ft</strong> in the rectangular tradition versus roughly <strong>13,000 sq ft</strong> in the circular decagonal model on their site. The measurements in Exodus never changed. Our assumptions may have.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
@@ -65,6 +80,13 @@ const POSTS = [
 
 <div class="structure-diagram" aria-label="Ten-fold symmetry Tabernacle and DNA">
   <img src="dna-tabernacle-tenfold.svg?v=3" alt="Side by side decagon floor plan of Tabernacle and axial decagon of B-DNA with ten-fold symmetry labels" loading="lazy" width="960" height="420">
+</div>
+
+<p>Looking down on a decagon is geometry. Looking along the helix is biology. I needed both views in my head. The render below is not Curtis's exact model, but it shows what ten base pairs per turn actually looks like when you picture the molecule in space rather than as a flat proof on paper.</p>
+
+<div class="photo-strip photo-strip--duo" aria-label="DNA double helix visualization">
+  <img src="blog-assets/dna-tabernacle/dna-double-helix-render.jpg" alt="Semi-realistic render of the B-DNA double helix showing the spiral and base-pair ladder" loading="lazy">
+  <img src="blog-assets/temple-parallel-photos/01-tabernacle-decagon.jpg" alt="Ten-sided Tabernacle floor plan model for comparison with ten-fold DNA symmetry" loading="lazy">
 </div>
 
 <p>Curtis does not discard the double helix. He revises how purine and pyrimidine pentagons sit at the heart of base pairing so the geometry can replicate without topological knots Watson and Crick's diagrams struggled with. He cites Hoogsteen's 1959 crystallography and Robert Root-Bernstein's 1996 question, <em>Do we have the structure of DNA right?</em> Mainstream biochemistry still teaches the 1953 model in every textbook. Curtis and Larsen work outside that consensus. I cite them because the overlaps with Sinai are too precise to ignore, not because this site claims to overturn molecular biology in a blog post.</p>
@@ -81,6 +103,14 @@ const POSTS = [
 
 <div class="structure-diagram" aria-label="Three zones Tabernacle and cell">
   <img src="dna-tabernacle-zones.svg?v=3" alt="Nested zones: Tabernacle outer court holy place and most holy place compared to cell membrane cytoplasm and nucleus" loading="lazy" width="960" height="520">
+</div>
+
+<p>Nesting circles on a diagram taught me the logic. A cross-section of a real cell taught me the weight of it. Membrane as boundary. Organelles as daily service. Nucleus as the guarded archive where chromatin sits like tablets behind a veil. Beside that, the Ark replica from Timna: gold mercy seat, no image, presence at centre. I am not saying the cell <em>is</em> a photograph of the Tabernacle. I am saying Paul had something structural in mind when he called your body a temple, and these two images help me feel why.</p>
+
+<div class="photo-strip" aria-label="Living cell cross-section and Ark at centre">
+  <img src="blog-assets/dna-tabernacle/cell-nucleus-cross-section.jpg" alt="Cross-section illustration of a cell showing membrane, cytoplasm, organelles, and nucleus with DNA" loading="lazy">
+  <img src="blog-assets/temple-parallel-photos/01-ark-timna-replica.jpg" alt="Replica of the Ark of the Covenant with mercy seat at Timna Tabernacle model" loading="lazy">
+  <img src="blog-assets/temple-parallel-photos/01-tabernacle-timna-court.jpg" alt="Tabernacle outer court with altar and laver at Timna reconstruction" loading="lazy">
 </div>
 
 <p>John 1:14 says the Word <strong>dwelt</strong> among us. The Greek is <em>eskēnōsen</em>, tabernacled. John 2:19–21 identifies the temple with Yeshua's body. Paul extends the language to believers: <strong>your body is the temple of the Holy Spirit</strong> (1 Corinthians 6:19). Exodus 40:34–35 describes Glory filling the completed Tabernacle. The parallel is not decorative. Outer approaches, priestly service, one guarded centre where the testimony lives.</p>
@@ -122,10 +152,6 @@ const POSTS = [
 <h2>Where I land, and what I will not claim</h2>
 
 <p>Curtis's decagon model is not the consensus textbook structure. It is a geometric revision with internal coherence and a cool reception from establishment biochemistry. Larsen shows approximations to φ, not proof that God used a compass in the laboratory. Hoy's circular Tabernacle has critics who read Exodus 38 as a strict rectangle. I find Hoy more faithful to the whole curtain text, but I will not pretend the debate is settled. Deamer and Alexjander measured real frequencies; mapping them to healing claims beyond their paper is where I stop. What I am willing to say is that Scripture ties dwelling, body, and Spirit together at every scale, and that the numeric and geometric echoes between Sinai and the genome deserve weight in that light.</p>
-
-<div class="photo-strip" aria-label="Tabernacle decagon model from Project314">
-  <img src="blog-assets/temple-parallel-photos/01-tabernacle-decagon.jpg" alt="Tabernacle decagon layout: concentric graded sanctity toward the Holy of Holies" loading="lazy">
-</div>
 
 <p>Project314's decagon model is the same study hub that led me from curtain inventory to genome comparison. They list <strong>biological and spiritual parallels</strong> among their research scope. I think that scope was understated. The parallel is not a footnote. It may be the point Paul was naming when he called your body God's temple.</p>
 
