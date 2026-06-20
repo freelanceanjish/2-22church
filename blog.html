@@ -256,7 +256,15 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;display:
   </div>
 </footer>
 
-<script src="posts.js?v=32"></script>
+<script src="posts.js?v=33"></script>
+<script>
+(function () {
+  var postId = new URLSearchParams(window.location.search).get('id');
+  if (postId) {
+    window.location.replace('post.html?id=' + encodeURIComponent(postId));
+  }
+})();
+</script>
 <script>
 var currentCat = 'all';
 
