@@ -30,7 +30,7 @@ const POSTS = [
 
 <div class="structure-diagram" aria-label="Three scales of dwelling: heaven, Tabernacle, DNA">
   <p class="structure-diagram-label">Three scales · one grammar</p>
-  <img src="dna-tabernacle-three-scales.svg?v=1" alt="Nested diagram: heavenly pattern, wilderness Tabernacle decagon (~1400 BC), and B-DNA axial decagon with ten-fold symmetry" loading="eager" decoding="async" width="960" height="520">
+  <img src="dna-tabernacle-three-scales.svg?v=2" alt="Nested diagram: heavenly pattern, wilderness Tabernacle decagon (~1400 BC), and B-DNA axial decagon with ten-fold symmetry" loading="eager" decoding="async" width="960" height="520">
   <p class="minimal-cap"><strong>Outer:</strong> pattern shown on the mount (before ~1400 BC). <strong>Middle:</strong> decagon dome, π-scaled court (Exodus ~1400 BC). <strong>Inner:</strong> ten bases per turn, 36° rotation, φ structure (B-DNA, described 1953–2021).</p>
 </div>
 
@@ -50,7 +50,7 @@ const POSTS = [
 <p>Hoy calls that the <strong>Rosetta Stone</strong> of Moses' Tabernacle plans. Once the court is circular, Exodus 27 reads differently: 100 cubits "long" becomes diameter, north and south halves 50 cubits "wide" become radius. The eleven curtains wrap the perimeter like a snow fence around the dwelling. Our <a href="project314.html">God of Pi study page</a> walks through the engineering diagrams; I will not repeat every slide here, but the point that stopped me cold is simple. The most accurate ancient approximation of π known to the ancient world sits in the <strong>fabric measurements</strong> of Exodus, not in a Greek textbook centuries later.</p>
 
 <div class="structure-diagram" aria-label="Pi and circular measure: 314 cubits and DNA helical turn">
-  <img src="dna-tabernacle-pi-314.svg?v=1" alt="Comparison: Exodus curtain cylinder 314 cubits circumference and DNA helical turn with pitch and width measures" loading="lazy" width="960" height="380">
+  <img src="dna-tabernacle-pi-314.svg?v=2" alt="Comparison: Exodus curtain cylinder 314 cubits circumference and DNA helical turn with pitch and width measures" loading="lazy" width="960" height="380">
   <p class="minimal-cap"><strong>Left:</strong> cylindrical curtain assembly, 314 cubits (Project314). <strong>Right:</strong> one helical turn, ~34Å pitch, ~21Å width, ten bases per 360° (canonical B-DNA).</p>
 </div>
 
@@ -63,7 +63,7 @@ const POSTS = [
 <p>Once I accepted the circular court, the number <strong>ten</strong> kept returning. Hoy's dwelling is a <strong>decagon</strong>, ten-sided, similar to a Mongolian yurt. Curtis, working as an artist with compass and scale drawings in 1995, found that among all polygonal helix constructions, only <strong>ten regular pentagons oriented about a decagon</strong> satisfies the dimensional ratios of the double helix: diameter ~20Å, base height ~3.4Å, extension ~34Å per turn, <strong>ten bases</strong>, <strong>36°</strong> rotation each. Larsen's peer-reviewed work confirms the axial view: canonical B-DNA completes one rotation every ten base pairs, and that decagonal symmetry relates to the golden ratio through pentagon geometry. The base angle of a golden triangle is <strong>36°</strong>. That is (π/5) radians. Ten steps of 36° close the circle.</p>
 
 <div class="structure-diagram" aria-label="Ten-fold symmetry Tabernacle and DNA">
-  <img src="dna-tabernacle-tenfold.svg?v=1" alt="Side by side decagon floor plan of Tabernacle and axial decagon of B-DNA with ten-fold symmetry labels" loading="lazy" width="960" height="420">
+  <img src="dna-tabernacle-tenfold.svg?v=2" alt="Side by side decagon floor plan of Tabernacle and axial decagon of B-DNA with ten-fold symmetry labels" loading="lazy" width="960" height="420">
   <p class="minimal-cap">Tabernacle decagon (~1400 BC, Project314) · B-DNA axial decagon (Curtis 1997, Larsen 2021) · same structural number: <strong>10</strong>.</p>
 </div>
 
@@ -78,7 +78,7 @@ const POSTS = [
 <p>Hebrews 8:5 calls the earthly sanctuary a <strong>copy and shadow</strong> of heavenly things. My earlier <a href="blog.html?id=sacred-architecture-vedic-hebrew-temple-parallels">temple-parallels article</a> traced the three-room skeleton outward, Outer Court, Holy Place, Holy of Holies. This study pushes the same grammar <strong>inward</strong>, into biology, because Scripture already does.</p>
 
 <div class="structure-diagram" aria-label="Three zones Tabernacle and cell">
-  <img src="dna-tabernacle-zones.svg?v=1" alt="Nested zones: Tabernacle outer court holy place and most holy place compared to cell membrane cytoplasm and nucleus" loading="lazy" width="960" height="520">
+  <img src="dna-tabernacle-zones.svg?v=2" alt="Nested zones: Tabernacle outer court holy place and most holy place compared to cell membrane cytoplasm and nucleus" loading="lazy" width="960" height="520">
   <p class="minimal-cap"><strong>Left:</strong> graded sanctity toward the Ark. <strong>Right:</strong> membrane, organelles, nucleus with DNA at centre. Same journey inward.</p>
 </div>
 

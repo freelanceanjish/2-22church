@@ -6,7 +6,6 @@
   <text x="480" y="40" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#172A36">π AND CIRCULAR MEASURE</text>
   <line x1="480" y1="52" x2="480" y2="344" stroke="#172A36" stroke-width="1" opacity="0.2"/>
 
-  <!-- Left: cylinder 314 -->
   <text x="240" y="72" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#8B6914">EXODUS CURTAIN CYLINDER</text>
   <ellipse cx="240" cy="200" rx="90" ry="28" fill="none" stroke="#8B6914" stroke-width="2"/>
   <line x1="150" y1="200" x2="150" y2="280" stroke="#8B6914" stroke-width="1.5"/>
@@ -17,11 +16,11 @@
   <text x="240" y="310" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">(30×11) − (30÷2) − 1 = 314</text>
   <text x="240" y="324" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">π × 100 · court diameter 100 cubits</text>
 
-  <!-- Right: helix turn -->
   <text x="720" y="72" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700" fill="#5B8DB8">DNA HELICAL TURN</text>
   <path d="M640 280 Q680 120 720 200 T800 280" fill="none" stroke="#5B8DB8" stroke-width="2.5"/>
   <path d="M640 300 Q680 140 720 220 T800 300" fill="none" stroke="#5B8DB8" stroke-width="2.5" opacity="0.5"/>
-  <text x="720" y="200" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">pitch ~34Å</text>
+  <polygon points="720.0,167.0 748.2,176.2 765.7,200.2 765.7,229.8 748.2,253.8 720.0,263.0 691.8,253.8 674.3,229.8 674.3,200.2 691.8,176.2" fill="rgba(91,141,184,0.08)" stroke="#5B8DB8" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="720" y="200" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">pitch ~34Å · axial decagon</text>
   <text x="720" y="214" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">width ~21Å</text>
   <text x="720" y="310" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">10 bases per 360° turn</text>
   <text x="720" y="324" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#47545B">φ ratio length:width (Larsen 2021)</text>
