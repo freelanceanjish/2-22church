@@ -91,7 +91,7 @@ const POSTS = [
   <figcaption>Cell cross-section beside the Ark replica: graded access from outer boundary to guarded centre.</figcaption>
 </div>
 
-<p>John 1:14 says the Word <strong>dwelt</strong> among us. The Greek is <em>eskēnōsen</em>, tabernacled. John 2:19–21 identifies the temple with Yeshua's body. Paul extends the language to believers: <strong>your body is the temple of the Holy Spirit</strong> (1 Corinthians 6:19). Exodus 40:34–35 describes Glory filling the completed Tabernacle. The parallel is not decorative. Outer approaches, priestly service, one guarded centre where the testimony lives.</p>
+<p>John 1:14 says the Word <strong>dwelt</strong> among us. The Greek is <em>eskēnōsen</em>, tabernacled. John 2:19–21 identifies the temple with Yeshua's body. Paul extends the language to believers: <strong>your body is the temple of the Holy Spirit</strong> (1 Corinthians 6:19). Exodus 40:34–35 describes Glory filling the completed Tabernacle. The parallel is not decorative. It is the same movement from outer approach through daily service to one guarded centre where the testimony lives.</p>
 
 <p>The seven Tabernacle furnishings map cleanly enough to make me uncomfortable with calling it coincidence. Brazen altar and laver at the outer approach. Menorah and table and incense altar in the middle hall. Ark and mercy seat at the centre where atonement meets presence. DNA sits in the nucleus like the tablets in the Ark: <strong>information</strong>, guarded, copied with fidelity, expressed under regulation. When Paul warns that defiling God's temple has consequences (1 Corinthians 3:17), he is not scolding people for missing church architecture. He is naming the body as a dwelling whose holiness has structure.</p>
 
