@@ -198,47 +198,6 @@ def zones():
     write("dna-tabernacle-zones.svg", body)
 
 
-def yhwh_gematria():
-    w, h = 960, 440
-    body = f'''<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img">
-  <title>YHWH gematria claim versus measured B-DNA structure</title>
-  <rect width="{w}" height="{h}" fill="#FFFFFF"/>
-  <rect x="12" y="12" width="{w-24}" height="{h-24}" rx="8" fill="{BG}" stroke="{INK}" stroke-width="1.5"/>
-  <text x="{w//2}" y="40" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="600" fill="{INK}">The YHWH claim (~1986) beside what B-DNA actually measures</text>
-  <line x1="320" y1="52" x2="320" y2="{h-36}" stroke="{INK}" stroke-width="1" opacity="0.2"/>
-  <line x1="640" y1="52" x2="640" y2="{h-36}" stroke="{INK}" stroke-width="1" opacity="0.2"/>
-
-  <text x="160" y="72" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{GOLD}">Rubinstein claim · ~1986</text>
-  <text x="160" y="110" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="{GOLD}">10 · 5 · 6 · 5</text>
-  <text x="160" y="128" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">yod · he · vav · he</text>
-  <text x="160" y="142" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="{INK}">יהוה · YHWH</text>
-  <text x="160" y="168" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="{MUTED}">said to repeat in "sulfur bridges"</text>
-  <text x="160" y="182" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="#8B4513">debunked: H-bonds, not sulfur</text>
-
-  <text x="480" y="72" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{ACCENT}">Canonical B-DNA · measured</text>
-  <text x="480" y="108" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">A-T pair: 2 hydrogen bonds</text>
-  <text x="480" y="122" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">G-C pair: 3 hydrogen bonds</text>
-  <text x="480" y="148" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">10 base pairs per 360° turn</text>
-  <text x="480" y="162" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">~36° rotation per base</text>
-  <text x="480" y="176" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">pitch ~34Å · width ~21Å</text>
-  <text x="480" y="200" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="{ACCENT}">Watson &amp; Crick 1953 · Larsen 2021</text>
-
-  <text x="800" y="72" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{INK}">What still stopped me</text>
-  <text x="800" y="108" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="{GOLD}">10</text>
-  <text x="800" y="124" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="{MUTED}">bases per turn · yod = 10</text>
-  <text x="800" y="148" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">decagon tent · ten sides</text>
-  <text x="800" y="162" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">4 nucleotides · 4-letter name</text>
-  <text x="800" y="176" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{MUTED}">ATCG text in every cell</text>
-  <text x="800" y="200" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="{GOLD}">Sinai ~1400 BC precedes lab</text>
-
-  <text x="{w//2}" y="250" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{INK}">Gematria match on 10-5-6-5: not supported by bond chemistry</text>
-  <text x="{w//2}" y="266" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="{INK}">Structural ten-fold symmetry: supported in B-DNA and Tabernacle models</text>
-  <text x="{w//2}" y="290" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" fill="{MUTED}">Sources: Weizmann skeptics · Israel365 debunk · Larsen Symmetry 2021 · Project314</text>
-</svg>'''
-    write("dna-yhwh-gematria.svg", body)
-
-
 def cymatics_compare():
     w, h = 960, 460
     body = f'''<?xml version="1.0" encoding="UTF-8"?>
@@ -282,6 +241,5 @@ if __name__ == "__main__":
     tenfold()
     pi_314()
     zones()
-    yhwh_gematria()
     cymatics_compare()
     print("done")
