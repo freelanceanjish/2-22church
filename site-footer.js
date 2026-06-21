@@ -4,7 +4,7 @@
   mount.outerHTML = '<footer>' +
     '<div class="footer-grid">' +
       '<div class="footer-brand">' +
-        '<a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;"><span class="logo-mark">2-22</span><span class="logo-word">Church</span></a>' +
+        '<a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:0.5rem;" aria-label="2-22 Church"><img src="logo-footer.png?v=3" alt="" class="logo-img" width="178" height="44" decoding="async"></a>' +
         '<p>A community rooted in the living Word, gathered around Jesus Christ, built on apostolic teaching, with no walls, no hierarchy, just people.</p>' +
         '<div class="footer-social">' +
           '<a href="https://www.youtube.com/@2-22Church" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>' +
