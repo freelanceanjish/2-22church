@@ -64,15 +64,15 @@ PAGE_META = {
         "type": "website",
     },
     "study.html": {
-        "title": "Study Hub, 2:22 Church",
-        "description": "Promoted research on biblical cosmology, Project314, Renformation, and original 2:22 Church studies.",
+        "title": "Study · Divine Geometry, 2:22 Church",
+        "description": "Holy geometry in creation, pi at Sinai, decagon Tabernacle, and the irony of shoebox models beside an intelligent Creator.",
         "path": "/study.html",
         "type": "website",
     },
     "divine-geometry.html": {
-        "title": "Divine Geometry, 2:22 Church",
+        "title": "Study · Divine Geometry, 2:22 Church",
         "description": "Holy geometry in creation, pi at Sinai, decagon Tabernacle, and the irony of shoebox models beside an intelligent Creator.",
-        "path": "/divine-geometry.html",
+        "path": "/study.html",
         "type": "website",
     },
     "our-story.html": {
