@@ -70,13 +70,13 @@ const POSTS = [
 
 <p>Hoy calls that the <strong>Rosetta Stone</strong> of Moses' Tabernacle plans. Once the court is circular, Exodus 27 reads differently: 100 cubits "long" becomes diameter, north and south halves 50 cubits "wide" become radius. The eleven curtains wrap the perimeter like a snow fence around the dwelling. It is the same hermeneutic Project Arc applies to Genesis 6:15, where three cubit measures need not default to a rectangular prism. Our <a href="project314.html">God of Pi study page</a> walks through the engineering diagrams. I will not repeat every slide here, but the point that stopped me cold is simple. The most accurate ancient approximation of π known to the ancient world sits in the <strong>fabric measurements</strong> of Exodus, not in a Greek textbook centuries later.</p>
 
-<p>The figure below pairs that cylindrical curtain assembly at 314 cubits with one helical turn of canonical B-DNA: roughly 34Å pitch, roughly 21Å width, ten bases completing 360°. Different materials, same kind of circular measure.</p>
+<p>The figure below pairs that cylindrical curtain assembly at 314 cubits with one helical turn of canonical B-DNA, roughly 34Å pitch, roughly 21Å width, ten bases completing 360°, and even though the materials differ entirely, both measures turn on the same kind of circular geometry.</p>
 
 <div class="structure-diagram" aria-label="Pi and circular measure: 314 cubits and DNA helical turn">
   <img src="dna-tabernacle-pi-314.svg?v=2" alt="Comparison: Exodus curtain cylinder 314 cubits circumference and DNA helical turn with pitch and width measures" loading="lazy" width="960" height="380">
 </div>
 
-<p>From that cylinder logic the dwelling itself resolves as a <strong>decagon dome</strong>, yurt-like, roughly six stories in Hoy's scale models, with acacia and silver serving as struts rather than ground posts. The Exodus silver tally fits this geometry. The curtains wrap cleanly. The court reads as a circle with a ten-sided tent at centre. Project Arc at Renformation estimates roughly <strong>13,000 sq ft</strong> of interior space in their decagonal model, a dwelling sized for priestly service rather than a cramped diagram. The measurements in Exodus specify the pattern. Hoy and Project314 show how they close.</p>
+<p>From that cylinder logic the dwelling itself resolves as a <strong>decagon dome</strong>, yurt-like, roughly six stories in Hoy's scale models, with acacia and silver serving as struts rather than ground posts. The Exodus silver tally fits this geometry, the curtains wrap cleanly, and the court reads as a circle with a ten-sided tent at centre. Project Arc at Renformation estimates roughly <strong>13,000 sq ft</strong> of interior space in their decagonal model, a dwelling sized for priestly service rather than a cramped diagram. The measurements in Exodus specify the pattern, and Hoy and Project314 show how they close.</p>
 
 <h3>Stone, wheels, and a city: the same arc forward</h3>
 
@@ -110,29 +110,29 @@ const POSTS = [
 
 <p>Hebrews 8:5 calls the earthly sanctuary a <strong>copy and shadow</strong> of heavenly things. My earlier <a href="post/sacred-architecture-vedic-hebrew-temple-parallels.html">temple-parallels article</a> traced the three-room skeleton outward, Outer Court, Holy Place, Holy of Holies. Here I follow that same movement <strong>inward</strong>, into biology, because Scripture already does.</p>
 
-<p>In the figure below, the Tabernacle moves from outer court through the holy place to the guarded centre where presence meets the tablets. The cell moves from membrane through cytoplasm to the nucleus where DNA sits. Graded sanctity on one side, graded access on the other.</p>
+<p>In the figure below, the Tabernacle moves from outer court through the holy place to the guarded centre where presence meets the tablets, while the cell moves from membrane through cytoplasm to the nucleus where DNA sits, graded sanctity on one side and graded access on the other.</p>
 
 <div class="structure-diagram" aria-label="Three zones Tabernacle and cell">
   <img src="dna-tabernacle-zones.svg?v=3" alt="Nested decagon zones: Tabernacle outer court holy place and guarded centre compared to cell membrane cytoplasm and nucleus" loading="lazy" width="960" height="520">
 </div>
 
-<p>Nesting rings on a diagram taught me the logic. A cross-section of a real cell taught me the weight of it. Membrane as boundary. Organelles as daily service. Nucleus as the guarded archive where chromatin sits like covenant text behind a veil. I deliberately left out the rectangular gold chest photos you see in most Tabernacle exhibits. They train the eye to expect a shoebox at the centre, the same habit Project Arc challenges in Noah's vessel and Hoy challenges in the court. The point here is movement inward, not furniture cataloguing.</p>
+<p>Nesting rings on a diagram taught me the logic, and a cross-section of a real cell taught me the weight of it: the membrane functions as boundary, the organelles as the machinery of daily service, and the nucleus as the guarded archive where chromatin sits like covenant text behind a veil. I deliberately left out the rectangular gold chest photos you see in most Tabernacle exhibits. They train the eye to expect a shoebox at the centre, the same habit Project Arc challenges in Noah's vessel and Hoy challenges in the court. The point here is movement inward, not furniture cataloguing.</p>
 
 <div class="photo-strip photo-strip--solo" aria-label="Living cell cross-section">
   <img src="blog-assets/dna-tabernacle/cell-nucleus-cross-section.jpg" alt="Cross-section illustration of a cell showing membrane, cytoplasm, organelles, and nucleus with DNA at centre" loading="lazy">
   <figcaption>Graded access in the living cell: boundary, daily service, genome guarded at centre.</figcaption>
 </div>
 
-<p>John 1:14 says the Word <strong>dwelt</strong> among us. The Greek is <em>eskēnōsen</em>, tabernacled. John 2:19–21 identifies the temple with Yeshua's body. Paul extends the language to believers: <strong>your body is the temple of the Holy Spirit</strong> (1 Corinthians 6:19). Exodus 40:34–35 describes Glory filling the completed Tabernacle. The parallel is not decorative. It is the same movement from outer approach through daily service to one guarded centre where the testimony lives.</p>
+<p>John 1:14 says the Word <strong>dwelt</strong> among us. The Greek is <em>eskēnōsen</em>, tabernacled. John 2:19–21 identifies the temple with Yeshua's body. Paul extends the language to believers: <strong>your body is the temple of the Holy Spirit</strong> (1 Corinthians 6:19). Exodus 40:34–35 describes Glory filling the completed Tabernacle. The parallel is not decorative but the same movement from outer approach through daily service to one guarded centre where the testimony lives.</p>
 
-<p>The seven Tabernacle furnishings map cleanly enough to make me uncomfortable with calling it coincidence. Brazen altar and laver at the outer approach. Menorah and table and incense altar in the middle hall. Mercy seat and testimony at the centre where atonement meets presence. DNA sits in the nucleus like the tablets behind the veil: <strong>information</strong>, guarded, copied with fidelity, expressed under regulation. When Paul warns that defiling God's temple has consequences (1 Corinthians 3:17), he is not scolding people for missing church architecture. He is naming the body as a dwelling whose holiness has structure.</p>
+<p>The seven Tabernacle furnishings map cleanly enough to make me uncomfortable with calling it coincidence: the brazen altar and laver at the outer approach, the menorah, table, and incense altar in the middle hall, and the mercy seat with the testimony at the centre where atonement meets presence. DNA sits in the nucleus like the tablets behind the veil, <strong>information</strong> guarded there, copied with fidelity, and expressed under regulation. When Paul warns that defiling God's temple has consequences (1 Corinthians 3:17), he is not scolding people for missing church architecture. He is naming the body as a dwelling whose holiness has structure.</p>
 
 <div class="scripture">
   <p>"What? know ye not that your body is the temple of the Holy Ghost which is in you, which ye have of God, and ye are not your own?"</p>
   <span class="scripture-ref">1 Corinthians 6:19 (KJV)</span>
 </div>
 
-<p>Yeshua's body was the temple that could be destroyed and raised in three days. Our bodies are the temples Paul says the Spirit occupies now. The Tabernacle Moses built was the shadow at national scale. B-DNA is the text at molecular scale. I believe all three answer to one pattern-giver, not three unrelated metaphors stacked by preachers who ran out of illustrations.</p>
+<p>Yeshua's body was the temple that could be destroyed and raised in three days, our bodies are the temples Paul says the Spirit occupies now, the Tabernacle Moses built was the shadow at national scale, and B-DNA is the text at molecular scale. I believe all three answer to one pattern-giver, not three unrelated metaphors stacked by preachers who ran out of illustrations.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -140,7 +140,7 @@ const POSTS = [
 
 <p>Curtis's decagon model is not the consensus textbook structure. It is a geometric revision with internal coherence and a cool reception from establishment biochemistry. Larsen shows approximations to φ, not proof that God used a compass in the laboratory. Hoy's decagonal Tabernacle rests on the curtain math in Exodus 26 and the circular court in Exodus 27. What I am willing to say is that Scripture ties dwelling, body, and Spirit together at every scale, and that the numeric and geometric echoes between Sinai and the genome deserve weight in that light.</p>
 
-<p>Project314's decagon model is the same study hub that led me from curtain inventory to genome comparison. They list <strong>biological and spiritual parallels</strong> among their research scope. I think that scope was understated. The parallel is not a footnote. It may be the point Paul was naming when he called your body God's temple.</p>
+<p>Project314's decagon model is the same study hub that led me from curtain inventory to genome comparison. They list <strong>biological and spiritual parallels</strong> among their research scope. I think that scope was understated, because the parallel is not a footnote but may be the point Paul was naming when he called your body God's temple.</p>
 
 <p>I drew from <a href="https://project314.org/learn-about/tabernacle-discovery" target="_blank" rel="noopener">Project314's Tabernacle Discovery</a>, their <a href="https://project314.org/learn-about/tabernacle-projects" target="_blank" rel="noopener">Tabernacle Projects</a>, <a href="https://www.renformation.com/" target="_blank" rel="noopener">Renformation's Project Arc</a> (Noah's vessel, Tabernacle, and the nonlinear architecture line), <a href="https://curtisdna.com/markecurtis_dna_art_geometry/DNA_geometry.html" target="_blank" rel="noopener">Mark E. Curtis's DNA geometry work</a>, <a href="https://doi.org/10.3390/sym13101949" target="_blank" rel="noopener">Stuart Larsen's 2021 <em>Symmetry</em> paper</a>, and an <a href="https://opentheword.org/2016/08/24/will-the-real-tabernacle-of-moses-please-stand-up/" target="_blank" rel="noopener">OpenTheWord summary of Hoy's discovery</a>.</p>
 
@@ -158,15 +158,15 @@ const POSTS = [
     date: "12 June 2026",
     category: "Teaching",
     image: "sefer_refuot_cover.svg",
-    excerpt: "Sefer Refuot means Book of Medicines in Hebrew: sefer (book) and refuot (medicines). Many people discover turmeric and Triphala through Ayurveda and credit Hinduism for inventing natural healing, even when the Hebrew manuscripts say India's sages copied that same post-flood book Noah wrote when an angel taught him herbs, long before the Charaka or Sushruta Samhitas were compiled.",
+    excerpt: "Sefer Refuot is Hebrew for Book of Medicines (sefer, book; refuot, medicines). Many people discover turmeric and Triphala through Ayurveda and credit Hinduism for inventing natural healing, even when Hebrew manuscripts say India's sages copied that same post-flood book Noah wrote when an angel taught him herbs, long before the Charaka or Sushruta Samhitas were compiled.",
     content: `
 <p class="opening">
   I opened the <strong>Sefer Asaph ha-Rofe</strong>, the Book of Asaph the Physician, looking for plant prescriptions. Eighteen manuscripts survive in European libraries, compiled somewhere between the third and seventh centuries AD, and scholars treat it as the oldest Hebrew medical text we have. I expected an encyclopedia of remedies. The prologue gave me a family tree. The writers name transmitters in order, past Shem, all the way to Noah, and they insist they are not inventing medicine. They are copying an older book that already existed: the <strong>Sefer Refuot</strong>, Hebrew for the <strong>Book of Medicines</strong> (<em>sefer</em>, book; <em>refuot</em>, medicines).
 </p>
 
-<p>That name matters. A reader who sees <em>Sefer Refuot</em> in a diagram or manuscript catalogue should know immediately what it is: Noah's written pharmacopoeia, the master book of medicines heaven taught him to compile after the flood. <a href="http://www.earlyjewishwritings.com/jubilees.html" target="_blank" rel="noopener">Jubilees 10:12–14</a> says Noah wrote it when heaven explained which herbs could heal the diseases striking his household after the flood, and gave the scroll to Shem. The Asaph prologue picks up the same thread centuries later: medicine stayed whole while humanity spoke one language, then fractured at Babel when seventy nations carried fragments away. India's sages, it says plainly, copied what they could into Sanskrit. Shem's line kept the inheritance in Hebrew.</p>
+<p>That name matters. A reader who sees <em>Sefer Refuot</em> in a diagram or manuscript catalogue should know immediately what it is: Noah's written pharmacopoeia, the master book of medicines heaven taught him to compile after the flood. <a href="http://www.earlyjewishwritings.com/jubilees.html" target="_blank" rel="noopener">Jubilees 10:12–14</a> says Noah wrote it when heaven explained which herbs could heal the diseases striking his household after the flood, and gave the scroll to Shem. The Asaph prologue picks up the same thread centuries later: medicine stayed whole while humanity spoke one language, then fractured at Babel when seventy nations carried fragments away. India's sages, it says plainly, copied what they could into Sanskrit while Shem's line kept the inheritance in Hebrew.</p>
 
-<p>I had grown up on the tidy version of ancient medicine, Greece invented the Four Humors, India invented Ayurveda, everyone else made do with folk cures. Separate peoples, separate discoveries, no real connection. That is what most encyclopedias still teach. The Hebrew manuscripts I kept reading refused to fit inside it.</p>
+<p>I had grown up on the tidy version of ancient medicine, that Greece invented the Four Humors, India invented Ayurveda, and everyone else made do with folk cures on separate paths with no real connection between them. That is what most encyclopedias still teach. The Hebrew manuscripts I kept reading refused to fit inside it.</p>
 
 <h2>If you came for the herbs</h2>
 
@@ -208,7 +208,7 @@ const POSTS = [
 
 <p>If this book existed, the obvious question is what happened to it. Why does no complete copy survive anywhere in the world?</p>
 
-<p>The Sefer Asaph prologue answers this directly. It makes no attempt to invent an origin for the medicine it contains. It claims descent: medical knowledge began with Shem, who received it from Noah, who received it from the angels. It remained whole, the prologue says, as long as humanity spoke one language. Then came Babel. Seventy languages, seventy migrations, and the scholars who scattered with each group copied whatever fragments of the ancient medicine they could carry into their new tongue before the master text passed beyond their reach.</p>
+<p>The Sefer Asaph prologue answers this directly. It makes no attempt to invent an origin for the medicine it contains. It claims descent: medical knowledge began with Shem, who received it from Noah, who received it from the angels. It remained whole, the prologue says, as long as humanity spoke one language, and then came Babel, when seventy languages and seventy migrations scattered scholars with each group to copy whatever fragments of the ancient medicine they could carry into their new tongue before the master text passed beyond their reach.</p>
 
 <p>The Sefer Asaph itself is the most thoroughly studied witness to this tradition in Hebrew. Scholars date its compilation to somewhere between the third and seventh centuries AD. Eighteen known manuscripts survive, scattered across European libraries. The study I keep returning to is Ronit Yoeli-Tlalim's <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6035742/" target="_blank" rel="noopener">"Exploring Persian Lore in the Hebrew Book of Asaf"</a> (<em>Aleph</em> 18:1, 2018, free on PMC). She catalogues the major witnesses: Munich, Bayerische Staatsbibliothek, MS Cod.hebr. 231 (277 folios, the most complete copy), <a href="https://digital.bodleian.ox.ac.uk/objects/7b1e0897-116f-4985-8a7d-b23518114c04/" target="_blank" rel="noopener">Oxford, Bodleian MS Opp. 687</a> (Neubauer 2138, digitized online), Florence Plut. 88.37, and the oldest fragment <a href="https://www.genizah.org/" target="_blank" rel="noopener">JTS 10160</a> from the Cairo Genizah (tenth to twelfth centuries AD). She shows the text is a <strong>composite</strong>, several medical books stitched together, and that Indic medical knowledge sits at the centre of the prologue's origin story, not at the margins.</p>
 
@@ -233,7 +233,7 @@ const POSTS = [
 
 <p>Read within this tradition, the foundational texts of Ayurveda, the <strong><a href="https://niimh.nic.in/ebooks/ecaraka/?con=pro&amp;mod=home" target="_blank" rel="noopener">Charaka Samhita</a></strong> and the <strong><a href="https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/" target="_blank" rel="noopener">Sushruta Samhita</a></strong>, composed in Sanskrit and transmitted for centuries through the Devanagari script tradition, are not wholly independent inventions. They are regional translations and adaptations, the post-flood inheritance mapped onto the native flora of the subcontinent and built into a complete and living medical system. The timeline is decisive here: the Hebrew prologue describes a book already in Shem's keeping before the nations split at Babel, while the classical Ayurvedic samhitas are compiled a millennium or more later. The sages did not start from nothing. According to the Hebrew record, they worked from something that already existed, something that reached them from the same angelic commission that reached Shem.</p>
 
-<p>What makes this more than an interesting ancient claim is that the scholarship points the same direction from the other side. Lieber's Indian organisational model. Yoeli-Tlalim's Persian and Indic layers in the prologue itself. The <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6035742/" target="_blank" rel="noopener">PMC study</a> is the one I would hand to a sceptical friend who admires Ayurveda but assumes the Hebrew side is fringe: it is open access, manuscript-based, and it treats India's medical sages as central characters in how the Hebrew book remembers its own origins. Two bodies of medicine, one preserved in Hebrew and one preserved in Sanskrit, each carrying the other's fingerprints.</p>
+<p>What makes this more than an interesting ancient claim is that the scholarship points the same direction from the other side, from Lieber's Indian organisational model to Yoeli-Tlalim's Persian and Indic layers in the prologue itself. The <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6035742/" target="_blank" rel="noopener">PMC study</a> is the one I would hand to a sceptical friend who admires Ayurveda but assumes the Hebrew side is fringe: it is open access, manuscript-based, and it treats India's medical sages as central characters in how the Hebrew book remembers its own origins. Two bodies of medicine, one preserved in Hebrew and one preserved in Sanskrit, each carrying the other's fingerprints.</p>
 
 <h3>Samhitas are compilations, not single revelations</h3>
 
@@ -248,13 +248,13 @@ const POSTS = [
   <p>Modern study of these manuscripts turns up <strong>interpolations</strong>, remedies and whole sections that read like later insertions when society, botany, or ritual fashion changed. Dating a single recipe to one century is often impossible because the book kept absorbing new material. Separating the earliest oral layer from medieval edits is painstaking work. None of that diminishes the living value of Ayurveda for people who are healed by it. It does demolish the simpler story that Hindu civilisation invented plant medicine in one pure burst and never touched outside sources. The Sanskrit line itself shows collection, revision, loss, and reconstruction over time.</p>
 </div>
 
-<p>Read that alongside the Hebrew prologue. The Asaph tradition says India's sages <strong>copied from books</strong> when speech split at Babel. The Charaka and Sushruta traditions, read honestly, describe <strong>editors assembling a medical collection</strong> across generations. Different origin stories on the surface. Same structural fact underneath: what we call Ayurveda on paper is a late, layered compilation built on older material that did not begin with the name on the cover. The Hebrew witness simply pushes that older material further back, to Noah, Shem, and a book heaven gave before any nation called its medicine its own.</p>
+<p>Read that alongside the Hebrew prologue. The Asaph tradition says India's sages <strong>copied from books</strong> when speech split at Babel. The Charaka and Sushruta traditions, read honestly, describe <strong>editors assembling a medical collection</strong> across generations. The origin stories differ on the surface, but the same structural fact sits underneath: what we call Ayurveda on paper is a late, layered compilation built on older material that did not begin with the name on the cover. The Hebrew witness simply pushes that older material further back, to Noah, Shem, and a book heaven gave before any nation called its medicine its own.</p>
 
 <h3>Written genealogy before oral collection</h3>
 
-<p>When I compare how each tradition remembers its past, the difference is not only which story is older. It is the <strong>form</strong> of the memory. Scripture and the Hebrew medical prologue read like a ledger. Names run in order. Fathers and sons are named. Years at birth and years lived are counted. Flood and covenant sit on a line you can trace. <strong>Genesis 5</strong> walks from Adam to Noah with ages attached. <strong>Genesis 11</strong> continues Shem's line after the flood the same way. <strong>Jubilees</strong> counts jubilees and ties Noah's book to a dated world. The <em>Sefer Asaph</em> prologue names transmitters in sequence from Shem back to Noah. Whether a modern reader accepts every number, the shape is clear: this is <strong>written genealogy</strong>, copied on scrolls, meant to be checked and preserved before speech split at Babel.</p>
+<p>When I compare how each tradition remembers its past, the difference is not only which story is older. It is the <strong>form</strong> of the memory. Scripture and the Hebrew medical prologue read like a ledger, with names running in order, fathers and sons named, years at birth and years lived counted, and flood and covenant sitting on a line you can trace. <strong>Genesis 5</strong> walks from Adam to Noah with ages attached. <strong>Genesis 11</strong> continues Shem's line after the flood the same way. <strong>Jubilees</strong> counts jubilees and ties Noah's book to a dated world. The <em>Sefer Asaph</em> prologue names transmitters in sequence from Shem back to Noah. Whether a modern reader accepts every number, the shape is clear: this is <strong>written genealogy</strong>, copied on scrolls, meant to be checked and preserved before speech split at Babel.</p>
 
-<p>The classical Ayurvedic samhitas remember their teachers differently. Atreya <strong>taught orally</strong> at Taxila. Agnivesha wrote only later. Charaka revised centuries after that. Dridhabala reconstructed what had been lost. Divine figures like Dhanvantari lend authority and honour, not birth years beside a father's name. Scholars speak of oral layers, interpolations, and medieval edits because there is no continuous dated chain tying Agnivesha to a specific year, a verified father, and a contemporary witness the way Shem ties to Noah in Genesis.</p>
+<p>The classical Ayurvedic samhitas remember their teachers differently: Atreya <strong>taught orally</strong> at Taxila, Agnivesha wrote only later, Charaka revised centuries after that, and Dridhabala reconstructed what had been lost when portions went missing. Divine figures like Dhanvantari lend authority and honour, not birth years beside a father's name. Scholars speak of oral layers, interpolations, and medieval edits because there is no continuous dated chain tying Agnivesha to a specific year, a verified father, and a contemporary witness the way Shem ties to Noah in Genesis.</p>
 
 <div class="editorial">
   <p class="editorial-label">Written tradition vs oral tradition</p>
@@ -267,22 +267,22 @@ const POSTS = [
 
 <p>If both traditions descended from a common root, the most straightforward test is to look at what they actually teach and see whether the agreement goes deeper than surface resemblance. I kept reading expecting the parallels to thin out, but they only grew clearer the further I went.</p>
 
-<p>Start with how each system understands disease itself. Sefer Asaph teaches that illness arises from imbalance in the bodily fluids, which are tied directly to elemental forces: wind, fire, water, earth. Plants are classified by their thermal quality, hot or cold, dry or moist, and prescribed to restore what the body has lost. Ayurveda is built on exactly this architecture. The Tridosha system names the same forces as Vata (wind), Pitta (fire), and Kapha (water and earth), and remedies are selected by their <em>virya</em>, their thermal potency, to correct the imbalance. The diagnostic frame and therapeutic logic match line for line. One tradition carried it in Paleo-Hebrew and later in Aramaic through the Semitic world; the other carried it in Sanskrit through South Asia, but the underlying structure is the same.</p>
+<p>The first overlap I checked was how each system understands disease itself. Sefer Asaph teaches that illness arises from imbalance in the bodily fluids, which are tied directly to elemental forces: wind, fire, water, earth. Plants are classified by their thermal quality, hot or cold, dry or moist, and prescribed to restore what the body has lost. Ayurveda is built on exactly this architecture. The Tridosha system names the same forces as Vata (wind), Pitta (fire), and Kapha (water and earth), and remedies are selected by their <em>virya</em>, their thermal potency, to correct the imbalance. The diagnostic frame and therapeutic logic match line for line. One tradition carried it in Paleo-Hebrew and later in Aramaic through the Semitic world; the other carried it in Sanskrit through South Asia, but the underlying structure is the same.</p>
 
-<p>Then there is the fruit. The most celebrated formula in the entire Ayurvedic pharmacopoeia is <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5567597/" target="_blank" rel="noopener">Triphala</a>, a compound of three myrobalan fruits with Haritaki at its core, prescribed for digestive cleansing and longevity for more than two thousand years and still under active clinical research today. Sefer Asaph features the exact same family of fruits under the Aramaic name <em>halilag</em>, prescribed in compound mixtures for gastrointestinal healing. Two traditions separated by thousands of kilometres, independently fixated on the same obscure fruit for the same therapeutic purpose. That is not the kind of coincidence that emerges from separate invention.</p>
+<p>The next overlap is the fruit. The most celebrated formula in the entire Ayurvedic pharmacopoeia is <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5567597/" target="_blank" rel="noopener">Triphala</a>, a compound of three myrobalan fruits with Haritaki at its core, prescribed for digestive cleansing and longevity for more than two thousand years and still under active clinical research today. Sefer Asaph features the exact same family of fruits under the Aramaic name <em>halilag</em>, prescribed in compound mixtures for gastrointestinal healing. Two traditions separated by thousands of kilometres, independently fixated on the same obscure fruit for the same therapeutic purpose. That is not the kind of coincidence that emerges from separate invention.</p>
 
-<p>And then there is the oath. Both traditions bind their physicians with a formal ethical vow before they may practise. The Oath of Asaph, which Shlomo Pines studied alongside the Hippocratic Oath, forbids the physician from using his knowledge of lethal root extracts to harm anyone, and forbids him from providing an abortifacient. The Charaka oath of Ayurveda binds its students with the same two prohibitions, in nearly identical language. The knowledge of healing plants is the knowledge of killing plants. Both traditions drew the same line around that fact, and they drew it in the same place.</p>
+<p>The final overlap that stopped me was the oath. Both traditions bind their physicians with a formal ethical vow before they may practise. The Oath of Asaph, which Shlomo Pines studied alongside the Hippocratic Oath, forbids the physician from using his knowledge of lethal root extracts to harm anyone, and forbids him from providing an abortifacient. The Charaka oath of Ayurveda binds its students with the same two prohibitions, in nearly identical language. Both traditions understood that the knowledge of healing plants is also the knowledge of killing plants, and they drew the same line around that fact in the same place.</p>
 
 <div class="irony-box">
   <span class="irony-label">One Root, Two Branches</span>
-  <p>Wind, fire, water and earth as the drivers of disease. Hot and cold plant energetics as the cure. The myrobalan fruit as the cornerstone remedy. A physician's oath against poison and abortion. Either two distant civilisations independently arrived at the same medical architecture down to the same obscure fruit, or they copied from the same book. The Hebrew tradition tells you plainly which one it was.</p>
+  <p>From wind, fire, water, and earth as the drivers of disease through hot and cold plant energetics as the cure, the myrobalan fruit as the cornerstone remedy, and a physician's oath against poison and abortion, either two distant civilisations independently arrived at the same medical architecture down to the same obscure fruit, or they copied from the same book. The Hebrew tradition tells you plainly which one it was.</p>
 </div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2>The Fragments That Survived</h2>
 
-<p>For a long time it was easy to set the Book of Noah aside as the kind of genealogical fiction ancient writers used to give their work authority. Then came 1947 and the caves at Qumran.</p>
+<p>For a long time it was easy to set the Book of Noah aside as the kind of genealogical fiction ancient writers used to give their work authority, until the 1947 discovery of the caves at Qumran changed what scholars could no longer dismiss as legend alone.</p>
 
 <p>Among the <a href="https://www.deadseascrolls.org.il/" target="_blank" rel="noopener">Dead Sea Scrolls</a> are Aramaic fragments catalogued as <strong>4Q534, 4Q535 and 4Q536</strong>, known collectively as the Birth of Noah, alongside related material in 1Q19 and 6Q8 and the Genesis Apocryphon. These fragments preserve Noah traditions that were circulating in written form during the Second Temple period, including the striking line in 4Q536 about a figure who "will write these words of mine in a book that will not decay." The scrolls do not deliver the Sefer Refuot itself. What they prove is that written volumes carrying distinctly Noah-attributed content physically existed in antiquity, which is exactly what Jubilees and the Asaph prologue assume had happened.</p>
 
@@ -290,8 +290,8 @@ const POSTS = [
 
 <div class="coincidence-question">
   <p class="coincidence-label">The same skeleton</p>
-  <p>Elemental humours, thermal plant logic, the same obscure fruit, the same physician's oath: everything taught, celebrated, and handed down in both medical traditions follows the same underlying frame. The Hebrew line traces that frame to an angelic book through Noah and Shem. The Sanskrit line carries it through Ayurveda centuries later. <strong>One remembers heaven as the source of healing.</strong> The other often treats the system as India's own discovery, and modern wellness culture repeats that story when it sells herbs as uniquely Hindu wisdom. The skeleton is the same; only the story about where it came from differs.</p>
-  <p class="coincidence-prompt"><strong>What percentage of that parallel are you willing to call coincidence?</strong> If the match runs from diagnosis to fruit to oath, is it still honest to call the traditions unrelated, or to credit one religion for inventing what both manuscripts describe as a shared inheritance? Rethink the history. Search for the truth behind the echo.</p>
+  <p>Elemental humours, thermal plant logic, the same obscure fruit, the same physician's oath: everything taught, celebrated, and handed down in both medical traditions follows the same underlying frame. The Hebrew line traces that frame to an angelic book through Noah and Shem. The Sanskrit line carries it through Ayurveda centuries later. The Hebrew line remembers heaven as the source of healing, while the Sanskrit line often treats the system as India's own discovery, and modern wellness culture repeats that story when it sells herbs as uniquely Hindu wisdom, even though the skeleton is the same and only the story about where it came from differs.</p>
+  <p class="coincidence-prompt"><strong>What percentage of that parallel are you willing to call coincidence?</strong> If the match runs from diagnosis to fruit to oath, is it still honest to call the traditions unrelated, or to credit one religion for inventing what both manuscripts describe as a shared inheritance? If even part of it is pattern rather than accident, what would it mean to rethink the history and search for the truth behind the echo?</p>
 </div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
@@ -338,18 +338,18 @@ const POSTS = [
     date: "5 June 2026",
     category: "Teaching",
     image: "blog-assets/astro-parallels/12-constellations-firmament.jpg",
-    excerpt: "I grew up on kundali talk and rashi pride, the kind every auntie has an opinion about. The same twelve signs turn above every nation. Vedic and Jewish calendars keep the same lunar months, the same leap-year fix. The sky was meant to guide us toward truth. Not trap us in fate.",
+    excerpt: "I grew up on kundali talk and rashi pride, the kind every auntie has an opinion about. The same twelve signs turn above every nation. Vedic and Jewish calendars keep the same lunar months, the same leap-year fix. The sky was meant to guide us toward truth, not trap us in fate.",
     content: `
 <div class="minimal-design hero-diagram hero-diagram--photo" aria-label="Twelve constellations rotating in the firmament">
   <img src="blog-assets/astro-parallels/12-constellations-firmament.jpg" alt="The twelve zodiac constellations arranged in a wheel against the night sky" loading="eager" decoding="async">
-  <p class="minimal-cap">Twelve signs rotate in the firmament above. India did not hang them there. They were set to mark seasons and to guide the heart toward the One who made them.</p>
+  <p class="minimal-cap">Twelve signs rotate in the firmament above, and India did not hang them there. They were set to mark seasons and to guide the heart toward the One who made them.</p>
 </div>
 
 <h2 class="article-part-title"><span class="article-part-label">Introduction</span>What I Was Taught, and What the Sky Actually Shows</h2>
 
 <p class="opening">I grew up in a house where <em>rashi</em>, <em>nakshatra</em>, and whose <em>kundali</em> matched whose were ordinary dinner-table talk. Astrology was treated as something India understood better than the rest of the world, and that pride felt natural at the time. It also kept me from asking the obvious question for years: <strong>if the same twelve signs, the same lunar months, and the same leap-month fix show up in the Hebrew calendar, who put them in the sky before either culture could claim ownership?</strong></p>
 
-<p>When I met Jesus Christ as my Saviour in <strong>2009</strong>, I did not stop looking at the heavens. I started reading them differently. The <strong>Rashi Chakra</strong> (<span class="sanskrit-inline">राशि चक्र</span>) and the Hebrew <strong>Mazzaroth</strong> (מַזָּרוֹת) are not rivals at all. They are two names for one belt of lights turning overhead. The point is not "India invented the stars." The stars were meant to <strong>guide toward truth</strong>. Pride blinds that path, and I had plenty of it.</p>
+<p>When I met Jesus Christ as my Saviour in <strong>2009</strong>, I did not stop looking at the heavens. I started reading them differently. The <strong>Rashi Chakra</strong> (<span class="sanskrit-inline">राशि चक्र</span>) and the Hebrew <strong>Mazzaroth</strong> (מַזָּרוֹת) are not rivals at all. They are two names for one belt of lights turning overhead, and the point is not "India invented the stars." The stars were meant to <strong>guide toward truth</strong>, though pride blinds that path, and I had plenty of it.</p>
 
 <p>I wish someone had walked me through this earlier, month by month and moon by moon: how the Vedic and Jewish systems actually line up, where the leap month lands in real life, and where the pattern points once you stop reading the chart for fear and start reading it for the Maker.</p>
 
@@ -385,13 +385,13 @@ const POSTS = [
   </tbody>
 </table>
 
-<p class="visual-summary">Same drift. Same fix. Still only twelve signs in the wheel.</p>
+<p class="visual-summary">The calendars drift the same way, repair the year the same way, and still keep only twelve signs in the wheel.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2 class="section-heading"><span class="section-num">02</span>The Twelve Months Lined Up Sign by Sign</h2>
 
-<p>Look at the wheel in the image above. Ram, bull, twins, crab, lion, virgin, scales, scorpion, archer, goat, water-bearer, fish. The sequence does not change because you cross a border. Vedic month names and Hebrew month names differ; the animals in the sky do not.</p>
+<p>Look at the wheel in the image above: ram, bull, twins, crab, lion, virgin, scales, scorpion, archer, goat, water-bearer, fish, all in the same order no matter which border you cross. Vedic month names and Hebrew month names differ; the animals in the sky do not.</p>
 
 <table class="term-table">
   <thead>
@@ -430,7 +430,7 @@ const POSTS = [
 
 <h2 class="section-heading"><span class="section-num">03</span>The Thirteenth Month (Not a Thirteenth Sign)</h2>
 
-<p>Twelve lunar months give you about <strong>354 days</strong>. A solar year is about <strong>365</strong>. That leaves a gap of roughly eleven days every year. Ignore it and Holi drifts into winter. Passover drifts with it. So both calendars add a month, and neither adds a constellation.</p>
+<p>Twelve lunar months give you about <strong>354 days</strong>, while a solar year runs about <strong>365</strong>, which leaves a gap of roughly eleven days every year. Ignore that gap and Holi drifts into winter, and Passover drifts with it. So both calendars add a month, and neither adds a constellation.</p>
 
 <div class="minimal-design" aria-label="Lunar-solar drift diagram">
   <img src="astro-lunar-solar-drift.svg?v=3" alt="Diagram: 354-day lunar year vs 365-day solar year and eleven-day drift" loading="lazy">
@@ -442,20 +442,20 @@ const POSTS = [
 <div class="compare-grid">
   <div class="compare-col">
     <h4>Adhika Masa (Vedic)</h4>
-    <p>A normal lunar month includes a <strong>Sankranti</strong>: the moment the Sun enters a new <em>Rashi</em>. When the Moon moves quickly and a lunar month passes <strong>without</strong> that solar crossing, that month is flagged as <strong>Adhika Masa</strong>, the extra month. It takes the <strong>name of the next month</strong> and shares its zodiac sign, so one <em>Rashi</em> window runs twice that year. Still no thirteenth constellation.</p>
+    <p>A normal lunar month includes a <strong>Sankranti</strong>: the moment the Sun enters a new <em>Rashi</em>. When the Moon moves quickly and a lunar month passes <strong>without</strong> that solar crossing, that month is flagged as <strong>Adhika Masa</strong>, the extra month. It takes the <strong>name of the next month</strong> and shares its zodiac sign, so one <em>Rashi</em> window runs twice that year without adding a thirteenth constellation.</p>
     <p>Hindu tradition does not treat this month as empty time. It is also called <strong>Mal Maas</strong> (the "unclean" or stalled month) in many <em>panchang</em> traditions, because major <em>samskaras</em> are postponed: weddings, <em>griha pravesh</em>, new business ventures, and other life-turning ceremonies wait for a "proper" month. The logic is not superstition for its own sake. It is a communal agreement that the intercalary month is for <strong>resetting the year</strong>, not for starting a new household on unstable ground.</p>
     <p>At the same time, Vaishnava and bhakti communities call the same period <strong>Purushottama Maas</strong>, the month of the supreme Lord, and treat it as the most fruitful season for devotion. Temples in Vrindavan and Mathura hold <em>Bhagavatam</em> kathas, extended <em>hari kirtan</em>, and <em>Govardhan parikrama</em>. Families increase <em>japa</em> (often setting extra daily rounds of the holy name), read the <em>Bhagavad Gita</em> or <em>Srimad Bhagavatam</em>, give <em>daan</em> (food, clothing, scripture to those in need), light a daily ghee lamp, and keep a simpler <em>sattvic</em> diet. Some observe <em>ekabhukta</em> (one meal a day) or other vratas for the full month. The same astronomical insert is, depending on which elders you ask, either a pause on outward milestones or a concentrated inward feast of worship.</p>
   </div>
   <div class="compare-col">
     <h4>Adar Rishon (Jewish)</h4>
-    <p>The Jewish calendar uses the <strong>Metonic cycle</strong>: seven leap years in every nineteen. In a leap year, the month of <strong>Adar</strong> is doubled. <strong>Adar I</strong> (<em>Adar Rishon</em>) is inserted before <strong>Adar II</strong> (<em>Adar Sheni</em>). Both months bear the same <strong>Mazzal</strong> of <em>Dagim</em> (Pisces). Passover stays anchored in spring. Again: no thirteenth sign.</p>
+    <p>The Jewish calendar uses the <strong>Metonic cycle</strong>: seven leap years in every nineteen. In a leap year, the month of <strong>Adar</strong> is doubled. <strong>Adar I</strong> (<em>Adar Rishon</em>) is inserted before <strong>Adar II</strong> (<em>Adar Sheni</em>). Both months bear the same <strong>Mazzal</strong> of <em>Dagim</em> (Pisces), Passover stays anchored in spring, and still no thirteenth sign is added.</p>
     <p>In ancient Israel the leap month was not only calculated. The <strong>beit din</strong> (rabbinical court) was permitted to meet in <strong>Adar</strong> specifically to deliberate whether the year should be intercalated, weighing witness testimony about the state of the crops, the equinox, and whether Passover would fall too early in the solar season (Sanhedrin 12a). The court session itself was part of how the nation "held trial" on time before declaring a second Adar. Today the cycle is fixed, but the memory remains: Adar is the month when Israel decides whether the year needs healing.</p>
     <p>Once Adar arrives, Jewish practice turns toward <strong>increased joy</strong>. The Talmudic rule <em>mi-she-nichnas Adar marbin b'simcha</em> ("when Adar enters, we increase joy") applies to both Adars in a leap year. Purim itself is kept in <strong>Adar II</strong> so that the joy of Esther's deliverance sits beside the spring redemption of Passover. But the first Adar is not ignored. On the <strong>14th of Adar I</strong> (and the 15th in walled cities), communities observe <strong>Purim Katan</strong>, Little Purim: penitential prayers (<em>Tachanun</em>) are omitted, fasting and public eulogies are forbidden, and many families mark the day with a slightly enhanced meal, guests, and songs of gratitude even though the Megillah is not read and the full Purim mitzvot wait for the second Adar. It is a minor festival, but a real one, and it shows how Israel fills the "extra" month with gladness rather than leaving it blank.</p>
     <p>Leap years also raise practical questions that keep Adar I busy in study and custom: when to observe a <em>yahrzeit</em>, when a boy born in Adar reaches <em>bar mitzvah</em>, how to date legal documents that say simply "Adar." The doubled Fish month is lived law, family memory, and joy, not only a zodiac repeat.</p>
   </div>
 </div>
 
-<p>Read those two columns side by side and the pattern is stronger than the math alone. India calls the insert unclean for weddings and supreme for Krishna-bhakti in the same breath. Israel calls it a court season for calendar repair and a joy season that spills into a second Purim rehearsal. Neither culture treats the thirteenth lunar period as a throwaway. Both pour meaning into it. That is what convinced me these calendars are not independent inventions that happened to agree on leap years. They are two ways of guarding the same created order: repeat one sign, heal the year, and do something worthy with the time God gives back.</p>
+<p>Read those two columns side by side and the pattern is stronger than the math alone. India calls the insert unclean for weddings and supreme for Krishna-bhakti in the same breath. Israel calls it a court season for calendar repair and a joy season that spills into a second Purim rehearsal. Neither culture treats the thirteenth lunar period as a throwaway, and both pour meaning into it. That is what convinced me these calendars are not independent inventions that happened to agree on leap years. They are two ways of guarding the same created order: repeat one sign, heal the year, and do something worthy with the time God gives back.</p>
 
 <div class="minimal-design" aria-label="Leap month mechanism compared">
   <img src="astro-leap-month-mechanism.svg?v=3" alt="Adhika Masa and Adar Rishon: both double one month and sign" loading="lazy">
@@ -466,14 +466,14 @@ const POSTS = [
 
 <h2 class="section-heading"><span class="section-num">04</span>Why the Moon Comes First</h2>
 
-<p>Newspaper horoscopes obsess over your Sun sign. My elders asked about the <strong>Moon</strong>. In <em>Jyotish</em>, your <strong>Janma Rashi</strong> is your Moon sign. In Israel, <strong>Rosh Chodesh</strong> begins each month at the new moon, and the feasts ride that rhythm. Two cultures, same priority, and I notice that now in a way I did not before.</p>
+<p>Newspaper horoscopes obsess over your Sun sign, but my elders asked about the <strong>Moon</strong>. In <em>Jyotish</em>, your <strong>Janma Rashi</strong> is your Moon sign. In Israel, <strong>Rosh Chodesh</strong> begins each month at the new moon, and the feasts ride that rhythm. Two cultures, same priority, and I notice that now in a way I did not before.</p>
 
 <div class="scripture">
   <p>"And God said, 'Let there be lights in the expanse of the heavens to separate the day from the night. And let them be for signs and for seasons, and for days and years…'"</p>
   <span class="scripture-ref">Genesis 1:14</span>
 </div>
 
-<p>Signs and seasons, days and years. That is what Genesis 1:14 says the lights are for, not a licence for any nation to boast that it owns the sky. Both traditions went further than astronomy, though. They read the twelve signs as moral, not merely mechanical. When I read that the Vedic system maps each rashi to one of the four human purposes, and then found that Jewish tradition assigns each constellation to one of the twelve tribes, the same question surfaced in both readings: what if the belt of lights overhead was always meant to reflect the full range of what it means to be human before God?</p>
+<p>Genesis 1:14 says the lights are for signs and seasons, days and years, not a licence for any nation to boast that it owns the sky. Both traditions went further than astronomy, though. They read the twelve signs as moral, not merely mechanical. When I read that the Vedic system maps each rashi to one of the four human purposes, and then found that Jewish tradition assigns each constellation to one of the twelve tribes, the same question surfaced in both readings: what if the belt of lights overhead was always meant to reflect the full range of what it means to be human before God?</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -490,35 +490,35 @@ const POSTS = [
 
 <div class="coincidence-question">
   <p class="coincidence-label">The same skeleton</p>
-  <p>Twelve signs, lunar months, leap-year repair, moon-first reckoning: everything built, celebrated, and narrated around the calendar in both cultures follows the same astronomical skeleton. <strong>Israel's feasts were ordered toward the unseen God who set the lights</strong> (Genesis 1:14; Job 38:32). Popular Hindu astrology often reads the same wheel as fate tied to <em>grahas</em> and visible powers that behave like lesser lords over a life. Same wheel above. Different answer to who rules it.</p>
-  <p class="coincidence-prompt"><strong>What percentage of this alignment are you willing to call coincidence?</strong> If the months, signs, and leap fix all match, who hung the wheel first, and why? Rethink the history. Search for the truth behind the pattern.</p>
+  <p>Twelve signs, lunar months, leap-year repair, moon-first reckoning: everything built, celebrated, and narrated around the calendar in both cultures follows the same astronomical skeleton. <strong>Israel's feasts were ordered toward the unseen God who set the lights</strong> (Genesis 1:14; Job 38:32). Popular Hindu astrology often reads the same wheel as fate tied to <em>grahas</em> and visible powers that behave like lesser lords over a life, so the same wheel above receives a different answer to who rules it.</p>
+  <p class="coincidence-prompt"><strong>What percentage of this alignment are you willing to call coincidence?</strong> If the months, signs, and leap fix all match, who hung the wheel first, and why? I am asking you to rethink the history and search for the truth behind the pattern.</p>
 </div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2 class="article-part-title"><span class="article-part-label">Conclusion</span>Where the Wheel Points</h2>
 
-<p>Was astrology born in India? No. The Ram and the Fish were turning long before any <em>pandit</em> or rabbi wrote a manual. What India kept, often with real skill, is a luni-solar memory. Israel kept the same memory in the <strong>Mazzaroth</strong>, the <strong>Molad</strong>, and the leap month that holds Passover in spring. Same wheel, different accents.</p>
+<p>I used to assume astrology was born in India, but the Ram and the Fish were turning long before any <em>pandit</em> or rabbi wrote a manual. What India kept, often with real skill, is a luni-solar memory. Israel kept the same memory in the <strong>Mazzaroth</strong>, the <strong>Molad</strong>, and the leap month that holds Passover in spring, the same wheel with different accents.</p>
 
-<p>That should humble a Hindu reader, not puff him up. I say that as someone who needed the humbling myself. Pride says, "This is ours." Humility says, "Someone else hung these lights." Job calls the <strong>Mazzaroth</strong> something only the LORD brings out in its season (Job 38:32). Psalm 19 says the sky preaches without a Sanskrit or Hebrew accent.</p>
+<p>That should humble a Hindu reader, not puff him up. I say that as someone who needed the humbling myself. Pride says, "This is ours," while humility says, "Someone else hung these lights." Job calls the <strong>Mazzaroth</strong> something only the LORD brings out in its season (Job 38:32). Psalm 19 says the sky preaches without a Sanskrit or Hebrew accent.</p>
 
-<p>The shared math has a shared purpose. The calendar was meant to <strong>guide</strong>: plant in season, repent on time, watch for the Redeemer the months were counting toward.</p>
+<p>The shared math has a shared purpose, because the calendar was meant to <strong>guide</strong>: plant in season, repent on time, watch for the Redeemer the months were counting toward.</p>
 
 <div class="scripture">
   <p>"Can you bind the chains of the Pleiades or loose the cords of Orion? … Do you know the ordinances of the heavens? Can you establish their rule on the earth?"</p>
   <span class="scripture-ref">Job 38:31,33</span>
 </div>
 
-<p>If you have lived under fear of <em>dosha</em> or a chart that felt like a sentence, hear me plainly: the sky is not your jailer. It is a clock and a witness. Israel's calendar was waiting for the Lamb. The wheel above points the same way: one Mediator, one Lord who actually holds the stars.</p>
+<p>If you have lived under fear of <em>dosha</em> or a chart that felt like a sentence, hear me plainly: the sky is not your jailer but a clock and a witness. Israel's calendar was waiting for the Lamb, and the wheel above points the same way toward one Mediator, one Lord who actually holds the stars.</p>
 
 <div class="scripture">
   <p>"For there is one God, and there is one Mediator between God and men, the Man Christ Jesus, who gave Himself a ransom for all…"</p>
   <span class="scripture-ref">1 Timothy 2:5-6</span>
 </div>
 
-<p><strong>Yeshua</strong> is not another graha to fear or appease. He is the Son who came <strong>in the fullness of time</strong> (Galatians 4:4), when the calendar itself had counted down to His hour. Read the <em>Rashi Chakra</em> with pride and you stop at culture. Read it as a signpost and you meet the King the months were naming all along. That is the turn I am still making in my own heart.</p>
+<p><strong>Yeshua</strong> is not another graha to fear or appease. He is the Son who came <strong>in the fullness of time</strong> (Galatians 4:4), when the calendar itself had counted down to His hour. When I read the <em>Rashi Chakra</em> with pride I stop at culture, but when I read it as a signpost I meet the King the months were naming all along, and that is the turn I am still making in my own heart.</p>
 
-<p>So here is what I am asking my own people to consider. Who set the twelve signs in the firmament, and why? Follow the lights to their Maker. The wheel was never meant to trap you. It was meant to bring you to <strong>Messiah Yeshua</strong>.</p>
+<p>So here is what I am asking my own people to consider. Who set the twelve signs in the firmament, and why? Follow the lights to their Maker, because the wheel was never meant to trap you. It was meant to bring you to <strong>Messiah Yeshua</strong>.</p>
 
 <div class="editorial">
   <p class="editorial-label">Disclaimer</p>
@@ -547,20 +547,20 @@ const POSTS = [
 
 <h2 class="article-part-title"><span class="article-part-label">Introduction</span>Man, Shadow, and the Question of Origins</h2>
 
-<p class="opening">Here is something I keep coming back to. The closer you walk toward the centre of the Tabernacle Moses built, the fewer may follow. That was not decoration. It was theology made of curtain, altar, and fire, ordered by the <strong>God of Israel</strong>. Centuries later, Vedic temple campuses grew into a <strong>similar outward shape</strong> of graded holiness. Yet they bowed toward other objects of devotion, <strong>without</strong> any command from the God of Abraham, Isaac, and Jacob. He did <strong>not</strong> prescribe, authorise, or govern Hindu worship. I am not comparing two equal faiths here. I am tracing <strong>form that echoes</strong>, not shared lordship.</p>
+<p class="opening">Here is something I keep coming back to. The closer you walk toward the centre of the Tabernacle Moses built, the fewer may follow, and that narrowing was not decoration but theology made of curtain, altar, and fire, ordered by the <strong>God of Israel</strong>. Centuries later, Vedic temple campuses grew into a <strong>similar outward shape</strong> of graded holiness. Yet they bowed toward other objects of devotion, <strong>without</strong> any command from the God of Abraham, Isaac, and Jacob. He did <strong>not</strong> prescribe, authorise, or govern Hindu worship. I am not comparing two equal faiths here; I am tracing <strong>form that echoes</strong>, not shared lordship.</p>
 
-<p>Students of religion often treat Hindu and Hebrew worship as worlds apart. One speaks Sanskrit and circles a <em>lingam</em> in a dark inner room. The other speaks Hebrew and faces an Ark behind a woven veil. Set the sources side by side, though, <em>Śruti</em>, <em>Smriti</em>, the Law of Moses, the prophets, and a pattern appears in the <strong>architecture of ritual</strong> that I did not expect when I first started reading. Israel's sanctuary was ordered by the true God through Moses. India's temples, centuries later, built comparable patterns of concentric holiness, impurity, and offering toward other objects of devotion. The resemblance is real. The <strong>Object of worship is not the same</strong>.</p>
+<p>Students of religion often treat Hindu and Hebrew worship as worlds apart, one speaking Sanskrit and circling a <em>lingam</em> in a dark inner room, the other speaking Hebrew and facing an Ark behind a woven veil. Set the sources side by side, though, <em>Śruti</em>, <em>Smriti</em>, the Law of Moses, the prophets, and a pattern appears in the <strong>architecture of ritual</strong> that I did not expect when I first started reading. Israel's sanctuary was ordered by the true God through Moses. India's temples, centuries later, built comparable patterns of concentric holiness, impurity, and offering toward other objects of devotion. The resemblance is real, yet the <strong>Object of worship is not the same</strong>.</p>
 
-<p>On chronology (and yes, scholars debate this): <strong>Vedic culture began taking shape around 1600 BC</strong>, the usual range for the Rigveda and classical <em>śruti</em>. The priestly tradition of Israel, the Tabernacle of Moses and the Law given at Sinai, including Exodus, Leviticus, and <strong>Deuteronomy</strong>, belongs to the second millennium BC as Scripture records it, roughly <strong>1400 BC</strong> onward. Hindu <strong>temple ritual as lived today</strong> developed across centuries after both. Still, its graded sanctity, fire, veil, and offering read to me like <strong>echoes of the worship God gave through Moses</strong>: shadows of something real, not a wholly separate human invention. That ordering does not rank souls. It asks which pattern was given by the God of Israel, and which cultures may still be carrying its shadow.</p>
+<p>On chronology (and yes, scholars debate this): <strong>Vedic culture began taking shape around 1600 BC</strong>, the usual range for the Rigveda and classical <em>śruti</em>. The priestly tradition of Israel, the Tabernacle of Moses and the Law given at Sinai, including Exodus, Leviticus, and <strong>Deuteronomy</strong>, belongs to the second millennium BC as Scripture records it, roughly <strong>1400 BC</strong> onward. Hindu <strong>temple ritual as lived today</strong> developed across centuries after both. Still, its graded sanctity, fire, veil, and offering read to me like <strong>echoes of the worship God gave through Moses</strong>: shadows of something real, not a wholly separate human invention. That ordering does not rank souls; it asks which pattern was given by the God of Israel, and which cultures may still be carrying its shadow.</p>
 
 <div class="editorial">
   <p class="editorial-label">Heart of This Study</p>
   <p>I was born into Hindu culture. After I met Jesus Christ as my personal Saviour in <strong>2009</strong>, the parallels between Tabernacle ritual and the forms I had known all my life began to haunt me in the best way. In my heart I knew my people carried <strong>shadows and echoes of something real</strong>: not inventions from nothing, but traces of worship that once pointed toward the holy. Today those forms often run under the name of religion yet <strong>miss the mark of reality</strong>: the Messiah, <strong>Yeshua</strong>, whom the veil, the fire, and the offering were always meant to reveal.</p>
 </div>
 
-<p>The parallels I kept finding run from the sacred veil and doorpost signs to Holika Dahan, yajna, pakwan, prayer shawls, anointing, and the Ark of the Covenant carried on acacia poles. Fourteen of them in total. Each one a ritual form in India whose counterpart Moses received at Sinai before most of the Vedic temple tradition had taken its present shape.</p>
+<p>The parallels I kept finding run from the sacred veil and doorpost signs to Holika Dahan, yajna, pakwan, prayer shawls, anointing, and the Ark of the Covenant carried on acacia poles: fourteen in total, each one a ritual form in India whose counterpart Moses received at Sinai before most of the Vedic temple tradition had taken its present shape.</p>
 
-<p>And beneath all fourteen, I keep seeing the same primary structure. Not a vague mood of holiness, but a <strong>three-room skeleton</strong> repeated in what is built, what is celebrated, and what is narrated: public outer ground, priestly middle hall, one minister at the inner sanctum. Israel filled that shape with worship toward the God who forbade images and who dwells in heaven (Exodus 20:4; 1 Kings 8:27). India's temple life often fills the same shape with <strong>many visible figures</strong>, mūrtis and lower gods shaped like created beings. Same bones. A different object of worship.</p>
+<p>And beneath all fourteen, I keep seeing the same primary structure. Not a vague mood of holiness, but a <strong>three-room skeleton</strong> repeated in what is built, what is celebrated, and what is narrated: public outer ground, priestly middle hall, one minister at the inner sanctum. Israel filled that shape with worship toward the God who forbade images and who dwells in heaven (Exodus 20:4; 1 Kings 8:27). India's temple life often fills the same shape with <strong>many visible figures</strong>, mūrtis and lower gods shaped like created beings, so the bones match while the object of worship does not.</p>
 
 <div class="structure-diagram" aria-label="Three-room top view: Tabernacle and Hindu temple compared">
   <p class="structure-diagram-label">Primary structure | top view</p>
@@ -590,7 +590,7 @@ const POSTS = [
   <p class="minimal-cap">गर्भगृह · मण्डप · प्राकार  · קֹדֶשׁ · הֵיכָל · קֹדֶשׁ הַקֳּדָשִׁים</p>
 </div>
 
-<p>Look at the top-view diagram in the introduction, then at these photographs. The photos show regional beauty. The floor plan shows the skeleton both traditions keep returning to: <strong>three rooms nesting inward</strong>, outer court to priestly hall to one minister at the inner sanctum. Hindu campuses map it through prākāra, maṇḍapa, and garbhagṛha. Moses and Solomon mapped it through the Outer Court, the Holy Place, and the Holy of Holies.</p>
+<p>The top-view diagram in the introduction and these photographs tell the same story from different angles. The photos show regional beauty, while the floor plan shows the skeleton both traditions keep returning to: <strong>three rooms nesting inward</strong>, outer court to priestly hall to one minister at the inner sanctum. Hindu campuses map it through prākāra, maṇḍapa, and garbhagṛha. Moses and Solomon mapped it through the Outer Court, the Holy Place, and the Holy of Holies.</p>
 
 <p class="visual-summary">Graded sanctity: public courtyard → priestly hall → one minister in the inner chamber.</p>
 
@@ -609,7 +609,7 @@ const POSTS = [
   </div>
 </div>
 
-<p>The geometry differs: decagon, temple campus, stupa dome. But the <em>logic</em> is identical. Holiness is spatial, progressive, and guarded. Whether the worshipper walks a pradakṣiṇā path around a stūpa or a priest alone enters the garbhagṛha, the centre is not casual ground. To rush inward without purification is not devotion. It is violation.</p>
+<p>The geometry differs, decagon, temple campus, stupa dome, but the <em>logic</em> is identical: holiness is spatial, progressive, and guarded. Whether the worshipper walks a pradakṣiṇā path around a stūpa or a priest alone enters the garbhagṛha, the centre is not casual ground, and to rush inward without purification is not devotion but violation.</p>
 </div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
@@ -634,7 +634,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">A woven barrier stands between the people and the holiest presence.</p>
 
-<p>Not everyone gets to see everything. I grew up walking past curtains in mandirs without ever stopping to ask what they were doing there. When I read the Tabernacle description in Exodus and found the same cloth standing between the outer court and the inner chamber, the curtain made sense for the first time. It was not decoration. It was the fabric saying in silence: what is on the other side of this is real, and you do not wander in. Both traditions hang a <strong>veil</strong>, a cloth boundary between outer worship and inner mystery.</p>
+<p>I grew up walking past curtains in mandirs without ever stopping to ask what they were doing there, because not everyone gets to see everything. When I read the Tabernacle description in Exodus and found the same cloth standing between the outer court and the inner chamber, the curtain made sense for the first time: not decoration, but fabric saying in silence that what lies beyond is real and not entered casually. Both traditions hang a <strong>veil</strong>, a cloth boundary between outer worship and inner mystery.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -764,7 +764,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Fragrant smoke morning and evening: dhupa in shodashopachara; ketoret before the veil.</p>
 
-<p>Sweet smoke rises in both sanctuaries, prayers riding on it, the air itself <em>changed</em>.</p>
+<p>In both sanctuaries sweet smoke rises with the prayers, and the air itself is <em>changed</em> by the offering.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -804,7 +804,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Pranam vs bowing: worship as bodily surrender before the holy.</p>
 
-<p>Worship is never only speech. It is <strong>body</strong> surrendered.</p>
+<p>Worship in both traditions is never only speech; it is the <strong>body</strong> surrendered before the holy.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -844,7 +844,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Seven lights: samai wick-points and menorah branches both mark perpetual sacred flame.</p>
 
-<p>Once a place is consecrated, the light must not die. Both lamps speak in <strong>sevens</strong>.</p>
+<p>Once a place is consecrated, the light must not die, and both lamps speak in <strong>sevens</strong>.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -884,7 +884,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Pakwan and Seder: five or six key foods arranged as covenant meal before God.</p>
 
-<p>God is honoured with <strong>food</strong> here: not random dishes, but a fixed set of items each carrying meaning.</p>
+<p>God is honoured with <strong>food</strong> in both traditions, not random dishes but a fixed set of items each carrying meaning.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -924,7 +924,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">Prayer shawl: marked cloth that frames worship before the holy.</p>
 
-<p>Before speech, the body is <strong>clothed for prayer</strong>, marked as set apart from ordinary street dress.</p>
+<p>In both traditions the worshipper clothes the body for prayer before the words begin, marking the person as set apart from ordinary street dress.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -994,7 +994,7 @@ const POSTS = [
 </div>
 <p class="visual-summary">First yield of field and flock sustains the temple and priesthood.</p>
 
-<p>Temples do not run on sentiment alone. They run on <strong>first-fruits</strong> returned to God.</p>
+<p>Temples do not run on sentiment alone; they run on <strong>first-fruits</strong> returned to God.</p>
 
 <div class="compare-grid">
   <div class="compare-col">
@@ -1138,7 +1138,7 @@ const POSTS = [
 <div class="divider"><span class="divider-mark">✦</span></div>
 
 <h2 class="article-part-title"><span class="article-part-label">Summary</span>Comparative Terminology (Mosaic ~1400 BC | Vedic from ~1600 BC)</h2>
-<p>A quick reference table for when you want the terms in one place. The Hebrew column reflects worship given through Moses at Sinai. The Indian column reflects forms that develop later in the Vedic and temple world.</p>
+<p>The table below gathers the terms in one place for reference. The Hebrew column reflects worship given through Moses at Sinai, and the Indian column reflects forms that develop later in the Vedic and temple world.</p>
 
 <table class="term-table">
   <thead>
@@ -1168,7 +1168,7 @@ const POSTS = [
 
 <div class="coincidence-question">
   <p class="coincidence-label">The same skeleton</p>
-  <p>Fourteen ritual parallels, one three-room floor plan, graded holiness from public ground to a single minister at the centre: everything built, celebrated, and narrated around these sanctuaries follows the same structural grammar. That is not a loose family resemblance. <strong>Israel worshipped the God who cannot be seen and who dwells in heaven.</strong> Hindu temple life, as most people encounter it, centres on <strong>many visible figures</strong>, lower gods and emblems that look like created beings. The skeleton matches. The Object of worship does not.</p>
+  <p>Fourteen ritual parallels, one three-room floor plan, graded holiness from public ground to a single minister at the centre: everything built, celebrated, and narrated around these sanctuaries follows the same structural grammar, and that is not a loose family resemblance. <strong>Israel worshipped the God who cannot be seen and who dwells in heaven.</strong> Hindu temple life, as most people encounter it, centres on <strong>many visible figures</strong>, lower gods and emblems that look like created beings, so the skeleton matches while the Object of worship does not.</p>
   <p class="coincidence-prompt"><strong>What percentage of this are you willing to call coincidence?</strong> At what point should a sincere reader stop treating history as two independent inventions and start searching for the truth behind the echo?</p>
 </div>
 
@@ -1218,17 +1218,15 @@ const POSTS = [
     image: "vedic-witness-christ.png",
     excerpt: "God is Father to all people, even those who have not yet known Him by name. Scripture says He enlightens every soul born into the world. Here I have gathered Sanskrit passages from the Vedas, Upanishads, and Puranas, with Devanagari script, transliteration, and English, all pointing to a holy Saviour: virgin birth, suffering, shed blood, and the name Jesus Christ.",
     content: `
-<p class="opening">
-  God is Father to every human being. Some may not yet know Him as their own Father, but He made them, and that makes Him Father to all.
-</p>
+<p class="opening">God is Father to every human being, and even those who have not yet known Him as their own Father are still His, because He made them and that making makes Him Father to all.</p>
 
-<p>The Bible does not keep this quiet. God is love (<em>1 John 4:8</em>). He loves with an everlasting love (<em>Jeremiah 31:3</em>). <em>"For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life"</em> (<em>John 3:16</em>). He does not want anyone to perish. So He has revealed Himself in many ways, including as the incarnate Son, Jesus Christ (<em>Hebrews 1:1–2</em>). And because He does not want anyone to be lost, He <em>lightens every human being who is born into this world</em> (<em>John 1:9</em>). The same loving God has also spoken through Hindu scriptures, so that the teeming millions who revere Sanskrit do not have to remain in total darkness.</p>
+<p>The Bible does not keep this quiet. God is love (<em>1 John 4:8</em>). He loves with an everlasting love (<em>Jeremiah 31:3</em>). <em>"For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life"</em> (<em>John 3:16</em>). He does not want anyone to perish, so He has revealed Himself in many ways, including as the incarnate Son, Jesus Christ (<em>Hebrews 1:1-2</em>). And because He does not want anyone to be lost, He <em>lightens every human being who is born into this world</em> (<em>John 1:9</em>). The same loving God has also spoken through Hindu scriptures, so that the teeming millions who revere Sanskrit do not have to remain in total darkness.</p>
 
-<p>What strikes me is how many of these passages, read in Sanskrit and rendered faithfully into English, bear witness to Jesus Christ by name and to His vicarious death. Below, each reference appears in three layers: <strong>Devanagari</strong> (the exact Sanskrit letters), <strong>transliteration</strong> (Roman letters), and <strong>English meaning</strong>.</p>
+<p>What strikes me is how many of these passages, read in Sanskrit and rendered faithfully into English, bear witness to Jesus Christ by name and to His vicarious death. Each reference below appears in three layers: <strong>Devanagari</strong> (the exact Sanskrit letters), <strong>transliteration</strong> (Roman letters), and <strong>English meaning</strong>.</p>
 
 <div class="editorial">
   <p class="editorial-label">Timeline of witness (approximate)</p>
-  <p>These Sanskrit sources do not all speak from the same century, and they must not be read as though they appeared beside the Gospel by accident. <strong>Moses and the Torah (~1400 BC)</strong> record the Law and the promise of a prophet like Moses before Israel enters the land. <strong>The Vedic hymns</strong> quoted below sit in the usual scholarly range of roughly <strong>1500–1200 BC</strong> (dates disputed by tradition and academy alike). <strong>The Upanishads</strong> develop later, commonly placed between about <strong>800 and 200 BC</strong>. <strong>The Puranas</strong>, including passages used in witness to Christ among Hindus, are often dated to the <strong>first millennium AD</strong> in academic study, though Hindu tradition claims older layers. <strong>Christ (~AD 30)</strong> fulfills what the Law and the Prophets spoke. Read with the timeline in view: these lines are not rivals to the Gospel. They are older or parallel echoes in cultures God did not leave without light, and they find their explanation in the One who came in the fullness of time.</p>
+  <p>These Sanskrit sources do not all speak from the same century, and they must not be read as though they appeared beside the Gospel by accident. <strong>Moses and the Torah (~1400 BC)</strong> record the Law and the promise of a prophet like Moses before Israel enters the land. <strong>The Vedic hymns</strong> quoted below sit in the usual scholarly range of roughly <strong>1500-1200 BC</strong> (dates disputed by tradition and academy alike). <strong>The Upanishads</strong> develop later, commonly placed between about <strong>800 and 200 BC</strong>. <strong>The Puranas</strong>, including passages used in witness to Christ among Hindus, are often dated to the <strong>first millennium AD</strong> in academic study, though Hindu tradition claims older layers. <strong>Christ (~AD 30)</strong> fulfills what the Law and the Prophets spoke. With that timeline in view, these lines are not rivals to the Gospel but older or parallel echoes in cultures God did not leave without light, and they find their explanation in the One who came in the fullness of time.</p>
 </div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
@@ -1357,7 +1355,7 @@ const POSTS = [
 
 <h2>Presenting Jesus to Hindu Seekers</h2>
 
-<p>What I have found is that for someone who honours Sanskrit as a sacred language, hearing the <em>Bhavishya Purana</em> or the <em>Maha Brahmanam</em> speak of a holy Saviour who sheds blood for sin is a different kind of encounter than being handed a Western gospel tract. The journey begins in their own house. Starting from scripture they already revere and walking toward the New Testament does not feel like abandonment. It can feel like arrival.</p>
+<p>What I have found is that for someone who honours Sanskrit as a sacred language, hearing the <em>Bhavishya Purana</em> or the <em>Maha Brahmanam</em> speak of a holy Saviour who sheds blood for sin is a different kind of encounter than being handed a Western gospel tract. The journey begins in their own house, and starting from scripture they already revere and walking toward the New Testament does not feel like abandonment; it can feel like arrival.</p>
 
 <p>I have seen seekers come to the Bible and to Christ this way. They embraced Christianity through baptism and witnessed remarkably for Him. The <em>Bhavishya Purana</em> (<em>bhavishya</em> means "future") is said to be the only Purana among the eighteen that contains the name of Jesus explicitly, including material about the virgin birth of Christ.</p>
 
@@ -1367,7 +1365,7 @@ const POSTS = [
 
 <div class="coincidence-question">
   <p class="coincidence-label">The same skeleton</p>
-  <p>Virgin birth, suffering servant, shed blood for sin, a named holy Saviour: everything written, celebrated, and handed down in these Sanskrit passages follows the same messianic skeleton the Gospels narrate in flesh and history. <strong>Scripture centres that story on the unseen God who sent His Son from heaven.</strong> Popular Hindu reading often spreads the hope across many figures, avatars, and visible gods who resemble created beings. Same outline in the text. A different Lord at the centre.</p>
+  <p>Virgin birth, suffering servant, shed blood for sin, a named holy Saviour: everything written, celebrated, and handed down in these Sanskrit passages follows the same messianic skeleton the Gospels narrate in flesh and history. <strong>Scripture centres that story on the unseen God who sent His Son from heaven.</strong> Popular Hindu reading often spreads the hope across many figures, avatars, and visible gods who resemble created beings, so the outline in the text matches while the Lord at the centre does not.</p>
   <p class="coincidence-prompt"><strong>What percentage of these parallels are you willing to call coincidence?</strong> If Sanskrit and the New Testament keep telling the same story with the same bones, is it still enough to call them unrelated traditions? Rethink the history. Search for the truth behind the witness.</p>
 </div>
 
@@ -1389,17 +1387,17 @@ const POSTS = [
   The most dangerous man in any court is not the tyrant on the throne. It is the counselor who has the king's ear and hatred in his heart.
 </p>
 
-<p>Most of us grew up with a picture of Lucifer that has horns and fire, the fallen angel who wanted to be God. That picture is not entirely wrong, but it skips over something that, once you see it, changes how you read almost everything in Scripture. Before the fall, his position was not merely powerful. It was <em>legal</em>. He was not a rebel storming the gates from outside the system. He was the system's highest officer. When he fell, he did not lose his authority. He poisoned it.</p>
+<p>Most of us grew up with a picture of Lucifer that has horns and fire, the fallen angel who wanted to be God. That picture is not entirely wrong, but it skips over something that, once you see it, changes how you read almost everything in Scripture. Before the fall, his position was not merely powerful but <em>legal</em>. He was not a rebel storming the gates from outside the system but the system's highest officer, and when he fell he did not lose his authority; he poisoned it.</p>
 
 <p>Here is what I mean. The ancient world did not separate the priesthood from the judiciary. The temple was the courthouse. The priests were the constitutional judges. Deuteronomy 17:8-9 makes this explicit: when a matter is too hard to decide, you bring it to the priests, and their word is final. Lucifer, as the Heavenly High Priest, was the supreme legal officer of the entire created order. Ezekiel 28 gives us his credentials: nine precious stones covering him, arranged in exactly the pattern of the High Priest's Breastplate of Judgment from Exodus 28. That was a uniform of office, not decoration. Ezekiel 28:14 confirms his clearance level: anointed guardian, ordained, standing on the holy mountain of God. He had direct access to the Holy of Holies, not occasional access but daily.</p>
 
-<p>Isaiah called him <em>Helel ben Shachar</em>, the Shining One, Son of the Dawn. The first light. The highest created being in the framework, whose job was to stand between God's perfect standard and everything in creation and ensure the Law was upheld.</p>
+<p>Isaiah called him <em>Helel ben Shachar</em>, the Shining One, Son of the Dawn, the first light and the highest created being in the framework, whose job was to stand between God's perfect standard and everything in creation and ensure the Law was upheld.</p>
 
 <img src="cosmic_courtroom.svg" alt="The Cosmic Courtroom hierarchy diagram" style="width:100%;margin:2.5rem 0;border:0.5px solid rgba(91,141,184,0.18);">
 
 <p>Job 1 gives us the only actual transcript we have of him working. He shows up at a Divine Council session, the text just says he came along with the other sons of God, completely casually, as if this were routine, because it was. He is a member, not an intruder. He has been out investigating the earth, which is exactly what a legal officer would do, gathering evidence, assessing covenant compliance. Then he opens a case against Job. He does not ambush him. He files a proper challenge: Job's righteousness is circumstantial, bought by God's protection, and he wants permission to test it. God grants it, not out of carelessness but because that is how the legal framework operated. The officer filed a motion and the Judge allowed it.</p>
 
-<p>Zechariah 3 shows the same scene. A heavenly courtroom. Joshua the High Priest standing before the Angel of the Lord, with ha-satan, the accuser, standing at his right hand to press charges. This is the actual structure of heaven's legal assembly, not metaphor, and Lucifer had a legitimate seat in it.</p>
+<p>Zechariah 3 shows the same scene, a heavenly courtroom with Joshua the High Priest standing before the Angel of the Lord, and ha-satan, the accuser, standing at his right hand to press charges. This is the actual structure of heaven's legal assembly, not metaphor, and Lucifer had a legitimate seat in it.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -1436,11 +1434,11 @@ const POSTS = [
 
 <p>His mandate, testing every claimant to lawful authority, did not stop at the fall. It culminated in two examinations that decided the whole thing.</p>
 
-<p>Adam was placed in Eden as both king and priest. His authority was real but untested. Lucifer approached Eve with a precise legal challenge: <em>did God really say</em>. Not a threat but a question. He was cross-examining the covenant. Adam failed the examination, broke the contract, and the dominion legally transferred. Outside Eden, in the <em>kosmos</em>, the world defined by separation from God, the Law Protector became the automatic jurisdiction. That is why Jesus calls him the prince of this world without any qualifier. It is a matter of legal fact. Adam handed it over.</p>
+<p>Adam was placed in Eden as both king and priest. His authority was real but untested. Lucifer approached Eve with a precise legal challenge, <em>did God really say</em>, not a threat but a question, cross-examining the covenant itself. Adam failed the examination, broke the contract, and the dominion legally transferred. Outside Eden, in the <em>kosmos</em>, the world defined by separation from God, the Law Protector became the automatic jurisdiction. That is why Jesus calls him the prince of this world without any qualifier. It is a matter of legal fact. Adam handed it over.</p>
 
-<p>So when Jesus went into the wilderness, this was not a spiritual test in the vague sense. Matthew 4:1 says He was led there specifically to be tested by the devil. That is an appointment. Lucifer had held the office of chief examiner since before the world, and this was the examination that mattered above all others. His cross-examination went straight for the one question he needed answered: is this man actually the Son of God, or is he something else? <em>If you are the Son of God, command these stones to become bread.</em> Not hunger, really. Jurisdiction. Can I get you to act as a created son rather than the Begotten Son, to reach for provision outside the Father's word?</p>
+<p>So when Jesus went into the wilderness, this was not a spiritual test in the vague sense. Matthew 4:1 says He was led there specifically to be tested by the devil, and that was an appointment. Lucifer had held the office of chief examiner since before the world, and this was the examination that mattered above all others. His cross-examination went straight for the one question he needed answered: is this man actually the Son of God, or is he something else? <em>If you are the Son of God, command these stones to become bread.</em> The issue was not hunger, really, but jurisdiction: could he get Jesus to act as a created son rather than the Begotten Son, to reach for provision outside the Father's word?</p>
 
-<p>Then the offer of the kingdoms of the world. Think about that seriously for a moment. He was not bluffing. The dominion was genuinely his to negotiate with. He had held it since Adam's departure from Eden. He was offering Jesus a legal settlement: take the kingdoms now, skip the cross, avoid the penalty clause. Jesus refused every single motion with the same instrument: <em>it is written</em>. The highest constitutional authority, the unimpeachable record. He would not step outside it even once.</p>
+<p>Then came the offer of the kingdoms of the world, and think about that seriously for a moment. He was not bluffing. The dominion was genuinely his to negotiate with. He had held it since Adam's departure from Eden. He was offering Jesus a legal settlement: take the kingdoms now, skip the cross, avoid the penalty clause. Jesus refused every single motion with the same instrument, <em>it is written</em>, the highest constitutional authority, the unimpeachable record, and He would not step outside it even once.</p>
 
 <p>Just before the cross, Jesus said something that functions as a legal declaration:</p>
 
@@ -1474,7 +1472,7 @@ const POSTS = [
   <span class="scripture-ref">Daniel 7:26</span>
 </div>
 
-<p>The same pattern that played out in Pharaoh's court, in Nebuchadnezzar's court, in the court of Ahasuerus, the legalist who used his position to destroy the people he hated, judged by the very king he served, plays out one final time at the throne of God. Haman's gallows. The lions' den turned against the accusers. The irrevocable decree reversed by a higher decree written in blood.</p>
+<p>The same pattern that played out in Pharaoh's court, in Nebuchadnezzar's court, in the court of Ahasuerus, the legalist who used his position to destroy the people he hated, judged by the very king he served, plays out one final time at the throne of God: Haman's gallows, the lions' den turned against the accusers, the irrevocable decree reversed by a higher decree written in blood.</p>
 
 <p>The harsh counselor who sat closest to the throne, who knew the Law better than any created being, who used every instrument of his office to condemn the people God loved, he built his own gallows. The graceful Counselor, the one who carried the Father's favour, who pleaded for the people rather than against them, took his place beside the throne forever.</p>
 
@@ -1520,15 +1518,15 @@ const POSTS = [
     date: "26 May 2026",
     category: "Teaching",
     image: "seed_and_shadow.svg",
-    excerpt: "Nations go to war over dirt. Churches write cheques. Theologians fill libraries. All of it in the name of a covenant whose most important word keeps getting walked past. Paul called that word the key to everything God promised Abraham. Seed. Singular. One.",
+    excerpt: "Nations go to war over dirt, churches write cheques, theologians fill libraries, all of it in the name of a covenant whose most important word keeps getting walked past. Paul called that word, singular and one, the key to everything God promised Abraham.",
     content: `
 <p class="opening">
   The people fighting over the dirt are using the name of a man who refused to settle for it, because he was looking at the stars.
 </p>
 
-<p>Here is the strange irony at the centre of all of this. Nations go to war. Churches raise funds. Pastors build elaborate theological justifications for things that would have confused the very people those justifications claim to honour. Sitting in the middle of it all is a covenant, God's promise to Abraham, and the most important word in that covenant has been quietly walked past for centuries. That word is <span class="term">Seed</span>. Singular. One.</p>
+<p>Here is the strange irony at the centre of all of this. Nations go to war, churches raise funds, pastors build elaborate theological justifications for things that would have confused the very people those justifications claim to honour, and sitting in the middle of it all is a covenant, God's promise to Abraham, whose most important word has been quietly walked past for centuries. That word is <span class="term">Seed</span>, singular, one.</p>
 
-<p>Paul noticed. Galatians 3:16, and he is not gentle about it. The promises were made to Abraham and to his <em>offspring</em>, he says, then he stops the reader cold: it does not say offsprings, plural. It says offspring, singular. That singular offspring, Paul announces plainly, is Christ. Not a population. Not a modern state. A Person. Paul is not offering a creative reading. He is pointing to grammar that was there the whole time. This changes everything. The covenant was signed with one Heir. Everything else flows from that, or it does not flow at all.</p>
+<p>Paul noticed this in Galatians 3:16, and he is not gentle about it. The promises were made to Abraham and to his <em>offspring</em>, he says, then he stops the reader cold: it does not say offsprings, plural. It says offspring, singular. That singular offspring, Paul announces plainly, is Christ, not a population, not a modern state, but a Person. Paul is not offering a creative reading. He is pointing to grammar that was there the whole time, and this changes everything. The covenant was signed with one Heir, and everything else flows from that, or it does not flow at all.</p>
 
 <img src="seed_and_shadow.svg" alt="Stars above, seed descending, shadow cast on the ground" style="width:100%;margin:2.5rem 0;border:0.5px solid rgba(91,141,184,0.12);">
 
@@ -1538,7 +1536,7 @@ const POSTS = [
 
 <p>Go back to Genesis and read it with this in mind. God tells Abraham his offspring will be like the dust of the earth and like the stars of the sky. Two images, right next to each other, pulling in completely different directions. The dust is countable, material, temporary. The stars are celestial, beyond reach, enduring. That tension is built into the promise from the first breath of it.</p>
 
-<p>Abraham understood which one he was walking toward. Hebrews 11 says he was looking for a city whose designer and builder is God. Not a city he would build. Not a parcel of land he would farm. A city God would design and construct, somewhere beyond what he could see. He died without receiving the land. He died a stranger and a pilgrim. The New Testament does not present this as Abraham's tragedy. It presents it as his crowning act of faith. He was not cheated of the promise. He understood it better than most of his descendants ever would.</p>
+<p>Abraham understood which one he was walking toward. Hebrews 11 says he was looking for a city whose designer and builder is God, not a city he would build, not a parcel of land he would farm, but a city God would design and construct, somewhere beyond what he could see. He died without receiving the land, a stranger and a pilgrim, and the New Testament does not present this as Abraham's tragedy but as his crowning act of faith. He was not cheated of the promise. He understood it better than most of his descendants ever would.</p>
 
 <p>The word translated "forever" in those covenant passages, <em>olam</em>, means perpetuity, without end. A biological lineage cannot receive a forever-promise. People die, nations scatter, empires fall. If you are going to make a covenant that lasts forever, you need a recipient who can endure forever. There is only one candidate in the whole of human history who qualifies. The promise was always describing Him.</p>
 
@@ -1548,7 +1546,7 @@ const POSTS = [
 
 <p>The next question is obvious: if the covenant belongs to Yeshua, what does that mean for everyone else? Paul answers in Galatians 3:27-29. Those who are baptised into Christ have put on Christ. If you are Christ's, then you are Abraham's offspring, heirs according to promise. There it is. No DNA bypass. No second track. The only route into Abraham's inheritance runs directly through the Seed himself.</p>
 
-<p>When Yeshua appeared to Saul on the Damascus road, Saul had been hunting and imprisoning his followers. Yeshua did not say why are you persecuting my people. He said why are you persecuting <em>me</em>. The union is that complete. The church is not close to Yeshua. In Paul's language, and Paul is not being poetic, the church <em>is</em> his body. One body. One Seed. A branch draws its life from the vine it is attached to. Sever the connection and you no longer carry what the vine carries. No amount of genealogy puts it back.</p>
+<p>When Yeshua appeared to Saul on the Damascus road, Saul had been hunting and imprisoning his followers. Yeshua did not say why are you persecuting my people. He said why are you persecuting <em>me</em>, because the union is that complete. The church is not close to Yeshua; in Paul's language, and Paul is not being poetic, the church <em>is</em> his body, one body, one Seed. A branch draws its life from the vine it is attached to, and sever the connection and you no longer carry what the vine carries. No amount of genealogy puts it back.</p>
 
 <div class="pullquote">
   <p>A branch has no independent right to the soil. It draws life only because it stays attached to the root. The moment it separates, it stops carrying the promise, regardless of what it was before it broke off.</p>
@@ -1575,9 +1573,9 @@ const POSTS = [
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
-<h2>One Tree. Not Two.</h2>
+<h2>One Tree, Not Two</h2>
 
-<p>The dual-track idea, that God has a separate parallel plan for an ethnic nation running alongside his plan for the church, finds no support in the New Testament. It contradicts it outright. Paul's image in Romans 11 is a single olive tree. One trunk. One root. One source of nourishment. Branches have been broken off. Wild branches have been grafted in. There has only ever been one tree. You are either attached to the root or you are not. Your ancestry does not change that calculus.</p>
+<p>The dual-track idea, that God has a separate parallel plan for an ethnic nation running alongside his plan for the church, finds no support in the New Testament. It contradicts it outright. Paul's image in Romans 11 is a single olive tree, one trunk, one root, one source of nourishment. Branches have been broken off, wild branches have been grafted in, and there has only ever been one tree. You are either attached to the root or you are not, and your ancestry does not change that calculus.</p>
 
 <p>Dispensationalism effectively tries to rebuild the dividing wall that Paul says the cross destroyed. Galatians 3:28 leaves no ambiguity: there is neither Jew nor Greek, for you are all one in Christ. Acts 10:34 confirms it: God shows no partiality. Any theological system that re-introduces ethnic favouritism as a category of divine covenant standing is working against the grain of everything the apostles taught.</p>
 
@@ -1591,7 +1589,7 @@ const POSTS = [
 
 <p>Colossians 2:17 says the rituals, festivals, sabbaths, and temple system of the old order are a shadow of what was coming, but the substance belongs to Christ. The shadow was not a mistake. It was a God-given sketch of the Person who was coming, drawn large enough that people would recognise him when he arrived. But when the person arrives, clinging to the sketch is not faithfulness. It is refusing to look up.</p>
 
-<p>Hebrews 8:13 says the old covenant is obsolete and growing old and will soon disappear. Not evolving. Not paused. Obsolete. Displaced by a once-for-all sacrifice that accomplished what the entire sacrificial system could only point toward. When churches fund the breeding of red heifers and the reconstruction of temple vessels, they are, from within their own Scriptures, financially supporting a return to a system the New Testament says was completed and set aside by the death of the very Seed they claim to follow. They are chasing the shadow with cheques while the Light that cast it stands before them.</p>
+<p>Hebrews 8:13 says the old covenant is obsolete and growing old and will soon disappear, not evolving, not paused, but obsolete, displaced by a once-for-all sacrifice that accomplished what the entire sacrificial system could only point toward. When churches fund the breeding of red heifers and the reconstruction of temple vessels, they are, from within their own Scriptures, financially supporting a return to a system the New Testament says was completed and set aside by the death of the very Seed they claim to follow. They are chasing the shadow with cheques while the Light that cast it stands before them.</p>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
 
@@ -1694,7 +1692,7 @@ const POSTS = [
 
 <p>So which is it? Were the apostles deeply confused, contradictory writers? Or did later translators insert their own theological biases into the text?</p>
 
-<p>Strip away the modern church filters and look at the raw scriptural evidence, and the answer becomes clear enough: the apostles were consistent writers. It is the translations, shaped by later theological commitments, that introduced the confusion.</p>
+<p>Strip away the modern church filters and look at the raw scriptural evidence, and the answer becomes clear enough: the apostles were consistent writers, and it is the translations, shaped by later theological commitments, that introduced the confusion.</p>
 
 <h2>The Real Paul vs. The Translated Paul</h2>
 
@@ -1702,9 +1700,9 @@ const POSTS = [
 
 <p>To a casual reader that looks like Paul is explicitly calling Jesus our great God. But force that interpretation and you push Paul into a direct contradiction with his other letters. Writing to Timothy, Paul lays down an ironclad definition of the Supreme Creator:</p>
 
-<blockquote>"Now to the King eternal, immortal, invisible, the only God…", 1 Timothy 1:17</blockquote>
+<blockquote>"Now to the King eternal, immortal, invisible, the only God…" 1 Timothy 1:17</blockquote>
 
-<blockquote>"…who alone possesses immortality and dwells in unapproachable light, whom no man has seen or can see.", 1 Timothy 6:16</blockquote>
+<blockquote>"…who alone possesses immortality and dwells in unapproachable light, whom no man has seen or can see." 1 Timothy 6:16</blockquote>
 
 <p>The logic is not complicated. If God alone possesses inherent immortality, then Jesus, who genuinely died on a Roman cross, cannot be that self-existent God. If God is a being whom no man can see, but thousands of people physically touched and ate with Jesus, then Jesus cannot be identical to that invisible God.</p>
 
@@ -1716,23 +1714,23 @@ const POSTS = [
 
 <p>Render the Greek pronoun <em>houtos</em> as He and point it to Jesus, and you create a direct clash with the Gospel of John. In John 17:3 Jesus explicitly prays to the Father and defines reality:</p>
 
-<blockquote>"And this is eternal life, that they know you, the only true God, and Jesus Christ whom you have sent.", John 17:3</blockquote>
+<blockquote>"And this is eternal life, that they know you, the only true God, and Jesus Christ whom you have sent." John 17:3</blockquote>
 
-<p>Jesus cannot name the Father as the only true God while John simultaneously claims Jesus is the true God. The original Greek pronoun <em>houtos</em> literally means This One. In biblical Greek it routinely points back to the main subject of the paragraph, not just the nearest word. Read correctly, 1 John 5:20 means: <em>"…we are in Him who is true [the Father], by means of His Son Jesus Christ. This One [the Father] is the true God."</em> Resolve the pronoun correctly and the contradiction vanishes.</p>
+<p>The Greek pronoun <em>houtos</em> literally means this one, and in biblical Greek it routinely points back to the main subject of the paragraph, not just the nearest word. Read correctly, 1 John 5:20 means: <em>"…we are in Him who is true [the Father], by means of His Son Jesus Christ. This One [the Father] is the true God."</em> Resolve the pronoun correctly and the contradiction vanishes.</p>
 
 <h2>The Unchanging Apostolic Formula</h2>
 
 <p>Read the opening greetings of the actual apostolic letters. They never merge God and Jesus into a single Trinitarian entity. The hierarchy stays clear:</p>
 
-<blockquote>"Grace to you and peace from God our Father and the Lord Jesus Christ.", Romans 1:7</blockquote>
+<blockquote>"Grace to you and peace from God our Father and the Lord Jesus Christ." Romans 1:7</blockquote>
 
-<blockquote>"James, a servant of God and of the Lord Jesus Christ…", James 1:1</blockquote>
+<blockquote>"James, a servant of God and of the Lord Jesus Christ…" James 1:1</blockquote>
 
 <p>The text refuses the late, post-biblical phrases coined by 4th and 5th-century church councils. You will not find "God the Son" or "God the Holy Spirit" in any apostolic letter. The ultimate apostolic summary is in 1 Corinthians 8:6:</p>
 
-<blockquote>"…yet for us there is one God, the Father, from whom are all things… and one Lord, Jesus Christ, through whom are all things…", 1 Corinthians 8:6</blockquote>
+<blockquote>"…yet for us there is one God, the Father, from whom are all things… and one Lord, Jesus Christ, through whom are all things…" 1 Corinthians 8:6</blockquote>
 
-<p>One God: the Father. One Lord: Jesus Christ. Two persons, named separately in the same breath, the way every apostolic letter consistently states it.</p>
+<p>One God, the Father, and one Lord, Jesus Christ, two persons named separately in the same breath, the way every apostolic letter consistently states it.</p>
 
 <h2>The Victory Reclaimed</h2>
 
@@ -1740,9 +1738,9 @@ const POSTS = [
 
 <p>The apostles did not teach a confusing Greek philosophical paradox. They taught a uniform Hebrew truth: the Father is the sole, invisible, immortal source of all existence. Jesus was a real mortal man who achieved absolute victory over temptation and death through pure obedience. Because of that victory, God highly exalted him and granted him a seat at His right hand.</p>
 
-<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ.", Acts 2:36</blockquote>
+<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ." Acts 2:36</blockquote>
 
-<p>The apostles were not confused. Biased translations have made them sound that way for long enough.</p>
+<p>The apostles were not confused; biased translations have made them sound that way for long enough.</p>
     `
   },
   {
@@ -1751,7 +1749,7 @@ const POSTS = [
     date: "11 May 2026",
     category: "Teaching",
     image: "let_jesus_speak.jpg",
-    excerpt: "Councils have talked about Jesus for centuries. Remarkably little time is spent listening to what Jesus said about himself, in plain language. His own words. On the record. Then you decide.",
+    excerpt: "For centuries councils and controversies have spoken about Jesus, yet remarkably little time goes to what he said about himself in plain language, on the record in the Gospels, where his own words still wait for a hearing.",
     content: `
 <style>
 .ljs-lead{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;color:var(--gold);line-height:1.65;margin-bottom:1.8rem;border-left:2px solid var(--gold);padding-left:1.4rem;}
@@ -1784,9 +1782,9 @@ const POSTS = [
 
 <p class="ljs-lead">"Before we debate what Jesus is, let us ask Jesus what he said about himself. Then we can ask each other: do you agree with him?"</p>
 
-<p>Councils wrote creeds, and centuries of controversy followed. People have spoken about Jesus at extraordinary length, in cathedral committees and seminary dissertations and heated Sunday school rooms. Remarkably little of that time has been spent simply listening to what Jesus said about himself, in plain language, recorded by those who walked with him.</p>
+<p>I keep wondering why so much of the argument about Jesus happens above his head rather than in his mouth. Councils wrote creeds, and centuries of controversy followed in cathedral committees, seminary dissertations, and heated Sunday school rooms, yet remarkably little of that labour has gone to what Jesus said about himself in plain language, recorded by those who walked with him.</p>
 
-<p>Below are his own words. No commentary. No theological framing. Just the man himself, speaking about who he is, who sent him, and who is greater than him.</p>
+<p>What follows is his own testimony, with the commentary stripped back so the Gospels can speak first: who he is, who sent him, and who is greater than him.</p>
 
 <div class="ljs-divider"><span>The Words of Jesus</span></div>
 
@@ -1799,13 +1797,13 @@ const POSTS = [
 <div class="ljs-card">
   <div class="ljs-label">John 14:28</div>
   <div class="ljs-verse">"You heard me say I am going away and I am coming back to you. If you loved me, you would be glad that I am going to the Father, for <strong>the Father is greater than I.</strong>"</div>
-  <div class="ljs-note">Not equal. Not co-equal. Jesus says it simply and directly: the Father is greater. This is not humility rhetoric, it is a statement about rank and origin.</div>
+  <div class="ljs-note">Jesus does not speak of co-equality here; he says plainly that the Father is greater, and that is a statement about rank and origin, not humility rhetoric.</div>
 </div>
 
 <div class="ljs-card">
   <div class="ljs-label">John 20:17</div>
   <div class="ljs-verse">"Do not hold on to me… Go instead to my brothers and tell them: I am ascending to <strong>my Father and your Father, to my God and your God.</strong>"</div>
-  <div class="ljs-note">After resurrection, glorified, exalted, Jesus still calls the Father <em>my God</em>. The relationship does not dissolve into equality. It remains: Son and Father. Worshipper and God.</div>
+  <div class="ljs-note">After resurrection, glorified, and exalted, Jesus still calls the Father <em>my God</em>, so the relationship does not dissolve into equality; even then he remains Son before Father, worshipper before God.</div>
 </div>
 
 <div class="ljs-card">
@@ -1853,7 +1851,7 @@ const POSTS = [
 <div class="ljs-question">
   <div class="ljs-q-eyebrow">Now, a question for the room</div>
   <div class="ljs-q-text">Do you agree with what Jesus said about himself?</div>
-  <div class="ljs-q-sub">He called the Father the only true God. He called himself the one sent. He said the Father is greater. His words, not ours.</div>
+  <div class="ljs-q-sub">He called the Father the only true God, named himself the one sent, and said the Father is greater: his words, not ours.</div>
   <div class="ljs-buttons">
     <button class="ljs-btn ljs-btn-yes" onclick="ljsRespond('yes')">Yes, I take him at his word</button>
     <button class="ljs-btn ljs-btn-no" onclick="ljsRespond('no')">No, I believe he meant something else</button>
@@ -1863,8 +1861,8 @@ const POSTS = [
 </div>
 
 <div class="ljs-closing">
-  <p>Jesus never once said <strong>"I am the Father,"</strong> never claimed co-equality with God, never invited worship of himself as the Most High. What he said is on record: the Father is greater than I. My God and your God. The only true God, the one who sent me. Those words did not become less clear with centuries of commentary on top of them.</p>
-  <p>The simplest act of faith is to believe the man at his word.</p>
+  <p>Jesus never once said <strong>"I am the Father,"</strong> never claimed co-equality with God, and never invited worship of himself as the Most High. What he did say is on record: the Father is greater than I, my God and your God, the only true God and the one who sent me, and those words did not become less clear when centuries of commentary piled on top of them.</p>
+  <p>For me the simplest act of faith is still to believe the man at his word.</p>
 </div>
     `
   },
@@ -1876,13 +1874,13 @@ const POSTS = [
     excerpt: "No man has seen God at any time, yet Abraham sat down with visitors, Moses met someone in a burning bush, Jacob wrestled until dawn. I wrestled with that contradiction for years before I found divine agency in Scripture.",
     image: "agencies_of_god.svg",
     content: `
-<p>Here is something that puzzled me for a long time. The Bible says clearly that no one has ever seen God. Yet Abraham sat down and had a meal with three visitors. Moses spoke face to face with someone at a burning bush. Jacob wrestled a man through the entire night. How do we make sense of this?</p>
+<p>Here is something that puzzled me for a long time. The Bible says clearly that no one has ever seen God, yet Abraham sat down and had a meal with three visitors, Moses spoke face to face with someone at a burning bush, and Jacob wrestled a man through the entire night. How do we make sense of this?</p>
 
-<p>The answer has been there all along. It is called divine agency. Once you see it, you cannot unsee it.</p>
+<p>The answer has been there all along, and it is called divine agency. Once you see it, you cannot unsee it.</p>
 
-<p>In the ancient world, particularly in Hebrew culture, there was a legal principle called <em>shaliah</em>. Simple enough: a man's authorised messenger is as the man himself. When a fully trusted representative speaks in your name, he carries your full authority. He does not just deliver your message. He is you, legally speaking.</p>
+<p>In the ancient world, particularly in Hebrew culture, there was a legal principle called <em>shaliah</em>: a man's authorised messenger is as the man himself. When a fully trusted representative speaks in your name, he carries your full authority, does not just deliver your message, but is you, legally speaking.</p>
 
-<p>God applied this same principle throughout the Bible. He sent authorised agents, angels and his Word, to communicate with human beings. When those agents spoke, the text records it as God speaking. Not because the agent is God. Because the agent is fully carrying God's name and authority.</p>
+<p>God applied this same principle throughout the Bible. He sent authorised agents, angels and his Word, to communicate with human beings, and when those agents spoke, the text records it as God speaking, not because the agent is God, but because the agent is fully carrying God's name and authority.</p>
 
 <p>Read Exodus 23 and the principle is explicit. God tells Israel to follow a certain angel through the wilderness, then adds: "My name is in him." That is the language of authorised representation. This angel does not just know God's name. He carries it. To obey him is to obey God. To resist him is to resist God.</p>
 
@@ -1892,17 +1890,17 @@ const POSTS = [
 
 <p>Then there is Jacob. He wrestled a man all night at the Jabbok river. At the end of it, Jacob named the place Peniel, which means the face of God, and said: I have seen God face to face and survived. Hosea later explains that Jacob wrestled with an angel. Both statements are true at the same time. The angel carried God's full presence, God's name, and God's authority. To encounter the agent was to encounter the One who sent him.</p>
 
-<p>The glory cloud that led Israel through the desert, the pillar of fire at night, the Kavod that descended on the Tabernacle so powerfully that Moses could not enter. All of these were God's presence extended into the physical world through an authorised form. Real. Objective. Powerful. But not the Eternal Father in His unveiled essence.</p>
+<p>The glory cloud that led Israel through the desert, the pillar of fire at night, the Kavod that descended on the Tabernacle so powerfully that Moses could not enter, all of these were God's presence extended into the physical world through an authorised form, real and objective and powerful, but not the Eternal Father in His unveiled essence.</p>
 
 <p>This is where it all leads. Paul wrote that Jesus is the image of the invisible God, the firstborn over all creation. John wrote that no one has ever seen God, then said the Son has made Him known. The Son is the final and complete divine agent, the one who carried the Name not just in spiritual authority but in human flesh, in a body that could be touched and heard and seen.</p>
 
 <p>But here is what must be said plainly. The Father remained the Father throughout all of this. He never became the Son. He never shared His throne with a co-equal person. He sent His agents, including finally His Son, to make Himself known to human beings. When His Son had completed everything He was sent to do, the Father spoke His verdict over all of history:</p>
 
-<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ.", Acts 2:36</blockquote>
+<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ." Acts 2:36</blockquote>
 
-<p>The Father made Him Lord, the Father's declaration and the Father's gift. This is not a Trinity. This is one God who chose to reveal Himself through many agencies across many centuries, then finally through His beloved Son, whom He has appointed Lord over all nations.</p>
+<p>The Father made Him Lord, the Father's declaration and the Father's gift. This is not a Trinity but one God who chose to reveal Himself through many agencies across many centuries, then finally through His beloved Son, whom He has appointed Lord over all nations.</p>
 
-<p>One God, many agents, and one appointed Son. That is the story the whole Bible is telling, from the burning bush to the throne at the right hand of the Father.</p>
+<p>One God, many agents, and one appointed Son: that is the story the whole Bible is telling, from the burning bush to the throne at the right hand of the Father.</p>
     `
   },
   {
@@ -1919,7 +1917,7 @@ const POSTS = [
 
 <p>Francis opens the chapter plainly: <em>"Reason is the special characteristic of man, and yet it is a rare thing to find really reasonable men."</em> The cause, he says, is self-love. Self-love hinders reason and beguiles us, quietly, without our noticing, into trifling but dangerous acts of injustice and untruth.</p>
 
-<p>He reaches for an image from the Song of Songs. These small corruptions are like the little foxes that spoil the vines. Trifling enough that people pay no attention. Numerous enough to do infinite harm.</p>
+<p>He reaches for an image from the Song of Songs. These small corruptions are like the little foxes that spoil the vines, trifling enough that people pay no attention yet numerous enough to do infinite harm.</p>
 
 <h2>The small dishonesties we overlook in ourselves</h2>
 
@@ -1927,7 +1925,7 @@ const POSTS = [
 
 <p>We find fault with our neighbour readily for small matters while we pass over great things in ourselves. We strive to sell dear and buy cheap. We are eager to deal out strict justice to others while seeking indulgence for ourselves. We expect a good construction on all we say, but we are sensitive and critical as to our neighbour's words. We want him to give us what we want when it would be more reasonable to let him keep what is his. We are vexed with him because he will not accommodate us, while perhaps he has better reason to be vexed with us for wanting to disturb him.</p>
 
-<p>If we have formed a dislike for someone, particularly a subordinate, everything they do appears wrong. We thwart them. We look coldly on them. We never stop to ask whether our judgement is just or merely convenient.</p>
+<p>If we have formed a dislike for someone, particularly a subordinate, everything they do appears wrong; we thwart them, look coldly on them, and never stop to ask whether our judgement is just or merely convenient.</p>
 
 <h2>These things seem unimportant, but they are not</h2>
 
@@ -1935,9 +1933,9 @@ const POSTS = [
 
 <h2>The remedy: put yourself in your neighbour's place</h2>
 
-<p>The counsel Francis gives is simple. Be just and fair in all you do. Then one practical discipline: <em>always put yourself in your neighbour's place, and put him into yours, and then you will judge fairly.</em></p>
+<p>The counsel Francis gives is simple: be just and fair in all you do, and then one practical discipline, <em>always put yourself in your neighbour's place, and put him into yours, and then you will judge fairly.</em></p>
 
-<p>Sell as you would buy. Buy as you would sell. Examine your dealings with your neighbour and ask plainly: is my heart right towards him, as I would wish his to be towards me, if positions were reversed? Francis calls this <strong>the true test of reason.</strong></p>
+<p>Sell as you would buy, buy as you would sell, and examine your dealings with your neighbour and ask plainly: is my heart right towards him, as I would wish his to be towards me, if positions were reversed? Francis calls this <strong>the true test of reason.</strong></p>
 
 <p>He closes with the Emperor Trajan, criticised for making himself too accessible to his subjects. Trajan replied: <em>"Does it not behove me to be such an emperor towards my subjects as I should myself wish to find, were I a subject?"</em> The Emperor applied to his throne the same discipline Francis applies to every ordinary transaction. Reverse the positions and see if it still seems fair.</p>
 
@@ -1945,11 +1943,11 @@ const POSTS = [
 
 <p>The entire chapter is an exposition of what the Messiah called the summary of the Law and the Prophets:</p>
 
-<blockquote>"So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets.", Matthew 7:12</blockquote>
+<blockquote>"So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets." Matthew 7:12</blockquote>
 
-<blockquote>"The commandments are summed up in this one command: Love your neighbour as yourself. Love does no harm to a neighbour. Therefore love is the fulfilment of the law.", Romans 13:9–10</blockquote>
+<blockquote>"The commandments are summed up in this one command: Love your neighbour as yourself. Love does no harm to a neighbour. Therefore love is the fulfilment of the law." Romans 13:9–10</blockquote>
 
-<blockquote>"Whoever claims to love God yet hates a brother or sister is a liar. For whoever does not love their brother and sister, whom they have seen, cannot love God, whom they have not seen.", 1 John 4:20</blockquote>
+<blockquote>"Whoever claims to love God yet hates a brother or sister is a liar. For whoever does not love their brother and sister, whom they have seen, cannot love God, whom they have not seen." 1 John 4:20</blockquote>
 
 <p>Chapter 36 is not about the dramatic sins. It is about the little foxes: the double standard, the convenient judgement, the small advantage quietly taken. The test Francis leaves with us is the same one placed before every disciple: reverse the positions, and see if it still seems fair.</p>
 
@@ -1979,11 +1977,11 @@ const POSTS = [
 
 <p>When I went looking for how God defines Himself, I found plain statements that stopped me:</p>
 
-<blockquote>"God is not a man, nor a son of man.", Numbers 23:19</blockquote>
-<blockquote>"For I am God, and not man.", Hosea 11:9</blockquote>
-<blockquote>"God is a Spirit.", John 4:24</blockquote>
-<blockquote>"He is the image of the invisible God.", Colossians 1:15</blockquote>
-<blockquote>"Who alone has immortality.", 1 Timothy 6:16</blockquote>
+<blockquote>"God is not a man, nor a son of man." Numbers 23:19</blockquote>
+<blockquote>"For I am God, and not man." Hosea 11:9</blockquote>
+<blockquote>"God is a Spirit." John 4:24</blockquote>
+<blockquote>"He is the image of the invisible God." Colossians 1:15</blockquote>
+<blockquote>"Who alone has immortality." 1 Timothy 6:16</blockquote>
 
 <p>Jesus was born of a woman. He was seen, touched, and lived among people. He grew in wisdom. He hungered, wept, slept, and died. He said that not even the Son knows the day or hour of His return. I had to sit with that. These are not obscure footnotes. They are the Bible's own description of a real human life, and they sit alongside God's description of Himself as invisible, immortal, and not a man. I concluded that Scripture itself keeps two beings in view, not one person playing two roles.</p>
 
@@ -1991,7 +1989,7 @@ const POSTS = [
 
 <p>The New Testament does not hide Jesus's humanity. It insists on it for salvation:</p>
 
-<blockquote>"For this reason he had to be made like them, fully human in every way, in order that he might become a merciful and faithful high priest in service to God, and that he might make atonement for the sins of the people.", Hebrews 2:17</blockquote>
+<blockquote>"For this reason he had to be made like them, fully human in every way, in order that he might become a merciful and faithful high priest in service to God, and that he might make atonement for the sins of the people." Hebrews 2:17</blockquote>
 
 <p>A high priest stands before God on behalf of others. That is the office. When I read Hebrews with fresh eyes, Jesus interceding before the Father looked less like God talking to Himself and more like the Son serving before the only eternal God, which is exactly how the letter presents it.</p>
 
@@ -1999,27 +1997,27 @@ const POSTS = [
 
 <p>I used to assume Jesus's miracles proved He was acting from His own divine nature as the Eternal Father. Then I read Peter at Pentecost:</p>
 
-<blockquote>"Jesus of Nazareth, a Man attested by God to you by miracles, wonders, and signs which God did through Him in your midst… whom God raised up.", Acts 2:22-24 NKJV</blockquote>
+<blockquote>"Jesus of Nazareth, a Man attested by God to you by miracles, wonders, and signs which God did through Him in your midst… whom God raised up." Acts 2:22-24 NKJV</blockquote>
 
-<p>God did the miracles through Him. God raised Him. Jesus did not raise Himself. And on His own teaching He said:</p>
+<p>God did the miracles through Him, God raised Him, and Jesus did not raise Himself. On His own teaching He said:</p>
 
-<blockquote>"For I have not spoken on My own authority; but the Father who sent Me gave Me a command, what I should say and what I should speak.", John 12:49-50 NKJV</blockquote>
+<blockquote>"For I have not spoken on My own authority; but the Father who sent Me gave Me a command, what I should say and what I should speak." John 12:49-50 NKJV</blockquote>
 
 <p>At every point I looked, the sender and the sent remained distinct. Prophets also performed miracles and spoke with authority. I could not apply one standard to them and another to Jesus without breaking the consistency I was trying to keep.</p>
 
 <p>Acts 2:36 pressed the point further for me:</p>
 
-<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ.", Acts 2:36 NKJV</blockquote>
+<blockquote>"God has made this Jesus, whom you crucified, both Lord and Christ." Acts 2:36 NKJV</blockquote>
 
 <p>Someone above Jesus made Him Lord. The one who appoints and the one appointed are not the same person. That sentence is from the day of Pentecost itself, not from a later council.</p>
 
 <h2>John 8:58, "Before Abraham Was, I AM"</h2>
 
-<p>John 8:58 is the verse I heard most often. Before Abraham was, I AM. I was taught that this was Jesus claiming to be the God of Exodus 3:14. When I read the whole chapter, the conversation looked different.</p>
+<p>John 8:58 is the verse I heard most often, where Jesus says before Abraham was, I AM. I was taught that this was Jesus claiming to be the God of Exodus 3:14, but when I read the whole chapter, the conversation looked different.</p>
 
 <p>The Jews asked whether He was greater than Abraham, and who He was making Himself out to be. Jesus answered by pointing to the Father:</p>
 
-<blockquote>"It is My Father who honours Me, of whom you say that He is your God. Yet you have not known Him, but I know Him.", John 8:54-55 NKJV</blockquote>
+<blockquote>"It is My Father who honours Me, of whom you say that He is your God. Yet you have not known Him, but I know Him." John 8:54-55 NKJV</blockquote>
 
 <p>He identifies the God of Abraham, Isaac, and Jacob as His Father. He does not claim to be that God. He claims to know Him and keep His word. He also said He proceeded from God and was sent by Him, not that He descended as the Almighty taking human form.</p>
 
@@ -2029,20 +2027,20 @@ const POSTS = [
 
 <p>Something I had never noticed: in John's Gospel the Jews do not accuse Jesus of calling Himself God. They accuse Him of making Himself the Son of God, and of breaking Sabbath law:</p>
 
-<blockquote>"He not only broke the Sabbath, but also said that God was His Father, making Himself equal with God.", John 5:18 NKJV</blockquote>
-<blockquote>"We have a law, and according to our law He ought to die, because He made Himself the Son of God.", John 19:7 NKJV</blockquote>
+<blockquote>"He not only broke the Sabbath, but also said that God was His Father, making Himself equal with God." John 5:18 NKJV</blockquote>
+<blockquote>"We have a law, and according to our law He ought to die, because He made Himself the Son of God." John 19:7 NKJV</blockquote>
 
 <p>When Jesus answered the blasphemy charge, He did not say, I am God. He said:</p>
 
-<blockquote>"Why then do you accuse me of blasphemy because I said, 'I am God's Son'?", John 10:36</blockquote>
+<blockquote>"Why then do you accuse me of blasphemy because I said, 'I am God's Son'?" John 10:36</blockquote>
 
 <p>His own defence, in His own words, was Son of God. That mattered to me because I had been told the Gospels record Him claiming to be the Eternal Father.</p>
 
 <h2>John 10:30, "I and the Father Are One"</h2>
 
-<p>John 10:30 was the other pillar of the argument I knew. I and the Father are one. But in John 17 Jesus uses the same language for His disciples:</p>
+<p>John 10:30 was the other pillar of the argument I knew, where Jesus says I and the Father are one, but in John 17 He uses the same language for His disciples:</p>
 
-<blockquote>"Holy Father, protect them by your name that you have given me, so that they may be one as we are one.", John 17:11 CSB</blockquote>
+<blockquote>"Holy Father, protect them by your name that you have given me, so that they may be one as we are one." John 17:11 CSB</blockquote>
 
 <p>He prayed that His followers would be one in the same way He and the Father are one. He was not praying they would become God. I came to read "one" as unity of purpose and will, the same devotion He called His disciples into, not ontological identity. When the Jews took it as a claim to deity, Jesus answered by calling Himself the Son of God, not God the Son.</p>
 
@@ -2056,24 +2054,24 @@ const POSTS = [
 
 <p>Thomas said, "My Lord and my God," and I had been taught that Jesus accepted worship as the Almighty. But Jesus's pattern elsewhere kept redirecting glory to the Father:</p>
 
-<blockquote>"Why do you call Me good? No one is good but One, that is, God.", Mark 10:18 NKJV</blockquote>
-<blockquote>"I am ascending to My Father and your Father, to My God and your God.", John 20:17 NKJV</blockquote>
+<blockquote>"Why do you call Me good? No one is good but One, that is, God." Mark 10:18 NKJV</blockquote>
+<blockquote>"I am ascending to My Father and your Father, to My God and your God." John 20:17 NKJV</blockquote>
 
-<p>Thomas's words read to me like overwhelmed worship in the moment, not a systematic creed. Jesus did not reply, correct, I am the Eternal Father. He blessed those who believe without seeing. David's psalm, which Jesus Himself used, has the LORD speaking to David's Lord. Two lords, one enthroned, one at the right hand. God exalting His appointed Son is not the Son claiming to be God.</p>
+<p>Thomas's words read to me like overwhelmed worship in the moment, not a systematic creed. Jesus did not reply, correct, I am the Eternal Father. He blessed those who believe without seeing. David's psalm, which Jesus Himself used, has the LORD speaking to David's Lord, two lords, one enthroned, one at the right hand, and God exalting His appointed Son is not the Son claiming to be God.</p>
 
 <h2>John 1:1-18 and 1 John 5:20</h2>
 
-<p>John 1:1 says the Word was with God and the Word was God. I kept returning to the first phrase. With God. If the Word is the same person as the Father, how is He with God? John 1:18 answered it for me:</p>
+<p>John 1:1 says the Word was with God and the Word was God, and I kept returning to the first phrase, with God. If the Word is the same person as the Father, how is He with God? John 1:18 answered it for me:</p>
 
-<blockquote>"No one has seen God at any time. The only begotten Son, who is in the bosom of the Father, He has declared Him.", John 1:18 NKJV</blockquote>
+<blockquote>"No one has seen God at any time. The only begotten Son, who is in the bosom of the Father, He has declared Him." John 1:18 NKJV</blockquote>
 
-<p>No one has seen God. Multitudes saw Jesus. The Son declares the Father. He reveals Him. He is not interchangeable with Him.</p>
+<p>No one has seen God, yet multitudes saw Jesus; the Son declares the Father, reveals Him, and is not interchangeable with Him.</p>
 
 <p>1 John 5:20 runs the same line. The Son gives understanding so we may know Him who is true. Jesus defined who that is in His prayer:</p>
 
-<blockquote>"This is eternal life, that they may know You, the only true God, and Jesus Christ whom You have sent.", John 17:3 NKJV</blockquote>
+<blockquote>"This is eternal life, that they may know You, the only true God, and Jesus Christ whom You have sent." John 17:3 NKJV</blockquote>
 
-<p>The Father is the only true God. Jesus is the one sent. Two persons, one united purpose.</p>
+<p>The Father is the only true God, Jesus is the one sent, and Scripture keeps two persons in view with one united purpose.</p>
 
 <h2>God and Jesus Side by Side</h2>
 
@@ -2117,13 +2115,13 @@ const POSTS = [
 
 <p>I searched the epistles for the phrase "God the Son." I could not find it. What I found instead, letter after letter, was God the Father, Son of God, and Spirit of God. The word Trinity never appears. The creed language came later, centuries after the apostles, and the Reformation challenged much of Catholic tradition while leaving this particular construction largely unexamined against the twelve's own vocabulary.</p>
 
-<p>Romans 1:7, Colossians 1:3, 1 Thessalonians 1:1, the pattern never broke. Grace and peace from God our Father and from the Lord Jesus Christ. Two persons, named separately, in the same sentence.</p>
+<p>Romans 1:7, Colossians 1:3, 1 Thessalonians 1:1, the pattern never broke: grace and peace from God our Father and from the Lord Jesus Christ, two persons named separately in the same sentence.</p>
 
 <h2>Jesus as Example and the Object of Worship</h2>
 
 <p>Peter said Christ left us an example to follow in His steps. Jesus worshipped the Father and taught others to worship the Father in spirit and truth. He had a God. He directed devotion upward, not inward toward Himself as the Eternal Almighty.</p>
 
-<blockquote>"When the true worshipers will worship the Father in spirit and truth, for the Father is seeking such people to worship him.", John 4:23 NKJV</blockquote>
+<blockquote>"When the true worshipers will worship the Father in spirit and truth, for the Father is seeking such people to worship him." John 4:23 NKJV</blockquote>
 
 <p>That clarity is what I am trying to recover, not a new religion, but the worship Jesus Himself practiced and commanded.</p>
 
@@ -2131,7 +2129,7 @@ const POSTS = [
 
 <p>Paul wrote that God gave apostles, prophets, evangelists, pastors, and teachers until we all come to the unity of the faith and of the knowledge of the Son of God, not God the Son. I read that as a call to return to the apostolic foundation, not to fracture into more camps. The goal is one faith built on what the sent ones actually taught.</p>
 
-<blockquote>"Till we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fullness of Christ.", Ephesians 4:13 KJV</blockquote>
+<blockquote>"Till we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fullness of Christ." Ephesians 4:13 KJV</blockquote>
 
 <h2>Where I Land</h2>
 
@@ -2139,13 +2137,13 @@ const POSTS = [
 
 <p><strong>Jesus is the Son of God.</strong> He is the promised Messiah, the appointed High Priest, the resurrected Lord, the coming King, foreknown, born, obedient, exalted to the Father's right hand. He is to be honoured, followed, and proclaimed. The One He called Father, the One He called my God, is the Almighty, the only true God, the God of Abraham, Isaac, and Jacob.</p>
 
-<blockquote>"The God of Abraham, Isaac, and Jacob, the God of our fathers, glorified His Servant Jesus.", Acts 3:13 NKJV</blockquote>
+<blockquote>"The God of Abraham, Isaac, and Jacob, the God of our fathers, glorified His Servant Jesus." Acts 3:13 NKJV</blockquote>
 
 <p>Peter, who walked with Him and preached at Pentecost, called Jesus God's Servant, glorified by God. That is the confession I am trying to stay faithful to.</p>
 
-<blockquote>"This is eternal life, that they may know You, the only true God, and Jesus Christ whom You have sent.", John 17:3 NKJV</blockquote>
+<blockquote>"This is eternal life, that they may know You, the only true God, and Jesus Christ whom You have sent." John 17:3 NKJV</blockquote>
 
-<p>Two persons. One eternal God. One sent Son. I share this with compassion for anyone still inside the confusion I lived in for years, and with the burden that the gospel return to its apostolic shape as the Lord's coming draws near.</p>
+<p>Two persons, one eternal God, one sent Son: I share this with compassion for anyone still inside the confusion I lived in for years, and with the burden that the gospel return to its apostolic shape as the Lord's coming draws near.</p>
 
 <p><em>Blessed be God our Father, creator of heaven and earth, and our Lord Jesus Christ, whom He approved as Saviour, raised from the dead, and exalted to rule at His right hand. Amen.</em></p>
     `
