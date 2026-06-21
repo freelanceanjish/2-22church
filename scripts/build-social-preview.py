@@ -65,7 +65,7 @@ PAGE_META = {
     },
     "study.html": {
         "title": "Study · Divine Geometry in Creation, 2:22 Church",
-        "description": "Divine geometry in creation: Fibonacci spirals, hexagonal packing, fractals, and symmetry that encode the Creator's intelligence in what He made.",
+        "description": "From sunflower spirals to galactic arms: how divine geometry in creation leads to the recovery of Scripture's true building patterns.",
         "path": "/study.html",
         "type": "website",
     },
