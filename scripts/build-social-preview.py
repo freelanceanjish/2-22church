@@ -19,6 +19,10 @@ CROPS_DIR = ROOT / "blog-assets" / "og-crops"
 MARKER_START = "<!-- social-meta:start -->"
 MARKER_END = "<!-- social-meta:end -->"
 
+POST_REDIRECTS = {
+    "dna-decagon-tabernacle-temple-of-the-spirit.html": "dna-a-quantum-tabernacle.html",
+}
+
 SKIP_HTML = {
     "subscribers.html",
     "birth-preparation.html",
@@ -380,10 +384,31 @@ def generate_post_share_pages(posts):
         print("share", out.relative_to(ROOT))
 
     valid = {f"{p['id']}.html" for p in posts if not p.get("link")}
+    valid.update(POST_REDIRECTS.keys())
     for old in POST_DIR.glob("*.html"):
-        if old.name not in valid:
+        if old.name not in valid and old.name not in POST_REDIRECTS:
             old.unlink()
             print("removed stale", old.relative_to(ROOT))
+
+    for old_name, new_name in POST_REDIRECTS.items():
+        redirect = POST_DIR / old_name
+        redirect.write_text(
+            f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0; url={new_name}">
+<link rel="canonical" href="{SITE}/post/{new_name}">
+<title>Redirecting…</title>
+</head>
+<body>
+<p>Moved to <a href="{new_name}">DNA: A Quantum Tabernacle</a>.</p>
+</body>
+</html>
+""",
+            encoding="utf-8",
+        )
+        print("redirect", redirect.relative_to(ROOT), "->", new_name)
 
 
 def post_href(post_id: str) -> str:
