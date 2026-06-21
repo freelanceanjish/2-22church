@@ -11,7 +11,8 @@ from pathlib import Path
 
 from PIL import Image, ImageOps
 
-OUT = Path(__file__).resolve().parent.parent / "blog-assets" / "study" / "nature"
+ROOT = Path(__file__).resolve().parent.parent
+OUT = ROOT / "blog-assets" / "study" / "nature"
 THUMBS = Path(__file__).resolve().parent.parent / "blog-assets" / "study" / "thumbs" / "nature"
 HERO = Path(__file__).resolve().parent.parent / "blog-assets" / "study" / "thumbs"
 UA = "2-22church-study/1.0 (educational; contact: 2-22church.com)"
@@ -167,12 +168,12 @@ def main() -> None:
         crop_specs[slug] = spec
         print("OK" if m.get("ok") else "FAIL", m.get("source", m.get("tried")))
 
-    dna_src = Path(__file__).resolve().parent.parent / "blog-assets" / "dna-tabernacle" / "dna-double-helix-nhgri.jpg"
+    dna_src = Path(__file__).resolve().parent.parent / "blog-assets" / "dna-tabernacle" / "dna-double-helix-diagram.jpg"
     dna_dest = OUT / "dna-double-helix.jpg"
     if dna_src.exists():
         shutil.copy2(dna_src, dna_dest)
-        manifest.append({"slug": "dna-double-helix", "ok": True, "file": dna_dest.name, "source": "NIH/NHGRI public domain"})
-        crop_specs["dna-double-helix"] = {"keep": 0.55, "aspect": (3, 2)}
+        manifest.append({"slug": "dna-double-helix", "ok": True, "file": dna_dest.name, "source": "2:22 Church double-helix diagram"})
+        crop_specs["dna-double-helix"] = {"keep": 0.82, "aspect": (1, 1)}
         print("copy dna-double-helix OK")
     else:
         manifest.append({"slug": "dna-double-helix", "ok": False})
@@ -186,8 +187,15 @@ def main() -> None:
         if path.suffix.lower() not in {".jpg", ".jpeg", ".png"}:
             continue
         slug = path.stem
+        if slug == "dna-double-helix":
+            continue
         spec = crop_specs.get(slug, {"keep": 0.7, "aspect": (3, 2)})
         save_thumb(path, THUMBS / f"{slug}-w480.jpg", spec)
+
+    diagram = ROOT / "blog-assets" / "dna-tabernacle" / "dna-double-helix-diagram.jpg"
+    if diagram.exists():
+        import subprocess
+        subprocess.run(["python3", str(Path(__file__).resolve().parent / "build-dna-diagram-thumbs.py")], check=True)
 
     sunflower = OUT / "sunflower.jpg"
     if sunflower.exists():

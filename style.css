@@ -284,7 +284,9 @@ blockquote cite,blockquote footer,.bs-ref,.vc-ref,.cc-label,.pf-label,.blog-tag,
   filter:saturate(0.95) brightness(1) !important;
 }
 .blog-card-img img[src*=".svg"],.post-featured .pf-img img[src*=".svg"],.post-card .pc-img img[src*=".svg"],
-.blog-card-img img[src*="vedic-witness-christ"],.post-featured .pf-img img[src*="vedic-witness-christ"],.post-card .pc-img img[src*="vedic-witness-christ"]{
+.blog-card-img img[src*="vedic-witness-christ"],.post-featured .pf-img img[src*="vedic-witness-christ"],.post-card .pc-img img[src*="vedic-witness-christ"],
+.blog-card-img img[src*="dna-double-helix-diagram"],.post-featured .pf-img img[src*="dna-double-helix-diagram"],.post-card .pc-img img[src*="dna-double-helix-diagram"],
+.blog-card-img img[src*="dna-double-helix-icon"],.post-featured .pf-img img[src*="dna-double-helix-icon"],.post-card .pc-img img[src*="dna-double-helix-icon"]{
   object-fit:contain !important;
   padding:1rem !important;
   background:var(--deep-mid) !important;
