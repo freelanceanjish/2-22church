@@ -64,15 +64,15 @@ PAGE_META = {
         "type": "website",
     },
     "study.html": {
-        "title": "Study · Divine Geometry, 2:22 Church",
-        "description": "Holy geometry in creation, pi at Sinai, decagon Tabernacle, and the irony of shoebox models beside an intelligent Creator.",
+        "title": "Study · Divine Geometry in Creation, 2:22 Church",
+        "description": "Divine geometry in creation points to the Creator's intelligence. We ask whether Scripture's ark, tabernacle, temple, and city were designed with the same mind.",
         "path": "/study.html",
         "type": "website",
     },
     "divine-geometry.html": {
-        "title": "Study · Divine Geometry, 2:22 Church",
-        "description": "Holy geometry in creation, pi at Sinai, decagon Tabernacle, and the irony of shoebox models beside an intelligent Creator.",
-        "path": "/study.html",
+        "title": "Divine Geometry · Full Study, 2:22 Church",
+        "description": "Full study: pi at Sinai, decagon Tabernacle, B-DNA symmetry, and nested zones from wilderness to genome.",
+        "path": "/divine-geometry.html",
         "type": "website",
     },
     "our-story.html": {
