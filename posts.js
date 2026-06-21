@@ -49,7 +49,7 @@ const POSTS = [
 
 <div class="editorial">
   <p class="editorial-label">Timeline (approximate)</p>
-  <p><strong>Creation:</strong> God speaks; form follows command (Genesis 1). <strong>Flood (~2400 BC):</strong> Noah's <em>tevah</em>, Genesis 6:14–16 (300 · 50 · 30 cubits). <strong>Sinai (~1400 BC):</strong> Tabernacle pattern to Moses (Exodus 25–27). <strong>Solomon (~960 BC):</strong> stone enlargement of the same blueprint. <strong>Exile (~586 BC):</strong> pattern memory fractures. <strong>Second Temple era:</strong> Hebrews 8:5 names the earthly copy a shadow of heavenly things. <strong>~AD 30:</strong> Yeshua calls His body the temple (John 2:19–21). <strong>~AD 55:</strong> Paul, your body is the temple of the Holy Spirit (1 Corinthians 6:19). <strong>1953:</strong> Watson and Crick publish the double helix. <strong>1959:</strong> Karst Hoogsteen documents alternative base-pair geometry. <strong>1995–1997:</strong> Mark Curtis proposes decagon-centered DNA geometry. <strong>2014:</strong> Andrew Hoy rediscovers π in Exodus curtains; Project314 founded. <strong>2021:</strong> Stuart Larsen, <em>DNA Structure and the Golden Ratio Revisited</em> (<a href="https://doi.org/10.3390/sym13101949" target="_blank" rel="noopener">Symmetry 13(10):1949</a>). The laboratory arrives millennia after the pattern line begins. That ordering matters.</p>
+  <p><strong>Creation:</strong> God speaks; form follows command (Genesis 1). <strong>Flood (~2400 BC):</strong> Noah's <em>tevah</em>, Genesis 6:14–16 (300 · 50 · 30 cubits). <strong>Sinai (~1400 BC):</strong> Tabernacle pattern to Moses (Exodus 25–27). <strong>Solomon (~960 BC):</strong> stone enlargement of the same blueprint. <strong>Exile (~586 BC):</strong> pattern memory fractures. <strong>Second Temple era:</strong> Hebrews 8:5 names the earthly copy a shadow of heavenly things. <strong>~AD 30:</strong> Yeshua calls His body the temple (John 2:19–21). <strong>~AD 55:</strong> Paul, your body is the temple of the Holy Spirit (1 Corinthians 6:19). <strong>1953:</strong> Watson and Crick publish the double helix. <strong>1959:</strong> Karst Hoogsteen documents alternative base-pair geometry. <strong>1995–1997:</strong> Mark Curtis proposes decagon-centered DNA geometry. <strong>2014:</strong> Andrew Hoy rediscovers π in Exodus curtains; Project314 founded. <strong>2021:</strong> Stuart Larsen, <em>DNA Structure and the Golden Ratio Revisited</em> (<a href="https://doi.org/10.3390/sym13101949" target="_blank" rel="noopener">Symmetry 13(10):1949</a>). The laboratory arrives millennia after the pattern line begins, and that ordering matters.</p>
 </div>
 
 <div class="divider"><span class="divider-mark">✦</span></div>
@@ -58,7 +58,7 @@ const POSTS = [
 
 <p>Renformation's <a href="https://www.renformation.com/" target="_blank" rel="noopener">Project Arc</a> did not start with the Tabernacle. It started with Noah's Ark, one of the most recognized structures in history, and a confession I had to sit with: much of what I thought I knew came from illustration tradition, not from the Hebrew text itself. Genesis 6:15 gives three numbers, 300 cubits, 50 cubits, and 30 cubits. Commentaries almost always map them to length, width, and height of a rectangular prism. Project Arc treats that as an inherited assumption rather than something Scripture demands.</p>
 
-<p>Their alternative reading is not wordplay for its own sake. If a vessel must survive floodwaters from every direction, with no rudder, sail, keel, or destination named in the text, then form follows function. Genesis describes preservation, not navigation. The Hebrew word <em>tevah</em> appears only twice in Scripture: Noah's vessel and the basket that carried Moses through the Nile. Moses' ark was not a ship. It floated, it preserved life, and it went where the water took it. Project Arc asks whether Noah's measurements might describe a curved hull the way Exodus later describes a circular court, with "length" and "breadth" functioning more like axis and diameter than flat parallel sides and ninety-degree corners. I am not claiming their Noah model is settled scholarship. I am saying the question belongs on the same line as Hoy's curtain cylinder, because both challenge the shoebox habit before they propose a shape.</p>
+<p>Their alternative reading is not wordplay for its own sake. If a vessel must survive floodwaters from every direction, with no rudder, sail, keel, or destination named in the text, then form follows function. Genesis describes preservation, not navigation. The Hebrew word <em>tevah</em> appears only twice in Scripture: Noah's vessel and the basket that carried Moses through the Nile. Moses' ark was not a ship but floated, preserved life, and went where the water took it. Project Arc asks whether Noah's measurements might describe a curved hull the way Exodus later describes a circular court, with "length" and "breadth" functioning more like axis and diameter than flat parallel sides and ninety-degree corners. I am not claiming their Noah model is settled scholarship. I am saying the question belongs on the same line as Hoy's curtain cylinder, because both challenge the shoebox habit before they propose a shape.</p>
 
 <p>That is why I stopped pairing this article with a gold rectangular chest photo at the centre of the Tabernacle diagram. Timna's replica reads like a jewellery box with right-angle walls. The zones figure below marks the Holy of Holies as a <strong>guarded centre</strong>, presence and tablets, inside nested decagon rings, not a flat sketch of furniture. Noah's survival vessel, Moses' circular court, the decagon tent, the cell nucleus: Project Arc presents them as one recurring architectural grammar in Scripture, nonlinear and compression-friendly, long before anyone modeled DNA in a laboratory.</p>
 
@@ -68,7 +68,7 @@ const POSTS = [
 
 <p>Andrew Hoy describes his discovery as providential, not planned. He was not hunting for a round Tabernacle. He was inventorying curtain dimensions in Exodus 26:7–13 when the numbers refused to resolve as a flat panel. Eleven sheets, each 30 cubits long, loops on <strong>both</strong> edges, the sixth doubled at the front. Join them the way commentaries usually do, long-edge to long-edge, and you get a flat panel with <strong>unconnected edges</strong>, which violates the text. Join them short-edge to short-edge and the circumference works out to (30 × 11) − (30 ÷ 2) − 1, which is <strong>314 cubits</strong>, essentially π × 100.</p>
 
-<p>Hoy calls that the <strong>Rosetta Stone</strong> of Moses' Tabernacle plans. Once the court is circular, Exodus 27 reads differently: 100 cubits "long" becomes diameter, north and south halves 50 cubits "wide" become radius. The eleven curtains wrap the perimeter like a snow fence around the dwelling. It is the same hermeneutic Project Arc applies to Genesis 6:15, where three cubit measures need not default to a rectangular prism. Our <a href="project314.html">God of Pi study page</a> walks through the engineering diagrams. I will not repeat every slide here, but the point that stopped me cold is simple. The most accurate ancient approximation of π known to the ancient world sits in the <strong>fabric measurements</strong> of Exodus, not in a Greek textbook centuries later.</p>
+<p>Hoy calls that the <strong>Rosetta Stone</strong> of Moses' Tabernacle plans. Once the court is circular, Exodus 27 reads differently: 100 cubits "long" becomes diameter, north and south halves 50 cubits "wide" become radius. The eleven curtains wrap the perimeter like a snow fence around the dwelling. It is the same hermeneutic Project Arc applies to Genesis 6:15, where three cubit measures need not default to a rectangular prism. Our <a href="project314.html">God of Pi study page</a> walks through the engineering diagrams. I will not repeat every slide here, but the point that stopped me cold is that the most accurate ancient approximation of π known to the ancient world sits in the <strong>fabric measurements</strong> of Exodus, not in a Greek textbook centuries later.</p>
 
 <p>The figure below pairs that cylindrical curtain assembly at 314 cubits with one helical turn of canonical B-DNA, roughly 34Å pitch, roughly 21Å width, ten bases completing 360°, and even though the materials differ entirely, both measures turn on the same kind of circular geometry.</p>
 
@@ -145,7 +145,7 @@ const POSTS = [
 <p>I drew from <a href="https://project314.org/learn-about/tabernacle-discovery" target="_blank" rel="noopener">Project314's Tabernacle Discovery</a>, their <a href="https://project314.org/learn-about/tabernacle-projects" target="_blank" rel="noopener">Tabernacle Projects</a>, <a href="https://www.renformation.com/" target="_blank" rel="noopener">Renformation's Project Arc</a> (Noah's vessel, Tabernacle, and the nonlinear architecture line), <a href="https://curtisdna.com/markecurtis_dna_art_geometry/DNA_geometry.html" target="_blank" rel="noopener">Mark E. Curtis's DNA geometry work</a>, <a href="https://doi.org/10.3390/sym13101949" target="_blank" rel="noopener">Stuart Larsen's 2021 <em>Symmetry</em> paper</a>, and an <a href="https://opentheword.org/2016/08/24/will-the-real-tabernacle-of-moses-please-stand-up/" target="_blank" rel="noopener">OpenTheWord summary of Hoy's discovery</a>.</p>
 
 <div class="coincidence-question">
-  <p>Sinai's tent was decagonal and π-scaled long before anyone modeled DNA in a laboratory. The information molecule carries ten-fold symmetry in peer-reviewed work on its axial structure. Paul did not say your body resembles a temple. He said it is the temple of the Holy Ghost. What percentage of that overlap are you willing to call coincidence? And if even part of it is pattern, not accident, what does that mean for how you treat the dwelling you carry every day?</p>
+  <p>Sinai's tent was decagonal and π-scaled long before anyone modeled DNA in a laboratory. The information molecule carries ten-fold symmetry in peer-reviewed work on its axial structure. Paul did not say your body resembles a temple but that it is the temple of the Holy Ghost. What percentage of that overlap are you willing to call coincidence? And if even part of it is pattern, not accident, what does that mean for how you treat the dwelling you carry every day?</p>
 </div>
 
 <p>This study continues the thread of our <a href="project314.html">God of Pi</a> page and the <a href="post/sacred-architecture-vedic-hebrew-temple-parallels.html">temple-parallels article</a>. If the pattern was shown on the mount, copied in the wilderness, written into the genome, and fulfilled in Messiah's body, then defiling the temple is not only an Old Testament concern. It is a present one.</p>
@@ -1178,7 +1178,7 @@ const POSTS = [
 
 <p>When I weigh the chronology, the picture becomes difficult to ignore. <strong>Vedic culture took shape around 1600 BC</strong>, while the Law of the Tabernacle and the Law of Moses belong, as Scripture records them, to roughly <strong>1400 BC</strong>. Graded sanctity, sacrifice, impurity and cleansing, first-fruits, doorpost signs, sacred fire, anointing, and the rest are not vague human inventions that two civilisations happened to dream up independently. They are spelled out with precision in Torah, above all in the priestly codes and in <strong>Deuteronomy</strong>, as worship the God of Israel gave through Moses. India's temple forms carry unmistakable echoes of that grammar.</p>
 
-<p>To me, the resemblance is <strong>very clear</strong>. The ritual notions Moses received at Sinai were carried, in fragment and shadow, into many cultures across the ancient world. Vedic temple life preserves that pattern: veil, fire, immersion, offering, procession of presence. Yet the Vedic world did <strong>not</strong> worship the God of Abraham, Isaac, and Jacob. The forms remained. The true Object of worship was lost. What survives in the shrine is not proof that India invented temple logic. It is evidence that the Creator once placed a grammar of holiness before His people, and that grammar did not stay contained in one nation.</p>
+<p>To me, the resemblance is <strong>very clear</strong>. The ritual notions Moses received at Sinai were carried, in fragment and shadow, into many cultures across the ancient world. Vedic temple life preserves that pattern: veil, fire, immersion, offering, procession of presence. Yet the Vedic world did <strong>not</strong> worship the God of Abraham, Isaac, and Jacob, so the forms remained while the true Object of worship was lost. What survives in the shrine is not proof that India invented temple logic but evidence that the Creator once placed a grammar of holiness before His people, and that grammar did not stay contained in one nation.</p>
 
 <p>That is why this study matters <strong>immensely</strong> for a Hindu reader willing to ask an honest question: <em>Where did these rituals come from?</em> If the answer is not "we invented them from nothing," but "they echo something older, something given," then the next question follows naturally: <strong>Who gave them, and why?</strong></p>
 
@@ -1189,7 +1189,7 @@ const POSTS = [
   <span class="scripture-ref">1 Timothy 2:5-6</span>
 </div>
 
-<p>When a Hindu person sees that their own <em>snanam</em>, <em>yajna</em>, <em>naivedyam</em>, and <em>parda</em> are not alien to Scripture but anticipate it, the dots begin to connect. That is what happened in my own reading. The garbhagṛha was always pointing beyond itself. The veil was always waiting to be torn. The fire was always waiting for the Lamb who takes away the sin of the world. Christ is not one deity among many behind a curtain. He is the Son sent by the Father, crucified, raised, ascended, the only name under heaven by which we must be saved.</p>
+<p>When a Hindu person sees that their own <em>snanam</em>, <em>yajna</em>, <em>naivedyam</em>, and <em>parda</em> are not alien to Scripture but anticipate it, the dots begin to connect, and that is what happened in my own reading. The garbhagṛha was always pointing beyond itself, the veil was waiting to be torn, and the fire was waiting for the Lamb who takes away the sin of the world. Christ is not one deity among many behind a curtain but the Son sent by the Father, crucified, raised, ascended, the only name under heaven by which we must be saved.</p>
 
 <div class="scripture">
   <p>“Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain…”</p>
@@ -1309,7 +1309,7 @@ const POSTS = [
   <p class="sanskrit-dev" lang="sa">मृत्योः पश्चात् वासांसि यजमानाः प्रविभजन्ति ।</p>
   <p class="sanskrit-iast">Mṛtyoḥ paścāt vāsāṃsi yajamānāḥ pravibhajanti.</p>
   <p class="sanskrit-en">After death, His garments are divided among those who offered the sacrifice.</p>
-  <p class="sanskrit-ref">Aitareya Brahmana, garment division; cf. John 19:23–24</p>
+  <p class="sanskrit-ref">Aitareya Brahmana, garment division; cf. John 19:23-24</p>
 </div>
 
 <div class="sanskrit-block">
@@ -1809,7 +1809,7 @@ const POSTS = [
 <div class="ljs-card">
   <div class="ljs-label">John 5:19</div>
   <div class="ljs-verse">"Very truly I tell you, <strong>the Son can do nothing by himself</strong>; he can do only what he sees his Father doing, because whatever the Father does the Son also does."</div>
-  <div class="ljs-note">An independent co-equal divine person can act independently. Jesus says the Son cannot. His authority is derived, not inherent.</div>
+  <div class="ljs-note">An independent co-equal divine person could act on his own, but Jesus says the Son cannot; his authority is derived, not inherent.</div>
 </div>
 
 <div class="ljs-card">
@@ -1827,19 +1827,19 @@ const POSTS = [
 <div class="ljs-card">
   <div class="ljs-label">Mark 10:18</div>
   <div class="ljs-verse">"Why do you call me good? <strong>No one is good, except God alone.</strong>"</div>
-  <div class="ljs-note">Jesus deflects the title of absolute goodness away from himself and toward God. He does not say "yes, I am good, I am God." He redirects. God alone holds that position.</div>
+  <div class="ljs-note">Jesus deflects the title of absolute goodness away from himself and toward God rather than saying, "yes, I am good, I am God," because God alone holds that position.</div>
 </div>
 
 <div class="ljs-card">
   <div class="ljs-label">Matthew 24:36</div>
   <div class="ljs-verse">"About that day or hour <strong>no one knows</strong>, not even the angels in heaven, <strong>nor the Son</strong>, but only the Father."</div>
-  <div class="ljs-note">An omniscient co-equal God knows all things, including the hour. Jesus says the Son does not know it. His knowledge, like his authority, is given, not inherent.</div>
+  <div class="ljs-note">An omniscient co-equal God would know all things, including the hour, but Jesus says the Son does not know it, so his knowledge, like his authority, is given rather than inherent.</div>
 </div>
 
 <div class="ljs-card">
   <div class="ljs-label">John 6:57</div>
   <div class="ljs-verse">"Just as <strong>the living Father sent me</strong> and I live <strong>because of the Father</strong>, so the one who feeds on me will live because of me."</div>
-  <div class="ljs-note">Jesus lives because of the Father. His life is sourced in God. He is not self-existent. He is the Son, dependent, derived, given life from the living Father.</div>
+  <div class="ljs-note">Jesus lives because of the Father, his life sourced in God rather than self-existent, the Son dependent and derived, given life from the living Father.</div>
 </div>
 
 <div class="ljs-card">
