@@ -1,11 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 64" role="img" aria-labelledby="title desc">
   <title id="title">2-22 Church logo</title>
   <desc id="desc">A dark circular 2-22 mark followed by letterspaced CHURCH text.</desc>
-  <circle cx="32" cy="32" r="30" fill="#172A36"/>
+  <rect width="236" height="64" fill="#F8F6F1"/>
+  <circle cx="32" cy="32" r="30" fill="#1A242D"/>
   <text x="32" y="34" text-anchor="middle" dominant-baseline="middle"
         fill="#FFFFFF" font-family="Poppins, Arial, sans-serif"
         font-size="13" font-weight="700" letter-spacing="-0.7">2-22</text>
   <text x="82" y="35" dominant-baseline="middle"
-        fill="#0E0E0E" font-family="Poppins, Arial, sans-serif"
+        fill="#1A242D" font-family="Poppins, Arial, sans-serif"
         font-size="14" font-weight="500" letter-spacing="10">CHURCH</text>
 </svg>
