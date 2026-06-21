@@ -24,6 +24,16 @@ const POSTS = [
     image: "blog-assets/dna-tabernacle/topview-tabernacle-dna-compare.jpg",
     excerpt: "Project314 recovered a decagonal, π-scaled Tabernacle from Exodus. B-DNA carries ten-fold symmetry in the molecule that stores life's text. I do not think Paul was speaking in metaphor when he called the body God's temple.",
     content: `
+<div class="study-video-block post-feature-video" aria-label="Decagon DNA sacred geometry video">
+  <h3>Watch: The Creator's pattern in Tabernacle and genome</h3>
+  <p>A short visual study on the geometry God gave Moses at Sinai and the same ten-fold measure written into B-DNA. Opens with the 2-22 Church logo. You may also <a href="blog-assets/dna-tabernacle/sacred-geometry-dna.mp4" download="2-22-church-decagon-dna.mp4">download the MP4</a> for your YouTube channel.</p>
+  <div class="study-video-wrap">
+    <video controls playsinline preload="metadata" poster="blog-assets/dna-tabernacle/topview-tabernacle-dna-compare.jpg?v=4">
+      <source src="blog-assets/dna-tabernacle/sacred-geometry-dna.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
 <p class="opening">
   I had read Exodus before, but I had never <strong>engineered</strong> it. When I opened <a href="https://project314.org/learn-about/tabernacle-discovery" target="_blank" rel="noopener">Project314.org</a> and followed Andrew Hoy's curtain inventory in Exodus 26, the eleven goat-hair sheets stopped being Bible craft and became a specification. Join them short-edge to short-edge, exactly as the Hebrew specifies, and the math closes at <strong>314 cubits</strong>, π scaled to a hundred. The courtyard Moses measured as 100 cubits long and 50 cubits wide resolves as a <strong>circle</strong>, diameter and radius, not the flat rectangle commentaries handed down. <a href="https://www.renformation.com/" target="_blank" rel="noopener">Renformation.com</a> pushed the same question through Project Arc: a yurt-like decagon dome inside a π-scaled court, not a shoebox tent drawn from tradition. Then I read Mark E. Curtis on <strong>ten pentagons about a decagon</strong> as the only geometry that satisfies DNA's known ratios, and Stuart Larsen's 2021 paper in <em>Symmetry</em> on <strong>ten-fold symmetry and φ (phi)</strong> in the axial structure of B-DNA. I kept returning to Paul, who did not write that your body is <em>like</em> a temple. He wrote that it <strong>is</strong> the temple of the Holy Spirit. After this reading, I do not think he was being poetic. I think he was pointing at the same pattern Moses saw on the mountain, written again in the fabric of the living.
 </p>

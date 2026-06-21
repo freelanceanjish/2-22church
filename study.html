@@ -25,7 +25,7 @@
 <title>Study - 2:22 Church</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
 <link rel="stylesheet" href="style.css?v=7">
-<link rel="stylesheet" href="study-shared.css?v=13">
+<link rel="stylesheet" href="study-shared.css?v=14">
 </head>
 <body>
 
@@ -83,9 +83,11 @@
   <a href="index.html#join" style="color:var(--text-secondary);" onclick="this.closest('.mobile-menu').classList.remove('open')">Connect</a>
 </div>
 
-<section class="hub-hero">
+<section class="hub-hero hub-hero--video">
   <div class="hub-hero-bg">
-    <img src="blog-assets/study/thumbs/geometry-sunflower-hero-w1200.jpg" alt="Fibonacci spiral in a sunflower">
+    <video id="study-hub-hero-video" autoplay muted playsinline loop preload="auto" aria-hidden="true">
+      <source src="blog-assets/dna-tabernacle/sacred-geometry-dna.mp4" type="video/mp4">
+    </video>
   </div>
   <div class="hub-hero-overlay"></div>
   <div class="hub-hero-inner">
@@ -175,6 +177,11 @@
 var h=document.querySelector('.nav-hamburger'),m=document.getElementById('mobile-menu');
 if(h&&m){h.addEventListener('click',function(){h.classList.toggle('open');m.classList.toggle('open');document.body.style.overflow=m.classList.contains('open')?'hidden':'';});}
 document.querySelectorAll('.mobile-menu a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');});});
+(function(){
+  var video=document.getElementById('study-hub-hero-video');
+  if(!video)return;
+  video.addEventListener('loadedmetadata',function(){video.play().catch(function(){});});
+})();
 </script>
 </body>
 </html>
