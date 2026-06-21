@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-POSTS_VERSION = "49"
+POSTS_VERSION = "50"
 STYLE_VERSION = "7"
 
 SKIP = {"subscribers.html", "birth-preparation.html", "blog-preview-temple-parallels.html", "index.html.bak"}
