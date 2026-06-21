@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Spiral galaxy arms in logarithmic spiral">
-  <rect width="480" height="360" fill="#0D171F"/>
-  <ellipse cx="240" cy="190" rx="140" ry="55" fill="#1a3344" opacity="0.6"/>
-  <path d="M240 190 Q320 150 380 190 Q320 230 240 190" fill="none" stroke="#EAF1F4" stroke-width="2.5" opacity="0.9"/>
-  <path d="M240 190 Q160 150 100 190 Q160 230 240 190" fill="none" stroke="#EAF1F4" stroke-width="2.5" opacity="0.9"/>
-  <circle cx="240" cy="190" r="18" fill="#EAF1F4" opacity="0.85"/>
-  <text x="24" y="32" font-family="Poppins,Arial,sans-serif" font-size="13" fill="#EAF1F4">Galaxy - logarithmic spiral</text>
-</svg>

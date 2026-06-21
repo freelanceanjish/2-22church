@@ -39,11 +39,6 @@ def resize_to(
 
 def main() -> None:
     jobs = [
-        # Study hub geometry + hero
-        (ROOT / "geometry-sunflower.png", THUMBS / "geometry-sunflower-w480.png", 480, None, False),
-        (ROOT / "geometry-pinecone.png", THUMBS / "geometry-pinecone-w480.png", 480, None, False),
-        (ROOT / "geometry-fern.png", THUMBS / "geometry-fern-w480.png", 480, 320, False),
-        (ROOT / "geometry-sunflower.png", THUMBS / "geometry-sunflower-hero-w1200.jpg", 1200, None, True),
         # Study hub cards
         (ROOT / "ark-traditional-vs-contextual.png", THUMBS / "ark-traditional-vs-contextual-w640.png", 640, None, False),
         (ROOT / "temple-traditional-vs-contextual.png", THUMBS / "temple-traditional-vs-contextual-w640.png", 640, None, False),
