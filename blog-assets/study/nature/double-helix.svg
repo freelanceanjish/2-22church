@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="DNA double helix in profile">
+  <rect width="480" height="360" fill="#f8faf9"/>
+  <path d="M160 40 Q200 80 160 120 Q120 160 160 200 Q200 240 160 280 Q120 320 160 360" fill="none" stroke="#172A36" stroke-width="3"/>
+  <path d="M220 40 Q180 80 220 120 Q260 160 220 200 Q180 240 220 280 Q260 320 220 360" fill="none" stroke="#5b8db8" stroke-width="3"/>
+  <line x1="168" y1="70" x2="212" y2="70" stroke="#778187" stroke-width="1.5"/>
+  <line x1="152" y1="130" x2="228" y2="130" stroke="#778187" stroke-width="1.5"/>
+  <line x1="168" y1="190" x2="212" y2="190" stroke="#778187" stroke-width="1.5"/>
+  <line x1="152" y1="250" x2="228" y2="250" stroke="#778187" stroke-width="1.5"/>
+  <text x="24" y="32" font-family="Poppins,Arial,sans-serif" font-size="13" fill="#47545B">DNA - helical symmetry</text>
+</svg>

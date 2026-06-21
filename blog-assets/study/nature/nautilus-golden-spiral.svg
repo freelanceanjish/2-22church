@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Nautilus shell cross-section showing golden spiral">
+  <rect width="480" height="360" fill="#f8faf9"/>
+  <ellipse cx="240" cy="200" rx="155" ry="125" fill="#e8ddd0" stroke="#172A36" stroke-width="1.2"/>
+  <path d="M240 200 Q280 160 320 120 Q350 95 370 75" fill="none" stroke="#172A36" stroke-width="2"/>
+  <path d="M240 200 Q255 185 268 168 Q278 155 285 142 Q292 128 296 112" fill="none" stroke="#5b8db8" stroke-width="1.5" opacity="0.85"/>
+  <text x="24" y="32" font-family="Poppins,Arial,sans-serif" font-size="13" fill="#47545B">Nautilus - golden spiral</text>
+</svg>

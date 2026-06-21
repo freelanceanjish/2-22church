@@ -65,7 +65,7 @@ PAGE_META = {
     },
     "study.html": {
         "title": "Study · Divine Geometry in Creation, 2:22 Church",
-        "description": "Divine geometry in creation points to the Creator's intelligence. We ask whether Scripture's ark, tabernacle, temple, and city were designed with the same mind.",
+        "description": "Divine geometry in creation: Fibonacci spirals, hexagonal packing, fractals, and symmetry that encode the Creator's intelligence in what He made.",
         "path": "/study.html",
         "type": "website",
     },
