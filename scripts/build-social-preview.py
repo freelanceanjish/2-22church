@@ -69,6 +69,12 @@ PAGE_META = {
         "path": "/study.html",
         "type": "website",
     },
+    "divine-geometry.html": {
+        "title": "Divine Geometry, 2:22 Church",
+        "description": "Holy geometry in creation, pi at Sinai, decagon Tabernacle, and the irony of shoebox models beside an intelligent Creator.",
+        "path": "/divine-geometry.html",
+        "type": "website",
+    },
     "our-story.html": {
         "title": "Our Story, 2:22 Church",
         "description": "How 2:22 Church began and why we carry a burden for truth outside institutional religion.",
