@@ -17,11 +17,11 @@
 
 const POSTS = [
   {
-    id: "dna-decagon-tabernacle-temple-of-the-spirit",
-    title: "Decagon DNA: When the Tabernacle Pattern Lives in the Genome",
+    id: "dna-a-quantum-tabernacle",
+    title: "DNA: A Quantum Tabernacle",
     date: "20 June 2026",
     category: "Teaching",
-    image: "blog-assets/dna-tabernacle/topview-tabernacle-dna-compare.jpg",
+    image: "blog-assets/dna-tabernacle/dna-quantum-tabernacle-compare.jpg",
     excerpt: "Project314 recovered a decagonal, π-scaled Tabernacle from Exodus. B-DNA carries ten-fold symmetry in the molecule that stores life's text. I do not think Paul was speaking in metaphor when he called the body God's temple.",
     content: `
 <p class="opening">
@@ -30,12 +30,12 @@ const POSTS = [
 
 <p>What finally made the overlap feel real was not another abstract ring on a page. It was looking straight down. Andrew Hoy's Project314 decagon model shows ten roof panels and ten camp positions around the dwelling, the same count Curtis and Larsen describe when you look down the axis of B-DNA. When I set that top view beside a visible double helix and its axial decagon, ten steps around a full turn in both places, I had to sit with it longer than I expected.</p>
 
-<div class="structure-diagram" aria-label="Top view comparison: decagon Tabernacle camp and B-DNA double helix">
-  <img src="blog-assets/dna-tabernacle/topview-tabernacle-dna-compare.jpg?v=4" alt="Top view decagon Tabernacle with ten camp positions beside NIH B-DNA double helix photograph and axial decagon with ten base pairs per turn" loading="eager" decoding="async" width="1200" height="820">
-  <figcaption>Left: Andrew Hoy · Project314 · decagon roof and Numbers 2 camp positions (~1400 BC). Right: NIH public-domain B-DNA double helix (side view, upper panel) and axial decagon looking down the helix (lower panel) · Curtis 1997 · Larsen Symmetry 2021.</figcaption>
+<div class="structure-diagram" aria-label="Decagon template beside B-DNA axial top view">
+  <img src="blog-assets/dna-tabernacle/dna-quantum-tabernacle-compare.jpg?v=1" alt="Decagon template from ten golden triangles beside B-DNA axial cross-section looking down the helix" loading="eager" decoding="async" width="1200" height="760">
+  <figcaption>Left: decagon template built from ten golden triangles (Larsen 2021, panel B). Right: B-DNA axial cross-section looking straight down the helix (Larsen 2021, panel A). Ten-fold symmetry in both panels.</figcaption>
 </div>
 
-<p>Read the figure slowly, because each panel is answering a different question. On the left you are above Hoy's decagon tent, not beside a rectangular exhibit model. The red wedges are the ten roof panels. The ring of names marks how Israel camped around the dwelling in Numbers 2. Project314's kit makes that camp geometry physical in a way flat commentaries never did for me. On the right the upper panel is the molecule everyone recognizes from biology class, the double helix in profile, the way Watson and Crick drew it in 1953. The lower panel is the view Curtis and Larsen insist you cannot skip: looking straight down the helix axis you see a decagon, ten base pairs completing one full turn, thirty-six degrees per step, which is π/5 radians, the same angular language built into pentagons and decagons. Textbooks usually teach the side view and treat the axial count as a footnote. That is exactly why I wanted both images in one frame.</p>
+<p>Read the figure slowly. On the left is the angular template Larsen builds from golden triangles, the same decagon grammar Curtis reached through pentagons about a decagon. On the right is the molecule itself when you stop looking at the textbook side view and look down the helix axis. Ten outer stations, ten base pairs completing one full turn, thirty-six degrees per step, which is π/5 radians. The side-view ladder still matters, and the article keeps it below. But this pair is the view that stopped me: template and data, geometry and living tissue, in one frame.</p>
 
 <div class="photo-strip photo-strip--solo" aria-label="Decagon Tabernacle top view with camp positions">
   <img src="blog-assets/dna-tabernacle/tabernacle-decagon-topview-tribes.jpg?v=2" alt="Top view of Project314 decagon Tabernacle model showing ten roof panels and ten camp positions around the dwelling" loading="lazy">
