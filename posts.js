@@ -21,7 +21,7 @@ const POSTS = [
     title: "Decagon DNA: When the Tabernacle Pattern Lives in the Genome",
     date: "20 June 2026",
     category: "Teaching",
-    image: "blog-assets/dna-tabernacle/dna-double-helix-diagram.jpg",
+    image: "blog-assets/dna-tabernacle/dna-quantum-tabernacle-compare.jpg",
     excerpt: "Project314 recovered a decagonal, π-scaled Tabernacle from Exodus. B-DNA carries ten-fold symmetry in the molecule that stores life's text. I do not think Paul was speaking in metaphor when he called the body God's temple.",
     content: `
 <p class="opening">

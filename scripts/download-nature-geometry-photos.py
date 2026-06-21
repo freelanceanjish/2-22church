@@ -168,11 +168,11 @@ def main() -> None:
         crop_specs[slug] = spec
         print("OK" if m.get("ok") else "FAIL", m.get("source", m.get("tried")))
 
-    dna_src = Path(__file__).resolve().parent.parent / "blog-assets" / "dna-tabernacle" / "dna-double-helix-diagram.jpg"
+    dna_src = ROOT / "blog-assets" / "dna-tabernacle" / "dna-quantum-tabernacle-compare.jpg"
     dna_dest = OUT / "dna-double-helix.jpg"
     if dna_src.exists():
         shutil.copy2(dna_src, dna_dest)
-        manifest.append({"slug": "dna-double-helix", "ok": True, "file": dna_dest.name, "source": "2:22 Church double-helix diagram"})
+        manifest.append({"slug": "dna-double-helix", "ok": True, "file": dna_dest.name, "source": "Larsen 2021 decagon + B-DNA axial compare"})
         crop_specs["dna-double-helix"] = {"keep": 0.82, "aspect": (1, 1)}
         print("copy dna-double-helix OK")
     else:
@@ -192,10 +192,10 @@ def main() -> None:
         spec = crop_specs.get(slug, {"keep": 0.7, "aspect": (3, 2)})
         save_thumb(path, THUMBS / f"{slug}-w480.jpg", spec)
 
-    diagram = ROOT / "blog-assets" / "dna-tabernacle" / "dna-double-helix-diagram.jpg"
+    diagram = ROOT / "blog-assets" / "dna-tabernacle" / "dna-quantum-tabernacle-compare.jpg"
     if diagram.exists():
         import subprocess
-        subprocess.run(["python3", str(Path(__file__).resolve().parent / "build-dna-diagram-thumbs.py")], check=True)
+        subprocess.run(["python3", str(Path(__file__).resolve().parent / "build-dna-quantum-tabernacle-compare.py")], check=True)
 
     sunflower = OUT / "sunflower.jpg"
     if sunflower.exists():
