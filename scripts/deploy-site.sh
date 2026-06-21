@@ -8,8 +8,8 @@ cd "$ROOT"
 echo "==> Rebuild DNA comparison figure"
 python3 scripts/build-topview-compare.py
 
-echo "==> Rebuild DNA diagram square thumbs"
-python3 scripts/build-dna-diagram-thumbs.py
+echo "==> Rebuild DNA quantum tabernacle compare + square icon"
+python3 scripts/build-dna-quantum-tabernacle-compare.py
 
 echo "==> Capture live logo and hero tagline crops"
 node scripts/capture-og-crops.mjs
